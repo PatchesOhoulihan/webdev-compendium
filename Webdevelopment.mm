@@ -5,7 +5,7 @@
 <node CREATED="1515277288805" ID="ID_836246298" MODIFIED="1515277292096" POSITION="left" TEXT="CSS"/>
 <node CREATED="1515277317461" ID="ID_1916008129" MODIFIED="1515277323640" POSITION="right" TEXT="Javascript">
 <node CREATED="1515282069557" ID="ID_146057768" MODIFIED="1515282081165" TEXT="Vanilla-core"/>
-<node CREATED="1515277330605" FOLDED="true" ID="ID_1667790984" MODIFIED="1515323495997" TEXT="Frontend">
+<node CREATED="1515277330605" FOLDED="true" ID="ID_1667790984" MODIFIED="1515329732687" TEXT="Frontend">
 <node CREATED="1515280692862" FOLDED="true" ID="ID_92475443" MODIFIED="1515323494981" TEXT="script-tag">
 <node CREATED="1515280774637" FOLDED="true" ID="ID_811940011" MODIFIED="1515323493853" TEXT="type attribute">
 <node CREATED="1515280767645" ID="ID_208007989" MODIFIED="1515280767645" TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script."/>
@@ -35,7 +35,7 @@
 <node CREATED="1515278785863" ID="ID_531508868" MODIFIED="1515278821722" TEXT="&lt;script type=&quot;text/babel&quot;&gt;ReactDOM.render(&lt;div&gt;Hello World&lt;/div&gt;, document.getElementById(&quot;root&quot;))      &lt;/script&gt;"/>
 </node>
 </node>
-<node CREATED="1515278490837" FOLDED="true" ID="ID_33879117" MODIFIED="1515324017512" TEXT="What is React?">
+<node CREATED="1515278490837" FOLDED="true" ID="ID_33879117" MODIFIED="1515329960900" TEXT="What is React?">
 <node CREATED="1515278524808" FOLDED="true" ID="ID_1971369396" MODIFIED="1515323933705" TEXT="What is ReactJS?">
 <node CREATED="1515278541958" ID="ID_1550988988" MODIFIED="1515278541958" TEXT="ReactJS is a library that generates the view layer of an application based on its state."/>
 <node CREATED="1515278579191" ID="ID_360754278" MODIFIED="1515278579191" TEXT="ReactJS applications are built from React Components - independent resusable components"/>
@@ -79,7 +79,7 @@
 </node>
 </node>
 <node CREATED="1515282261275" ID="ID_1010983589" MODIFIED="1515324114867" TEXT="JSX">
-<node CREATED="1515282290585" ID="ID_223965834" MODIFIED="1515324127934" TEXT="What is JSX?">
+<node CREATED="1515282290585" FOLDED="true" ID="ID_223965834" MODIFIED="1515329962957" TEXT="What is JSX?">
 <node CREATED="1515282302327" ID="ID_1436029414" MODIFIED="1515282302327" TEXT="JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags."/>
 <node CREATED="1515282323768" ID="ID_1751771870" MODIFIED="1515282323768" TEXT="Using JSX, we can create React Elements easily with HTML Tags:"/>
 <node CREATED="1515282335884" ID="ID_897794974" MODIFIED="1515282335884" TEXT="var element = &lt;h1&gt;Hello World!&lt;/h1&gt;"/>
@@ -215,6 +215,50 @@
 <node CREATED="1515327782693" ID="ID_1045302409" MODIFIED="1515327785555" TEXT="Composing Components"/>
 <node CREATED="1515327806233" ID="ID_1693499756" MODIFIED="1515327806233" TEXT="Functional Components can include other Functional Components in their output. This lets us keep our components organized and readible."/>
 </node>
+<node CREATED="1515332033127" ID="ID_240472902" MODIFIED="1515332340962" TEXT="Conditional Rendering">
+<node CREATED="1515332047245" ID="ID_1409781227" MODIFIED="1515332047245" TEXT="The output of a Functional Component can be determined based on its properties."/>
+<node CREATED="1515332111814" ID="ID_1846267894" MODIFIED="1515332111814" TEXT="function Feature(props){">
+<node CREATED="1515332111815" MODIFIED="1515332111815" TEXT="if (props.active == true){">
+<node CREATED="1515332111816" MODIFIED="1515332111816" TEXT="return &lt;h1&gt;This feature is active&lt;/h1&gt;"/>
+</node>
+<node CREATED="1515332111816" MODIFIED="1515332111816" TEXT="}"/>
+<node CREATED="1515332111817" MODIFIED="1515332111817" TEXT="else{">
+<node CREATED="1515332111817" MODIFIED="1515332111817" TEXT="return &lt;h1&gt;This feature is not active&lt;/h1&gt;"/>
+</node>
+<node CREATED="1515332111818" MODIFIED="1515332111818" TEXT="}"/>
+</node>
+<node CREATED="1515332111818" ID="ID_1280968887" MODIFIED="1515332111818" TEXT="}"/>
+<node CREATED="1515332200324" ID="ID_1056711472" MODIFIED="1515332200324" TEXT="This can also be accomplished using an inline conditional operator:"/>
+<node CREATED="1515332208965" ID="ID_1130226012" MODIFIED="1515332208965" TEXT="function Feature(props){">
+<node CREATED="1515332208966" ID="ID_362997907" MODIFIED="1515332208966" TEXT="return &lt;h1&gt;This feature is {props.active? &quot;active&quot; : &quot;not active&quot;}&lt;/h1&gt;">
+<node CREATED="1515332247750" ID="ID_968163233" MODIFIED="1515332247750" TEXT="The output of a Functional Component can be prevented from rendering."/>
+</node>
+</node>
+<node CREATED="1515332208966" ID="ID_1086479199" MODIFIED="1515332208966" TEXT="}"/>
+<node CREATED="1515332222490" ID="ID_716750890" MODIFIED="1515332222490" TEXT="Preventing Rendering">
+<node CREATED="1515332251372" ID="ID_1481487542" MODIFIED="1515332251372" TEXT="The output of a Functional Component can be prevented from rendering."/>
+<node CREATED="1515332264581" ID="ID_525977202" MODIFIED="1515332264581" TEXT="function Feature(props){">
+<node CREATED="1515332264582" MODIFIED="1515332264582" TEXT="if(props.active!){">
+<node CREATED="1515332264582" MODIFIED="1515332264582" TEXT="return null"/>
+</node>
+<node CREATED="1515332264583" MODIFIED="1515332264583" TEXT="}"/>
+<node CREATED="1515332264583" MODIFIED="1515332264583" TEXT="else{">
+<node CREATED="1515332264584" MODIFIED="1515332264584" TEXT="return &lt;h1&gt;{props.message}&lt;/h1&gt;"/>
+</node>
+<node CREATED="1515332264584" MODIFIED="1515332264584" TEXT="}"/>
+</node>
+<node CREATED="1515332264584" ID="ID_1773545211" MODIFIED="1515332264584" TEXT="}"/>
+</node>
+<node CREATED="1515332291711" ID="ID_57016787" MODIFIED="1515332291711" TEXT="You can also conditionally prevent a feature from rendering using the &amp;&amp; operator:"/>
+<node CREATED="1515332319665" ID="ID_544492799" MODIFIED="1515332319665" TEXT="function Feature(props){">
+<node CREATED="1515332319665" MODIFIED="1515332319665" TEXT="return (">
+<node CREATED="1515332319665" ID="ID_406791405" MODIFIED="1515332319665" TEXT="props.active &amp;&amp; &lt;h1&gt;{props.message}&lt;/h1&gt;"/>
+</node>
+<node CREATED="1515332319666" MODIFIED="1515332319666" TEXT=")"/>
+</node>
+<node CREATED="1515332319666" ID="ID_1746940307" MODIFIED="1515332319666" TEXT="}"/>
+<node CREATED="1515332339757" ID="ID_483766609" MODIFIED="1515332339757" TEXT="With the &amp;&amp; operator, true and expression will always evaluate to expression. On the other hand, false and expression will always evaluate to false which won&apos;t render."/>
+</node>
 </node>
 </node>
 </node>
@@ -228,5 +272,6 @@
 </node>
 </node>
 </node>
+<node CREATED="1515329595139" ID="ID_1802213564" MODIFIED="1515329600881" POSITION="left" TEXT="Git"/>
 </node>
 </map>
