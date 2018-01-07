@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+
+    <title>Document</title>
+
+    <script type="text/babel">
+    
+        function ListTitel() {
+            return (
+                <div>
+                    <h1>Welcome to React Transportion</h1>
+                    <p>The best place to buy vehicles online</p>
+                </div>
+            );
+        }
+
+        function List(props) {
+            if(props.active == true){
+                return (
+                    <div>
+                        <h2>{props.headline}</h2>
+                        <ul>
+                            <li>{props.items[0]}</li>
+                            <li>{props.items[1]}</li>
+                            <li>{props.items[2]}</li>
+                        </ul>
+                    </div>
+                )
+            }
+            else{
+                return null;
+            }
+        }
+
+        function ListContainer(props) {
+            return(
+                <div>
+                    <label for="new">New Cars only</label>
+                    <input type="radio" name="gender" id="new" value="male"/>
+                </div>
+            )
+        }
+
+        function App() {
+            return (
+                <div>
+                    <ListTitel />
+                    <ListContainer />
+                    <List active={true} headline={'some cars1'} items={['Golf','BMW', 'Mercedes']} />
+                    <List active={true} headline={'some cars2'} items={['Golf','BMW', 'Mercedes']} />
+                    <List active={true} headline={'some cars3'} items={['Golf','BMW', 'Mercedes']} />
+                </div>
+            )
+        }
+
+        ReactDOM.render(
+            <App/>,
+            document.getElementById('root')
+        );
+
+    
+
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
