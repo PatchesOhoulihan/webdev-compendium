@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+
+    <script type="text/babel">
+
+        //----------------------------------------------------------
+        // Basic Funtional Component
+        //----------------------------------------------------------
+
+        function HelloWorld(){
+            return <h1>Function Hello World! on root1</h1>
+        }
+
+        var element = <HelloWorld/>
+
+        ReactDOM.render(<HelloWorld/>, document.getElementById('root1'));
+
+
+
+        //----------------------------------------------------------
+        // Functional Component with Props
+        //----------------------------------------------------------
+
+        function HelloWorld2(props){
+            return <h1>Message: {props.message}</h1>
+        }
+
+        ReactDOM.render(
+            <HelloWorld2 message="Hello World! from root2"/>,
+            document.getElementById('root2')
+        );
+
+
+
+        //----------------------------------------------------------
+        // Functional Component with multiple Props
+        //----------------------------------------------------------
+
+        function HelloWorld3(props){
+            return <h1>Values from root3: {props.numberArray[props.index]}</h1>
+        }
+
+        ReactDOM.render(
+            <HelloWorld3 index="3" numberArray={[1,2,3,4,5]}/>,
+            document.getElementById("root3")
+        )
+
+
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="root1"></div>
+    <div id="root2"></div>
+    <div id="root3"></div>
+</body>
+</html>
