@@ -1,10 +1,25 @@
-<map version="0.9.0">
+<map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1515277253428" ID="ID_840085271" MODIFIED="1515277265274" TEXT="Webdevelopment">
 <node CREATED="1515277277215" ID="ID_29829950" MODIFIED="1515277282560" POSITION="right" TEXT="Html"/>
 <node CREATED="1515277288805" ID="ID_836246298" MODIFIED="1515277292096" POSITION="left" TEXT="CSS"/>
 <node CREATED="1515277317461" ID="ID_1916008129" MODIFIED="1515277323640" POSITION="right" TEXT="Javascript">
-<node CREATED="1515282069557" ID="ID_146057768" MODIFIED="1515282081165" TEXT="Vanilla-core"/>
+<node CREATED="1515282069557" ID="ID_146057768" MODIFIED="1515282081165" TEXT="Vanilla-core">
+<node CREATED="1515401605280" FOLDED="true" ID="ID_1585139697" MODIFIED="1515413000271" TEXT="Destructuring">
+<node CREATED="1515401730724" MODIFIED="1515401730724" TEXT="It&#x2019;s a JavaScript expression that allows us to extract data from arrays, objects, maps and sets"/>
+<node CREATED="1515401828816" MODIFIED="1515401828816" TEXT="const person = {">
+<node CREATED="1515401828817" MODIFIED="1515401828817" TEXT="first: &apos;Wes&apos;,"/>
+<node CREATED="1515401828818" MODIFIED="1515401828818" TEXT="last: &apos;Bos&apos;,"/>
+<node CREATED="1515401828818" MODIFIED="1515401828818" TEXT="country: &apos;Canada&apos;,"/>
+<node CREATED="1515401828819" MODIFIED="1515401828819" TEXT="city: &apos;Hamilton&apos;,"/>
+<node CREATED="1515401828820" MODIFIED="1515401828820" TEXT="twitter: &apos;@wesbos&apos;"/>
+</node>
+<node CREATED="1515401828821" MODIFIED="1515401828821" TEXT="};"/>
+<node CREATED="1515412053376" ID="ID_1863368723" MODIFIED="1515412649921" TEXT="const { first, last } = person;  &apos;(Object-Destrukturierung)&apos;"/>
+<node CREATED="1515412678158" ID="ID_778337520" MODIFIED="1515412769159" TEXT="var [one, two, three] = foo; &apos;(Array-Destrukturierung)&apos;"/>
+<node CREATED="1515412133129" ID="ID_592499181" MODIFIED="1515412133129" TEXT="The above code says, give me a variable called first, a variable called last, and take it from the person object. We&#x2019;re taking the first property and the last property and putting them into two new variables that will be scoped to the parent block (or window!)."/>
+</node>
+</node>
 <node CREATED="1515277330605" FOLDED="true" ID="ID_1667790984" MODIFIED="1515329732687" TEXT="Frontend">
 <node CREATED="1515280692862" FOLDED="true" ID="ID_92475443" MODIFIED="1515323494981" TEXT="script-tag">
 <node CREATED="1515280774637" FOLDED="true" ID="ID_811940011" MODIFIED="1515323493853" TEXT="type attribute">
@@ -49,11 +64,25 @@
 </node>
 </node>
 </node>
-<node CREATED="1515279503033" FOLDED="true" ID="ID_1168277326" MODIFIED="1515324116272" TEXT="Rendering Elements">
-<node CREATED="1515279516927" FOLDED="true" ID="ID_730934704" MODIFIED="1515324033664" TEXT="React Elements">
+<node CREATED="1515279503033" ID="ID_1168277326" MODIFIED="1515425879647" TEXT="Rendering Elements/React Nodes">
+<node CREATED="1515279516927" FOLDED="true" ID="ID_730934704" MODIFIED="1515426330695" TEXT="React Elements/ React Nodes">
 <node CREATED="1515279546743" ID="ID_529943332" MODIFIED="1515281627439" TEXT="React elements are the building blocks of react JS applications. React Elements are objects that represent a DOM node. They are written using a syntax extension named JSX which allows us to write HTML tags in our JavaScript code and asign that to a variable. React Elements are different than React Components."/>
+<node CREATED="1515426225352" MODIFIED="1515426225352" TEXT="A React node is defined as: a light, stateless, immutable, virtual representation of a DOM node."/>
 </node>
-<node CREATED="1515279598314" FOLDED="true" ID="ID_1736704544" MODIFIED="1515324113072" TEXT="ReactDOM.render()">
+<node CREATED="1515426352525" ID="ID_237369376" MODIFIED="1515426377605" TEXT="Creating React Nodes">
+<node CREATED="1515426481126" ID="ID_834177306" MODIFIED="1515426511324" TEXT="In most cases developers using React will favor JSX and use it to create React nodes. React nodes can be created without JSX, using only JavaScript. "/>
+<node CREATED="1515426572662" ID="ID_242788174" MODIFIED="1515426585874" TEXT="Creating React nodes using JavaScript is as simple as calling the "/>
+<node CREATED="1515426594435" MODIFIED="1515426594435" TEXT="React.createElement(type,props,children)"/>
+<node CREATED="1515426649144" ID="ID_86733993" MODIFIED="1515426808788" TEXT="The React.createElement() arguments explained">
+<node CREATED="1515426649145" ID="ID_1399692810" MODIFIED="1515426649145" TEXT="type (string | React.createClass()):"/>
+<node CREATED="1515426649146" ID="ID_1261091899" MODIFIED="1515426649146" TEXT="Can be a string which represents an HTML element (or custom HTML element) or React component instance (i.e., an instance of React.createClass())"/>
+<node CREATED="1515426649148" ID="ID_57951100" MODIFIED="1515426649148" TEXT="props (null | object):"/>
+<node CREATED="1515426649149" ID="ID_654182648" MODIFIED="1515426649149" TEXT="Can be null or an object containing attributes/props and values"/>
+<node CREATED="1515426649149" ID="ID_480827048" MODIFIED="1515426649149" TEXT="children (null | string | React.createClass() | React.createElement()):"/>
+<node CREATED="1515426649150" ID="ID_1853089143" MODIFIED="1515426649150" TEXT="Children can be null, a string that gets turned into a text node, an instance of React.createClass() or React.createElement()"/>
+</node>
+</node>
+<node CREATED="1515279598314" FOLDED="true" ID="ID_1736704544" MODIFIED="1515426327724" TEXT="ReactDOM.render()">
 <node CREATED="1515279623147" ID="ID_561612319" MODIFIED="1515279623147" TEXT="The ReactDOM.render() method is used to render a React Element into a specified part of the HTML DOM. In most React applications, there is usually a single root node where everything gets rendered into, but you may use as many root nodes as you desire."/>
 <node CREATED="1515279739348" FOLDED="true" ID="ID_1674394648" MODIFIED="1515323837002" TEXT="ReactDOM.render(">
 <node CREATED="1515279739349" ID="ID_1068189459" MODIFIED="1515279739349" TEXT="&lt;h1&gt;Hello World!&lt;/h1&gt;,"/>
@@ -261,9 +290,14 @@
 </node>
 </node>
 </node>
+<node CREATED="1515427476927" ID="ID_1661441676" MODIFIED="1515427483506" TEXT="Redux"/>
 </node>
 <node CREATED="1515277654467" ID="ID_1539401799" MODIFIED="1515277660902" POSITION="left" TEXT="Links">
 <node CREATED="1515277921812" ID="ID_1678468185" LINK="https://unpkg.com/#/" MODIFIED="1515277921812" TEXT="https://unpkg.com/#/"/>
+<node CREATED="1515411958783" LINK="https://github.com/thedaviddias/Front-End-Checklist" MODIFIED="1515411958783" TEXT="https://github.com/thedaviddias/Front-End-Checklist"/>
+<node CREATED="1515412927697" ID="ID_1451437478" LINK="http://exploringjs.com" MODIFIED="1515412927697" TEXT="exploringjs"/>
+<node CREATED="1515425856731" LINK="https://www.reactenlightenment.com" MODIFIED="1515425856731" TEXT="https://www.reactenlightenment.com"/>
+<node CREATED="1515428619298" LINK="https://www.youtube.com/watch?v=DiLVAXlVYR0&amp;list=PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a" MODIFIED="1515428619298" TEXT="https://www.youtube.com/watch?v=DiLVAXlVYR0&amp;list=PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a"/>
 </node>
 <node CREATED="1515278180287" FOLDED="true" ID="ID_1063730680" MODIFIED="1515323893338" POSITION="right" TEXT="Visual studio code">
 <node CREATED="1515278203231" FOLDED="true" ID="ID_66373857" MODIFIED="1515323892490" TEXT="shortcuts">
