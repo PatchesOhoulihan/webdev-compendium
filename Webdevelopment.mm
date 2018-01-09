@@ -288,6 +288,21 @@
 <node CREATED="1515332319666" ID="ID_1746940307" MODIFIED="1515332319666" TEXT="}"/>
 <node CREATED="1515332339757" ID="ID_483766609" MODIFIED="1515332339757" TEXT="With the &amp;&amp; operator, true and expression will always evaluate to expression. On the other hand, false and expression will always evaluate to false which won&apos;t render."/>
 </node>
+<node CREATED="1515493940300" ID="ID_782203120" MODIFIED="1515493940300" TEXT="React Component State">
+<node CREATED="1515493962986" MODIFIED="1515493962986" TEXT="Most components should simply take in props and render. But, components also offer state, and it is used to store information/data about the component that can change over time. Typically the change comes as a result of user events or system events (i.e., as a response to user input, a server request, or the passage of time)."/>
+<node CREATED="1515493992972" MODIFIED="1515493992972" TEXT="According to the React documentation state should:"/>
+<node CREATED="1515494005026" MODIFIED="1515494005026" TEXT="Contain data that a component&apos;s event handlers may change to trigger a UI update. In real apps this data tends to be very small and JSON-serializable. When building a stateful component, think about the minimal possible representation of its state, and only store those properties in this.state. Inside of render() simply compute any other information you need based on this state. You&apos;ll find that thinking about and writing applications in this way tends to lead to the most correct application, since adding redundant or computed values to state means that you need to explicitly keep them in sync rather than rely on React computing them for you."/>
+<node CREATED="1515494041272" MODIFIED="1515494041272" TEXT="Working with component state typically involves setting a components default state, accessing the current state, and updating the state."/>
+<node CREATED="1515494272468" ID="ID_637926048" MODIFIED="1515494272468" TEXT="Things to keep in mind about React component state:">
+<node CREATED="1515494292382" MODIFIED="1515494292382" TEXT="If a component has state, a default state should be provided using getInitialState()"/>
+<node CREATED="1515494292383" MODIFIED="1515494292383" TEXT="State changes are typically how you start the re-rendering of a component and all sub components (i.e., children, grandchildren, great grand chidlren, etc.)."/>
+<node CREATED="1515494292385" MODIFIED="1515494292385" TEXT="The only way a component should have its state update should be by using this.setState(). While other ways are possible (i.e. forceUpdate()), they should likely not be used (except maybe when integrating with third-party solutions)."/>
+<node CREATED="1515494292388" MODIFIED="1515494292388" TEXT="You inform a component of a state change by using this.setState() to set a new state. This will result in re-render of the component and all children components that need re-rendered."/>
+<node CREATED="1515494292390" MODIFIED="1515494292390" TEXT="A state change merges new data with old data that is already contained in the state. But this is only a shallow update/merge, it won&apos;t do a deep update/merge."/>
+<node CREATED="1515494292392" MODIFIED="1515494292392" TEXT="A state change internally deals with calling re-renders. You should never have to call this.render() directly."/>
+<node CREATED="1515494292392" MODIFIED="1515494292392" TEXT="The state object should only contain the minimal amount of data needed for the UI. Don&apos;t place computed data, other React components, or props in the state object."/>
+</node>
+</node>
 </node>
 </node>
 <node CREATED="1515427476927" ID="ID_1661441676" MODIFIED="1515427483506" TEXT="Redux"/>
@@ -298,6 +313,9 @@
 <node CREATED="1515412927697" ID="ID_1451437478" LINK="http://exploringjs.com" MODIFIED="1515412927697" TEXT="exploringjs"/>
 <node CREATED="1515425856731" LINK="https://www.reactenlightenment.com" MODIFIED="1515425856731" TEXT="https://www.reactenlightenment.com"/>
 <node CREATED="1515428619298" LINK="https://www.youtube.com/watch?v=DiLVAXlVYR0&amp;list=PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a" MODIFIED="1515428619298" TEXT="https://www.youtube.com/watch?v=DiLVAXlVYR0&amp;list=PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a"/>
+<node CREATED="1515489665238" LINK="https://github.com/tc39/proposals/blob/master/stage-0-proposals.md" MODIFIED="1515489665238" TEXT="https://github.com/tc39/proposals/blob/master/stage-0-proposals.md"/>
+<node CREATED="1515489701885" LINK="https://github.com/tc39/proposals" MODIFIED="1515489701885" TEXT="https://github.com/tc39/proposals"/>
+<node CREATED="1515516706847" LINK="https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f" MODIFIED="1515516706847" TEXT="https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f"/>
 </node>
 <node CREATED="1515278180287" FOLDED="true" ID="ID_1063730680" MODIFIED="1515323893338" POSITION="right" TEXT="Visual studio code">
 <node CREATED="1515278203231" FOLDED="true" ID="ID_66373857" MODIFIED="1515323892490" TEXT="shortcuts">
