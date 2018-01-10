@@ -20,8 +20,8 @@
 <node CREATED="1515412133129" ID="ID_592499181" MODIFIED="1515412133129" TEXT="The above code says, give me a variable called first, a variable called last, and take it from the person object. We&#x2019;re taking the first property and the last property and putting them into two new variables that will be scoped to the parent block (or window!)."/>
 </node>
 </node>
-<node CREATED="1515277330605" FOLDED="true" ID="ID_1667790984" MODIFIED="1515329732687" TEXT="Frontend">
-<node CREATED="1515280692862" FOLDED="true" ID="ID_92475443" MODIFIED="1515323494981" TEXT="script-tag">
+<node CREATED="1515277330605" ID="ID_1667790984" MODIFIED="1515591301447" TEXT="Frontend">
+<node CREATED="1515280692862" ID="ID_92475443" MODIFIED="1515602554373" TEXT="script-tag">
 <node CREATED="1515280774637" FOLDED="true" ID="ID_811940011" MODIFIED="1515323493853" TEXT="type attribute">
 <node CREATED="1515280767645" ID="ID_208007989" MODIFIED="1515280767645" TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script."/>
 <node CREATED="1515280820009" ID="ID_811925062" MODIFIED="1515280820009" TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags."/>
@@ -32,8 +32,38 @@
 </node>
 </node>
 </node>
+<node CREATED="1515602570705" ID="ID_121909318" MODIFIED="1515602584248" TEXT="no script tag">
+<node CREATED="1515602635348" MODIFIED="1515602635348" TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script."/>
+<node CREATED="1515602635351" MODIFIED="1515602635351" TEXT="The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;."/>
+<node CREATED="1515602635351" MODIFIED="1515602635351" TEXT="When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements."/>
+<node CREATED="1515602635352" MODIFIED="1515602635352" TEXT="The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser."/>
+<node CREATED="1515602673887" ID="ID_451599228" MODIFIED="1515602676907" TEXT="Differences Between HTML 4.01 and HTML5">
+<node CREATED="1515602688236" MODIFIED="1515602688236" TEXT="In HTML 4.01, the &lt;noscript&gt; tag can only be used inside the &lt;body&gt; element."/>
+<node CREATED="1515602688237" MODIFIED="1515602688237" TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;."/>
 </node>
-<node CREATED="1515277338125" ID="ID_1555436814" MODIFIED="1515277343208" TEXT="Backend"/>
+</node>
+<node CREATED="1515591316434" ID="ID_1338289551" MODIFIED="1515591322583" TEXT="Dom Api">
+<node CREATED="1515591331657" ID="ID_152858823" MODIFIED="1515591341976" TEXT="document">
+<node CREATED="1515591346369" ID="ID_52380751" MODIFIED="1515591353168" TEXT="cookie">
+<node CREATED="1515591363104" ID="ID_126151023" MODIFIED="1515591371563" TEXT="show all cookies">
+<node CREATED="1515591375520" ID="ID_1545821702" MODIFIED="1515591396272" TEXT="document.cookie"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1515602020518" ID="ID_194660626" MODIFIED="1515602026494" TEXT="cookies"/>
+</node>
+<node CREATED="1515277338125" ID="ID_1555436814" MODIFIED="1515277343208" TEXT="Backend">
+<node CREATED="1515602043953" ID="ID_657863754" MODIFIED="1515602043953" TEXT="Was sind Third Party Cookies?">
+<node CREATED="1515602066435" MODIFIED="1515602066435" TEXT="Third Party Cookies werden von Werbetreibenden genutzt, die &#xfc;ber ihre Werbeschaltungen auf anderen Seiten mit den Cookies Nutzerinformationen sammeln. Es handelt sich dabei um Datens&#xe4;tze, die im Browser des Nutzers hinterlegt werden, wenn er eine Seite mit der Werbung besucht. Besucht er erneut eine Seite mit Werbung des gleichen Anbieters, wird er wiedererkannt."/>
+<node CREATED="1515602066442" MODIFIED="1515602066442" TEXT="Da sich mit Third Party Cookies die Wege des Nutzers im Internet verfolgen lassen, kann der Werbetreibende bei einem erneuten Besuch auf das &#x201c;Profil&#x201d; des Nutzers zugeschnittene Werbung ausspielen."/>
+</node>
+<node CREATED="1515602082658" ID="ID_1007566117" MODIFIED="1515602082658" TEXT="Unterschied zu First Party Cookies">
+<node CREATED="1515602101112" MODIFIED="1515602101112" TEXT="Das Wort &#x201c;Party&#x201d; in First/Third Party Cookies bezieht sich auf die Domain, von der der Cookie stammt. W&#xe4;hrend ein First Party Cookie in der Regel vom Websitebetreiber selbst stammt, lassen sich Third Party Cookies auf eine andere &#x2013; eben &#x201c;dritte&#x201d; &#x2013; Person zur&#xfc;ckf&#xfc;hren, die ihre Cookies auf einer anderen Seite platzieren."/>
+<node CREATED="1515602101123" MODIFIED="1515602101123" TEXT="Es ist also m&#xf6;glich, dass auf Ihrem Rechner nach dem Besuch einer Website sowohl Third Party Cookies als auch First Party Cookies gespeichert werden &#x2013; von der Seite selbst und von einer dritten Partei, die Werbung auf dieser Seite platziert hat. Bei einem First Party Cookie kann der Nutzer nur von der Seite wiedererkannt werden, von der der Cookie stammt, nicht aber &#xfc;ber mehrere Domains hinweg. Die Daten werden dadurch auch nicht an Dritte weitergegeben."/>
+<node CREATED="1515602101129" MODIFIED="1515602101129" TEXT="Third Party Cookies lassen sich technisch einfacher implementieren als First Party Cookies. Auf der Website, auf der die Cookies eingebunden werden sollen, muss kein Code hinterlegt werden. Es reicht die Werbeanzeige (Ad) vom AdServer des Drittanbieters."/>
+</node>
+</node>
 <node CREATED="1515277360141" ID="ID_1455965189" MODIFIED="1515277374831" TEXT="Frameworks">
 <node CREATED="1515277387469" ID="ID_598934165" MODIFIED="1515279500825" TEXT="React">
 <node CREATED="1515277487524" FOLDED="true" ID="ID_1044908776" MODIFIED="1515323490525" TEXT="Quick Setup">
@@ -82,7 +112,7 @@
 <node CREATED="1515426649150" ID="ID_1853089143" MODIFIED="1515426649150" TEXT="Children can be null, a string that gets turned into a text node, an instance of React.createClass() or React.createElement()"/>
 </node>
 </node>
-<node CREATED="1515279598314" FOLDED="true" ID="ID_1736704544" MODIFIED="1515426327724" TEXT="ReactDOM.render()">
+<node CREATED="1515279598314" ID="ID_1736704544" MODIFIED="1515574518520" TEXT="ReactDOM.render()">
 <node CREATED="1515279623147" ID="ID_561612319" MODIFIED="1515279623147" TEXT="The ReactDOM.render() method is used to render a React Element into a specified part of the HTML DOM. In most React applications, there is usually a single root node where everything gets rendered into, but you may use as many root nodes as you desire."/>
 <node CREATED="1515279739348" FOLDED="true" ID="ID_1674394648" MODIFIED="1515323837002" TEXT="ReactDOM.render(">
 <node CREATED="1515279739349" ID="ID_1068189459" MODIFIED="1515279739349" TEXT="&lt;h1&gt;Hello World!&lt;/h1&gt;,"/>
@@ -91,6 +121,10 @@
 <node CREATED="1515279739349" ID="ID_1013737741" MODIFIED="1515279739349" TEXT=")"/>
 <node CREATED="1515281808591" ID="ID_1326989240" MODIFIED="1515281813647" TEXT="The ReactDom.render method takes in two arguments. The first being the element that we&apos;re trying to render, and the second being the target."/>
 <node CREATED="1515279655161" ID="ID_1139425043" MODIFIED="1515279655161" TEXT="In this case, the &lt;h1&gt;Hello World!&lt;/h1&gt; React Element is rendered into the DOM element with the id of &quot;root&quot;."/>
+</node>
+<node CREATED="1515574601384" ID="ID_565354937" MODIFIED="1515574638653" TEXT="ReactDOM.hydrate(element, container[, callback])">
+<node CREATED="1515574659766" MODIFIED="1515574659766" TEXT="Same as render(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer. React will attempt to attach event listeners to the existing markup."/>
+<node CREATED="1515574696893" MODIFIED="1515574696893" TEXT="React expects that the rendered content is identical between the server and the client. It can patch up differences in text content, but you should treat mismatches as bugs and fix them. In development mode, React warns about mismatches during hydration. There are no guarantees that attribute differences will be patched up in case of mismatches. This is important for performance reasons because in most apps, mismatches are rare, and so validating all markup would be prohibitively expensive."/>
 </node>
 <node CREATED="1515279779165" FOLDED="true" ID="ID_1096528987" MODIFIED="1515324110192" TEXT="Rerendering the DOM using additional render() calls">
 <node CREATED="1515279899278" ID="ID_1345284473" MODIFIED="1515279899278" TEXT="The following example uses additional render() calls to update the displayed number:"/>
@@ -317,13 +351,28 @@
 <node CREATED="1515489701885" LINK="https://github.com/tc39/proposals" MODIFIED="1515489701885" TEXT="https://github.com/tc39/proposals"/>
 <node CREATED="1515516706847" LINK="https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f" MODIFIED="1515516706847" TEXT="https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f"/>
 </node>
-<node CREATED="1515278180287" FOLDED="true" ID="ID_1063730680" MODIFIED="1515323893338" POSITION="right" TEXT="Visual studio code">
+<node CREATED="1515329595139" ID="ID_1802213564" MODIFIED="1515329600881" POSITION="left" TEXT="Git"/>
+<node CREATED="1515574322932" ID="ID_228200571" MODIFIED="1515574327503" POSITION="right" TEXT="ide">
+<node CREATED="1515278180287" FOLDED="true" ID="ID_1063730680" MODIFIED="1515323893338" TEXT="Visual studio code">
 <node CREATED="1515278203231" FOLDED="true" ID="ID_66373857" MODIFIED="1515323892490" TEXT="shortcuts">
 <node CREATED="1515278212215" FOLDED="true" ID="ID_1401227338" MODIFIED="1515323891762" TEXT="Format code">
 <node CREATED="1515278221447" ID="ID_1443742418" MODIFIED="1515278243308" TEXT="ctrl + shift + i"/>
 </node>
 </node>
 </node>
-<node CREATED="1515329595139" ID="ID_1802213564" MODIFIED="1515329600881" POSITION="left" TEXT="Git"/>
+<node CREATED="1515574343157" ID="ID_965972960" MODIFIED="1515574352085" TEXT="phpstorm">
+<node CREATED="1515574359237" ID="ID_1095348031" MODIFIED="1515574366067" TEXT="go to definition">
+<node CREATED="1515574369460" ID="ID_1676912443" MODIFIED="1515574372945" TEXT="strg"/>
+</node>
+<node CREATED="1515574375974" ID="ID_1423732730" MODIFIED="1515574391971" TEXT="search in for filesnames">
+<node CREATED="1515574397046" ID="ID_665947203" MODIFIED="1515574409971" TEXT="shift x 2"/>
+</node>
+</node>
+</node>
+<node CREATED="1515600554268" ID="ID_395427149" MODIFIED="1515600564044" POSITION="right" TEXT="Chrome dev tools">
+<node CREATED="1515600581931" ID="ID_1406357828" MODIFIED="1515600590818" TEXT="delete all cookies">
+<node CREATED="1515600606187" ID="ID_764055672" MODIFIED="1515600649499" TEXT="Open tools -&gt; Application -&gt; Clear storage"/>
+</node>
+</node>
 </node>
 </map>
