@@ -42,7 +42,8 @@
 <node CREATED="1515602688237" MODIFIED="1515602688237" TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;."/>
 </node>
 </node>
-<node CREATED="1515591316434" ID="ID_1338289551" MODIFIED="1515591322583" TEXT="Dom Api">
+<node CREATED="1515591316434" ID="ID_1338289551" MODIFIED="1515661309146" TEXT="Dom Api">
+<node CREATED="1515661318220" ID="ID_204988221" MODIFIED="1515661328016" TEXT="window">
 <node CREATED="1515591331657" ID="ID_152858823" MODIFIED="1515591341976" TEXT="document">
 <node CREATED="1515591346369" ID="ID_52380751" MODIFIED="1515591353168" TEXT="cookie">
 <node CREATED="1515591363104" ID="ID_126151023" MODIFIED="1515591371563" TEXT="show all cookies">
@@ -50,20 +51,54 @@
 </node>
 </node>
 </node>
+<node CREATED="1515661463986" ID="ID_975504561" MODIFIED="1515661463986" TEXT="Web Storage API">
+<node CREATED="1515661511672" ID="ID_1567172796" MODIFIED="1515661537408" TEXT="The Web Storage API provides mechanisms by which browsers can securely store key/value pairs, in a much more intuitive fashion than using cookies. "/>
+<node CREATED="1515661632023" FOLDED="true" ID="ID_1652000095" MODIFIED="1515662961836" TEXT="Basic concepts">
+<node CREATED="1515661663066" MODIFIED="1515661663066" TEXT="Storage objects are simple key-value stores, similar to objects, but they stay intact through page loads. The keys and the values are always strings (note that integer keys will be automatically converted to strings, just like what objects do). You can access these values like an object, or with the Storage.getItem() and Storage.setItem() methods. These three lines all set the colorSetting entry in the same way:"/>
+<node CREATED="1515661677379" MODIFIED="1515661677379" TEXT="localStorage.colorSetting = &apos;#a4509b&apos;;"/>
+<node CREATED="1515661677381" MODIFIED="1515661677381" TEXT="localStorage[&apos;colorSetting&apos;] = &apos;#a4509b&apos;;"/>
+<node CREATED="1515661677381" MODIFIED="1515661677381" TEXT="localStorage.setItem(&apos;colorSetting&apos;, &apos;#a4509b&apos;);"/>
+<node CREATED="1515661384870" ID="ID_1898386258" MODIFIED="1515661897786" TEXT="sessionStorage">
+<arrowlink DESTINATION="ID_1898386258" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_310862773" STARTARROW="None" STARTINCLINATION="0;0;"/>
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_1898386258" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_310862773" SOURCE="ID_1898386258" STARTARROW="None" STARTINCLINATION="0;0;"/>
 </node>
-<node CREATED="1515602020518" ID="ID_194660626" MODIFIED="1515602026494" TEXT="cookies"/>
+<node CREATED="1515661912609" ID="ID_1032752383" MODIFIED="1515661915892" TEXT="maintains a separate storage area for each given origin that&apos;s available for the duration of the page session (as long as the browser is open, including page reloads and restores). "/>
+<node CREATED="1515661400284" ID="ID_316477597" MODIFIED="1515661400284" TEXT="localStorage"/>
+<node CREATED="1515661934609" ID="ID_1763601637" MODIFIED="1515661937562" TEXT="does the same thing, but persists even when the browser is closed and reopened. "/>
 </node>
-<node CREATED="1515277338125" ID="ID_1555436814" MODIFIED="1515277343208" TEXT="Backend">
-<node CREATED="1515602043953" ID="ID_657863754" MODIFIED="1515602043953" TEXT="Was sind Third Party Cookies?">
+<node CREATED="1515662620682" FOLDED="true" ID="ID_667026147" MODIFIED="1515662919772" TEXT="Local Storage vs Session Storage vs Cookie">
+<node CREATED="1515662635522" FOLDED="true" ID="ID_1260766077" MODIFIED="1515662904845" TEXT="LocalStorage">
+<node CREATED="1515662661729" MODIFIED="1515662661729" TEXT="Stores data with no expiration date, and gets cleared only through JavaScript, or clearing the Browser cache / Locally Stored Data"/>
+<node CREATED="1515662661731" MODIFIED="1515662661731" TEXT="Storage limit is the maximum amongst the three"/>
+</node>
+<node CREATED="1515662642449" FOLDED="true" ID="ID_1847879931" MODIFIED="1515662906918" TEXT="SessionStorage">
+<node CREATED="1515662671289" MODIFIED="1515662671289" TEXT="The sessionStorage object stores data only for a session, meaning that the data is stored until the browser (or tab) is closed."/>
+<node CREATED="1515662671291" MODIFIED="1515662671291" TEXT="Data is never transferred to the server."/>
+<node CREATED="1515662671292" MODIFIED="1515662671292" TEXT="Storage limit is larger than a cookie (at least 5MB)."/>
+</node>
+<node CREATED="1515662648522" FOLDED="true" ID="ID_153902170" MODIFIED="1515662909709" TEXT="Cookie">
+<node CREATED="1515662723566" MODIFIED="1515662723566" TEXT="Stores data that has to be sent back to the server with subsequent requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side (normally from server-side)."/>
+<node CREATED="1515662723568" MODIFIED="1515662723568" TEXT="Cookies are primarily for server-side reading (can also be read on client-side), localStorage and sessionStorage can only be read on client-side."/>
+<node CREATED="1515662723569" MODIFIED="1515662723569" TEXT="Size must be less than 4KB."/>
+<node CREATED="1515662723570" MODIFIED="1515662723570" TEXT="Cookies can be made secure by setting the httpOnly flag as true for that cookie. This prevents client-side access to that cookie"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1515602020518" ID="ID_194660626" MODIFIED="1515602026494" TEXT="cookies">
+<node CREATED="1515602043953" FOLDED="true" ID="ID_657863754" MODIFIED="1515663572516" TEXT="Was sind Third Party Cookies?">
 <node CREATED="1515602066435" MODIFIED="1515602066435" TEXT="Third Party Cookies werden von Werbetreibenden genutzt, die &#xfc;ber ihre Werbeschaltungen auf anderen Seiten mit den Cookies Nutzerinformationen sammeln. Es handelt sich dabei um Datens&#xe4;tze, die im Browser des Nutzers hinterlegt werden, wenn er eine Seite mit der Werbung besucht. Besucht er erneut eine Seite mit Werbung des gleichen Anbieters, wird er wiedererkannt."/>
 <node CREATED="1515602066442" MODIFIED="1515602066442" TEXT="Da sich mit Third Party Cookies die Wege des Nutzers im Internet verfolgen lassen, kann der Werbetreibende bei einem erneuten Besuch auf das &#x201c;Profil&#x201d; des Nutzers zugeschnittene Werbung ausspielen."/>
 </node>
-<node CREATED="1515602082658" ID="ID_1007566117" MODIFIED="1515602082658" TEXT="Unterschied zu First Party Cookies">
+<node CREATED="1515602082658" FOLDED="true" ID="ID_1007566117" MODIFIED="1515663574972" TEXT="Unterschied zu First Party Cookies">
 <node CREATED="1515602101112" MODIFIED="1515602101112" TEXT="Das Wort &#x201c;Party&#x201d; in First/Third Party Cookies bezieht sich auf die Domain, von der der Cookie stammt. W&#xe4;hrend ein First Party Cookie in der Regel vom Websitebetreiber selbst stammt, lassen sich Third Party Cookies auf eine andere &#x2013; eben &#x201c;dritte&#x201d; &#x2013; Person zur&#xfc;ckf&#xfc;hren, die ihre Cookies auf einer anderen Seite platzieren."/>
 <node CREATED="1515602101123" MODIFIED="1515602101123" TEXT="Es ist also m&#xf6;glich, dass auf Ihrem Rechner nach dem Besuch einer Website sowohl Third Party Cookies als auch First Party Cookies gespeichert werden &#x2013; von der Seite selbst und von einer dritten Partei, die Werbung auf dieser Seite platziert hat. Bei einem First Party Cookie kann der Nutzer nur von der Seite wiedererkannt werden, von der der Cookie stammt, nicht aber &#xfc;ber mehrere Domains hinweg. Die Daten werden dadurch auch nicht an Dritte weitergegeben."/>
 <node CREATED="1515602101129" MODIFIED="1515602101129" TEXT="Third Party Cookies lassen sich technisch einfacher implementieren als First Party Cookies. Auf der Website, auf der die Cookies eingebunden werden sollen, muss kein Code hinterlegt werden. Es reicht die Werbeanzeige (Ad) vom AdServer des Drittanbieters."/>
 </node>
 </node>
+</node>
+<node CREATED="1515277338125" ID="ID_1555436814" MODIFIED="1515277343208" TEXT="Backend"/>
 <node CREATED="1515277360141" ID="ID_1455965189" MODIFIED="1515277374831" TEXT="Frameworks">
 <node CREATED="1515277387469" ID="ID_598934165" MODIFIED="1515279500825" TEXT="React">
 <node CREATED="1515277487524" FOLDED="true" ID="ID_1044908776" MODIFIED="1515323490525" TEXT="Quick Setup">
@@ -350,6 +385,7 @@
 <node CREATED="1515489665238" LINK="https://github.com/tc39/proposals/blob/master/stage-0-proposals.md" MODIFIED="1515489665238" TEXT="https://github.com/tc39/proposals/blob/master/stage-0-proposals.md"/>
 <node CREATED="1515489701885" LINK="https://github.com/tc39/proposals" MODIFIED="1515489701885" TEXT="https://github.com/tc39/proposals"/>
 <node CREATED="1515516706847" LINK="https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f" MODIFIED="1515516706847" TEXT="https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f"/>
+<node CREATED="1515663941756" LINK="https://www.frontendhandbook.com/learning/web-api.html" MODIFIED="1515663941756" TEXT="https://www.frontendhandbook.com/learning/web-api.html"/>
 </node>
 <node CREATED="1515329595139" ID="ID_1802213564" MODIFIED="1515329600881" POSITION="left" TEXT="Git"/>
 <node CREATED="1515574322932" ID="ID_228200571" MODIFIED="1515574327503" POSITION="right" TEXT="ide">
