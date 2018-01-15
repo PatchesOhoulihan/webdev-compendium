@@ -363,7 +363,82 @@
 <node TEXT="You can supply as many property values as you want and they will all be accessible through the props argument." ID="ID_1670237146" CREATED="1515325487379" MODIFIED="1515325487379"/>
 </node>
 </node>
-<node TEXT="Class Components" ID="ID_431738530" CREATED="1515324704374" MODIFIED="1515324704374"/>
+<node TEXT="Class Components" ID="ID_431738530" CREATED="1515324704374" MODIFIED="1515324704374">
+<node TEXT="React Component written using ES6 classes:" ID="ID_70457038" CREATED="1515879063236" MODIFIED="1515879063236">
+<node TEXT="class Welcome extends React.Component{" ID="ID_29134617" CREATED="1515879076453" MODIFIED="1515879076453">
+<node TEXT="render(){" ID="ID_415752648" CREATED="1515879076453" MODIFIED="1515879076453">
+<node TEXT="return &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_1372484474" CREATED="1515879076453" MODIFIED="1515879076453"/>
+</node>
+<node TEXT="}" ID="ID_1043613114" CREATED="1515879076453" MODIFIED="1515879076453"/>
+</node>
+<node TEXT="}" ID="ID_829287247" CREATED="1515879076453" MODIFIED="1515879076453"/>
+</node>
+<node TEXT="Both types of React Components can be used by writing their name within an HTML tag:" ID="ID_1776935775" CREATED="1515879135879" MODIFIED="1515879135879"/>
+<node TEXT="var element = &lt;Welcome/&gt;" ID="ID_1861296036" CREATED="1515879145222" MODIFIED="1515879145222"/>
+<node TEXT="Render()" ID="ID_1219147678" CREATED="1515879156393" MODIFIED="1515879156393">
+<node TEXT="The render() method of a class component is used to describe what kind of React Element is going to be returned from the Class Component. It the same as the return value of of a Functional Component." ID="ID_1522033561" CREATED="1515879174322" MODIFIED="1515879174322"/>
+</node>
+<node TEXT="For example, the following Class Component will render&lt;h1&gt;Hello World!&lt;/h1&gt;:" ID="ID_1117608389" CREATED="1515879251667" MODIFIED="1515879251667">
+<node TEXT="class Welcome extends React.Component{" ID="ID_1353156366" CREATED="1515879266577" MODIFIED="1515879266577">
+<node TEXT="render(){" ID="ID_1605490984" CREATED="1515879266577" MODIFIED="1515879266577">
+<node TEXT="return &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_1487047937" CREATED="1515879266577" MODIFIED="1515879266577"/>
+</node>
+<node TEXT="}" ID="ID_1731616395" CREATED="1515879266577" MODIFIED="1515879266577"/>
+</node>
+<node TEXT="}" ID="ID_810349135" CREATED="1515879266577" MODIFIED="1515879266577"/>
+<node TEXT="//renders &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_418532960" CREATED="1515879266579" MODIFIED="1515879266579"/>
+<node TEXT="ReactDOM.render(" ID="ID_482376762" CREATED="1515879266579" MODIFIED="1515879266579">
+<node TEXT="&lt;Welcome/&gt;," ID="ID_884671687" CREATED="1515879266580" MODIFIED="1515879266580"/>
+<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1401028124" CREATED="1515879266580" MODIFIED="1515879266580"/>
+</node>
+<node TEXT=")" ID="ID_675807814" CREATED="1515879266580" MODIFIED="1515879266580"/>
+</node>
+<node TEXT="Adding properties to Class Components" ID="ID_1028635582" CREATED="1515879309437" MODIFIED="1515879309437">
+<node TEXT="The properties of a Class Component can be accessed through the this.props attribute. This differs slightly from Functional Components where the properties were passed in as a variable." ID="ID_564479214" CREATED="1515879327661" MODIFIED="1515879327661"/>
+<node TEXT="class Welcome extends React.Component{" ID="ID_39220867" CREATED="1515879335707" MODIFIED="1515879335707">
+<node TEXT="render(){" ID="ID_121003569" CREATED="1515879335707" MODIFIED="1515879335707">
+<node TEXT="return &lt;h1&gt;Message: {this.props.message}&lt;/h1&gt;" ID="ID_567945574" CREATED="1515879335707" MODIFIED="1515879335707"/>
+</node>
+<node TEXT="}" ID="ID_924126852" CREATED="1515879335707" MODIFIED="1515879335707"/>
+</node>
+<node TEXT="}" ID="ID_723972820" CREATED="1515879335707" MODIFIED="1515879335707"/>
+<node TEXT="One thing to remember is that you have to do&#xa;this.props.message whereas before with functional&#xa;components you only had to do props.message." ID="ID_649959095" CREATED="1515879661556" MODIFIED="1515879701816"/>
+<node TEXT="You can supply property values the same way as you supply attribute values:" ID="ID_1852900005" CREATED="1515879368915" MODIFIED="1515879368915"/>
+<node TEXT="&lt;Welcome message=&quot;Hello World!&quot;/&gt;" ID="ID_1766462060" CREATED="1515879380366" MODIFIED="1515879380366"/>
+</node>
+<node TEXT="State" ID="ID_1295697909" CREATED="1515879759661" MODIFIED="1515879759661">
+<node TEXT="Constructor(props)" ID="ID_335723466" CREATED="1515879769945" MODIFIED="1515879769945">
+<node TEXT="The constructor() method is called before a React Component is mounted and is used to set up the initial state of the component. It is important to call super(props) at the beginning of the constructor() method or else the this.props attribute may not work correctly. The first argument to the constructor() method represents the properties that are passed into the component." ID="ID_894663105" CREATED="1515879806576" MODIFIED="1515879806576"/>
+<node TEXT="class Counter extends React.Component{" ID="ID_1272602543" CREATED="1515879818551" MODIFIED="1515879818551">
+<node TEXT="constructor(props){" ID="ID_1791420376" CREATED="1515879818551" MODIFIED="1515879818551">
+<node TEXT="super(props)" ID="ID_513457337" CREATED="1515879818551" MODIFIED="1515879818551"/>
+</node>
+<node TEXT="}" ID="ID_973360369" CREATED="1515879818551" MODIFIED="1515879818551"/>
+<node TEXT="render(){" ID="ID_1557206752" CREATED="1515879818551" MODIFIED="1515879818551">
+<node TEXT="return &lt;div&gt;Hello World!&lt;/div&gt;" ID="ID_559797820" CREATED="1515879818551" MODIFIED="1515879818551"/>
+</node>
+<node TEXT="}" ID="ID_121888983" CREATED="1515879818551" MODIFIED="1515879818551"/>
+</node>
+<node TEXT="}" ID="ID_1769567617" CREATED="1515879818551" MODIFIED="1515879818551"/>
+</node>
+<node TEXT="Adding an initial state to Class Components" ID="ID_527835818" CREATED="1515879858391" MODIFIED="1515879858391">
+<node TEXT="The initial state of a Class Component can be declared within the constructor() method. The state of the component must be declared as an object with attributes." ID="ID_165302919" CREATED="1515879874760" MODIFIED="1515879874760"/>
+<node TEXT="class Counter extends React.Component{" ID="ID_189500058" CREATED="1515879882686" MODIFIED="1515879882686">
+<node TEXT="constructor(props){" ID="ID_1669954511" CREATED="1515879882686" MODIFIED="1515879882686">
+<node TEXT="super(props)" ID="ID_162641599" CREATED="1515879882686" MODIFIED="1515879882686"/>
+<node TEXT="this.state = {foo:123,bar:456}" ID="ID_1638642828" CREATED="1515879882686" MODIFIED="1515879882686"/>
+</node>
+<node TEXT="}" ID="ID_76919474" CREATED="1515879882686" MODIFIED="1515879882686"/>
+<node TEXT="render(){" ID="ID_1521251262" CREATED="1515879882686" MODIFIED="1515879882686">
+<node TEXT="return &lt;div&gt;foo:{this.state.foo} bar:{this.state.bar}&lt;/div&gt;" ID="ID_1486053429" CREATED="1515879882686" MODIFIED="1515879882686"/>
+</node>
+<node TEXT="}" ID="ID_1174648389" CREATED="1515879882686" MODIFIED="1515879882686"/>
+</node>
+<node TEXT="}" ID="ID_125179983" CREATED="1515879882686" MODIFIED="1515879882686"/>
+</node>
+<node TEXT="Updating state" ID="ID_1287755734" CREATED="1515879903594" MODIFIED="1515879903594"/>
+</node>
+</node>
 <node TEXT="Class Components have state, lifecycle methods, and properties while Functional Components only have properties." ID="ID_672872935" CREATED="1515324748878" MODIFIED="1515324748878"/>
 </node>
 <node TEXT="Composition" ID="ID_1151151320" CREATED="1515327763909" MODIFIED="1515327763909">
