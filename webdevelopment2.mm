@@ -84,7 +84,44 @@
 <node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_197136901" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
 </node>
 </node>
-<node TEXT="Script loading" ID="ID_1553703001" CREATED="1516609394783" MODIFIED="1516609408784"/>
+<node TEXT="Script loading" ID="ID_1553703001" CREATED="1516609394783" MODIFIED="1516609408784">
+<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_1823919613" CREATED="1516984940332" MODIFIED="1516984940332"/>
+<node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_1482801285" CREATED="1516984983930" MODIFIED="1516984983930"/>
+<node TEXT="Normal Execution" ID="ID_541635745" CREATED="1516985020242" MODIFIED="1516985020242">
+<node TEXT="By default, as mentioned above, JavaScript files will interrupt the parsing of the HTML document in order for them to be fetched (if not inline) and executed." ID="ID_1875232854" CREATED="1516985216297" MODIFIED="1516985216297"/>
+<node TEXT="png_4560996669286614596.png" ID="ID_1987718634" CREATED="1516985243566" MODIFIED="1516985243566">
+<hook URI="webdevelopment2_files/png_4560996669286614596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The async Attribute" ID="ID_717975684" CREATED="1516985060860" MODIFIED="1516985060860">
+<node TEXT="The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing." ID="ID_147391472" CREATED="1516985285531" MODIFIED="1516985285531"/>
+<node TEXT="png_3735681454245946596.png" ID="ID_162902154" CREATED="1516985313949" MODIFIED="1516985313949">
+<hook URI="webdevelopment2_files/png_3735681454245946596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The defer Attribute" ID="ID_309486250" CREATED="1516985092756" MODIFIED="1516985092756">
+<node TEXT="The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed." ID="ID_94439810" CREATED="1516985347377" MODIFIED="1516985347377"/>
+<node TEXT="Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete." ID="ID_1183234816" CREATED="1516985370690" MODIFIED="1516985370690"/>
+<node TEXT="png_5617417546364053301.png" ID="ID_806155600" CREATED="1516985454109" MODIFIED="1516985454109">
+<hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="Asynchronous, Deferred or Normal Execution?" ID="ID_650276799" CREATED="1516985126147" MODIFIED="1516985126147">
+<node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_395601444" CREATED="1516985477168" MODIFIED="1516985477168"/>
+<node TEXT="Where is the &lt;script&gt; element located?" ID="ID_1622169972" CREATED="1516985499149" MODIFIED="1516985499149">
+<node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_1180673156" CREATED="1516985616958" MODIFIED="1516985616958"/>
+</node>
+<node TEXT="Is the script self-contained?" ID="ID_328537986" CREATED="1516985520906" MODIFIED="1516985520906">
+<node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_638203206" CREATED="1516985643385" MODIFIED="1516985643385"/>
+</node>
+<node TEXT="Does the script rely on a fully parsed DOM?" ID="ID_372429636" CREATED="1516985549473" MODIFIED="1516985549473">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_232630611" CREATED="1516985661161" MODIFIED="1516985661161"/>
+</node>
+<node TEXT="Is the script a (small) dependency?" ID="ID_343577655" CREATED="1516985571593" MODIFIED="1516985571593">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_1083147253" CREATED="1516985712536" MODIFIED="1516985712536"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="no script tag" FOLDED="true" ID="ID_121909318" CREATED="1515602570705" MODIFIED="1515602584248">
 <node TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script." ID="ID_216128511" CREATED="1515602635348" MODIFIED="1515602635348"/>
@@ -155,11 +192,36 @@
 <node TEXT="When a browser receives the HTML response for a page from the server, there are a lot of steps to be taken before pixels are drawn on the screen. This sequence the browsers needs to run through for the initial paint of the page is called the &quot;Critical Rendering Path&quot;. this includes 6 steps" ID="ID_1112849103" CREATED="1516872683995" MODIFIED="1516872977686"/>
 <node TEXT="Constructing the DOM Tree" ID="ID_771777683" CREATED="1516872728612" MODIFIED="1516872835497">
 <node TEXT="The DOM (Document Object Model) Tree is an Object representation of the fully parsed HTML page. Starting with the root element, &lt;html&gt;, nodes are created for each element/text on the page. Elements nested within other elements are represented as child nodes and each node contains the full attributes for that element. For example, an &lt;a&gt; element will have the href attribute associated with it&#x2019;s node." ID="ID_728957923" CREATED="1516887642664" MODIFIED="1516887642664"/>
+<node TEXT="A good thing about HTML is that it can be executed in parts. The full document doesn&apos;t have to be loaded for content to start appearing on the page. However, other resources, CSS and JavaScript, can block the render of the page." ID="ID_916688323" CREATED="1516983036345" MODIFIED="1516983036345"/>
 </node>
-<node TEXT="Constructing the CSSOM Tree" ID="ID_430741044" CREATED="1516872748187" MODIFIED="1516872846742"/>
-<node TEXT="Running JavaScript" ID="ID_1164211512" CREATED="1516872794757" MODIFIED="1516872794757"/>
-<node TEXT="Generating the Layout" ID="ID_1334468117" CREATED="1516872873744" MODIFIED="1516872873744"/>
-<node TEXT="Painting" ID="ID_1713412525" CREATED="1516872897910" MODIFIED="1516872926233"/>
+<node TEXT="Constructing the CSSOM Tree" ID="ID_430741044" CREATED="1516872748187" MODIFIED="1516872846742">
+<node TEXT="The CSSOM (CSS Object Model) is an Object representation of the styles associated with the DOM. It is represented in a similar way to the DOM, but with the associated styles for each node, whether they explicitly declared or implicitly inherited, included. In the style.css file from the document mentioned above, we have the folowing styles -" ID="ID_1128680039" CREATED="1516983134326" MODIFIED="1516983134326"/>
+<node TEXT="CSS is considered a &quot;render blocking resource&quot;. This means that the Render Tree (see below) cannot be constructed without first fully parsing the resource. Unlike HTML, CSS cannot be used in parts because of its inherit cascading nature. Styles defined later in the document can override and change styles that were previously defined. This means that CSS must be fully parsed before we can move on to the next stage." ID="ID_856909644" CREATED="1516983220780" MODIFIED="1516983360742"/>
+<node TEXT="CSS files are only considered render blocking if they apply to the current device. The &lt;link rel=&quot;stylesheet&quot;&gt; tag can accept a media attribute, in which we can specify any media query which the styles within apply to. If, for example, we have a stylesheet with a media attribute of orientation:landscape, and we are viewing the page in portrait mode, that resource will not be considered render blocking." ID="ID_1842791749" CREATED="1516983282131" MODIFIED="1516983282131"/>
+<node TEXT="CSS can also be &quot;script blocking&quot;. This is because JavaScript files must wait until the CSSOM has been constructed before it can run." ID="ID_1059854394" CREATED="1516983315123" MODIFIED="1516983315123"/>
+</node>
+<node TEXT="Running JavaScript" ID="ID_1164211512" CREATED="1516872794757" MODIFIED="1516872794757">
+<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript." ID="ID_757640489" CREATED="1516983535081" MODIFIED="1516983535081"/>
+<node TEXT="When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it. This why, if we have a JavaScript file that references elements within the document, it must be placed after the appearance of that document." ID="ID_581676260" CREATED="1516983609337" MODIFIED="1516983609337"/>
+<node TEXT="To avoid JavaScript being parser blocking, it can be loaded asynchronously be applying the async attribute." ID="ID_1094428563" CREATED="1516983682056" MODIFIED="1516983682056"/>
+</node>
+<node TEXT="Creating the Rendering Tree" ID="ID_1794295488" CREATED="1516983830758" MODIFIED="1516983846695">
+<node TEXT="The Render Tree is a combination of both the DOM and CSSOM. It is a Tree that represents what will be eventually rendered on the page. This means that it only captures the visible content and will not include, for example, elements that have been hidden with CSS using display: none." ID="ID_584899773" CREATED="1516983863810" MODIFIED="1516983863810"/>
+</node>
+<node TEXT="Generating the Layout" ID="ID_1334468117" CREATED="1516872873744" MODIFIED="1516872873744">
+<node TEXT="The Layout is what determines what the size of the viewport is, which provides context for CSS styles that are dependent on it, e.g. percentage or viewport units. The viewport size is determined by the meta viewport tag provided in the document head or, if no tag is provided, the default viewport width of 980px is used." ID="ID_815379728" CREATED="1516983934600" MODIFIED="1516983934600"/>
+<node TEXT="For example, the most common meta viewport value is to set the viewport size to correspond to the device width -" ID="ID_1724393420" CREATED="1516983963671" MODIFIED="1516983963671"/>
+<node TEXT="&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;" ID="ID_1634446684" CREATED="1516984027457" MODIFIED="1516984027457"/>
+<node TEXT="If the user visits the webpage on a device with a width of, for example, 1000px, then sizes will be based on that unit. Half the viewport will be 500px, 10vw will be 100px, and so on." ID="ID_658413742" CREATED="1516984072865" MODIFIED="1516984072865"/>
+</node>
+<node TEXT="Painting" ID="ID_1713412525" CREATED="1516872897910" MODIFIED="1516872926233">
+<node TEXT="Finally, in the Painting step, the visible content of the page can be converted to pixels to be displayed on the screen." ID="ID_1019783291" CREATED="1516984129430" MODIFIED="1516984129430"/>
+<node TEXT="How much time the paint step takes depends on the size of the DOM, as well as what styles are applied. Some styles require more work to execute than others. For example, a complicated gradient background-image will require more time than a simple solid background colour." ID="ID_1917224877" CREATED="1516984175519" MODIFIED="1516984175519"/>
+</node>
+<node TEXT="To see the Critical Rendering Path in process, we can inspect it in DevTools. In Chrome, it is under the Performance tab." ID="ID_761408470" CREATED="1516984221277" MODIFIED="1516984286253"/>
+<node TEXT="png_5868046861603241277.png" ID="ID_126447519" CREATED="1516982981163" MODIFIED="1516982981163">
+<hook URI="webdevelopment2_files/png_5868046861603241277.png" SIZE="0.80862534" NAME="ExternalObject"/>
+</node>
 </node>
 </node>
 <node TEXT="Backend" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1515277343208">
@@ -1199,6 +1261,7 @@
 <node TEXT="https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html" ID="ID_1161989762" CREATED="1516182767397" MODIFIED="1516182767397" LINK="https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html"/>
 <node TEXT="http://browserbench.org/" ID="ID_1907237727" CREATED="1516203217601" MODIFIED="1516203217601" LINK="http://browserbench.org/"/>
 <node TEXT="http://loremricksum.com" ID="ID_137981762" CREATED="1516207717227" MODIFIED="1516207717227" LINK="http://loremricksum.com"/>
+<node TEXT="https://bitsofco.de/rules-for-using-aria-in-html/" ID="ID_1244914068" CREATED="1516984359518" MODIFIED="1516984359518" LINK="https://bitsofco.de/rules-for-using-aria-in-html/"/>
 </node>
 <node TEXT="Git" POSITION="left" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1516057170749">
 <edge COLOR="#00ffff"/>
