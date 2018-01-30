@@ -1,6 +1,6 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1516056879450"><hook NAME="MapStyle">
+<node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1517302974053"><hook NAME="MapStyle">
     <properties fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
@@ -54,8 +54,73 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="11" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1516056884094">
+<hook NAME="AutomaticEdgeColor" COUNTER="22" RULE="ON_BRANCH_CREATION"/>
+<node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
+<edge COLOR="#808080"/>
+<node TEXT="script-tag" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1515602554373">
+<node TEXT="type attribute" FOLDED="true" ID="ID_54630004" CREATED="1515280774637" MODIFIED="1515323493853">
+<node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_822896220" CREATED="1515280767645" MODIFIED="1515280767645"/>
+<node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_1435470214" CREATED="1515280820009" MODIFIED="1515280820009"/>
+<node TEXT="The media type consists of two parts: one media type and one subtype. For JavaScript, the media type is &quot;application/javascript&quot;." ID="ID_1360603924" CREATED="1515280830494" MODIFIED="1515280830494"/>
+<node TEXT="In HTML5, the type attribute is no longer required for JavaScript. The default value is &quot;application/javascript&quot;" ID="ID_1025962809" CREATED="1515280860764" MODIFIED="1515280860764"/>
+<node TEXT="Look at IANA Media Types for a complete list of standard media types." ID="ID_1537482134" CREATED="1515280934166" MODIFIED="1515280934166">
+<node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_69166597" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
+</node>
+</node>
+<node TEXT="Script loading" FOLDED="true" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
+<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_265022695" CREATED="1516984940332" MODIFIED="1516984940332"/>
+<node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_315975822" CREATED="1516984983930" MODIFIED="1516984983930"/>
+<node TEXT="Normal Execution" FOLDED="true" ID="ID_1254489477" CREATED="1516985020242" MODIFIED="1516985020242">
+<node TEXT="By default, as mentioned above, JavaScript files will interrupt the parsing of the HTML document in order for them to be fetched (if not inline) and executed." ID="ID_279626051" CREATED="1516985216297" MODIFIED="1516985216297"/>
+<node TEXT="png_4560996669286614596.png" ID="ID_145390713" CREATED="1516985243566" MODIFIED="1516985243566">
+<hook URI="webdevelopment2_files/png_4560996669286614596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The async Attribute" FOLDED="true" ID="ID_958611319" CREATED="1516985060860" MODIFIED="1516985060860">
+<node TEXT="The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing." ID="ID_1935634717" CREATED="1516985285531" MODIFIED="1516985285531"/>
+<node TEXT="png_3735681454245946596.png" ID="ID_1054709993" CREATED="1516985313949" MODIFIED="1516985313949">
+<hook URI="webdevelopment2_files/png_3735681454245946596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The defer Attribute" FOLDED="true" ID="ID_1554828275" CREATED="1516985092756" MODIFIED="1516985092756">
+<node TEXT="The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed." ID="ID_726303402" CREATED="1516985347377" MODIFIED="1516985347377"/>
+<node TEXT="Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete." ID="ID_1039666429" CREATED="1516985370690" MODIFIED="1516985370690"/>
+<node TEXT="png_5617417546364053301.png" ID="ID_1774527159" CREATED="1516985454109" MODIFIED="1516985454109">
+<hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="Asynchronous, Deferred or Normal Execution?" FOLDED="true" ID="ID_999485238" CREATED="1516985126147" MODIFIED="1516985126147">
+<node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_611885800" CREATED="1516985477168" MODIFIED="1516985477168"/>
+<node TEXT="Where is the &lt;script&gt; element located?" FOLDED="true" ID="ID_1341810870" CREATED="1516985499149" MODIFIED="1516985499149">
+<node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_94923227" CREATED="1516985616958" MODIFIED="1516985616958"/>
+</node>
+<node TEXT="Is the script self-contained?" FOLDED="true" ID="ID_966997468" CREATED="1516985520906" MODIFIED="1516985520906">
+<node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_973984847" CREATED="1516985643385" MODIFIED="1516985643385"/>
+</node>
+<node TEXT="Does the script rely on a fully parsed DOM?" FOLDED="true" ID="ID_354214330" CREATED="1516985549473" MODIFIED="1516985549473">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_1748054035" CREATED="1516985661161" MODIFIED="1516985661161"/>
+</node>
+<node TEXT="Is the script a (small) dependency?" FOLDED="true" ID="ID_38917621" CREATED="1516985571593" MODIFIED="1516985571593">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_925375247" CREATED="1516985712536" MODIFIED="1516985712536"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="no script tag" FOLDED="true" ID="ID_1007443193" CREATED="1515602570705" MODIFIED="1515602584248">
+<node TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script." ID="ID_744019650" CREATED="1515602635348" MODIFIED="1515602635348"/>
+<node TEXT="The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;." ID="ID_407610190" CREATED="1515602635351" MODIFIED="1515602635351"/>
+<node TEXT="When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements." ID="ID_1640681790" CREATED="1515602635351" MODIFIED="1515602635351"/>
+<node TEXT="The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser." ID="ID_380978871" CREATED="1515602635352" MODIFIED="1515602635352"/>
+<node TEXT="Differences Between HTML 4.01 and HTML5" FOLDED="true" ID="ID_663837180" CREATED="1515602673887" MODIFIED="1515602676907">
+<node TEXT="In HTML 4.01, the &lt;noscript&gt; tag can only be used inside the &lt;body&gt; element." ID="ID_1191245985" CREATED="1515602688236" MODIFIED="1515602688236"/>
+<node TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;." ID="ID_369635316" CREATED="1515602688237" MODIFIED="1515602688237"/>
+</node>
+</node>
+</node>
+<node TEXT="CSS" POSITION="right" ID="ID_1074147252" CREATED="1517302830445" MODIFIED="1517302949019" HGAP_QUANTITY="26.7499996200204 pt" VSHIFT_QUANTITY="-48.749998547136826 pt">
+<edge COLOR="#808080"/>
+</node>
+<node TEXT="Javascript" FOLDED="true" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1517302957243" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
 <node TEXT="Vanilla-core" FOLDED="true" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1515282081165">
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
@@ -73,66 +138,7 @@
 <node TEXT="The above code says, give me a variable called first, a variable called last, and take it from the person object. We&#x2019;re taking the first property and the last property and putting them into two new variables that will be scoped to the parent block (or window!)." ID="ID_592499181" CREATED="1515412133129" MODIFIED="1515412133129"/>
 </node>
 </node>
-<node TEXT="Frontend" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
-<node TEXT="script-tag" ID="ID_92475443" CREATED="1515280692862" MODIFIED="1515602554373">
-<node TEXT="type attribute" ID="ID_811940011" CREATED="1515280774637" MODIFIED="1515323493853">
-<node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_208007989" CREATED="1515280767645" MODIFIED="1515280767645"/>
-<node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_811925062" CREATED="1515280820009" MODIFIED="1515280820009"/>
-<node TEXT="The media type consists of two parts: one media type and one subtype. For JavaScript, the media type is &quot;application/javascript&quot;." ID="ID_1433869857" CREATED="1515280830494" MODIFIED="1515280830494"/>
-<node TEXT="In HTML5, the type attribute is no longer required for JavaScript. The default value is &quot;application/javascript&quot;" ID="ID_1094720363" CREATED="1515280860764" MODIFIED="1515280860764"/>
-<node TEXT="Look at IANA Media Types for a complete list of standard media types." ID="ID_1732552129" CREATED="1515280934166" MODIFIED="1515280934166">
-<node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_197136901" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
-</node>
-</node>
-<node TEXT="Script loading" ID="ID_1553703001" CREATED="1516609394783" MODIFIED="1516609408784">
-<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_1823919613" CREATED="1516984940332" MODIFIED="1516984940332"/>
-<node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_1482801285" CREATED="1516984983930" MODIFIED="1516984983930"/>
-<node TEXT="Normal Execution" ID="ID_541635745" CREATED="1516985020242" MODIFIED="1516985020242">
-<node TEXT="By default, as mentioned above, JavaScript files will interrupt the parsing of the HTML document in order for them to be fetched (if not inline) and executed." ID="ID_1875232854" CREATED="1516985216297" MODIFIED="1516985216297"/>
-<node TEXT="png_4560996669286614596.png" ID="ID_1987718634" CREATED="1516985243566" MODIFIED="1516985243566">
-<hook URI="webdevelopment2_files/png_4560996669286614596.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="The async Attribute" ID="ID_717975684" CREATED="1516985060860" MODIFIED="1516985060860">
-<node TEXT="The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing." ID="ID_147391472" CREATED="1516985285531" MODIFIED="1516985285531"/>
-<node TEXT="png_3735681454245946596.png" ID="ID_162902154" CREATED="1516985313949" MODIFIED="1516985313949">
-<hook URI="webdevelopment2_files/png_3735681454245946596.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="The defer Attribute" ID="ID_309486250" CREATED="1516985092756" MODIFIED="1516985092756">
-<node TEXT="The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed." ID="ID_94439810" CREATED="1516985347377" MODIFIED="1516985347377"/>
-<node TEXT="Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete." ID="ID_1183234816" CREATED="1516985370690" MODIFIED="1516985370690"/>
-<node TEXT="png_5617417546364053301.png" ID="ID_806155600" CREATED="1516985454109" MODIFIED="1516985454109">
-<hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="Asynchronous, Deferred or Normal Execution?" ID="ID_650276799" CREATED="1516985126147" MODIFIED="1516985126147">
-<node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_395601444" CREATED="1516985477168" MODIFIED="1516985477168"/>
-<node TEXT="Where is the &lt;script&gt; element located?" ID="ID_1622169972" CREATED="1516985499149" MODIFIED="1516985499149">
-<node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_1180673156" CREATED="1516985616958" MODIFIED="1516985616958"/>
-</node>
-<node TEXT="Is the script self-contained?" ID="ID_328537986" CREATED="1516985520906" MODIFIED="1516985520906">
-<node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_638203206" CREATED="1516985643385" MODIFIED="1516985643385"/>
-</node>
-<node TEXT="Does the script rely on a fully parsed DOM?" ID="ID_372429636" CREATED="1516985549473" MODIFIED="1516985549473">
-<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_232630611" CREATED="1516985661161" MODIFIED="1516985661161"/>
-</node>
-<node TEXT="Is the script a (small) dependency?" ID="ID_343577655" CREATED="1516985571593" MODIFIED="1516985571593">
-<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_1083147253" CREATED="1516985712536" MODIFIED="1516985712536"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="no script tag" FOLDED="true" ID="ID_121909318" CREATED="1515602570705" MODIFIED="1515602584248">
-<node TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script." ID="ID_216128511" CREATED="1515602635348" MODIFIED="1515602635348"/>
-<node TEXT="The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;." ID="ID_591071945" CREATED="1515602635351" MODIFIED="1515602635351"/>
-<node TEXT="When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements." ID="ID_33343833" CREATED="1515602635351" MODIFIED="1515602635351"/>
-<node TEXT="The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser." ID="ID_1431613321" CREATED="1515602635352" MODIFIED="1515602635352"/>
-<node TEXT="Differences Between HTML 4.01 and HTML5" FOLDED="true" ID="ID_451599228" CREATED="1515602673887" MODIFIED="1515602676907">
-<node TEXT="In HTML 4.01, the &lt;noscript&gt; tag can only be used inside the &lt;body&gt; element." ID="ID_1642553980" CREATED="1515602688236" MODIFIED="1515602688236"/>
-<node TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;." ID="ID_442671999" CREATED="1515602688237" MODIFIED="1515602688237"/>
-</node>
-</node>
+<node TEXT="Frontend" FOLDED="true" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
 <node TEXT="Dom Api" FOLDED="true" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1515661309146">
 <node TEXT="window" FOLDED="true" ID="ID_204988221" CREATED="1515661318220" MODIFIED="1515661328016">
 <node TEXT="document" FOLDED="true" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1515591341976">
@@ -188,33 +194,33 @@
 <node TEXT="Third Party Cookies lassen sich technisch einfacher implementieren als First Party Cookies. Auf der Website, auf der die Cookies eingebunden werden sollen, muss kein Code hinterlegt werden. Es reicht die Werbeanzeige (Ad) vom AdServer des Drittanbieters." ID="ID_1924401888" CREATED="1515602101129" MODIFIED="1515602101129"/>
 </node>
 </node>
-<node TEXT="Critical Rendering Path" ID="ID_518386952" CREATED="1516872631933" MODIFIED="1516872631933">
+<node TEXT="Critical Rendering Path" FOLDED="true" ID="ID_518386952" CREATED="1516872631933" MODIFIED="1516872631933">
 <node TEXT="When a browser receives the HTML response for a page from the server, there are a lot of steps to be taken before pixels are drawn on the screen. This sequence the browsers needs to run through for the initial paint of the page is called the &quot;Critical Rendering Path&quot;. this includes 6 steps" ID="ID_1112849103" CREATED="1516872683995" MODIFIED="1516872977686"/>
-<node TEXT="Constructing the DOM Tree" ID="ID_771777683" CREATED="1516872728612" MODIFIED="1516872835497">
+<node TEXT="Constructing the DOM Tree" FOLDED="true" ID="ID_771777683" CREATED="1516872728612" MODIFIED="1516872835497">
 <node TEXT="The DOM (Document Object Model) Tree is an Object representation of the fully parsed HTML page. Starting with the root element, &lt;html&gt;, nodes are created for each element/text on the page. Elements nested within other elements are represented as child nodes and each node contains the full attributes for that element. For example, an &lt;a&gt; element will have the href attribute associated with it&#x2019;s node." ID="ID_728957923" CREATED="1516887642664" MODIFIED="1516887642664"/>
 <node TEXT="A good thing about HTML is that it can be executed in parts. The full document doesn&apos;t have to be loaded for content to start appearing on the page. However, other resources, CSS and JavaScript, can block the render of the page." ID="ID_916688323" CREATED="1516983036345" MODIFIED="1516983036345"/>
 </node>
-<node TEXT="Constructing the CSSOM Tree" ID="ID_430741044" CREATED="1516872748187" MODIFIED="1516872846742">
+<node TEXT="Constructing the CSSOM Tree" FOLDED="true" ID="ID_430741044" CREATED="1516872748187" MODIFIED="1516872846742">
 <node TEXT="The CSSOM (CSS Object Model) is an Object representation of the styles associated with the DOM. It is represented in a similar way to the DOM, but with the associated styles for each node, whether they explicitly declared or implicitly inherited, included. In the style.css file from the document mentioned above, we have the folowing styles -" ID="ID_1128680039" CREATED="1516983134326" MODIFIED="1516983134326"/>
 <node TEXT="CSS is considered a &quot;render blocking resource&quot;. This means that the Render Tree (see below) cannot be constructed without first fully parsing the resource. Unlike HTML, CSS cannot be used in parts because of its inherit cascading nature. Styles defined later in the document can override and change styles that were previously defined. This means that CSS must be fully parsed before we can move on to the next stage." ID="ID_856909644" CREATED="1516983220780" MODIFIED="1516983360742"/>
 <node TEXT="CSS files are only considered render blocking if they apply to the current device. The &lt;link rel=&quot;stylesheet&quot;&gt; tag can accept a media attribute, in which we can specify any media query which the styles within apply to. If, for example, we have a stylesheet with a media attribute of orientation:landscape, and we are viewing the page in portrait mode, that resource will not be considered render blocking." ID="ID_1842791749" CREATED="1516983282131" MODIFIED="1516983282131"/>
 <node TEXT="CSS can also be &quot;script blocking&quot;. This is because JavaScript files must wait until the CSSOM has been constructed before it can run." ID="ID_1059854394" CREATED="1516983315123" MODIFIED="1516983315123"/>
 </node>
-<node TEXT="Running JavaScript" ID="ID_1164211512" CREATED="1516872794757" MODIFIED="1516872794757">
+<node TEXT="Running JavaScript" FOLDED="true" ID="ID_1164211512" CREATED="1516872794757" MODIFIED="1516872794757">
 <node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript." ID="ID_757640489" CREATED="1516983535081" MODIFIED="1516983535081"/>
 <node TEXT="When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it. This why, if we have a JavaScript file that references elements within the document, it must be placed after the appearance of that document." ID="ID_581676260" CREATED="1516983609337" MODIFIED="1516983609337"/>
 <node TEXT="To avoid JavaScript being parser blocking, it can be loaded asynchronously be applying the async attribute." ID="ID_1094428563" CREATED="1516983682056" MODIFIED="1516983682056"/>
 </node>
-<node TEXT="Creating the Rendering Tree" ID="ID_1794295488" CREATED="1516983830758" MODIFIED="1516983846695">
+<node TEXT="Creating the Rendering Tree" FOLDED="true" ID="ID_1794295488" CREATED="1516983830758" MODIFIED="1516983846695">
 <node TEXT="The Render Tree is a combination of both the DOM and CSSOM. It is a Tree that represents what will be eventually rendered on the page. This means that it only captures the visible content and will not include, for example, elements that have been hidden with CSS using display: none." ID="ID_584899773" CREATED="1516983863810" MODIFIED="1516983863810"/>
 </node>
-<node TEXT="Generating the Layout" ID="ID_1334468117" CREATED="1516872873744" MODIFIED="1516872873744">
+<node TEXT="Generating the Layout" FOLDED="true" ID="ID_1334468117" CREATED="1516872873744" MODIFIED="1516872873744">
 <node TEXT="The Layout is what determines what the size of the viewport is, which provides context for CSS styles that are dependent on it, e.g. percentage or viewport units. The viewport size is determined by the meta viewport tag provided in the document head or, if no tag is provided, the default viewport width of 980px is used." ID="ID_815379728" CREATED="1516983934600" MODIFIED="1516983934600"/>
 <node TEXT="For example, the most common meta viewport value is to set the viewport size to correspond to the device width -" ID="ID_1724393420" CREATED="1516983963671" MODIFIED="1516983963671"/>
 <node TEXT="&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;" ID="ID_1634446684" CREATED="1516984027457" MODIFIED="1516984027457"/>
 <node TEXT="If the user visits the webpage on a device with a width of, for example, 1000px, then sizes will be based on that unit. Half the viewport will be 500px, 10vw will be 100px, and so on." ID="ID_658413742" CREATED="1516984072865" MODIFIED="1516984072865"/>
 </node>
-<node TEXT="Painting" ID="ID_1713412525" CREATED="1516872897910" MODIFIED="1516872926233">
+<node TEXT="Painting" FOLDED="true" ID="ID_1713412525" CREATED="1516872897910" MODIFIED="1516872926233">
 <node TEXT="Finally, in the Painting step, the visible content of the page can be converted to pixels to be displayed on the screen." ID="ID_1019783291" CREATED="1516984129430" MODIFIED="1516984129430"/>
 <node TEXT="How much time the paint step takes depends on the size of the DOM, as well as what styles are applied. Some styles require more work to execute than others. For example, a complicated gradient background-image will require more time than a simple solid background colour." ID="ID_1917224877" CREATED="1516984175519" MODIFIED="1516984175519"/>
 </node>
@@ -224,8 +230,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Backend" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1515277343208">
-<node TEXT="npm" ID="ID_647511561" CREATED="1516023069009" MODIFIED="1516023111358" LINK="https://www.google.de/url?sa=i&amp;rct=j&amp;q=&amp;esrc=s&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiPlL-yiNrYAhXIIOwKHRIYDEcQjhwIBQ&amp;url=https%3A%2F%2Fshop.tcgplayer.com%2Fmagic%2Fmirage%2Fcatacomb-dragon&amp;psig=AOvVaw36v1uHftSs-BeO3TpHgJnI&amp;ust=1516109029133545">
+<node TEXT="Backend" FOLDED="true" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1515277343208">
+<node TEXT="npm" FOLDED="true" ID="ID_647511561" CREATED="1516023069009" MODIFIED="1516023111358" LINK="https://www.google.de/url?sa=i&amp;rct=j&amp;q=&amp;esrc=s&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiPlL-yiNrYAhXIIOwKHRIYDEcQjhwIBQ&amp;url=https%3A%2F%2Fshop.tcgplayer.com%2Fmagic%2Fmirage%2Fcatacomb-dragon&amp;psig=AOvVaw36v1uHftSs-BeO3TpHgJnI&amp;ust=1516109029133545">
 <node TEXT="Intro" FOLDED="true" ID="ID_1875273331" CREATED="1516555844183" MODIFIED="1516555850799">
 <node TEXT="NPM is an acronym for Node.js Package Manager" ID="ID_1420772470" CREATED="1516480940094" MODIFIED="1516480949054"/>
 <node TEXT="NPM is the package manager for Node.js" ID="ID_194845935" CREATED="1516555875523" MODIFIED="1516555875523"/>
@@ -408,7 +414,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Versioning" ID="ID_76464107" CREATED="1516550625595" MODIFIED="1516550625595">
+<node TEXT="Versioning" FOLDED="true" ID="ID_76464107" CREATED="1516550625595" MODIFIED="1516550625595">
 <node TEXT="Basics" FOLDED="true" ID="ID_1022357353" CREATED="1516550861609" MODIFIED="1516550867305">
 <node TEXT="NPM packages use the semver versioning system" ID="ID_1736386308" CREATED="1516550639463" MODIFIED="1516550639463"/>
 <node TEXT="Following the &quot;spirit&quot; of semver is the responsibility of the developer, and developers are greatly encouraged to do so" ID="ID_380712573" CREATED="1516550761324" MODIFIED="1516550761324"/>
@@ -424,17 +430,17 @@
 <node TEXT="Changes which are not backward compatible should be released as a major version increment" ID="ID_989303525" CREATED="1516551262295" MODIFIED="1516551262295"/>
 <node TEXT="More: https://docs.npmjs.com/getting-started/semantic-versioning" ID="ID_815320711" CREATED="1516551310149" MODIFIED="1516551310149" LINK="https://docs.npmjs.com/getting-started/semantic-versioning"/>
 </node>
-<node TEXT="Package Dependency Version Number" ID="ID_1021566204" CREATED="1516551354095" MODIFIED="1516551354095">
+<node TEXT="Package Dependency Version Number" FOLDED="true" ID="ID_1021566204" CREATED="1516551354095" MODIFIED="1516551354095">
 <node TEXT="When installing and saving package dependencies, the version of the package is saved in the package.json file" ID="ID_786872170" CREATED="1516551671711" MODIFIED="1516551671711"/>
 <node TEXT="Semver provides various patterns to determine what version of a package will satisfy the dependency requirement" ID="ID_1672580605" CREATED="1516551716323" MODIFIED="1516551716323"/>
 <node TEXT="In the Package json the default version number scheme indicates that all versions up to, but not including, the next major version can be installed to meet the package dependency requirement" ID="ID_1540150174" CREATED="1516551775595" MODIFIED="1516551818499"/>
-<node TEXT="Patch, Minor &amp; Major Increments" ID="ID_1283442643" CREATED="1516551850746" MODIFIED="1516551850746">
-<node TEXT="Patch increments up to but not including the next minor version:" ID="ID_582844392" CREATED="1516551922701" MODIFIED="1516551922701">
+<node TEXT="Patch, Minor &amp; Major Increments" FOLDED="true" ID="ID_1283442643" CREATED="1516551850746" MODIFIED="1516551850746">
+<node TEXT="Patch increments up to but not including the next minor version:" FOLDED="true" ID="ID_582844392" CREATED="1516551922701" MODIFIED="1516551922701">
 <node TEXT="1.2 &#x2013; any 1.2 version up to but not including 1.3" ID="ID_23466693" CREATED="1516551937821" MODIFIED="1516551937821"/>
 <node TEXT="1.2.x - any 1.2 version up to but not including 1.3" ID="ID_1423334026" CREATED="1516551959870" MODIFIED="1516551959870"/>
 <node TEXT="1.2.x - any 1.2 version up to but not including 1.3" ID="ID_1641466342" CREATED="1516551971876" MODIFIED="1516551971876"/>
 </node>
-<node TEXT="Minor increments up to but not including the next major version:" ID="ID_1765696075" CREATED="1516551991873" MODIFIED="1516551991873">
+<node TEXT="Minor increments up to but not including the next major version:" FOLDED="true" ID="ID_1765696075" CREATED="1516551991873" MODIFIED="1516551991873">
 <node TEXT="1 &#x2013; any version of 1 up to but not including 2" ID="ID_408883564" CREATED="1516552027014" MODIFIED="1516552027014"/>
 <node TEXT="1.x &#x2013; any version of 1 up to but not including 2" ID="ID_1594265588" CREATED="1516552039891" MODIFIED="1516552039891"/>
 <node TEXT="^1.2.3 - any version equal to or greater than 1.2.3 up to but not including 2" ID="ID_1244815827" CREATED="1516552051226" MODIFIED="1516552051226"/>
@@ -544,7 +550,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Node" ID="ID_1498818952" CREATED="1516178559275" MODIFIED="1516178567400">
+<node TEXT="Node" FOLDED="true" ID="ID_1498818952" CREATED="1516178559275" MODIFIED="1516178567400">
 <node TEXT="Overview of JavaScript Modules" FOLDED="true" ID="ID_943227875" CREATED="1516482047814" MODIFIED="1516482057126">
 <node TEXT="basics" FOLDED="true" ID="ID_1115643175" CREATED="1516484931146" MODIFIED="1516484977466">
 <node TEXT="As originally envisioned in 1995, JavaScript was not implemented with a formal way of breaking an application into modules" ID="ID_1012480616" CREATED="1516482087962" MODIFIED="1516549210902"/>
@@ -1229,13 +1235,7 @@
 </node>
 <node TEXT="Redux" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1515427483506"/>
 </node>
-<node TEXT="Html" POSITION="left" ID="ID_29829950" CREATED="1515277277215" MODIFIED="1516057186174" HGAP_QUANTITY="-130.0 px" VSHIFT_QUANTITY="-130.0 px">
-<edge COLOR="#0000ff"/>
-</node>
-<node TEXT="CSS" POSITION="left" ID="ID_836246298" CREATED="1515277288805" MODIFIED="1516057170740">
-<edge COLOR="#00ff00"/>
-</node>
-<node TEXT="Links" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1516057170745">
+<node TEXT="Links" FOLDED="true" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
 <edge COLOR="#ff00ff"/>
 <node TEXT="https://unpkg.com/#/" ID="ID_1678468185" CREATED="1515277921812" MODIFIED="1515277921812" LINK="https://unpkg.com/#/"/>
 <node TEXT="https://github.com/thedaviddias/Front-End-Checklist" ID="ID_934011737" CREATED="1515411958783" MODIFIED="1515411958783" LINK="https://github.com/thedaviddias/Front-End-Checklist"/>
@@ -1263,60 +1263,9 @@
 <node TEXT="http://loremricksum.com" ID="ID_137981762" CREATED="1516207717227" MODIFIED="1516207717227" LINK="http://loremricksum.com"/>
 <node TEXT="https://bitsofco.de/rules-for-using-aria-in-html/" ID="ID_1244914068" CREATED="1516984359518" MODIFIED="1516984359518" LINK="https://bitsofco.de/rules-for-using-aria-in-html/"/>
 </node>
-<node TEXT="Git" POSITION="left" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1516057170749">
-<edge COLOR="#00ffff"/>
-</node>
-<node TEXT="ide" FOLDED="true" POSITION="left" ID="ID_228200571" CREATED="1515574322932" MODIFIED="1516057170754">
-<edge COLOR="#ffff00"/>
-<node TEXT="Visual studio code" FOLDED="true" ID="ID_1063730680" CREATED="1515278180287" MODIFIED="1515323893338">
-<node TEXT="shortcuts" FOLDED="true" ID="ID_66373857" CREATED="1515278203231" MODIFIED="1515323892490">
-<node TEXT="Format code" FOLDED="true" ID="ID_1401227338" CREATED="1515278212215" MODIFIED="1515323891762">
-<node TEXT="ctrl + shift + i" ID="ID_1443742418" CREATED="1515278221447" MODIFIED="1515278243308"/>
-</node>
-</node>
-</node>
-<node TEXT="phpstorm" FOLDED="true" ID="ID_965972960" CREATED="1515574343157" MODIFIED="1515574352085">
-<node TEXT="go to definition" FOLDED="true" ID="ID_1095348031" CREATED="1515574359237" MODIFIED="1515574366067">
-<node TEXT="strg" ID="ID_1676912443" CREATED="1515574369460" MODIFIED="1515574372945"/>
-</node>
-<node TEXT="search in for filesnames" FOLDED="true" ID="ID_1423732730" CREATED="1515574375974" MODIFIED="1515574391971">
-<node TEXT="shift x 2" ID="ID_665947203" CREATED="1515574397046" MODIFIED="1515574409971"/>
-</node>
-</node>
-</node>
-<node TEXT="Chrome dev tools" FOLDED="true" POSITION="left" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1516057170758">
-<edge COLOR="#7c0000"/>
-<node TEXT="delete all cookies" FOLDED="true" ID="ID_1406357828" CREATED="1515600581931" MODIFIED="1515600590818">
-<node TEXT="Open tools -&gt; Application -&gt; Clear storage" ID="ID_764055672" CREATED="1515600606187" MODIFIED="1515600649499"/>
-</node>
-</node>
-<node TEXT="phpstorm" POSITION="right" ID="ID_1915688729" CREATED="1516351424887" MODIFIED="1516351436146">
+<node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1517302968668" HGAP_QUANTITY="26.749999620020404 pt" VSHIFT_QUANTITY="48.74999854713682 pt">
 <edge COLOR="#808080"/>
-<node TEXT="Search everywhere" ID="ID_95241345" CREATED="1516351443986" MODIFIED="1516351459357">
-<node TEXT="As the name suggests, the Search everywhere popup allows you to search for anything in your project, as well as in the IDE itself. You can search for files, symbols, functions, variables, classes or components in your code and quickly navigate to them:" ID="ID_1998284517" CREATED="1516351621877" MODIFIED="1516351642854"/>
-<node TEXT="shift + shift" ID="ID_1616231874" CREATED="1516351467220" MODIFIED="1516351476697"/>
-</node>
-<node TEXT="Navigate to declaration" ID="ID_1980105119" CREATED="1516352021854" MODIFIED="1516352021854">
-<node TEXT="You can instantly jump to the function or method definition or a variable, class, component, or CSS style declaration: just Ctrl-click on it, or place the caret on it and press Ctrl+B. This shortcut can also help you jump to the referenced file or imported module:" ID="ID_86540270" CREATED="1516352179622" MODIFIED="1516352179622"/>
-<node TEXT="Ctrl+B (&#x2318;B) or Ctrl+Click (&#x2318;-Click)" ID="ID_1113050318" CREATED="1516352236039" MODIFIED="1516352236039"/>
-</node>
-<node TEXT="Code completion with replace" ID="ID_1289389752" CREATED="1516352495562" MODIFIED="1516352495562">
-<node TEXT="As you start typing something in WebStorm, a code completion popup automatically appears to provide coding assistance. The natural thing to do is press Enter to select one of the offered suggestions. However, if you need to replace one function with another or change a CSS class, press Tab, and the current element will be replaced with the selected lookup item" ID="ID_440306694" CREATED="1516352561450" MODIFIED="1516352561450"/>
-<node TEXT="Tab" ID="ID_212791879" CREATED="1516352632689" MODIFIED="1516352714021"/>
-</node>
-<node TEXT="Show intention actions" ID="ID_1850062976" CREATED="1516352599971" MODIFIED="1516352599971">
-<node TEXT="WebStorm has a great number of intentions to help you quickly apply fixes, generate code, or change some project settings. Place the caret on highlighted or underlined code, and press Alt+Enter to see the list of available intention actions. For example:" ID="ID_1802382378" CREATED="1516352624155" MODIFIED="1516352624155"/>
-</node>
-<node TEXT="Extend selection" ID="ID_633279710" CREATED="1516352773135" MODIFIED="1516352773135">
-<node TEXT="With the Extend selection action, you can quickly select any block of code without using the mouse:" ID="ID_1136035444" CREATED="1516352985163" MODIFIED="1516352985163"/>
-<node TEXT="Ctrl+W or &#x2325;-Up Arrow" ID="ID_957888701" CREATED="1516353008090" MODIFIED="1516353008090"/>
-</node>
-<node TEXT="rename variables" ID="ID_1887907024" CREATED="1516696114520" MODIFIED="1516696140148">
-<node TEXT="shift + f6" ID="ID_309004806" CREATED="1516696157821" MODIFIED="1516696182406"/>
-</node>
-</node>
-<node TEXT="Windows" POSITION="right" ID="ID_1175687801" CREATED="1516798635478" MODIFIED="1516798653232">
-<edge COLOR="#808080"/>
+<node TEXT="Windows" FOLDED="true" ID="ID_1175687801" CREATED="1516798635478" MODIFIED="1517301647945">
 <node TEXT="comandline" ID="ID_1081660052" CREATED="1516798661191" MODIFIED="1516798741946">
 <node TEXT="certUtil -hashfile pathToFileToCheck [HashAlgorithm]" ID="ID_501802843" CREATED="1516798678067" MODIFIED="1516798724888"/>
 <node ID="ID_1973622009" CREATED="1516798866785" MODIFIED="1516798866785"><richcontent TYPE="NODE">
@@ -1345,9 +1294,8 @@
 </node>
 </node>
 </node>
-<node TEXT="linux" POSITION="right" ID="ID_616990932" CREATED="1516803684420" MODIFIED="1516803696398">
-<edge COLOR="#808080"/>
-<node TEXT="commands" ID="ID_1442813035" CREATED="1516803702340" MODIFIED="1516803711829">
+<node TEXT="linux" FOLDED="true" ID="ID_616990932" CREATED="1516803684420" MODIFIED="1517301647947">
+<node TEXT="commands" FOLDED="true" ID="ID_1442813035" CREATED="1516803702340" MODIFIED="1516803711829">
 <node TEXT="ssh-keygen" FOLDED="true" ID="ID_1607452270" CREATED="1516803740228" MODIFIED="1516803754740">
 <node TEXT="ssh-keygen" ID="ID_178584054" CREATED="1516803766379" MODIFIED="1516803781925"/>
 </node>
@@ -1376,10 +1324,142 @@
 </node>
 </node>
 </node>
-<node TEXT="Buildprocess" POSITION="right" ID="ID_884984155" CREATED="1516874696613" MODIFIED="1516874713471">
+</node>
+<node TEXT="Tooling" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1517302974052" HGAP_QUANTITY="21.49999977648259 pt" VSHIFT_QUANTITY="28.499999150633837 pt">
 <edge COLOR="#808080"/>
-<node TEXT="Docker" ID="ID_908985180" CREATED="1516874721215" MODIFIED="1516874726017">
+<node TEXT="Git" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517301472307"/>
+<node TEXT="Chrome dev tools" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
+<node TEXT="delete all cookies" ID="ID_1406357828" CREATED="1515600581931" MODIFIED="1515600590818">
+<node TEXT="Open tools -&gt; Application -&gt; Clear storage" ID="ID_764055672" CREATED="1515600606187" MODIFIED="1515600649499"/>
+</node>
+<node TEXT="Quick File Switching" ID="ID_1704223289" CREATED="1517302261212" MODIFIED="1517302261212">
+<node TEXT="You can easily access any file within a current project or web page by pressing Ctrl + P (Cmd + P) when Chrome DevTools is open and searching for the name." ID="ID_1808094862" CREATED="1517302305961" MODIFIED="1517302305961"/>
+</node>
+<node TEXT="Pretty Print { }" ID="ID_1772666305" CREATED="1517303083110" MODIFIED="1517303083110">
+<node TEXT="Did you know Chrome DevTools has a pretty print featured built in? You can easily change the formatting of your minimized code by clicking on { } which will go back to the normal view so you can easily go through it." ID="ID_1359252915" CREATED="1517303100979" MODIFIED="1517303100979"/>
+</node>
+<node TEXT="Search Within Source Code" ID="ID_1547011544" CREATED="1517303277284" MODIFIED="1517303277284">
+<node TEXT="You can quickly search within your source code by pressing Ctrl + Shift + F (Cmd + Opt + F)." ID="ID_729411074" CREATED="1517303295554" MODIFIED="1517303295554"/>
+</node>
+<node TEXT="Javascript Breakpoints" ID="ID_1001276391" CREATED="1517303354123" MODIFIED="1517303354123">
+<node TEXT="When debugging Javascript it is sometimes useful to set breakpoints. You can set breakpoints in Chrome DevTools by clicking on the line number you want to break at, and pressing Ctrl + R (Cmd + R) to refresh the page. The page will then run right to that breakpoint." ID="ID_745596798" CREATED="1517303403748" MODIFIED="1517303403748"/>
+</node>
+<node TEXT="Skip to Line Number" ID="ID_249872796" CREATED="1517303486413" MODIFIED="1517303486413">
+<node TEXT="You can automatically skip to a line in your code by pressing Ctrl + O (Cmd + O) and using the line syntax. In the example below we typed :200:10 and pressed enter to go to line 200 column 10." ID="ID_1327337465" CREATED="1517303506069" MODIFIED="1517303506069"/>
+</node>
+<node TEXT="Change DevTools Docking Position" ID="ID_395605719" CREATED="1517303558779" MODIFIED="1517303558779">
+<node TEXT="You can also change the docking position of Chrome DevTools. There are three options to choose from: Bottom, Side, and Undocked (floating). To toggle between docking positions you can press Ctrl + Shift + D (Cmd + Shift + D). Then there is also a docking panel in the top right corner." ID="ID_1495922694" CREATED="1517303583417" MODIFIED="1517303583417"/>
+</node>
+<node TEXT="Device Mode" ID="ID_243379841" CREATED="1517303655530" MODIFIED="1517303655530">
+<node TEXT="You can test your website and media queries and see if your responsive design is breaking anywhere by going into device mode. Or perhaps you need to see at which resolution the page is breaking at so you know where to apply the media query. To enter device mode click on the small phone icon in Chrome DevTools or you can press Ctrl + Shift + M (Cmd + Shift + M). You can then choose what device you want to emulate, the orientation, and even resolution. You can also change the network throttling to see how your website actually would render on say a regular 2G connection." ID="ID_795233752" CREATED="1517303696105" MODIFIED="1517303696105"/>
+</node>
+<node TEXT="Change Color Format" ID="ID_1820493422" CREATED="1517303776787" MODIFIED="1517303776787">
+<node TEXT="You can toggle between RGBA, HSL, and hexadecimal formatting by pressing Shift + Click on the color block." ID="ID_749139748" CREATED="1517303803053" MODIFIED="1517303803053"/>
+</node>
+<node TEXT="Device Emulation Sensors" ID="ID_1425908908" CREATED="1517303827755" MODIFIED="1517303827755">
+<node TEXT="A cool feature of Chrome DevTools is that you can even simulate touch screens and accelerators. To do this click into Console, Emulation, and into Sensors." ID="ID_1174239101" CREATED="1517303844043" MODIFIED="1517303844043"/>
+</node>
+</node>
+<node TEXT="phpstorm" ID="ID_1915688729" CREATED="1516351424887" MODIFIED="1517301554346">
+<node TEXT="Search everywhere" FOLDED="true" ID="ID_95241345" CREATED="1516351443986" MODIFIED="1516351459357">
+<node TEXT="As the name suggests, the Search everywhere popup allows you to search for anything in your project, as well as in the IDE itself. You can search for files, symbols, functions, variables, classes or components in your code and quickly navigate to them:" ID="ID_1998284517" CREATED="1516351621877" MODIFIED="1516351642854"/>
+<node TEXT="shift + shift" ID="ID_1616231874" CREATED="1516351467220" MODIFIED="1516351476697"/>
+</node>
+<node TEXT="Navigate to declaration" FOLDED="true" ID="ID_1980105119" CREATED="1516352021854" MODIFIED="1516352021854">
+<node TEXT="You can instantly jump to the function or method definition or a variable, class, component, or CSS style declaration: just Ctrl-click on it, or place the caret on it and press Ctrl+B. This shortcut can also help you jump to the referenced file or imported module:" ID="ID_86540270" CREATED="1516352179622" MODIFIED="1516352179622"/>
+<node TEXT="Ctrl+B (&#x2318;B) or Ctrl+Click (&#x2318;-Click)" ID="ID_1113050318" CREATED="1516352236039" MODIFIED="1516352236039"/>
+</node>
+<node TEXT="Code completion with replace" FOLDED="true" ID="ID_1289389752" CREATED="1516352495562" MODIFIED="1516352495562">
+<node TEXT="As you start typing something in WebStorm, a code completion popup automatically appears to provide coding assistance. The natural thing to do is press Enter to select one of the offered suggestions. However, if you need to replace one function with another or change a CSS class, press Tab, and the current element will be replaced with the selected lookup item" ID="ID_440306694" CREATED="1516352561450" MODIFIED="1516352561450"/>
+<node TEXT="Tab" ID="ID_212791879" CREATED="1516352632689" MODIFIED="1516352714021"/>
+</node>
+<node TEXT="Show intention actions" FOLDED="true" ID="ID_1850062976" CREATED="1516352599971" MODIFIED="1516352599971">
+<node TEXT="WebStorm has a great number of intentions to help you quickly apply fixes, generate code, or change some project settings. Place the caret on highlighted or underlined code, and press Alt+Enter to see the list of available intention actions. For example:" ID="ID_1802382378" CREATED="1516352624155" MODIFIED="1516352624155"/>
+</node>
+<node TEXT="Extend selection" FOLDED="true" ID="ID_633279710" CREATED="1516352773135" MODIFIED="1516352773135">
+<node TEXT="With the Extend selection action, you can quickly select any block of code without using the mouse:" ID="ID_1136035444" CREATED="1516352985163" MODIFIED="1516352985163"/>
+<node TEXT="Ctrl+W or &#x2325;-Up Arrow" ID="ID_957888701" CREATED="1516353008090" MODIFIED="1516353008090"/>
+</node>
+<node TEXT="rename variables" FOLDED="true" ID="ID_1887907024" CREATED="1516696114520" MODIFIED="1516696140148">
+<node TEXT="shift + f6" ID="ID_309004806" CREATED="1516696157821" MODIFIED="1516696182406"/>
+</node>
+<node TEXT="showing all properties for a component" ID="ID_597153997" CREATED="1517329745165" MODIFIED="1517329784523">
+<node TEXT="ctrl + space" ID="ID_1980463930" CREATED="1517329789124" MODIFIED="1517329834015"/>
+</node>
+</node>
+<node TEXT="Buildprocess" FOLDED="true" ID="ID_884984155" CREATED="1516874696613" MODIFIED="1517301554349">
+<node TEXT="Docker" FOLDED="true" ID="ID_908985180" CREATED="1516874721215" MODIFIED="1516874726017">
 <node TEXT="Docker is an open source project supported by a commercial entity of the same name that makes it super-easy to run an application process inside a relatively isolated environment called a container. Unlike a virtual machine (VM), which has its own kernel, a container is dependent on the host operating system&#x2019;s kernel." ID="ID_791082804" CREATED="1516874840928" MODIFIED="1516874840928"/>
+</node>
+</node>
+<node TEXT="Visual studio code" FOLDED="true" ID="ID_1063730680" CREATED="1515278180287" MODIFIED="1515323893338">
+<node TEXT="shortcuts" FOLDED="true" ID="ID_66373857" CREATED="1515278203231" MODIFIED="1515323892490">
+<node TEXT="Format code" FOLDED="true" ID="ID_1401227338" CREATED="1515278212215" MODIFIED="1515323891762">
+<node TEXT="ctrl + shift + i" ID="ID_1443742418" CREATED="1515278221447" MODIFIED="1515278243308"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Html" POSITION="right" ID="ID_1837254407" CREATED="1517302409151" MODIFIED="1517302492237" HGAP_QUANTITY="14.749999977648258 pt" VSHIFT_QUANTITY="23.249999307096026 pt">
+<edge COLOR="#808080"/>
+<node TEXT="script-tag" FOLDED="true" ID="ID_92475443" CREATED="1515280692862" MODIFIED="1515602554373">
+<node TEXT="type attribute" FOLDED="true" ID="ID_811940011" CREATED="1515280774637" MODIFIED="1515323493853">
+<node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_208007989" CREATED="1515280767645" MODIFIED="1515280767645"/>
+<node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_811925062" CREATED="1515280820009" MODIFIED="1515280820009"/>
+<node TEXT="The media type consists of two parts: one media type and one subtype. For JavaScript, the media type is &quot;application/javascript&quot;." ID="ID_1433869857" CREATED="1515280830494" MODIFIED="1515280830494"/>
+<node TEXT="In HTML5, the type attribute is no longer required for JavaScript. The default value is &quot;application/javascript&quot;" ID="ID_1094720363" CREATED="1515280860764" MODIFIED="1515280860764"/>
+<node TEXT="Look at IANA Media Types for a complete list of standard media types." ID="ID_1732552129" CREATED="1515280934166" MODIFIED="1515280934166">
+<node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_197136901" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
+</node>
+</node>
+<node TEXT="Script loading" FOLDED="true" ID="ID_1553703001" CREATED="1516609394783" MODIFIED="1516609408784">
+<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_1823919613" CREATED="1516984940332" MODIFIED="1516984940332"/>
+<node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_1482801285" CREATED="1516984983930" MODIFIED="1516984983930"/>
+<node TEXT="Normal Execution" FOLDED="true" ID="ID_541635745" CREATED="1516985020242" MODIFIED="1516985020242">
+<node TEXT="By default, as mentioned above, JavaScript files will interrupt the parsing of the HTML document in order for them to be fetched (if not inline) and executed." ID="ID_1875232854" CREATED="1516985216297" MODIFIED="1516985216297"/>
+<node TEXT="png_4560996669286614596.png" ID="ID_1987718634" CREATED="1516985243566" MODIFIED="1516985243566">
+<hook URI="webdevelopment2_files/png_4560996669286614596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The async Attribute" FOLDED="true" ID="ID_717975684" CREATED="1516985060860" MODIFIED="1516985060860">
+<node TEXT="The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing." ID="ID_147391472" CREATED="1516985285531" MODIFIED="1516985285531"/>
+<node TEXT="png_3735681454245946596.png" ID="ID_162902154" CREATED="1516985313949" MODIFIED="1516985313949">
+<hook URI="webdevelopment2_files/png_3735681454245946596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The defer Attribute" FOLDED="true" ID="ID_309486250" CREATED="1516985092756" MODIFIED="1516985092756">
+<node TEXT="The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed." ID="ID_94439810" CREATED="1516985347377" MODIFIED="1516985347377"/>
+<node TEXT="Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete." ID="ID_1183234816" CREATED="1516985370690" MODIFIED="1516985370690"/>
+<node TEXT="png_5617417546364053301.png" ID="ID_806155600" CREATED="1516985454109" MODIFIED="1516985454109">
+<hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="Asynchronous, Deferred or Normal Execution?" FOLDED="true" ID="ID_650276799" CREATED="1516985126147" MODIFIED="1516985126147">
+<node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_395601444" CREATED="1516985477168" MODIFIED="1516985477168"/>
+<node TEXT="Where is the &lt;script&gt; element located?" FOLDED="true" ID="ID_1622169972" CREATED="1516985499149" MODIFIED="1516985499149">
+<node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_1180673156" CREATED="1516985616958" MODIFIED="1516985616958"/>
+</node>
+<node TEXT="Is the script self-contained?" FOLDED="true" ID="ID_328537986" CREATED="1516985520906" MODIFIED="1516985520906">
+<node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_638203206" CREATED="1516985643385" MODIFIED="1516985643385"/>
+</node>
+<node TEXT="Does the script rely on a fully parsed DOM?" FOLDED="true" ID="ID_372429636" CREATED="1516985549473" MODIFIED="1516985549473">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_232630611" CREATED="1516985661161" MODIFIED="1516985661161"/>
+</node>
+<node TEXT="Is the script a (small) dependency?" FOLDED="true" ID="ID_343577655" CREATED="1516985571593" MODIFIED="1516985571593">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_1083147253" CREATED="1516985712536" MODIFIED="1516985712536"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="no script tag" FOLDED="true" ID="ID_121909318" CREATED="1515602570705" MODIFIED="1515602584248">
+<node TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script." ID="ID_216128511" CREATED="1515602635348" MODIFIED="1515602635348"/>
+<node TEXT="The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;." ID="ID_591071945" CREATED="1515602635351" MODIFIED="1515602635351"/>
+<node TEXT="When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements." ID="ID_33343833" CREATED="1515602635351" MODIFIED="1515602635351"/>
+<node TEXT="The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser." ID="ID_1431613321" CREATED="1515602635352" MODIFIED="1515602635352"/>
+<node TEXT="Differences Between HTML 4.01 and HTML5" FOLDED="true" ID="ID_451599228" CREATED="1515602673887" MODIFIED="1515602676907">
+<node TEXT="In HTML 4.01, the &lt;noscript&gt; tag can only be used inside the &lt;body&gt; element." ID="ID_1642553980" CREATED="1515602688236" MODIFIED="1515602688236"/>
+<node TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;." ID="ID_442671999" CREATED="1515602688237" MODIFIED="1515602688237"/>
+</node>
 </node>
 </node>
 </node>
