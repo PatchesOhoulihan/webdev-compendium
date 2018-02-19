@@ -55,9 +55,9 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="22" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Html" FOLDED="true" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
+<node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
-<node TEXT="script-tag" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1515602554373">
+<node TEXT="script-tag" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1515602554373">
 <node TEXT="type attribute" FOLDED="true" ID="ID_54630004" CREATED="1515280774637" MODIFIED="1515323493853">
 <node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_822896220" CREATED="1515280767645" MODIFIED="1515280767645"/>
 <node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_1435470214" CREATED="1515280820009" MODIFIED="1515280820009"/>
@@ -67,7 +67,7 @@
 <node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_69166597" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
 </node>
 </node>
-<node TEXT="Script loading" FOLDED="true" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
+<node TEXT="Script loading" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
 <node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_265022695" CREATED="1516984940332" MODIFIED="1516984940332"/>
 <node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_315975822" CREATED="1516984983930" MODIFIED="1516984983930"/>
 <node TEXT="Normal Execution" FOLDED="true" ID="ID_1254489477" CREATED="1516985020242" MODIFIED="1516985020242">
@@ -89,12 +89,12 @@
 <hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="Asynchronous, Deferred or Normal Execution?" FOLDED="true" ID="ID_999485238" CREATED="1516985126147" MODIFIED="1516985126147">
+<node TEXT="Asynchronous, Deferred or Normal Execution?" FOLDED="true" ID="ID_999485238" CREATED="1516985126147" MODIFIED="1519037613145">
 <node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_611885800" CREATED="1516985477168" MODIFIED="1516985477168"/>
 <node TEXT="Where is the &lt;script&gt; element located?" FOLDED="true" ID="ID_1341810870" CREATED="1516985499149" MODIFIED="1516985499149">
 <node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_94923227" CREATED="1516985616958" MODIFIED="1516985616958"/>
 </node>
-<node TEXT="Is the script self-contained?" FOLDED="true" ID="ID_966997468" CREATED="1516985520906" MODIFIED="1516985520906">
+<node TEXT="Is the script self-contained?" FOLDED="true" ID="ID_966997468" CREATED="1516985520906" MODIFIED="1519037613144">
 <node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_973984847" CREATED="1516985643385" MODIFIED="1516985643385"/>
 </node>
 <node TEXT="Does the script rely on a fully parsed DOM?" FOLDED="true" ID="ID_354214330" CREATED="1516985549473" MODIFIED="1516985549473">
@@ -291,7 +291,7 @@
 </node>
 <node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1517302957243" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
-<node TEXT="language-core" FOLDED="true" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
+<node TEXT="language-core" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
 <node TEXT="It&#x2019;s a JavaScript expression that allows us to extract data from arrays, objects, maps and sets" ID="ID_546247236" CREATED="1515401730724" MODIFIED="1515401730724"/>
 <node TEXT="const person = {" FOLDED="true" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
@@ -314,12 +314,42 @@
 </node>
 <node TEXT="Array" ID="ID_1703991624" CREATED="1517415246859" MODIFIED="1517415256432"/>
 </node>
+<node TEXT="Nice to know" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
+<node TEXT="Swap variables" FOLDED="true" ID="ID_1349446183" CREATED="1519028404553" MODIFIED="1519028413418">
+<node TEXT="Using Array Destructuring to swap values" ID="ID_461036412" CREATED="1519028786859" MODIFIED="1519028793980"/>
+<node TEXT="let a = &apos;world&apos;, b = &apos;hello&apos;&#xa;[a, b] = [b, a]&#xa;console.log(a) // -&gt; hello&#xa;console.log(b) // -&gt; world" ID="ID_531722019" CREATED="1519028812555" MODIFIED="1519028818445"/>
+</node>
+<node TEXT="&#x200a;Async/Await with Destructuring" FOLDED="true" ID="ID_292193455" CREATED="1519028429977" MODIFIED="1519028490564">
+<node TEXT="Array Destructuring is great. Combined with async/await and promises to make a complex flow&#x200a;&#x2014;&#x200a;simple." ID="ID_223962593" CREATED="1519028865380" MODIFIED="1519028870037"/>
+<node TEXT="const [user, account] = await Promise.all([&#xa;  fetch(&apos;/user&apos;),&#xa;  fetch(&apos;/account&apos;)&#xa;])" ID="ID_1178965899" CREATED="1519028918508" MODIFIED="1519028925341"/>
+</node>
+<node TEXT="Debugging" FOLDED="true" ID="ID_1682582368" CREATED="1519028501769" MODIFIED="1519029565427">
+<node TEXT="For anyone who likes to debug using console.logs, here&#x2019;s something awesome (and yes, I heard of console.table):" ID="ID_344186086" CREATED="1519029055596" MODIFIED="1519029061469"/>
+<node TEXT="const a = 5, b = 6, c = 7&#xa;console.log({ a, b, c })&#xa;// outputs this nice object:&#xa;// {&#xa;//    a: 5,&#xa;//    b: 6,&#xa;//    c: 7&#xa;// }" ID="ID_1165116257" CREATED="1519029097244" MODIFIED="1519029565415"/>
+</node>
+<node TEXT="One liners" FOLDED="true" ID="ID_484704096" CREATED="1519028636002" MODIFIED="1519028642955">
+<node TEXT="Syntax can be so much more compact for array operations" ID="ID_586112103" CREATED="1519029148236" MODIFIED="1519029154181"/>
+<node TEXT="// Find max value&#xa;const max = (arr) =&gt; Math.max(...arr);&#xa;max([123, 321, 32]) // outputs: 321&#xa;// Sum array&#xa;const sum = (arr) =&gt; arr.reduce((a, b) =&gt; (a + b), 0)&#xa;sum([1, 2, 3, 4]) // output: 10" ID="ID_311231059" CREATED="1519029180925" MODIFIED="1519029185358"/>
+</node>
+<node TEXT="Array concatenation" FOLDED="true" ID="ID_1490660528" CREATED="1519028574442" MODIFIED="1519029570607">
+<node TEXT="The spread operator can be used instead of concat:" ID="ID_1859861927" CREATED="1519029332405" MODIFIED="1519029338110"/>
+<node TEXT="const one = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;]&#xa;const two = [&apos;d&apos;, &apos;e&apos;, &apos;f&apos;]&#xa;const three = [&apos;g&apos;, &apos;h&apos;, &apos;i&apos;]&#xa;// Old way #1&#xa;const result = one.concat(two, three)&#xa;// Old way #2&#xa;const result = [].concat(one, two, three)&#xa;// New&#xa;const result = [...one, ...two, ...three]" ID="ID_429922898" CREATED="1519029354118" MODIFIED="1519029570603"/>
+</node>
+<node TEXT="Cloning" FOLDED="true" ID="ID_722233131" CREATED="1519028674642" MODIFIED="1519028678763">
+<node TEXT="Clone arrays and objects with ease:" ID="ID_603180276" CREATED="1519029388806" MODIFIED="1519029395183"/>
+<node TEXT="const obj = { ...oldObj }&#xa;const arr = [ ...oldArr ]" ID="ID_526111138" CREATED="1519029402750" MODIFIED="1519029408278"/>
+</node>
+<node TEXT="&#x200a;Named parameters" FOLDED="true" ID="ID_1250509571" CREATED="1519028696811" MODIFIED="1519028700940">
+<node TEXT="Making function and function calls more readable with destructuring:" ID="ID_1194149736" CREATED="1519029495887" MODIFIED="1519029500671"/>
+<node TEXT="const getStuffNotBad = (id, force, verbose) =&gt; {&#xa;  ...do stuff&#xa;}&#xa;const getStuffAwesome = ({ id, name, force, verbose }) =&gt; {&#xa;  ...do stuff&#xa;}&#xa;// Somewhere else in the codebase... WTF is true, true?&#xa;getStuffNotBad(150, true, true)&#xa;// Somewhere else in the codebase... I &#x2764; JS!!!&#xa;getStuffAwesome({ id: 150, force: true, verbose: true })" ID="ID_1970621147" CREATED="1519029528455" MODIFIED="1519029534825"/>
+</node>
+</node>
 </node>
 <node TEXT="Frontend" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
 <node TEXT="Web APIs" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
 <node TEXT="Web Application Programming Interfaces (Web APIs) are used to perform a variety of tasks, such as manipulating the DOM, playing audio or video, or generating 3D graphics." ID="ID_1839416238" CREATED="1517822841024" MODIFIED="1517822864936"/>
 <node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167"/>
-<node TEXT="Web Storage API" ID="ID_975504561" CREATED="1515661463986" MODIFIED="1515661463986">
+<node TEXT="Web Storage API" FOLDED="true" ID="ID_975504561" CREATED="1515661463986" MODIFIED="1515661463986">
 <node TEXT="The Web Storage API provides mechanisms by which browsers can securely store key/value pairs, in a much more intuitive fashion than using cookies. " ID="ID_1567172796" CREATED="1515661511672" MODIFIED="1515661537408"/>
 <node TEXT="Basic concepts" FOLDED="true" ID="ID_1652000095" CREATED="1515661632023" MODIFIED="1515662961836">
 <node TEXT="Storage objects are simple key-value stores, similar to objects, but they stay intact through page loads. The keys and the values are always strings (note that integer keys will be automatically converted to strings, just like what objects do). You can access these values like an object, or with the Storage.getItem() and Storage.setItem() methods. These three lines all set the colorSetting entry in the same way:" ID="ID_26214173" CREATED="1515661663066" MODIFIED="1515661663066"/>
@@ -353,6 +383,9 @@
 </node>
 </node>
 <node TEXT="Web Workers API" ID="ID_1639014560" CREATED="1518085185446" MODIFIED="1518085185446"/>
+<node TEXT="Console" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1519030429070">
+<node TEXT="The Console object provides access to the browser&apos;s debugging console (e.g. the Web Console in Firefox). The specifics of how it works varies from browser to browser, but there is a de facto set of features that are typically provided." ID="ID_1019177181" CREATED="1519030454565" MODIFIED="1519030460464"/>
+</node>
 </node>
 <node TEXT="cookies" FOLDED="true" ID="ID_194660626" CREATED="1515602020518" MODIFIED="1515602026494">
 <node TEXT="Was sind Third Party Cookies?" FOLDED="true" ID="ID_657863754" CREATED="1515602043953" MODIFIED="1515663572516">
@@ -402,17 +435,19 @@
 </node>
 <node TEXT="Global Object" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1518085056345">
 <node TEXT="In a web browser, any code which the script doesn&apos;t specifically start up as a background task has a Window as its global object. This is the vast majority of JavaScript code on the Web." ID="ID_690447496" CREATED="1518085107077" MODIFIED="1518085107077"/>
-<node TEXT="window" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
+<node TEXT="window" FOLDED="true" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
 <node TEXT="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property." ID="ID_545673075" CREATED="1518094524949" MODIFIED="1518094524949"/>
 <node TEXT="properties" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1518183729900">
-<node TEXT="document" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1515591341976">
+<node TEXT="document" FOLDED="true" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1518688431758">
+<node TEXT="The Document interface represents any web page loaded in the browser and serves as an entry point into the web page&apos;s content, which is the DOM tree. The DOM tree includes elements such as &lt;body&gt; and &lt;table&gt;, among many others. It provides functionality globally to the document, like how to obtain the page&apos;s URL and create new elements in the document." ID="ID_309209743" CREATED="1518688425972" MODIFIED="1518688439665"/>
+<node TEXT="DOMTree" ID="ID_1575157735" CREATED="1518688537072" MODIFIED="1518688549086"/>
 <node TEXT="cookie" FOLDED="true" ID="ID_52380751" CREATED="1515591346369" MODIFIED="1515591353168">
 <node TEXT="show all cookies" FOLDED="true" ID="ID_126151023" CREATED="1515591363104" MODIFIED="1515591371563">
 <node TEXT="document.cookie" ID="ID_1545821702" CREATED="1515591375520" MODIFIED="1515591396272"/>
 </node>
 </node>
 </node>
-<node TEXT="crypto" ID="ID_1661758857" CREATED="1518181455829" MODIFIED="1518181461481">
+<node TEXT="crypto" FOLDED="true" ID="ID_1661758857" CREATED="1518181455829" MODIFIED="1518181461481">
 <node TEXT="The Window.crypto read-only property returns the Crypto object associated to the global object. This object allows web pages access to certain cryptographic related services. a cryptographic source of random numbers for a non-cryptographic source use math.random()" ID="ID_1077315428" CREATED="1518182742783" MODIFIED="1518183203028"/>
 <node TEXT="var cryptoObj = window.crypto || window.msCrypto; // for IE 11" ID="ID_1683961405" CREATED="1518182771522" MODIFIED="1518182771522"/>
 <node TEXT="getRandomValues(typedArray)" ID="ID_412669943" CREATED="1518182894763" MODIFIED="1518182894763">
@@ -1438,6 +1473,7 @@
 <node TEXT="pattern" FOLDED="true" ID="ID_1641716419" CREATED="1517908745394" MODIFIED="1517908752112">
 <node TEXT="Redux" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1515427483506"/>
 </node>
+<node TEXT="Buildprocess" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1519056082292">
 <node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
 <node TEXT="webpack" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
 <node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
@@ -1487,6 +1523,12 @@
 </node>
 <node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
 </node>
+<node TEXT="linter" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
+<node TEXT="exception" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
+<node TEXT="// eslint-disable-line" ID="ID_1309138352" CREATED="1519056152043" MODIFIED="1519056157028"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Links" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
 <edge COLOR="#ff00ff"/>
@@ -1523,6 +1565,7 @@
 <node TEXT="http://www.cs.ucc.ie/~gavin/javascript/05_JS4.html" ID="ID_456245604" CREATED="1518088710918" MODIFIED="1518088710918" LINK="http://www.cs.ucc.ie/~gavin/javascript/05_JS4.html"/>
 <node TEXT="https://hackernoon.com/" ID="ID_1877415063" CREATED="1518166662524" MODIFIED="1518166662524" LINK="https://hackernoon.com/"/>
 <node TEXT="http://vanseodesign.com/css/vertical-centering/" ID="ID_192734385" CREATED="1518166978288" MODIFIED="1518166978288" LINK="http://vanseodesign.com/css/vertical-centering/"/>
+<node TEXT="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b" ID="ID_1358236291" CREATED="1519059367226" MODIFIED="1519059367226" LINK="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1517302968668" HGAP_QUANTITY="26.749999620020404 pt" VSHIFT_QUANTITY="48.74999854713682 pt">
 <edge COLOR="#808080"/>
@@ -1558,7 +1601,7 @@
 <node TEXT="linux" ID="ID_616990932" CREATED="1516803684420" MODIFIED="1517301647947">
 <node TEXT="commands" ID="ID_1442813035" CREATED="1516803702340" MODIFIED="1516803711829">
 <node TEXT="ssh-keygen" ID="ID_1607452270" CREATED="1516803740228" MODIFIED="1516803754740">
-<node TEXT="ssh-keygen" ID="ID_178584054" CREATED="1516803766379" MODIFIED="1516803781925"/>
+<node TEXT="ssh-keygen -t rsa" ID="ID_178584054" CREATED="1516803766379" MODIFIED="1518516225559"/>
 </node>
 <node TEXT="Bash Commands" FOLDED="true" ID="ID_911602781" CREATED="1516871172461" MODIFIED="1516871172461">
 <node TEXT="Show system and kernel" FOLDED="true" ID="ID_1354568860" CREATED="1516871209468" MODIFIED="1516871209468">
@@ -1586,7 +1629,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Tooling" FOLDED="true" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1517302974052" HGAP_QUANTITY="21.49999977648259 pt" VSHIFT_QUANTITY="28.499999150633837 pt">
+<node TEXT="Tooling" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1517302974052" HGAP_QUANTITY="21.49999977648259 pt" VSHIFT_QUANTITY="28.499999150633837 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Browser tools" FOLDED="true" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
 <node TEXT="Chrome dev tools" FOLDED="true" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
