@@ -319,11 +319,11 @@
 <node TEXT="Using Array Destructuring to swap values" ID="ID_461036412" CREATED="1519028786859" MODIFIED="1519028793980"/>
 <node TEXT="let a = &apos;world&apos;, b = &apos;hello&apos;&#xa;[a, b] = [b, a]&#xa;console.log(a) // -&gt; hello&#xa;console.log(b) // -&gt; world" ID="ID_531722019" CREATED="1519028812555" MODIFIED="1519028818445"/>
 </node>
-<node TEXT="&#x200a;Async/Await with Destructuring" FOLDED="true" ID="ID_292193455" CREATED="1519028429977" MODIFIED="1519028490564">
+<node TEXT="&#x200a;Async/Await with Destructuring" ID="ID_292193455" CREATED="1519028429977" MODIFIED="1519028490564">
 <node TEXT="Array Destructuring is great. Combined with async/await and promises to make a complex flow&#x200a;&#x2014;&#x200a;simple." ID="ID_223962593" CREATED="1519028865380" MODIFIED="1519028870037"/>
 <node TEXT="const [user, account] = await Promise.all([&#xa;  fetch(&apos;/user&apos;),&#xa;  fetch(&apos;/account&apos;)&#xa;])" ID="ID_1178965899" CREATED="1519028918508" MODIFIED="1519028925341"/>
 </node>
-<node TEXT="Debugging" FOLDED="true" ID="ID_1682582368" CREATED="1519028501769" MODIFIED="1519029565427">
+<node TEXT="Debugging" ID="ID_1682582368" CREATED="1519028501769" MODIFIED="1519029565427">
 <node TEXT="For anyone who likes to debug using console.logs, here&#x2019;s something awesome (and yes, I heard of console.table):" ID="ID_344186086" CREATED="1519029055596" MODIFIED="1519029061469"/>
 <node TEXT="const a = 5, b = 6, c = 7&#xa;console.log({ a, b, c })&#xa;// outputs this nice object:&#xa;// {&#xa;//    a: 5,&#xa;//    b: 6,&#xa;//    c: 7&#xa;// }" ID="ID_1165116257" CREATED="1519029097244" MODIFIED="1519029565415"/>
 </node>
@@ -335,13 +335,49 @@
 <node TEXT="The spread operator can be used instead of concat:" ID="ID_1859861927" CREATED="1519029332405" MODIFIED="1519029338110"/>
 <node TEXT="const one = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;]&#xa;const two = [&apos;d&apos;, &apos;e&apos;, &apos;f&apos;]&#xa;const three = [&apos;g&apos;, &apos;h&apos;, &apos;i&apos;]&#xa;// Old way #1&#xa;const result = one.concat(two, three)&#xa;// Old way #2&#xa;const result = [].concat(one, two, three)&#xa;// New&#xa;const result = [...one, ...two, ...three]" ID="ID_429922898" CREATED="1519029354118" MODIFIED="1519029570603"/>
 </node>
-<node TEXT="Cloning" FOLDED="true" ID="ID_722233131" CREATED="1519028674642" MODIFIED="1519028678763">
+<node TEXT="Cloning" ID="ID_722233131" CREATED="1519028674642" MODIFIED="1519028678763">
 <node TEXT="Clone arrays and objects with ease:" ID="ID_603180276" CREATED="1519029388806" MODIFIED="1519029395183"/>
 <node TEXT="const obj = { ...oldObj }&#xa;const arr = [ ...oldArr ]" ID="ID_526111138" CREATED="1519029402750" MODIFIED="1519029408278"/>
 </node>
 <node TEXT="&#x200a;Named parameters" FOLDED="true" ID="ID_1250509571" CREATED="1519028696811" MODIFIED="1519028700940">
 <node TEXT="Making function and function calls more readable with destructuring:" ID="ID_1194149736" CREATED="1519029495887" MODIFIED="1519029500671"/>
 <node TEXT="const getStuffNotBad = (id, force, verbose) =&gt; {&#xa;  ...do stuff&#xa;}&#xa;const getStuffAwesome = ({ id, name, force, verbose }) =&gt; {&#xa;  ...do stuff&#xa;}&#xa;// Somewhere else in the codebase... WTF is true, true?&#xa;getStuffNotBad(150, true, true)&#xa;// Somewhere else in the codebase... I &#x2764; JS!!!&#xa;getStuffAwesome({ id: 150, force: true, verbose: true })" ID="ID_1970621147" CREATED="1519029528455" MODIFIED="1519029534825"/>
+</node>
+<node TEXT="&#x200a;Method calling" ID="ID_1259802533" CREATED="1519115187767" MODIFIED="1519115193571">
+<node TEXT="I really hate if/else blocks and this is quite a useful trick to call the right function based on a boolean value." ID="ID_1619973692" CREATED="1519115224895" MODIFIED="1519115230822"/>
+<node TEXT="if (success) {&#xa; obj.start();&#xa;} else {&#xa; obj.stop();&#xa;}&#xa;// Hipster-fun&#xa;var method = (success ? &#x2018;start&#x2019; : &#x2018;stop&#x2019;);&#xa;obj[method]();" ID="ID_1048963541" CREATED="1519115296671" MODIFIED="1519115302282"/>
+</node>
+<node TEXT="String joins" ID="ID_1260662783" CREATED="1519115391623" MODIFIED="1519115398409">
+<node TEXT="It&#x2019;s a known fact that strings like other strings. Sooner or later you&#x2019;d like to concatenate two or more of them. I don&#x2019;t really like +ing them together, so join() comes to the rescue." ID="ID_1897468137" CREATED="1519115424287" MODIFIED="1519115429545"/>
+<node TEXT="[&#x2018;first&#x2019;, &#x2018;name&#x2019;].join(&#x2018; &#x2018;); // = &#x2018;first name&#x2019;;&#xa;[&#x2018;milk&#x2019;, &#x2018;coffee&#x2019;, &#x2018;suger&#x2019;].join(&#x2018;, &#x2018;); // = &#x2018;milk, coffee, suger&#x2019;" ID="ID_1192095852" CREATED="1519115464959" MODIFIED="1519115472561"/>
+</node>
+<node TEXT="Default Operator ||" ID="ID_662796286" CREATED="1519115532111" MODIFIED="1519115550544">
+<node TEXT="you can use the || operator to use the second argument if the first is falsy." ID="ID_1434509767" CREATED="1519115604999" MODIFIED="1519115643139"/>
+<node TEXT="// default to &#x2018;No name&#x2019; when myName is empty (or null, or undefined)&#xa;var name = myName || &#x2018;No name&#x2019;;&#xa;// make sure we have an options object&#xa;var doStuff = function(options) {&#xa; options = options || {};&#xa; // &#x2026;&#xa;};" ID="ID_831679601" CREATED="1519115645639" MODIFIED="1519115651753"/>
+</node>
+<node TEXT="&#x200a;Guard Operator &amp;&amp;" ID="ID_667792744" CREATED="1519115768919" MODIFIED="1519115775137">
+<node TEXT="Similar to the Default Operator, this one is super useful. It eliminates almost all IF calls and makes for a nicer code." ID="ID_1117621498" CREATED="1519115863463" MODIFIED="1519115893185"/>
+<node TEXT="// Boring&#xa;if (isThisAwesome) {&#xa; alert(&#x2018;yes&#x2019;); // it&#x2019;s not&#xa;}&#xa;// Awesome&#xa;isThisAwesome &amp;&amp; alert(&#x2018;yes&#x2019;);&#xa;// Also cool for guarding your code&#xa;var aCoolFunction = undefined;&#xa;aCoolFunction &amp;&amp; aCoolFunction(); // won&#x2019;t run nor crash" ID="ID_288544923" CREATED="1519115897479" MODIFIED="1519115902697"/>
+</node>
+<node TEXT="XXX Operator" ID="ID_1655386615" CREATED="1519115974496" MODIFIED="1519115981073">
+<node TEXT="Whenever I write some code, but then have to consult the web, or a different part of the code, I add an xxx line to the code. This makes the code break so I can get back to the specific place and fix it later. Much easier to search for it (xxx usually never appears) and you don&#x2019;t have to think about a TODO comment." ID="ID_1365343180" CREATED="1519116028424" MODIFIED="1519116034378"/>
+<node TEXT="var z = 15;&#xa;doSomeMath(z, 10);&#xa;xxx // Great placeholder. I&#x2019;m the only one using xxx and it&#x2019;s so easy to find in code instead of TODOs&#xa;doSomeMoreMath(z, 15);" ID="ID_1924734707" CREATED="1519116055360" MODIFIED="1519116063194"/>
+</node>
+<node TEXT="Timing" ID="ID_261532242" CREATED="1519116161761" MODIFIED="1519116168786">
+<node TEXT="Looping with an i++ or looping with an i&#x2014; ? Yeah, me neither. For those who does, you can use the console&#x2019;s timing methods to test for slow loops or any other event-loop blocking code." ID="ID_1803199767" CREATED="1519116206377" MODIFIED="1519116211042"/>
+<node TEXT="var a = [1,2,3,4,5,6,7,8,9,10];&#xa;console.time(&#x2018;testing_forward&#x2019;);&#xa;for (var i = 0; i &lt; a.length; i++);&#xa;console.timeEnd(&#x2018;testing_forward&#x2019;);&#xa;// output: testing_forward: 0.041ms&#xa;console.time(&#x2018;testing_backwards&#x2019;);&#xa;for (var i = a.length&#x200a;&#x2014;&#x200a;1; i &gt;= 0; i&#x2014;);&#xa;console.timeEnd(&#x2018;testing_backwards&#x2019;);&#xa;// output: testing_backwards: 0.030ms" ID="ID_412716623" CREATED="1519116225265" MODIFIED="1519116234211"/>
+</node>
+<node TEXT="Debugging" ID="ID_1446992001" CREATED="1519116272018" MODIFIED="1519116278187">
+<node TEXT="I have absolutely no idea how he knew about it and I didn&#x2019;t, but I&#x2019;ve been using it ever since. Just drop a debugger statement and the debugger will stop on that line." ID="ID_479683088" CREATED="1519116358746" MODIFIED="1519116363876"/>
+<node TEXT="var x = 1;&#xa;debugger; // Code execution stops here, happy debugging&#xa;x++;&#xa;var x = Math.random(2);&#xa;if (x &gt; 0.5) {&#xa; debugger; // Conditional breakpoint&#xa;}&#xa;x&#x2014;;" ID="ID_1892670921" CREATED="1519116378842" MODIFIED="1519116384156"/>
+</node>
+<node TEXT="Old School Debugging" ID="ID_1623287005" CREATED="1519116416747" MODIFIED="1519116423996">
+<node TEXT="If you&#x2019;re like me, you&#x2019;ll want to &#x201c;export&#x201d; some private vars into the global scope in order to examine them from time to time. Don&#x2019;t forget to remove these before committing/pushing-to-production." ID="ID_1941188255" CREATED="1519116502644" MODIFIED="1519116506565"/>
+<node TEXT="var deeplyNestedFunction = function() {&#xa; var private_object = {&#xa; year: &#x2018;2013&apos;&#xa; };&#xa; // Globalize it for debugging:&#xa; pub = private_object;&#xa;};&#xa;// Now from the console (Chrome dev tools, firefox tools, etc)&#xa;pub.year;" ID="ID_1820095631" CREATED="1519116523068" MODIFIED="1519116528301"/>
+</node>
+<node TEXT="Ultra Light Templates" ID="ID_1574028339" CREATED="1519116563548" MODIFIED="1519116570637">
+<node TEXT="Are you still concatenating strings using the + operator? Here&#x2019;s a better way to combine a sentence with your data. It&#x2019;s called templating and here&#x2019;s a mini framework in 2.5 lines of code." ID="ID_548197350" CREATED="1519116585188" MODIFIED="1519116592894"/>
+<node TEXT="var firstName = &#x2018;Tal&#x2019;;&#xa;var screenName = &#x2018;ketacode&#x2019;&#xa;// Ugly&#xa;&#x2018;Hi, my name is &#x2018; + firstName + &#x2018; and my twitter screen name is @&#x2019; + screenName;&#xa;// Super&#xa;var template = &#x2018;Hi, my name is {first-name} and my twitter screen name is @{screen-name}&#x2019;;&#xa;var txt = template.replace(&#x2018;{first-name}&#x2019;, firstName)&#xa; .replace(&#x2018;{screen-name}&#x2019;, screenName);" ID="ID_675359012" CREATED="1519116646653" MODIFIED="1519116656047"/>
 </node>
 </node>
 </node>
