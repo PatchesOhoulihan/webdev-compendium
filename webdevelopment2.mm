@@ -55,9 +55,9 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="22" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
+<node TEXT="Html" FOLDED="true" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
-<node TEXT="script-tag" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1515602554373">
+<node TEXT="script-tag" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1515602554373">
 <node TEXT="type attribute" FOLDED="true" ID="ID_54630004" CREATED="1515280774637" MODIFIED="1515323493853">
 <node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_822896220" CREATED="1515280767645" MODIFIED="1515280767645"/>
 <node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_1435470214" CREATED="1515280820009" MODIFIED="1515280820009"/>
@@ -67,7 +67,7 @@
 <node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_69166597" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
 </node>
 </node>
-<node TEXT="Script loading" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
+<node TEXT="Script loading" FOLDED="true" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
 <node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_265022695" CREATED="1516984940332" MODIFIED="1516984940332"/>
 <node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_315975822" CREATED="1516984983930" MODIFIED="1516984983930"/>
 <node TEXT="Normal Execution" FOLDED="true" ID="ID_1254489477" CREATED="1516985020242" MODIFIED="1516985020242">
@@ -284,17 +284,366 @@
 </node>
 </node>
 </node>
+<node TEXT="Comment" FOLDED="true" ID="ID_873678968" CREATED="1519592695865" MODIFIED="1519592701707">
+<node TEXT="&lt;!--This is a comment. Comments are not displayed in the browser--&gt;" ID="ID_1466872894" CREATED="1519592708937" MODIFIED="1519592712027"/>
+</node>
 </node>
 </node>
 <node TEXT="CSS" POSITION="right" ID="ID_1074147252" CREATED="1517302830445" MODIFIED="1517302949019" HGAP_QUANTITY="26.7499996200204 pt" VSHIFT_QUANTITY="-48.749998547136826 pt">
 <edge COLOR="#808080"/>
+<node TEXT="core" ID="ID_619879499" CREATED="1519589670756" MODIFIED="1519589677978">
+<node TEXT="apply CSS" FOLDED="true" ID="ID_1539358621" CREATED="1519589684764" MODIFIED="1519590979983">
+<node TEXT="External Style Sheet" FOLDED="true" ID="ID_694206452" CREATED="1519589722764" MODIFIED="1519589725183">
+<node TEXT="With an external style sheet, you can change the look of an entire website by changing just one file!" ID="ID_667056291" CREATED="1519591001213" MODIFIED="1519591010552"/>
+<node TEXT="Each page must include a reference to the external style sheet file inside the &lt;link&gt; element. The &lt;link&gt; element goes inside the &lt;head&gt; section:" ID="ID_465319268" CREATED="1519591026853" MODIFIED="1519591030968"/>
+<node TEXT=" &lt;head&gt;&#xa;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;&#xa;&lt;/head&gt;" ID="ID_309458389" CREATED="1519591044493" MODIFIED="1519591049664"/>
+<node TEXT="If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used." ID="ID_584960115" CREATED="1519591405708" MODIFIED="1519591405708"/>
 </node>
-<node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1517302957243" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
+<node TEXT="Internal Style Sheet" FOLDED="true" ID="ID_1191006214" CREATED="1519589737499" MODIFIED="1519589742031">
+<node TEXT="An internal style sheet may be used if one single page has a unique style." ID="ID_1217894828" CREATED="1519591138012" MODIFIED="1519591140807"/>
+<node TEXT="Internal styles are defined within the &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:" ID="ID_1569469107" CREATED="1519591164340" MODIFIED="1519591167967"/>
+<node TEXT=" &lt;head&gt;&#xa;&lt;style&gt;&#xa;body {&#xa;    background-color: linen;&#xa;}&#xa;&#xa;h1 {&#xa;    color: maroon;&#xa;    margin-left: 40px;&#xa;}&#xa;&lt;/style&gt;&#xa;&lt;/head&gt;" ID="ID_353606366" CREATED="1519591185795" MODIFIED="1519591189951"/>
+</node>
+<node TEXT="Inline Styles" FOLDED="true" ID="ID_815680605" CREATED="1519589753355" MODIFIED="1519589755543">
+<node TEXT="An inline style may be used to apply a unique style for a single element." ID="ID_1667937909" CREATED="1519591217149" MODIFIED="1519591217149"/>
+<node TEXT="To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property." ID="ID_1670004443" CREATED="1519591244379" MODIFIED="1519591247806"/>
+<node TEXT=" &lt;h1 style=&quot;color:blue;margin-left:30px;&quot;&gt;This is a heading&lt;/h1&gt;" ID="ID_860390620" CREATED="1519591280363" MODIFIED="1519591282853"/>
+<node TEXT="Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly." ID="ID_537541641" CREATED="1519591303459" MODIFIED="1519591306118"/>
+</node>
+<node TEXT="Cascading Order" FOLDED="true" ID="ID_693932497" CREATED="1519591540553" MODIFIED="1519591544324">
+<node TEXT="What style will be used when there is more than one style specified for an HTML element?" ID="ID_1743076424" CREATED="1519591557529" MODIFIED="1519591565308"/>
+<node TEXT="Generally speaking we can say that all the styles will &quot;cascade&quot; into a new &quot;virtual&quot; style sheet by the following rules, where number one has the highest priority:" ID="ID_1590893976" CREATED="1519591581177" MODIFIED="1519591591163"/>
+<node TEXT="1. Inline style (inside an HTML element)&#xa;2. External and internal style sheets (in the head section)&#xa;3. Browser default" ID="ID_812367423" CREATED="1519591619160" MODIFIED="1519591882873"/>
+</node>
+</node>
+<node TEXT="Selectors" FOLDED="true" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
+<node TEXT="Simple selectors" FOLDED="true" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
+<node TEXT="Type selector" FOLDED="true" ID="ID_835537567" CREATED="1519516109081" MODIFIED="1519516113404">
+<node TEXT="Selects all elements that match the given node name." ID="ID_1746383443" CREATED="1519516234152" MODIFIED="1519516237323"/>
+<node TEXT="Syntax: elementname" ID="ID_1020689451" CREATED="1519516246632" MODIFIED="1519516258043"/>
+<node TEXT="Example: input will match any &lt;input&gt; element." ID="ID_1622031297" CREATED="1519516276648" MODIFIED="1519516280331"/>
+</node>
+<node TEXT="Class selector" FOLDED="true" ID="ID_78596722" CREATED="1519516130281" MODIFIED="1519516140814">
+<node TEXT="Selects all elements that have the given class attribute." ID="ID_328956790" CREATED="1519516298888" MODIFIED="1519516302138"/>
+<node TEXT="Syntax: .classname" ID="ID_1674729382" CREATED="1519516309640" MODIFIED="1519516312802"/>
+<node TEXT="Example: .index will match any element that has a class of &quot;index&quot;." ID="ID_1413375340" CREATED="1519516320616" MODIFIED="1519516442209"/>
+</node>
+<node TEXT="ID selector" FOLDED="true" ID="ID_460843935" CREATED="1519516142793" MODIFIED="1519516146291">
+<node TEXT="Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document." ID="ID_1396421910" CREATED="1519516460743" MODIFIED="1519516464282"/>
+<node TEXT="Syntax: #idname" ID="ID_562692321" CREATED="1519516473487" MODIFIED="1519516479481"/>
+<node TEXT="Example: #toc will match the element that has the ID &quot;toc&quot;." ID="ID_1464503627" CREATED="1519516492089" MODIFIED="1519516495745"/>
+</node>
+<node TEXT="Universal selector" FOLDED="true" ID="ID_817231035" CREATED="1519516159105" MODIFIED="1519516171012">
+<node TEXT="Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces." ID="ID_903491747" CREATED="1519516512774" MODIFIED="1519516515753"/>
+<node TEXT="Syntax: * ns|* *|*" ID="ID_1007987936" CREATED="1519516524246" MODIFIED="1519516527465"/>
+<node TEXT="Example: * will match all the elements of the document." ID="ID_561692138" CREATED="1519516535153" MODIFIED="1519516645953"/>
+</node>
+<node TEXT="Attribute selector" FOLDED="true" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
+<node TEXT="Selects elements based on the value of the given attribute." ID="ID_714924094" CREATED="1519516649582" MODIFIED="1519516652784"/>
+<node TEXT="Syntax" FOLDED="true" ID="ID_421978559" CREATED="1519516666413" MODIFIED="1519516685336">
+<node TEXT="[attr]" ID="ID_1736624769" CREATED="1519517625687" MODIFIED="1519517628386"/>
+<node TEXT="[attr=value]" ID="ID_953712981" CREATED="1519517646367" MODIFIED="1519517653658"/>
+<node TEXT="[attr~=value]" ID="ID_260064258" CREATED="1519517662375" MODIFIED="1519517676266"/>
+<node TEXT="[attr|=value]" ID="ID_1281967344" CREATED="1519517678278" MODIFIED="1519517681329"/>
+<node TEXT="[attr^=value]" ID="ID_1837034828" CREATED="1519517696622" MODIFIED="1519517702113"/>
+<node TEXT="[attr$=value]" ID="ID_532543240" CREATED="1519517713454" MODIFIED="1519517716385"/>
+<node TEXT="[attr*=value]" ID="ID_1464993975" CREATED="1519517748566" MODIFIED="1519517755416"/>
+<node TEXT="[attr operator value i]" ID="ID_580423797" CREATED="1519517771958" MODIFIED="1519517784105"/>
+</node>
+<node TEXT="Example: [autoplay] will match all elements that have the autoplay attribute set (to any value)." ID="ID_141219151" CREATED="1519516694221" MODIFIED="1519516697648"/>
+</node>
+</node>
+<node TEXT="Combinators" FOLDED="true" ID="ID_1799111666" CREATED="1519515989026" MODIFIED="1519515995645">
+<node TEXT="Adjacent sibling combinator" FOLDED="true" ID="ID_683669578" CREATED="1519518750135" MODIFIED="1519518752650">
+<node TEXT="The + combinator selects adjacent siblings. This means that the second element directly follows the first, and both share the same parent." ID="ID_503399944" CREATED="1519518851310" MODIFIED="1519518854633"/>
+<node TEXT="Syntax: A + B" ID="ID_1449827583" CREATED="1519518867702" MODIFIED="1519518869833"/>
+<node TEXT="Example: h2 + p will match all &lt;p&gt; elements that directly follow an &lt;h2&gt;." ID="ID_981775896" CREATED="1519518891142" MODIFIED="1519518894249"/>
+</node>
+<node TEXT="General sibling combinator" FOLDED="true" ID="ID_432651750" CREATED="1519518763119" MODIFIED="1519518766106">
+<node TEXT="The ~ combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent." ID="ID_1933531855" CREATED="1519518954462" MODIFIED="1519518956289"/>
+<node TEXT="Syntax: A ~ B" ID="ID_108398723" CREATED="1519518969694" MODIFIED="1519518974256"/>
+<node TEXT="Example: p ~ span will match all &lt;span&gt; elements that follow a &lt;p&gt;." ID="ID_841111398" CREATED="1519518992533" MODIFIED="1519519003128"/>
+</node>
+<node TEXT="Child combinator" FOLDED="true" ID="ID_331871209" CREATED="1519518811535" MODIFIED="1519518814353">
+<node TEXT="The &gt; combinator selects nodes that are direct children of the first element." ID="ID_309146250" CREATED="1519519097829" MODIFIED="1519519101303"/>
+<node TEXT="Syntax: A &gt; B" ID="ID_435099312" CREATED="1519519138564" MODIFIED="1519519145087"/>
+<node TEXT="ul &gt; li will match all &lt;li&gt; elements that are nested directly inside a &lt;ul&gt; element." ID="ID_1835762929" CREATED="1519519159820" MODIFIED="1519519162415"/>
+</node>
+<node TEXT="Descendant combinator" FOLDED="true" ID="ID_1169938730" CREATED="1519518822143" MODIFIED="1519518824866">
+<node TEXT="The   combinator selects nodes that are descendants of the first element." ID="ID_305549736" CREATED="1519519201204" MODIFIED="1519519203502"/>
+<node TEXT="Syntax: A B" ID="ID_1702071400" CREATED="1519519215828" MODIFIED="1519519217838"/>
+<node TEXT="Example: div span will match all &lt;span&gt; elements that are inside a &lt;div&gt; element." ID="ID_1589200782" CREATED="1519519231988" MODIFIED="1519519234326"/>
+</node>
+</node>
+<node TEXT="Pseudo-classes" FOLDED="true" ID="ID_1510060852" CREATED="1519516015090" MODIFIED="1519516030388">
+<node TEXT="pseudo-classes can be used to style an element based on its state." ID="ID_1423517617" CREATED="1519519700532" MODIFIED="1519519706251"/>
+<node TEXT="Like regular classes, you can chain together as many pseudo-classes as you want in a selector." ID="ID_755750842" CREATED="1519521426303" MODIFIED="1519521432023"/>
+<node TEXT="Index of standard pseudo-classes" FOLDED="true" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1519520377622">
+<node TEXT=":active" ID="ID_1143391783" CREATED="1519520388396" MODIFIED="1519520395578"/>
+<node TEXT=":any" ID="ID_1341041150" CREATED="1519520397460" MODIFIED="1519520400502"/>
+<node TEXT=":any-link" ID="ID_941860286" CREATED="1519520453411" MODIFIED="1519520455814"/>
+<node TEXT=":checked" ID="ID_727433543" CREATED="1519520471355" MODIFIED="1519520474190"/>
+<node TEXT=":default" ID="ID_95266600" CREATED="1519520486227" MODIFIED="1519520487542"/>
+<node TEXT=":defined" ID="ID_1835049666" CREATED="1519520498123" MODIFIED="1519520541820"/>
+<node TEXT=":disabled" ID="ID_1829812875" CREATED="1519520586218" MODIFIED="1519520589405"/>
+<node TEXT=":empty" ID="ID_1687419023" CREATED="1519520604194" MODIFIED="1519520607245"/>
+<node TEXT=":enabled" ID="ID_133281498" CREATED="1519520617954" MODIFIED="1519520621821"/>
+<node TEXT=":first" ID="ID_267810804" CREATED="1519520630642" MODIFIED="1519520634693"/>
+<node TEXT=":first-child" ID="ID_1555645621" CREATED="1519520649986" MODIFIED="1519520659949"/>
+<node TEXT=":first-of-type" ID="ID_1430943133" CREATED="1519520666762" MODIFIED="1519520669717"/>
+<node TEXT=":fullscreen" ID="ID_183191641" CREATED="1519520678986" MODIFIED="1519520682141"/>
+<node TEXT=":focus" ID="ID_1438310843" CREATED="1519520692858" MODIFIED="1519520696068"/>
+<node TEXT=":host" ID="ID_1871286631" CREATED="1519520710026" MODIFIED="1519520713708"/>
+<node TEXT=":host()" ID="ID_656053505" CREATED="1519520748825" MODIFIED="1519520751932"/>
+<node TEXT=":hover" ID="ID_22032631" CREATED="1519520792609" MODIFIED="1519520795468"/>
+<node TEXT=":indeterminate" ID="ID_1233956048" CREATED="1519520805361" MODIFIED="1519520808108"/>
+<node TEXT=":in-range" ID="ID_1364139555" CREATED="1519520825777" MODIFIED="1519520829355"/>
+<node TEXT=":invalid" ID="ID_1283754776" CREATED="1519520869889" MODIFIED="1519520889947"/>
+<node TEXT=":lang()" ID="ID_980965985" CREATED="1519520983664" MODIFIED="1519520986546"/>
+<node TEXT=":last-child" ID="ID_1907173387" CREATED="1519520995536" MODIFIED="1519520998170"/>
+<node TEXT=":last-of-type" ID="ID_1921424115" CREATED="1519521006664" MODIFIED="1519521009674"/>
+<node TEXT=":left" ID="ID_1217414420" CREATED="1519521017807" MODIFIED="1519521020810"/>
+<node TEXT=":link" ID="ID_739574129" CREATED="1519521029487" MODIFIED="1519521032290"/>
+<node TEXT=":not()" ID="ID_1353597871" CREATED="1519521048687" MODIFIED="1519521051514"/>
+<node TEXT=":nth-child()" ID="ID_916278704" CREATED="1519521062367" MODIFIED="1519521141660"/>
+<node TEXT=":nth-last-child()" ID="ID_1755287607" CREATED="1519521152839" MODIFIED="1519521155762"/>
+<node TEXT=":nth-last-of-type()" ID="ID_745218117" CREATED="1519521165702" MODIFIED="1519521168841"/>
+<node TEXT=":nth-of-type()" ID="ID_1440450421" CREATED="1519521180350" MODIFIED="1519521183745"/>
+<node TEXT=":only-child" ID="ID_636069677" CREATED="1519521194950" MODIFIED="1519521196969"/>
+<node TEXT=":only-of-type" ID="ID_1486497102" CREATED="1519521211726" MODIFIED="1519521213889"/>
+<node TEXT=":optional" ID="ID_1904053148" CREATED="1519521222238" MODIFIED="1519521224504"/>
+<node TEXT=":out-of-range" ID="ID_1851574388" CREATED="1519521231822" MODIFIED="1519521234512"/>
+<node TEXT=":read-only" ID="ID_18133453" CREATED="1519521244222" MODIFIED="1519521246856"/>
+<node TEXT=":read-write" ID="ID_1571362486" CREATED="1519521253782" MODIFIED="1519521256544"/>
+<node TEXT=":required" ID="ID_1794619540" CREATED="1519521263798" MODIFIED="1519521266520"/>
+<node TEXT=":right" ID="ID_1696061992" CREATED="1519521276398" MODIFIED="1519521278296"/>
+<node TEXT=":root" ID="ID_1791039624" CREATED="1519521295758" MODIFIED="1519521298336"/>
+<node TEXT=":scope" ID="ID_1079996148" CREATED="1519521310150" MODIFIED="1519521312936"/>
+<node TEXT=":target" ID="ID_437917507" CREATED="1519521319709" MODIFIED="1519521322360"/>
+<node TEXT=":valid" ID="ID_530331658" CREATED="1519521362053" MODIFIED="1519521364520"/>
+<node TEXT=":visited" ID="ID_383763468" CREATED="1519521373797" MODIFIED="1519521377200"/>
+</node>
+</node>
+<node TEXT="Pseudo-elements" FOLDED="true" ID="ID_1307495510" CREATED="1519516070121" MODIFIED="1519516074348">
+<node TEXT="pseudo-elements can be used to style a specific part of an element." ID="ID_893397212" CREATED="1519519744800" MODIFIED="1519519747811"/>
+<node TEXT="Index of standard pseudo-elements" FOLDED="true" ID="ID_13217850" CREATED="1519599535121" MODIFIED="1519599537940">
+<node TEXT="::after" FOLDED="true" ID="ID_400249708" CREATED="1519599546769" MODIFIED="1519599556043">
+<node TEXT="In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default." ID="ID_429044351" CREATED="1519600180908" MODIFIED="1519600185607"/>
+<node TEXT="Syntax" FOLDED="true" ID="ID_1304254130" CREATED="1519600235204" MODIFIED="1519600238214">
+<node TEXT="/* CSS3 syntax */&#xa;::after&#xa;&#xa;/* CSS2 syntax */&#xa;:after" ID="ID_1761067819" CREATED="1519600246532" MODIFIED="1519600248550"/>
+</node>
+<node TEXT="Examples" FOLDED="true" ID="ID_1317890325" CREATED="1519600260860" MODIFIED="1519600263406">
+<node TEXT="&lt;p class=&quot;boring-text&quot;&gt;Here is some plain old boring text.&lt;/p&gt;&#xa;&lt;p&gt;Here is some normal text that is neither boring nor exciting.&lt;/p&gt;&#xa;&lt;p class=&quot;exciting-text&quot;&gt;Contributing to MDN is easy and fun.&#xa;Just hit the edit button to add new live samples, or improve existing samples.&lt;/p&gt;" ID="ID_1377860544" CREATED="1519600400635" MODIFIED="1519600404045"/>
+<node TEXT=".exciting-text::after {&#xa;  content: &quot;&lt;- now this *is* exciting!&quot;;&#xa;  color: green;&#xa;}&#xa;&#xa;.boring-text::after {&#xa;   content: &quot;&lt;- BORING!&quot;;&#xa;   color: red;&#xa;}" ID="ID_1448126050" CREATED="1519600422242" MODIFIED="1519600425381"/>
+<node TEXT="result: Here is some plain old boring text.  &lt;- BORING!&#xa;&#xa;Here is some normal text that is neither boring nor exciting.&#xa;&#xa;Contributing to MDN is easy and fun. Just hit the edit button to add new live samples, or improve existing samples. &lt;- now this *is* exciting!" ID="ID_591040253" CREATED="1519600454034" MODIFIED="1519600550812"/>
+</node>
+</node>
+<node TEXT="::before" FOLDED="true" ID="ID_1404057564" CREATED="1519599558129" MODIFIED="1519599560563">
+<node TEXT="In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default." ID="ID_1086824743" CREATED="1519599827999" MODIFIED="1519599832745"/>
+<node TEXT="Syntax" FOLDED="true" ID="ID_595964854" CREATED="1519599871782" MODIFIED="1519599878945">
+<node TEXT="/* CSS3 syntax */&#xa;::before&#xa;&#xa;/* CSS2 syntax */&#xa;:before" ID="ID_1066130793" CREATED="1519600106749" MODIFIED="1519600109672"/>
+</node>
+<node TEXT="Example" FOLDED="true" ID="ID_797740180" CREATED="1519599933670" MODIFIED="1519599940920">
+<node TEXT="One simple example of using ::before pseudo-elements is to provide quotation marks. Here we use both ::before to insert quotation characters." ID="ID_1936652301" CREATED="1519599958294" MODIFIED="1519599966241"/>
+<node TEXT="&lt;q&gt;Some quotes,&lt;/q&gt; he said, &lt;q&gt;are better than none.&lt;/q&gt;" ID="ID_431438158" CREATED="1519599979630" MODIFIED="1519599982632"/>
+<node TEXT="q::before {&#xa;  content: &quot;&#xab;&quot;;&#xa;  color: blue;&#xa;}" ID="ID_1547756954" CREATED="1519599992885" MODIFIED="1519599995736"/>
+<node TEXT="Result: &lt;&lt;Some quotes, he said &lt;&lt; are better than none." ID="ID_1239606359" CREATED="1519600002174" MODIFIED="1519600088615"/>
+</node>
+</node>
+<node TEXT="::cue" ID="ID_205401949" CREATED="1519599571257" MODIFIED="1519599573627"/>
+<node TEXT="::first-letter" ID="ID_1917919652" CREATED="1519599583288" MODIFIED="1519599585771"/>
+<node TEXT="::first-line" ID="ID_1710562009" CREATED="1519599600096" MODIFIED="1519599604987"/>
+<node TEXT="::selection" ID="ID_1215995220" CREATED="1519599616232" MODIFIED="1519599619331"/>
+<node TEXT="::slotted" ID="ID_332821907" CREATED="1519599629600" MODIFIED="1519599632058"/>
+<node TEXT="experimental" FOLDED="true" ID="ID_755495171" CREATED="1519599687120" MODIFIED="1519599694618">
+<node TEXT="::backdrop" ID="ID_1389536548" CREATED="1519599705744" MODIFIED="1519599708178"/>
+<node TEXT="::placeholder" ID="ID_93853094" CREATED="1519599719863" MODIFIED="1519599722594"/>
+<node TEXT="::marker" ID="ID_281336288" CREATED="1519599734399" MODIFIED="1519599736690"/>
+<node TEXT="::spelling-error" ID="ID_358884289" CREATED="1519599745159" MODIFIED="1519599747466"/>
+<node TEXT="::grammar-error" ID="ID_1540343365" CREATED="1519599755823" MODIFIED="1519599757929"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Animations" ID="ID_866030078" CREATED="1519653766687" MODIFIED="1519653770312">
+<node TEXT="An animation lets an element gradually change from one style to another." ID="ID_303688421" CREATED="1519653805795" MODIFIED="1519653809684"/>
+<node TEXT="You can change as many CSS properties you want, as many times you want." ID="ID_1615614080" CREATED="1519653821099" MODIFIED="1519653824291"/>
+<node TEXT="To use CSS animation, you must first specify some keyframes for the animation." FOLDED="true" ID="ID_449748742" CREATED="1519653836563" MODIFIED="1519653839531">
+<node TEXT="When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times." ID="ID_1685111387" CREATED="1519653900922" MODIFIED="1519653904090"/>
+<node TEXT="@keyframes example {&#xa;    from {background-color: red;}&#xa;    to {background-color: yellow;}&#xa;}" ID="ID_27439640" CREATED="1519653999514" MODIFIED="1519654003218"/>
+<node TEXT="It is also possible to use percent. By using percent, you can add as many style changes as you like." ID="ID_1471019725" CREATED="1519654155201" MODIFIED="1519654158193"/>
+<node TEXT="@keyframes example {&#xa;    0%   {background-color: red;}&#xa;    25%  {background-color: yellow;}&#xa;    50%  {background-color: blue;}&#xa;    100% {background-color: green;}&#xa;}" ID="ID_88339446" CREATED="1519654167753" MODIFIED="1519654170769"/>
+</node>
+<node TEXT="To get an animation to work, you must bind the animation to an element." FOLDED="true" ID="ID_1140068449" CREATED="1519654030426" MODIFIED="1519654033858">
+<node TEXT="/* The element to apply the animation to */&#xa;div {&#xa;    width: 100px;&#xa;    height: 100px;&#xa;    background-color: red;&#xa;    animation-name: example;&#xa;    animation-duration: 4s;&#xa;}" ID="ID_194197902" CREATED="1519654086361" MODIFIED="1519654089146"/>
+</node>
+<node TEXT="properties" FOLDED="true" ID="ID_1478777435" CREATED="1519654282032" MODIFIED="1519654291999">
+<node TEXT="animation-name: example" ID="ID_934074757" CREATED="1519654387391" MODIFIED="1519654561510"/>
+<node TEXT="animation-duration" FOLDED="true" ID="ID_968934719" CREATED="1519654379951" MODIFIED="1519654465334">
+<node TEXT="defines how long time an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds)." ID="ID_1399235696" CREATED="1519654466838" MODIFIED="1519654588910"/>
+<node TEXT="animation-duration: 4s;" ID="ID_1737955552" CREATED="1519654506382" MODIFIED="1519656230297">
+<font BOLD="true"/>
+</node>
+</node>
+<node TEXT="animation-delay" FOLDED="true" ID="ID_1509208316" CREATED="1519654307223" MODIFIED="1519654333168">
+<node TEXT="specifies a delay for the start of an animation." ID="ID_1470062366" CREATED="1519654594174" MODIFIED="1519654644829"/>
+<node TEXT="animation-delay: 2s;" ID="ID_208346175" CREATED="1519654656069" MODIFIED="1519656237081">
+<font BOLD="true"/>
+</node>
+<node TEXT="Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for N seconds." ID="ID_1454434767" CREATED="1519654684021" MODIFIED="1519654686620"/>
+<node TEXT="animation-delay: -2s;" ID="ID_280598850" CREATED="1519654705125" MODIFIED="1519656240801">
+<font BOLD="true"/>
+</node>
+</node>
+<node TEXT="animation-iteration-count" FOLDED="true" ID="ID_1407907431" CREATED="1519654745845" MODIFIED="1519654748252">
+<node TEXT="property specifies the number of times an animation should run." ID="ID_1495808511" CREATED="1519654756900" MODIFIED="1519654759420"/>
+<node TEXT="animation-iteration-count: 3;" ID="ID_1782725839" CREATED="1519654775556" MODIFIED="1519656244545">
+<font BOLD="true"/>
+</node>
+<node TEXT="the value &quot;infinite&quot; to make the animation continue for ever:" ID="ID_362560655" CREATED="1519654798708" MODIFIED="1519654818220"/>
+<node TEXT="animation-iteration-count: infinite;" ID="ID_665565243" CREATED="1519654824132" MODIFIED="1519656258753">
+<font BOLD="true"/>
+</node>
+</node>
+<node TEXT="animation-direction" FOLDED="true" ID="ID_74520603" CREATED="1519655023274" MODIFIED="1519655026258">
+<node TEXT="property specifies whether an animation should be played forwards, backwards or in alternate cycles." ID="ID_386337948" CREATED="1519655041258" MODIFIED="1519655045298"/>
+<node TEXT="The animation-direction property can have the following values:" FOLDED="true" ID="ID_1280853860" CREATED="1519655112450" MODIFIED="1519655116929">
+<node ID="ID_790528329" CREATED="1519655131666" MODIFIED="1519655257137"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      1. <b>normal</b>&#160;- The animation is played as normal (forwards). This is default
+    </p>
+    <p>
+      2. <b>reverse</b>&#160;- The animation is played in reverse direction (backwards)
+    </p>
+    <p>
+      3. <b>alternate</b>&#160;- The animation is played forwards first, then backwards
+    </p>
+    <p>
+      4. <b>alternate-reverse</b>&#160;- The animation is played backwards first, then forwards
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="animation-timing-function" FOLDED="true" ID="ID_588605875" CREATED="1519655300012" MODIFIED="1519655304208">
+<node TEXT="property specifies the speed curve of the animation." ID="ID_1674359635" CREATED="1519655321232" MODIFIED="1519655325784"/>
+<node TEXT="The property can have the following values:" FOLDED="true" ID="ID_1499466628" CREATED="1519655374976" MODIFIED="1519655386767">
+<node ID="ID_1411400316" CREATED="1519655399160" MODIFIED="1519655442891"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>ease</b>&#160;- Specifies an animation with a slow start, then fast, then end slowly (this is default)
+    </p>
+    <p>
+      <b>linear </b>- Specifies an animation with the same speed from start to end
+    </p>
+    <p>
+      <b>ease-in </b>- Specifies an animation with a slow start
+    </p>
+    <p>
+      <b>ease-out</b>&#160;- Specifies an animation with a slow end
+    </p>
+    <p>
+      <b>ease-in-out</b>&#160;- Specifies an animation with a slow start and end
+    </p>
+    <p>
+      <b>cubic-bezier(n,n,n,n) </b>- Lets you define your own values in a cubic-bezier function
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="animation-fill-mode" FOLDED="true" ID="ID_796843244" CREATED="1519655701430" MODIFIED="1519655705389">
+<node TEXT="CSS animations do not affect an element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior." ID="ID_1402128783" CREATED="1519655714790" MODIFIED="1519655718189"/>
+<node TEXT="specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both)." ID="ID_807815486" CREATED="1519655828269" MODIFIED="1519655839956"/>
+<node TEXT="The animation-fill-mode property can have the following values:" FOLDED="true" ID="ID_687283844" CREATED="1519655851733" MODIFIED="1519655861236">
+<node ID="ID_1920511855" CREATED="1519655876917" MODIFIED="1519655917239"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>none</b>&#160;- Default value. Animation will not apply any styles to the element before or after it is executing
+    </p>
+    <p>
+      <b>forwards</b>&#160;- The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+    </p>
+    <p>
+      <b>backwards</b>&#160;- The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+    </p>
+    <p>
+      <b>both</b>&#160;- The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="animation-play-state" FOLDED="true" ID="ID_1834613632" CREATED="1519656056891" MODIFIED="1519656062835">
+<node TEXT="specifies whether the animation is running or paused." ID="ID_790064065" CREATED="1519656077955" MODIFIED="1519656080899"/>
+<node TEXT="animation-play-state: paused|running|initial|inherit;" FOLDED="true" ID="ID_1963923921" CREATED="1519656115267" MODIFIED="1519656118618">
+<node ID="ID_464943190" CREATED="1519656132987" MODIFIED="1519656189348"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>paused </b>- Specifies that the animation is paused
+    </p>
+    <p>
+      <b>running</b>&#160;- Default value. Specifies that the animation is running
+    </p>
+    <p>
+      <b>initial</b>&#160;- Sets this property to its default value. Read about initial
+    </p>
+    <p>
+      <b>inherit</b>&#160;- Inherits this property from its parent element. Read about inherit
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="div:hover {&#xa;    animation-play-state: paused;&#xa;}" ID="ID_220020166" CREATED="1519656200130" MODIFIED="1519656207122"/>
+</node>
+<node TEXT="animation" FOLDED="true" ID="ID_1175788790" CREATED="1519656343386" MODIFIED="1519656350465">
+<node TEXT="div {&#xa;    animation-name: example;&#xa;    animation-duration: 5s;&#xa;    animation-timing-function: linear;&#xa;    animation-delay: 2s;&#xa;    animation-iteration-count: infinite;&#xa;    animation-direction: alternate;&#xa;}" ID="ID_338919509" CREATED="1519656361737" MODIFIED="1519656364857"/>
+<node TEXT="The same animation effect as above can be achieved by using the shorthand animation property:" ID="ID_91335137" CREATED="1519656375385" MODIFIED="1519656378065"/>
+<node TEXT="div {&#xa;    animation: example 5s linear 2s infinite alternate;&#xa;}" ID="ID_1912794782" CREATED="1519656390409" MODIFIED="1519656393545"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
+</node>
+<node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
-<node TEXT="language-core" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
+<node TEXT="language-core" FOLDED="true" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
 <node TEXT="It&#x2019;s a JavaScript expression that allows us to extract data from arrays, objects, maps and sets" ID="ID_546247236" CREATED="1515401730724" MODIFIED="1515401730724"/>
-<node TEXT="const person = {" FOLDED="true" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
+<node TEXT="const person = {" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
 <node TEXT="first: &apos;Wes&apos;," ID="ID_1169293402" CREATED="1515401828817" MODIFIED="1515401828817"/>
 <node TEXT="last: &apos;Bos&apos;," ID="ID_774612394" CREATED="1515401828818" MODIFIED="1515401828818"/>
 <node TEXT="country: &apos;Canada&apos;," ID="ID_1241739199" CREATED="1515401828818" MODIFIED="1515401828818"/>
@@ -314,8 +663,8 @@
 </node>
 <node TEXT="Array" ID="ID_1703991624" CREATED="1517415246859" MODIFIED="1517415256432"/>
 </node>
-<node TEXT="Nice to know" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
-<node TEXT="Swap variables" FOLDED="true" ID="ID_1349446183" CREATED="1519028404553" MODIFIED="1519028413418">
+<node TEXT="Nice to know" FOLDED="true" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
+<node TEXT="Swap variables" ID="ID_1349446183" CREATED="1519028404553" MODIFIED="1519028413418">
 <node TEXT="Using Array Destructuring to swap values" ID="ID_461036412" CREATED="1519028786859" MODIFIED="1519028793980"/>
 <node TEXT="let a = &apos;world&apos;, b = &apos;hello&apos;&#xa;[a, b] = [b, a]&#xa;console.log(a) // -&gt; hello&#xa;console.log(b) // -&gt; world" ID="ID_531722019" CREATED="1519028812555" MODIFIED="1519028818445"/>
 </node>
@@ -381,8 +730,8 @@
 </node>
 </node>
 </node>
-<node TEXT="Frontend" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
-<node TEXT="Web APIs" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
+<node TEXT="Frontend" FOLDED="true" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
+<node TEXT="Web APIs" FOLDED="true" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
 <node TEXT="Web Application Programming Interfaces (Web APIs) are used to perform a variety of tasks, such as manipulating the DOM, playing audio or video, or generating 3D graphics." ID="ID_1839416238" CREATED="1517822841024" MODIFIED="1517822864936"/>
 <node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167"/>
 <node TEXT="Web Storage API" FOLDED="true" ID="ID_975504561" CREATED="1515661463986" MODIFIED="1515661463986">
@@ -419,7 +768,7 @@
 </node>
 </node>
 <node TEXT="Web Workers API" ID="ID_1639014560" CREATED="1518085185446" MODIFIED="1518085185446"/>
-<node TEXT="Console" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1519030429070">
+<node TEXT="Console" FOLDED="true" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1519030429070">
 <node TEXT="The Console object provides access to the browser&apos;s debugging console (e.g. the Web Console in Firefox). The specifics of how it works varies from browser to browser, but there is a de facto set of features that are typically provided." ID="ID_1019177181" CREATED="1519030454565" MODIFIED="1519030460464"/>
 </node>
 </node>
@@ -469,11 +818,11 @@
 <hook URI="webdevelopment2_files/png_5868046861603241277.png" SIZE="0.80862534" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="Global Object" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1518085056345">
+<node TEXT="Global Object" FOLDED="true" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1518085056345">
 <node TEXT="In a web browser, any code which the script doesn&apos;t specifically start up as a background task has a Window as its global object. This is the vast majority of JavaScript code on the Web." ID="ID_690447496" CREATED="1518085107077" MODIFIED="1518085107077"/>
 <node TEXT="window" FOLDED="true" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
 <node TEXT="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property." ID="ID_545673075" CREATED="1518094524949" MODIFIED="1518094524949"/>
-<node TEXT="properties" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1518183729900">
+<node TEXT="properties" FOLDED="true" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1518183729900">
 <node TEXT="document" FOLDED="true" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1518688431758">
 <node TEXT="The Document interface represents any web page loaded in the browser and serves as an entry point into the web page&apos;s content, which is the DOM tree. The DOM tree includes elements such as &lt;body&gt; and &lt;table&gt;, among many others. It provides functionality globally to the document, like how to obtain the page&apos;s URL and create new elements in the document." ID="ID_309209743" CREATED="1518688425972" MODIFIED="1518688439665"/>
 <node TEXT="DOMTree" ID="ID_1575157735" CREATED="1518688537072" MODIFIED="1518688549086"/>
@@ -486,19 +835,28 @@
 <node TEXT="crypto" FOLDED="true" ID="ID_1661758857" CREATED="1518181455829" MODIFIED="1518181461481">
 <node TEXT="The Window.crypto read-only property returns the Crypto object associated to the global object. This object allows web pages access to certain cryptographic related services. a cryptographic source of random numbers for a non-cryptographic source use math.random()" ID="ID_1077315428" CREATED="1518182742783" MODIFIED="1518183203028"/>
 <node TEXT="var cryptoObj = window.crypto || window.msCrypto; // for IE 11" ID="ID_1683961405" CREATED="1518182771522" MODIFIED="1518182771522"/>
-<node TEXT="getRandomValues(typedArray)" ID="ID_412669943" CREATED="1518182894763" MODIFIED="1518182894763">
+<node TEXT="getRandomValues(typedArray)" FOLDED="true" ID="ID_412669943" CREATED="1518182894763" MODIFIED="1518182894763">
 <node TEXT="var array = new Uint32Array(10);" ID="ID_504521419" CREATED="1518182923408" MODIFIED="1518182923408"/>
 <node TEXT="window.crypto.getRandomValues(array);" ID="ID_1686671207" CREATED="1518182933364" MODIFIED="1518182933364"/>
 </node>
 </node>
 <node TEXT="math" ID="ID_1897025957" CREATED="1518183792764" MODIFIED="1518183799531"/>
+<node TEXT="innerHeight" FOLDED="true" ID="ID_986819134" CREATED="1519596430599" MODIFIED="1519596527241">
+<node TEXT="On return, intViewportHeight is the height of the browser window&apos;s viewport." ID="ID_1092744500" CREATED="1519596625461" MODIFIED="1519596628575"/>
+<node TEXT="var intViewportHeight = window.innerHeight;" ID="ID_1308933451" CREATED="1519596703301" MODIFIED="1519596705295"/>
+<node TEXT="The window.innerHeight property is read only; it has no default value." ID="ID_765375086" CREATED="1519596724549" MODIFIED="1519596735943"/>
+<node TEXT="The following figure shows the difference between outerHeight and innerHeight." ID="ID_1651246691" CREATED="1519596790796" MODIFIED="1519596793670"/>
+<node TEXT="png_1598505959378295120.png" ID="ID_221511541" CREATED="1519596815490" MODIFIED="1519596815490">
+<hook URI="webdevelopment2_files/png_1598505959378295120.png" SIZE="0.8130081" NAME="ExternalObject"/>
+</node>
+</node>
 </node>
 <node TEXT="Methods" ID="ID_903700765" CREATED="1518183733206" MODIFIED="1518183740755"/>
 </node>
 </node>
 </node>
-<node TEXT="Backend" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1515277343208">
-<node TEXT="npm" ID="ID_647511561" CREATED="1516023069009" MODIFIED="1516023111358" LINK="https://www.google.de/url?sa=i&amp;rct=j&amp;q=&amp;esrc=s&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiPlL-yiNrYAhXIIOwKHRIYDEcQjhwIBQ&amp;url=https%3A%2F%2Fshop.tcgplayer.com%2Fmagic%2Fmirage%2Fcatacomb-dragon&amp;psig=AOvVaw36v1uHftSs-BeO3TpHgJnI&amp;ust=1516109029133545">
+<node TEXT="Backend" FOLDED="true" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1519600829138">
+<node TEXT="npm" FOLDED="true" ID="ID_647511561" CREATED="1516023069009" MODIFIED="1516023111358" LINK="https://www.google.de/url?sa=i&amp;rct=j&amp;q=&amp;esrc=s&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiPlL-yiNrYAhXIIOwKHRIYDEcQjhwIBQ&amp;url=https%3A%2F%2Fshop.tcgplayer.com%2Fmagic%2Fmirage%2Fcatacomb-dragon&amp;psig=AOvVaw36v1uHftSs-BeO3TpHgJnI&amp;ust=1516109029133545">
 <node TEXT="Intro" FOLDED="true" ID="ID_1875273331" CREATED="1516555844183" MODIFIED="1516555850799">
 <node TEXT="NPM is an acronym for Node.js Package Manager" ID="ID_1420772470" CREATED="1516480940094" MODIFIED="1516480949054"/>
 <node TEXT="NPM is the package manager for Node.js" ID="ID_194845935" CREATED="1516555875523" MODIFIED="1516555875523"/>
@@ -554,13 +912,13 @@
 </node>
 </node>
 </node>
-<node TEXT="commands" ID="ID_1492845471" CREATED="1516550261213" MODIFIED="1516550269653">
+<node TEXT="commands" FOLDED="true" ID="ID_1492845471" CREATED="1516550261213" MODIFIED="1516550269653">
 <node TEXT="init" FOLDED="true" ID="ID_199950356" CREATED="1516023131831" MODIFIED="1516023137272">
 <node TEXT="init no questions" FOLDED="true" ID="ID_1123052726" CREATED="1516023156167" MODIFIED="1516023164376">
 <node TEXT="npm init -y" ID="ID_591563011" CREATED="1516023179088" MODIFIED="1516028492931"/>
 </node>
 </node>
-<node TEXT="install" ID="ID_978714246" CREATED="1516095348801" MODIFIED="1516095384179">
+<node TEXT="install" FOLDED="true" ID="ID_978714246" CREATED="1516095348801" MODIFIED="1516095384179">
 <node TEXT="npm i -s &lt;package&gt;" ID="ID_1010735310" CREATED="1516095378489" MODIFIED="1516095419787"/>
 <node TEXT="npm i -d &lt;package&gt;" ID="ID_1709025496" CREATED="1516095436603" MODIFIED="1516095459333"/>
 <node TEXT="add repo as dependency" FOLDED="true" ID="ID_96475741" CREATED="1518084232930" MODIFIED="1518084248409">
@@ -577,8 +935,8 @@
 <node TEXT="npm uninstall -s &lt;package&gt;" ID="ID_1687309143" CREATED="1516095378489" MODIFIED="1516550135799"/>
 <node TEXT="npm uninstall -d &lt;package&gt;" ID="ID_906230857" CREATED="1516095436603" MODIFIED="1516550143182"/>
 </node>
-<node TEXT="list" ID="ID_510142718" CREATED="1516096585075" MODIFIED="1516096590165">
-<node TEXT="list global packages" ID="ID_1287473160" CREATED="1516096592765" MODIFIED="1516096607067">
+<node TEXT="list" FOLDED="true" ID="ID_510142718" CREATED="1516096585075" MODIFIED="1516096590165">
+<node TEXT="list global packages" FOLDED="true" ID="ID_1287473160" CREATED="1516096592765" MODIFIED="1516096607067">
 <node TEXT="npm list -g --depth=0" ID="ID_1366468749" CREATED="1516096678164" MODIFIED="1516096678164"/>
 </node>
 </node>
@@ -823,7 +1181,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Node" FOLDED="true" ID="ID_1498818952" CREATED="1516178559275" MODIFIED="1516178567400">
+<node TEXT="Node" FOLDED="true" ID="ID_1498818952" CREATED="1516178559275" MODIFIED="1519600829138">
 <node TEXT="Overview of JavaScript Modules" FOLDED="true" ID="ID_943227875" CREATED="1516482047814" MODIFIED="1516482057126">
 <node TEXT="basics" FOLDED="true" ID="ID_1115643175" CREATED="1516484931146" MODIFIED="1516484977466">
 <node TEXT="As originally envisioned in 1995, JavaScript was not implemented with a formal way of breaking an application into modules" ID="ID_1012480616" CREATED="1516482087962" MODIFIED="1516549210902"/>
@@ -1015,7 +1373,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Frameworks" ID="ID_1455965189" CREATED="1515277360141" MODIFIED="1515277374831">
+<node TEXT="Frameworks" ID="ID_1455965189" CREATED="1515277360141" MODIFIED="1519600780211">
 <node TEXT="React" FOLDED="true" ID="ID_598934165" CREATED="1515277387469" MODIFIED="1515279500825">
 <node TEXT="Quick Setup" FOLDED="true" ID="ID_1044908776" CREATED="1515277487524" MODIFIED="1515323490525">
 <node TEXT="1. Create an HTML file" ID="ID_409408142" CREATED="1515277527954" MODIFIED="1515277527954"/>
@@ -1509,9 +1867,9 @@
 <node TEXT="pattern" FOLDED="true" ID="ID_1641716419" CREATED="1517908745394" MODIFIED="1517908752112">
 <node TEXT="Redux" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1515427483506"/>
 </node>
-<node TEXT="Buildprocess" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1519056082292">
-<node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
-<node TEXT="webpack" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
+<node TEXT="Buildprocess" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1519056082292">
+<node TEXT="taskrunner" FOLDED="true" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
+<node TEXT="webpack" FOLDED="true" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
 <node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
 <node TEXT="Concepts" FOLDED="true" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
 <node TEXT="It is incredibly configurable, but to get started you only need to understand four Core Concepts:" ID="ID_1111641199" CREATED="1517911354399" MODIFIED="1517911354399"/>
@@ -1559,14 +1917,14 @@
 </node>
 <node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
 </node>
-<node TEXT="linter" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
-<node TEXT="exception" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
+<node TEXT="linter" FOLDED="true" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
+<node TEXT="exception" FOLDED="true" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
 <node TEXT="// eslint-disable-line" ID="ID_1309138352" CREATED="1519056152043" MODIFIED="1519056157028"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="Links" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
+<node TEXT="Links" FOLDED="true" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
 <edge COLOR="#ff00ff"/>
 <node TEXT="https://unpkg.com/#/" ID="ID_1678468185" CREATED="1515277921812" MODIFIED="1515277921812" LINK="https://unpkg.com/#/"/>
 <node TEXT="https://github.com/thedaviddias/Front-End-Checklist" ID="ID_934011737" CREATED="1515411958783" MODIFIED="1515411958783" LINK="https://github.com/thedaviddias/Front-End-Checklist"/>
@@ -1602,8 +1960,9 @@
 <node TEXT="https://hackernoon.com/" ID="ID_1877415063" CREATED="1518166662524" MODIFIED="1518166662524" LINK="https://hackernoon.com/"/>
 <node TEXT="http://vanseodesign.com/css/vertical-centering/" ID="ID_192734385" CREATED="1518166978288" MODIFIED="1518166978288" LINK="http://vanseodesign.com/css/vertical-centering/"/>
 <node TEXT="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b" ID="ID_1358236291" CREATED="1519059367226" MODIFIED="1519059367226" LINK="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b"/>
+<node TEXT="https://pixabay.com/" ID="ID_1896151085" CREATED="1519599278403" MODIFIED="1519599281917"/>
 </node>
-<node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1517302968668" HGAP_QUANTITY="26.749999620020404 pt" VSHIFT_QUANTITY="48.74999854713682 pt">
+<node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1517302968668" HGAP_QUANTITY="26.749999620020404 pt" VSHIFT_QUANTITY="48.74999854713682 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Windows" FOLDED="true" ID="ID_1175687801" CREATED="1516798635478" MODIFIED="1517301647945">
 <node TEXT="comandline" FOLDED="true" ID="ID_1081660052" CREATED="1516798661191" MODIFIED="1516798741946">
@@ -1634,9 +1993,9 @@
 </node>
 </node>
 </node>
-<node TEXT="linux" ID="ID_616990932" CREATED="1516803684420" MODIFIED="1517301647947">
-<node TEXT="commands" ID="ID_1442813035" CREATED="1516803702340" MODIFIED="1516803711829">
-<node TEXT="ssh-keygen" ID="ID_1607452270" CREATED="1516803740228" MODIFIED="1516803754740">
+<node TEXT="linux" FOLDED="true" ID="ID_616990932" CREATED="1516803684420" MODIFIED="1517301647947">
+<node TEXT="commands" FOLDED="true" ID="ID_1442813035" CREATED="1516803702340" MODIFIED="1516803711829">
+<node TEXT="ssh-keygen" FOLDED="true" ID="ID_1607452270" CREATED="1516803740228" MODIFIED="1516803754740">
 <node TEXT="ssh-keygen -t rsa" ID="ID_178584054" CREATED="1516803766379" MODIFIED="1518516225559"/>
 </node>
 <node TEXT="Bash Commands" FOLDED="true" ID="ID_911602781" CREATED="1516871172461" MODIFIED="1516871172461">
@@ -1665,7 +2024,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Tooling" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1517302974052" HGAP_QUANTITY="21.49999977648259 pt" VSHIFT_QUANTITY="28.499999150633837 pt">
+<node TEXT="Tooling" FOLDED="true" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1517302974052" HGAP_QUANTITY="21.49999977648259 pt" VSHIFT_QUANTITY="28.499999150633837 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Browser tools" FOLDED="true" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
 <node TEXT="Chrome dev tools" FOLDED="true" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
@@ -1761,9 +2120,9 @@
 </node>
 <node TEXT="Firefox dev Tools" ID="ID_341753613" CREATED="1517909170190" MODIFIED="1517909180297"/>
 </node>
-<node TEXT="Version Control" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
-<node TEXT="Git" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
-<node TEXT="commands" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
+<node TEXT="Version Control" FOLDED="true" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
+<node TEXT="Git" FOLDED="true" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
+<node TEXT="commands" FOLDED="true" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
 <node TEXT="git cherry-pick" FOLDED="true" ID="ID_931768391" CREATED="1517820565432" MODIFIED="1517820582422">
 <node TEXT="Here&apos;s the scenario: You&apos;re working in a feature branch that isn&apos;t quite ready for a full merge but you do have a few commits in there that you want to push to master (for a release or whatever reason). This is just one of possibly many situations where making use of Git&apos;s cherry-pick command might prove useful." ID="ID_672906785" CREATED="1517820603735" MODIFIED="1517820603735"/>
 <node TEXT="First, from within your feature branch, copy the first six or seven characters of the ID of the commit that you want to bring in: (use git log)" ID="ID_558811321" CREATED="1517820728494" MODIFIED="1517820788071"/>
@@ -1774,11 +2133,11 @@
 <node TEXT="Now if you do a git log you will see your cherry-picked commit at the top." ID="ID_1532876959" CREATED="1517820979568" MODIFIED="1517820979568"/>
 <node TEXT="Be wary of cherry-picking a lot of commits out of order, the Git log will reflect the order in which you cherry-picked, not the chronological order of the original commits (The original commit date is preserved, however)." ID="ID_989095425" CREATED="1517820997061" MODIFIED="1517820997061"/>
 </node>
-<node TEXT="credentials" ID="ID_1170751793" CREATED="1519290262464" MODIFIED="1519290267309">
-<node TEXT="get" ID="ID_769889911" CREATED="1519290285543" MODIFIED="1519290289192">
+<node TEXT="credentials" FOLDED="true" ID="ID_1170751793" CREATED="1519290262464" MODIFIED="1519290267309">
+<node TEXT="get" FOLDED="true" ID="ID_769889911" CREATED="1519290285543" MODIFIED="1519290289192">
 <node TEXT="git config --list" ID="ID_1951854395" CREATED="1519290295943" MODIFIED="1519290309698"/>
 </node>
-<node TEXT="set" ID="ID_214463756" CREATED="1519290314791" MODIFIED="1519290329089">
+<node TEXT="set" FOLDED="true" ID="ID_214463756" CREATED="1519290314791" MODIFIED="1519290329089">
 <node TEXT="git config --global user.name &lt;username&gt;" ID="ID_886144222" CREATED="1519290340479" MODIFIED="1519290400801"/>
 <node TEXT="git config --global user.email &lt;email&gt;" ID="ID_170989192" CREATED="1519290405224" MODIFIED="1519290422689"/>
 </node>

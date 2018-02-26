@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated slant box border effect</title>
+    <!-- CSS -->
+    <style>
+        
+        html, body{
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slant{
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .slant::before{
+            content: "";
+            display:block;
+            position: absolute;
+            bottom: -3em;
+            left: -2em;
+            width: 150%;
+            height: 6em;
+        }
+
+        .slant::before{
+            background: #fff;
+            transform: rotate(6.5deg);
+            transition: transform 1s;
+        }
+
+        .slant:hover::before{
+            transform: rotate(-5.5deg);
+        }
+
+        img{
+            padding-left: 50px;
+            width: 85%;
+            height: auto;
+        }
+    </style>
+
+
+</head>
+<body>
+    <span class="slant">
+        <img src="assets/nature-3106213_640.jpg" alt="">
+    </span>
+    <span class="slant">
+        <img src="assets/pop-art-2722265_640.jpg" alt="">
+    </span>
+    <span class="slant">
+        <img src="assets/trees-2958305_640.jpg" alt="">
+    </span>
+</body>
+</html>
