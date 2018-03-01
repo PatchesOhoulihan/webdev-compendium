@@ -634,7 +634,20 @@
 </node>
 </node>
 <node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
-<node TEXT="pattern" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067"/>
+<node TEXT="pattern" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067">
+<node TEXT="BEM" ID="ID_1940557549" CREATED="1519894238217" MODIFIED="1519894241757">
+<node TEXT="The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project." ID="ID_936859935" CREATED="1519894303413" MODIFIED="1519894310215"/>
+<node TEXT="Block" ID="ID_1112380842" CREATED="1519894335941" MODIFIED="1519894342391">
+<node TEXT="In this CSS methodology a block is a top-level abstraction of a new component, for example a button: .btn { }. This block should be thought of as a parent." ID="ID_1119160721" CREATED="1519894409845" MODIFIED="1519894415511"/>
+</node>
+<node TEXT="Element" ID="ID_1841700336" CREATED="1519894344597" MODIFIED="1519894355119">
+<node TEXT="Child items, or elements, can be placed inside and these are denoted by two underscores following the name of the block like .btn__price { }" ID="ID_1207958680" CREATED="1519894449910" MODIFIED="1519894457663"/>
+</node>
+<node TEXT="Modifier" ID="ID_1007851719" CREATED="1519894357461" MODIFIED="1519894366472">
+<node TEXT="modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--orange" ID="ID_615609830" CREATED="1519894499766" MODIFIED="1519894581920"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
@@ -1930,7 +1943,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Links" FOLDED="true" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
+<node TEXT="Links" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
 <edge COLOR="#ff00ff"/>
 <node TEXT="https://unpkg.com/#/" ID="ID_1678468185" CREATED="1515277921812" MODIFIED="1515277921812" LINK="https://unpkg.com/#/"/>
 <node TEXT="https://github.com/thedaviddias/Front-End-Checklist" ID="ID_934011737" CREATED="1515411958783" MODIFIED="1515411958783" LINK="https://github.com/thedaviddias/Front-End-Checklist"/>
@@ -1967,6 +1980,7 @@
 <node TEXT="http://vanseodesign.com/css/vertical-centering/" ID="ID_192734385" CREATED="1518166978288" MODIFIED="1518166978288" LINK="http://vanseodesign.com/css/vertical-centering/"/>
 <node TEXT="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b" ID="ID_1358236291" CREATED="1519059367226" MODIFIED="1519059367226" LINK="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b"/>
 <node TEXT="https://pixabay.com/" ID="ID_1896151085" CREATED="1519599278403" MODIFIED="1519599281917"/>
+<node TEXT="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" ID="ID_236529775" CREATED="1519898225296" MODIFIED="1519898231796"/>
 </node>
 <node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -2213,7 +2227,6 @@
     <span http-equiv="content-type" content="text/html; charset=utf-8" style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(0, 0, 0)" face="Verdana, Arial, Helvetica, sans-serif" size="12px">There are two important considerations when using /robots.txt:</font></span> 
   </body>
 </html>
-
 </richcontent>
 <node TEXT="robots can ignore your /robots.txt. Especially malware robots that scan the web for security vulnerabilities, and email address harvesters used by spammers will pay no attention." ID="ID_1130278514" CREATED="1519810868415" MODIFIED="1519810874496"/>
 <node TEXT="the /robots.txt file is a publicly available file. Anyone can see what sections of your server you don&apos;t want robots to use." ID="ID_1290025858" CREATED="1519810898455" MODIFIED="1519810901504"/>
@@ -2242,7 +2255,6 @@
     <span http-equiv="content-type" content="text/html; charset=utf-8" style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(34, 34, 34)" face="sans-serif" size="14px">how comments can be used:</font></span> 
   </body>
 </html>
-
 </richcontent>
 <node TEXT="# Comments appear after the &quot;#&quot; symbol at the start of a line, or after a directive&#xa;User-agent: * # match all bots&#xa;Disallow: / # keep them out" ID="ID_954398389" CREATED="1519811759399" MODIFIED="1519811762257"/>
 </node>
