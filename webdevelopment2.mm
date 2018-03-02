@@ -54,7 +54,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="27" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="28" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
 <node TEXT="script-tag" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1515602554373">
@@ -649,6 +649,51 @@
 </node>
 <node TEXT="If you are mostly targeting users with modern browsers, you can get away with a progressive method of using @font-face that only serves WOFF and WOFF2 formats" ID="ID_196845801" CREATED="1519915690706" MODIFIED="1519915690706"/>
 <node TEXT="And if a user&#x2019;s machine is so old that it doesn&#x2019;t support either of these formats, it may be better to just serve them a system font for performance reasons, anyway." ID="ID_974111287" CREATED="1519915774916" MODIFIED="1519915779171"/>
+</node>
+</node>
+<node TEXT="Nice to know" ID="ID_557912890" CREATED="1519979482931" MODIFIED="1519979496048">
+<node TEXT="Centering in CSS" ID="ID_790494261" CREATED="1519979572897" MODIFIED="1519979636755">
+<node TEXT="Horizontally" FOLDED="true" ID="ID_1505863954" CREATED="1519979549753" MODIFIED="1519979565489">
+<node TEXT="Is it inline or inline-* elements (like text or links)?" FOLDED="true" ID="ID_1376535717" CREATED="1519979775803" MODIFIED="1519979779036">
+<node TEXT="You can center inline elements horizontally, within a block-level parent element, with just:" ID="ID_1129745129" CREATED="1519979796227" MODIFIED="1519979803212"/>
+<node TEXT="&lt;header&gt;&#xa;  This text is centered.&#xa;&lt;/header&gt;&#xa;&#xa;&lt;nav role=&apos;navigation&apos;&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;One&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Two&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Three&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Four&lt;/a&gt;&#xa;&lt;/nav&gt;" ID="ID_452222725" CREATED="1519979910620" MODIFIED="1519979923551"/>
+<node TEXT="header, nav {&#xa;  text-align: center;&#xa;}" ID="ID_430506466" CREATED="1519979977293" MODIFIED="1519980134735"/>
+</node>
+<node TEXT="Is it a block level element?" FOLDED="true" ID="ID_603397024" CREATED="1519980202758" MODIFIED="1519980221424">
+<node TEXT="You can center a block-level element by giving it margin-left and margin-right of auto (and it has a set width, otherwise it would be full width and wouldn&apos;t need centering). That&apos;s often done with shorthand like this:" ID="ID_960158395" CREATED="1519980263583" MODIFIED="1519980269024"/>
+<node TEXT="&lt;main&gt;&#xa;  &lt;div class=&quot;center&quot;&gt;&#xa;    I&apos;m a block level element and am centered.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_754368782" CREATED="1519980439160" MODIFIED="1519980444002"/>
+<node TEXT=".center {&#xa;  margin: 0 auto;&#xa;}" ID="ID_1425208027" CREATED="1519980459616" MODIFIED="1519980470225"/>
+<node TEXT="This will work no matter what the width of the block level element you&apos;re centering, or the parent." ID="ID_1360701498" CREATED="1519980516000" MODIFIED="1519980523354"/>
+</node>
+<node TEXT="Is there more than one block level element" FOLDED="true" ID="ID_435872714" CREATED="1519980616049" MODIFIED="1519980639931">
+<node TEXT="If you have two or more block-level elements that need to be centered horizontally in a row, chances are you&apos;d be better served making them a different display type. Here&apos;s an example of making them inline-block and an example of flexbox:" FOLDED="true" ID="ID_1497793463" CREATED="1519980657369" MODIFIED="1519980853097">
+<node TEXT="&lt;main class=&quot;inline-block-center&quot;&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row. I have more content in me than my siblings do.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;&#xa;&#xa;&lt;main class=&quot;flex-center&quot;&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row. I have more content in me than my siblings do.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_1047914804" CREATED="1519980789538" MODIFIED="1519980792824"/>
+<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 10px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 15px;&#xa;  max-width: 125px;&#xa;  margin: 5px;&#xa;}&#xa;&#xa;.inline-block-center {&#xa;  text-align: center;&#xa;}&#xa;.inline-block-center div {&#xa;  display: inline-block;&#xa;  text-align: left;&#xa;}&#xa;&#xa;.flex-center {&#xa;  display: flex;&#xa;  justify-content: center;&#xa;}" ID="ID_533231739" CREATED="1519980830474" MODIFIED="1519980858445"/>
+</node>
+<node TEXT="Unless you mean you have multiple block level elements stacked on top of each other, in which case the auto margin technique is still fine:" FOLDED="true" ID="ID_854407325" CREATED="1519980691698" MODIFIED="1519980698899">
+<node TEXT="&lt;main&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row. I have more content in me than my siblings do.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_757280610" CREATED="1519980921659" MODIFIED="1519980924998"/>
+<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 10px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  margin: 0 auto;&#xa;  color: white;&#xa;  padding: 15px;&#xa;  margin: 5px auto;&#xa;}&#xa;&#xa;main div:nth-child(1) {&#xa;  width: 200px;&#xa;}&#xa;main div:nth-child(2) {&#xa;  width: 400px;&#xa;}&#xa;main div:nth-child(3) {&#xa;  width: 125px;&#xa;}" ID="ID_32555154" CREATED="1519980933171" MODIFIED="1519980939646"/>
+<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 10px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  margin: 0 auto;&#xa;  color: white;&#xa;  padding: 15px;&#xa;  margin: 5px auto;&#xa;}&#xa;&#xa;main div:nth-child(1) {&#xa;  width: 200px;&#xa;}&#xa;main div:nth-child(2) {&#xa;  width: 400px;&#xa;}&#xa;main div:nth-child(3) {&#xa;  width: 125px;&#xa;}" ID="ID_624010911" CREATED="1519981080892" MODIFIED="1519981084231"/>
+</node>
+</node>
+</node>
+<node TEXT="Vertically" ID="ID_1885884525" CREATED="1519979681842" MODIFIED="1519979722804">
+<node TEXT="Is it inline or inline-* elements (like text or links)?" ID="ID_401596958" CREATED="1519981137964" MODIFIED="1519981140965">
+<node TEXT="Is it a single line?" ID="ID_1147906362" CREATED="1519981205972" MODIFIED="1519981222734">
+<node TEXT="Sometimes inline / text elements can appear vertically centered, just because there is equal padding above and below them." ID="ID_1461410183" CREATED="1519981282589" MODIFIED="1519981285766">
+<node TEXT="&lt;main&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;We&apos;re&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Centered&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Bits of&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Text&lt;/a&gt;&#xa;&lt;/main&gt;" ID="ID_932512965" CREATED="1519981330173" MODIFIED="1519981335023"/>
+<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 50px;&#xa;}&#xa;&#xa;main a {&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 40px 30px;&#xa;  text-decoration: none;&#xa;}" ID="ID_1446262962" CREATED="1519981344997" MODIFIED="1519981350543"/>
+</node>
+<node TEXT="If padding isn&apos;t an option for some reason, and you&apos;re trying to center some text that you know will not wrap, there is a trick were making the line-height equal to the height will center the text." ID="ID_743761246" CREATED="1519981477142" MODIFIED="1519981481943">
+<node TEXT="&lt;main&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m a centered line.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_761630476" CREATED="1519981511742" MODIFIED="1519981516096"/>
+<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 40px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  color: white;&#xa;  height: 100px;&#xa;  line-height: 100px;&#xa;  padding: 20px;&#xa;  width: 50%;&#xa;  white-space: nowrap;&#xa;}" ID="ID_1525047742" CREATED="1519981526702" MODIFIED="1519981532809"/>
+</node>
+</node>
+<node TEXT="Is it multiple lines?" ID="ID_643276479" CREATED="1519981225085" MODIFIED="1519981256030"/>
+</node>
+<node TEXT="Is it a block-level element?" ID="ID_1684766855" CREATED="1519981150516" MODIFIED="1519981165270"/>
+</node>
+<node TEXT="Both Horizontally and Vertically" ID="ID_1881990528" CREATED="1519979724859" MODIFIED="1519979743500"/>
 </node>
 </node>
 </node>
@@ -2000,6 +2045,7 @@
 <node TEXT="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b" ID="ID_1358236291" CREATED="1519059367226" MODIFIED="1519059367226" LINK="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b"/>
 <node TEXT="https://pixabay.com/" ID="ID_1896151085" CREATED="1519599278403" MODIFIED="1519599281917"/>
 <node TEXT="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" ID="ID_236529775" CREATED="1519898225296" MODIFIED="1519898231796"/>
+<node TEXT="https://css-tricks.com/centering-css-complete-guide/" ID="ID_979728172" CREATED="1520008115370" MODIFIED="1520008118451"/>
 </node>
 <node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
