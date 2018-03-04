@@ -1,6 +1,6 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
+<node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1517302974053"><hook NAME="MapStyle">
     <properties fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
@@ -54,7 +54,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="28" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="23" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Introduction" ID="ID_667219144" CREATED="1520200774244" MODIFIED="1520200783932">
@@ -725,8 +725,8 @@
 <node TEXT="1. Inline style (inside an HTML element)&#xa;2. External and internal style sheets (in the head section)&#xa;3. Browser default" ID="ID_812367423" CREATED="1519591619160" MODIFIED="1519591882873"/>
 </node>
 </node>
-<node TEXT="Selectors" FOLDED="true" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
-<node TEXT="Simple selectors" FOLDED="true" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
+<node TEXT="Selectors" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
+<node TEXT="Simple selectors" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
 <node TEXT="Type selector" FOLDED="true" ID="ID_835537567" CREATED="1519516109081" MODIFIED="1519516113404">
 <node TEXT="Selects all elements that match the given node name." ID="ID_1746383443" CREATED="1519516234152" MODIFIED="1519516237323"/>
 <node TEXT="Syntax: elementname" ID="ID_1020689451" CREATED="1519516246632" MODIFIED="1519516258043"/>
@@ -747,7 +747,7 @@
 <node TEXT="Syntax: * ns|* *|*" ID="ID_1007987936" CREATED="1519516524246" MODIFIED="1519516527465"/>
 <node TEXT="Example: * will match all the elements of the document." ID="ID_561692138" CREATED="1519516535153" MODIFIED="1519516645953"/>
 </node>
-<node TEXT="Attribute selector" FOLDED="true" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
+<node TEXT="Attribute selector" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
 <node TEXT="Selects elements based on the value of the given attribute." ID="ID_714924094" CREATED="1519516649582" MODIFIED="1519516652784"/>
 <node TEXT="Syntax" FOLDED="true" ID="ID_421978559" CREATED="1519516666413" MODIFIED="1519516685336">
 <node TEXT="[attr]" ID="ID_1736624769" CREATED="1519517625687" MODIFIED="1519517628386"/>
@@ -1041,86 +1041,10 @@
 </node>
 </node>
 </node>
-<node TEXT="Fonts" ID="ID_1222042526" CREATED="1519915215907" MODIFIED="1519915221707">
-<node TEXT="Formats" ID="ID_1492986000" CREATED="1519915228161" MODIFIED="1519915311892">
-<node TEXT="When you purchase web fonts licensing, you receive a package of font files that typically include at least some of the following formats:" ID="ID_64595923" CREATED="1519915365516" MODIFIED="1519915494638"/>
-<node TEXT="Embedded OpenType (EOT)" ID="ID_915494944" CREATED="1519915514926" MODIFIED="1519915519429">
-<node TEXT="EOT is a legacy format developed by Microsoft. Older Internet Explorer versions require EOT to render your web fonts. EOT is often served uncompressed so, if you don&#x2019;t require browser support of the likes of IE8 or below, then you&#x2019;re better off leaving it out." ID="ID_1938248451" CREATED="1519915603212" MODIFIED="1519915606942"/>
-</node>
-<node TEXT="TrueType (TTF)" ID="ID_1515534907" CREATED="1519915535071" MODIFIED="1519915538406">
-<node TEXT="TTF is a font format developed by Microsoft and Apple in the 1980s. Modern TTF files are also called TrueType OpenType fonts. TTF can be useful for extending support to some older browsers, especially on mobile, if you need it." ID="ID_1590039410" CREATED="1519915619260" MODIFIED="1519915622723"/>
-</node>
-<node TEXT="Web Open Font Format (WOFF)" ID="ID_1452574093" CREATED="1519915567662" MODIFIED="1519915567662">
-<node TEXT="WOFF was developed in 2009 as a wrapper format for TrueType and OpenType fonts. It compresses the files and is supported by all modern browsers." ID="ID_1453670529" CREATED="1519915634933" MODIFIED="1519915639147"/>
-</node>
-<node TEXT="Web Open Font Format 2 (WOFF2)" ID="ID_65075087" CREATED="1519915582049" MODIFIED="1519915582049">
-<node TEXT=" WOFF2 is an update to the original WOFF format. Developed by Google, this is considered the best format of the bunch because it offers smaller file sizes and better performance for modern browsers that support it" ID="ID_739848117" CREATED="1519915664322" MODIFIED="1519915667225"/>
-</node>
-<node TEXT="If you are mostly targeting users with modern browsers, you can get away with a progressive method of using @font-face that only serves WOFF and WOFF2 formats" ID="ID_196845801" CREATED="1519915690706" MODIFIED="1519915690706"/>
-<node TEXT="And if a user&#x2019;s machine is so old that it doesn&#x2019;t support either of these formats, it may be better to just serve them a system font for performance reasons, anyway." ID="ID_974111287" CREATED="1519915774916" MODIFIED="1519915779171"/>
-</node>
-</node>
-<node TEXT="Nice to know" ID="ID_557912890" CREATED="1519979482931" MODIFIED="1519979496048">
-<node TEXT="Centering in CSS" ID="ID_790494261" CREATED="1519979572897" MODIFIED="1519979636755">
-<node TEXT="Horizontally" FOLDED="true" ID="ID_1505863954" CREATED="1519979549753" MODIFIED="1519979565489">
-<node TEXT="Is it inline or inline-* elements (like text or links)?" FOLDED="true" ID="ID_1376535717" CREATED="1519979775803" MODIFIED="1519979779036">
-<node TEXT="You can center inline elements horizontally, within a block-level parent element, with just:" ID="ID_1129745129" CREATED="1519979796227" MODIFIED="1519979803212"/>
-<node TEXT="&lt;header&gt;&#xa;  This text is centered.&#xa;&lt;/header&gt;&#xa;&#xa;&lt;nav role=&apos;navigation&apos;&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;One&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Two&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Three&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Four&lt;/a&gt;&#xa;&lt;/nav&gt;" ID="ID_452222725" CREATED="1519979910620" MODIFIED="1519979923551"/>
-<node TEXT="header, nav {&#xa;  text-align: center;&#xa;}" ID="ID_430506466" CREATED="1519979977293" MODIFIED="1519980134735"/>
-</node>
-<node TEXT="Is it a block level element?" FOLDED="true" ID="ID_603397024" CREATED="1519980202758" MODIFIED="1519980221424">
-<node TEXT="You can center a block-level element by giving it margin-left and margin-right of auto (and it has a set width, otherwise it would be full width and wouldn&apos;t need centering). That&apos;s often done with shorthand like this:" ID="ID_960158395" CREATED="1519980263583" MODIFIED="1519980269024"/>
-<node TEXT="&lt;main&gt;&#xa;  &lt;div class=&quot;center&quot;&gt;&#xa;    I&apos;m a block level element and am centered.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_754368782" CREATED="1519980439160" MODIFIED="1519980444002"/>
-<node TEXT=".center {&#xa;  margin: 0 auto;&#xa;}" ID="ID_1425208027" CREATED="1519980459616" MODIFIED="1519980470225"/>
-<node TEXT="This will work no matter what the width of the block level element you&apos;re centering, or the parent." ID="ID_1360701498" CREATED="1519980516000" MODIFIED="1519980523354"/>
-</node>
-<node TEXT="Is there more than one block level element" FOLDED="true" ID="ID_435872714" CREATED="1519980616049" MODIFIED="1519980639931">
-<node TEXT="If you have two or more block-level elements that need to be centered horizontally in a row, chances are you&apos;d be better served making them a different display type. Here&apos;s an example of making them inline-block and an example of flexbox:" FOLDED="true" ID="ID_1497793463" CREATED="1519980657369" MODIFIED="1519980853097">
-<node TEXT="&lt;main class=&quot;inline-block-center&quot;&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row. I have more content in me than my siblings do.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;&#xa;&#xa;&lt;main class=&quot;flex-center&quot;&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row. I have more content in me than my siblings do.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_1047914804" CREATED="1519980789538" MODIFIED="1519980792824"/>
-<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 10px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 15px;&#xa;  max-width: 125px;&#xa;  margin: 5px;&#xa;}&#xa;&#xa;.inline-block-center {&#xa;  text-align: center;&#xa;}&#xa;.inline-block-center div {&#xa;  display: inline-block;&#xa;  text-align: left;&#xa;}&#xa;&#xa;.flex-center {&#xa;  display: flex;&#xa;  justify-content: center;&#xa;}" ID="ID_533231739" CREATED="1519980830474" MODIFIED="1519980858445"/>
-</node>
-<node TEXT="Unless you mean you have multiple block level elements stacked on top of each other, in which case the auto margin technique is still fine:" FOLDED="true" ID="ID_854407325" CREATED="1519980691698" MODIFIED="1519980698899">
-<node TEXT="&lt;main&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row. I have more content in me than my siblings do.&#xa;  &lt;/div&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m an element that is block-like with my siblings and we&apos;re centered in a row.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_757280610" CREATED="1519980921659" MODIFIED="1519980924998"/>
-<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 10px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  margin: 0 auto;&#xa;  color: white;&#xa;  padding: 15px;&#xa;  margin: 5px auto;&#xa;}&#xa;&#xa;main div:nth-child(1) {&#xa;  width: 200px;&#xa;}&#xa;main div:nth-child(2) {&#xa;  width: 400px;&#xa;}&#xa;main div:nth-child(3) {&#xa;  width: 125px;&#xa;}" ID="ID_32555154" CREATED="1519980933171" MODIFIED="1519980939646"/>
-<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 10px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  margin: 0 auto;&#xa;  color: white;&#xa;  padding: 15px;&#xa;  margin: 5px auto;&#xa;}&#xa;&#xa;main div:nth-child(1) {&#xa;  width: 200px;&#xa;}&#xa;main div:nth-child(2) {&#xa;  width: 400px;&#xa;}&#xa;main div:nth-child(3) {&#xa;  width: 125px;&#xa;}" ID="ID_624010911" CREATED="1519981080892" MODIFIED="1519981084231"/>
-</node>
-</node>
-</node>
-<node TEXT="Vertically" ID="ID_1885884525" CREATED="1519979681842" MODIFIED="1519979722804">
-<node TEXT="Is it inline or inline-* elements (like text or links)?" ID="ID_401596958" CREATED="1519981137964" MODIFIED="1519981140965">
-<node TEXT="Is it a single line?" ID="ID_1147906362" CREATED="1519981205972" MODIFIED="1519981222734">
-<node TEXT="Sometimes inline / text elements can appear vertically centered, just because there is equal padding above and below them." ID="ID_1461410183" CREATED="1519981282589" MODIFIED="1519981285766">
-<node TEXT="&lt;main&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;We&apos;re&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Centered&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Bits of&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Text&lt;/a&gt;&#xa;&lt;/main&gt;" ID="ID_932512965" CREATED="1519981330173" MODIFIED="1519981335023"/>
-<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 50px;&#xa;}&#xa;&#xa;main a {&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 40px 30px;&#xa;  text-decoration: none;&#xa;}" ID="ID_1446262962" CREATED="1519981344997" MODIFIED="1519981350543"/>
-</node>
-<node TEXT="If padding isn&apos;t an option for some reason, and you&apos;re trying to center some text that you know will not wrap, there is a trick were making the line-height equal to the height will center the text." ID="ID_743761246" CREATED="1519981477142" MODIFIED="1519981481943">
-<node TEXT="&lt;main&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m a centered line.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_761630476" CREATED="1519981511742" MODIFIED="1519981516096"/>
-<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 40px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  color: white;&#xa;  height: 100px;&#xa;  line-height: 100px;&#xa;  padding: 20px;&#xa;  width: 50%;&#xa;  white-space: nowrap;&#xa;}" ID="ID_1525047742" CREATED="1519981526702" MODIFIED="1519981532809"/>
-</node>
-</node>
-<node TEXT="Is it multiple lines?" ID="ID_643276479" CREATED="1519981225085" MODIFIED="1519981256030"/>
-</node>
-<node TEXT="Is it a block-level element?" ID="ID_1684766855" CREATED="1519981150516" MODIFIED="1519981165270"/>
-</node>
-<node TEXT="Both Horizontally and Vertically" ID="ID_1881990528" CREATED="1519979724859" MODIFIED="1519979743500"/>
-</node>
-</node>
 </node>
 <node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
-<node TEXT="pattern" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067">
-<node TEXT="BEM" ID="ID_1940557549" CREATED="1519894238217" MODIFIED="1519894241757">
-<node TEXT="The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project." ID="ID_936859935" CREATED="1519894303413" MODIFIED="1519894310215"/>
-<node TEXT="Block" ID="ID_1112380842" CREATED="1519894335941" MODIFIED="1519894342391">
-<node TEXT="In this CSS methodology a block is a top-level abstraction of a new component, for example a button: .btn { }. This block should be thought of as a parent." ID="ID_1119160721" CREATED="1519894409845" MODIFIED="1519894415511"/>
-</node>
-<node TEXT="Element" ID="ID_1841700336" CREATED="1519894344597" MODIFIED="1519894355119">
-<node TEXT="Child items, or elements, can be placed inside and these are denoted by two underscores following the name of the block like .btn__price { }" ID="ID_1207958680" CREATED="1519894449910" MODIFIED="1519894457663"/>
-</node>
-<node TEXT="Modifier" ID="ID_1007851719" CREATED="1519894357461" MODIFIED="1519894366472">
-<node TEXT="modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--orange" ID="ID_615609830" CREATED="1519894499766" MODIFIED="1519894581920"/>
-</node>
-</node>
-</node>
+<node TEXT="pattern" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067"/>
+<node TEXT="validatoren" ID="ID_23410486" CREATED="1520104599462" MODIFIED="1520104607367"/>
 </node>
 <node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
@@ -1214,7 +1138,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Frontend" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
+<node TEXT="Frontend" FOLDED="true" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
 <node TEXT="Web APIs" FOLDED="true" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
 <node TEXT="Web Application Programming Interfaces (Web APIs) are used to perform a variety of tasks, such as manipulating the DOM, playing audio or video, or generating 3D graphics." ID="ID_1839416238" CREATED="1517822841024" MODIFIED="1517822864936"/>
 <node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167"/>
@@ -1302,26 +1226,18 @@
 <hook URI="webdevelopment2_files/png_5868046861603241277.png" SIZE="0.80862534" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="Global Object" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1518085056345">
+<node TEXT="Global Object" FOLDED="true" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1518085056345">
 <node TEXT="In a web browser, any code which the script doesn&apos;t specifically start up as a background task has a Window as its global object. This is the vast majority of JavaScript code on the Web." ID="ID_690447496" CREATED="1518085107077" MODIFIED="1518085107077"/>
-<node TEXT="window" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
+<node TEXT="window" FOLDED="true" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
 <node TEXT="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property." ID="ID_545673075" CREATED="1518094524949" MODIFIED="1518094524949"/>
-<node TEXT="properties" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1518183729900">
-<node TEXT="document" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1518688431758">
+<node TEXT="properties" FOLDED="true" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1518183729900">
+<node TEXT="document" FOLDED="true" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1518688431758">
 <node TEXT="The Document interface represents any web page loaded in the browser and serves as an entry point into the web page&apos;s content, which is the DOM tree. The DOM tree includes elements such as &lt;body&gt; and &lt;table&gt;, among many others. It provides functionality globally to the document, like how to obtain the page&apos;s URL and create new elements in the document." ID="ID_309209743" CREATED="1518688425972" MODIFIED="1518688439665"/>
 <node TEXT="DOMTree" ID="ID_1575157735" CREATED="1518688537072" MODIFIED="1518688549086"/>
 <node TEXT="cookie" FOLDED="true" ID="ID_52380751" CREATED="1515591346369" MODIFIED="1515591353168">
 <node TEXT="show all cookies" FOLDED="true" ID="ID_126151023" CREATED="1515591363104" MODIFIED="1515591371563">
 <node TEXT="document.cookie" ID="ID_1545821702" CREATED="1515591375520" MODIFIED="1515591396272"/>
 </node>
-</node>
-<node TEXT="Element" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525">
-<node TEXT="Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements." ID="ID_1706814041" CREATED="1519823638387" MODIFIED="1519823641701"/>
-<node TEXT="More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy." ID="ID_1009801161" CREATED="1519823669452" MODIFIED="1519823671957"/>
-</node>
-<node TEXT="images" ID="ID_1671593944" CREATED="1519823921478" MODIFIED="1519823935815">
-<node TEXT="The Document object&apos;s images property returns a collection of the images in the current HTML document." ID="ID_496035063" CREATED="1519823950910" MODIFIED="1519823952869"/>
-<node TEXT="var imageCollection = document.images;" ID="ID_1893581891" CREATED="1519823963158" MODIFIED="1519823966039"/>
 </node>
 </node>
 <node TEXT="crypto" FOLDED="true" ID="ID_1661758857" CREATED="1518181455829" MODIFIED="1518181461481">
@@ -2453,13 +2369,11 @@
 <node TEXT="http://vanseodesign.com/css/vertical-centering/" ID="ID_192734385" CREATED="1518166978288" MODIFIED="1518166978288" LINK="http://vanseodesign.com/css/vertical-centering/"/>
 <node TEXT="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b" ID="ID_1358236291" CREATED="1519059367226" MODIFIED="1519059367226" LINK="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b"/>
 <node TEXT="https://pixabay.com/" ID="ID_1896151085" CREATED="1519599278403" MODIFIED="1519599281917"/>
-<node TEXT="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" ID="ID_236529775" CREATED="1519898225296" MODIFIED="1519898231796"/>
-<node TEXT="https://css-tricks.com/centering-css-complete-guide/" ID="ID_979728172" CREATED="1520008115370" MODIFIED="1520008118451"/>
 <node TEXT="https://www.w3schools.com/tags/ref_eventattributes.asp" ID="ID_567894034" CREATED="1520175680530" MODIFIED="1520175680530" LINK="https://www.w3schools.com/tags/ref_eventattributes.asp"/>
 <node TEXT="https://www.w3.org/WAI/" ID="ID_372511871" CREATED="1520193221449" MODIFIED="1520193225028"/>
 <node TEXT="https://archive.org/" ID="ID_1563329911" CREATED="1520202706002" MODIFIED="1520202709446"/>
 </node>
-<node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
+<node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1517302968668" HGAP_QUANTITY="26.749999620020404 pt" VSHIFT_QUANTITY="48.74999854713682 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Windows" FOLDED="true" ID="ID_1175687801" CREATED="1516798635478" MODIFIED="1517301647945">
 <node TEXT="comandline" FOLDED="true" ID="ID_1081660052" CREATED="1516798661191" MODIFIED="1516798741946">
@@ -2521,7 +2435,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Tooling" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1519810482190" HGAP_QUANTITY="43.99999910593036 pt" VSHIFT_QUANTITY="11.249999664723884 pt">
+<node TEXT="Tooling" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1517302974052" HGAP_QUANTITY="21.49999977648259 pt" VSHIFT_QUANTITY="28.499999150633837 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Browser tools" FOLDED="true" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
 <node TEXT="Chrome dev tools" FOLDED="true" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
@@ -2617,9 +2531,9 @@
 </node>
 <node TEXT="Firefox dev Tools" ID="ID_341753613" CREATED="1517909170190" MODIFIED="1517909180297"/>
 </node>
-<node TEXT="Version Control" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
-<node TEXT="Git" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
-<node TEXT="commands" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
+<node TEXT="Version Control" FOLDED="true" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
+<node TEXT="Git" FOLDED="true" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
+<node TEXT="commands" FOLDED="true" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
 <node TEXT="git cherry-pick" FOLDED="true" ID="ID_931768391" CREATED="1517820565432" MODIFIED="1517820582422">
 <node TEXT="Here&apos;s the scenario: You&apos;re working in a feature branch that isn&apos;t quite ready for a full merge but you do have a few commits in there that you want to push to master (for a release or whatever reason). This is just one of possibly many situations where making use of Git&apos;s cherry-pick command might prove useful." ID="ID_672906785" CREATED="1517820603735" MODIFIED="1517820603735"/>
 <node TEXT="First, from within your feature branch, copy the first six or seven characters of the ID of the commit that you want to bring in: (use git log)" ID="ID_558811321" CREATED="1517820728494" MODIFIED="1517820788071"/>
@@ -2630,8 +2544,8 @@
 <node TEXT="Now if you do a git log you will see your cherry-picked commit at the top." ID="ID_1532876959" CREATED="1517820979568" MODIFIED="1517820979568"/>
 <node TEXT="Be wary of cherry-picking a lot of commits out of order, the Git log will reflect the order in which you cherry-picked, not the chronological order of the original commits (The original commit date is preserved, however)." ID="ID_989095425" CREATED="1517820997061" MODIFIED="1517820997061"/>
 </node>
-<node TEXT="credentials" ID="ID_1170751793" CREATED="1519290262464" MODIFIED="1519290267309">
-<node TEXT="get" ID="ID_769889911" CREATED="1519290285543" MODIFIED="1519290289192">
+<node TEXT="credentials" FOLDED="true" ID="ID_1170751793" CREATED="1519290262464" MODIFIED="1519290267309">
+<node TEXT="get" FOLDED="true" ID="ID_769889911" CREATED="1519290285543" MODIFIED="1519290289192">
 <node TEXT="git config --list" ID="ID_1951854395" CREATED="1519290295943" MODIFIED="1519290309698"/>
 </node>
 <node TEXT="set" FOLDED="true" ID="ID_214463756" CREATED="1519290314791" MODIFIED="1519290329089">
@@ -2687,99 +2601,10 @@
 </node>
 </node>
 </node>
-<node TEXT="SEO" POSITION="right" ID="ID_638400976" CREATED="1519810448980" MODIFIED="1519810484486" HGAP_QUANTITY="14.749999977648258 pt" VSHIFT_QUANTITY="22.499999329447768 pt">
+<node TEXT="Cheatcheats" POSITION="left" ID="ID_1865552087" CREATED="1520171542642" MODIFIED="1520171551926">
 <edge COLOR="#808080"/>
-<node TEXT="Web Robots" ID="ID_83558834" CREATED="1519810636949" MODIFIED="1519810640735">
-<node TEXT="Web Robots (also known as Web Wanderers, Crawlers, or Spiders), are programs that traverse the Web automatically. Search engines such as Google use them to index the web content, spammers use them to scan for email addresses, and they have many other uses." ID="ID_592013503" CREATED="1519810663517" MODIFIED="1519810666264"/>
-<node TEXT="robots.txt" ID="ID_850791400" CREATED="1519810684550" MODIFIED="1519810687736">
-<node TEXT="Web site owners use the /robots.txt file to give instructions about their site to web robots; this is called The Robots Exclusion Protocol." ID="ID_490544813" CREATED="1519810726278" MODIFIED="1519810729159"/>
-<node TEXT="It works likes this: a robot wants to vists a Web site URL, say http://www.example.com/welcome.html. Before it does so, it firsts checks for http://www.example.com/robots.txt" ID="ID_954260521" CREATED="1519810753014" MODIFIED="1519810914337"/>
-<node ID="ID_843743971" CREATED="1519810826637" MODIFIED="1519810826637"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(0, 0, 0)" face="Verdana, Arial, Helvetica, sans-serif" size="12px">There are two important considerations when using /robots.txt:</font></span> 
-  </body>
-</html>
-</richcontent>
-<node TEXT="robots can ignore your /robots.txt. Especially malware robots that scan the web for security vulnerabilities, and email address harvesters used by spammers will pay no attention." ID="ID_1130278514" CREATED="1519810868415" MODIFIED="1519810874496"/>
-<node TEXT="the /robots.txt file is a publicly available file. Anyone can see what sections of your server you don&apos;t want robots to use." ID="ID_1290025858" CREATED="1519810898455" MODIFIED="1519810901504"/>
-</node>
-<node TEXT="details" ID="ID_259280722" CREATED="1519811197416" MODIFIED="1519811201322"/>
-<node TEXT="Examples" ID="ID_814229988" CREATED="1519811207721" MODIFIED="1519811214427">
-<node TEXT="tells all robots to stay out of a website" ID="ID_869033388" CREATED="1519811240450" MODIFIED="1519811242067">
-<node TEXT="User-agent: *&#xa;Disallow: /" ID="ID_1561363987" CREATED="1519811257170" MODIFIED="1519811260507"/>
-</node>
-<node TEXT="tells all robots not to enter three directories" ID="ID_912536352" CREATED="1519811303186" MODIFIED="1519811307148">
-<node TEXT="User-agent: *&#xa;Disallow: /cgi-bin/&#xa;Disallow: /tmp/&#xa;Disallow: /junk/" ID="ID_356187715" CREATED="1519811323347" MODIFIED="1519811325215"/>
-</node>
-<node TEXT="tells all robots to stay away from one specific file" ID="ID_496349694" CREATED="1519811348635" MODIFIED="1519811355124">
-<node TEXT="User-agent: *&#xa;Disallow: /directory/file.html" ID="ID_1187669146" CREATED="1519811373195" MODIFIED="1519811375468"/>
-</node>
-<node TEXT="tells two specific robots not to enter one specific directory:" ID="ID_230345579" CREATED="1519811393988" MODIFIED="1519811395991">
-<node TEXT="User-agent: BadBot # replace &apos;BadBot&apos; with the actual user-agent of the bot&#xa;User-agent: Googlebot&#xa;Disallow: /private/" ID="ID_848993986" CREATED="1519811417996" MODIFIED="1519811420765"/>
-</node>
-<node ID="ID_768606045" CREATED="1519811441680" MODIFIED="1519811479137"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(34, 34, 34)" face="sans-serif" size="14px">how comments can be used:</font></span> 
-  </body>
-</html>
-</richcontent>
-<node TEXT="# Comments appear after the &quot;#&quot; symbol at the start of a line, or after a directive&#xa;User-agent: * # match all bots&#xa;Disallow: / # keep them out" ID="ID_954398389" CREATED="1519811759399" MODIFIED="1519811762257"/>
-</node>
-<node TEXT=" multiple user-agents" ID="ID_150246788" CREATED="1519811711343" MODIFIED="1519811717336">
-<node TEXT="User-agent: googlebot        # all Google services&#xa;Disallow: /private/          # disallow this directory&#xa;&#xa;User-agent: googlebot-news   # only the news service&#xa;Disallow: /                  # disallow everything&#xa;&#xa;User-agent: *                # any robot&#xa;Disallow: /something/        # disallow this directory" ID="ID_371654702" CREATED="1519811746975" MODIFIED="1519811749242"/>
-</node>
-</node>
-<node TEXT="standard extensions" ID="ID_615652671" CREATED="1519811631718" MODIFIED="1519811650935"/>
-<node TEXT="Nonstandard extensions" ID="ID_845395251" CREATED="1519811656454" MODIFIED="1519811681319">
-<node TEXT="Crawl-delay directive" ID="ID_1956007631" CREATED="1519811792271" MODIFIED="1519811794504">
-<node TEXT="The crawl-delay value is supported by some crawlers to throttle their visits to the host." ID="ID_272833482" CREATED="1519812306187" MODIFIED="1519812322428"/>
-<node TEXT=" Since this value is not part of the standard, its interpretation is dependent on the crawler reading it." ID="ID_1253382865" CREATED="1519812328067" MODIFIED="1519812348053"/>
-<node TEXT="Yandex interprets the value as the number of seconds to wait between subsequent visits.[15] Bing defines crawl-delay as the size of a time window (from 1 to 30 seconds) during which BingBot will access a web site only once." ID="ID_1056389432" CREATED="1519812350771" MODIFIED="1519812355060"/>
-<node TEXT="User-agent: *&#xa;Crawl-delay: 10" ID="ID_1784214099" CREATED="1519812446396" MODIFIED="1519812449468"/>
-</node>
-<node TEXT="Allow directive" ID="ID_1868734840" CREATED="1519811803600" MODIFIED="1519811806080">
-<node TEXT="Some major crawlers support an Allow directive, which can counteract a following Disallow directive." ID="ID_739359574" CREATED="1519812376171" MODIFIED="1519812379092"/>
-<node TEXT="This is useful when one tells robots to avoid an entire directory but still wants some HTML documents in that directory crawled and indexed." ID="ID_1485207163" CREATED="1519812422732" MODIFIED="1519812432517"/>
-<node TEXT="Google&apos;s implementation differs in that Allow patterns with equal or more characters in the directive path win over a matching Disallow pattern.[31] Bing uses either the Allow or Disallow directive, whichever is more specific, based on length, like Google" ID="ID_98399542" CREATED="1519812552772" MODIFIED="1519812565062"/>
-<node TEXT="Allow: /directory1/myfile.html&#xa;Disallow: /directory1/" ID="ID_210592083" CREATED="1519812589269" MODIFIED="1519812591822"/>
-</node>
-<node TEXT="Sitemap" ID="ID_617001778" CREATED="1519811840384" MODIFIED="1519811842977">
-<node TEXT="Some crawlers support a Sitemap directive, allowing multiple Sitemaps in the same robots.txt in the form" ID="ID_1408833196" CREATED="1519812646437" MODIFIED="1519812649350"/>
-<node TEXT="Sitemap: http://www.gstatic.com/s2/sitemaps/profiles-sitemap.xml&#xa;&#xa;Sitemap: http://www.google.com/hostednews/sitemap_index.xml" ID="ID_607582799" CREATED="1519812658893" MODIFIED="1519812661182"/>
-</node>
-<node TEXT="Host" ID="ID_678546290" CREATED="1519811850320" MODIFIED="1519811853186">
-<node TEXT="Some crawlers (Yandex) support a Host directive, allowing websites with multiple mirrors to specify their preferred domain:" ID="ID_459729331" CREATED="1519812693549" MODIFIED="1519812697054">
-<node TEXT="Host: example.com&#xa;Or alternatively:&#xa;&#xa;Host: www.example.com" ID="ID_1261594092" CREATED="1519812710181" MODIFIED="1519812712750"/>
-</node>
-</node>
-<node TEXT="Universal &quot;*&quot; match" ID="ID_1070996646" CREATED="1519811864120" MODIFIED="1519811867009">
-<node TEXT="The Robot Exclusion Standard does not mention anything about the &quot;*&quot; character in the Disallow: statement. Some crawlers like Googlebot recognize strings containing &quot;*&quot;, while MSNbot and Teoma interpret it in different ways." ID="ID_491795505" CREATED="1519812738038" MODIFIED="1519812740255"/>
-</node>
-</node>
-<node TEXT="By standard implementation the first matching robots.txt pattern always wins" ID="ID_964910393" CREATED="1519812492820" MODIFIED="1519812511869"/>
-</node>
-<node TEXT="Meta tags" ID="ID_126904036" CREATED="1519811560638" MODIFIED="1519811563471">
-<node TEXT="The robots meta tag cannot be used for non-HTML files such as images, text files, or PDF documents." ID="ID_175273668" CREATED="1519811914200" MODIFIED="1519811917241"/>
-<node TEXT="&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot; /&gt;" ID="ID_690451716" CREATED="1519811967809" MODIFIED="1519811970538"/>
-</node>
-<node TEXT="headers" ID="ID_1536502555" CREATED="1519811573422" MODIFIED="1519811576231">
-<node TEXT="the X-Robots-Tag can be added to non-HTML files by using .htaccess and httpd.conf files" ID="ID_1668830211" CREATED="1519811943689" MODIFIED="1519811946210"/>
-<node TEXT="A &quot;noindex&quot; HTTP response header" ID="ID_1231279097" CREATED="1519811985521" MODIFIED="1519811987826"/>
-<node TEXT="X-Robots-Tag: noindex" ID="ID_959373822" CREATED="1519811995737" MODIFIED="1519811998138"/>
-</node>
-<node TEXT="The Repsonse-header is only effective after the page has been requested and the server responds" ID="ID_1397641936" CREATED="1519812037785" MODIFIED="1519812098883"/>
-<node TEXT="The robots meta tag is only effective after the page has loaded," ID="ID_1616031907" CREATED="1519812103378" MODIFIED="1519812135331"/>
-<node TEXT="The robots.txt is effective before the page is requested. Thus if a page is excluded by a robots.txt file, any robots meta tags or X-Robots-Tag headers are effectively ignored because the robot will not see them in the first place." ID="ID_8210027" CREATED="1519812219354" MODIFIED="1519812242476"/>
+<node TEXT="w3c" ID="ID_586755617" CREATED="1520171557570" MODIFIED="1520171563726">
+<node TEXT="https://dev.w3.org/2009/cheatsheet/doc/" ID="ID_183198814" CREATED="1520171573714" MODIFIED="1520171583005"/>
 </node>
 </node>
 </node>
