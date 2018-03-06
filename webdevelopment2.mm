@@ -318,7 +318,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Global attributes" FOLDED="true" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
+<node TEXT="Global attributes" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
 <node TEXT="Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements." ID="ID_489227557" CREATED="1520172307612" MODIFIED="1520172312937"/>
 <node TEXT="Global attributes may be specified on all HTML elements, even those not specified in the standard." FOLDED="true" ID="ID_966516826" CREATED="1520172331188" MODIFIED="1520172336504">
 <node TEXT="That means that any non-standard elements must still permit these attributes, even though using those elements means that the document is no longer HTML5-compliant." ID="ID_1736452133" CREATED="1520172374548" MODIFIED="1520172379983"/>
@@ -648,6 +648,121 @@
 </node>
 </node>
 <node TEXT="aria-*" ID="ID_93471121" CREATED="1520175005320" MODIFIED="1520175008531"/>
+</node>
+<node TEXT="input" ID="ID_1618525284" CREATED="1520330027730" MODIFIED="1520330033139">
+<node TEXT="The HTML &lt;input&gt; element is used to create interactive controls for web-based forms in order to accept data from the user." ID="ID_1497170820" CREATED="1520330792999" MODIFIED="1520330802456"/>
+<node TEXT="input attributes" ID="ID_1886962322" CREATED="1520334747345" MODIFIED="1520334762841">
+<node TEXT="This section lists the attributes available to all form &lt;input&gt; types. Non-global attributes &#x2014; and global attributes that behave differently when specified on different &lt;input&gt; types &#x2014; are listed on those types&apos; individual pages." ID="ID_1928104140" CREATED="1520334792041" MODIFIED="1520334798099"/>
+<node TEXT="types" ID="ID_1215177323" CREATED="1520331460643" MODIFIED="1520331491164">
+<node TEXT="button" ID="ID_396650130" CREATED="1520331510700" MODIFIED="1520331513862">
+<node TEXT="A push button with no default behavior." ID="ID_449090957" CREATED="1520333416400" MODIFIED="1520333419361"/>
+</node>
+<node TEXT="checkbox" ID="ID_451892438" CREATED="1520331672325" MODIFIED="1520331678038">
+<node TEXT="A check box allowing single values to be selected/deselected." ID="ID_841742030" CREATED="1520333437656" MODIFIED="1520333440282"/>
+</node>
+<node TEXT="color" ID="ID_1907862248" CREATED="1520331821326" MODIFIED="1520331822943">
+<node TEXT="A control for specifying a color. A color picker&apos;s UI has no required features other than accepting simple colors as text" ID="ID_1258699366" CREATED="1520333455400" MODIFIED="1520333457073"/>
+</node>
+<node TEXT="date" ID="ID_889622964" CREATED="1520331833742" MODIFIED="1520331837863">
+<node TEXT="A control for entering a date (year, month, and day, with no time)." ID="ID_539533930" CREATED="1520333488656" MODIFIED="1520333490642"/>
+</node>
+<node TEXT="datetime-local" ID="ID_1266684462" CREATED="1520331851230" MODIFIED="1520331854167">
+<node TEXT="A control for entering a date and time, with no time zone." ID="ID_1555548311" CREATED="1520333502912" MODIFIED="1520333506641"/>
+</node>
+<node TEXT="email" ID="ID_1846164783" CREATED="1520331875606" MODIFIED="1520331880295">
+<node TEXT="A field for editing an e-mail address." ID="ID_805482728" CREATED="1520333515728" MODIFIED="1520333518873"/>
+</node>
+<node TEXT="file" ID="ID_48996710" CREATED="1520331885182" MODIFIED="1520331900791">
+<node TEXT="A control that lets the user select a file. Use the accept attribute to define the types of files that the control can select." ID="ID_1749483931" CREATED="1520333547368" MODIFIED="1520333550442"/>
+</node>
+<node TEXT="hidden" ID="ID_1538151925" CREATED="1520331906350" MODIFIED="1520331909839">
+<node TEXT="A control that is not displayed but whose value is submitted to the server." ID="ID_1172681050" CREATED="1520333570185" MODIFIED="1520333573642"/>
+</node>
+<node TEXT="image" ID="ID_1851464644" CREATED="1520331918814" MODIFIED="1520331925399">
+<node TEXT="A graphical submit button. You must use the src attribute to define the source of the image and the alt attribute to define alternative text. You can use the height and width attributes to define the size of the image in pixels." ID="ID_1423811260" CREATED="1520333594489" MODIFIED="1520333596322"/>
+</node>
+<node TEXT="month" ID="ID_467225334" CREATED="1520333614978" MODIFIED="1520333622098">
+<node TEXT="A control for entering a month and year, with no time zone." ID="ID_787920257" CREATED="1520333633961" MODIFIED="1520333638402"/>
+</node>
+<node TEXT="number" ID="ID_80957926" CREATED="1520332033007" MODIFIED="1520332038928">
+<node TEXT="A control for entering a number." ID="ID_1094669607" CREATED="1520333647057" MODIFIED="1520333651322"/>
+</node>
+<node TEXT="password" ID="ID_1435259868" CREATED="1520332051319" MODIFIED="1520332061024">
+<node TEXT="A single-line text field whose value is obscured. Use the maxlength and minlength attributes to specify the maximum length of the value that can be entered." ID="ID_992593240" CREATED="1520333662113" MODIFIED="1520333665034"/>
+</node>
+<node TEXT="radio" ID="ID_204183482" CREATED="1520332073175" MODIFIED="1520332078800">
+<node TEXT="A radio button, allowing a single value to be selected out of multiple choices." ID="ID_1921640396" CREATED="1520333684409" MODIFIED="1520333687826"/>
+</node>
+<node TEXT="range" ID="ID_1740955557" CREATED="1520332081871" MODIFIED="1520332146209">
+<node TEXT="A control for entering a number whose exact value is not important." ID="ID_1773071712" CREATED="1520333698418" MODIFIED="1520333702538"/>
+</node>
+<node TEXT="reset" ID="ID_1566151059" CREATED="1520332148464" MODIFIED="1520332156081">
+<node TEXT="A button that resets the contents of the form to default values." ID="ID_589123208" CREATED="1520333722250" MODIFIED="1520333725275"/>
+</node>
+<node TEXT="search" ID="ID_1358704182" CREATED="1520332158608" MODIFIED="1520332165921">
+<node TEXT="A single-line text field for entering search strings. Line-breaks are automatically removed from the input value." ID="ID_220978398" CREATED="1520333737914" MODIFIED="1520333741531"/>
+</node>
+<node TEXT="submit" ID="ID_474278576" CREATED="1520332171640" MODIFIED="1520332181961">
+<node TEXT="A button that submits the form." ID="ID_1675447848" CREATED="1520333751529" MODIFIED="1520333754707"/>
+</node>
+<node TEXT="tel" ID="ID_1002804184" CREATED="1520332224704" MODIFIED="1520332231929">
+<node TEXT="A control for entering a telephone number." ID="ID_743260950" CREATED="1520333761266" MODIFIED="1520333764115"/>
+</node>
+<node TEXT="text" ID="ID_623902964" CREATED="1520332235664" MODIFIED="1520332244553">
+<node TEXT=" A single-line text field. Line-breaks are automatically removed from the input value." ID="ID_292744712" CREATED="1520333772210" MODIFIED="1520333775339"/>
+</node>
+<node TEXT="time" ID="ID_999849329" CREATED="1520332248424" MODIFIED="1520332257577">
+<node TEXT="A control for entering a time value with no time zone." ID="ID_915915799" CREATED="1520333791858" MODIFIED="1520333797419"/>
+</node>
+<node TEXT="url" ID="ID_1193298364" CREATED="1520332262456" MODIFIED="1520332268729">
+<node TEXT="A field for entering a URL." ID="ID_455845177" CREATED="1520333805994" MODIFIED="1520333811395"/>
+</node>
+<node TEXT="week" ID="ID_828474090" CREATED="1520332281577" MODIFIED="1520332289482">
+<node TEXT="A control for entering a date consisting of a week-year number and a week number with no time zone." ID="ID_812517964" CREATED="1520333867243" MODIFIED="1520333877884"/>
+</node>
+<node TEXT="DEPRECATED" ID="ID_871849871" CREATED="1520332308049" MODIFIED="1520332316618">
+<node TEXT="datetime" ID="ID_16242128" CREATED="1520332327097" MODIFIED="1520332389426"/>
+</node>
+</node>
+<node TEXT="accept" ID="ID_1937142315" CREATED="1520341985522" MODIFIED="1520341990147"/>
+<node TEXT="accesskey" ID="ID_1928365568" CREATED="1520342006066" MODIFIED="1520342009611"/>
+<node TEXT="autocomplete" ID="ID_1433812126" CREATED="1520342020082" MODIFIED="1520342026188">
+<node TEXT="This attribute indicates whether the value of the control can be automatically completed by the browser." ID="ID_785493058" CREATED="1520344232531" MODIFIED="1520344235027"/>
+</node>
+<node TEXT="autofocus" ID="ID_1317063504" CREATED="1520342043674" MODIFIED="1520342049228"/>
+<node TEXT="capture" ID="ID_239980567" CREATED="1520342066690" MODIFIED="1520342075179"/>
+<node TEXT="checked" ID="ID_1409931328" CREATED="1520342083595" MODIFIED="1520342087068"/>
+<node TEXT="disabled" ID="ID_1142008354" CREATED="1520342096611" MODIFIED="1520342110452"/>
+<node TEXT="form" ID="ID_1718608033" CREATED="1520342126059" MODIFIED="1520342128917"/>
+<node TEXT="formaction" ID="ID_990405847" CREATED="1520342138083" MODIFIED="1520342142956"/>
+<node TEXT="formenctype" ID="ID_1990678392" CREATED="1520342153723" MODIFIED="1520342158556"/>
+<node TEXT="formmethod" ID="ID_744158052" CREATED="1520342167787" MODIFIED="1520342180188"/>
+<node TEXT="formnovalidate" ID="ID_1182555208" CREATED="1520342181051" MODIFIED="1520342183660"/>
+<node TEXT="formtarget" ID="ID_1611714185" CREATED="1520342265540" MODIFIED="1520342268501"/>
+<node TEXT="height" ID="ID_1000263920" CREATED="1520342282836" MODIFIED="1520342286301"/>
+<node TEXT="inputmode" ID="ID_1342302483" CREATED="1520342297388" MODIFIED="1520342300398"/>
+<node TEXT="list" ID="ID_626378984" CREATED="1520342312956" MODIFIED="1520342323997"/>
+<node TEXT="max" ID="ID_205866547" CREATED="1520342402269" MODIFIED="1520342404926"/>
+<node TEXT="maxlength" ID="ID_1001136029" CREATED="1520342413773" MODIFIED="1520342416670"/>
+<node TEXT="min" ID="ID_683180635" CREATED="1520342448229" MODIFIED="1520342451349"/>
+<node TEXT="minlength" ID="ID_968305004" CREATED="1520342460309" MODIFIED="1520342478230"/>
+<node TEXT="multiple" ID="ID_443449926" CREATED="1520342472837" MODIFIED="1520342491719"/>
+<node TEXT="name" ID="ID_1969675199" CREATED="1520342503053" MODIFIED="1520342507758"/>
+<node TEXT="pattern" ID="ID_365473846" CREATED="1520342521966" MODIFIED="1520342524767"/>
+<node TEXT="placeholder" ID="ID_1052540512" CREATED="1520342537206" MODIFIED="1520342540751"/>
+<node TEXT="selectionDirection" ID="ID_1735942925" CREATED="1520342882864" MODIFIED="1520342893578"/>
+<node TEXT="selectionEnd" ID="ID_109348995" CREATED="1520342910505" MODIFIED="1520342913610"/>
+<node TEXT="selectionStart" ID="ID_1579080016" CREATED="1520342921449" MODIFIED="1520342924649"/>
+<node TEXT="size" ID="ID_1002632402" CREATED="1520342931288" MODIFIED="1520342934730"/>
+<node TEXT="spellcheck" ID="ID_87000396" CREATED="1520342941737" MODIFIED="1520342944434"/>
+<node TEXT="src" ID="ID_380103865" CREATED="1520342957473" MODIFIED="1520342977602"/>
+<node TEXT="step" ID="ID_1461757464" CREATED="1520342979809" MODIFIED="1520342994402"/>
+<node TEXT="tabindex" ID="ID_1493767535" CREATED="1520343008041" MODIFIED="1520343013249"/>
+<node TEXT="usemap" ID="ID_858396889" CREATED="1520343022673" MODIFIED="1520343034650"/>
+<node TEXT="value" ID="ID_558010448" CREATED="1520343043033" MODIFIED="1520343046226"/>
+<node TEXT="width" ID="ID_1903941196" CREATED="1520343056354" MODIFIED="1520343059641"/>
+</node>
+<node TEXT="" ID="ID_1267623223" CREATED="1520340794410" MODIFIED="1520340794410"/>
 </node>
 </node>
 <node TEXT="Validatoren" FOLDED="true" ID="ID_1055361650" CREATED="1520104471918" MODIFIED="1520104479277">
@@ -1098,9 +1213,31 @@
 <node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 40px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  color: white;&#xa;  height: 100px;&#xa;  line-height: 100px;&#xa;  padding: 20px;&#xa;  width: 50%;&#xa;  white-space: nowrap;&#xa;}" ID="ID_1525047742" CREATED="1519981526702" MODIFIED="1519981532809"/>
 </node>
 </node>
-<node TEXT="Is it multiple lines?" ID="ID_643276479" CREATED="1519981225085" MODIFIED="1519981256030"/>
+<node TEXT="Is it multiple lines?" ID="ID_643276479" CREATED="1519981225085" MODIFIED="1519981256030">
+<node TEXT="Equal padding on top and bottom can give the centered effect for multiple lines of text too, but if that isn&apos;t going to work, perhaps the element the text is in can be a table cell, either literally or made to behave like one with CSS. The vertical-align property handles this, in this case, unlike what it normally does which is handle the alignment of elements aligned on a row." ID="ID_330641121" CREATED="1520326737406" MODIFIED="1520326739778"/>
+<node TEXT="with tables" ID="ID_222146528" CREATED="1520326966975" MODIFIED="1520326981969">
+<node TEXT="&lt;tables&gt;&#xa;  &lt;tr&gt;&#xa;    &lt;td&gt;&#xa;      I&apos;m vertically centered multiple lines of text in a real table cell.&#xa;    &lt;/td&gt;&#xa;  &lt;/tr&gt;&#xa;&lt;/tables&gt;&#xa;&#xa;&lt;div class=&quot;center-table&quot;&gt;&#xa;  &lt;p&gt;I&apos;m vertically centered multiple lines of text in a CSS-created table layout.&lt;/p&gt;&#xa;&lt;/div&gt;" ID="ID_1179006444" CREATED="1520326759845" MODIFIED="1520326812487"/>
+<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;table {&#xa;  background: white;&#xa;  width: 240px;&#xa;  border-collapse: separate;&#xa;  margin: 20px;&#xa;  height: 250px;&#xa;}&#xa;&#xa;table td {&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 20px;&#xa;  border: 10px solid white;&#xa;  /* default is vertical-align: middle; */&#xa;}&#xa;&#xa;.center-table {&#xa;  display: table;&#xa;  height: 250px;&#xa;  background: white;&#xa;  width: 240px;&#xa;  margin: 20px;&#xa;}&#xa;.center-table p {&#xa;  display: table-cell;&#xa;  margin: 0;&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 20px;&#xa;  border: 10px solid white;&#xa;  vertical-align: middle;&#xa;}" ID="ID_1726225108" CREATED="1520326909762" MODIFIED="1520326930540"/>
 </node>
-<node TEXT="Is it a block-level element?" ID="ID_1684766855" CREATED="1519981150516" MODIFIED="1519981165270"/>
+<node TEXT="with flexbox" ID="ID_1972513504" CREATED="1520327019263" MODIFIED="1520327028128">
+<node TEXT="If something table-like is out, perhaps you could use flexbox? A single flex-child can be made to center in a flex-parent pretty easily." ID="ID_1525902405" CREATED="1520326850301" MODIFIED="1520326852831"/>
+<node TEXT="&lt;div class=&quot;flex-center&quot;&gt;&#xa;  &lt;p&gt;I&apos;m vertically centered multiple lines of text in a flexbox container.&lt;/p&gt;&#xa;&lt;/div&gt;" ID="ID_1125895467" CREATED="1520326871238" MODIFIED="1520326874479"/>
+<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;div {&#xa;  background: white;&#xa;  width: 240px;&#xa;  margin: 20px;&#xa;}&#xa;&#xa;.flex-center {&#xa;  background: black;&#xa;  color: white;&#xa;  border: 10px solid white;&#xa;  display: flex;&#xa;  flex-direction: column;&#xa;  justify-content: center;&#xa;  height: 200px;&#xa;  resize: vertical;&#xa;  overflow: auto;&#xa;}&#xa;.flex-center p {&#xa;  margin: 0;&#xa;  padding: 20px;&#xa;}" ID="ID_546511859" CREATED="1520326895774" MODIFIED="1520326898690"/>
+<node TEXT="Remember that it&apos;s only really relevant if the parent container has a fixed height (px, %, etc), which is why the container here has a height." ID="ID_363370631" CREATED="1520327228984" MODIFIED="1520327231449"/>
+<node TEXT="Remember that it&apos;s only really relevant if the parent container has a fixed height (px, %, etc), which is why the container here has a height." ID="ID_897812848" CREATED="1520327497418" MODIFIED="1520327503291"/>
+</node>
+<node TEXT="with ghost element" ID="ID_1085285580" CREATED="1520327147616" MODIFIED="1520327163097">
+<node TEXT="If both of these techniques are out, you could employ the &quot;ghost element&quot; technique, in which a full-height pseudo element is placed inside the container and the text is vertically aligned with that." ID="ID_1017865572" CREATED="1520327181856" MODIFIED="1520327184009"/>
+<node TEXT="&lt;div class=&quot;ghost-center&quot;&gt;&#xa;  &lt;p&gt;I&apos;m vertically centered multiple lines of text in a container. Centered with a ghost pseudo element&lt;/p&gt;&#xa;&lt;/div&gt;" ID="ID_787072440" CREATED="1520327572474" MODIFIED="1520327575003"/>
+<node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;div {&#xa;  background: white;&#xa;  width: 240px;&#xa;  height: 200px;&#xa;  margin: 20px;&#xa;  color: white;&#xa;  resize: vertical;&#xa;  overflow: auto;&#xa;  padding: 20px;&#xa;}&#xa;&#xa;.ghost-center {&#xa;  position: relative;&#xa;}&#xa;.ghost-center::before {&#xa;  content: &quot; &quot;;&#xa;  display: inline-block;&#xa;  height: 100%;&#xa;  width: 1%;&#xa;  vertical-align: middle;&#xa;}&#xa;.ghost-center p {&#xa;  display: inline-block;&#xa;  vertical-align: middle;&#xa;  width: 190px;&#xa;  margin: 0;&#xa;  padding: 20px;&#xa;  background: black;&#xa;}" ID="ID_415020051" CREATED="1520327602978" MODIFIED="1520327605911"/>
+</node>
+</node>
+</node>
+<node TEXT="Is it a block-level element?" ID="ID_1684766855" CREATED="1519981150516" MODIFIED="1519981165270">
+<node TEXT="Do you know the height of the element?" ID="ID_664863428" CREATED="1520327646787" MODIFIED="1520327659570"/>
+<node TEXT="Is the element of unknown height?" ID="ID_1209218248" CREATED="1520327661147" MODIFIED="1520327677715"/>
+<node TEXT="Can you use flexbox?" ID="ID_78747414" CREATED="1520327695427" MODIFIED="1520327710500"/>
+</node>
 </node>
 <node TEXT="Both Horizontally and Vertically" ID="ID_1881990528" CREATED="1519979724859" MODIFIED="1519979743500"/>
 </node>
@@ -1116,13 +1253,13 @@
 <node TEXT="Element" ID="ID_1841700336" CREATED="1519894344597" MODIFIED="1519894355119">
 <node TEXT="Child items, or elements, can be placed inside and these are denoted by two underscores following the name of the block like .btn__price { }" ID="ID_1207958680" CREATED="1519894449910" MODIFIED="1519894457663"/>
 </node>
-<node TEXT="Modifier" ID="ID_1007851719" CREATED="1519894357461" MODIFIED="1519894366472">
-<node TEXT="modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--orange" ID="ID_615609830" CREATED="1519894499766" MODIFIED="1519894581920"/>
+<node TEXT="Modifier" ID="ID_1007851719" CREATED="1519894357461" MODIFIED="1520350315103">
+<node TEXT="modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--orange" ID="ID_615609830" CREATED="1519894499766" MODIFIED="1520350315098" HGAP_QUANTITY="23.749999709427364 pt" VSHIFT_QUANTITY="-44.999998658895535 pt"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
+<node TEXT="Javascript" FOLDED="true" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
 <node TEXT="language-core" FOLDED="true" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
