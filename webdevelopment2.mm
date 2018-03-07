@@ -1176,7 +1176,7 @@
 </node>
 </node>
 <node TEXT="Nice to know" ID="ID_557912890" CREATED="1519979482931" MODIFIED="1519979496048">
-<node TEXT="Centering in CSS" ID="ID_790494261" CREATED="1519979572897" MODIFIED="1519979636755">
+<node TEXT="Centering in CSS" FOLDED="true" ID="ID_790494261" CREATED="1519979572897" MODIFIED="1519979636755">
 <node TEXT="Horizontally" FOLDED="true" ID="ID_1505863954" CREATED="1519979549753" MODIFIED="1519979565489">
 <node TEXT="Is it inline or inline-* elements (like text or links)?" FOLDED="true" ID="ID_1376535717" CREATED="1519979775803" MODIFIED="1519979779036">
 <node TEXT="You can center inline elements horizontally, within a block-level parent element, with just:" ID="ID_1129745129" CREATED="1519979796227" MODIFIED="1519979803212"/>
@@ -1201,39 +1201,39 @@
 </node>
 </node>
 </node>
-<node TEXT="Vertically" ID="ID_1885884525" CREATED="1519979681842" MODIFIED="1519979722804">
-<node TEXT="Is it inline or inline-* elements (like text or links)?" ID="ID_401596958" CREATED="1519981137964" MODIFIED="1519981140965">
-<node TEXT="Is it a single line?" ID="ID_1147906362" CREATED="1519981205972" MODIFIED="1519981222734">
-<node TEXT="Sometimes inline / text elements can appear vertically centered, just because there is equal padding above and below them." ID="ID_1461410183" CREATED="1519981282589" MODIFIED="1519981285766">
+<node TEXT="Vertically" FOLDED="true" ID="ID_1885884525" CREATED="1519979681842" MODIFIED="1519979722804">
+<node TEXT="Is it inline or inline-* elements (like text or links)?" FOLDED="true" ID="ID_401596958" CREATED="1519981137964" MODIFIED="1519981140965">
+<node TEXT="Is it a single line?" FOLDED="true" ID="ID_1147906362" CREATED="1519981205972" MODIFIED="1519981222734">
+<node TEXT="Sometimes inline / text elements can appear vertically centered, just because there is equal padding above and below them." FOLDED="true" ID="ID_1461410183" CREATED="1519981282589" MODIFIED="1519981285766">
 <node TEXT="&lt;main&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;We&apos;re&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Centered&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Bits of&lt;/a&gt;&#xa;  &lt;a href=&quot;#0&quot;&gt;Text&lt;/a&gt;&#xa;&lt;/main&gt;" ID="ID_932512965" CREATED="1519981330173" MODIFIED="1519981335023"/>
 <node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 50px;&#xa;}&#xa;&#xa;main a {&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 40px 30px;&#xa;  text-decoration: none;&#xa;}" ID="ID_1446262962" CREATED="1519981344997" MODIFIED="1519981350543"/>
 </node>
-<node TEXT="If padding isn&apos;t an option for some reason, and you&apos;re trying to center some text that you know will not wrap, there is a trick were making the line-height equal to the height will center the text." ID="ID_743761246" CREATED="1519981477142" MODIFIED="1519981481943">
+<node TEXT="If padding isn&apos;t an option for some reason, and you&apos;re trying to center some text that you know will not wrap, there is a trick were making the line-height equal to the height will center the text." FOLDED="true" ID="ID_743761246" CREATED="1519981477142" MODIFIED="1519981481943">
 <node TEXT="&lt;main&gt;&#xa;  &lt;div&gt;&#xa;    I&apos;m a centered line.&#xa;  &lt;/div&gt;&#xa;&lt;/main&gt;" ID="ID_761630476" CREATED="1519981511742" MODIFIED="1519981516096"/>
 <node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;main {&#xa;  background: white;&#xa;  margin: 20px 0;&#xa;  padding: 40px;&#xa;}&#xa;&#xa;main div {&#xa;  background: black;&#xa;  color: white;&#xa;  height: 100px;&#xa;  line-height: 100px;&#xa;  padding: 20px;&#xa;  width: 50%;&#xa;  white-space: nowrap;&#xa;}" ID="ID_1525047742" CREATED="1519981526702" MODIFIED="1519981532809"/>
 </node>
 </node>
-<node TEXT="Is it multiple lines?" ID="ID_643276479" CREATED="1519981225085" MODIFIED="1519981256030">
+<node TEXT="Is it multiple lines?" FOLDED="true" ID="ID_643276479" CREATED="1519981225085" MODIFIED="1519981256030">
 <node TEXT="Equal padding on top and bottom can give the centered effect for multiple lines of text too, but if that isn&apos;t going to work, perhaps the element the text is in can be a table cell, either literally or made to behave like one with CSS. The vertical-align property handles this, in this case, unlike what it normally does which is handle the alignment of elements aligned on a row." ID="ID_330641121" CREATED="1520326737406" MODIFIED="1520326739778"/>
-<node TEXT="with tables" ID="ID_222146528" CREATED="1520326966975" MODIFIED="1520326981969">
+<node TEXT="with tables" FOLDED="true" ID="ID_222146528" CREATED="1520326966975" MODIFIED="1520326981969">
 <node TEXT="&lt;tables&gt;&#xa;  &lt;tr&gt;&#xa;    &lt;td&gt;&#xa;      I&apos;m vertically centered multiple lines of text in a real table cell.&#xa;    &lt;/td&gt;&#xa;  &lt;/tr&gt;&#xa;&lt;/tables&gt;&#xa;&#xa;&lt;div class=&quot;center-table&quot;&gt;&#xa;  &lt;p&gt;I&apos;m vertically centered multiple lines of text in a CSS-created table layout.&lt;/p&gt;&#xa;&lt;/div&gt;" ID="ID_1179006444" CREATED="1520326759845" MODIFIED="1520326812487"/>
 <node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;table {&#xa;  background: white;&#xa;  width: 240px;&#xa;  border-collapse: separate;&#xa;  margin: 20px;&#xa;  height: 250px;&#xa;}&#xa;&#xa;table td {&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 20px;&#xa;  border: 10px solid white;&#xa;  /* default is vertical-align: middle; */&#xa;}&#xa;&#xa;.center-table {&#xa;  display: table;&#xa;  height: 250px;&#xa;  background: white;&#xa;  width: 240px;&#xa;  margin: 20px;&#xa;}&#xa;.center-table p {&#xa;  display: table-cell;&#xa;  margin: 0;&#xa;  background: black;&#xa;  color: white;&#xa;  padding: 20px;&#xa;  border: 10px solid white;&#xa;  vertical-align: middle;&#xa;}" ID="ID_1726225108" CREATED="1520326909762" MODIFIED="1520326930540"/>
 </node>
-<node TEXT="with flexbox" ID="ID_1972513504" CREATED="1520327019263" MODIFIED="1520327028128">
+<node TEXT="with flexbox" FOLDED="true" ID="ID_1972513504" CREATED="1520327019263" MODIFIED="1520327028128">
 <node TEXT="If something table-like is out, perhaps you could use flexbox? A single flex-child can be made to center in a flex-parent pretty easily." ID="ID_1525902405" CREATED="1520326850301" MODIFIED="1520326852831"/>
 <node TEXT="&lt;div class=&quot;flex-center&quot;&gt;&#xa;  &lt;p&gt;I&apos;m vertically centered multiple lines of text in a flexbox container.&lt;/p&gt;&#xa;&lt;/div&gt;" ID="ID_1125895467" CREATED="1520326871238" MODIFIED="1520326874479"/>
 <node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;div {&#xa;  background: white;&#xa;  width: 240px;&#xa;  margin: 20px;&#xa;}&#xa;&#xa;.flex-center {&#xa;  background: black;&#xa;  color: white;&#xa;  border: 10px solid white;&#xa;  display: flex;&#xa;  flex-direction: column;&#xa;  justify-content: center;&#xa;  height: 200px;&#xa;  resize: vertical;&#xa;  overflow: auto;&#xa;}&#xa;.flex-center p {&#xa;  margin: 0;&#xa;  padding: 20px;&#xa;}" ID="ID_546511859" CREATED="1520326895774" MODIFIED="1520326898690"/>
 <node TEXT="Remember that it&apos;s only really relevant if the parent container has a fixed height (px, %, etc), which is why the container here has a height." ID="ID_363370631" CREATED="1520327228984" MODIFIED="1520327231449"/>
 <node TEXT="Remember that it&apos;s only really relevant if the parent container has a fixed height (px, %, etc), which is why the container here has a height." ID="ID_897812848" CREATED="1520327497418" MODIFIED="1520327503291"/>
 </node>
-<node TEXT="with ghost element" ID="ID_1085285580" CREATED="1520327147616" MODIFIED="1520327163097">
+<node TEXT="with ghost element" FOLDED="true" ID="ID_1085285580" CREATED="1520327147616" MODIFIED="1520327163097">
 <node TEXT="If both of these techniques are out, you could employ the &quot;ghost element&quot; technique, in which a full-height pseudo element is placed inside the container and the text is vertically aligned with that." ID="ID_1017865572" CREATED="1520327181856" MODIFIED="1520327184009"/>
 <node TEXT="&lt;div class=&quot;ghost-center&quot;&gt;&#xa;  &lt;p&gt;I&apos;m vertically centered multiple lines of text in a container. Centered with a ghost pseudo element&lt;/p&gt;&#xa;&lt;/div&gt;" ID="ID_787072440" CREATED="1520327572474" MODIFIED="1520327575003"/>
 <node TEXT="body {&#xa;  background: #f06d06;&#xa;  font-size: 80%;&#xa;}&#xa;&#xa;div {&#xa;  background: white;&#xa;  width: 240px;&#xa;  height: 200px;&#xa;  margin: 20px;&#xa;  color: white;&#xa;  resize: vertical;&#xa;  overflow: auto;&#xa;  padding: 20px;&#xa;}&#xa;&#xa;.ghost-center {&#xa;  position: relative;&#xa;}&#xa;.ghost-center::before {&#xa;  content: &quot; &quot;;&#xa;  display: inline-block;&#xa;  height: 100%;&#xa;  width: 1%;&#xa;  vertical-align: middle;&#xa;}&#xa;.ghost-center p {&#xa;  display: inline-block;&#xa;  vertical-align: middle;&#xa;  width: 190px;&#xa;  margin: 0;&#xa;  padding: 20px;&#xa;  background: black;&#xa;}" ID="ID_415020051" CREATED="1520327602978" MODIFIED="1520327605911"/>
 </node>
 </node>
 </node>
-<node TEXT="Is it a block-level element?" ID="ID_1684766855" CREATED="1519981150516" MODIFIED="1519981165270">
+<node TEXT="Is it a block-level element?" FOLDED="true" ID="ID_1684766855" CREATED="1519981150516" MODIFIED="1519981165270">
 <node TEXT="Do you know the height of the element?" ID="ID_664863428" CREATED="1520327646787" MODIFIED="1520327659570"/>
 <node TEXT="Is the element of unknown height?" ID="ID_1209218248" CREATED="1520327661147" MODIFIED="1520327677715"/>
 <node TEXT="Can you use flexbox?" ID="ID_78747414" CREATED="1520327695427" MODIFIED="1520327710500"/>
@@ -2595,6 +2595,7 @@
 <node TEXT="https://www.w3schools.com/tags/ref_eventattributes.asp" ID="ID_567894034" CREATED="1520175680530" MODIFIED="1520175680530" LINK="https://www.w3schools.com/tags/ref_eventattributes.asp"/>
 <node TEXT="https://www.w3.org/WAI/" ID="ID_372511871" CREATED="1520193221449" MODIFIED="1520193225028"/>
 <node TEXT="https://archive.org/" ID="ID_1563329911" CREATED="1520202706002" MODIFIED="1520202709446"/>
+<node TEXT="https://codesandbox.io/" ID="ID_1243070707" CREATED="1520416041708" MODIFIED="1520416041708" LINK="https://codesandbox.io/"/>
 </node>
 <node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
