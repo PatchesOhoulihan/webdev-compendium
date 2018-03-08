@@ -1259,7 +1259,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Javascript" FOLDED="true" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
+<node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
 <node TEXT="language-core" FOLDED="true" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
@@ -1443,6 +1443,20 @@
 <node TEXT="In a web browser, any code which the script doesn&apos;t specifically start up as a background task has a Window as its global object. This is the vast majority of JavaScript code on the Web." ID="ID_690447496" CREATED="1518085107077" MODIFIED="1518085107077"/>
 <node TEXT="window" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
 <node TEXT="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property." ID="ID_545673075" CREATED="1518094524949" MODIFIED="1518094524949"/>
+<node ID="ID_1193762135" CREATED="1520517980561" MODIFIED="1520518046917"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>self</b>&#160;is and alias for window
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 <node TEXT="properties" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1518183729900">
 <node TEXT="document" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1518688431758">
 <node TEXT="The Document interface represents any web page loaded in the browser and serves as an entry point into the web page&apos;s content, which is the DOM tree. The DOM tree includes elements such as &lt;body&gt; and &lt;table&gt;, among many others. It provides functionality globally to the document, like how to obtain the page&apos;s URL and create new elements in the document." ID="ID_309209743" CREATED="1518688425972" MODIFIED="1518688439665"/>
@@ -1477,6 +1491,34 @@
 <node TEXT="The following figure shows the difference between outerHeight and innerHeight." ID="ID_1651246691" CREATED="1519596790796" MODIFIED="1519596793670"/>
 <node TEXT="png_1598505959378295120.png" ID="ID_221511541" CREATED="1519596815490" MODIFIED="1519596815490">
 <hook URI="webdevelopment2_files/png_1598505959378295120.png" SIZE="0.8130081" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="navigator" ID="ID_743829260" CREATED="1520527919978" MODIFIED="1520527930326">
+<node TEXT="The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities." ID="ID_126759162" CREATED="1520528118503" MODIFIED="1520528130179"/>
+<node TEXT="A Navigator object can be retrieved using the read-only window.navigator property." ID="ID_1126770568" CREATED="1520528141983" MODIFIED="1520528154489"/>
+<node TEXT="properties" ID="ID_1284873333" CREATED="1520528162064" MODIFIED="1520528168929"/>
+<node TEXT="methods" ID="ID_1912583178" CREATED="1520528172176" MODIFIED="1520528180657">
+<node TEXT="activeVRDisplays" ID="ID_1479803165" CREATED="1520528395580" MODIFIED="1520528400515"/>
+<node TEXT="appCodeName" ID="ID_1247547594" CREATED="1520528228576" MODIFIED="1520528232674"/>
+<node TEXT="appName" ID="ID_1544737926" CREATED="1520528241504" MODIFIED="1520528245618"/>
+<node TEXT="appVersion" ID="ID_1758217866" CREATED="1520528257864" MODIFIED="1520528263186"/>
+<node TEXT="battery" ID="ID_1436334096" CREATED="1520528411673" MODIFIED="1520528416923"/>
+<node TEXT="connection" ID="ID_1582927718" CREATED="1520528428513" MODIFIED="1520528436603"/>
+<node TEXT="cookieEnabled" ID="ID_1863892924" CREATED="1520528445865" MODIFIED="1520528450779"/>
+<node TEXT="geolocation" ID="ID_243541937" CREATED="1520528472554" MODIFIED="1520528474923"/>
+<node TEXT="hardwareConcurrency" ID="ID_318868414" CREATED="1520528510946" MODIFIED="1520528515866"/>
+<node TEXT="javaEnabled" ID="ID_977168697" CREATED="1520528527554" MODIFIED="1520528534627"/>
+<node TEXT="language" ID="ID_1731066718" CREATED="1520528556538" MODIFIED="1520528591836"/>
+<node TEXT="mimeTypes" ID="ID_964639211" CREATED="1520528562498" MODIFIED="1520528594236"/>
+<node TEXT="onLine" ID="ID_1502043092" CREATED="1520528610499" MODIFIED="1520528615020"/>
+<node TEXT="oscpu" ID="ID_1978145130" CREATED="1520528625739" MODIFIED="1520528628252"/>
+<node TEXT="permissions" ID="ID_1514738753" CREATED="1520528654955" MODIFIED="1520528657428"/>
+<node TEXT="platform" ID="ID_1032943663" CREATED="1520528665555" MODIFIED="1520528669636"/>
+<node TEXT="plugins" ID="ID_721163036" CREATED="1520528681707" MODIFIED="1520528685796"/>
+<node TEXT="product" ID="ID_1047507385" CREATED="1520528694451" MODIFIED="1520528699628"/>
+<node TEXT="serviceWorker" ID="ID_1064493806" CREATED="1520528710395" MODIFIED="1520528714620"/>
+<node TEXT="storage" ID="ID_224486354" CREATED="1520528724924" MODIFIED="1520528728861"/>
+<node TEXT="userAgent" ID="ID_1216583916" CREATED="1520528742772" MODIFIED="1520528746812"/>
 </node>
 </node>
 </node>
@@ -2552,6 +2594,7 @@
 </node>
 </node>
 </node>
+<node TEXT="Funny stuff" ID="ID_1891427190" CREATED="1520518190848" MODIFIED="1520518839029"/>
 </node>
 <node TEXT="Links" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
 <edge COLOR="#ff00ff"/>
