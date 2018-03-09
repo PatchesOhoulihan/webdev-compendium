@@ -257,67 +257,6 @@
 <node TEXT="Comment" FOLDED="true" ID="ID_873678968" CREATED="1519592695865" MODIFIED="1519592701707">
 <node TEXT="&lt;!--This is a comment. Comments are not displayed in the browser--&gt;" ID="ID_1466872894" CREATED="1519592708937" MODIFIED="1519592712027"/>
 </node>
-<node TEXT="script" ID="ID_1770630926" CREATED="1520200636649" MODIFIED="1520200645613">
-<node TEXT="script-tag" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1515602554373">
-<node TEXT="type attribute" FOLDED="true" ID="ID_54630004" CREATED="1515280774637" MODIFIED="1515323493853">
-<node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_822896220" CREATED="1515280767645" MODIFIED="1515280767645"/>
-<node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_1435470214" CREATED="1515280820009" MODIFIED="1515280820009"/>
-<node TEXT="The media type consists of two parts: one media type and one subtype. For JavaScript, the media type is &quot;application/javascript&quot;." ID="ID_1360603924" CREATED="1515280830494" MODIFIED="1515280830494"/>
-<node TEXT="In HTML5, the type attribute is no longer required for JavaScript. The default value is &quot;application/javascript&quot;" ID="ID_1025962809" CREATED="1515280860764" MODIFIED="1515280860764"/>
-<node TEXT="Look at IANA Media Types for a complete list of standard media types." FOLDED="true" ID="ID_1537482134" CREATED="1515280934166" MODIFIED="1515280934166">
-<node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_69166597" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
-</node>
-</node>
-<node TEXT="Script loading" FOLDED="true" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
-<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_265022695" CREATED="1516984940332" MODIFIED="1516984940332"/>
-<node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_315975822" CREATED="1516984983930" MODIFIED="1516984983930"/>
-<node TEXT="Normal Execution" FOLDED="true" ID="ID_1254489477" CREATED="1516985020242" MODIFIED="1516985020242">
-<node TEXT="By default, as mentioned above, JavaScript files will interrupt the parsing of the HTML document in order for them to be fetched (if not inline) and executed." ID="ID_279626051" CREATED="1516985216297" MODIFIED="1516985216297"/>
-<node TEXT="png_4560996669286614596.png" ID="ID_145390713" CREATED="1516985243566" MODIFIED="1516985243566">
-<hook URI="webdevelopment2_files/png_4560996669286614596.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="The async Attribute" FOLDED="true" ID="ID_958611319" CREATED="1516985060860" MODIFIED="1516985060860">
-<node TEXT="The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing." ID="ID_1935634717" CREATED="1516985285531" MODIFIED="1516985285531"/>
-<node TEXT="png_3735681454245946596.png" ID="ID_1054709993" CREATED="1516985313949" MODIFIED="1516985313949">
-<hook URI="webdevelopment2_files/png_3735681454245946596.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="The defer Attribute" FOLDED="true" ID="ID_1554828275" CREATED="1516985092756" MODIFIED="1516985092756">
-<node TEXT="The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed." ID="ID_726303402" CREATED="1516985347377" MODIFIED="1516985347377"/>
-<node TEXT="Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete." ID="ID_1039666429" CREATED="1516985370690" MODIFIED="1516985370690"/>
-<node TEXT="png_5617417546364053301.png" ID="ID_1774527159" CREATED="1516985454109" MODIFIED="1516985454109">
-<hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="Asynchronous, Deferred or Normal Execution?" FOLDED="true" ID="ID_999485238" CREATED="1516985126147" MODIFIED="1519037613145">
-<node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_611885800" CREATED="1516985477168" MODIFIED="1516985477168"/>
-<node TEXT="Where is the &lt;script&gt; element located?" FOLDED="true" ID="ID_1341810870" CREATED="1516985499149" MODIFIED="1516985499149">
-<node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_94923227" CREATED="1516985616958" MODIFIED="1516985616958"/>
-</node>
-<node TEXT="Is the script self-contained?" FOLDED="true" ID="ID_966997468" CREATED="1516985520906" MODIFIED="1519037613144">
-<node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_973984847" CREATED="1516985643385" MODIFIED="1516985643385"/>
-</node>
-<node TEXT="Does the script rely on a fully parsed DOM?" FOLDED="true" ID="ID_354214330" CREATED="1516985549473" MODIFIED="1516985549473">
-<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_1748054035" CREATED="1516985661161" MODIFIED="1516985661161"/>
-</node>
-<node TEXT="Is the script a (small) dependency?" FOLDED="true" ID="ID_38917621" CREATED="1516985571593" MODIFIED="1516985571593">
-<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_925375247" CREATED="1516985712536" MODIFIED="1516985712536"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="no script tag" FOLDED="true" ID="ID_1007443193" CREATED="1515602570705" MODIFIED="1515602584248">
-<node TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script." ID="ID_744019650" CREATED="1515602635348" MODIFIED="1515602635348"/>
-<node TEXT="The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;." ID="ID_407610190" CREATED="1515602635351" MODIFIED="1515602635351"/>
-<node TEXT="When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements." ID="ID_1640681790" CREATED="1515602635351" MODIFIED="1515602635351"/>
-<node TEXT="The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser." ID="ID_380978871" CREATED="1515602635352" MODIFIED="1515602635352"/>
-<node TEXT="Differences Between HTML 4.01 and HTML5" FOLDED="true" ID="ID_663837180" CREATED="1515602673887" MODIFIED="1515602676907">
-<node TEXT="In HTML 4.01, the &lt;noscript&gt; tag can only be used inside the &lt;body&gt; element." ID="ID_1191245985" CREATED="1515602688236" MODIFIED="1515602688236"/>
-<node TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;." ID="ID_369635316" CREATED="1515602688237" MODIFIED="1515602688237"/>
-</node>
-</node>
-</node>
 <node TEXT="Global attributes" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
 <node TEXT="Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements." ID="ID_489227557" CREATED="1520172307612" MODIFIED="1520172312937"/>
 <node TEXT="Global attributes may be specified on all HTML elements, even those not specified in the standard." FOLDED="true" ID="ID_966516826" CREATED="1520172331188" MODIFIED="1520172336504">
@@ -649,84 +588,201 @@
 </node>
 <node TEXT="aria-*" ID="ID_93471121" CREATED="1520175005320" MODIFIED="1520175008531"/>
 </node>
-<node TEXT="input" ID="ID_1618525284" CREATED="1520330027730" MODIFIED="1520330033139">
+<node TEXT="Main root" ID="ID_1751024300" CREATED="1520591363453" MODIFIED="1520591372260">
+<node ID="ID_813375012" CREATED="1520591383417" MODIFIED="1520591419541"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top: 0">
+      html
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="The HTML &lt;html&gt; element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element." ID="ID_1006611270" CREATED="1520591443857" MODIFIED="1520591446965"/>
+</node>
+<node TEXT="Document metadata" ID="ID_856580860" CREATED="1520591475746" MODIFIED="1520591480170">
+<node TEXT="Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information." ID="ID_504962725" CREATED="1520591496082" MODIFIED="1520591546589"/>
+<node TEXT="&lt;link&gt;" ID="ID_1442213483" CREATED="1520591562258" MODIFIED="1520591571732"/>
+<node TEXT="&lt;meta&gt;" ID="ID_1794376208" CREATED="1520591593995" MODIFIED="1520591610204"/>
+<node TEXT="&lt;style&gt;" ID="ID_1656119580" CREATED="1520591628131" MODIFIED="1520591631531"/>
+<node TEXT="&lt;title&gt;" ID="ID_762940708" CREATED="1520591644635" MODIFIED="1520591650787"/>
+</node>
+<node TEXT="Sectioning root" ID="ID_851475154" CREATED="1520591919013" MODIFIED="1520591922758"/>
+<node TEXT="Content sectioning" ID="ID_1674410105" CREATED="1520591934157" MODIFIED="1520591938309"/>
+<node TEXT="Text content" ID="ID_1142534139" CREATED="1520591947597" MODIFIED="1520591950717"/>
+<node TEXT="Inline text semantics" ID="ID_1943550316" CREATED="1520591962372" MODIFIED="1520591966502"/>
+<node TEXT="Image and multimedia" ID="ID_1242457740" CREATED="1520592029269" MODIFIED="1520592034654">
+<node TEXT="&lt;area&gt;" ID="ID_199663156" CREATED="1520593310918" MODIFIED="1520593315503"/>
+<node TEXT="&lt;audio&gt;" ID="ID_1244964273" CREATED="1520593322206" MODIFIED="1520593330734"/>
+<node TEXT="&lt;img&gt;" ID="ID_339009089" CREATED="1520593338254" MODIFIED="1520593346455"/>
+<node TEXT="&lt;map&gt;" ID="ID_1386282062" CREATED="1520593355470" MODIFIED="1520593376511"/>
+<node TEXT="&lt;track&gt;" ID="ID_1002263403" CREATED="1520593388191" MODIFIED="1520593392736"/>
+<node TEXT="&lt;video&gt;" ID="ID_1344946774" CREATED="1520593406127" MODIFIED="1520593410337"/>
+</node>
+<node TEXT="Embedded content" ID="ID_515819194" CREATED="1520592049709" MODIFIED="1520592055263">
+<node TEXT="&lt;applet&gt;" ID="ID_401266200" CREATED="1520593124420" MODIFIED="1520593131350"/>
+<node TEXT="&lt;embed&gt;" ID="ID_855705740" CREATED="1520593150373" MODIFIED="1520593157254"/>
+<node TEXT="&lt;noembed&gt;" ID="ID_3634339" CREATED="1520593167973" MODIFIED="1520593172342"/>
+<node TEXT="&lt;object&gt;" ID="ID_855797867" CREATED="1520593183085" MODIFIED="1520593188182"/>
+<node TEXT="&lt;param&gt;" ID="ID_1219237263" CREATED="1520593198925" MODIFIED="1520593203629"/>
+<node TEXT="&lt;picture&gt;" ID="ID_1790167744" CREATED="1520593212333" MODIFIED="1520593216654"/>
+<node TEXT="&lt;source&gt;" ID="ID_1512781250" CREATED="1520593224621" MODIFIED="1520593229582"/>
+</node>
+<node TEXT="Scripting" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
+<node TEXT="&lt;canvas&gt;" ID="ID_619380127" CREATED="1520592996387" MODIFIED="1520593000725"/>
+<node TEXT="&lt;script&gt;" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1520593070106">
+<node TEXT="type attribute" FOLDED="true" ID="ID_54630004" CREATED="1515280774637" MODIFIED="1515323493853">
+<node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_822896220" CREATED="1515280767645" MODIFIED="1515280767645"/>
+<node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_1435470214" CREATED="1515280820009" MODIFIED="1515280820009"/>
+<node TEXT="The media type consists of two parts: one media type and one subtype. For JavaScript, the media type is &quot;application/javascript&quot;." ID="ID_1360603924" CREATED="1515280830494" MODIFIED="1515280830494"/>
+<node TEXT="In HTML5, the type attribute is no longer required for JavaScript. The default value is &quot;application/javascript&quot;" ID="ID_1025962809" CREATED="1515280860764" MODIFIED="1515280860764"/>
+<node TEXT="Look at IANA Media Types for a complete list of standard media types." FOLDED="true" ID="ID_1537482134" CREATED="1515280934166" MODIFIED="1515280934166">
+<node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_69166597" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
+</node>
+</node>
+<node TEXT="Script loading" FOLDED="true" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
+<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_265022695" CREATED="1516984940332" MODIFIED="1516984940332"/>
+<node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_315975822" CREATED="1516984983930" MODIFIED="1516984983930"/>
+<node TEXT="Normal Execution" FOLDED="true" ID="ID_1254489477" CREATED="1516985020242" MODIFIED="1516985020242">
+<node TEXT="By default, as mentioned above, JavaScript files will interrupt the parsing of the HTML document in order for them to be fetched (if not inline) and executed." ID="ID_279626051" CREATED="1516985216297" MODIFIED="1516985216297"/>
+<node TEXT="png_4560996669286614596.png" ID="ID_145390713" CREATED="1516985243566" MODIFIED="1516985243566">
+<hook URI="webdevelopment2_files/png_4560996669286614596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The async Attribute" FOLDED="true" ID="ID_958611319" CREATED="1516985060860" MODIFIED="1516985060860">
+<node TEXT="The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing." ID="ID_1935634717" CREATED="1516985285531" MODIFIED="1516985285531"/>
+<node TEXT="png_3735681454245946596.png" ID="ID_1054709993" CREATED="1516985313949" MODIFIED="1516985313949">
+<hook URI="webdevelopment2_files/png_3735681454245946596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The defer Attribute" FOLDED="true" ID="ID_1554828275" CREATED="1516985092756" MODIFIED="1516985092756">
+<node TEXT="The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed." ID="ID_726303402" CREATED="1516985347377" MODIFIED="1516985347377"/>
+<node TEXT="Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete." ID="ID_1039666429" CREATED="1516985370690" MODIFIED="1516985370690"/>
+<node TEXT="png_5617417546364053301.png" ID="ID_1774527159" CREATED="1516985454109" MODIFIED="1516985454109">
+<hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="Asynchronous, Deferred or Normal Execution?" FOLDED="true" ID="ID_999485238" CREATED="1516985126147" MODIFIED="1519037613145">
+<node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_611885800" CREATED="1516985477168" MODIFIED="1516985477168"/>
+<node TEXT="Where is the &lt;script&gt; element located?" FOLDED="true" ID="ID_1341810870" CREATED="1516985499149" MODIFIED="1516985499149">
+<node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_94923227" CREATED="1516985616958" MODIFIED="1516985616958"/>
+</node>
+<node TEXT="Is the script self-contained?" FOLDED="true" ID="ID_966997468" CREATED="1516985520906" MODIFIED="1519037613144">
+<node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_973984847" CREATED="1516985643385" MODIFIED="1516985643385"/>
+</node>
+<node TEXT="Does the script rely on a fully parsed DOM?" FOLDED="true" ID="ID_354214330" CREATED="1516985549473" MODIFIED="1516985549473">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_1748054035" CREATED="1516985661161" MODIFIED="1516985661161"/>
+</node>
+<node TEXT="Is the script a (small) dependency?" FOLDED="true" ID="ID_38917621" CREATED="1516985571593" MODIFIED="1516985571593">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_925375247" CREATED="1516985712536" MODIFIED="1516985712536"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="&lt;noscript&gt;" FOLDED="true" ID="ID_1007443193" CREATED="1515602570705" MODIFIED="1520593097492">
+<node TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script." ID="ID_744019650" CREATED="1515602635348" MODIFIED="1515602635348"/>
+<node TEXT="The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;." ID="ID_407610190" CREATED="1515602635351" MODIFIED="1515602635351"/>
+<node TEXT="When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements." ID="ID_1640681790" CREATED="1515602635351" MODIFIED="1515602635351"/>
+<node TEXT="The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser." ID="ID_380978871" CREATED="1515602635352" MODIFIED="1515602635352"/>
+<node TEXT="Differences Between HTML 4.01 and HTML5" FOLDED="true" ID="ID_663837180" CREATED="1515602673887" MODIFIED="1515602676907">
+<node TEXT="In HTML 4.01, the &lt;noscript&gt; tag can only be used inside the &lt;body&gt; element." ID="ID_1191245985" CREATED="1515602688236" MODIFIED="1515602688236"/>
+<node TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;." ID="ID_369635316" CREATED="1515602688237" MODIFIED="1515602688237"/>
+</node>
+</node>
+</node>
+<node TEXT="Demarcating edits" ID="ID_202686193" CREATED="1520592098718" MODIFIED="1520592105958">
+<node TEXT="&lt;del&gt;" ID="ID_700220872" CREATED="1520592892163" MODIFIED="1520592896900"/>
+<node TEXT="&lt;ins&gt;" ID="ID_256794353" CREATED="1520592905579" MODIFIED="1520592909980"/>
+</node>
+<node TEXT="Table content" ID="ID_523038220" CREATED="1520592115310" MODIFIED="1520592121174"/>
+<node TEXT="Forms" ID="ID_1033436963" CREATED="1520592129774" MODIFIED="1520592134310">
+<node TEXT="&lt;button&gt;" ID="ID_668248935" CREATED="1520592511056" MODIFIED="1520592514736"/>
+<node TEXT="&lt;datalist&gt;" ID="ID_29394233" CREATED="1520592528793" MODIFIED="1520592535169"/>
+<node TEXT="&lt;fieldset&gt;" ID="ID_843179194" CREATED="1520592545528" MODIFIED="1520592550122"/>
+<node TEXT="&lt;form&gt;" ID="ID_38499095" CREATED="1520592566185" MODIFIED="1520592570858"/>
+<node TEXT="&lt;input&gt;" FOLDED="true" ID="ID_1618525284" CREATED="1520330027730" MODIFIED="1520592609233">
 <node TEXT="The HTML &lt;input&gt; element is used to create interactive controls for web-based forms in order to accept data from the user." ID="ID_1497170820" CREATED="1520330792999" MODIFIED="1520330802456"/>
-<node TEXT="input attributes" ID="ID_1886962322" CREATED="1520334747345" MODIFIED="1520334762841">
+<node TEXT="input attributes" FOLDED="true" ID="ID_1886962322" CREATED="1520334747345" MODIFIED="1520334762841">
 <node TEXT="This section lists the attributes available to all form &lt;input&gt; types. Non-global attributes &#x2014; and global attributes that behave differently when specified on different &lt;input&gt; types &#x2014; are listed on those types&apos; individual pages." ID="ID_1928104140" CREATED="1520334792041" MODIFIED="1520334798099"/>
-<node TEXT="types" ID="ID_1215177323" CREATED="1520331460643" MODIFIED="1520331491164">
-<node TEXT="button" ID="ID_396650130" CREATED="1520331510700" MODIFIED="1520331513862">
+<node TEXT="types" FOLDED="true" ID="ID_1215177323" CREATED="1520331460643" MODIFIED="1520331491164">
+<node TEXT="button" FOLDED="true" ID="ID_396650130" CREATED="1520331510700" MODIFIED="1520331513862">
 <node TEXT="A push button with no default behavior." ID="ID_449090957" CREATED="1520333416400" MODIFIED="1520333419361"/>
 </node>
-<node TEXT="checkbox" ID="ID_451892438" CREATED="1520331672325" MODIFIED="1520331678038">
+<node TEXT="checkbox" FOLDED="true" ID="ID_451892438" CREATED="1520331672325" MODIFIED="1520331678038">
 <node TEXT="A check box allowing single values to be selected/deselected." ID="ID_841742030" CREATED="1520333437656" MODIFIED="1520333440282"/>
 </node>
-<node TEXT="color" ID="ID_1907862248" CREATED="1520331821326" MODIFIED="1520331822943">
+<node TEXT="color" FOLDED="true" ID="ID_1907862248" CREATED="1520331821326" MODIFIED="1520331822943">
 <node TEXT="A control for specifying a color. A color picker&apos;s UI has no required features other than accepting simple colors as text" ID="ID_1258699366" CREATED="1520333455400" MODIFIED="1520333457073"/>
 </node>
-<node TEXT="date" ID="ID_889622964" CREATED="1520331833742" MODIFIED="1520331837863">
+<node TEXT="date" FOLDED="true" ID="ID_889622964" CREATED="1520331833742" MODIFIED="1520331837863">
 <node TEXT="A control for entering a date (year, month, and day, with no time)." ID="ID_539533930" CREATED="1520333488656" MODIFIED="1520333490642"/>
 </node>
-<node TEXT="datetime-local" ID="ID_1266684462" CREATED="1520331851230" MODIFIED="1520331854167">
+<node TEXT="datetime-local" FOLDED="true" ID="ID_1266684462" CREATED="1520331851230" MODIFIED="1520331854167">
 <node TEXT="A control for entering a date and time, with no time zone." ID="ID_1555548311" CREATED="1520333502912" MODIFIED="1520333506641"/>
 </node>
-<node TEXT="email" ID="ID_1846164783" CREATED="1520331875606" MODIFIED="1520331880295">
+<node TEXT="email" FOLDED="true" ID="ID_1846164783" CREATED="1520331875606" MODIFIED="1520331880295">
 <node TEXT="A field for editing an e-mail address." ID="ID_805482728" CREATED="1520333515728" MODIFIED="1520333518873"/>
 </node>
-<node TEXT="file" ID="ID_48996710" CREATED="1520331885182" MODIFIED="1520331900791">
+<node TEXT="file" FOLDED="true" ID="ID_48996710" CREATED="1520331885182" MODIFIED="1520331900791">
 <node TEXT="A control that lets the user select a file. Use the accept attribute to define the types of files that the control can select." ID="ID_1749483931" CREATED="1520333547368" MODIFIED="1520333550442"/>
 </node>
-<node TEXT="hidden" ID="ID_1538151925" CREATED="1520331906350" MODIFIED="1520331909839">
+<node TEXT="hidden" FOLDED="true" ID="ID_1538151925" CREATED="1520331906350" MODIFIED="1520331909839">
 <node TEXT="A control that is not displayed but whose value is submitted to the server." ID="ID_1172681050" CREATED="1520333570185" MODIFIED="1520333573642"/>
 </node>
-<node TEXT="image" ID="ID_1851464644" CREATED="1520331918814" MODIFIED="1520331925399">
+<node TEXT="image" FOLDED="true" ID="ID_1851464644" CREATED="1520331918814" MODIFIED="1520331925399">
 <node TEXT="A graphical submit button. You must use the src attribute to define the source of the image and the alt attribute to define alternative text. You can use the height and width attributes to define the size of the image in pixels." ID="ID_1423811260" CREATED="1520333594489" MODIFIED="1520333596322"/>
 </node>
-<node TEXT="month" ID="ID_467225334" CREATED="1520333614978" MODIFIED="1520333622098">
+<node TEXT="month" FOLDED="true" ID="ID_467225334" CREATED="1520333614978" MODIFIED="1520333622098">
 <node TEXT="A control for entering a month and year, with no time zone." ID="ID_787920257" CREATED="1520333633961" MODIFIED="1520333638402"/>
 </node>
-<node TEXT="number" ID="ID_80957926" CREATED="1520332033007" MODIFIED="1520332038928">
+<node TEXT="number" FOLDED="true" ID="ID_80957926" CREATED="1520332033007" MODIFIED="1520332038928">
 <node TEXT="A control for entering a number." ID="ID_1094669607" CREATED="1520333647057" MODIFIED="1520333651322"/>
 </node>
-<node TEXT="password" ID="ID_1435259868" CREATED="1520332051319" MODIFIED="1520332061024">
+<node TEXT="password" FOLDED="true" ID="ID_1435259868" CREATED="1520332051319" MODIFIED="1520332061024">
 <node TEXT="A single-line text field whose value is obscured. Use the maxlength and minlength attributes to specify the maximum length of the value that can be entered." ID="ID_992593240" CREATED="1520333662113" MODIFIED="1520333665034"/>
 </node>
-<node TEXT="radio" ID="ID_204183482" CREATED="1520332073175" MODIFIED="1520332078800">
+<node TEXT="radio" FOLDED="true" ID="ID_204183482" CREATED="1520332073175" MODIFIED="1520332078800">
 <node TEXT="A radio button, allowing a single value to be selected out of multiple choices." ID="ID_1921640396" CREATED="1520333684409" MODIFIED="1520333687826"/>
 </node>
-<node TEXT="range" ID="ID_1740955557" CREATED="1520332081871" MODIFIED="1520332146209">
+<node TEXT="range" FOLDED="true" ID="ID_1740955557" CREATED="1520332081871" MODIFIED="1520332146209">
 <node TEXT="A control for entering a number whose exact value is not important." ID="ID_1773071712" CREATED="1520333698418" MODIFIED="1520333702538"/>
 </node>
-<node TEXT="reset" ID="ID_1566151059" CREATED="1520332148464" MODIFIED="1520332156081">
+<node TEXT="reset" FOLDED="true" ID="ID_1566151059" CREATED="1520332148464" MODIFIED="1520332156081">
 <node TEXT="A button that resets the contents of the form to default values." ID="ID_589123208" CREATED="1520333722250" MODIFIED="1520333725275"/>
 </node>
-<node TEXT="search" ID="ID_1358704182" CREATED="1520332158608" MODIFIED="1520332165921">
+<node TEXT="search" FOLDED="true" ID="ID_1358704182" CREATED="1520332158608" MODIFIED="1520332165921">
 <node TEXT="A single-line text field for entering search strings. Line-breaks are automatically removed from the input value." ID="ID_220978398" CREATED="1520333737914" MODIFIED="1520333741531"/>
 </node>
-<node TEXT="submit" ID="ID_474278576" CREATED="1520332171640" MODIFIED="1520332181961">
+<node TEXT="submit" FOLDED="true" ID="ID_474278576" CREATED="1520332171640" MODIFIED="1520332181961">
 <node TEXT="A button that submits the form." ID="ID_1675447848" CREATED="1520333751529" MODIFIED="1520333754707"/>
 </node>
-<node TEXT="tel" ID="ID_1002804184" CREATED="1520332224704" MODIFIED="1520332231929">
+<node TEXT="tel" FOLDED="true" ID="ID_1002804184" CREATED="1520332224704" MODIFIED="1520332231929">
 <node TEXT="A control for entering a telephone number." ID="ID_743260950" CREATED="1520333761266" MODIFIED="1520333764115"/>
 </node>
-<node TEXT="text" ID="ID_623902964" CREATED="1520332235664" MODIFIED="1520332244553">
+<node TEXT="text" FOLDED="true" ID="ID_623902964" CREATED="1520332235664" MODIFIED="1520332244553">
 <node TEXT=" A single-line text field. Line-breaks are automatically removed from the input value." ID="ID_292744712" CREATED="1520333772210" MODIFIED="1520333775339"/>
 </node>
-<node TEXT="time" ID="ID_999849329" CREATED="1520332248424" MODIFIED="1520332257577">
+<node TEXT="time" FOLDED="true" ID="ID_999849329" CREATED="1520332248424" MODIFIED="1520332257577">
 <node TEXT="A control for entering a time value with no time zone." ID="ID_915915799" CREATED="1520333791858" MODIFIED="1520333797419"/>
 </node>
-<node TEXT="url" ID="ID_1193298364" CREATED="1520332262456" MODIFIED="1520332268729">
+<node TEXT="url" FOLDED="true" ID="ID_1193298364" CREATED="1520332262456" MODIFIED="1520332268729">
 <node TEXT="A field for entering a URL." ID="ID_455845177" CREATED="1520333805994" MODIFIED="1520333811395"/>
 </node>
-<node TEXT="week" ID="ID_828474090" CREATED="1520332281577" MODIFIED="1520332289482">
+<node TEXT="week" FOLDED="true" ID="ID_828474090" CREATED="1520332281577" MODIFIED="1520332289482">
 <node TEXT="A control for entering a date consisting of a week-year number and a week number with no time zone." ID="ID_812517964" CREATED="1520333867243" MODIFIED="1520333877884"/>
 </node>
-<node TEXT="DEPRECATED" ID="ID_871849871" CREATED="1520332308049" MODIFIED="1520332316618">
+<node TEXT="DEPRECATED" FOLDED="true" ID="ID_871849871" CREATED="1520332308049" MODIFIED="1520332316618">
 <node TEXT="datetime" ID="ID_16242128" CREATED="1520332327097" MODIFIED="1520332389426"/>
 </node>
 </node>
 <node TEXT="accept" ID="ID_1937142315" CREATED="1520341985522" MODIFIED="1520341990147"/>
 <node TEXT="accesskey" ID="ID_1928365568" CREATED="1520342006066" MODIFIED="1520342009611"/>
-<node TEXT="autocomplete" ID="ID_1433812126" CREATED="1520342020082" MODIFIED="1520342026188">
+<node TEXT="autocomplete" FOLDED="true" ID="ID_1433812126" CREATED="1520342020082" MODIFIED="1520342026188">
 <node TEXT="This attribute indicates whether the value of the control can be automatically completed by the browser." ID="ID_785493058" CREATED="1520344232531" MODIFIED="1520344235027"/>
 </node>
 <node TEXT="autofocus" ID="ID_1317063504" CREATED="1520342043674" MODIFIED="1520342049228"/>
@@ -763,6 +819,26 @@
 <node TEXT="width" ID="ID_1903941196" CREATED="1520343056354" MODIFIED="1520343059641"/>
 </node>
 <node TEXT="" ID="ID_1267623223" CREATED="1520340794410" MODIFIED="1520340794410"/>
+</node>
+<node TEXT="&lt;label&gt;" ID="ID_1309106101" CREATED="1520592632690" MODIFIED="1520592636859"/>
+<node TEXT="&lt;legend&gt;" ID="ID_937770746" CREATED="1520592645730" MODIFIED="1520592650146"/>
+<node TEXT="&lt;meter&gt;" ID="ID_1857610801" CREATED="1520592665146" MODIFIED="1520592669657"/>
+<node TEXT="&lt;optgroup&gt;" ID="ID_114315381" CREATED="1520592680570" MODIFIED="1520592763890"/>
+<node TEXT="&lt;option&gt;" ID="ID_273608849" CREATED="1520592774026" MODIFIED="1520592777899"/>
+<node TEXT="&lt;output&gt;" ID="ID_1596616092" CREATED="1520592787498" MODIFIED="1520592792267"/>
+<node TEXT="&lt;progress&gt;" ID="ID_242350282" CREATED="1520592801018" MODIFIED="1520592805620"/>
+<node TEXT="&lt;select&gt;" ID="ID_1061081820" CREATED="1520592828259" MODIFIED="1520592833492"/>
+<node TEXT="&lt;textarea&gt;" ID="ID_1995177550" CREATED="1520592840747" MODIFIED="1520592845700"/>
+</node>
+<node TEXT="Interactive elements" ID="ID_1603568566" CREATED="1520592145118" MODIFIED="1520592151049">
+<node TEXT="&lt;details&gt;" ID="ID_653047142" CREATED="1520592327303" MODIFIED="1520592330216"/>
+<node TEXT="&lt;dialog&gt;" ID="ID_557547218" CREATED="1520592338583" MODIFIED="1520592377628"/>
+<node TEXT="&lt;menu&gt;" ID="ID_1456610476" CREATED="1520592379472" MODIFIED="1520592383361"/>
+<node TEXT="&lt;menuitem&gt;" ID="ID_457797346" CREATED="1520592392912" MODIFIED="1520592397680"/>
+<node TEXT="&lt;summary&gt;" ID="ID_1081368109" CREATED="1520592408031" MODIFIED="1520592413112"/>
+</node>
+<node TEXT="Web Components" ID="ID_380032590" CREATED="1520592162590" MODIFIED="1520592168655"/>
+<node TEXT="Obsolete and deprecated elements" ID="ID_315398082" CREATED="1520592191358" MODIFIED="1520592276840"/>
 </node>
 </node>
 <node TEXT="Validatoren" FOLDED="true" ID="ID_1055361650" CREATED="1520104471918" MODIFIED="1520104479277">
@@ -2639,6 +2715,8 @@
 <node TEXT="https://www.w3.org/WAI/" ID="ID_372511871" CREATED="1520193221449" MODIFIED="1520193225028"/>
 <node TEXT="https://archive.org/" ID="ID_1563329911" CREATED="1520202706002" MODIFIED="1520202709446"/>
 <node TEXT="https://codesandbox.io/" ID="ID_1243070707" CREATED="1520416041708" MODIFIED="1520416041708" LINK="https://codesandbox.io/"/>
+<node TEXT="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning" ID="ID_498373930" CREATED="1520591838268" MODIFIED="1520591849109"/>
+<node TEXT="https://webflow.com/" ID="ID_717463150" CREATED="1520601363869" MODIFIED="1520601367645"/>
 </node>
 <node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
