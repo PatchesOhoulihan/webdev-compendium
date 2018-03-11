@@ -57,12 +57,12 @@
 <hook NAME="AutomaticEdgeColor" COUNTER="28" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
-<node TEXT="Introduction" ID="ID_667219144" CREATED="1520200774244" MODIFIED="1520200783932">
-<node TEXT="the &quot;M&quot; in HTML stands for &quot;Markup&quot;, but what does Markup really mean?" ID="ID_1067751453" CREATED="1520200875423" MODIFIED="1520200875423">
+<node TEXT="Introduction" FOLDED="true" ID="ID_667219144" CREATED="1520200774244" MODIFIED="1520200783932">
+<node TEXT="the &quot;M&quot; in HTML stands for &quot;Markup&quot;, but what does Markup really mean?" FOLDED="true" ID="ID_1067751453" CREATED="1520200875423" MODIFIED="1520200875423">
 <node TEXT="Essentially, it means to annotate a document with extra information." ID="ID_196309588" CREATED="1520200904869" MODIFIED="1520200904869"/>
 <node TEXT="Things like where different sections and paragraphs begin and end, which part is the title, which things should be emphasized and so on." ID="ID_253641421" CREATED="1520200922002" MODIFIED="1520200922002"/>
 <node TEXT="There are many ways to markup a document, but HTML borrows a technique from an ancestor language, SGML (Standard Generalized Markup Language)" ID="ID_654553592" CREATED="1520201006705" MODIFIED="1520201006705"/>
-<node TEXT="which uses angle brackets (&quot;&lt;&quot; and &quot;&gt;&quot;) to separate the annotations from the regular text.  In HTML these annotations are called &quot;tags&quot;." ID="ID_795677082" CREATED="1520201026483" MODIFIED="1520201026483">
+<node TEXT="which uses angle brackets (&quot;&lt;&quot; and &quot;&gt;&quot;) to separate the annotations from the regular text.  In HTML these annotations are called &quot;tags&quot;." FOLDED="true" ID="ID_795677082" CREATED="1520201026483" MODIFIED="1520201026483">
 <node TEXT="       &lt;body&gt;&#xa;          &lt;h1&gt;A Tale of Two Cities&lt;/h1&gt;&#xa;          &lt;p&gt;&#xa;             It was the best of times, it was the worst of times, . . . .&#xa;          &lt;/p&gt;&#xa;          . . .&#xa;          &lt;p&gt;&#xa;             . . . it is a far, far better rest&#xa;             that I go to than I have ever known.&#xa;          &lt;/p&gt;&#xa;       &lt;/body&gt;" ID="ID_388515313" CREATED="1520201370307" MODIFIED="1520201373729"/>
 <node TEXT="If you eliminated everything in between the angle brackets from the text, for most purposes it would still read the same:" ID="ID_1852770991" CREATED="1520201387621" MODIFIED="1520201387621"/>
 <node TEXT="A Tale of Two Cities&#xa;It was the best of times, it was the worst of times . . . .&#xa;  . . .&#xa;. . . it is a far, far better rest&#xa;    that I go to than I have ever known." ID="ID_1530593445" CREATED="1520201400068" MODIFIED="1520201403881"/>
@@ -83,181 +83,387 @@
 </node>
 <node TEXT="You can put a lot of different things in between those brackets without any of it showing up (directly) in your finished document." ID="ID_887451894" CREATED="1520201437703" MODIFIED="1520201437703"/>
 </node>
-<node TEXT="Elements" ID="ID_1319457882" CREATED="1520202361269" MODIFIED="1520202369473">
+<node TEXT="Elements" FOLDED="true" ID="ID_1319457882" CREATED="1520202361269" MODIFIED="1520202369473">
 <node TEXT="&apos;Elements&apos; are the pieces themselves, i.e. a paragraph is an element, or a header is an element, even the body is an element." ID="ID_168278615" CREATED="1520202382489" MODIFIED="1520202382489"/>
 <node TEXT="Most elements can contain other elements, as the body element would contain header elements, paragraph elements, in fact pretty much all of the visible elements of the DOM." ID="ID_589356049" CREATED="1520202407469" MODIFIED="1520202407469"/>
 </node>
 <node TEXT="Tags" ID="ID_709243664" CREATED="1520202465492" MODIFIED="1520202479688"/>
 </node>
-<node TEXT="Best Practise" FOLDED="true" ID="ID_589177114" CREATED="1517780648521" MODIFIED="1520193341531">
-<node TEXT="Head" FOLDED="true" ID="ID_1301576260" CREATED="1517780802504" MODIFIED="1520193341531">
-<node TEXT="Doctype" FOLDED="true" ID="ID_1597176771" CREATED="1517780835863" MODIFIED="1517780844101">
-<node TEXT="Doctype: The Doctype is HTML5 and is at the top of all your HTML pages." ID="ID_164583589" CREATED="1517780856689" MODIFIED="1517780856689"/>
-<node TEXT="&lt;!DOCTYPE html&gt;" ID="ID_539528839" CREATED="1517780980811" MODIFIED="1517780980811"/>
-<node TEXT="reason" FOLDED="true" ID="ID_388088210" CREATED="1517781013910" MODIFIED="1517781019701">
-<node TEXT="DOCTYPEs are required for legacy reasons. When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications." ID="ID_1480178649" CREATED="1517781037270" MODIFIED="1517781037270"/>
+<node TEXT="History" FOLDED="true" ID="ID_646920830" CREATED="1520198708800" MODIFIED="1520198740051">
+<node TEXT="Introduction" FOLDED="true" ID="ID_1722089126" CREATED="1520199157452" MODIFIED="1520199169904">
+<node TEXT="Twenty eight years ago today, a proposal was sent internally at CERN outlying a universal linked information system. Dubbed &apos;Information Management: A proposal&apos;, pictured below" ID="ID_262667667" CREATED="1520198764679" MODIFIED="1520198769507"/>
+<node TEXT="png_4879359421012191637.png" ID="ID_1267943416" CREATED="1520198785575" MODIFIED="1520198785575">
+<hook URI="webdevelopment2_files/png_4879359421012191637.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="the proposal was created by Sir Tim Berners-Lee and was sent to his boss Mike Sendall, who described it as &apos;vague but exciting&apos;." ID="ID_1326947175" CREATED="1520198805075" MODIFIED="1520198805075"/>
+<node TEXT="Sir Tim Berners-Lee&#x2019;s vision for universality enabled the development of a high-level network of content that allows any document to link to any other documents." ID="ID_1364994025" CREATED="1520198861919" MODIFIED="1520198866195"/>
+<node TEXT="The World Wide Web was initially created to make it easier to share research papers." ID="ID_1449532757" CREATED="1520198992694" MODIFIED="1520198992694"/>
+<node TEXT="It is a system of interlinked &#x2018;hypertext&#x2019; documents that are accessed via the Internet" ID="ID_866611090" CREATED="1520199006370" MODIFIED="1520199006370"/>
+<node TEXT="While he did not invent hypertext systems, Berners-Lee proposed using them &apos;to link and access information of various kinds as a web of nodes in which the user can browse at will.&apos;" ID="ID_874665564" CREATED="1520199042405" MODIFIED="1520199042405"/>
+<node TEXT="His breakthrough was to link hypertext to the Internet and he used three technologies to do this:" FOLDED="true" ID="ID_28137970" CREATED="1520199068692" MODIFIED="1520199068692">
+<node TEXT="HyperText Transfer Protocol (HTTP) is the foundation of data communication for the Web." ID="ID_1476535739" CREATED="1520199082512" MODIFIED="1520199082512"/>
+<node TEXT="HyperText Markup Language (HTML) is the main mark-up language for creating Web pages and information that can be displayed on a Web browser." ID="ID_616802868" CREATED="1520199095058" MODIFIED="1520199095058"/>
+<node TEXT="Web addresses or a Uniform Resource Locator (URL) are used to reference a Web page." ID="ID_1004059041" CREATED="1520199106485" MODIFIED="1520199106485"/>
 </node>
 </node>
-<node TEXT="Metatags" FOLDED="true" ID="ID_1753543440" CREATED="1517781669034" MODIFIED="1517781678423">
-<node TEXT="Charset" FOLDED="true" ID="ID_618896149" CREATED="1517781083989" MODIFIED="1517781089163">
-<node ID="ID_1361262792" CREATED="1517781101336" MODIFIED="1517781101336"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" class="label__title" style="font-weight: 700; display: inline; font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)"><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif">Charset:</font></b></span><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span>&#160;</span></font></b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span class="label__description" style="font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)">The charset declared (UTF-8) is declared correctly.</span></font> 
-  </body>
-</html>
-</richcontent>
+<node TEXT="Hypertext" FOLDED="true" ID="ID_760797161" CREATED="1520199269164" MODIFIED="1520199277239">
+<node TEXT="A fundamental key to the World Wide Web is the concept of &quot;Hypertext&quot;.  Hypertext is built on the idea of linking information together, not unlike using footnotes, except much easier and more flexible." ID="ID_945485051" CREATED="1520199320916" MODIFIED="1520199320916"/>
+<node TEXT="The idea was to &quot;Mark Up&quot; your document with links and define how to break it down into different segments (chapters, sections, paragraphs, tables, figures, etc.)" ID="ID_932155406" CREATED="1520199378614" MODIFIED="1520199378614"/>
+<node TEXT="png_3487795447092536330.png" ID="ID_1549917680" CREATED="1520199403120" MODIFIED="1520199403120">
+<hook URI="webdevelopment2_files/png_3487795447092536330.png" SIZE="0.5" NAME="ExternalObject"/>
 </node>
-<node ID="ID_263145640" CREATED="1517781328489" MODIFIED="1517781328489"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: black"><font face="Consolas, courier new" size="16px" color="black">&lt;</font></span><span style="color: rgb(165, 42, 42); font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(165, 42, 42)" face="Consolas, courier new" size="16px">meta</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: red">charset</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;UTF-8&quot;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: black">&gt;</span></font> 
-  </body>
-</html>
-</richcontent>
+<node TEXT="He envisioned a technology that would facilitate thoroughly interconnected documents." ID="ID_938316329" CREATED="1520199487140" MODIFIED="1520199487140"/>
+<node TEXT="He wanted authors to be able to connect an idea in one document to the source of the idea in another, or connect a statement with the data that backs up that statement." ID="ID_953372274" CREATED="1520199538112" MODIFIED="1520199538112"/>
+<node TEXT="Traditionally, this kind of thing was done with footnotes and bibliographies" ID="ID_91699550" CREATED="1520199579581" MODIFIED="1520199579581"/>
+<node TEXT="This information should be easily transferable from one place to another, so that in reading one document, it is easy to access everything related (linked) to it." ID="ID_1920301409" CREATED="1520199615109" MODIFIED="1520199615109"/>
+<node TEXT="Tim Berners-Lee imagined a &quot;Web&quot; of interconnected documents." ID="ID_154095894" CREATED="1520199705734" MODIFIED="1520199705734"/>
 </node>
-<node TEXT="reason" FOLDED="true" ID="ID_485292686" CREATED="1517781445083" MODIFIED="1517781450921">
-<node TEXT="A character encoding declaration is vital to ensure that the text in your page is recognized by browsers around the world (internationalization), and not garbled." ID="ID_1236647212" CREATED="1520198180743" MODIFIED="1520198213423"/>
-<node TEXT="ASCII was the first character encoding standard (also called character set). ASCII defined 128 different alphanumeric characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ &lt; &gt; ." ID="ID_1504421173" CREATED="1517781471275" MODIFIED="1517781479289"/>
-<node TEXT="ANSI (Windows-1252) was the original Windows character set, with support for 256 different character codes." ID="ID_4935111" CREATED="1517781515955" MODIFIED="1517781515955"/>
-<node TEXT="ISO-8859-1 was the default character set for HTML 4. This character set also supported 256 different character codes." ID="ID_678843848" CREATED="1517781551452" MODIFIED="1517781551452"/>
-<node TEXT="Because ANSI and ISO-8859-1 were so limited, HTML 4 also supported UTF-8." ID="ID_552519456" CREATED="1517781578946" MODIFIED="1517781578946"/>
-<node ID="ID_1648555144" CREATED="1517781607837" MODIFIED="1517781607837"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(0, 0, 0)" face="Verdana, sans-serif" size="15px">The default character encoding for HTML5 is UTF-8.</font></span> 
-  </body>
-</html>
-</richcontent>
+<node TEXT="The browser" ID="ID_364812799" CREATED="1520199782776" MODIFIED="1520199785875">
+<node TEXT="The Internet existed long before the Web came to fruition, and lots of organizations were connected to it, including schools, companies and government organizations." ID="ID_1184113106" CREATED="1520199881462" MODIFIED="1520199881462"/>
+<node TEXT="As things progressed through the 80&apos;s, the Internet was used for file transfers, newsgroups (a kind of open forum), email and other conveniences." ID="ID_596237640" CREATED="1520199899019" MODIFIED="1520199899019"/>
+<node TEXT="At the time there were a number of different programs like &apos;fetch&apos;, &apos;gopher&apos; and &apos;archie&apos; that were used to download, browse and search for files." ID="ID_630706303" CREATED="1520199944426" MODIFIED="1520199944426"/>
+<node TEXT="Marc Andreesen conceived of a solution that would put all the pieces together in one app, making it easy for users to browse all the different sorts of information and data on the World Wide Web." ID="ID_1006545954" CREATED="1520199997464" MODIFIED="1520199997464"/>
+<node TEXT=" Together with others, he started the &quot;Mosaic&quot; project." ID="ID_1960436962" CREATED="1520200188552" MODIFIED="1520200198192"/>
+<node TEXT="png_7279407150160471406.png" ID="ID_1621860426" CREATED="1520200310579" MODIFIED="1520200310579">
+<hook URI="webdevelopment2_files/png_7279407150160471406.png" SIZE="0.6944444" NAME="ExternalObject"/>
 </node>
-<node ID="ID_1922926198" CREATED="1517781619538" MODIFIED="1517781619538"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 204); display: inline !important; float: none"><font color="rgb(0, 0, 0)" face="Verdana, sans-serif" size="15px">UTF-8 (Unicode) covers almost all of the characters and symbols in the world.</font></span> 
-  </body>
-</html>
-</richcontent>
+<node TEXT="Though not technically the first browser, Mosaic was the first one that many people experienced and played a big part in popularizing the concept of the World Wide Web and the Web browser." ID="ID_672601724" CREATED="1520200080793" MODIFIED="1520200080793"/>
 </node>
 </node>
-</node>
-<node TEXT="X-UA-Compatible" FOLDED="true" ID="ID_35261573" CREATED="1517781736897" MODIFIED="1517781754265">
-<node ID="ID_724447161" CREATED="1517781786688" MODIFIED="1517781786688"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" class="label__title" style="font-weight: 700; display: inline; font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)"><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif">X-UA-Compatible:</font></b></span><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span>&#160;</span></font></b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span class="label__description" style="font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)">The X-UA-Compatible Meta tag is present.</span></font> 
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;" ID="ID_539633497" CREATED="1517782322777" MODIFIED="1517782322777"/>
-<node TEXT="Reason" FOLDED="true" ID="ID_33265396" CREATED="1517782349533" MODIFIED="1517782364834">
-<node TEXT="Das Meta-Element kann das Attribut http-equiv enthalten. Die Absicht dahinter war, dass Webserver den Dokumentinhalt lesen und aus diesen Angaben HTTP-Header erzeugen. In der Praxis ist das jedoch nur selten der Fall. Stattdessen k&#xf6;nnen diese Angaben ersatzweise verwendet werden, wenn der Webserver sich nicht entsprechend konfigurieren l&#xe4;sst. In der Regel hat ein gleichnamiger HTTP-Header Vorrang vor einer Meta-Angabe. Ebenfalls sinnvoll sind diese Angaben, wenn das Dokument lokal &#x2013; beispielsweise als Datei von Festplatte &#x2013; gelesen wird, denn in dem Fall stehen keine HTTP-Header zur Verf&#xfc;gung.." ID="ID_1242937727" CREATED="1517781893091" MODIFIED="1517782261572"/>
-</node>
-</node>
-<node TEXT="Viewport" FOLDED="true" ID="ID_672053804" CREATED="1517782428140" MODIFIED="1517782436402">
-<node ID="ID_1331602928" CREATED="1517782464456" MODIFIED="1517782464456"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" class="label__title" style="font-weight: 700; display: inline; font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)"><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif">Viewport:</font></b></span><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span>&#160;</span></font></b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span class="label__description" style="font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)">The viewport is declared correctly.</span></font> 
-  </body>
-</html>
-</richcontent>
-</node>
-<node FOLDED="true" ID="ID_1528933862" CREATED="1517782547257" MODIFIED="1517782547257"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span http-equiv="content-type" content="text/html; charset=utf-8" style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: black"><font face="Consolas, courier new" size="16px" color="black">&lt;</font></span><span style="color: rgb(165, 42, 42); font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(165, 42, 42)" face="Consolas, courier new" size="16px">meta</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: red">name</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;viewport&quot;</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: red">content</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;width=device-width, initial-scale=1.0&quot;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: black">&gt;</span></font> 
-  </body>
-</html>
-</richcontent>
-<node TEXT="A &lt;meta&gt; viewport element gives the browser instructions on how to control the page&apos;s dimensions and scaling." ID="ID_1766297247" CREATED="1517782622018" MODIFIED="1517782622018"/>
-<node TEXT="The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device)." ID="ID_1555232135" CREATED="1517782663299" MODIFIED="1517782663299"/>
-<node TEXT="The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser." ID="ID_1191986349" CREATED="1517782719603" MODIFIED="1517782719603"/>
-</node>
-<node TEXT="Reason" FOLDED="true" ID="ID_330328103" CREATED="1517782573819" MODIFIED="1517782577426">
-<node TEXT="The viewport is the user&apos;s visible area of a web page." ID="ID_33266082" CREATED="1517782757352" MODIFIED="1517782757352"/>
-<node TEXT="The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen." ID="ID_430280863" CREATED="1517782814090" MODIFIED="1517782814090"/>
-<node TEXT="Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size." ID="ID_255759468" CREATED="1517782841281" MODIFIED="1517782841281"/>
-<node TEXT="Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen." ID="ID_818302419" CREATED="1517782881847" MODIFIED="1517782881847"/>
-<node TEXT="This was not perfect!! But a quick fix." ID="ID_1360406247" CREATED="1517782940735" MODIFIED="1517782940735"/>
-<node TEXT="HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta&gt; tag." ID="ID_1662886398" CREATED="1517782957761" MODIFIED="1517782957761"/>
-</node>
-</node>
-</node>
-<node TEXT="SEO" ID="ID_628491381" CREATED="1517783261967" MODIFIED="1517783268941"/>
-</node>
-</node>
-<node TEXT="Tags" ID="ID_1907537597" CREATED="1517835208389" MODIFIED="1517909406271">
-<node TEXT="Text" ID="ID_1965465070" CREATED="1517835235136" MODIFIED="1517909406271"/>
-<node TEXT="Form" FOLDED="true" ID="ID_638123269" CREATED="1517835260791" MODIFIED="1517835273449">
-<node ID="ID_285666691" CREATED="1517835284459" MODIFIED="1517835284459"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span style="color: black"><font color="black" face="Consolas, courier new" size="16px">&lt;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; color: black">form</span></font><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="color: red">action</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;/action_page.php&quot;</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="color: red">method</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;get&quot;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="color: black">&gt;</span></font><font color="rgb(0, 0, 0)" face="Consolas, courier new" size="16px"><br align="start" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px"/><span style="color: rgb(0, 0, 0); font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">&#160; First name:</span><span>&#160;</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">&lt;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; color: black">input</span></font><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="color: red">type</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;text&quot;</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="color: red">name</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;fname&quot;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="color: black">&gt;</span><span style="color: black">&lt;</span><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; color: black">br</span><span style="color: black">&gt;</span></font><font color="rgb(0, 0, 0)" face="Consolas, courier new" size="16px"><br align="start" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px"/><span style="color: rgb(0, 0, 0); font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">&#160; Last name:</span><span>&#160;</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">&lt;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; color: black">input</span></font><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="color: red">type</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;text&quot;</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="color: red">name</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;lname&quot;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="color: black">&gt;</span><span style="color: black">&lt;</span><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; color: black">br</span><span style="color: black">&gt;</span></font><font color="rgb(0, 0, 0)" face="Consolas, courier new" size="16px"><br align="start" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px"/><span style="color: rgb(0, 0, 0); font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none">&#160;</span><span>&#160;</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">&lt;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; color: black">input</span></font><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="color: red">type</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;submit&quot;</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="color: red">value</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;Submit&quot;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="color: black">&gt;</span></font><font color="rgb(0, 0, 0)" face="Consolas, courier new" size="16px"><br align="start" style="letter-spacing: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px"/></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">&lt;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; color: black">/form</span><span style="color: black">&gt;</span></font>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Child-elements" FOLDED="true" ID="ID_1523957280" CREATED="1517835317941" MODIFIED="1517835359186">
-<node TEXT="&lt;input&gt;" ID="ID_1706861108" CREATED="1517835413565" MODIFIED="1517835424105"/>
-<node TEXT="&lt;textarea&gt;" ID="ID_965498117" CREATED="1517835429179" MODIFIED="1517835436169"/>
-<node TEXT="&lt;button&gt;" ID="ID_249264731" CREATED="1517835441748" MODIFIED="1517835456760"/>
-<node TEXT="&lt;select&gt;" ID="ID_248251133" CREATED="1517835463284" MODIFIED="1517835479681"/>
-<node TEXT="&lt;option&gt;" ID="ID_771804305" CREATED="1517835481756" MODIFIED="1517835490617"/>
-<node TEXT="&lt;optgroup&gt;" ID="ID_904093918" CREATED="1517835492988" MODIFIED="1517835499449"/>
-<node TEXT="&lt;label&gt;" ID="ID_731105240" CREATED="1517835501948" MODIFIED="1517835508768"/>
-<node ID="ID_331811779" CREATED="1517835511405" MODIFIED="1517835511405"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &lt;fieldset&gt;
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-</node>
+<node TEXT="Tags" FOLDED="true" ID="ID_1907537597" CREATED="1517835208389" MODIFIED="1517909406271">
 <node TEXT="Comment" FOLDED="true" ID="ID_873678968" CREATED="1519592695865" MODIFIED="1519592701707">
 <node TEXT="&lt;!--This is a comment. Comments are not displayed in the browser--&gt;" ID="ID_1466872894" CREATED="1519592708937" MODIFIED="1519592712027"/>
 </node>
-<node TEXT="Global attributes" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
+<node TEXT="Main root" FOLDED="true" ID="ID_1751024300" CREATED="1520591363453" MODIFIED="1520591372260">
+<node TEXT="The HTML &lt;html&gt; element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element." ID="ID_1006611270" CREATED="1520591443857" MODIFIED="1520591446965"/>
+<node TEXT="Element: &lt;html&gt;" ID="ID_1551586629" CREATED="1520726101718" MODIFIED="1520726112755"/>
+</node>
+<node TEXT="Document metadata" FOLDED="true" ID="ID_856580860" CREATED="1520591475746" MODIFIED="1520591480170">
+<node TEXT="Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information." ID="ID_504962725" CREATED="1520591496082" MODIFIED="1520591546589"/>
+<node TEXT="&lt;link&gt;" ID="ID_1442213483" CREATED="1520591562258" MODIFIED="1520591571732"/>
+<node TEXT="&lt;meta&gt;" ID="ID_1794376208" CREATED="1520591593995" MODIFIED="1520591610204"/>
+<node TEXT="&lt;style&gt;" ID="ID_1656119580" CREATED="1520591628131" MODIFIED="1520591631531"/>
+<node TEXT="&lt;title&gt;" ID="ID_762940708" CREATED="1520591644635" MODIFIED="1520591650787"/>
+</node>
+<node TEXT="Sectioning root" FOLDED="true" ID="ID_851475154" CREATED="1520591919013" MODIFIED="1520591922758">
+<node TEXT="&lt;body&gt;" FOLDED="true" ID="ID_834630942" CREATED="1520726496596" MODIFIED="1520726499343">
+<node TEXT="The HTML &lt;body&gt; Element represents the content of an HTML document. There can be only one &lt;body&gt; element in a document." ID="ID_1316617198" CREATED="1520726510388" MODIFIED="1520726512919"/>
+</node>
+</node>
+<node TEXT="Content sectioning" FOLDED="true" ID="ID_1674410105" CREATED="1520591934157" MODIFIED="1520591938309">
+<node TEXT="Content sectioning elements allow you to organize the document content into logical pieces. Use the sectioning elements to create a broad outline for your page content, including header and footer navigation, and heading elements to identify sections of content." ID="ID_99422767" CREATED="1520726398960" MODIFIED="1520726415592"/>
+<node TEXT="&lt;address&gt;" ID="ID_695858443" CREATED="1520726194150" MODIFIED="1520726198345"/>
+<node TEXT="&lt;article&gt;" ID="ID_506115074" CREATED="1520726213163" MODIFIED="1520726213163"/>
+<node TEXT="&lt;aside&gt;" ID="ID_1398068311" CREATED="1520726224381" MODIFIED="1520726226665"/>
+<node TEXT="&lt;footer&gt;" ID="ID_576184250" CREATED="1520726253869" MODIFIED="1520726256025"/>
+<node TEXT="&lt;header&gt;" ID="ID_1662412556" CREATED="1520726265422" MODIFIED="1520726265422"/>
+<node TEXT="&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;" ID="ID_1892334447" CREATED="1520726280021" MODIFIED="1520726282497"/>
+<node TEXT="&lt;hgroup&gt;" ID="ID_408096760" CREATED="1520726298869" MODIFIED="1520726303097"/>
+<node TEXT="&lt;nav&gt;" ID="ID_1155868937" CREATED="1520726315341" MODIFIED="1520726318896"/>
+<node TEXT="&lt;section&gt;" ID="ID_1534995824" CREATED="1520726331061" MODIFIED="1520726333504"/>
+</node>
+<node TEXT="Text content" FOLDED="true" ID="ID_1142534139" CREATED="1520591947597" MODIFIED="1520591950717">
+<node TEXT="Use HTML text content elements to organize blocks or sections of content placed between the opening &lt;body&gt; and closing &lt;/body&gt; tags. Important for accessibility and SEO, these elements identify the purpose or structure of that content." ID="ID_198102019" CREATED="1520726966868" MODIFIED="1520726973028"/>
+<node TEXT="&lt;blockquote&gt;" ID="ID_1735757403" CREATED="1520726654435" MODIFIED="1520726657838"/>
+<node TEXT="&lt;dd&gt;" ID="ID_799321769" CREATED="1520726668211" MODIFIED="1520726670582"/>
+<node TEXT="&lt;dir&gt;" ID="ID_854023696" CREATED="1520726683874" MODIFIED="1520726688790"/>
+<node TEXT="&lt;div&gt;" ID="ID_1980654537" CREATED="1520726725466" MODIFIED="1520726725466"/>
+<node TEXT="&lt;dl&gt;" ID="ID_339668746" CREATED="1520726742010" MODIFIED="1520726748422"/>
+<node TEXT="&lt;dt&gt;" ID="ID_1537501791" CREATED="1520726767298" MODIFIED="1520726772982"/>
+<node TEXT="&lt;figcaption&gt;" ID="ID_1782249900" CREATED="1520726787906" MODIFIED="1520726790357"/>
+<node TEXT="&lt;figure&gt;" ID="ID_1284267894" CREATED="1520726809730" MODIFIED="1520726813797"/>
+<node TEXT="&lt;hr&gt;" ID="ID_688991316" CREATED="1520726824762" MODIFIED="1520726830045"/>
+<node TEXT="&lt;li&gt;" ID="ID_723009657" CREATED="1520726840482" MODIFIED="1520726857333"/>
+<node TEXT="&lt;main&gt;" ID="ID_581450235" CREATED="1520726842303" MODIFIED="1520726864173"/>
+<node TEXT="&lt;ol&gt;" ID="ID_901828410" CREATED="1520726872833" MODIFIED="1520726876941"/>
+<node TEXT="&lt;p&gt;" ID="ID_1830421022" CREATED="1520726890665" MODIFIED="1520726894405"/>
+<node TEXT="&lt;pre&gt;" ID="ID_640476297" CREATED="1520726918241" MODIFIED="1520726921301"/>
+<node TEXT="&lt;ul&gt;" ID="ID_1961562135" CREATED="1520726929657" MODIFIED="1520726957807"/>
+</node>
+<node TEXT="Inline text semantics" FOLDED="true" ID="ID_1943550316" CREATED="1520591962372" MODIFIED="1520591966502">
+<node TEXT="Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text." ID="ID_1846190442" CREATED="1520727052264" MODIFIED="1520727055852"/>
+<node TEXT="&lt;a&gt;" ID="ID_1139796414" CREATED="1520727085952" MODIFIED="1520727089387"/>
+<node TEXT="&lt;abbr&gt;" ID="ID_922747264" CREATED="1520727143927" MODIFIED="1520727147227"/>
+<node TEXT="&lt;b&gt;" ID="ID_1298122593" CREATED="1520727165327" MODIFIED="1520727168555"/>
+<node TEXT="&lt;bdi&gt;" ID="ID_1055390078" CREATED="1520727176919" MODIFIED="1520727180123"/>
+<node TEXT="&lt;bdo&gt;" ID="ID_1031323188" CREATED="1520727187447" MODIFIED="1520727190779"/>
+<node TEXT="&lt;br&gt;" ID="ID_510915652" CREATED="1520727206455" MODIFIED="1520727209771"/>
+<node TEXT="&lt;cite&gt;" ID="ID_616846114" CREATED="1520727218335" MODIFIED="1520727221371"/>
+<node TEXT="&lt;code&gt;" ID="ID_139838896" CREATED="1520727233311" MODIFIED="1520727236339"/>
+<node TEXT="&lt;data&gt;" ID="ID_906168367" CREATED="1520727249823" MODIFIED="1520727253106"/>
+<node TEXT="&lt;dfn&gt;" ID="ID_1707797585" CREATED="1520727266007" MODIFIED="1520727269354"/>
+<node TEXT="&lt;em&gt;" ID="ID_1762000015" CREATED="1520727277375" MODIFIED="1520727280666"/>
+<node TEXT="&lt;i&gt;" ID="ID_478779875" CREATED="1520727289431" MODIFIED="1520727292706"/>
+<node TEXT="&lt;kbd&gt;" ID="ID_882397972" CREATED="1520727338990" MODIFIED="1520727341986"/>
+<node TEXT="&lt;mark&gt;" ID="ID_616306960" CREATED="1520727354046" MODIFIED="1520727357074"/>
+<node TEXT="&lt;nobr&gt;" ID="ID_823174757" CREATED="1520727364758" MODIFIED="1520727368098"/>
+<node TEXT="&lt;q&gt;" ID="ID_87346674" CREATED="1520727380414" MODIFIED="1520727384194"/>
+<node TEXT="&lt;rp&gt;" ID="ID_592034549" CREATED="1520727392462" MODIFIED="1520727395754"/>
+<node TEXT="&lt;rt&gt;" ID="ID_454417195" CREATED="1520727401918" MODIFIED="1520727411032"/>
+<node TEXT="&lt;rtc&gt;" ID="ID_516769901" CREATED="1520727412342" MODIFIED="1520727415281"/>
+<node TEXT="&lt;s&gt;" ID="ID_872705606" CREATED="1520727439454" MODIFIED="1520727442850"/>
+<node TEXT="&lt;samp&gt;" ID="ID_1248102075" CREATED="1520727457262" MODIFIED="1520727460641"/>
+<node TEXT="&lt;small&gt;" ID="ID_1935484016" CREATED="1520727469190" MODIFIED="1520727472289"/>
+<node TEXT="&lt;span&gt;" ID="ID_1299893946" CREATED="1520727479974" MODIFIED="1520727482937"/>
+<node TEXT="&lt;strong&gt;" ID="ID_1820222344" CREATED="1520727495629" MODIFIED="1520727498937"/>
+<node TEXT="&lt;sub&gt;" ID="ID_157154031" CREATED="1520727505917" MODIFIED="1520727508761"/>
+<node TEXT="&lt;sup&gt;" ID="ID_1557115853" CREATED="1520727519157" MODIFIED="1520727521953"/>
+<node TEXT="&lt;time&gt;" ID="ID_1952674431" CREATED="1520727529477" MODIFIED="1520727532489"/>
+<node TEXT="&lt;tt&gt;" ID="ID_1845764975" CREATED="1520727540413" MODIFIED="1520727543865"/>
+<node TEXT="&lt;u&gt;" ID="ID_1114459941" CREATED="1520727551029" MODIFIED="1520727554168"/>
+<node TEXT="&lt;var&gt;" ID="ID_1478938491" CREATED="1520727562085" MODIFIED="1520727565233"/>
+<node TEXT="&lt;wbr&gt;" ID="ID_475563658" CREATED="1520727574157" MODIFIED="1520727588568"/>
+</node>
+<node TEXT="Image and multimedia" FOLDED="true" ID="ID_1242457740" CREATED="1520592029269" MODIFIED="1520592034654">
+<node TEXT="HTML supports various multimedia resources such as images, audio, and video." ID="ID_1068915898" CREATED="1520727660544" MODIFIED="1520727666456"/>
+<node TEXT="&lt;area&gt;" ID="ID_199663156" CREATED="1520593310918" MODIFIED="1520593315503"/>
+<node TEXT="&lt;audio&gt;" ID="ID_1244964273" CREATED="1520593322206" MODIFIED="1520593330734"/>
+<node TEXT="&lt;img&gt;" ID="ID_339009089" CREATED="1520593338254" MODIFIED="1520593346455"/>
+<node TEXT="&lt;map&gt;" ID="ID_1386282062" CREATED="1520593355470" MODIFIED="1520593376511"/>
+<node TEXT="&lt;track&gt;" ID="ID_1002263403" CREATED="1520593388191" MODIFIED="1520593392736"/>
+<node TEXT="&lt;video&gt;" ID="ID_1344946774" CREATED="1520593406127" MODIFIED="1520593410337"/>
+</node>
+<node TEXT="Embedded content" FOLDED="true" ID="ID_515819194" CREATED="1520592049709" MODIFIED="1520592055263">
+<node TEXT="In addition to regular multimedia content, HTML can include a variety of other content, even if it&apos;s not always easy to interact with." ID="ID_370102277" CREATED="1520727696184" MODIFIED="1520727701920"/>
+<node TEXT="&lt;applet&gt;" ID="ID_401266200" CREATED="1520593124420" MODIFIED="1520593131350"/>
+<node TEXT="&lt;embed&gt;" ID="ID_855705740" CREATED="1520593150373" MODIFIED="1520593157254"/>
+<node TEXT="&lt;noembed&gt;" ID="ID_3634339" CREATED="1520593167973" MODIFIED="1520593172342"/>
+<node TEXT="&lt;object&gt;" ID="ID_855797867" CREATED="1520593183085" MODIFIED="1520593188182"/>
+<node TEXT="&lt;param&gt;" ID="ID_1219237263" CREATED="1520593198925" MODIFIED="1520593203629"/>
+<node TEXT="&lt;picture&gt;" ID="ID_1790167744" CREATED="1520593212333" MODIFIED="1520593216654"/>
+<node TEXT="&lt;source&gt;" ID="ID_1512781250" CREATED="1520593224621" MODIFIED="1520593229582"/>
+</node>
+<node TEXT="Scripting" FOLDED="true" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
+<node TEXT="In order to create dynamic content and Web applications, HTML supports the use of scripting languages, most prominently JavaScript. Certain elements support this capability." ID="ID_1601191736" CREATED="1520727731055" MODIFIED="1520727736767"/>
+<node TEXT="&lt;canvas&gt;" ID="ID_619380127" CREATED="1520592996387" MODIFIED="1520593000725"/>
+<node TEXT="&lt;script&gt;" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1520593070106">
+<node TEXT="type attribute" FOLDED="true" ID="ID_54630004" CREATED="1515280774637" MODIFIED="1515323493853">
+<node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_822896220" CREATED="1515280767645" MODIFIED="1515280767645"/>
+<node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_1435470214" CREATED="1515280820009" MODIFIED="1515280820009"/>
+<node TEXT="The media type consists of two parts: one media type and one subtype. For JavaScript, the media type is &quot;application/javascript&quot;." ID="ID_1360603924" CREATED="1515280830494" MODIFIED="1515280830494"/>
+<node TEXT="In HTML5, the type attribute is no longer required for JavaScript. The default value is &quot;application/javascript&quot;" ID="ID_1025962809" CREATED="1515280860764" MODIFIED="1515280860764"/>
+<node TEXT="Look at IANA Media Types for a complete list of standard media types." FOLDED="true" ID="ID_1537482134" CREATED="1515280934166" MODIFIED="1515280934166">
+<node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_69166597" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
+</node>
+</node>
+<node TEXT="Script loading" FOLDED="true" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
+<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_265022695" CREATED="1516984940332" MODIFIED="1516984940332"/>
+<node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_315975822" CREATED="1516984983930" MODIFIED="1516984983930"/>
+<node TEXT="Normal Execution" FOLDED="true" ID="ID_1254489477" CREATED="1516985020242" MODIFIED="1516985020242">
+<node TEXT="By default, as mentioned above, JavaScript files will interrupt the parsing of the HTML document in order for them to be fetched (if not inline) and executed." ID="ID_279626051" CREATED="1516985216297" MODIFIED="1516985216297"/>
+<node TEXT="png_4560996669286614596.png" ID="ID_145390713" CREATED="1516985243566" MODIFIED="1516985243566">
+<hook URI="webdevelopment2_files/png_4560996669286614596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The async Attribute" FOLDED="true" ID="ID_958611319" CREATED="1516985060860" MODIFIED="1516985060860">
+<node TEXT="The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing." ID="ID_1935634717" CREATED="1516985285531" MODIFIED="1516985285531"/>
+<node TEXT="png_3735681454245946596.png" ID="ID_1054709993" CREATED="1516985313949" MODIFIED="1516985313949">
+<hook URI="webdevelopment2_files/png_3735681454245946596.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="The defer Attribute" FOLDED="true" ID="ID_1554828275" CREATED="1516985092756" MODIFIED="1516985092756">
+<node TEXT="The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed." ID="ID_726303402" CREATED="1516985347377" MODIFIED="1516985347377"/>
+<node TEXT="Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete." ID="ID_1039666429" CREATED="1516985370690" MODIFIED="1516985370690"/>
+<node TEXT="png_5617417546364053301.png" ID="ID_1774527159" CREATED="1516985454109" MODIFIED="1516985454109">
+<hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="Asynchronous, Deferred or Normal Execution?" FOLDED="true" ID="ID_999485238" CREATED="1516985126147" MODIFIED="1519037613145">
+<node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_611885800" CREATED="1516985477168" MODIFIED="1516985477168"/>
+<node TEXT="Where is the &lt;script&gt; element located?" FOLDED="true" ID="ID_1341810870" CREATED="1516985499149" MODIFIED="1516985499149">
+<node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_94923227" CREATED="1516985616958" MODIFIED="1516985616958"/>
+</node>
+<node TEXT="Is the script self-contained?" FOLDED="true" ID="ID_966997468" CREATED="1516985520906" MODIFIED="1519037613144">
+<node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_973984847" CREATED="1516985643385" MODIFIED="1516985643385"/>
+</node>
+<node TEXT="Does the script rely on a fully parsed DOM?" FOLDED="true" ID="ID_354214330" CREATED="1516985549473" MODIFIED="1516985549473">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_1748054035" CREATED="1516985661161" MODIFIED="1516985661161"/>
+</node>
+<node TEXT="Is the script a (small) dependency?" FOLDED="true" ID="ID_38917621" CREATED="1516985571593" MODIFIED="1516985571593">
+<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_925375247" CREATED="1516985712536" MODIFIED="1516985712536"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="&lt;noscript&gt;" FOLDED="true" ID="ID_1007443193" CREATED="1515602570705" MODIFIED="1520593097492">
+<node TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script." ID="ID_744019650" CREATED="1515602635348" MODIFIED="1515602635348"/>
+<node TEXT="The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;." ID="ID_407610190" CREATED="1515602635351" MODIFIED="1515602635351"/>
+<node TEXT="When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements." ID="ID_1640681790" CREATED="1515602635351" MODIFIED="1515602635351"/>
+<node TEXT="The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser." ID="ID_380978871" CREATED="1515602635352" MODIFIED="1515602635352"/>
+<node TEXT="Differences Between HTML 4.01 and HTML5" FOLDED="true" ID="ID_663837180" CREATED="1515602673887" MODIFIED="1515602676907">
+<node TEXT="In HTML 4.01, the &lt;noscript&gt; tag can only be used inside the &lt;body&gt; element." ID="ID_1191245985" CREATED="1515602688236" MODIFIED="1515602688236"/>
+<node TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;." ID="ID_369635316" CREATED="1515602688237" MODIFIED="1515602688237"/>
+</node>
+</node>
+</node>
+<node TEXT="Demarcating edits" FOLDED="true" ID="ID_202686193" CREATED="1520592098718" MODIFIED="1520592105958">
+<node TEXT="These elements let you provide indications that specific parts of the text have been altered." ID="ID_1123692602" CREATED="1520727782527" MODIFIED="1520727787551"/>
+<node TEXT="&lt;del&gt;" ID="ID_700220872" CREATED="1520592892163" MODIFIED="1520592896900"/>
+<node TEXT="&lt;ins&gt;" ID="ID_256794353" CREATED="1520592905579" MODIFIED="1520592909980"/>
+</node>
+<node TEXT="Table content" FOLDED="true" ID="ID_523038220" CREATED="1520592115310" MODIFIED="1520728063650">
+<node TEXT="The elements here are used to create and handle tabular data." ID="ID_798873591" CREATED="1520727814195" MODIFIED="1520727817551"/>
+<node TEXT="&lt;caption&gt;" ID="ID_71380728" CREATED="1520727946411" MODIFIED="1520727949494"/>
+<node TEXT="&lt;col&gt;" ID="ID_194488583" CREATED="1520727957635" MODIFIED="1520727961062"/>
+<node TEXT="&lt;colgroup&gt;" ID="ID_1415440491" CREATED="1520727969562" MODIFIED="1520727972702"/>
+<node TEXT="&lt; table&gt;" ID="ID_851742701" CREATED="1520727985242" MODIFIED="1520728007446"/>
+<node TEXT="&lt;tbody&gt;" ID="ID_1042207755" CREATED="1520728017178" MODIFIED="1520728020397"/>
+<node TEXT="&lt;td&gt;" ID="ID_1861371347" CREATED="1520728028570" MODIFIED="1520728032629"/>
+<node TEXT="&lt;tfoot&gt;" ID="ID_1569312194" CREATED="1520728039442" MODIFIED="1520728043461"/>
+<node TEXT="&lt;th&gt;" ID="ID_1708023326" CREATED="1520728052770" MODIFIED="1520728055357"/>
+<node TEXT="&lt;thead&gt;" ID="ID_498216222" CREATED="1520728062122" MODIFIED="1520728067773"/>
+<node TEXT="&lt;tr&gt;" ID="ID_970425691" CREATED="1520728074962" MODIFIED="1520728079333"/>
+</node>
+<node TEXT="Forms" FOLDED="true" ID="ID_1033436963" CREATED="1520592129774" MODIFIED="1520592134310">
+<node TEXT="HTML provides a number of elements which can be used together to create forms which the user can fill out and submit to the Web site or application." ID="ID_1101883564" CREATED="1520727847670" MODIFIED="1520727852879"/>
+<node TEXT="&lt;button&gt;" ID="ID_668248935" CREATED="1520592511056" MODIFIED="1520592514736"/>
+<node TEXT="&lt;datalist&gt;" ID="ID_29394233" CREATED="1520592528793" MODIFIED="1520592535169"/>
+<node TEXT="&lt;fieldset&gt;" ID="ID_843179194" CREATED="1520592545528" MODIFIED="1520592550122"/>
+<node TEXT="&lt;form&gt;" ID="ID_38499095" CREATED="1520592566185" MODIFIED="1520592570858"/>
+<node TEXT="&lt;input&gt;" FOLDED="true" ID="ID_1618525284" CREATED="1520330027730" MODIFIED="1520592609233">
+<node TEXT="The HTML &lt;input&gt; element is used to create interactive controls for web-based forms in order to accept data from the user." ID="ID_1497170820" CREATED="1520330792999" MODIFIED="1520330802456"/>
+<node TEXT="input attributes" FOLDED="true" ID="ID_1886962322" CREATED="1520334747345" MODIFIED="1520334762841">
+<node TEXT="This section lists the attributes available to all form &lt;input&gt; types. Non-global attributes &#x2014; and global attributes that behave differently when specified on different &lt;input&gt; types &#x2014; are listed on those types&apos; individual pages." ID="ID_1928104140" CREATED="1520334792041" MODIFIED="1520334798099"/>
+<node TEXT="types" FOLDED="true" ID="ID_1215177323" CREATED="1520331460643" MODIFIED="1520331491164">
+<node TEXT="button" FOLDED="true" ID="ID_396650130" CREATED="1520331510700" MODIFIED="1520331513862">
+<node TEXT="A push button with no default behavior." ID="ID_449090957" CREATED="1520333416400" MODIFIED="1520333419361"/>
+</node>
+<node TEXT="checkbox" FOLDED="true" ID="ID_451892438" CREATED="1520331672325" MODIFIED="1520331678038">
+<node TEXT="A check box allowing single values to be selected/deselected." ID="ID_841742030" CREATED="1520333437656" MODIFIED="1520333440282"/>
+</node>
+<node TEXT="color" FOLDED="true" ID="ID_1907862248" CREATED="1520331821326" MODIFIED="1520331822943">
+<node TEXT="A control for specifying a color. A color picker&apos;s UI has no required features other than accepting simple colors as text" ID="ID_1258699366" CREATED="1520333455400" MODIFIED="1520333457073"/>
+</node>
+<node TEXT="date" FOLDED="true" ID="ID_889622964" CREATED="1520331833742" MODIFIED="1520331837863">
+<node TEXT="A control for entering a date (year, month, and day, with no time)." ID="ID_539533930" CREATED="1520333488656" MODIFIED="1520333490642"/>
+</node>
+<node TEXT="datetime-local" FOLDED="true" ID="ID_1266684462" CREATED="1520331851230" MODIFIED="1520331854167">
+<node TEXT="A control for entering a date and time, with no time zone." ID="ID_1555548311" CREATED="1520333502912" MODIFIED="1520333506641"/>
+</node>
+<node TEXT="email" FOLDED="true" ID="ID_1846164783" CREATED="1520331875606" MODIFIED="1520331880295">
+<node TEXT="A field for editing an e-mail address." ID="ID_805482728" CREATED="1520333515728" MODIFIED="1520333518873"/>
+</node>
+<node TEXT="file" FOLDED="true" ID="ID_48996710" CREATED="1520331885182" MODIFIED="1520331900791">
+<node TEXT="A control that lets the user select a file. Use the accept attribute to define the types of files that the control can select." ID="ID_1749483931" CREATED="1520333547368" MODIFIED="1520333550442"/>
+</node>
+<node TEXT="hidden" FOLDED="true" ID="ID_1538151925" CREATED="1520331906350" MODIFIED="1520331909839">
+<node TEXT="A control that is not displayed but whose value is submitted to the server." ID="ID_1172681050" CREATED="1520333570185" MODIFIED="1520333573642"/>
+</node>
+<node TEXT="image" FOLDED="true" ID="ID_1851464644" CREATED="1520331918814" MODIFIED="1520331925399">
+<node TEXT="A graphical submit button. You must use the src attribute to define the source of the image and the alt attribute to define alternative text. You can use the height and width attributes to define the size of the image in pixels." ID="ID_1423811260" CREATED="1520333594489" MODIFIED="1520333596322"/>
+</node>
+<node TEXT="month" FOLDED="true" ID="ID_467225334" CREATED="1520333614978" MODIFIED="1520333622098">
+<node TEXT="A control for entering a month and year, with no time zone." ID="ID_787920257" CREATED="1520333633961" MODIFIED="1520333638402"/>
+</node>
+<node TEXT="number" FOLDED="true" ID="ID_80957926" CREATED="1520332033007" MODIFIED="1520332038928">
+<node TEXT="A control for entering a number." ID="ID_1094669607" CREATED="1520333647057" MODIFIED="1520333651322"/>
+</node>
+<node TEXT="password" FOLDED="true" ID="ID_1435259868" CREATED="1520332051319" MODIFIED="1520332061024">
+<node TEXT="A single-line text field whose value is obscured. Use the maxlength and minlength attributes to specify the maximum length of the value that can be entered." ID="ID_992593240" CREATED="1520333662113" MODIFIED="1520333665034"/>
+</node>
+<node TEXT="radio" FOLDED="true" ID="ID_204183482" CREATED="1520332073175" MODIFIED="1520332078800">
+<node TEXT="A radio button, allowing a single value to be selected out of multiple choices." ID="ID_1921640396" CREATED="1520333684409" MODIFIED="1520333687826"/>
+</node>
+<node TEXT="range" FOLDED="true" ID="ID_1740955557" CREATED="1520332081871" MODIFIED="1520332146209">
+<node TEXT="A control for entering a number whose exact value is not important." ID="ID_1773071712" CREATED="1520333698418" MODIFIED="1520333702538"/>
+</node>
+<node TEXT="reset" FOLDED="true" ID="ID_1566151059" CREATED="1520332148464" MODIFIED="1520332156081">
+<node TEXT="A button that resets the contents of the form to default values." ID="ID_589123208" CREATED="1520333722250" MODIFIED="1520333725275"/>
+</node>
+<node TEXT="search" FOLDED="true" ID="ID_1358704182" CREATED="1520332158608" MODIFIED="1520332165921">
+<node TEXT="A single-line text field for entering search strings. Line-breaks are automatically removed from the input value." ID="ID_220978398" CREATED="1520333737914" MODIFIED="1520333741531"/>
+</node>
+<node TEXT="submit" FOLDED="true" ID="ID_474278576" CREATED="1520332171640" MODIFIED="1520332181961">
+<node TEXT="A button that submits the form." ID="ID_1675447848" CREATED="1520333751529" MODIFIED="1520333754707"/>
+</node>
+<node TEXT="tel" FOLDED="true" ID="ID_1002804184" CREATED="1520332224704" MODIFIED="1520332231929">
+<node TEXT="A control for entering a telephone number." ID="ID_743260950" CREATED="1520333761266" MODIFIED="1520333764115"/>
+</node>
+<node TEXT="text" FOLDED="true" ID="ID_623902964" CREATED="1520332235664" MODIFIED="1520332244553">
+<node TEXT=" A single-line text field. Line-breaks are automatically removed from the input value." ID="ID_292744712" CREATED="1520333772210" MODIFIED="1520333775339"/>
+</node>
+<node TEXT="time" FOLDED="true" ID="ID_999849329" CREATED="1520332248424" MODIFIED="1520332257577">
+<node TEXT="A control for entering a time value with no time zone." ID="ID_915915799" CREATED="1520333791858" MODIFIED="1520333797419"/>
+</node>
+<node TEXT="url" FOLDED="true" ID="ID_1193298364" CREATED="1520332262456" MODIFIED="1520332268729">
+<node TEXT="A field for entering a URL." ID="ID_455845177" CREATED="1520333805994" MODIFIED="1520333811395"/>
+</node>
+<node TEXT="week" FOLDED="true" ID="ID_828474090" CREATED="1520332281577" MODIFIED="1520332289482">
+<node TEXT="A control for entering a date consisting of a week-year number and a week number with no time zone." ID="ID_812517964" CREATED="1520333867243" MODIFIED="1520333877884"/>
+</node>
+<node TEXT="DEPRECATED" FOLDED="true" ID="ID_871849871" CREATED="1520332308049" MODIFIED="1520332316618">
+<node TEXT="datetime" ID="ID_16242128" CREATED="1520332327097" MODIFIED="1520332389426"/>
+</node>
+</node>
+<node TEXT="accept" ID="ID_1937142315" CREATED="1520341985522" MODIFIED="1520341990147"/>
+<node TEXT="accesskey" ID="ID_1928365568" CREATED="1520342006066" MODIFIED="1520342009611"/>
+<node TEXT="autocomplete" FOLDED="true" ID="ID_1433812126" CREATED="1520342020082" MODIFIED="1520342026188">
+<node TEXT="This attribute indicates whether the value of the control can be automatically completed by the browser." ID="ID_785493058" CREATED="1520344232531" MODIFIED="1520344235027"/>
+</node>
+<node TEXT="autofocus" ID="ID_1317063504" CREATED="1520342043674" MODIFIED="1520342049228"/>
+<node TEXT="capture" ID="ID_239980567" CREATED="1520342066690" MODIFIED="1520342075179"/>
+<node TEXT="checked" ID="ID_1409931328" CREATED="1520342083595" MODIFIED="1520342087068"/>
+<node TEXT="disabled" ID="ID_1142008354" CREATED="1520342096611" MODIFIED="1520342110452"/>
+<node TEXT="form" ID="ID_1718608033" CREATED="1520342126059" MODIFIED="1520342128917"/>
+<node TEXT="formaction" ID="ID_990405847" CREATED="1520342138083" MODIFIED="1520342142956"/>
+<node TEXT="formenctype" ID="ID_1990678392" CREATED="1520342153723" MODIFIED="1520342158556"/>
+<node TEXT="formmethod" ID="ID_744158052" CREATED="1520342167787" MODIFIED="1520342180188"/>
+<node TEXT="formnovalidate" ID="ID_1182555208" CREATED="1520342181051" MODIFIED="1520342183660"/>
+<node TEXT="formtarget" ID="ID_1611714185" CREATED="1520342265540" MODIFIED="1520342268501"/>
+<node TEXT="height" ID="ID_1000263920" CREATED="1520342282836" MODIFIED="1520342286301"/>
+<node TEXT="inputmode" ID="ID_1342302483" CREATED="1520342297388" MODIFIED="1520342300398"/>
+<node TEXT="list" ID="ID_626378984" CREATED="1520342312956" MODIFIED="1520342323997"/>
+<node TEXT="max" ID="ID_205866547" CREATED="1520342402269" MODIFIED="1520342404926"/>
+<node TEXT="maxlength" ID="ID_1001136029" CREATED="1520342413773" MODIFIED="1520342416670"/>
+<node TEXT="min" ID="ID_683180635" CREATED="1520342448229" MODIFIED="1520342451349"/>
+<node TEXT="minlength" ID="ID_968305004" CREATED="1520342460309" MODIFIED="1520342478230"/>
+<node TEXT="multiple" ID="ID_443449926" CREATED="1520342472837" MODIFIED="1520342491719"/>
+<node TEXT="name" ID="ID_1969675199" CREATED="1520342503053" MODIFIED="1520342507758"/>
+<node TEXT="pattern" ID="ID_365473846" CREATED="1520342521966" MODIFIED="1520342524767"/>
+<node TEXT="placeholder" ID="ID_1052540512" CREATED="1520342537206" MODIFIED="1520342540751"/>
+<node TEXT="selectionDirection" ID="ID_1735942925" CREATED="1520342882864" MODIFIED="1520342893578"/>
+<node TEXT="selectionEnd" ID="ID_109348995" CREATED="1520342910505" MODIFIED="1520342913610"/>
+<node TEXT="selectionStart" ID="ID_1579080016" CREATED="1520342921449" MODIFIED="1520342924649"/>
+<node TEXT="size" ID="ID_1002632402" CREATED="1520342931288" MODIFIED="1520342934730"/>
+<node TEXT="spellcheck" ID="ID_87000396" CREATED="1520342941737" MODIFIED="1520342944434"/>
+<node TEXT="src" ID="ID_380103865" CREATED="1520342957473" MODIFIED="1520342977602"/>
+<node TEXT="step" ID="ID_1461757464" CREATED="1520342979809" MODIFIED="1520342994402"/>
+<node TEXT="tabindex" ID="ID_1493767535" CREATED="1520343008041" MODIFIED="1520343013249"/>
+<node TEXT="usemap" ID="ID_858396889" CREATED="1520343022673" MODIFIED="1520343034650"/>
+<node TEXT="value" ID="ID_558010448" CREATED="1520343043033" MODIFIED="1520343046226"/>
+<node TEXT="width" ID="ID_1903941196" CREATED="1520343056354" MODIFIED="1520343059641"/>
+</node>
+<node TEXT="" ID="ID_1267623223" CREATED="1520340794410" MODIFIED="1520340794410"/>
+</node>
+<node TEXT="&lt;label&gt;" ID="ID_1309106101" CREATED="1520592632690" MODIFIED="1520592636859"/>
+<node TEXT="&lt;legend&gt;" ID="ID_937770746" CREATED="1520592645730" MODIFIED="1520592650146"/>
+<node TEXT="&lt;meter&gt;" ID="ID_1857610801" CREATED="1520592665146" MODIFIED="1520592669657"/>
+<node TEXT="&lt;optgroup&gt;" ID="ID_114315381" CREATED="1520592680570" MODIFIED="1520592763890"/>
+<node TEXT="&lt;option&gt;" ID="ID_273608849" CREATED="1520592774026" MODIFIED="1520592777899"/>
+<node TEXT="&lt;output&gt;" ID="ID_1596616092" CREATED="1520592787498" MODIFIED="1520592792267"/>
+<node TEXT="&lt;progress&gt;" ID="ID_242350282" CREATED="1520592801018" MODIFIED="1520592805620"/>
+<node TEXT="&lt;select&gt;" ID="ID_1061081820" CREATED="1520592828259" MODIFIED="1520592833492"/>
+<node TEXT="&lt;textarea&gt;" ID="ID_1995177550" CREATED="1520592840747" MODIFIED="1520592845700"/>
+</node>
+<node TEXT="Interactive elements" FOLDED="true" ID="ID_1603568566" CREATED="1520592145118" MODIFIED="1520592151049">
+<node TEXT="HTML offers a selection of elements which help to create interactive user interface objects." ID="ID_143218652" CREATED="1520728124117" MODIFIED="1520728128861"/>
+<node TEXT="&lt;details&gt;" ID="ID_653047142" CREATED="1520592327303" MODIFIED="1520592330216"/>
+<node TEXT="&lt;dialog&gt;" ID="ID_557547218" CREATED="1520592338583" MODIFIED="1520592377628"/>
+<node TEXT="&lt;menu&gt;" ID="ID_1456610476" CREATED="1520592379472" MODIFIED="1520592383361"/>
+<node TEXT="&lt;menuitem&gt;" ID="ID_457797346" CREATED="1520592392912" MODIFIED="1520592397680"/>
+<node TEXT="&lt;summary&gt;" ID="ID_1081368109" CREATED="1520592408031" MODIFIED="1520592413112"/>
+</node>
+<node TEXT="Web Components" FOLDED="true" ID="ID_380032590" CREATED="1520592162590" MODIFIED="1520592168655">
+<node TEXT="Web Components is an HTML-related technology which makes it possible to, essentially, create and use custom elements as if it were regular HTML. In addition, you can create custom versions of standard HTML elements." ID="ID_50982962" CREATED="1520728181145" MODIFIED="1520728185981"/>
+<node TEXT="&lt;content&gt;" ID="ID_1733948175" CREATED="1520728221305" MODIFIED="1520728228564"/>
+<node TEXT="&lt;element&gt;" ID="ID_183273465" CREATED="1520728230441" MODIFIED="1520728235828"/>
+<node TEXT="&lt;shadow&gt;" ID="ID_90231103" CREATED="1520728245121" MODIFIED="1520728250116"/>
+<node TEXT="&lt;slot&gt;" ID="ID_1172557774" CREATED="1520728257329" MODIFIED="1520728262829"/>
+<node TEXT="&lt;template&gt;" ID="ID_627683156" CREATED="1520728269584" MODIFIED="1520728319404"/>
+</node>
+<node TEXT="Obsolete and deprecated elements" ID="ID_315398082" CREATED="1520592191358" MODIFIED="1520592276840"/>
+</node>
+<node TEXT="Global attributes" FOLDED="true" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
 <node TEXT="Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements." ID="ID_489227557" CREATED="1520172307612" MODIFIED="1520172312937"/>
 <node TEXT="Global attributes may be specified on all HTML elements, even those not specified in the standard." FOLDED="true" ID="ID_966516826" CREATED="1520172331188" MODIFIED="1520172336504">
 <node TEXT="That means that any non-standard elements must still permit these attributes, even though using those elements means that the document is no longer HTML5-compliant." ID="ID_1736452133" CREATED="1520172374548" MODIFIED="1520172379983"/>
@@ -319,7 +525,7 @@
 </node>
 </node>
 </node>
-<node TEXT="User Interaction" FOLDED="true" ID="ID_134700370" CREATED="1520173429324" MODIFIED="1520173435175">
+<node TEXT="User Interaction" FOLDED="true" ID="ID_134700370" CREATED="1520173429324" MODIFIED="1520728894904">
 <node TEXT="accesskey" FOLDED="true" ID="ID_238561868" CREATED="1520173468683" MODIFIED="1520173471855">
 <node TEXT="Associates a keyboard shortcut to an element." ID="ID_568393313" CREATED="1520173579490" MODIFIED="1520173579490"/>
 <node TEXT="values" FOLDED="true" ID="ID_1354578351" CREATED="1520173793481" MODIFIED="1520173796781">
@@ -345,7 +551,7 @@
 <node TEXT="false" ID="ID_1298998069" CREATED="1520173975631" MODIFIED="1520173984227"/>
 </node>
 </node>
-<node TEXT="spellcheck" FOLDED="true" ID="ID_707217200" CREATED="1520173522883" MODIFIED="1520173527838">
+<node TEXT="spellcheck" FOLDED="true" ID="ID_707217200" CREATED="1520173522883" MODIFIED="1520728894904">
 <node TEXT="Specifies if the spelling of user-inputted text should checked or not." ID="ID_561392969" CREATED="1520173640024" MODIFIED="1520173640024"/>
 <node TEXT="values" FOLDED="true" ID="ID_1749962930" CREATED="1520173831769" MODIFIED="1520173837252">
 <node TEXT="true" ID="ID_1680331775" CREATED="1520173967992" MODIFIED="1520173973147"/>
@@ -588,304 +794,136 @@
 </node>
 <node TEXT="aria-*" ID="ID_93471121" CREATED="1520175005320" MODIFIED="1520175008531"/>
 </node>
-<node TEXT="Main root" ID="ID_1751024300" CREATED="1520591363453" MODIFIED="1520591372260">
-<node ID="ID_813375012" CREATED="1520591383417" MODIFIED="1520591419541"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p style="margin-top: 0">
-      html
-    </p>
-  </body>
-</html>
-
-</richcontent>
-<node TEXT="The HTML &lt;html&gt; element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element." ID="ID_1006611270" CREATED="1520591443857" MODIFIED="1520591446965"/>
-</node>
-<node TEXT="Document metadata" ID="ID_856580860" CREATED="1520591475746" MODIFIED="1520591480170">
-<node TEXT="Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information." ID="ID_504962725" CREATED="1520591496082" MODIFIED="1520591546589"/>
-<node TEXT="&lt;link&gt;" ID="ID_1442213483" CREATED="1520591562258" MODIFIED="1520591571732"/>
-<node TEXT="&lt;meta&gt;" ID="ID_1794376208" CREATED="1520591593995" MODIFIED="1520591610204"/>
-<node TEXT="&lt;style&gt;" ID="ID_1656119580" CREATED="1520591628131" MODIFIED="1520591631531"/>
-<node TEXT="&lt;title&gt;" ID="ID_762940708" CREATED="1520591644635" MODIFIED="1520591650787"/>
-</node>
-<node TEXT="Sectioning root" ID="ID_851475154" CREATED="1520591919013" MODIFIED="1520591922758"/>
-<node TEXT="Content sectioning" ID="ID_1674410105" CREATED="1520591934157" MODIFIED="1520591938309"/>
-<node TEXT="Text content" ID="ID_1142534139" CREATED="1520591947597" MODIFIED="1520591950717"/>
-<node TEXT="Inline text semantics" ID="ID_1943550316" CREATED="1520591962372" MODIFIED="1520591966502"/>
-<node TEXT="Image and multimedia" ID="ID_1242457740" CREATED="1520592029269" MODIFIED="1520592034654">
-<node TEXT="&lt;area&gt;" ID="ID_199663156" CREATED="1520593310918" MODIFIED="1520593315503"/>
-<node TEXT="&lt;audio&gt;" ID="ID_1244964273" CREATED="1520593322206" MODIFIED="1520593330734"/>
-<node TEXT="&lt;img&gt;" ID="ID_339009089" CREATED="1520593338254" MODIFIED="1520593346455"/>
-<node TEXT="&lt;map&gt;" ID="ID_1386282062" CREATED="1520593355470" MODIFIED="1520593376511"/>
-<node TEXT="&lt;track&gt;" ID="ID_1002263403" CREATED="1520593388191" MODIFIED="1520593392736"/>
-<node TEXT="&lt;video&gt;" ID="ID_1344946774" CREATED="1520593406127" MODIFIED="1520593410337"/>
-</node>
-<node TEXT="Embedded content" ID="ID_515819194" CREATED="1520592049709" MODIFIED="1520592055263">
-<node TEXT="&lt;applet&gt;" ID="ID_401266200" CREATED="1520593124420" MODIFIED="1520593131350"/>
-<node TEXT="&lt;embed&gt;" ID="ID_855705740" CREATED="1520593150373" MODIFIED="1520593157254"/>
-<node TEXT="&lt;noembed&gt;" ID="ID_3634339" CREATED="1520593167973" MODIFIED="1520593172342"/>
-<node TEXT="&lt;object&gt;" ID="ID_855797867" CREATED="1520593183085" MODIFIED="1520593188182"/>
-<node TEXT="&lt;param&gt;" ID="ID_1219237263" CREATED="1520593198925" MODIFIED="1520593203629"/>
-<node TEXT="&lt;picture&gt;" ID="ID_1790167744" CREATED="1520593212333" MODIFIED="1520593216654"/>
-<node TEXT="&lt;source&gt;" ID="ID_1512781250" CREATED="1520593224621" MODIFIED="1520593229582"/>
-</node>
-<node TEXT="Scripting" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
-<node TEXT="&lt;canvas&gt;" ID="ID_619380127" CREATED="1520592996387" MODIFIED="1520593000725"/>
-<node TEXT="&lt;script&gt;" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1520593070106">
-<node TEXT="type attribute" FOLDED="true" ID="ID_54630004" CREATED="1515280774637" MODIFIED="1515323493853">
-<node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_822896220" CREATED="1515280767645" MODIFIED="1515280767645"/>
-<node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_1435470214" CREATED="1515280820009" MODIFIED="1515280820009"/>
-<node TEXT="The media type consists of two parts: one media type and one subtype. For JavaScript, the media type is &quot;application/javascript&quot;." ID="ID_1360603924" CREATED="1515280830494" MODIFIED="1515280830494"/>
-<node TEXT="In HTML5, the type attribute is no longer required for JavaScript. The default value is &quot;application/javascript&quot;" ID="ID_1025962809" CREATED="1515280860764" MODIFIED="1515280860764"/>
-<node TEXT="Look at IANA Media Types for a complete list of standard media types." FOLDED="true" ID="ID_1537482134" CREATED="1515280934166" MODIFIED="1515280934166">
-<node TEXT="iana.org &gt; Assignments &gt; Media-types &gt; Media-types" ID="ID_69166597" CREATED="1515280949873" MODIFIED="1515280949873" LINK="http://www.iana.org/assignments/media-types/media-types.xhtml"/>
-</node>
-</node>
-<node TEXT="Script loading" FOLDED="true" ID="ID_1695609033" CREATED="1516609394783" MODIFIED="1516609408784">
-<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript. When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it." ID="ID_265022695" CREATED="1516984940332" MODIFIED="1516984940332"/>
-<node TEXT="This behaviour can be problematic if we are loading several JavaScript files on a page, as this will interfere with the time to first paint even if the document is not actually dependent on those files." ID="ID_315975822" CREATED="1516984983930" MODIFIED="1516984983930"/>
-<node TEXT="Normal Execution" FOLDED="true" ID="ID_1254489477" CREATED="1516985020242" MODIFIED="1516985020242">
-<node TEXT="By default, as mentioned above, JavaScript files will interrupt the parsing of the HTML document in order for them to be fetched (if not inline) and executed." ID="ID_279626051" CREATED="1516985216297" MODIFIED="1516985216297"/>
-<node TEXT="png_4560996669286614596.png" ID="ID_145390713" CREATED="1516985243566" MODIFIED="1516985243566">
-<hook URI="webdevelopment2_files/png_4560996669286614596.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="The async Attribute" FOLDED="true" ID="ID_958611319" CREATED="1516985060860" MODIFIED="1516985060860">
-<node TEXT="The async attribute is used to indicate to the browser that the script file can be executed asynchronously. The HTML parser does not need to pause at the point it reaches the script tag to fetch and execute, the execution can happen whenever the script becomes ready after being fetched in parallel with the document parsing." ID="ID_1935634717" CREATED="1516985285531" MODIFIED="1516985285531"/>
-<node TEXT="png_3735681454245946596.png" ID="ID_1054709993" CREATED="1516985313949" MODIFIED="1516985313949">
-<hook URI="webdevelopment2_files/png_3735681454245946596.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="The defer Attribute" FOLDED="true" ID="ID_1554828275" CREATED="1516985092756" MODIFIED="1516985092756">
-<node TEXT="The defer attribute tells the browser to only execute the script file once the HTML document has been fully parsed." ID="ID_726303402" CREATED="1516985347377" MODIFIED="1516985347377"/>
-<node TEXT="Like an asynchronously loaded script, the file can be downloaded while the HTML document is still parsing. However, even if the file is fully downloaded long before the document is finished parsing, the script is not executed until the parsing is complete." ID="ID_1039666429" CREATED="1516985370690" MODIFIED="1516985370690"/>
-<node TEXT="png_5617417546364053301.png" ID="ID_1774527159" CREATED="1516985454109" MODIFIED="1516985454109">
-<hook URI="webdevelopment2_files/png_5617417546364053301.png" SIZE="0.7692308" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="Asynchronous, Deferred or Normal Execution?" FOLDED="true" ID="ID_999485238" CREATED="1516985126147" MODIFIED="1519037613145">
-<node TEXT="So, when should we use asynchronous, deferred, or normal JavaScript execution? As always, it depends on the situation, and there are a few questions to consider." ID="ID_611885800" CREATED="1516985477168" MODIFIED="1516985477168"/>
-<node TEXT="Where is the &lt;script&gt; element located?" FOLDED="true" ID="ID_1341810870" CREATED="1516985499149" MODIFIED="1516985499149">
-<node TEXT="Asynchronous and deferred execution of scripts are more important when the &lt;script&gt; element is not located at the very end of the document. HTML documents are parsed in order, from the first opening &lt;html&gt; element to it&apos;s close. If an externally sourced JavaScript file is placed right before the closing &lt;/body&gt; element, it becomes much less pertinent to use an async or defer attribute. Since the parser will have finished the vast majority of the document by that point, JavaScript files don&apos;t have much parsing left to block." ID="ID_94923227" CREATED="1516985616958" MODIFIED="1516985616958"/>
-</node>
-<node TEXT="Is the script self-contained?" FOLDED="true" ID="ID_966997468" CREATED="1516985520906" MODIFIED="1519037613144">
-<node TEXT="For script files that are not dependent on other files and/or do not have any dependencies themselves, the async attribute is particularly useful. Since we do not care exactly at which point the file is executed, asynchronous loading is the most suitable option." ID="ID_973984847" CREATED="1516985643385" MODIFIED="1516985643385"/>
-</node>
-<node TEXT="Does the script rely on a fully parsed DOM?" FOLDED="true" ID="ID_354214330" CREATED="1516985549473" MODIFIED="1516985549473">
-<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_1748054035" CREATED="1516985661161" MODIFIED="1516985661161"/>
-</node>
-<node TEXT="Is the script a (small) dependency?" FOLDED="true" ID="ID_38917621" CREATED="1516985571593" MODIFIED="1516985571593">
-<node TEXT="In many cases, the script file contains functionality that requires interaction with the DOM. Or, it may have a dependency on another file included on the page. In these cases, the DOM must be fully parsed before the script should be executed. Typically, such a file will be placed at the bottom of the page to ensure everything before it has been parsed. However, in situation where, for whatever reason, the file in question needs to be placed elsewhere, the defer attribute can be used." ID="ID_925375247" CREATED="1516985712536" MODIFIED="1516985712536"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="&lt;noscript&gt;" FOLDED="true" ID="ID_1007443193" CREATED="1515602570705" MODIFIED="1520593097492">
-<node TEXT="The &lt;noscript&gt; tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn&apos;t support script." ID="ID_744019650" CREATED="1515602635348" MODIFIED="1515602635348"/>
-<node TEXT="The &lt;noscript&gt; element can be used in both &lt;head&gt; and &lt;body&gt;." ID="ID_407610190" CREATED="1515602635351" MODIFIED="1515602635351"/>
-<node TEXT="When used inside the &lt;head&gt; element: &lt;noscript&gt; must contain only &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements." ID="ID_1640681790" CREATED="1515602635351" MODIFIED="1515602635351"/>
-<node TEXT="The content inside the &lt;noscript&gt; element will be displayed if scripts are not supported, or are disabled in the user&apos;s browser." ID="ID_380978871" CREATED="1515602635352" MODIFIED="1515602635352"/>
-<node TEXT="Differences Between HTML 4.01 and HTML5" FOLDED="true" ID="ID_663837180" CREATED="1515602673887" MODIFIED="1515602676907">
-<node TEXT="In HTML 4.01, the &lt;noscript&gt; tag can only be used inside the &lt;body&gt; element." ID="ID_1191245985" CREATED="1515602688236" MODIFIED="1515602688236"/>
-<node TEXT="In HTML5, the &lt;noscript&gt; tag can be used both inside &lt;head&gt; and &lt;body&gt;." ID="ID_369635316" CREATED="1515602688237" MODIFIED="1515602688237"/>
-</node>
-</node>
-</node>
-<node TEXT="Demarcating edits" ID="ID_202686193" CREATED="1520592098718" MODIFIED="1520592105958">
-<node TEXT="&lt;del&gt;" ID="ID_700220872" CREATED="1520592892163" MODIFIED="1520592896900"/>
-<node TEXT="&lt;ins&gt;" ID="ID_256794353" CREATED="1520592905579" MODIFIED="1520592909980"/>
-</node>
-<node TEXT="Table content" ID="ID_523038220" CREATED="1520592115310" MODIFIED="1520592121174"/>
-<node TEXT="Forms" ID="ID_1033436963" CREATED="1520592129774" MODIFIED="1520592134310">
-<node TEXT="&lt;button&gt;" ID="ID_668248935" CREATED="1520592511056" MODIFIED="1520592514736"/>
-<node TEXT="&lt;datalist&gt;" ID="ID_29394233" CREATED="1520592528793" MODIFIED="1520592535169"/>
-<node TEXT="&lt;fieldset&gt;" ID="ID_843179194" CREATED="1520592545528" MODIFIED="1520592550122"/>
-<node TEXT="&lt;form&gt;" ID="ID_38499095" CREATED="1520592566185" MODIFIED="1520592570858"/>
-<node TEXT="&lt;input&gt;" FOLDED="true" ID="ID_1618525284" CREATED="1520330027730" MODIFIED="1520592609233">
-<node TEXT="The HTML &lt;input&gt; element is used to create interactive controls for web-based forms in order to accept data from the user." ID="ID_1497170820" CREATED="1520330792999" MODIFIED="1520330802456"/>
-<node TEXT="input attributes" FOLDED="true" ID="ID_1886962322" CREATED="1520334747345" MODIFIED="1520334762841">
-<node TEXT="This section lists the attributes available to all form &lt;input&gt; types. Non-global attributes &#x2014; and global attributes that behave differently when specified on different &lt;input&gt; types &#x2014; are listed on those types&apos; individual pages." ID="ID_1928104140" CREATED="1520334792041" MODIFIED="1520334798099"/>
-<node TEXT="types" FOLDED="true" ID="ID_1215177323" CREATED="1520331460643" MODIFIED="1520331491164">
-<node TEXT="button" FOLDED="true" ID="ID_396650130" CREATED="1520331510700" MODIFIED="1520331513862">
-<node TEXT="A push button with no default behavior." ID="ID_449090957" CREATED="1520333416400" MODIFIED="1520333419361"/>
-</node>
-<node TEXT="checkbox" FOLDED="true" ID="ID_451892438" CREATED="1520331672325" MODIFIED="1520331678038">
-<node TEXT="A check box allowing single values to be selected/deselected." ID="ID_841742030" CREATED="1520333437656" MODIFIED="1520333440282"/>
-</node>
-<node TEXT="color" FOLDED="true" ID="ID_1907862248" CREATED="1520331821326" MODIFIED="1520331822943">
-<node TEXT="A control for specifying a color. A color picker&apos;s UI has no required features other than accepting simple colors as text" ID="ID_1258699366" CREATED="1520333455400" MODIFIED="1520333457073"/>
-</node>
-<node TEXT="date" FOLDED="true" ID="ID_889622964" CREATED="1520331833742" MODIFIED="1520331837863">
-<node TEXT="A control for entering a date (year, month, and day, with no time)." ID="ID_539533930" CREATED="1520333488656" MODIFIED="1520333490642"/>
-</node>
-<node TEXT="datetime-local" FOLDED="true" ID="ID_1266684462" CREATED="1520331851230" MODIFIED="1520331854167">
-<node TEXT="A control for entering a date and time, with no time zone." ID="ID_1555548311" CREATED="1520333502912" MODIFIED="1520333506641"/>
-</node>
-<node TEXT="email" FOLDED="true" ID="ID_1846164783" CREATED="1520331875606" MODIFIED="1520331880295">
-<node TEXT="A field for editing an e-mail address." ID="ID_805482728" CREATED="1520333515728" MODIFIED="1520333518873"/>
-</node>
-<node TEXT="file" FOLDED="true" ID="ID_48996710" CREATED="1520331885182" MODIFIED="1520331900791">
-<node TEXT="A control that lets the user select a file. Use the accept attribute to define the types of files that the control can select." ID="ID_1749483931" CREATED="1520333547368" MODIFIED="1520333550442"/>
-</node>
-<node TEXT="hidden" FOLDED="true" ID="ID_1538151925" CREATED="1520331906350" MODIFIED="1520331909839">
-<node TEXT="A control that is not displayed but whose value is submitted to the server." ID="ID_1172681050" CREATED="1520333570185" MODIFIED="1520333573642"/>
-</node>
-<node TEXT="image" FOLDED="true" ID="ID_1851464644" CREATED="1520331918814" MODIFIED="1520331925399">
-<node TEXT="A graphical submit button. You must use the src attribute to define the source of the image and the alt attribute to define alternative text. You can use the height and width attributes to define the size of the image in pixels." ID="ID_1423811260" CREATED="1520333594489" MODIFIED="1520333596322"/>
-</node>
-<node TEXT="month" FOLDED="true" ID="ID_467225334" CREATED="1520333614978" MODIFIED="1520333622098">
-<node TEXT="A control for entering a month and year, with no time zone." ID="ID_787920257" CREATED="1520333633961" MODIFIED="1520333638402"/>
-</node>
-<node TEXT="number" FOLDED="true" ID="ID_80957926" CREATED="1520332033007" MODIFIED="1520332038928">
-<node TEXT="A control for entering a number." ID="ID_1094669607" CREATED="1520333647057" MODIFIED="1520333651322"/>
-</node>
-<node TEXT="password" FOLDED="true" ID="ID_1435259868" CREATED="1520332051319" MODIFIED="1520332061024">
-<node TEXT="A single-line text field whose value is obscured. Use the maxlength and minlength attributes to specify the maximum length of the value that can be entered." ID="ID_992593240" CREATED="1520333662113" MODIFIED="1520333665034"/>
-</node>
-<node TEXT="radio" FOLDED="true" ID="ID_204183482" CREATED="1520332073175" MODIFIED="1520332078800">
-<node TEXT="A radio button, allowing a single value to be selected out of multiple choices." ID="ID_1921640396" CREATED="1520333684409" MODIFIED="1520333687826"/>
-</node>
-<node TEXT="range" FOLDED="true" ID="ID_1740955557" CREATED="1520332081871" MODIFIED="1520332146209">
-<node TEXT="A control for entering a number whose exact value is not important." ID="ID_1773071712" CREATED="1520333698418" MODIFIED="1520333702538"/>
-</node>
-<node TEXT="reset" FOLDED="true" ID="ID_1566151059" CREATED="1520332148464" MODIFIED="1520332156081">
-<node TEXT="A button that resets the contents of the form to default values." ID="ID_589123208" CREATED="1520333722250" MODIFIED="1520333725275"/>
-</node>
-<node TEXT="search" FOLDED="true" ID="ID_1358704182" CREATED="1520332158608" MODIFIED="1520332165921">
-<node TEXT="A single-line text field for entering search strings. Line-breaks are automatically removed from the input value." ID="ID_220978398" CREATED="1520333737914" MODIFIED="1520333741531"/>
-</node>
-<node TEXT="submit" FOLDED="true" ID="ID_474278576" CREATED="1520332171640" MODIFIED="1520332181961">
-<node TEXT="A button that submits the form." ID="ID_1675447848" CREATED="1520333751529" MODIFIED="1520333754707"/>
-</node>
-<node TEXT="tel" FOLDED="true" ID="ID_1002804184" CREATED="1520332224704" MODIFIED="1520332231929">
-<node TEXT="A control for entering a telephone number." ID="ID_743260950" CREATED="1520333761266" MODIFIED="1520333764115"/>
-</node>
-<node TEXT="text" FOLDED="true" ID="ID_623902964" CREATED="1520332235664" MODIFIED="1520332244553">
-<node TEXT=" A single-line text field. Line-breaks are automatically removed from the input value." ID="ID_292744712" CREATED="1520333772210" MODIFIED="1520333775339"/>
-</node>
-<node TEXT="time" FOLDED="true" ID="ID_999849329" CREATED="1520332248424" MODIFIED="1520332257577">
-<node TEXT="A control for entering a time value with no time zone." ID="ID_915915799" CREATED="1520333791858" MODIFIED="1520333797419"/>
-</node>
-<node TEXT="url" FOLDED="true" ID="ID_1193298364" CREATED="1520332262456" MODIFIED="1520332268729">
-<node TEXT="A field for entering a URL." ID="ID_455845177" CREATED="1520333805994" MODIFIED="1520333811395"/>
-</node>
-<node TEXT="week" FOLDED="true" ID="ID_828474090" CREATED="1520332281577" MODIFIED="1520332289482">
-<node TEXT="A control for entering a date consisting of a week-year number and a week number with no time zone." ID="ID_812517964" CREATED="1520333867243" MODIFIED="1520333877884"/>
-</node>
-<node TEXT="DEPRECATED" FOLDED="true" ID="ID_871849871" CREATED="1520332308049" MODIFIED="1520332316618">
-<node TEXT="datetime" ID="ID_16242128" CREATED="1520332327097" MODIFIED="1520332389426"/>
-</node>
-</node>
-<node TEXT="accept" ID="ID_1937142315" CREATED="1520341985522" MODIFIED="1520341990147"/>
-<node TEXT="accesskey" ID="ID_1928365568" CREATED="1520342006066" MODIFIED="1520342009611"/>
-<node TEXT="autocomplete" FOLDED="true" ID="ID_1433812126" CREATED="1520342020082" MODIFIED="1520342026188">
-<node TEXT="This attribute indicates whether the value of the control can be automatically completed by the browser." ID="ID_785493058" CREATED="1520344232531" MODIFIED="1520344235027"/>
-</node>
-<node TEXT="autofocus" ID="ID_1317063504" CREATED="1520342043674" MODIFIED="1520342049228"/>
-<node TEXT="capture" ID="ID_239980567" CREATED="1520342066690" MODIFIED="1520342075179"/>
-<node TEXT="checked" ID="ID_1409931328" CREATED="1520342083595" MODIFIED="1520342087068"/>
-<node TEXT="disabled" ID="ID_1142008354" CREATED="1520342096611" MODIFIED="1520342110452"/>
-<node TEXT="form" ID="ID_1718608033" CREATED="1520342126059" MODIFIED="1520342128917"/>
-<node TEXT="formaction" ID="ID_990405847" CREATED="1520342138083" MODIFIED="1520342142956"/>
-<node TEXT="formenctype" ID="ID_1990678392" CREATED="1520342153723" MODIFIED="1520342158556"/>
-<node TEXT="formmethod" ID="ID_744158052" CREATED="1520342167787" MODIFIED="1520342180188"/>
-<node TEXT="formnovalidate" ID="ID_1182555208" CREATED="1520342181051" MODIFIED="1520342183660"/>
-<node TEXT="formtarget" ID="ID_1611714185" CREATED="1520342265540" MODIFIED="1520342268501"/>
-<node TEXT="height" ID="ID_1000263920" CREATED="1520342282836" MODIFIED="1520342286301"/>
-<node TEXT="inputmode" ID="ID_1342302483" CREATED="1520342297388" MODIFIED="1520342300398"/>
-<node TEXT="list" ID="ID_626378984" CREATED="1520342312956" MODIFIED="1520342323997"/>
-<node TEXT="max" ID="ID_205866547" CREATED="1520342402269" MODIFIED="1520342404926"/>
-<node TEXT="maxlength" ID="ID_1001136029" CREATED="1520342413773" MODIFIED="1520342416670"/>
-<node TEXT="min" ID="ID_683180635" CREATED="1520342448229" MODIFIED="1520342451349"/>
-<node TEXT="minlength" ID="ID_968305004" CREATED="1520342460309" MODIFIED="1520342478230"/>
-<node TEXT="multiple" ID="ID_443449926" CREATED="1520342472837" MODIFIED="1520342491719"/>
-<node TEXT="name" ID="ID_1969675199" CREATED="1520342503053" MODIFIED="1520342507758"/>
-<node TEXT="pattern" ID="ID_365473846" CREATED="1520342521966" MODIFIED="1520342524767"/>
-<node TEXT="placeholder" ID="ID_1052540512" CREATED="1520342537206" MODIFIED="1520342540751"/>
-<node TEXT="selectionDirection" ID="ID_1735942925" CREATED="1520342882864" MODIFIED="1520342893578"/>
-<node TEXT="selectionEnd" ID="ID_109348995" CREATED="1520342910505" MODIFIED="1520342913610"/>
-<node TEXT="selectionStart" ID="ID_1579080016" CREATED="1520342921449" MODIFIED="1520342924649"/>
-<node TEXT="size" ID="ID_1002632402" CREATED="1520342931288" MODIFIED="1520342934730"/>
-<node TEXT="spellcheck" ID="ID_87000396" CREATED="1520342941737" MODIFIED="1520342944434"/>
-<node TEXT="src" ID="ID_380103865" CREATED="1520342957473" MODIFIED="1520342977602"/>
-<node TEXT="step" ID="ID_1461757464" CREATED="1520342979809" MODIFIED="1520342994402"/>
-<node TEXT="tabindex" ID="ID_1493767535" CREATED="1520343008041" MODIFIED="1520343013249"/>
-<node TEXT="usemap" ID="ID_858396889" CREATED="1520343022673" MODIFIED="1520343034650"/>
-<node TEXT="value" ID="ID_558010448" CREATED="1520343043033" MODIFIED="1520343046226"/>
-<node TEXT="width" ID="ID_1903941196" CREATED="1520343056354" MODIFIED="1520343059641"/>
-</node>
-<node TEXT="" ID="ID_1267623223" CREATED="1520340794410" MODIFIED="1520340794410"/>
-</node>
-<node TEXT="&lt;label&gt;" ID="ID_1309106101" CREATED="1520592632690" MODIFIED="1520592636859"/>
-<node TEXT="&lt;legend&gt;" ID="ID_937770746" CREATED="1520592645730" MODIFIED="1520592650146"/>
-<node TEXT="&lt;meter&gt;" ID="ID_1857610801" CREATED="1520592665146" MODIFIED="1520592669657"/>
-<node TEXT="&lt;optgroup&gt;" ID="ID_114315381" CREATED="1520592680570" MODIFIED="1520592763890"/>
-<node TEXT="&lt;option&gt;" ID="ID_273608849" CREATED="1520592774026" MODIFIED="1520592777899"/>
-<node TEXT="&lt;output&gt;" ID="ID_1596616092" CREATED="1520592787498" MODIFIED="1520592792267"/>
-<node TEXT="&lt;progress&gt;" ID="ID_242350282" CREATED="1520592801018" MODIFIED="1520592805620"/>
-<node TEXT="&lt;select&gt;" ID="ID_1061081820" CREATED="1520592828259" MODIFIED="1520592833492"/>
-<node TEXT="&lt;textarea&gt;" ID="ID_1995177550" CREATED="1520592840747" MODIFIED="1520592845700"/>
-</node>
-<node TEXT="Interactive elements" ID="ID_1603568566" CREATED="1520592145118" MODIFIED="1520592151049">
-<node TEXT="&lt;details&gt;" ID="ID_653047142" CREATED="1520592327303" MODIFIED="1520592330216"/>
-<node TEXT="&lt;dialog&gt;" ID="ID_557547218" CREATED="1520592338583" MODIFIED="1520592377628"/>
-<node TEXT="&lt;menu&gt;" ID="ID_1456610476" CREATED="1520592379472" MODIFIED="1520592383361"/>
-<node TEXT="&lt;menuitem&gt;" ID="ID_457797346" CREATED="1520592392912" MODIFIED="1520592397680"/>
-<node TEXT="&lt;summary&gt;" ID="ID_1081368109" CREATED="1520592408031" MODIFIED="1520592413112"/>
-</node>
-<node TEXT="Web Components" ID="ID_380032590" CREATED="1520592162590" MODIFIED="1520592168655"/>
-<node TEXT="Obsolete and deprecated elements" ID="ID_315398082" CREATED="1520592191358" MODIFIED="1520592276840"/>
-</node>
-</node>
 <node TEXT="Validatoren" FOLDED="true" ID="ID_1055361650" CREATED="1520104471918" MODIFIED="1520104479277">
 <node TEXT="WC3 Validatoren" FOLDED="true" ID="ID_587023938" CREATED="1520170128415" MODIFIED="1520170145709">
 <node TEXT="For almost 15 years, the W3C has been developing and hosting free and open source tools used every day by millions of Web developers and Web designers. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the W3C Developers tools site." ID="ID_1831671025" CREATED="1520170276955" MODIFIED="1520170312471"/>
 <node TEXT="http://w3c.github.io/developers/tools/" ID="ID_1691254472" CREATED="1520170331760" MODIFIED="1520170331760" LINK="http://w3c.github.io/developers/tools/"/>
 </node>
 </node>
-<node TEXT="History" ID="ID_646920830" CREATED="1520198708800" MODIFIED="1520198740051">
-<node TEXT="Introduction" FOLDED="true" ID="ID_1722089126" CREATED="1520199157452" MODIFIED="1520199169904">
-<node TEXT="Twenty eight years ago today, a proposal was sent internally at CERN outlying a universal linked information system. Dubbed &apos;Information Management: A proposal&apos;, pictured below" ID="ID_262667667" CREATED="1520198764679" MODIFIED="1520198769507"/>
-<node TEXT="png_4879359421012191637.png" ID="ID_1267943416" CREATED="1520198785575" MODIFIED="1520198785575">
-<hook URI="webdevelopment2_files/png_4879359421012191637.png" SIZE="1.0" NAME="ExternalObject"/>
-</node>
-<node TEXT="the proposal was created by Sir Tim Berners-Lee and was sent to his boss Mike Sendall, who described it as &apos;vague but exciting&apos;." ID="ID_1326947175" CREATED="1520198805075" MODIFIED="1520198805075"/>
-<node TEXT="Sir Tim Berners-Lee&#x2019;s vision for universality enabled the development of a high-level network of content that allows any document to link to any other documents." ID="ID_1364994025" CREATED="1520198861919" MODIFIED="1520198866195"/>
-<node TEXT="The World Wide Web was initially created to make it easier to share research papers." ID="ID_1449532757" CREATED="1520198992694" MODIFIED="1520198992694"/>
-<node TEXT="It is a system of interlinked &#x2018;hypertext&#x2019; documents that are accessed via the Internet" ID="ID_866611090" CREATED="1520199006370" MODIFIED="1520199006370"/>
-<node TEXT="While he did not invent hypertext systems, Berners-Lee proposed using them &apos;to link and access information of various kinds as a web of nodes in which the user can browse at will.&apos;" ID="ID_874665564" CREATED="1520199042405" MODIFIED="1520199042405"/>
-<node TEXT="His breakthrough was to link hypertext to the Internet and he used three technologies to do this:" FOLDED="true" ID="ID_28137970" CREATED="1520199068692" MODIFIED="1520199068692">
-<node TEXT="HyperText Transfer Protocol (HTTP) is the foundation of data communication for the Web." ID="ID_1476535739" CREATED="1520199082512" MODIFIED="1520199082512"/>
-<node TEXT="HyperText Markup Language (HTML) is the main mark-up language for creating Web pages and information that can be displayed on a Web browser." ID="ID_616802868" CREATED="1520199095058" MODIFIED="1520199095058"/>
-<node TEXT="Web addresses or a Uniform Resource Locator (URL) are used to reference a Web page." ID="ID_1004059041" CREATED="1520199106485" MODIFIED="1520199106485"/>
+<node TEXT="Best Practise" FOLDED="true" ID="ID_589177114" CREATED="1517780648521" MODIFIED="1520193341531">
+<node TEXT="Head" FOLDED="true" ID="ID_1301576260" CREATED="1517780802504" MODIFIED="1520193341531">
+<node TEXT="Doctype" FOLDED="true" ID="ID_1597176771" CREATED="1517780835863" MODIFIED="1517780844101">
+<node TEXT="Doctype: The Doctype is HTML5 and is at the top of all your HTML pages." ID="ID_164583589" CREATED="1517780856689" MODIFIED="1517780856689"/>
+<node TEXT="&lt;!DOCTYPE html&gt;" ID="ID_539528839" CREATED="1517780980811" MODIFIED="1517780980811"/>
+<node TEXT="reason" FOLDED="true" ID="ID_388088210" CREATED="1517781013910" MODIFIED="1517781019701">
+<node TEXT="DOCTYPEs are required for legacy reasons. When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications." ID="ID_1480178649" CREATED="1517781037270" MODIFIED="1517781037270"/>
 </node>
 </node>
-<node TEXT="Hypertext" FOLDED="true" ID="ID_760797161" CREATED="1520199269164" MODIFIED="1520199277239">
-<node TEXT="A fundamental key to the World Wide Web is the concept of &quot;Hypertext&quot;.  Hypertext is built on the idea of linking information together, not unlike using footnotes, except much easier and more flexible." ID="ID_945485051" CREATED="1520199320916" MODIFIED="1520199320916"/>
-<node TEXT="The idea was to &quot;Mark Up&quot; your document with links and define how to break it down into different segments (chapters, sections, paragraphs, tables, figures, etc.)" ID="ID_932155406" CREATED="1520199378614" MODIFIED="1520199378614"/>
-<node TEXT="png_3487795447092536330.png" ID="ID_1549917680" CREATED="1520199403120" MODIFIED="1520199403120">
-<hook URI="webdevelopment2_files/png_3487795447092536330.png" SIZE="0.5" NAME="ExternalObject"/>
+<node TEXT="Metatags" FOLDED="true" ID="ID_1753543440" CREATED="1517781669034" MODIFIED="1517781678423">
+<node TEXT="Charset" FOLDED="true" ID="ID_618896149" CREATED="1517781083989" MODIFIED="1517781089163">
+<node ID="ID_1361262792" CREATED="1517781101336" MODIFIED="1517781101336"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <span http-equiv="content-type" content="text/html; charset=utf-8" class="label__title" style="font-weight: 700; display: inline; font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)"><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif">Charset:</font></b></span><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span>&#160;</span></font></b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span class="label__description" style="font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)">The charset declared (UTF-8) is declared correctly.</span></font> 
+  </body>
+</html>
+</richcontent>
 </node>
-<node TEXT="He envisioned a technology that would facilitate thoroughly interconnected documents." ID="ID_938316329" CREATED="1520199487140" MODIFIED="1520199487140"/>
-<node TEXT="He wanted authors to be able to connect an idea in one document to the source of the idea in another, or connect a statement with the data that backs up that statement." ID="ID_953372274" CREATED="1520199538112" MODIFIED="1520199538112"/>
-<node TEXT="Traditionally, this kind of thing was done with footnotes and bibliographies" ID="ID_91699550" CREATED="1520199579581" MODIFIED="1520199579581"/>
-<node TEXT="This information should be easily transferable from one place to another, so that in reading one document, it is easy to access everything related (linked) to it." ID="ID_1920301409" CREATED="1520199615109" MODIFIED="1520199615109"/>
-<node TEXT="Tim Berners-Lee imagined a &quot;Web&quot; of interconnected documents." ID="ID_154095894" CREATED="1520199705734" MODIFIED="1520199705734"/>
+<node ID="ID_263145640" CREATED="1517781328489" MODIFIED="1517781328489"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <span http-equiv="content-type" content="text/html; charset=utf-8" style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: black"><font face="Consolas, courier new" size="16px" color="black">&lt;</font></span><span style="color: rgb(165, 42, 42); font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(165, 42, 42)" face="Consolas, courier new" size="16px">meta</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: red">charset</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;UTF-8&quot;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: black">&gt;</span></font> 
+  </body>
+</html>
+</richcontent>
 </node>
-<node TEXT="The browser" ID="ID_364812799" CREATED="1520199782776" MODIFIED="1520199785875">
-<node TEXT="The Internet existed long before the Web came to fruition, and lots of organizations were connected to it, including schools, companies and government organizations." ID="ID_1184113106" CREATED="1520199881462" MODIFIED="1520199881462"/>
-<node TEXT="As things progressed through the 80&apos;s, the Internet was used for file transfers, newsgroups (a kind of open forum), email and other conveniences." ID="ID_596237640" CREATED="1520199899019" MODIFIED="1520199899019"/>
-<node TEXT="At the time there were a number of different programs like &apos;fetch&apos;, &apos;gopher&apos; and &apos;archie&apos; that were used to download, browse and search for files." ID="ID_630706303" CREATED="1520199944426" MODIFIED="1520199944426"/>
-<node TEXT="Marc Andreesen conceived of a solution that would put all the pieces together in one app, making it easy for users to browse all the different sorts of information and data on the World Wide Web." ID="ID_1006545954" CREATED="1520199997464" MODIFIED="1520199997464"/>
-<node TEXT=" Together with others, he started the &quot;Mosaic&quot; project." ID="ID_1960436962" CREATED="1520200188552" MODIFIED="1520200198192"/>
-<node TEXT="png_7279407150160471406.png" ID="ID_1621860426" CREATED="1520200310579" MODIFIED="1520200310579">
-<hook URI="webdevelopment2_files/png_7279407150160471406.png" SIZE="0.6944444" NAME="ExternalObject"/>
+<node TEXT="reason" FOLDED="true" ID="ID_485292686" CREATED="1517781445083" MODIFIED="1517781450921">
+<node TEXT="A character encoding declaration is vital to ensure that the text in your page is recognized by browsers around the world (internationalization), and not garbled." ID="ID_1236647212" CREATED="1520198180743" MODIFIED="1520198213423"/>
+<node TEXT="ASCII was the first character encoding standard (also called character set). ASCII defined 128 different alphanumeric characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ &lt; &gt; ." ID="ID_1504421173" CREATED="1517781471275" MODIFIED="1517781479289"/>
+<node TEXT="ANSI (Windows-1252) was the original Windows character set, with support for 256 different character codes." ID="ID_4935111" CREATED="1517781515955" MODIFIED="1517781515955"/>
+<node TEXT="ISO-8859-1 was the default character set for HTML 4. This character set also supported 256 different character codes." ID="ID_678843848" CREATED="1517781551452" MODIFIED="1517781551452"/>
+<node TEXT="Because ANSI and ISO-8859-1 were so limited, HTML 4 also supported UTF-8." ID="ID_552519456" CREATED="1517781578946" MODIFIED="1517781578946"/>
+<node ID="ID_1648555144" CREATED="1517781607837" MODIFIED="1517781607837"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <span http-equiv="content-type" content="text/html; charset=utf-8" style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(0, 0, 0)" face="Verdana, sans-serif" size="15px">The default character encoding for HTML5 is UTF-8.</font></span> 
+  </body>
+</html>
+</richcontent>
 </node>
-<node TEXT="Though not technically the first browser, Mosaic was the first one that many people experienced and played a big part in popularizing the concept of the World Wide Web and the Web browser." ID="ID_672601724" CREATED="1520200080793" MODIFIED="1520200080793"/>
+<node ID="ID_1922926198" CREATED="1517781619538" MODIFIED="1517781619538"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <span http-equiv="content-type" content="text/html; charset=utf-8" style="color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 15px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 204); display: inline !important; float: none"><font color="rgb(0, 0, 0)" face="Verdana, sans-serif" size="15px">UTF-8 (Unicode) covers almost all of the characters and symbols in the world.</font></span> 
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="X-UA-Compatible" FOLDED="true" ID="ID_35261573" CREATED="1517781736897" MODIFIED="1517781754265">
+<node ID="ID_724447161" CREATED="1517781786688" MODIFIED="1517781786688"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <span http-equiv="content-type" content="text/html; charset=utf-8" class="label__title" style="font-weight: 700; display: inline; font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)"><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif">X-UA-Compatible:</font></b></span><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span>&#160;</span></font></b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span class="label__description" style="font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)">The X-UA-Compatible Meta tag is present.</span></font> 
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;" ID="ID_539633497" CREATED="1517782322777" MODIFIED="1517782322777"/>
+<node TEXT="Reason" FOLDED="true" ID="ID_33265396" CREATED="1517782349533" MODIFIED="1517782364834">
+<node TEXT="Das Meta-Element kann das Attribut http-equiv enthalten. Die Absicht dahinter war, dass Webserver den Dokumentinhalt lesen und aus diesen Angaben HTTP-Header erzeugen. In der Praxis ist das jedoch nur selten der Fall. Stattdessen k&#xf6;nnen diese Angaben ersatzweise verwendet werden, wenn der Webserver sich nicht entsprechend konfigurieren l&#xe4;sst. In der Regel hat ein gleichnamiger HTTP-Header Vorrang vor einer Meta-Angabe. Ebenfalls sinnvoll sind diese Angaben, wenn das Dokument lokal &#x2013; beispielsweise als Datei von Festplatte &#x2013; gelesen wird, denn in dem Fall stehen keine HTTP-Header zur Verf&#xfc;gung.." ID="ID_1242937727" CREATED="1517781893091" MODIFIED="1517782261572"/>
+</node>
+</node>
+<node TEXT="Viewport" FOLDED="true" ID="ID_672053804" CREATED="1517782428140" MODIFIED="1517782436402">
+<node ID="ID_1331602928" CREATED="1517782464456" MODIFIED="1517782464456"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <span http-equiv="content-type" content="text/html; charset=utf-8" class="label__title" style="font-weight: 700; display: inline; font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)"><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif">Viewport:</font></b></span><b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span>&#160;</span></font></b><font size="1.5rem" color="rgb(33, 37, 41)" face="BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif"><span class="label__description" style="font-size: 1.5rem; color: rgb(33, 37, 41); font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(241, 240, 237)">The viewport is declared correctly.</span></font> 
+  </body>
+</html>
+</richcontent>
+</node>
+<node FOLDED="true" ID="ID_1528933862" CREATED="1517782547257" MODIFIED="1517782547257"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <span http-equiv="content-type" content="text/html; charset=utf-8" style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: black"><font face="Consolas, courier new" size="16px" color="black">&lt;</font></span><span style="color: rgb(165, 42, 42); font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none"><font color="rgb(165, 42, 42)" face="Consolas, courier new" size="16px">meta</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: red">name</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;viewport&quot;</font></span><span><font face="Consolas, courier new" size="16px" color="red">&#160;</font></span><font face="Consolas, courier new" size="16px" color="red"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: red">content</span></font><span style="color: black"><font color="black" face="Consolas, courier new" size="16px">=&quot;width=device-width, initial-scale=1.0&quot;</font></span><font color="black" face="Consolas, courier new" size="16px"><span style="font-family: Consolas, courier new; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255); color: black">&gt;</span></font> 
+  </body>
+</html>
+</richcontent>
+<node TEXT="A &lt;meta&gt; viewport element gives the browser instructions on how to control the page&apos;s dimensions and scaling." ID="ID_1766297247" CREATED="1517782622018" MODIFIED="1517782622018"/>
+<node TEXT="The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device)." ID="ID_1555232135" CREATED="1517782663299" MODIFIED="1517782663299"/>
+<node TEXT="The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser." ID="ID_1191986349" CREATED="1517782719603" MODIFIED="1517782719603"/>
+</node>
+<node TEXT="Reason" FOLDED="true" ID="ID_330328103" CREATED="1517782573819" MODIFIED="1517782577426">
+<node TEXT="The viewport is the user&apos;s visible area of a web page." ID="ID_33266082" CREATED="1517782757352" MODIFIED="1517782757352"/>
+<node TEXT="The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen." ID="ID_430280863" CREATED="1517782814090" MODIFIED="1517782814090"/>
+<node TEXT="Before tablets and mobile phones, web pages were designed only for computer screens, and it was common for web pages to have a static design and a fixed size." ID="ID_255759468" CREATED="1517782841281" MODIFIED="1517782841281"/>
+<node TEXT="Then, when we started surfing the internet using tablets and mobile phones, fixed size web pages were too large to fit the viewport. To fix this, browsers on those devices scaled down the entire web page to fit the screen." ID="ID_818302419" CREATED="1517782881847" MODIFIED="1517782881847"/>
+<node TEXT="This was not perfect!! But a quick fix." ID="ID_1360406247" CREATED="1517782940735" MODIFIED="1517782940735"/>
+<node TEXT="HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta&gt; tag." ID="ID_1662886398" CREATED="1517782957761" MODIFIED="1517782957761"/>
+</node>
+</node>
+</node>
+<node TEXT="SEO" ID="ID_628491381" CREATED="1517783261967" MODIFIED="1517783268941"/>
 </node>
 </node>
 </node>
@@ -916,7 +954,7 @@
 <node TEXT="1. Inline style (inside an HTML element)&#xa;2. External and internal style sheets (in the head section)&#xa;3. Browser default" ID="ID_812367423" CREATED="1519591619160" MODIFIED="1519591882873"/>
 </node>
 </node>
-<node TEXT="Selectors" FOLDED="true" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
+<node TEXT="Selectors" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
 <node TEXT="Simple selectors" FOLDED="true" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
 <node TEXT="Type selector" FOLDED="true" ID="ID_835537567" CREATED="1519516109081" MODIFIED="1519516113404">
 <node TEXT="Selects all elements that match the given node name." ID="ID_1746383443" CREATED="1519516234152" MODIFIED="1519516237323"/>
@@ -953,32 +991,32 @@
 <node TEXT="Example: [autoplay] will match all elements that have the autoplay attribute set (to any value)." ID="ID_141219151" CREATED="1519516694221" MODIFIED="1519516697648"/>
 </node>
 </node>
-<node TEXT="Combinators" FOLDED="true" ID="ID_1799111666" CREATED="1519515989026" MODIFIED="1519515995645">
-<node TEXT="Adjacent sibling combinator" FOLDED="true" ID="ID_683669578" CREATED="1519518750135" MODIFIED="1519518752650">
+<node TEXT="Combinators" ID="ID_1799111666" CREATED="1519515989026" MODIFIED="1519515995645">
+<node TEXT="Adjacent sibling combinator" ID="ID_683669578" CREATED="1519518750135" MODIFIED="1519518752650">
 <node TEXT="The + combinator selects adjacent siblings. This means that the second element directly follows the first, and both share the same parent." ID="ID_503399944" CREATED="1519518851310" MODIFIED="1519518854633"/>
 <node TEXT="Syntax: A + B" ID="ID_1449827583" CREATED="1519518867702" MODIFIED="1519518869833"/>
 <node TEXT="Example: h2 + p will match all &lt;p&gt; elements that directly follow an &lt;h2&gt;." ID="ID_981775896" CREATED="1519518891142" MODIFIED="1519518894249"/>
 </node>
-<node TEXT="General sibling combinator" FOLDED="true" ID="ID_432651750" CREATED="1519518763119" MODIFIED="1519518766106">
+<node TEXT="General sibling combinator" ID="ID_432651750" CREATED="1519518763119" MODIFIED="1519518766106">
 <node TEXT="The ~ combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent." ID="ID_1933531855" CREATED="1519518954462" MODIFIED="1519518956289"/>
 <node TEXT="Syntax: A ~ B" ID="ID_108398723" CREATED="1519518969694" MODIFIED="1519518974256"/>
 <node TEXT="Example: p ~ span will match all &lt;span&gt; elements that follow a &lt;p&gt;." ID="ID_841111398" CREATED="1519518992533" MODIFIED="1519519003128"/>
 </node>
-<node TEXT="Child combinator" FOLDED="true" ID="ID_331871209" CREATED="1519518811535" MODIFIED="1519518814353">
+<node TEXT="Child combinator" ID="ID_331871209" CREATED="1519518811535" MODIFIED="1519518814353">
 <node TEXT="The &gt; combinator selects nodes that are direct children of the first element." ID="ID_309146250" CREATED="1519519097829" MODIFIED="1519519101303"/>
 <node TEXT="Syntax: A &gt; B" ID="ID_435099312" CREATED="1519519138564" MODIFIED="1519519145087"/>
 <node TEXT="ul &gt; li will match all &lt;li&gt; elements that are nested directly inside a &lt;ul&gt; element." ID="ID_1835762929" CREATED="1519519159820" MODIFIED="1519519162415"/>
 </node>
-<node TEXT="Descendant combinator" FOLDED="true" ID="ID_1169938730" CREATED="1519518822143" MODIFIED="1519518824866">
+<node TEXT="Descendant combinator" ID="ID_1169938730" CREATED="1519518822143" MODIFIED="1519518824866">
 <node TEXT="The   combinator selects nodes that are descendants of the first element." ID="ID_305549736" CREATED="1519519201204" MODIFIED="1519519203502"/>
 <node TEXT="Syntax: A B" ID="ID_1702071400" CREATED="1519519215828" MODIFIED="1519519217838"/>
 <node TEXT="Example: div span will match all &lt;span&gt; elements that are inside a &lt;div&gt; element." ID="ID_1589200782" CREATED="1519519231988" MODIFIED="1519519234326"/>
 </node>
 </node>
-<node TEXT="Pseudo-classes" FOLDED="true" ID="ID_1510060852" CREATED="1519516015090" MODIFIED="1519516030388">
+<node TEXT="Pseudo-classes" ID="ID_1510060852" CREATED="1519516015090" MODIFIED="1519516030388">
 <node TEXT="pseudo-classes can be used to style an element based on its state." ID="ID_1423517617" CREATED="1519519700532" MODIFIED="1519519706251"/>
 <node TEXT="Like regular classes, you can chain together as many pseudo-classes as you want in a selector." ID="ID_755750842" CREATED="1519521426303" MODIFIED="1519521432023"/>
-<node TEXT="Index of standard pseudo-classes" FOLDED="true" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1519520377622">
+<node TEXT="Index of standard pseudo-classes" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1519520377622">
 <node TEXT=":active" ID="ID_1143391783" CREATED="1519520388396" MODIFIED="1519520395578"/>
 <node TEXT=":any" ID="ID_1341041150" CREATED="1519520397460" MODIFIED="1519520400502"/>
 <node TEXT=":any-link" ID="ID_941860286" CREATED="1519520453411" MODIFIED="1519520455814"/>
@@ -1065,7 +1103,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Animations" ID="ID_866030078" CREATED="1519653766687" MODIFIED="1519653770312">
+<node TEXT="Animations" FOLDED="true" ID="ID_866030078" CREATED="1519653766687" MODIFIED="1519653770312">
 <node TEXT="An animation lets an element gradually change from one style to another." ID="ID_303688421" CREATED="1519653805795" MODIFIED="1519653809684"/>
 <node TEXT="You can change as many CSS properties you want, as many times you want." ID="ID_1615614080" CREATED="1519653821099" MODIFIED="1519653824291"/>
 <node TEXT="To use CSS animation, you must first specify some keyframes for the animation." FOLDED="true" ID="ID_449748742" CREATED="1519653836563" MODIFIED="1519653839531">
@@ -1232,26 +1270,42 @@
 </node>
 </node>
 </node>
-<node TEXT="Fonts" ID="ID_1222042526" CREATED="1519915215907" MODIFIED="1519915221707">
-<node TEXT="Formats" ID="ID_1492986000" CREATED="1519915228161" MODIFIED="1519915311892">
+<node TEXT="Fonts" FOLDED="true" ID="ID_1222042526" CREATED="1519915215907" MODIFIED="1519915221707">
+<node TEXT="Formats" FOLDED="true" ID="ID_1492986000" CREATED="1519915228161" MODIFIED="1519915311892">
 <node TEXT="When you purchase web fonts licensing, you receive a package of font files that typically include at least some of the following formats:" ID="ID_64595923" CREATED="1519915365516" MODIFIED="1519915494638"/>
-<node TEXT="Embedded OpenType (EOT)" ID="ID_915494944" CREATED="1519915514926" MODIFIED="1519915519429">
+<node TEXT="Embedded OpenType (EOT)" FOLDED="true" ID="ID_915494944" CREATED="1519915514926" MODIFIED="1519915519429">
 <node TEXT="EOT is a legacy format developed by Microsoft. Older Internet Explorer versions require EOT to render your web fonts. EOT is often served uncompressed so, if you don&#x2019;t require browser support of the likes of IE8 or below, then you&#x2019;re better off leaving it out." ID="ID_1938248451" CREATED="1519915603212" MODIFIED="1519915606942"/>
 </node>
-<node TEXT="TrueType (TTF)" ID="ID_1515534907" CREATED="1519915535071" MODIFIED="1519915538406">
+<node TEXT="TrueType (TTF)" FOLDED="true" ID="ID_1515534907" CREATED="1519915535071" MODIFIED="1519915538406">
 <node TEXT="TTF is a font format developed by Microsoft and Apple in the 1980s. Modern TTF files are also called TrueType OpenType fonts. TTF can be useful for extending support to some older browsers, especially on mobile, if you need it." ID="ID_1590039410" CREATED="1519915619260" MODIFIED="1519915622723"/>
 </node>
-<node TEXT="Web Open Font Format (WOFF)" ID="ID_1452574093" CREATED="1519915567662" MODIFIED="1519915567662">
+<node TEXT="Web Open Font Format (WOFF)" FOLDED="true" ID="ID_1452574093" CREATED="1519915567662" MODIFIED="1519915567662">
 <node TEXT="WOFF was developed in 2009 as a wrapper format for TrueType and OpenType fonts. It compresses the files and is supported by all modern browsers." ID="ID_1453670529" CREATED="1519915634933" MODIFIED="1519915639147"/>
 </node>
-<node TEXT="Web Open Font Format 2 (WOFF2)" ID="ID_65075087" CREATED="1519915582049" MODIFIED="1519915582049">
+<node TEXT="Web Open Font Format 2 (WOFF2)" FOLDED="true" ID="ID_65075087" CREATED="1519915582049" MODIFIED="1519915582049">
 <node TEXT=" WOFF2 is an update to the original WOFF format. Developed by Google, this is considered the best format of the bunch because it offers smaller file sizes and better performance for modern browsers that support it" ID="ID_739848117" CREATED="1519915664322" MODIFIED="1519915667225"/>
 </node>
 <node TEXT="If you are mostly targeting users with modern browsers, you can get away with a progressive method of using @font-face that only serves WOFF and WOFF2 formats" ID="ID_196845801" CREATED="1519915690706" MODIFIED="1519915690706"/>
 <node TEXT="And if a user&#x2019;s machine is so old that it doesn&#x2019;t support either of these formats, it may be better to just serve them a system font for performance reasons, anyway." ID="ID_974111287" CREATED="1519915774916" MODIFIED="1519915779171"/>
 </node>
 </node>
-<node TEXT="Nice to know" ID="ID_557912890" CREATED="1519979482931" MODIFIED="1519979496048">
+</node>
+<node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
+<node TEXT="pattern" FOLDED="true" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067">
+<node TEXT="BEM" FOLDED="true" ID="ID_1940557549" CREATED="1519894238217" MODIFIED="1520729068697">
+<node TEXT="The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project." ID="ID_936859935" CREATED="1519894303413" MODIFIED="1520729068696"/>
+<node TEXT="Block" FOLDED="true" ID="ID_1112380842" CREATED="1519894335941" MODIFIED="1519894342391">
+<node TEXT="In this CSS methodology a block is a top-level abstraction of a new component, for example a button: .btn { }. This block should be thought of as a parent." ID="ID_1119160721" CREATED="1519894409845" MODIFIED="1519894415511"/>
+</node>
+<node TEXT="Element" FOLDED="true" ID="ID_1841700336" CREATED="1519894344597" MODIFIED="1519894355119">
+<node TEXT="Child items, or elements, can be placed inside and these are denoted by two underscores following the name of the block like .btn__price { }" ID="ID_1207958680" CREATED="1519894449910" MODIFIED="1519894457663"/>
+</node>
+<node TEXT="Modifier" FOLDED="true" ID="ID_1007851719" CREATED="1519894357461" MODIFIED="1520350315103">
+<node TEXT="modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--orange" ID="ID_615609830" CREATED="1519894499766" MODIFIED="1520350315098" HGAP_QUANTITY="23.749999709427364 pt" VSHIFT_QUANTITY="-44.999998658895535 pt"/>
+</node>
+</node>
+</node>
+<node TEXT="Nice to know" FOLDED="true" ID="ID_557912890" CREATED="1519979482931" MODIFIED="1519979496048">
 <node TEXT="Centering in CSS" FOLDED="true" ID="ID_790494261" CREATED="1519979572897" MODIFIED="1519979636755">
 <node TEXT="Horizontally" FOLDED="true" ID="ID_1505863954" CREATED="1519979549753" MODIFIED="1519979565489">
 <node TEXT="Is it inline or inline-* elements (like text or links)?" FOLDED="true" ID="ID_1376535717" CREATED="1519979775803" MODIFIED="1519979779036">
@@ -1319,25 +1373,9 @@
 </node>
 </node>
 </node>
-<node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
-<node TEXT="pattern" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067">
-<node TEXT="BEM" ID="ID_1940557549" CREATED="1519894238217" MODIFIED="1519894241757">
-<node TEXT="The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project." ID="ID_936859935" CREATED="1519894303413" MODIFIED="1519894310215"/>
-<node TEXT="Block" ID="ID_1112380842" CREATED="1519894335941" MODIFIED="1519894342391">
-<node TEXT="In this CSS methodology a block is a top-level abstraction of a new component, for example a button: .btn { }. This block should be thought of as a parent." ID="ID_1119160721" CREATED="1519894409845" MODIFIED="1519894415511"/>
-</node>
-<node TEXT="Element" ID="ID_1841700336" CREATED="1519894344597" MODIFIED="1519894355119">
-<node TEXT="Child items, or elements, can be placed inside and these are denoted by two underscores following the name of the block like .btn__price { }" ID="ID_1207958680" CREATED="1519894449910" MODIFIED="1519894457663"/>
-</node>
-<node TEXT="Modifier" ID="ID_1007851719" CREATED="1519894357461" MODIFIED="1520350315103">
-<node TEXT="modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--orange" ID="ID_615609830" CREATED="1519894499766" MODIFIED="1520350315098" HGAP_QUANTITY="23.749999709427364 pt" VSHIFT_QUANTITY="-44.999998658895535 pt"/>
-</node>
-</node>
-</node>
-</node>
 <node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
-<node TEXT="language-core" FOLDED="true" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
+<node TEXT="language-core" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
 <node TEXT="It&#x2019;s a JavaScript expression that allows us to extract data from arrays, objects, maps and sets" ID="ID_546247236" CREATED="1515401730724" MODIFIED="1515401730724"/>
 <node TEXT="const person = {" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
@@ -1361,15 +1399,15 @@
 <node TEXT="Array" ID="ID_1703991624" CREATED="1517415246859" MODIFIED="1517415256432"/>
 </node>
 <node TEXT="Nice to know" FOLDED="true" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
-<node TEXT="Swap variables" ID="ID_1349446183" CREATED="1519028404553" MODIFIED="1519028413418">
+<node TEXT="Swap variables" FOLDED="true" ID="ID_1349446183" CREATED="1519028404553" MODIFIED="1519028413418">
 <node TEXT="Using Array Destructuring to swap values" ID="ID_461036412" CREATED="1519028786859" MODIFIED="1519028793980"/>
 <node TEXT="let a = &apos;world&apos;, b = &apos;hello&apos;&#xa;[a, b] = [b, a]&#xa;console.log(a) // -&gt; hello&#xa;console.log(b) // -&gt; world" ID="ID_531722019" CREATED="1519028812555" MODIFIED="1519028818445"/>
 </node>
-<node TEXT="&#x200a;Async/Await with Destructuring" ID="ID_292193455" CREATED="1519028429977" MODIFIED="1519028490564">
+<node TEXT="&#x200a;Async/Await with Destructuring" FOLDED="true" ID="ID_292193455" CREATED="1519028429977" MODIFIED="1519028490564">
 <node TEXT="Array Destructuring is great. Combined with async/await and promises to make a complex flow&#x200a;&#x2014;&#x200a;simple." ID="ID_223962593" CREATED="1519028865380" MODIFIED="1519028870037"/>
 <node TEXT="const [user, account] = await Promise.all([&#xa;  fetch(&apos;/user&apos;),&#xa;  fetch(&apos;/account&apos;)&#xa;])" ID="ID_1178965899" CREATED="1519028918508" MODIFIED="1519028925341"/>
 </node>
-<node TEXT="Debugging" ID="ID_1682582368" CREATED="1519028501769" MODIFIED="1519029565427">
+<node TEXT="Debugging" FOLDED="true" ID="ID_1682582368" CREATED="1519028501769" MODIFIED="1519029565427">
 <node TEXT="For anyone who likes to debug using console.logs, here&#x2019;s something awesome (and yes, I heard of console.table):" ID="ID_344186086" CREATED="1519029055596" MODIFIED="1519029061469"/>
 <node TEXT="const a = 5, b = 6, c = 7&#xa;console.log({ a, b, c })&#xa;// outputs this nice object:&#xa;// {&#xa;//    a: 5,&#xa;//    b: 6,&#xa;//    c: 7&#xa;// }" ID="ID_1165116257" CREATED="1519029097244" MODIFIED="1519029565415"/>
 </node>
@@ -1381,7 +1419,7 @@
 <node TEXT="The spread operator can be used instead of concat:" ID="ID_1859861927" CREATED="1519029332405" MODIFIED="1519029338110"/>
 <node TEXT="const one = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;]&#xa;const two = [&apos;d&apos;, &apos;e&apos;, &apos;f&apos;]&#xa;const three = [&apos;g&apos;, &apos;h&apos;, &apos;i&apos;]&#xa;// Old way #1&#xa;const result = one.concat(two, three)&#xa;// Old way #2&#xa;const result = [].concat(one, two, three)&#xa;// New&#xa;const result = [...one, ...two, ...three]" ID="ID_429922898" CREATED="1519029354118" MODIFIED="1519029570603"/>
 </node>
-<node TEXT="Cloning" ID="ID_722233131" CREATED="1519028674642" MODIFIED="1519028678763">
+<node TEXT="Cloning" FOLDED="true" ID="ID_722233131" CREATED="1519028674642" MODIFIED="1519028678763">
 <node TEXT="Clone arrays and objects with ease:" ID="ID_603180276" CREATED="1519029388806" MODIFIED="1519029395183"/>
 <node TEXT="const obj = { ...oldObj }&#xa;const arr = [ ...oldArr ]" ID="ID_526111138" CREATED="1519029402750" MODIFIED="1519029408278"/>
 </node>
@@ -1389,46 +1427,46 @@
 <node TEXT="Making function and function calls more readable with destructuring:" ID="ID_1194149736" CREATED="1519029495887" MODIFIED="1519029500671"/>
 <node TEXT="const getStuffNotBad = (id, force, verbose) =&gt; {&#xa;  ...do stuff&#xa;}&#xa;const getStuffAwesome = ({ id, name, force, verbose }) =&gt; {&#xa;  ...do stuff&#xa;}&#xa;// Somewhere else in the codebase... WTF is true, true?&#xa;getStuffNotBad(150, true, true)&#xa;// Somewhere else in the codebase... I &#x2764; JS!!!&#xa;getStuffAwesome({ id: 150, force: true, verbose: true })" ID="ID_1970621147" CREATED="1519029528455" MODIFIED="1519029534825"/>
 </node>
-<node TEXT="&#x200a;Method calling" ID="ID_1259802533" CREATED="1519115187767" MODIFIED="1519115193571">
+<node TEXT="&#x200a;Method calling" FOLDED="true" ID="ID_1259802533" CREATED="1519115187767" MODIFIED="1519115193571">
 <node TEXT="I really hate if/else blocks and this is quite a useful trick to call the right function based on a boolean value." ID="ID_1619973692" CREATED="1519115224895" MODIFIED="1519115230822"/>
 <node TEXT="if (success) {&#xa; obj.start();&#xa;} else {&#xa; obj.stop();&#xa;}&#xa;// Hipster-fun&#xa;var method = (success ? &#x2018;start&#x2019; : &#x2018;stop&#x2019;);&#xa;obj[method]();" ID="ID_1048963541" CREATED="1519115296671" MODIFIED="1519115302282"/>
 </node>
-<node TEXT="String joins" ID="ID_1260662783" CREATED="1519115391623" MODIFIED="1519115398409">
+<node TEXT="String joins" FOLDED="true" ID="ID_1260662783" CREATED="1519115391623" MODIFIED="1519115398409">
 <node TEXT="It&#x2019;s a known fact that strings like other strings. Sooner or later you&#x2019;d like to concatenate two or more of them. I don&#x2019;t really like +ing them together, so join() comes to the rescue." ID="ID_1897468137" CREATED="1519115424287" MODIFIED="1519115429545"/>
 <node TEXT="[&#x2018;first&#x2019;, &#x2018;name&#x2019;].join(&#x2018; &#x2018;); // = &#x2018;first name&#x2019;;&#xa;[&#x2018;milk&#x2019;, &#x2018;coffee&#x2019;, &#x2018;suger&#x2019;].join(&#x2018;, &#x2018;); // = &#x2018;milk, coffee, suger&#x2019;" ID="ID_1192095852" CREATED="1519115464959" MODIFIED="1519115472561"/>
 </node>
-<node TEXT="Default Operator ||" ID="ID_662796286" CREATED="1519115532111" MODIFIED="1519115550544">
+<node TEXT="Default Operator ||" FOLDED="true" ID="ID_662796286" CREATED="1519115532111" MODIFIED="1519115550544">
 <node TEXT="you can use the || operator to use the second argument if the first is falsy." ID="ID_1434509767" CREATED="1519115604999" MODIFIED="1519115643139"/>
 <node TEXT="// default to &#x2018;No name&#x2019; when myName is empty (or null, or undefined)&#xa;var name = myName || &#x2018;No name&#x2019;;&#xa;// make sure we have an options object&#xa;var doStuff = function(options) {&#xa; options = options || {};&#xa; // &#x2026;&#xa;};" ID="ID_831679601" CREATED="1519115645639" MODIFIED="1519115651753"/>
 </node>
-<node TEXT="&#x200a;Guard Operator &amp;&amp;" ID="ID_667792744" CREATED="1519115768919" MODIFIED="1519115775137">
+<node TEXT="&#x200a;Guard Operator &amp;&amp;" FOLDED="true" ID="ID_667792744" CREATED="1519115768919" MODIFIED="1519115775137">
 <node TEXT="Similar to the Default Operator, this one is super useful. It eliminates almost all IF calls and makes for a nicer code." ID="ID_1117621498" CREATED="1519115863463" MODIFIED="1519115893185"/>
 <node TEXT="// Boring&#xa;if (isThisAwesome) {&#xa; alert(&#x2018;yes&#x2019;); // it&#x2019;s not&#xa;}&#xa;// Awesome&#xa;isThisAwesome &amp;&amp; alert(&#x2018;yes&#x2019;);&#xa;// Also cool for guarding your code&#xa;var aCoolFunction = undefined;&#xa;aCoolFunction &amp;&amp; aCoolFunction(); // won&#x2019;t run nor crash" ID="ID_288544923" CREATED="1519115897479" MODIFIED="1519115902697"/>
 </node>
-<node TEXT="XXX Operator" ID="ID_1655386615" CREATED="1519115974496" MODIFIED="1519115981073">
+<node TEXT="XXX Operator" FOLDED="true" ID="ID_1655386615" CREATED="1519115974496" MODIFIED="1519115981073">
 <node TEXT="Whenever I write some code, but then have to consult the web, or a different part of the code, I add an xxx line to the code. This makes the code break so I can get back to the specific place and fix it later. Much easier to search for it (xxx usually never appears) and you don&#x2019;t have to think about a TODO comment." ID="ID_1365343180" CREATED="1519116028424" MODIFIED="1519116034378"/>
 <node TEXT="var z = 15;&#xa;doSomeMath(z, 10);&#xa;xxx // Great placeholder. I&#x2019;m the only one using xxx and it&#x2019;s so easy to find in code instead of TODOs&#xa;doSomeMoreMath(z, 15);" ID="ID_1924734707" CREATED="1519116055360" MODIFIED="1519116063194"/>
 </node>
-<node TEXT="Timing" ID="ID_261532242" CREATED="1519116161761" MODIFIED="1519116168786">
+<node TEXT="Timing" FOLDED="true" ID="ID_261532242" CREATED="1519116161761" MODIFIED="1520729583505">
 <node TEXT="Looping with an i++ or looping with an i&#x2014; ? Yeah, me neither. For those who does, you can use the console&#x2019;s timing methods to test for slow loops or any other event-loop blocking code." ID="ID_1803199767" CREATED="1519116206377" MODIFIED="1519116211042"/>
-<node TEXT="var a = [1,2,3,4,5,6,7,8,9,10];&#xa;console.time(&#x2018;testing_forward&#x2019;);&#xa;for (var i = 0; i &lt; a.length; i++);&#xa;console.timeEnd(&#x2018;testing_forward&#x2019;);&#xa;// output: testing_forward: 0.041ms&#xa;console.time(&#x2018;testing_backwards&#x2019;);&#xa;for (var i = a.length&#x200a;&#x2014;&#x200a;1; i &gt;= 0; i&#x2014;);&#xa;console.timeEnd(&#x2018;testing_backwards&#x2019;);&#xa;// output: testing_backwards: 0.030ms" ID="ID_412716623" CREATED="1519116225265" MODIFIED="1519116234211"/>
+<node TEXT="var a = [1,2,3,4,5,6,7,8,9,10];&#xa;console.time(&#x2018;testing_forward&#x2019;);&#xa;for (var i = 0; i &lt; a.length; i++);&#xa;console.timeEnd(&#x2018;testing_forward&#x2019;);&#xa;// output: testing_forward: 0.041ms&#xa;console.time(&#x2018;testing_backwards&#x2019;);&#xa;for (var i = a.length&#x200a;&#x2014;&#x200a;1; i &gt;= 0; i&#x2014;);&#xa;console.timeEnd(&#x2018;testing_backwards&#x2019;);&#xa;// output: testing_backwards: 0.030ms" ID="ID_412716623" CREATED="1519116225265" MODIFIED="1520729583502"/>
 </node>
-<node TEXT="Debugging" ID="ID_1446992001" CREATED="1519116272018" MODIFIED="1519116278187">
+<node TEXT="Debugging" FOLDED="true" ID="ID_1446992001" CREATED="1519116272018" MODIFIED="1519116278187">
 <node TEXT="I have absolutely no idea how he knew about it and I didn&#x2019;t, but I&#x2019;ve been using it ever since. Just drop a debugger statement and the debugger will stop on that line." ID="ID_479683088" CREATED="1519116358746" MODIFIED="1519116363876"/>
 <node TEXT="var x = 1;&#xa;debugger; // Code execution stops here, happy debugging&#xa;x++;&#xa;var x = Math.random(2);&#xa;if (x &gt; 0.5) {&#xa; debugger; // Conditional breakpoint&#xa;}&#xa;x&#x2014;;" ID="ID_1892670921" CREATED="1519116378842" MODIFIED="1519116384156"/>
 </node>
-<node TEXT="Old School Debugging" ID="ID_1623287005" CREATED="1519116416747" MODIFIED="1519116423996">
+<node TEXT="Old School Debugging" FOLDED="true" ID="ID_1623287005" CREATED="1519116416747" MODIFIED="1520729593839">
 <node TEXT="If you&#x2019;re like me, you&#x2019;ll want to &#x201c;export&#x201d; some private vars into the global scope in order to examine them from time to time. Don&#x2019;t forget to remove these before committing/pushing-to-production." ID="ID_1941188255" CREATED="1519116502644" MODIFIED="1519116506565"/>
-<node TEXT="var deeplyNestedFunction = function() {&#xa; var private_object = {&#xa; year: &#x2018;2013&apos;&#xa; };&#xa; // Globalize it for debugging:&#xa; pub = private_object;&#xa;};&#xa;// Now from the console (Chrome dev tools, firefox tools, etc)&#xa;pub.year;" ID="ID_1820095631" CREATED="1519116523068" MODIFIED="1519116528301"/>
+<node TEXT="var deeplyNestedFunction = function() {&#xa; var private_object = {&#xa; year: &#x2018;2013&apos;&#xa; };&#xa; // Globalize it for debugging:&#xa; pub = private_object;&#xa;};&#xa;// Now from the console (Chrome dev tools, firefox tools, etc)&#xa;pub.year;" ID="ID_1820095631" CREATED="1519116523068" MODIFIED="1520729593837"/>
 </node>
-<node TEXT="Ultra Light Templates" ID="ID_1574028339" CREATED="1519116563548" MODIFIED="1519116570637">
+<node TEXT="Ultra Light Templates" FOLDED="true" ID="ID_1574028339" CREATED="1519116563548" MODIFIED="1519116570637">
 <node TEXT="Are you still concatenating strings using the + operator? Here&#x2019;s a better way to combine a sentence with your data. It&#x2019;s called templating and here&#x2019;s a mini framework in 2.5 lines of code." ID="ID_548197350" CREATED="1519116585188" MODIFIED="1519116592894"/>
 <node TEXT="var firstName = &#x2018;Tal&#x2019;;&#xa;var screenName = &#x2018;ketacode&#x2019;&#xa;// Ugly&#xa;&#x2018;Hi, my name is &#x2018; + firstName + &#x2018; and my twitter screen name is @&#x2019; + screenName;&#xa;// Super&#xa;var template = &#x2018;Hi, my name is {first-name} and my twitter screen name is @{screen-name}&#x2019;;&#xa;var txt = template.replace(&#x2018;{first-name}&#x2019;, firstName)&#xa; .replace(&#x2018;{screen-name}&#x2019;, screenName);" ID="ID_675359012" CREATED="1519116646653" MODIFIED="1519116656047"/>
 </node>
 </node>
 </node>
 <node TEXT="Frontend" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
-<node TEXT="Web APIs" FOLDED="true" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
+<node TEXT="Web APIs" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
 <node TEXT="Web Application Programming Interfaces (Web APIs) are used to perform a variety of tasks, such as manipulating the DOM, playing audio or video, or generating 3D graphics." ID="ID_1839416238" CREATED="1517822841024" MODIFIED="1517822864936"/>
 <node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167"/>
 <node TEXT="Web Storage API" FOLDED="true" ID="ID_975504561" CREATED="1515661463986" MODIFIED="1515661463986">
@@ -1533,25 +1571,26 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="properties" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1518183729900">
+<node TEXT="properties" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1520729640707">
 <node TEXT="document" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1518688431758">
-<node TEXT="The Document interface represents any web page loaded in the browser and serves as an entry point into the web page&apos;s content, which is the DOM tree. The DOM tree includes elements such as &lt;body&gt; and &lt;table&gt;, among many others. It provides functionality globally to the document, like how to obtain the page&apos;s URL and create new elements in the document." ID="ID_309209743" CREATED="1518688425972" MODIFIED="1518688439665"/>
+<node TEXT="The Document interface represents any web page loaded in the browser and serves as an entry point into the web page&apos;s content, which is the DOM tree." ID="ID_309209743" CREATED="1518688425972" MODIFIED="1520729997993"/>
+<node TEXT="The DOM tree includes elements such as &lt;body&gt; and &lt;table&gt;, among many others. It provides functionality globally to the document, like how to obtain the page&apos;s URL and create new elements in the document." ID="ID_1721784397" CREATED="1520730004585" MODIFIED="1520730012113"/>
 <node TEXT="DOMTree" ID="ID_1575157735" CREATED="1518688537072" MODIFIED="1518688549086"/>
 <node TEXT="cookie" FOLDED="true" ID="ID_52380751" CREATED="1515591346369" MODIFIED="1515591353168">
 <node TEXT="show all cookies" FOLDED="true" ID="ID_126151023" CREATED="1515591363104" MODIFIED="1515591371563">
 <node TEXT="document.cookie" ID="ID_1545821702" CREATED="1515591375520" MODIFIED="1515591396272"/>
 </node>
 </node>
-<node TEXT="Element" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525">
+<node TEXT="Element" FOLDED="true" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525">
 <node TEXT="Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements." ID="ID_1706814041" CREATED="1519823638387" MODIFIED="1519823641701"/>
 <node TEXT="More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy." ID="ID_1009801161" CREATED="1519823669452" MODIFIED="1519823671957"/>
 </node>
-<node TEXT="images" ID="ID_1671593944" CREATED="1519823921478" MODIFIED="1519823935815">
+<node TEXT="images" FOLDED="true" ID="ID_1671593944" CREATED="1519823921478" MODIFIED="1519823935815">
 <node TEXT="The Document object&apos;s images property returns a collection of the images in the current HTML document." ID="ID_496035063" CREATED="1519823950910" MODIFIED="1519823952869"/>
 <node TEXT="var imageCollection = document.images;" ID="ID_1893581891" CREATED="1519823963158" MODIFIED="1519823966039"/>
 </node>
 </node>
-<node TEXT="crypto" FOLDED="true" ID="ID_1661758857" CREATED="1518181455829" MODIFIED="1518181461481">
+<node TEXT="crypto" ID="ID_1661758857" CREATED="1518181455829" MODIFIED="1518181461481">
 <node TEXT="The Window.crypto read-only property returns the Crypto object associated to the global object. This object allows web pages access to certain cryptographic related services. a cryptographic source of random numbers for a non-cryptographic source use math.random()" ID="ID_1077315428" CREATED="1518182742783" MODIFIED="1518183203028"/>
 <node TEXT="var cryptoObj = window.crypto || window.msCrypto; // for IE 11" ID="ID_1683961405" CREATED="1518182771522" MODIFIED="1518182771522"/>
 <node TEXT="getRandomValues(typedArray)" FOLDED="true" ID="ID_412669943" CREATED="1518182894763" MODIFIED="1518182894763">
@@ -1559,7 +1598,7 @@
 <node TEXT="window.crypto.getRandomValues(array);" ID="ID_1686671207" CREATED="1518182933364" MODIFIED="1518182933364"/>
 </node>
 </node>
-<node TEXT="math" ID="ID_1897025957" CREATED="1518183792764" MODIFIED="1518183799531"/>
+<node TEXT="math" ID="ID_1897025957" CREATED="1518183792764" MODIFIED="1520729640707"/>
 <node TEXT="innerHeight" FOLDED="true" ID="ID_986819134" CREATED="1519596430599" MODIFIED="1519596527241">
 <node TEXT="On return, intViewportHeight is the height of the browser window&apos;s viewport." ID="ID_1092744500" CREATED="1519596625461" MODIFIED="1519596628575"/>
 <node TEXT="var intViewportHeight = window.innerHeight;" ID="ID_1308933451" CREATED="1519596703301" MODIFIED="1519596705295"/>
@@ -1573,7 +1612,7 @@
 <node TEXT="The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities." ID="ID_126759162" CREATED="1520528118503" MODIFIED="1520528130179"/>
 <node TEXT="A Navigator object can be retrieved using the read-only window.navigator property." ID="ID_1126770568" CREATED="1520528141983" MODIFIED="1520528154489"/>
 <node TEXT="properties" ID="ID_1284873333" CREATED="1520528162064" MODIFIED="1520528168929"/>
-<node TEXT="methods" ID="ID_1912583178" CREATED="1520528172176" MODIFIED="1520528180657">
+<node TEXT="methods" FOLDED="true" ID="ID_1912583178" CREATED="1520528172176" MODIFIED="1520528180657">
 <node TEXT="activeVRDisplays" ID="ID_1479803165" CREATED="1520528395580" MODIFIED="1520528400515"/>
 <node TEXT="appCodeName" ID="ID_1247547594" CREATED="1520528228576" MODIFIED="1520528232674"/>
 <node TEXT="appName" ID="ID_1544737926" CREATED="1520528241504" MODIFIED="1520528245618"/>
@@ -2670,7 +2709,6 @@
 </node>
 </node>
 </node>
-<node TEXT="Funny stuff" ID="ID_1891427190" CREATED="1520518190848" MODIFIED="1520518839029"/>
 </node>
 <node TEXT="Links" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
 <edge COLOR="#ff00ff"/>
@@ -2717,6 +2755,10 @@
 <node TEXT="https://codesandbox.io/" ID="ID_1243070707" CREATED="1520416041708" MODIFIED="1520416041708" LINK="https://codesandbox.io/"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning" ID="ID_498373930" CREATED="1520591838268" MODIFIED="1520591849109"/>
 <node TEXT="https://webflow.com/" ID="ID_717463150" CREATED="1520601363869" MODIFIED="1520601367645"/>
+<node TEXT="https://developer.mozilla.org/en-US/docs/Web/Reference/API" ID="ID_374245847" CREATED="1520731066863" MODIFIED="1520731069683"/>
+<node TEXT="https://developer.mozilla.org/en-US/docs/Web/Events" ID="ID_1001295166" CREATED="1520731260598" MODIFIED="1520731263569"/>
+<node TEXT="https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95" ID="ID_1042616978" CREATED="1520731470133" MODIFIED="1520731474360"/>
+<node TEXT="p" ID="ID_612379101" CREATED="1520732743141" MODIFIED="1520732851056"/>
 </node>
 <node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -2877,8 +2919,8 @@
 <node TEXT="Firefox dev Tools" ID="ID_341753613" CREATED="1517909170190" MODIFIED="1517909180297"/>
 </node>
 <node TEXT="Version Control" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
-<node TEXT="Git" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
-<node TEXT="commands" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
+<node TEXT="Git" FOLDED="true" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
+<node TEXT="commands" FOLDED="true" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
 <node TEXT="git cherry-pick" FOLDED="true" ID="ID_931768391" CREATED="1517820565432" MODIFIED="1517820582422">
 <node TEXT="Here&apos;s the scenario: You&apos;re working in a feature branch that isn&apos;t quite ready for a full merge but you do have a few commits in there that you want to push to master (for a release or whatever reason). This is just one of possibly many situations where making use of Git&apos;s cherry-pick command might prove useful." ID="ID_672906785" CREATED="1517820603735" MODIFIED="1517820603735"/>
 <node TEXT="First, from within your feature branch, copy the first six or seven characters of the ID of the commit that you want to bring in: (use git log)" ID="ID_558811321" CREATED="1517820728494" MODIFIED="1517820788071"/>
@@ -2890,7 +2932,7 @@
 <node TEXT="Be wary of cherry-picking a lot of commits out of order, the Git log will reflect the order in which you cherry-picked, not the chronological order of the original commits (The original commit date is preserved, however)." ID="ID_989095425" CREATED="1517820997061" MODIFIED="1517820997061"/>
 </node>
 <node TEXT="credentials" ID="ID_1170751793" CREATED="1519290262464" MODIFIED="1519290267309">
-<node TEXT="get" ID="ID_769889911" CREATED="1519290285543" MODIFIED="1519290289192">
+<node TEXT="get" FOLDED="true" ID="ID_769889911" CREATED="1519290285543" MODIFIED="1519290289192">
 <node TEXT="git config --list" ID="ID_1951854395" CREATED="1519290295943" MODIFIED="1519290309698"/>
 </node>
 <node TEXT="set" FOLDED="true" ID="ID_214463756" CREATED="1519290314791" MODIFIED="1519290329089">
@@ -2900,6 +2942,7 @@
 </node>
 </node>
 </node>
+<node TEXT="svn" ID="ID_452984544" CREATED="1520729407081" MODIFIED="1520729413301"/>
 </node>
 <node TEXT="Ide" FOLDED="true" ID="ID_1795387417" CREATED="1517909035463" MODIFIED="1517909052048">
 <node TEXT="phpstorm" FOLDED="true" ID="ID_1915688729" CREATED="1516351424887" MODIFIED="1517301554346">
