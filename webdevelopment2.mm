@@ -54,7 +54,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="28" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="34" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Introduction" FOLDED="true" ID="ID_667219144" CREATED="1520200774244" MODIFIED="1520200783932">
@@ -955,26 +955,65 @@
 </node>
 </node>
 <node TEXT="Selectors" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
-<node TEXT="Simple selectors" FOLDED="true" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
+<node TEXT="Simple selectors" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
 <node TEXT="Type selector" FOLDED="true" ID="ID_835537567" CREATED="1519516109081" MODIFIED="1519516113404">
 <node TEXT="Selects all elements that match the given node name." ID="ID_1746383443" CREATED="1519516234152" MODIFIED="1519516237323"/>
 <node TEXT="Syntax: elementname" ID="ID_1020689451" CREATED="1519516246632" MODIFIED="1519516258043"/>
 <node TEXT="Example: input will match any &lt;input&gt; element." ID="ID_1622031297" CREATED="1519516276648" MODIFIED="1519516280331"/>
 </node>
-<node TEXT="Class selector" FOLDED="true" ID="ID_78596722" CREATED="1519516130281" MODIFIED="1519516140814">
+<node TEXT="Class selector" ID="ID_78596722" CREATED="1519516130281" MODIFIED="1519516140814">
 <node TEXT="Selects all elements that have the given class attribute." ID="ID_328956790" CREATED="1519516298888" MODIFIED="1519516302138"/>
 <node TEXT="Syntax: .classname" ID="ID_1674729382" CREATED="1519516309640" MODIFIED="1519516312802"/>
-<node TEXT="Example: .index will match any element that has a class of &quot;index&quot;." ID="ID_1413375340" CREATED="1519516320616" MODIFIED="1519516442209"/>
+<node TEXT="Examples:" ID="ID_1413375340" CREATED="1519516320616" MODIFIED="1520803903835">
+<node ID="ID_148585936" CREATED="1520803907877" MODIFIED="1520803907877"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      .index will match any element that has a class of &quot;index&quot;.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Combine the Class Selector" ID="ID_566063322" CREATED="1520803921480" MODIFIED="1520803927779">
+<node TEXT="ul.important" ID="ID_459094117" CREATED="1520803937968" MODIFIED="1520803940547"/>
+<node TEXT="selects all ul elements that have class=&quot;important&quot;" ID="ID_795924207" CREATED="1520803952608" MODIFIED="1520803956786"/>
+</node>
+</node>
 </node>
 <node TEXT="ID selector" FOLDED="true" ID="ID_460843935" CREATED="1519516142793" MODIFIED="1519516146291">
 <node TEXT="Selects an element based on the value of its id attribute. There should be only one element with a given ID in a document." ID="ID_1396421910" CREATED="1519516460743" MODIFIED="1519516464282"/>
 <node TEXT="Syntax: #idname" ID="ID_562692321" CREATED="1519516473487" MODIFIED="1519516479481"/>
 <node TEXT="Example: #toc will match the element that has the ID &quot;toc&quot;." ID="ID_1464503627" CREATED="1519516492089" MODIFIED="1519516495745"/>
 </node>
-<node TEXT="Universal selector" FOLDED="true" ID="ID_817231035" CREATED="1519516159105" MODIFIED="1519516171012">
+<node TEXT="Universal selector" ID="ID_817231035" CREATED="1519516159105" MODIFIED="1519516171012">
 <node TEXT="Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces." ID="ID_903491747" CREATED="1519516512774" MODIFIED="1519516515753"/>
-<node TEXT="Syntax: * ns|* *|*" ID="ID_1007987936" CREATED="1519516524246" MODIFIED="1519516527465"/>
-<node TEXT="Example: * will match all the elements of the document." ID="ID_561692138" CREATED="1519516535153" MODIFIED="1519516645953"/>
+<node TEXT="Syntax: * namespace|* *|*" ID="ID_1007987936" CREATED="1519516524246" MODIFIED="1520804560054"/>
+<node TEXT="Examples:" ID="ID_561692138" CREATED="1519516535153" MODIFIED="1520804541470">
+<node ID="ID_73035432" CREATED="1520804544709" MODIFIED="1520804544709"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      * will match all the elements of the document.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="p *" ID="ID_1872284890" CREATED="1520804575619" MODIFIED="1520804578229">
+<node TEXT="selects any element inside all p elements." ID="ID_1882078128" CREATED="1520804606507" MODIFIED="1520804611862"/>
+</node>
+</node>
 </node>
 <node TEXT="Attribute selector" FOLDED="true" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
 <node TEXT="Selects elements based on the value of the given attribute." ID="ID_714924094" CREATED="1519516649582" MODIFIED="1519516652784"/>
@@ -995,7 +1034,26 @@
 <node TEXT="Adjacent sibling combinator" ID="ID_683669578" CREATED="1519518750135" MODIFIED="1519518752650">
 <node TEXT="The + combinator selects adjacent siblings. This means that the second element directly follows the first, and both share the same parent." ID="ID_503399944" CREATED="1519518851310" MODIFIED="1519518854633"/>
 <node TEXT="Syntax: A + B" ID="ID_1449827583" CREATED="1519518867702" MODIFIED="1519518869833"/>
-<node TEXT="Example: h2 + p will match all &lt;p&gt; elements that directly follow an &lt;h2&gt;." ID="ID_981775896" CREATED="1519518891142" MODIFIED="1519518894249"/>
+<node TEXT="Examples:" ID="ID_981775896" CREATED="1519518891142" MODIFIED="1520804708253">
+<node ID="ID_1436482549" CREATED="1520804710564" MODIFIED="1520804710564"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      h2 + p will match all &lt;p&gt; elements that directly follow an &lt;h2&gt;.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="p + .intro" ID="ID_1759255465" CREATED="1520804745210" MODIFIED="1520804751708">
+<node TEXT="selects every element with class=&quot;intro&quot; that directly follows a p" ID="ID_955543334" CREATED="1520804766505" MODIFIED="1520804769356"/>
+</node>
+</node>
 </node>
 <node TEXT="General sibling combinator" ID="ID_432651750" CREATED="1519518763119" MODIFIED="1519518766106">
 <node TEXT="The ~ combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent." ID="ID_1933531855" CREATED="1519518954462" MODIFIED="1519518956289"/>
@@ -1008,15 +1066,34 @@
 <node TEXT="ul &gt; li will match all &lt;li&gt; elements that are nested directly inside a &lt;ul&gt; element." ID="ID_1835762929" CREATED="1519519159820" MODIFIED="1519519162415"/>
 </node>
 <node TEXT="Descendant combinator" ID="ID_1169938730" CREATED="1519518822143" MODIFIED="1519518824866">
-<node TEXT="The   combinator selects nodes that are descendants of the first element." ID="ID_305549736" CREATED="1519519201204" MODIFIED="1519519203502"/>
+<node TEXT="Select an element inside another element" ID="ID_1961895085" CREATED="1520803315432" MODIFIED="1520803323816"/>
+<node TEXT="The combinator selects nodes that are descendants of the first element." ID="ID_305549736" CREATED="1519519201204" MODIFIED="1520803294152"/>
 <node TEXT="Syntax: A B" ID="ID_1702071400" CREATED="1519519215828" MODIFIED="1519519217838"/>
-<node TEXT="Example: div span will match all &lt;span&gt; elements that are inside a &lt;div&gt; element." ID="ID_1589200782" CREATED="1519519231988" MODIFIED="1519519234326"/>
+<node TEXT="Examples" ID="ID_1589200782" CREATED="1519519231988" MODIFIED="1520803516598">
+<node TEXT="basic" ID="ID_1297436737" CREATED="1520803631989" MODIFIED="1520803638349">
+<node TEXT="p  strong" ID="ID_739204082" CREATED="1520803571371" MODIFIED="1520803575398"/>
+<node TEXT="selects all &lt;strong&gt; elements that are inside of any &lt;p&gt;" ID="ID_1169731581" CREATED="1520803595515" MODIFIED="1520803613357"/>
+</node>
+<node TEXT="You can combine any selector with the descendent selector." ID="ID_360106428" CREATED="1520803709058" MODIFIED="1520803712863">
+<node TEXT="#cool span" ID="ID_1910538864" CREATED="1520803726090" MODIFIED="1520803728964"/>
+<node TEXT="selects all span elements that are inside of elements with id=&quot;cool&quot;" ID="ID_925569728" CREATED="1520803748866" MODIFIED="1520803751788"/>
+</node>
+</node>
+</node>
+<node TEXT="Comma Combinator" ID="ID_650029037" CREATED="1520804128487" MODIFIED="1520804174498">
+<node TEXT="Combine, selectors, with... commas!" ID="ID_487372250" CREATED="1520804169390" MODIFIED="1520804191657"/>
+<node TEXT="Syntax: A, B" ID="ID_1610024356" CREATED="1520804207638" MODIFIED="1520804348983"/>
+<node TEXT="Thanks to Shatner technology, this selects all A and B elements. You can combine any selectors this way, and you can specify more than two." ID="ID_193162247" CREATED="1520804239598" MODIFIED="1520804242559"/>
+<node TEXT="Examples" ID="ID_1411385905" CREATED="1520804283805" MODIFIED="1520804293560">
+<node TEXT="p, .fun" ID="ID_1228429609" CREATED="1520804305717" MODIFIED="1520804310688"/>
+<node TEXT="selects all p elements as well as all elements with class=&quot;fun&quot;" ID="ID_1169459920" CREATED="1520804328205" MODIFIED="1520804331616"/>
+</node>
 </node>
 </node>
 <node TEXT="Pseudo-classes" ID="ID_1510060852" CREATED="1519516015090" MODIFIED="1519516030388">
 <node TEXT="pseudo-classes can be used to style an element based on its state." ID="ID_1423517617" CREATED="1519519700532" MODIFIED="1519519706251"/>
 <node TEXT="Like regular classes, you can chain together as many pseudo-classes as you want in a selector." ID="ID_755750842" CREATED="1519521426303" MODIFIED="1519521432023"/>
-<node TEXT="Index of standard pseudo-classes" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1519520377622">
+<node TEXT="Index of standard pseudo-classes" FOLDED="true" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1519520377622">
 <node TEXT=":active" ID="ID_1143391783" CREATED="1519520388396" MODIFIED="1519520395578"/>
 <node TEXT=":any" ID="ID_1341041150" CREATED="1519520397460" MODIFIED="1519520400502"/>
 <node TEXT=":any-link" ID="ID_941860286" CREATED="1519520453411" MODIFIED="1519520455814"/>
@@ -1062,7 +1139,7 @@
 <node TEXT=":visited" ID="ID_383763468" CREATED="1519521373797" MODIFIED="1519521377200"/>
 </node>
 </node>
-<node TEXT="Pseudo-elements" FOLDED="true" ID="ID_1307495510" CREATED="1519516070121" MODIFIED="1519516074348">
+<node TEXT="Pseudo-elements" ID="ID_1307495510" CREATED="1519516070121" MODIFIED="1519516074348">
 <node TEXT="pseudo-elements can be used to style a specific part of an element." ID="ID_893397212" CREATED="1519519744800" MODIFIED="1519519747811"/>
 <node TEXT="Index of standard pseudo-elements" FOLDED="true" ID="ID_13217850" CREATED="1519599535121" MODIFIED="1519599537940">
 <node TEXT="::after" FOLDED="true" ID="ID_400249708" CREATED="1519599546769" MODIFIED="1519599556043">
@@ -2713,7 +2790,6 @@
 <node TEXT="Links" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
 <edge COLOR="#ff00ff"/>
 <node TEXT="https://unpkg.com/#/" ID="ID_1678468185" CREATED="1515277921812" MODIFIED="1515277921812" LINK="https://unpkg.com/#/"/>
-<node TEXT="https://github.com/thedaviddias/Front-End-Checklist" ID="ID_934011737" CREATED="1515411958783" MODIFIED="1515411958783" LINK="https://github.com/thedaviddias/Front-End-Checklist"/>
 <node TEXT="exploringjs" ID="ID_1451437478" CREATED="1515412927697" MODIFIED="1515412927697" LINK="http://exploringjs.com"/>
 <node TEXT="https://www.reactenlightenment.com" ID="ID_894549795" CREATED="1515425856731" MODIFIED="1515425856731" LINK="https://www.reactenlightenment.com"/>
 <node TEXT="https://www.youtube.com/watch?v=DiLVAXlVYR0&amp;list=PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a" ID="ID_1306586648" CREATED="1515428619298" MODIFIED="1515428619298" LINK="https://www.youtube.com/watch?v=DiLVAXlVYR0&amp;list=PL6gx4Cwl9DGBbSLZjvleMwldX8jGgXV6a"/>
@@ -2734,31 +2810,26 @@
 </node>
 <node TEXT="https://plainjs.com" ID="ID_1562625326" CREATED="1516020613621" MODIFIED="1516020613621" LINK="https://plainjs.com"/>
 <node TEXT="https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html" ID="ID_1161989762" CREATED="1516182767397" MODIFIED="1516182767397" LINK="https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html"/>
-<node TEXT="http://browserbench.org/" ID="ID_1907237727" CREATED="1516203217601" MODIFIED="1516203217601" LINK="http://browserbench.org/"/>
-<node TEXT="http://loremricksum.com" ID="ID_137981762" CREATED="1516207717227" MODIFIED="1516207717227" LINK="http://loremricksum.com"/>
 <node TEXT="https://bitsofco.de/rules-for-using-aria-in-html/" ID="ID_1244914068" CREATED="1516984359518" MODIFIED="1516984359518" LINK="https://bitsofco.de/rules-for-using-aria-in-html/"/>
 <node TEXT="https://www.fullstackreact.com/30-days-of-react/" ID="ID_309617329" CREATED="1517579792218" MODIFIED="1517579792218" LINK="https://www.fullstackreact.com/30-days-of-react/"/>
 <node TEXT="https://testmysite.withgoogle.com/intl/en-gb" ID="ID_277109062" CREATED="1517836656137" MODIFIED="1517836656137" LINK="https://testmysite.withgoogle.com/intl/en-gb"/>
-<node TEXT="https://sonarwhal.com/" ID="ID_1330114462" CREATED="1517836675801" MODIFIED="1517836675801" LINK="https://sonarwhal.com/"/>
 <node TEXT="https://testmysite.withgoogle.com/intl/en-gb" ID="ID_1953440308" CREATED="1517838500036" MODIFIED="1517838500036" LINK="https://testmysite.withgoogle.com/intl/en-gb"/>
 <node TEXT="https://www.npmjs.com/package/webpack-bundle-analyzer" ID="ID_1542456321" CREATED="1517841584063" MODIFIED="1517841584063" LINK="https://www.npmjs.com/package/webpack-bundle-analyzer"/>
 <node TEXT="http://www.cs.ucc.ie/~gavin/javascript/05_JS4.html" ID="ID_456245604" CREATED="1518088710918" MODIFIED="1518088710918" LINK="http://www.cs.ucc.ie/~gavin/javascript/05_JS4.html"/>
 <node TEXT="https://hackernoon.com/" ID="ID_1877415063" CREATED="1518166662524" MODIFIED="1518166662524" LINK="https://hackernoon.com/"/>
 <node TEXT="http://vanseodesign.com/css/vertical-centering/" ID="ID_192734385" CREATED="1518166978288" MODIFIED="1518166978288" LINK="http://vanseodesign.com/css/vertical-centering/"/>
 <node TEXT="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b" ID="ID_1358236291" CREATED="1519059367226" MODIFIED="1519059367226" LINK="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b"/>
-<node TEXT="https://pixabay.com/" ID="ID_1896151085" CREATED="1519599278403" MODIFIED="1519599281917"/>
 <node TEXT="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" ID="ID_236529775" CREATED="1519898225296" MODIFIED="1519898231796"/>
 <node TEXT="https://css-tricks.com/centering-css-complete-guide/" ID="ID_979728172" CREATED="1520008115370" MODIFIED="1520008118451"/>
 <node TEXT="https://www.w3schools.com/tags/ref_eventattributes.asp" ID="ID_567894034" CREATED="1520175680530" MODIFIED="1520175680530" LINK="https://www.w3schools.com/tags/ref_eventattributes.asp"/>
 <node TEXT="https://www.w3.org/WAI/" ID="ID_372511871" CREATED="1520193221449" MODIFIED="1520193225028"/>
 <node TEXT="https://archive.org/" ID="ID_1563329911" CREATED="1520202706002" MODIFIED="1520202709446"/>
-<node TEXT="https://codesandbox.io/" ID="ID_1243070707" CREATED="1520416041708" MODIFIED="1520416041708" LINK="https://codesandbox.io/"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning" ID="ID_498373930" CREATED="1520591838268" MODIFIED="1520591849109"/>
 <node TEXT="https://webflow.com/" ID="ID_717463150" CREATED="1520601363869" MODIFIED="1520601367645"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/Reference/API" ID="ID_374245847" CREATED="1520731066863" MODIFIED="1520731069683"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/Events" ID="ID_1001295166" CREATED="1520731260598" MODIFIED="1520731263569"/>
 <node TEXT="https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95" ID="ID_1042616978" CREATED="1520731470133" MODIFIED="1520731474360"/>
-<node TEXT="p" ID="ID_612379101" CREATED="1520732743141" MODIFIED="1520732851056"/>
+<node TEXT="/" ID="ID_612379101" CREATED="1520732743141" MODIFIED="1520801745533"/>
 </node>
 <node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -2989,14 +3060,14 @@
 </node>
 </node>
 </node>
-<node TEXT="SEO" POSITION="right" ID="ID_638400976" CREATED="1519810448980" MODIFIED="1519810484486" HGAP_QUANTITY="14.749999977648258 pt" VSHIFT_QUANTITY="22.499999329447768 pt">
+<node TEXT="SEO" FOLDED="true" POSITION="right" ID="ID_638400976" CREATED="1519810448980" MODIFIED="1519810484486" HGAP_QUANTITY="14.749999977648258 pt" VSHIFT_QUANTITY="22.499999329447768 pt">
 <edge COLOR="#808080"/>
-<node TEXT="Web Robots" ID="ID_83558834" CREATED="1519810636949" MODIFIED="1519810640735">
+<node TEXT="Web Robots" FOLDED="true" ID="ID_83558834" CREATED="1519810636949" MODIFIED="1519810640735">
 <node TEXT="Web Robots (also known as Web Wanderers, Crawlers, or Spiders), are programs that traverse the Web automatically. Search engines such as Google use them to index the web content, spammers use them to scan for email addresses, and they have many other uses." ID="ID_592013503" CREATED="1519810663517" MODIFIED="1519810666264"/>
-<node TEXT="robots.txt" ID="ID_850791400" CREATED="1519810684550" MODIFIED="1519810687736">
+<node TEXT="robots.txt" FOLDED="true" ID="ID_850791400" CREATED="1519810684550" MODIFIED="1519810687736">
 <node TEXT="Web site owners use the /robots.txt file to give instructions about their site to web robots; this is called The Robots Exclusion Protocol." ID="ID_490544813" CREATED="1519810726278" MODIFIED="1519810729159"/>
 <node TEXT="It works likes this: a robot wants to vists a Web site URL, say http://www.example.com/welcome.html. Before it does so, it firsts checks for http://www.example.com/robots.txt" ID="ID_954260521" CREATED="1519810753014" MODIFIED="1519810914337"/>
-<node ID="ID_843743971" CREATED="1519810826637" MODIFIED="1519810826637"><richcontent TYPE="NODE">
+<node FOLDED="true" ID="ID_843743971" CREATED="1519810826637" MODIFIED="1519810826637"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -3011,20 +3082,20 @@
 <node TEXT="the /robots.txt file is a publicly available file. Anyone can see what sections of your server you don&apos;t want robots to use." ID="ID_1290025858" CREATED="1519810898455" MODIFIED="1519810901504"/>
 </node>
 <node TEXT="details" ID="ID_259280722" CREATED="1519811197416" MODIFIED="1519811201322"/>
-<node TEXT="Examples" ID="ID_814229988" CREATED="1519811207721" MODIFIED="1519811214427">
-<node TEXT="tells all robots to stay out of a website" ID="ID_869033388" CREATED="1519811240450" MODIFIED="1519811242067">
+<node TEXT="Examples" FOLDED="true" ID="ID_814229988" CREATED="1519811207721" MODIFIED="1519811214427">
+<node TEXT="tells all robots to stay out of a website" FOLDED="true" ID="ID_869033388" CREATED="1519811240450" MODIFIED="1519811242067">
 <node TEXT="User-agent: *&#xa;Disallow: /" ID="ID_1561363987" CREATED="1519811257170" MODIFIED="1519811260507"/>
 </node>
-<node TEXT="tells all robots not to enter three directories" ID="ID_912536352" CREATED="1519811303186" MODIFIED="1519811307148">
+<node TEXT="tells all robots not to enter three directories" FOLDED="true" ID="ID_912536352" CREATED="1519811303186" MODIFIED="1519811307148">
 <node TEXT="User-agent: *&#xa;Disallow: /cgi-bin/&#xa;Disallow: /tmp/&#xa;Disallow: /junk/" ID="ID_356187715" CREATED="1519811323347" MODIFIED="1519811325215"/>
 </node>
-<node TEXT="tells all robots to stay away from one specific file" ID="ID_496349694" CREATED="1519811348635" MODIFIED="1519811355124">
+<node TEXT="tells all robots to stay away from one specific file" FOLDED="true" ID="ID_496349694" CREATED="1519811348635" MODIFIED="1519811355124">
 <node TEXT="User-agent: *&#xa;Disallow: /directory/file.html" ID="ID_1187669146" CREATED="1519811373195" MODIFIED="1519811375468"/>
 </node>
-<node TEXT="tells two specific robots not to enter one specific directory:" ID="ID_230345579" CREATED="1519811393988" MODIFIED="1519811395991">
+<node TEXT="tells two specific robots not to enter one specific directory:" FOLDED="true" ID="ID_230345579" CREATED="1519811393988" MODIFIED="1519811395991">
 <node TEXT="User-agent: BadBot # replace &apos;BadBot&apos; with the actual user-agent of the bot&#xa;User-agent: Googlebot&#xa;Disallow: /private/" ID="ID_848993986" CREATED="1519811417996" MODIFIED="1519811420765"/>
 </node>
-<node ID="ID_768606045" CREATED="1519811441680" MODIFIED="1519811479137"><richcontent TYPE="NODE">
+<node FOLDED="true" ID="ID_768606045" CREATED="1519811441680" MODIFIED="1519811479137"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -3037,44 +3108,44 @@
 </richcontent>
 <node TEXT="# Comments appear after the &quot;#&quot; symbol at the start of a line, or after a directive&#xa;User-agent: * # match all bots&#xa;Disallow: / # keep them out" ID="ID_954398389" CREATED="1519811759399" MODIFIED="1519811762257"/>
 </node>
-<node TEXT=" multiple user-agents" ID="ID_150246788" CREATED="1519811711343" MODIFIED="1519811717336">
+<node TEXT=" multiple user-agents" FOLDED="true" ID="ID_150246788" CREATED="1519811711343" MODIFIED="1519811717336">
 <node TEXT="User-agent: googlebot        # all Google services&#xa;Disallow: /private/          # disallow this directory&#xa;&#xa;User-agent: googlebot-news   # only the news service&#xa;Disallow: /                  # disallow everything&#xa;&#xa;User-agent: *                # any robot&#xa;Disallow: /something/        # disallow this directory" ID="ID_371654702" CREATED="1519811746975" MODIFIED="1519811749242"/>
 </node>
 </node>
 <node TEXT="standard extensions" ID="ID_615652671" CREATED="1519811631718" MODIFIED="1519811650935"/>
-<node TEXT="Nonstandard extensions" ID="ID_845395251" CREATED="1519811656454" MODIFIED="1519811681319">
-<node TEXT="Crawl-delay directive" ID="ID_1956007631" CREATED="1519811792271" MODIFIED="1519811794504">
+<node TEXT="Nonstandard extensions" FOLDED="true" ID="ID_845395251" CREATED="1519811656454" MODIFIED="1519811681319">
+<node TEXT="Crawl-delay directive" FOLDED="true" ID="ID_1956007631" CREATED="1519811792271" MODIFIED="1519811794504">
 <node TEXT="The crawl-delay value is supported by some crawlers to throttle their visits to the host." ID="ID_272833482" CREATED="1519812306187" MODIFIED="1519812322428"/>
 <node TEXT=" Since this value is not part of the standard, its interpretation is dependent on the crawler reading it." ID="ID_1253382865" CREATED="1519812328067" MODIFIED="1519812348053"/>
 <node TEXT="Yandex interprets the value as the number of seconds to wait between subsequent visits.[15] Bing defines crawl-delay as the size of a time window (from 1 to 30 seconds) during which BingBot will access a web site only once." ID="ID_1056389432" CREATED="1519812350771" MODIFIED="1519812355060"/>
 <node TEXT="User-agent: *&#xa;Crawl-delay: 10" ID="ID_1784214099" CREATED="1519812446396" MODIFIED="1519812449468"/>
 </node>
-<node TEXT="Allow directive" ID="ID_1868734840" CREATED="1519811803600" MODIFIED="1519811806080">
+<node TEXT="Allow directive" FOLDED="true" ID="ID_1868734840" CREATED="1519811803600" MODIFIED="1519811806080">
 <node TEXT="Some major crawlers support an Allow directive, which can counteract a following Disallow directive." ID="ID_739359574" CREATED="1519812376171" MODIFIED="1519812379092"/>
 <node TEXT="This is useful when one tells robots to avoid an entire directory but still wants some HTML documents in that directory crawled and indexed." ID="ID_1485207163" CREATED="1519812422732" MODIFIED="1519812432517"/>
 <node TEXT="Google&apos;s implementation differs in that Allow patterns with equal or more characters in the directive path win over a matching Disallow pattern.[31] Bing uses either the Allow or Disallow directive, whichever is more specific, based on length, like Google" ID="ID_98399542" CREATED="1519812552772" MODIFIED="1519812565062"/>
 <node TEXT="Allow: /directory1/myfile.html&#xa;Disallow: /directory1/" ID="ID_210592083" CREATED="1519812589269" MODIFIED="1519812591822"/>
 </node>
-<node TEXT="Sitemap" ID="ID_617001778" CREATED="1519811840384" MODIFIED="1519811842977">
+<node TEXT="Sitemap" FOLDED="true" ID="ID_617001778" CREATED="1519811840384" MODIFIED="1519811842977">
 <node TEXT="Some crawlers support a Sitemap directive, allowing multiple Sitemaps in the same robots.txt in the form" ID="ID_1408833196" CREATED="1519812646437" MODIFIED="1519812649350"/>
 <node TEXT="Sitemap: http://www.gstatic.com/s2/sitemaps/profiles-sitemap.xml&#xa;&#xa;Sitemap: http://www.google.com/hostednews/sitemap_index.xml" ID="ID_607582799" CREATED="1519812658893" MODIFIED="1519812661182"/>
 </node>
-<node TEXT="Host" ID="ID_678546290" CREATED="1519811850320" MODIFIED="1519811853186">
-<node TEXT="Some crawlers (Yandex) support a Host directive, allowing websites with multiple mirrors to specify their preferred domain:" ID="ID_459729331" CREATED="1519812693549" MODIFIED="1519812697054">
+<node TEXT="Host" FOLDED="true" ID="ID_678546290" CREATED="1519811850320" MODIFIED="1519811853186">
+<node TEXT="Some crawlers (Yandex) support a Host directive, allowing websites with multiple mirrors to specify their preferred domain:" FOLDED="true" ID="ID_459729331" CREATED="1519812693549" MODIFIED="1519812697054">
 <node TEXT="Host: example.com&#xa;Or alternatively:&#xa;&#xa;Host: www.example.com" ID="ID_1261594092" CREATED="1519812710181" MODIFIED="1519812712750"/>
 </node>
 </node>
-<node TEXT="Universal &quot;*&quot; match" ID="ID_1070996646" CREATED="1519811864120" MODIFIED="1519811867009">
+<node TEXT="Universal &quot;*&quot; match" FOLDED="true" ID="ID_1070996646" CREATED="1519811864120" MODIFIED="1519811867009">
 <node TEXT="The Robot Exclusion Standard does not mention anything about the &quot;*&quot; character in the Disallow: statement. Some crawlers like Googlebot recognize strings containing &quot;*&quot;, while MSNbot and Teoma interpret it in different ways." ID="ID_491795505" CREATED="1519812738038" MODIFIED="1519812740255"/>
 </node>
 </node>
 <node TEXT="By standard implementation the first matching robots.txt pattern always wins" ID="ID_964910393" CREATED="1519812492820" MODIFIED="1519812511869"/>
 </node>
-<node TEXT="Meta tags" ID="ID_126904036" CREATED="1519811560638" MODIFIED="1519811563471">
+<node TEXT="Meta tags" FOLDED="true" ID="ID_126904036" CREATED="1519811560638" MODIFIED="1519811563471">
 <node TEXT="The robots meta tag cannot be used for non-HTML files such as images, text files, or PDF documents." ID="ID_175273668" CREATED="1519811914200" MODIFIED="1519811917241"/>
 <node TEXT="&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot; /&gt;" ID="ID_690451716" CREATED="1519811967809" MODIFIED="1519811970538"/>
 </node>
-<node TEXT="headers" ID="ID_1536502555" CREATED="1519811573422" MODIFIED="1519811576231">
+<node TEXT="headers" FOLDED="true" ID="ID_1536502555" CREATED="1519811573422" MODIFIED="1519811576231">
 <node TEXT="the X-Robots-Tag can be added to non-HTML files by using .htaccess and httpd.conf files" ID="ID_1668830211" CREATED="1519811943689" MODIFIED="1519811946210"/>
 <node TEXT="A &quot;noindex&quot; HTTP response header" ID="ID_1231279097" CREATED="1519811985521" MODIFIED="1519811987826"/>
 <node TEXT="X-Robots-Tag: noindex" ID="ID_959373822" CREATED="1519811995737" MODIFIED="1519811998138"/>
@@ -3083,6 +3154,55 @@
 <node TEXT="The robots meta tag is only effective after the page has loaded," ID="ID_1616031907" CREATED="1519812103378" MODIFIED="1519812135331"/>
 <node TEXT="The robots.txt is effective before the page is requested. Thus if a page is excluded by a robots.txt file, any robots meta tags or X-Robots-Tag headers are effectively ignored because the robot will not see them in the first place." ID="ID_8210027" CREATED="1519812219354" MODIFIED="1519812242476"/>
 </node>
+</node>
+<node TEXT="resources" POSITION="left" ID="ID_1581341897" CREATED="1520782397246" MODIFIED="1520783402955">
+<edge COLOR="#808080"/>
+<node TEXT="Free Assets" ID="ID_1711960708" CREATED="1520782308767" MODIFIED="1520782318049">
+<node TEXT="pictures" ID="ID_1221541658" CREATED="1520782326462" MODIFIED="1520782331113">
+<node TEXT="https://pixabay.com/" ID="ID_1896151085" CREATED="1519599278403" MODIFIED="1519599281917"/>
+</node>
+<node TEXT="fonts" ID="ID_737167053" CREATED="1520782504053" MODIFIED="1520782510343"/>
+<node TEXT="video" ID="ID_104993054" CREATED="1520782534708" MODIFIED="1520782539991">
+<node TEXT="https://search.creativecommons.org/" ID="ID_27517993" CREATED="1520783154290" MODIFIED="1520783154290" LINK="https://search.creativecommons.org/"/>
+<node TEXT="http://www.coverr.co/" ID="ID_1184700972" CREATED="1520783217961" MODIFIED="1520783217961" LINK="http://www.coverr.co/"/>
+</node>
+</node>
+<node TEXT="service mockups" ID="ID_1155776576" CREATED="1520783400728" MODIFIED="1520783412208">
+<node TEXT="https://jsonplaceholder.typicode.com/" ID="ID_312084990" CREATED="1520783465201" MODIFIED="1520783465201" LINK="https://jsonplaceholder.typicode.com/"/>
+</node>
+<node TEXT="auditing" ID="ID_1103733360" CREATED="1520782558644" MODIFIED="1520782565439">
+<node TEXT="https://sonarwhal.com/" ID="ID_1330114462" CREATED="1517836675801" MODIFIED="1517836675801" LINK="https://sonarwhal.com/"/>
+<node TEXT="http://browserbench.org/" ID="ID_1907237727" CREATED="1516203217601" MODIFIED="1516203217601" LINK="http://browserbench.org/"/>
+</node>
+<node TEXT="software engineering" ID="ID_1461020095" CREATED="1520782711915" MODIFIED="1520782737381">
+<node TEXT="checklists" ID="ID_250505180" CREATED="1520782842898" MODIFIED="1520782873004">
+<node TEXT="https://github.com/thedaviddias/Front-End-Checklist" ID="ID_934011737" CREATED="1515411958783" MODIFIED="1515411958783" LINK="https://github.com/thedaviddias/Front-End-Checklist"/>
+</node>
+</node>
+<node TEXT="online editors" ID="ID_1719754808" CREATED="1520782759395" MODIFIED="1520782767693">
+<node TEXT="https://webflow.com/" ID="ID_1818196222" CREATED="1520601363869" MODIFIED="1520601367645"/>
+<node TEXT="&lt;https://codesandbox.io/&gt;" ID="ID_551852019" CREATED="1520782924393" MODIFIED="1520782927996"/>
+</node>
+<node TEXT="converter/generator" ID="ID_303397703" CREATED="1520782896786" MODIFIED="1520782905028">
+<node TEXT="lorem" ID="ID_936891044" CREATED="1520782954857" MODIFIED="1520782959140">
+<node TEXT="http://loremricksum.com" ID="ID_137981762" CREATED="1516207717227" MODIFIED="1516207717227" LINK="http://loremricksum.com"/>
+</node>
+</node>
+<node TEXT="dev news/blogs" ID="ID_1853924662" CREATED="1520782997977" MODIFIED="1520783011699"/>
+<node TEXT="learning" ID="ID_1263329411" CREATED="1520801676106" MODIFIED="1520801695191">
+<node TEXT="interactive" ID="ID_1145864293" CREATED="1520801691298" MODIFIED="1520801709151">
+<node TEXT="css" ID="ID_1902075329" CREATED="1520801707690" MODIFIED="1520801713477">
+<node TEXT="http://flukeout.github.io/" ID="ID_1797280075" CREATED="1520802152522" MODIFIED="1520802152522" LINK="http://flukeout.github.io/"/>
+</node>
+</node>
+<node TEXT="plattform" ID="ID_369395078" CREATED="1520801915048" MODIFIED="1520801922483">
+<node TEXT="https://frontendmasters.com/books/front-end-handbook/2017/" ID="ID_1714048269" CREATED="1520801927389" MODIFIED="1520801927389" LINK="https://frontendmasters.com/books/front-end-handbook/2017/"/>
+</node>
+</node>
+</node>
+<node TEXT="Protocols" POSITION="right" ID="ID_155934142" CREATED="1520803096799" MODIFIED="1520803121593">
+<edge COLOR="#808080"/>
+<node TEXT="http" ID="ID_1251503067" CREATED="1520803131687" MODIFIED="1520803136161"/>
 </node>
 </node>
 </map>
