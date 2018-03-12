@@ -977,7 +977,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Combine the Class Selector" ID="ID_566063322" CREATED="1520803921480" MODIFIED="1520803927779">
@@ -1007,7 +1006,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="p *" ID="ID_1872284890" CREATED="1520804575619" MODIFIED="1520804578229">
@@ -1015,9 +1013,9 @@
 </node>
 </node>
 </node>
-<node TEXT="Attribute selector" FOLDED="true" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
+<node TEXT="Attribute selector" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
 <node TEXT="Selects elements based on the value of the given attribute." ID="ID_714924094" CREATED="1519516649582" MODIFIED="1519516652784"/>
-<node TEXT="Syntax" FOLDED="true" ID="ID_421978559" CREATED="1519516666413" MODIFIED="1519516685336">
+<node TEXT="Syntax" ID="ID_421978559" CREATED="1519516666413" MODIFIED="1519516685336">
 <node TEXT="[attr]" ID="ID_1736624769" CREATED="1519517625687" MODIFIED="1519517628386"/>
 <node TEXT="[attr=value]" ID="ID_953712981" CREATED="1519517646367" MODIFIED="1519517653658"/>
 <node TEXT="[attr~=value]" ID="ID_260064258" CREATED="1519517662375" MODIFIED="1519517676266"/>
@@ -1047,7 +1045,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="p + .intro" ID="ID_1759255465" CREATED="1520804745210" MODIFIED="1520804751708">
@@ -1382,7 +1379,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Nice to know" FOLDED="true" ID="ID_557912890" CREATED="1519979482931" MODIFIED="1519979496048">
+<node TEXT="Nice to know" ID="ID_557912890" CREATED="1519979482931" MODIFIED="1519979496048">
 <node TEXT="Centering in CSS" FOLDED="true" ID="ID_790494261" CREATED="1519979572897" MODIFIED="1519979636755">
 <node TEXT="Horizontally" FOLDED="true" ID="ID_1505863954" CREATED="1519979549753" MODIFIED="1519979565489">
 <node TEXT="Is it inline or inline-* elements (like text or links)?" FOLDED="true" ID="ID_1376535717" CREATED="1519979775803" MODIFIED="1519979779036">
@@ -1717,8 +1714,13 @@
 <node TEXT="Methods" ID="ID_903700765" CREATED="1518183733206" MODIFIED="1518183740755"/>
 </node>
 </node>
+<node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
+<node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049"/>
+<node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313"/>
 </node>
-<node TEXT="Backend" FOLDED="true" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1519600829138">
+</node>
+<node TEXT="Backend" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1519600829138">
+<node TEXT="package manager" ID="ID_1942439244" CREATED="1520847895013" MODIFIED="1520849522891">
 <node TEXT="npm" FOLDED="true" ID="ID_647511561" CREATED="1516023069009" MODIFIED="1516023111358" LINK="https://www.google.de/url?sa=i&amp;rct=j&amp;q=&amp;esrc=s&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiPlL-yiNrYAhXIIOwKHRIYDEcQjhwIBQ&amp;url=https%3A%2F%2Fshop.tcgplayer.com%2Fmagic%2Fmirage%2Fcatacomb-dragon&amp;psig=AOvVaw36v1uHftSs-BeO3TpHgJnI&amp;ust=1516109029133545">
 <node TEXT="Intro" FOLDED="true" ID="ID_1875273331" CREATED="1516555844183" MODIFIED="1516555850799">
 <node TEXT="NPM is an acronym for Node.js Package Manager" ID="ID_1420772470" CREATED="1516480940094" MODIFIED="1516480949054"/>
@@ -2044,6 +2046,8 @@
 </node>
 </node>
 </node>
+<node TEXT="yarn" ID="ID_1512784151" CREATED="1520849531599" MODIFIED="1520849538049"/>
+</node>
 <node TEXT="Node" FOLDED="true" ID="ID_1498818952" CREATED="1516178559275" MODIFIED="1519600829138">
 <node TEXT="Overview of JavaScript Modules" FOLDED="true" ID="ID_943227875" CREATED="1516482047814" MODIFIED="1516482057126">
 <node TEXT="basics" FOLDED="true" ID="ID_1115643175" CREATED="1516484931146" MODIFIED="1516484977466">
@@ -2235,353 +2239,70 @@
 <node TEXT="Supports multiline commands, customize command promptand preconfigured context" ID="ID_788880333" CREATED="1516480781927" MODIFIED="1516480781927"/>
 </node>
 </node>
-</node>
-<node TEXT="Frameworks" ID="ID_1455965189" CREATED="1515277360141" MODIFIED="1519600780211">
-<node TEXT="React" FOLDED="true" ID="ID_598934165" CREATED="1515277387469" MODIFIED="1515279500825">
-<node TEXT="Quick Setup" FOLDED="true" ID="ID_1044908776" CREATED="1515277487524" MODIFIED="1515323490525">
-<node TEXT="1. Create an HTML file" ID="ID_409408142" CREATED="1515277527954" MODIFIED="1515277527954"/>
-<node TEXT="2. Add scripts to include react.js, react-dom.js and babel.js inside the head of the HTML file" FOLDED="true" ID="ID_374162392" CREATED="1515277539612" MODIFIED="1515323485901">
-<font NAME="SansSerif" SIZE="12"/>
-<node TEXT="&lt;script src=&quot;https://unpkg.com/react@15/dist/react.min.js&quot;&gt;&lt;/script&gt;       &lt;script src=&quot;https://unpkg.com/react-dom@15/dist/react-dom.min.js&quot;&gt;&lt;/script&gt;       &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js&quot;&gt;&lt;/script&gt;" ID="ID_442861313" CREATED="1515278725785" MODIFIED="1515278725785" LINK="https://unpkg.com/react@15/dist/react.min.js"/>
-</node>
-<node TEXT="3. Add a babel script within the body of the HTML file" FOLDED="true" ID="ID_268667696" CREATED="1515277602051" MODIFIED="1515323487709">
-<node TEXT="&lt;script type=&quot;text/babel&quot;&gt;" ID="ID_841112158" CREATED="1515278757740" MODIFIED="1515278757740"/>
-</node>
-<node TEXT="4. Add &lt;div id=&quot;root&gt;&lt;/div&gt; to the body of the HTML file" ID="ID_461163552" CREATED="1515277681982" MODIFIED="1515277681982"/>
-<node TEXT="5. Start rendering elements using ReactJS" FOLDED="true" ID="ID_52730336" CREATED="1515277713795" MODIFIED="1515323483347">
-<node TEXT="&lt;script type=&quot;text/babel&quot;&gt;ReactDOM.render(&lt;div&gt;Hello World&lt;/div&gt;, document.getElementById(&quot;root&quot;))      &lt;/script&gt;" ID="ID_531508868" CREATED="1515278785863" MODIFIED="1515278821722"/>
-</node>
-</node>
-<node TEXT="What is React?" FOLDED="true" ID="ID_33879117" CREATED="1515278490837" MODIFIED="1515329960900">
-<node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1971369396" CREATED="1515278524808" MODIFIED="1515323933705">
-<node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1550988988" CREATED="1515278541958" MODIFIED="1515278541958"/>
-<node TEXT="ReactJS applications are built from React Components - independent resusable components" ID="ID_360754278" CREATED="1515278579191" MODIFIED="1515278579191"/>
-<node TEXT="that describe how the UI should look based on their own state and properties." ID="ID_1351069217" CREATED="1515278589469" MODIFIED="1515278592874"/>
-</node>
-<node TEXT="Why should I use ReactJS?" FOLDED="true" ID="ID_775431334" CREATED="1515278620434" MODIFIED="1515324016705">
-<node TEXT="ReactJS applications are incredibly performant at UI rerendering" ID="ID_132766406" CREATED="1515278628589" MODIFIED="1515278628589"/>
-<node TEXT="React Components make writing UI components easier" ID="ID_780884620" CREATED="1515278635436" MODIFIED="1515278635436"/>
-<node TEXT="What makes ReactJS so efficient at rerendering?" FOLDED="true" ID="ID_541594190" CREATED="1515278935116" MODIFIED="1515324015040">
-<node TEXT="React Components are used to generate a Virtual DOM - a light-weight abstraction of the actual HTML DOM. The Virtual DOM is able to be generated much more quickly than the HTML DOM because it does not have to calculate CSS styles and layouts. When a React Component changes state, the Virtual DOM is recreated and the difference between the new Virtual DOM and the previous Virtual DOM is calculated. The ReactJS library then calculates the most efficient way to update the HTML DOM to reflect these changes. This ends up being much faster than regenerating the entire HTML DOM from the top." ID="ID_795359112" CREATED="1515278969363" MODIFIED="1515278969363"/>
-</node>
-</node>
-</node>
-<node TEXT="Rendering Elements/React Nodes" FOLDED="true" ID="ID_1168277326" CREATED="1515279503033" MODIFIED="1515425879647">
-<node TEXT="React Elements/ React Nodes" FOLDED="true" ID="ID_730934704" CREATED="1515279516927" MODIFIED="1515426330695">
-<node TEXT="React elements are the building blocks of react JS applications. React Elements are objects that represent a DOM node. They are written using a syntax extension named JSX which allows us to write HTML tags in our JavaScript code and asign that to a variable. React Elements are different than React Components." ID="ID_529943332" CREATED="1515279546743" MODIFIED="1515281627439"/>
-<node TEXT="A React node is defined as: a light, stateless, immutable, virtual representation of a DOM node." ID="ID_1902383226" CREATED="1515426225352" MODIFIED="1515426225352"/>
-</node>
-<node TEXT="Creating React Nodes" FOLDED="true" ID="ID_237369376" CREATED="1515426352525" MODIFIED="1515426377605">
-<node TEXT="In most cases developers using React will favor JSX and use it to create React nodes. React nodes can be created without JSX, using only JavaScript. " ID="ID_834177306" CREATED="1515426481126" MODIFIED="1515426511324"/>
-<node TEXT="Creating React nodes using JavaScript is as simple as calling the " ID="ID_242788174" CREATED="1515426572662" MODIFIED="1515426585874"/>
-<node TEXT="React.createElement(type,props,children)" ID="ID_1562903059" CREATED="1515426594435" MODIFIED="1515426594435"/>
-<node TEXT="The React.createElement() arguments explained" FOLDED="true" ID="ID_86733993" CREATED="1515426649144" MODIFIED="1515426808788">
-<node TEXT="type (string | React.createClass()):" ID="ID_1399692810" CREATED="1515426649145" MODIFIED="1515426649145"/>
-<node TEXT="Can be a string which represents an HTML element (or custom HTML element) or React component instance (i.e., an instance of React.createClass())" ID="ID_1261091899" CREATED="1515426649146" MODIFIED="1515426649146"/>
-<node TEXT="props (null | object):" ID="ID_57951100" CREATED="1515426649148" MODIFIED="1515426649148"/>
-<node TEXT="Can be null or an object containing attributes/props and values" ID="ID_654182648" CREATED="1515426649149" MODIFIED="1515426649149"/>
-<node TEXT="children (null | string | React.createClass() | React.createElement()):" ID="ID_480827048" CREATED="1515426649149" MODIFIED="1515426649149"/>
-<node TEXT="Children can be null, a string that gets turned into a text node, an instance of React.createClass() or React.createElement()" ID="ID_1853089143" CREATED="1515426649150" MODIFIED="1515426649150"/>
-</node>
-</node>
-<node TEXT="ReactDOM.render()" FOLDED="true" ID="ID_1736704544" CREATED="1515279598314" MODIFIED="1515574518520">
-<node TEXT="The ReactDOM.render() method is used to render a React Element into a specified part of the HTML DOM. In most React applications, there is usually a single root node where everything gets rendered into, but you may use as many root nodes as you desire." ID="ID_561612319" CREATED="1515279623147" MODIFIED="1515279623147"/>
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1674394648" CREATED="1515279739348" MODIFIED="1515323837002">
-<node TEXT="&lt;h1&gt;Hello World!&lt;/h1&gt;," ID="ID_1068189459" CREATED="1515279739349" MODIFIED="1515279739349"/>
-<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_82003518" CREATED="1515279739349" MODIFIED="1515279739349"/>
-</node>
-<node TEXT=")" ID="ID_1013737741" CREATED="1515279739349" MODIFIED="1515279739349"/>
-<node TEXT="The ReactDom.render method takes in two arguments. The first being the element that we&apos;re trying to render, and the second being the target." ID="ID_1326989240" CREATED="1515281808591" MODIFIED="1515281813647"/>
-<node TEXT="In this case, the &lt;h1&gt;Hello World!&lt;/h1&gt; React Element is rendered into the DOM element with the id of &quot;root&quot;." ID="ID_1139425043" CREATED="1515279655161" MODIFIED="1515279655161"/>
-</node>
-<node TEXT="ReactDOM.hydrate(element, container[, callback])" FOLDED="true" ID="ID_565354937" CREATED="1515574601384" MODIFIED="1515574638653">
-<node TEXT="Same as render(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer. React will attempt to attach event listeners to the existing markup." ID="ID_919512195" CREATED="1515574659766" MODIFIED="1515574659766"/>
-<node TEXT="React expects that the rendered content is identical between the server and the client. It can patch up differences in text content, but you should treat mismatches as bugs and fix them. In development mode, React warns about mismatches during hydration. There are no guarantees that attribute differences will be patched up in case of mismatches. This is important for performance reasons because in most apps, mismatches are rare, and so validating all markup would be prohibitively expensive." ID="ID_1525492218" CREATED="1515574696893" MODIFIED="1515574696893"/>
-</node>
-<node TEXT="Rerendering the DOM using additional render() calls" FOLDED="true" ID="ID_1096528987" CREATED="1515279779165" MODIFIED="1515324110192">
-<node TEXT="The following example uses additional render() calls to update the displayed number:" ID="ID_1345284473" CREATED="1515279899278" MODIFIED="1515279899278"/>
-<node TEXT="var num = 0;" ID="ID_317672572" CREATED="1515279916734" MODIFIED="1515279916734"/>
-<node TEXT="function updateNum(){" FOLDED="true" ID="ID_688661854" CREATED="1515279916735" MODIFIED="1515323843874">
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_805229431" CREATED="1515279916735" MODIFIED="1515323842938">
-<node TEXT="&lt;div&gt;{num++}&lt;/div&gt;," ID="ID_631373093" CREATED="1515279916735" MODIFIED="1515279916735"/>
-<node TEXT="document.getElementById(&quot;root&quot;))" ID="ID_588014268" CREATED="1515279916736" MODIFIED="1515279958619"/>
-</node>
-</node>
-<node TEXT="}" ID="ID_1686670967" CREATED="1515279916736" MODIFIED="1515279916736"/>
-<node TEXT="setInterval(updateNum,100)" ID="ID_1653915432" CREATED="1515279916737" MODIFIED="1515279916737"/>
-<node TEXT="So once a DOM is rendered it will remain the same" ID="ID_1113507669" CREATED="1515281936791" MODIFIED="1515281936791"/>
-<node TEXT="until another ReactDOM.render method is called." ID="ID_944568403" CREATED="1515281936792" MODIFIED="1515281936792"/>
-</node>
-</node>
-<node TEXT="JSX" FOLDED="true" ID="ID_1010983589" CREATED="1515282261275" MODIFIED="1515324114867">
-<node TEXT="What is JSX?" FOLDED="true" ID="ID_223965834" CREATED="1515282290585" MODIFIED="1515329962957">
-<node TEXT="JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags." ID="ID_1436029414" CREATED="1515282302327" MODIFIED="1515282302327"/>
-<node TEXT="Using JSX, we can create React Elements easily with HTML Tags:" ID="ID_1751771870" CREATED="1515282323768" MODIFIED="1515282323768"/>
-<node TEXT="var element = &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_897794974" CREATED="1515282335884" MODIFIED="1515282335884"/>
-<node TEXT="Without JSX, the process is much slower and more verbose:" ID="ID_179307602" CREATED="1515282354731" MODIFIED="1515282354731"/>
-<node TEXT="var element = React.createElement(&apos;h1&apos;,null,&apos;Hello World!&apos;)" ID="ID_779462000" CREATED="1515282390081" MODIFIED="1515282390081"/>
-</node>
-<node TEXT="Using JSX with JavaScript Expressions" FOLDED="true" ID="ID_688109259" CREATED="1515282432125" MODIFIED="1515324194368">
-<node TEXT="Curly braces can be used to embed JavaScript expressions into JSX." ID="ID_26658570" CREATED="1515282443789" MODIFIED="1515282443789"/>
-<node TEXT="The following are all examples of valid JavaScript expressions in JSX:" ID="ID_533249987" CREATED="1515282452938" MODIFIED="1515282452938"/>
-<node TEXT="var str = &quot;World!&quot;" ID="ID_1449601982" CREATED="1515282573869" MODIFIED="1515282573869"/>
-<node TEXT="var element =  &lt;h1&gt; Hello {str}&lt;/h1&gt;" ID="ID_1718754601" CREATED="1515282583605" MODIFIED="1515282583605"/>
-<node TEXT="OR" ID="ID_1182678031" CREATED="1515282586825" MODIFIED="1515282595544"/>
-<node TEXT="var item = {name: &quot;Cheese&quot;,price: 5}" ID="ID_139646503" CREATED="1515282614588" MODIFIED="1515282614588"/>
-<node TEXT="var element = &lt;p&gt;{item.name} : ${item.price} &lt;/p&gt;" ID="ID_260355780" CREATED="1515282670547" MODIFIED="1515282670547"/>
-<node TEXT="OR" ID="ID_1473491008" CREATED="1515282717032" MODIFIED="1515282723384"/>
-<node TEXT="var length = 20" ID="ID_272292132" CREATED="1515282725657" MODIFIED="1515282725657"/>
-<node TEXT="var width = 10" ID="ID_1039859753" CREATED="1515282725657" MODIFIED="1515282725657"/>
-<node TEXT="function calculateArea(x,y){return x * y}" ID="ID_1627277880" CREATED="1515282759075" MODIFIED="1515282759075"/>
-<node TEXT="var element = &lt;div&gt;The Area is: {calculateArea(length,width)}&lt;/div&gt;" ID="ID_96427301" CREATED="1515282773751" MODIFIED="1515282773751"/>
-</node>
-<node TEXT="Using JSX with Attributes" FOLDED="true" ID="ID_1997338908" CREATED="1515282811921" MODIFIED="1515324311151">
-<node TEXT="You can supply attribute values using a string literal surrounded by quotes:" ID="ID_1247638321" CREATED="1515282842249" MODIFIED="1515282842249"/>
-<node TEXT="var element = &lt;button className =&quot;deleteButton&quot;&gt; Delete &lt;/button&gt;" ID="ID_1882141594" CREATED="1515282865539" MODIFIED="1515282865539"/>
-<node TEXT="You can also supply attributes values by embedding a JavaScript expression using curly braces:" ID="ID_1427741360" CREATED="1515282894820" MODIFIED="1515282894820"/>
-<node TEXT="var element = &lt;img src ={product.imageURL}&gt;&lt;/img&gt;" ID="ID_881424516" CREATED="1515282919441" MODIFIED="1515282919441"/>
-<node TEXT="Do not surround curly braces with quotes. This will cause your expression to be treated as a string literal:" ID="ID_226231776" CREATED="1515282943940" MODIFIED="1515282943940"/>
-<node TEXT="var element = &lt;img src =&quot;{product.imageURL}&quot;&gt;&lt;/img&gt;" ID="ID_216916335" CREATED="1515282954514" MODIFIED="1515282954514"/>
-<node TEXT="Some common HTML attributes are named differently in JSX. For example &quot;class&quot; becomes &quot;className&quot; because &quot;class&quot; is a reserved keyword in JavaScript. Furthermore, attribute names in JSX follow the camelCase naming convention so an HTML attribute such as fontsize would become fontSize in JSX." ID="ID_1459619315" CREATED="1515282995210" MODIFIED="1515282995210"/>
-</node>
-<node TEXT="Using JSX with Empty Tags" FOLDED="true" ID="ID_474530578" CREATED="1515283022704" MODIFIED="1515323861706">
-<node TEXT="If a HTML tag is empty, you can close it with a &apos;/&gt;&apos; instead of using a closing tag." ID="ID_767145363" CREATED="1515283043246" MODIFIED="1515283043246"/>
-<node TEXT="var element = &lt;input className =&quot;nameInput&quot;/&gt;" ID="ID_1152556067" CREATED="1515283054508" MODIFIED="1515283054508"/>
-</node>
-<node TEXT="Using JSX with a Style Object" FOLDED="true" ID="ID_1787823061" CREATED="1515283038318" MODIFIED="1515324323543">
-<node TEXT="The style attribute can be populated with a style object instead of a string literal" ID="ID_1138506384" CREATED="1515283276363" MODIFIED="1515283276363"/>
-<node TEXT="var styleObject = {" FOLDED="true" ID="ID_640742949" CREATED="1515283291988" MODIFIED="1515323863234">
-<node TEXT="backgroundColor: &apos;red&apos;," ID="ID_1386683624" CREATED="1515283291988" MODIFIED="1515283291988"/>
-<node TEXT="color:&apos;blue&apos;," ID="ID_1495672443" CREATED="1515283291989" MODIFIED="1515283291989"/>
-<node TEXT="fontSize: 25," ID="ID_1931841023" CREATED="1515283291989" MODIFIED="1515283291989"/>
-<node TEXT="width: 100" ID="ID_201032893" CREATED="1515283291989" MODIFIED="1515283291989"/>
-</node>
-<node TEXT="}" ID="ID_1099626653" CREATED="1515283291989" MODIFIED="1515283291989"/>
-<node TEXT="var element = &lt;input style = {styleObject}/&gt;" ID="ID_522482814" CREATED="1515283304559" MODIFIED="1515283304559"/>
-<node TEXT="In this next example, the first set of curly braces is for the JSX expression while the second set of curly braces is for the style object:" ID="ID_1130110516" CREATED="1515283371090" MODIFIED="1515283371090"/>
-<node TEXT="var element = &lt;input style = {{width:200,height:100}}/&gt;" ID="ID_1524175000" CREATED="1515283391052" MODIFIED="1515283391052"/>
-</node>
-<node TEXT="Using JSX with Nested Elements" FOLDED="true" ID="ID_868566031" CREATED="1515283421602" MODIFIED="1515327825780">
-<node TEXT="React Elements can be nested within other React Elements as long as the whole thing is wrapped by in a single element." ID="ID_217405709" CREATED="1515283465935" MODIFIED="1515283465935"/>
-<node TEXT="var element = (" FOLDED="true" ID="ID_1435809884" CREATED="1515283476897" MODIFIED="1515323868730">
-<node TEXT="&lt;div&gt;" FOLDED="true" ID="ID_1516225385" CREATED="1515283476897" MODIFIED="1515323867746">
-<node TEXT="&lt;div&gt;Hello World&lt;/div&gt;" ID="ID_660053809" CREATED="1515283476897" MODIFIED="1515283476897"/>
-<node TEXT="&lt;div&gt;Hello World&lt;/div&gt;" ID="ID_1733407298" CREATED="1515283476898" MODIFIED="1515283476898"/>
-</node>
-<node TEXT="&lt;/div&gt;" ID="ID_731705067" CREATED="1515283476898" MODIFIED="1515283476898"/>
-</node>
-<node TEXT=")" ID="ID_1311362117" CREATED="1515283476898" MODIFIED="1515283476898"/>
-<node TEXT="This example is not surrounded with a single wrapping element and will throw an error:" ID="ID_1287750140" CREATED="1515283504758" MODIFIED="1515283504758"/>
-<node TEXT="var element = (" FOLDED="true" ID="ID_997006714" CREATED="1515283516215" MODIFIED="1515323871034">
-<node TEXT="&lt;div&gt;Hello World&lt;/div&gt;" ID="ID_1098099715" CREATED="1515283516215" MODIFIED="1515283516215"/>
-<node TEXT="&lt;div&gt;Hello World&lt;/div&gt;" ID="ID_1025378160" CREATED="1515283516216" MODIFIED="1515283516216"/>
-</node>
-<node TEXT=")" ID="ID_1552258599" CREATED="1515283516216" MODIFIED="1515283516216"/>
-<node TEXT="It is recommended to surround nested elements with paranthesis to avoid the problems that occur with automatic semicolon insertion." ID="ID_1943788948" CREATED="1515283537736" MODIFIED="1515283537736"/>
-</node>
-<node TEXT="Using JSX Objects" FOLDED="true" ID="ID_588554578" CREATED="1515283565806" MODIFIED="1515327826860">
-<node TEXT="Objects created with JSX can be manipulated just like normal JavaScript objects. They can be passed in arrays, used as arguments or return statements to functions and used inside if statements or for loops." ID="ID_1912977771" CREATED="1515283585770" MODIFIED="1515283585770"/>
-<node TEXT="An example using JSX objects within an If Else statement:" ID="ID_1673073449" CREATED="1515283596769" MODIFIED="1515283596769"/>
-<node TEXT="var product = {name:&quot;apple&quot;,stock:0}" ID="ID_99858331" CREATED="1515283607859" MODIFIED="1515283607859"/>
-<node TEXT="if(product.stock &lt; 0){" FOLDED="true" ID="ID_1819506184" CREATED="1515283616427" MODIFIED="1515323874514">
-<node TEXT="var element = &lt;h1&gt;The product named {product.name} is not in stock&lt;/h1&gt;" ID="ID_845429504" CREATED="1515283616427" MODIFIED="1515283616427"/>
-</node>
-<node TEXT="}" ID="ID_589423812" CREATED="1515283616428" MODIFIED="1515283616428"/>
-<node TEXT="else{" FOLDED="true" ID="ID_291111979" CREATED="1515283616428" MODIFIED="1515323875954">
-<node TEXT="var element = &lt;h1&gt;The product named {product.name} and has {product.stock} units in stock&lt;/h1&gt;" ID="ID_1287343885" CREATED="1515283616428" MODIFIED="1515283616428"/>
-</node>
-<node TEXT="}" ID="ID_1110221025" CREATED="1515283616430" MODIFIED="1515283616430"/>
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1217827989" CREATED="1515283629537" MODIFIED="1515323877250">
-<node TEXT="element," ID="ID_1221311845" CREATED="1515283629537" MODIFIED="1515283629537"/>
-<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1224345459" CREATED="1515283629538" MODIFIED="1515283629538"/>
-</node>
-<node TEXT=")" ID="ID_61396492" CREATED="1515283629538" MODIFIED="1515283629538"/>
-</node>
-</node>
-<node TEXT="React Components" FOLDED="true" ID="ID_1825956271" CREATED="1515324637018" MODIFIED="1515324690463">
-<node TEXT="A React Component is an independent reusable component that returns an React Element based on its properties and state." ID="ID_1590572198" CREATED="1515324663282" MODIFIED="1515327169097"/>
-<node TEXT="There are two types of React Components:" ID="ID_996209281" CREATED="1515324678253" MODIFIED="1515324678253"/>
-<node TEXT="Functional Components" FOLDED="true" ID="ID_122537557" CREATED="1515324693268" MODIFIED="1515327712565">
-<node TEXT="Functional Components are just functions that output React Elements. By convention, the first letter of the function name should be capitalized." ID="ID_1383968263" CREATED="1515324830742" MODIFIED="1515324830742"/>
-<node TEXT="Here is an example:" FOLDED="true" ID="ID_1901128368" CREATED="1515324865072" MODIFIED="1515325177129">
-<node TEXT="function HelloWorld(){" FOLDED="true" ID="ID_1458361580" CREATED="1515324876845" MODIFIED="1515325161704">
-<node TEXT="return &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_1640281305" CREATED="1515324876845" MODIFIED="1515324876845"/>
-</node>
-<node TEXT="}" ID="ID_703924747" CREATED="1515324876846" MODIFIED="1515324876846"/>
-</node>
-<node TEXT="You can use the React Component in JSX by creating an HTML tag with the same name as the React Component: In our ReactDOM.render function, we can put a tag&#xa;with the functional component&apos;s name as the tag name." FOLDED="true" ID="ID_1149448818" CREATED="1515324907866" MODIFIED="1515327563110">
-<node TEXT="var element = &lt;HelloWorld/&gt;" ID="ID_1880645728" CREATED="1515324934806" MODIFIED="1515324934806"/>
-<node TEXT="Another Example:" ID="ID_627794578" CREATED="1515324963564" MODIFIED="1515324963564"/>
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_326358841" CREATED="1515324972689" MODIFIED="1515327562294">
-<node TEXT="&lt;HelloWorld/&gt;," ID="ID_1295567136" CREATED="1515324972689" MODIFIED="1515324972689"/>
-<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1109722160" CREATED="1515324972690" MODIFIED="1515324972690"/>
-<node TEXT=")" ID="ID_28111112" CREATED="1515324972690" MODIFIED="1515324972690"/>
-</node>
-</node>
-<node TEXT="Adding Properties to Functional Components" FOLDED="true" ID="ID_729140082" CREATED="1515325035933" MODIFIED="1515327275689">
-<node TEXT="The first argument to a Functional Component is an object that contains the component&apos;s properties." ID="ID_893564802" CREATED="1515325213899" MODIFIED="1515325213899"/>
-<node TEXT="function HelloWorld(props){" FOLDED="true" ID="ID_711678944" CREATED="1515325270224" MODIFIED="1515325270224">
-<node TEXT="return &lt;h1&gt;Message: {props.message}&lt;/h1&gt;" ID="ID_135448176" CREATED="1515325270225" MODIFIED="1515325270225"/>
-</node>
-<node TEXT="}" ID="ID_1570114516" CREATED="1515325270225" MODIFIED="1515325270225"/>
-<node TEXT="You can supply property values the same way as you supply attribute values:" ID="ID_882318125" CREATED="1515325300514" MODIFIED="1515325300514"/>
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1872941092" CREATED="1515325325331" MODIFIED="1515325325331">
-<node TEXT="&lt;HelloWorld message=&quot;Hello World!&quot;/&gt;," ID="ID_1357708865" CREATED="1515325325332" MODIFIED="1515325325332"/>
-<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1886227923" CREATED="1515325325332" MODIFIED="1515325325332"/>
-<node TEXT=")" ID="ID_1697387265" CREATED="1515325325333" MODIFIED="1515325325333"/>
-</node>
-<node TEXT="Properties can be string literals, arrays or any other type of JavaScript object including other React Elements:" ID="ID_229169395" CREATED="1515325346261" MODIFIED="1515325346261"/>
-<node TEXT="function HelloWorld(props){" FOLDED="true" ID="ID_1771437225" CREATED="1515325442715" MODIFIED="1515325442715">
-<node TEXT="return &lt;h1&gt;Value: {props.numberArray[props.index]} &lt;/h1&gt;" ID="ID_656242559" CREATED="1515325442716" MODIFIED="1515325442716"/>
-</node>
-<node TEXT="}" ID="ID_1473423375" CREATED="1515325442716" MODIFIED="1515325442716"/>
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_509103179" CREATED="1515325455377" MODIFIED="1515325455377">
-<node TEXT="&lt;HelloWorld index = &quot;3&quot; numberArray={[1,2,3,4,5]}/&gt;," ID="ID_911548209" CREATED="1515325455378" MODIFIED="1515325455378"/>
-<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_430803825" CREATED="1515325455378" MODIFIED="1515325455378"/>
-</node>
-<node TEXT=")" ID="ID_1893932528" CREATED="1515325455379" MODIFIED="1515325455379"/>
-<node TEXT="You can supply as many property values as you want and they will all be accessible through the props argument." ID="ID_1670237146" CREATED="1515325487379" MODIFIED="1515325487379"/>
-</node>
-</node>
-<node TEXT="Class Components" FOLDED="true" ID="ID_431738530" CREATED="1515324704374" MODIFIED="1515324704374">
-<node TEXT="React Component written using ES6 classes:" FOLDED="true" ID="ID_70457038" CREATED="1515879063236" MODIFIED="1515879063236">
-<node TEXT="class Welcome extends React.Component{" FOLDED="true" ID="ID_29134617" CREATED="1515879076453" MODIFIED="1515879076453">
-<node TEXT="render(){" FOLDED="true" ID="ID_415752648" CREATED="1515879076453" MODIFIED="1515879076453">
-<node TEXT="return &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_1372484474" CREATED="1515879076453" MODIFIED="1515879076453"/>
-</node>
-<node TEXT="}" ID="ID_1043613114" CREATED="1515879076453" MODIFIED="1515879076453"/>
-</node>
-<node TEXT="}" ID="ID_829287247" CREATED="1515879076453" MODIFIED="1515879076453"/>
-</node>
-<node TEXT="Both types of React Components can be used by writing their name within an HTML tag:" ID="ID_1776935775" CREATED="1515879135879" MODIFIED="1515879135879"/>
-<node TEXT="var element = &lt;Welcome/&gt;" ID="ID_1861296036" CREATED="1515879145222" MODIFIED="1515879145222"/>
-<node TEXT="Render()" FOLDED="true" ID="ID_1219147678" CREATED="1515879156393" MODIFIED="1515879156393">
-<node TEXT="The render() method of a class component is used to describe what kind of React Element is going to be returned from the Class Component. It the same as the return value of of a Functional Component." ID="ID_1522033561" CREATED="1515879174322" MODIFIED="1515879174322"/>
-</node>
-<node TEXT="For example, the following Class Component will render&lt;h1&gt;Hello World!&lt;/h1&gt;:" FOLDED="true" ID="ID_1117608389" CREATED="1515879251667" MODIFIED="1515879251667">
-<node TEXT="class Welcome extends React.Component{" FOLDED="true" ID="ID_1353156366" CREATED="1515879266577" MODIFIED="1515879266577">
-<node TEXT="render(){" FOLDED="true" ID="ID_1605490984" CREATED="1515879266577" MODIFIED="1515879266577">
-<node TEXT="return &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_1487047937" CREATED="1515879266577" MODIFIED="1515879266577"/>
-</node>
-<node TEXT="}" ID="ID_1731616395" CREATED="1515879266577" MODIFIED="1515879266577"/>
-</node>
-<node TEXT="}" ID="ID_810349135" CREATED="1515879266577" MODIFIED="1515879266577"/>
-<node TEXT="//renders &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_418532960" CREATED="1515879266579" MODIFIED="1515879266579"/>
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_482376762" CREATED="1515879266579" MODIFIED="1515879266579">
-<node TEXT="&lt;Welcome/&gt;," ID="ID_884671687" CREATED="1515879266580" MODIFIED="1515879266580"/>
-<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1401028124" CREATED="1515879266580" MODIFIED="1515879266580"/>
-</node>
-<node TEXT=")" ID="ID_675807814" CREATED="1515879266580" MODIFIED="1515879266580"/>
-</node>
-<node TEXT="Adding properties to Class Components" FOLDED="true" ID="ID_1028635582" CREATED="1515879309437" MODIFIED="1515879309437">
-<node TEXT="The properties of a Class Component can be accessed through the this.props attribute. This differs slightly from Functional Components where the properties were passed in as a variable." ID="ID_564479214" CREATED="1515879327661" MODIFIED="1515879327661"/>
-<node TEXT="class Welcome extends React.Component{" FOLDED="true" ID="ID_39220867" CREATED="1515879335707" MODIFIED="1515879335707">
-<node TEXT="render(){" FOLDED="true" ID="ID_121003569" CREATED="1515879335707" MODIFIED="1515879335707">
-<node TEXT="return &lt;h1&gt;Message: {this.props.message}&lt;/h1&gt;" ID="ID_567945574" CREATED="1515879335707" MODIFIED="1515879335707"/>
-</node>
-<node TEXT="}" ID="ID_924126852" CREATED="1515879335707" MODIFIED="1515879335707"/>
-</node>
-<node TEXT="}" ID="ID_723972820" CREATED="1515879335707" MODIFIED="1515879335707"/>
-<node TEXT="One thing to remember is that you have to do&#xa;this.props.message whereas before with functional&#xa;components you only had to do props.message." ID="ID_649959095" CREATED="1515879661556" MODIFIED="1515879701816"/>
-<node TEXT="You can supply property values the same way as you supply attribute values:" ID="ID_1852900005" CREATED="1515879368915" MODIFIED="1515879368915"/>
-<node TEXT="&lt;Welcome message=&quot;Hello World!&quot;/&gt;" ID="ID_1766462060" CREATED="1515879380366" MODIFIED="1515879380366"/>
-</node>
-<node TEXT="State" FOLDED="true" ID="ID_1295697909" CREATED="1515879759661" MODIFIED="1515879759661">
-<node TEXT="Constructor(props)" FOLDED="true" ID="ID_335723466" CREATED="1515879769945" MODIFIED="1515879769945">
-<node TEXT="The constructor() method is called before a React Component is mounted and is used to set up the initial state of the component. It is important to call super(props) at the beginning of the constructor() method or else the this.props attribute may not work correctly. The first argument to the constructor() method represents the properties that are passed into the component." ID="ID_894663105" CREATED="1515879806576" MODIFIED="1515879806576"/>
-<node TEXT="class Counter extends React.Component{" FOLDED="true" ID="ID_1272602543" CREATED="1515879818551" MODIFIED="1515879818551">
-<node TEXT="constructor(props){" FOLDED="true" ID="ID_1791420376" CREATED="1515879818551" MODIFIED="1515879818551">
-<node TEXT="super(props)" ID="ID_513457337" CREATED="1515879818551" MODIFIED="1515879818551"/>
-</node>
-<node TEXT="}" ID="ID_973360369" CREATED="1515879818551" MODIFIED="1515879818551"/>
-<node TEXT="render(){" FOLDED="true" ID="ID_1557206752" CREATED="1515879818551" MODIFIED="1515879818551">
-<node TEXT="return &lt;div&gt;Hello World!&lt;/div&gt;" ID="ID_559797820" CREATED="1515879818551" MODIFIED="1515879818551"/>
-</node>
-<node TEXT="}" ID="ID_121888983" CREATED="1515879818551" MODIFIED="1515879818551"/>
-</node>
-<node TEXT="}" ID="ID_1769567617" CREATED="1515879818551" MODIFIED="1515879818551"/>
-</node>
-<node TEXT="Adding an initial state to Class Components" FOLDED="true" ID="ID_527835818" CREATED="1515879858391" MODIFIED="1515879858391">
-<node TEXT="The initial state of a Class Component can be declared within the constructor() method. The state of the component must be declared as an object with attributes." ID="ID_165302919" CREATED="1515879874760" MODIFIED="1515879874760"/>
-<node TEXT="class Counter extends React.Component{" FOLDED="true" ID="ID_189500058" CREATED="1515879882686" MODIFIED="1515879882686">
-<node TEXT="constructor(props){" FOLDED="true" ID="ID_1669954511" CREATED="1515879882686" MODIFIED="1515879882686">
-<node TEXT="super(props)" ID="ID_162641599" CREATED="1515879882686" MODIFIED="1515879882686"/>
-<node TEXT="this.state = {foo:123,bar:456}" ID="ID_1638642828" CREATED="1515879882686" MODIFIED="1515879882686"/>
-</node>
-<node TEXT="}" ID="ID_76919474" CREATED="1515879882686" MODIFIED="1515879882686"/>
-<node TEXT="render(){" FOLDED="true" ID="ID_1521251262" CREATED="1515879882686" MODIFIED="1515879882686">
-<node TEXT="return &lt;div&gt;foo:{this.state.foo} bar:{this.state.bar}&lt;/div&gt;" ID="ID_1486053429" CREATED="1515879882686" MODIFIED="1515879882686"/>
-</node>
-<node TEXT="}" ID="ID_1174648389" CREATED="1515879882686" MODIFIED="1515879882686"/>
-</node>
-<node TEXT="}" ID="ID_125179983" CREATED="1515879882686" MODIFIED="1515879882686"/>
-</node>
-<node TEXT="Updating state" ID="ID_1287755734" CREATED="1515879903594" MODIFIED="1515879903594"/>
-</node>
-</node>
-<node TEXT="Class Components have state, lifecycle methods, and properties while Functional Components only have properties." ID="ID_672872935" CREATED="1515324748878" MODIFIED="1515324748878"/>
-</node>
-<node TEXT="Composition" FOLDED="true" ID="ID_1151151320" CREATED="1515327763909" MODIFIED="1515327763909">
-<node TEXT="Composing Components" ID="ID_1045302409" CREATED="1515327782693" MODIFIED="1515327785555"/>
-<node TEXT="Functional Components can include other Functional Components in their output. This lets us keep our components organized and readible." ID="ID_1693499756" CREATED="1515327806233" MODIFIED="1515327806233"/>
-</node>
-<node TEXT="Conditional Rendering" FOLDED="true" ID="ID_240472902" CREATED="1515332033127" MODIFIED="1515332340962">
-<node TEXT="The output of a Functional Component can be determined based on its properties." ID="ID_1409781227" CREATED="1515332047245" MODIFIED="1515332047245"/>
-<node TEXT="function Feature(props){" FOLDED="true" ID="ID_1846267894" CREATED="1515332111814" MODIFIED="1515332111814">
-<node TEXT="if (props.active == true){" FOLDED="true" ID="ID_15134033" CREATED="1515332111815" MODIFIED="1515332111815">
-<node TEXT="return &lt;h1&gt;This feature is active&lt;/h1&gt;" ID="ID_196117053" CREATED="1515332111816" MODIFIED="1515332111816"/>
-</node>
-<node TEXT="}" ID="ID_1901770101" CREATED="1515332111816" MODIFIED="1515332111816"/>
-<node TEXT="else{" FOLDED="true" ID="ID_604436228" CREATED="1515332111817" MODIFIED="1515332111817">
-<node TEXT="return &lt;h1&gt;This feature is not active&lt;/h1&gt;" ID="ID_107732253" CREATED="1515332111817" MODIFIED="1515332111817"/>
-</node>
-<node TEXT="}" ID="ID_227254840" CREATED="1515332111818" MODIFIED="1515332111818"/>
-</node>
-<node TEXT="}" ID="ID_1280968887" CREATED="1515332111818" MODIFIED="1515332111818"/>
-<node TEXT="This can also be accomplished using an inline conditional operator:" ID="ID_1056711472" CREATED="1515332200324" MODIFIED="1515332200324"/>
-<node TEXT="function Feature(props){" FOLDED="true" ID="ID_1130226012" CREATED="1515332208965" MODIFIED="1515332208965">
-<node TEXT="return &lt;h1&gt;This feature is {props.active? &quot;active&quot; : &quot;not active&quot;}&lt;/h1&gt;" FOLDED="true" ID="ID_362997907" CREATED="1515332208966" MODIFIED="1515332208966">
-<node TEXT="The output of a Functional Component can be prevented from rendering." ID="ID_968163233" CREATED="1515332247750" MODIFIED="1515332247750"/>
-</node>
-</node>
-<node TEXT="}" ID="ID_1086479199" CREATED="1515332208966" MODIFIED="1515332208966"/>
-<node TEXT="Preventing Rendering" FOLDED="true" ID="ID_716750890" CREATED="1515332222490" MODIFIED="1515332222490">
-<node TEXT="The output of a Functional Component can be prevented from rendering." ID="ID_1481487542" CREATED="1515332251372" MODIFIED="1515332251372"/>
-<node TEXT="function Feature(props){" FOLDED="true" ID="ID_525977202" CREATED="1515332264581" MODIFIED="1515332264581">
-<node TEXT="if(props.active!){" FOLDED="true" ID="ID_1009197360" CREATED="1515332264582" MODIFIED="1515332264582">
-<node TEXT="return null" ID="ID_1470380963" CREATED="1515332264582" MODIFIED="1515332264582"/>
-</node>
-<node TEXT="}" ID="ID_407557052" CREATED="1515332264583" MODIFIED="1515332264583"/>
-<node TEXT="else{" FOLDED="true" ID="ID_1718772304" CREATED="1515332264583" MODIFIED="1515332264583">
-<node TEXT="return &lt;h1&gt;{props.message}&lt;/h1&gt;" ID="ID_64024099" CREATED="1515332264584" MODIFIED="1515332264584"/>
-</node>
-<node TEXT="}" ID="ID_615564869" CREATED="1515332264584" MODIFIED="1515332264584"/>
-</node>
-<node TEXT="}" ID="ID_1773545211" CREATED="1515332264584" MODIFIED="1515332264584"/>
-</node>
-<node TEXT="You can also conditionally prevent a feature from rendering using the &amp;&amp; operator:" ID="ID_57016787" CREATED="1515332291711" MODIFIED="1515332291711"/>
-<node TEXT="function Feature(props){" FOLDED="true" ID="ID_544492799" CREATED="1515332319665" MODIFIED="1515332319665">
-<node TEXT="return (" FOLDED="true" ID="ID_1964079972" CREATED="1515332319665" MODIFIED="1515332319665">
-<node TEXT="props.active &amp;&amp; &lt;h1&gt;{props.message}&lt;/h1&gt;" ID="ID_406791405" CREATED="1515332319665" MODIFIED="1515332319665"/>
-</node>
-<node TEXT=")" ID="ID_716535200" CREATED="1515332319666" MODIFIED="1515332319666"/>
-</node>
-<node TEXT="}" ID="ID_1746940307" CREATED="1515332319666" MODIFIED="1515332319666"/>
-<node TEXT="With the &amp;&amp; operator, true and expression will always evaluate to expression. On the other hand, false and expression will always evaluate to false which won&apos;t render." ID="ID_483766609" CREATED="1515332339757" MODIFIED="1515332339757"/>
-</node>
-<node TEXT="React Component State" FOLDED="true" ID="ID_782203120" CREATED="1515493940300" MODIFIED="1515493940300">
-<node TEXT="Most components should simply take in props and render. But, components also offer state, and it is used to store information/data about the component that can change over time. Typically the change comes as a result of user events or system events (i.e., as a response to user input, a server request, or the passage of time)." ID="ID_1880011490" CREATED="1515493962986" MODIFIED="1515493962986"/>
-<node TEXT="According to the React documentation state should:" ID="ID_128105391" CREATED="1515493992972" MODIFIED="1515493992972"/>
-<node TEXT="Contain data that a component&apos;s event handlers may change to trigger a UI update. In real apps this data tends to be very small and JSON-serializable. When building a stateful component, think about the minimal possible representation of its state, and only store those properties in this.state. Inside of render() simply compute any other information you need based on this state. You&apos;ll find that thinking about and writing applications in this way tends to lead to the most correct application, since adding redundant or computed values to state means that you need to explicitly keep them in sync rather than rely on React computing them for you." ID="ID_1059433898" CREATED="1515494005026" MODIFIED="1515494005026"/>
-<node TEXT="Working with component state typically involves setting a components default state, accessing the current state, and updating the state." ID="ID_1375707661" CREATED="1515494041272" MODIFIED="1515494041272"/>
-<node TEXT="Things to keep in mind about React component state:" FOLDED="true" ID="ID_637926048" CREATED="1515494272468" MODIFIED="1515494272468">
-<node TEXT="If a component has state, a default state should be provided using getInitialState()" ID="ID_867915199" CREATED="1515494292382" MODIFIED="1515494292382"/>
-<node TEXT="State changes are typically how you start the re-rendering of a component and all sub components (i.e., children, grandchildren, great grand chidlren, etc.)." ID="ID_286653892" CREATED="1515494292383" MODIFIED="1515494292383"/>
-<node TEXT="The only way a component should have its state update should be by using this.setState(). While other ways are possible (i.e. forceUpdate()), they should likely not be used (except maybe when integrating with third-party solutions)." ID="ID_1741802295" CREATED="1515494292385" MODIFIED="1515494292385"/>
-<node TEXT="You inform a component of a state change by using this.setState() to set a new state. This will result in re-render of the component and all children components that need re-rendered." ID="ID_1530866715" CREATED="1515494292388" MODIFIED="1515494292388"/>
-<node TEXT="A state change merges new data with old data that is already contained in the state. But this is only a shallow update/merge, it won&apos;t do a deep update/merge." ID="ID_1195361255" CREATED="1515494292390" MODIFIED="1515494292390"/>
-<node TEXT="A state change internally deals with calling re-renders. You should never have to call this.render() directly." ID="ID_1055098190" CREATED="1515494292392" MODIFIED="1515494292392"/>
-<node TEXT="The state object should only contain the minimal amount of data needed for the UI. Don&apos;t place computed data, other React components, or props in the state object." ID="ID_22128803" CREATED="1515494292392" MODIFIED="1515494292392"/>
+<node TEXT="extensions" ID="ID_1271338723" CREATED="1520844725160" MODIFIED="1520844738025">
+<node TEXT="framework" ID="ID_1751494889" CREATED="1520844747560" MODIFIED="1520844753585"/>
+<node TEXT="libraries" ID="ID_1442394379" CREATED="1520844757208" MODIFIED="1520844773322"/>
+</node>
+<node TEXT="documentation" ID="ID_85521033" CREATED="1520847987244" MODIFIED="1520847995326">
+<node TEXT="markdown" ID="ID_1365285825" CREATED="1520848003140" MODIFIED="1520848010118"/>
+</node>
+</node>
+<node TEXT="pattern" FOLDED="true" ID="ID_1641716419" CREATED="1517908745394" MODIFIED="1517908752112">
+<node TEXT="Redux" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1515427483506"/>
+</node>
+<node TEXT="Buildprocess" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1519056082292">
+<node TEXT="taskrunner" FOLDED="true" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
+<node TEXT="webpack" FOLDED="true" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
+<node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
+<node TEXT="Concepts" FOLDED="true" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
+<node TEXT="It is incredibly configurable, but to get started you only need to understand four Core Concepts:" ID="ID_1111641199" CREATED="1517911354399" MODIFIED="1517911354399"/>
+<node TEXT="Entry" FOLDED="true" ID="ID_1230224102" CREATED="1517911359961" MODIFIED="1517911368602">
+<node TEXT="An entry point indicates which module webpack should use to begin building out its internal dependency graph. After entering the entry point, webpack will figure out which other modules and libraries that entry point depends on (directly and indirectly)." ID="ID_1925499690" CREATED="1517911502668" MODIFIED="1517911502668"/>
+<node TEXT="Every dependency is then processed and outputted into files called bundles, which we&apos;ll discuss more in the next section." ID="ID_1789867791" CREATED="1517911612316" MODIFIED="1517911612316"/>
+<node TEXT="You can specify an entry point (or multiple entry points) by configuring the entry property in the webpack-config. file" ID="ID_1845992710" CREATED="1517911679018" MODIFIED="1517911679018"/>
+<node TEXT="example of an entry configuration" ID="ID_1032801950" CREATED="1517912067567" MODIFIED="1517912067567"/>
+<node TEXT="module.exports = { entry: &apos;./path/to/my/entry/file.js&apos; };" ID="ID_174095695" CREATED="1517912151408" MODIFIED="1517912151408"/>
+</node>
+<node TEXT="Output" FOLDED="true" ID="ID_1337471932" CREATED="1517911378781" MODIFIED="1517911385657">
+<node TEXT="The output property tells webpack where to emit the bundles it creates and how to name these files. You can configure this part of the process by specifying an output field in your configuration:" ID="ID_1987001274" CREATED="1517912331400" MODIFIED="1517912331400"/>
+<node TEXT="const path = require(&apos;path&apos;);&#xa; &#xa;module.exports = {&#xa;    entry: &apos;./path/to/my/entry/file.js&apos;,&#xa;    output: {&#xa;        path: path.resolve(__dirname, &apos;dist&apos;),   &#xa;        filename: &apos;my-first-webpack.bundle.js&apos; }&#xa;};" ID="ID_1020961856" CREATED="1517912384745" MODIFIED="1517912494202"/>
+</node>
+<node TEXT="Loaders" FOLDED="true" ID="ID_665395832" CREATED="1517911401707" MODIFIED="1517911412233">
+<node TEXT="Loaders enable webpack to process more than just JavaScript files (webpack itself only understands JavaScript). They give you the ability to leverage webpack&apos;s bundling capabilities for all kinds of files by converting them to valid modules that webpack can process." ID="ID_1474720321" CREATED="1517912748015" MODIFIED="1517912748015"/>
+<node TEXT="At a high level, loaders have two purposes in your webpack configuratio" FOLDED="true" ID="ID_1913667286" CREATED="1517912809652" MODIFIED="1517912809652">
+<node TEXT="The test property identifies which file or files should be transformed." ID="ID_709620578" CREATED="1517912850357" MODIFIED="1517912850357"/>
+<node TEXT="The use property indicates which loader should be used to do the transforming." ID="ID_463301707" CREATED="1517912892028" MODIFIED="1517912892028"/>
+</node>
+<node TEXT="const path = require(&apos;path&apos;);&#xa;&#xa;const config = {&#xa;    entry: &apos;./path/to/my/entry/file.js&apos;,&#xa;    output: {&#xa;        path: path.resolve(__dirname, &apos;dist&apos;),&#xa;        filename: &apos;my-first-webpack.bundle.js&apos;&#xa;    },&#xa;    module: {&#xa;        rules: [&#xa;            { test: /\.txt$/, use: &apos;raw-loader&apos; }&#xa;        ]&#xa;   }&#xa;};&#xa;&#xa;module.exports = config;" ID="ID_1098275703" CREATED="1517913080070" MODIFIED="1517913273249"/>
+<node TEXT="The configuration above has defined a rules property for a single module with two required properties: test and use. This tells webpack&apos;s compiler the following:" ID="ID_781517584" CREATED="1517913320854" MODIFIED="1517913320854"/>
+<node TEXT="&quot;Hey webpack compiler, when you come across a path that resolves to a &apos;.txt&apos; file inside of a require()/import statement, use the raw-loader to transform it before you add it to the bundle.&quot;" ID="ID_1648896157" CREATED="1517913370558" MODIFIED="1517913370558"/>
+<node TEXT="There are other, more specific properties to define on loaders" ID="ID_213026869" CREATED="1517913421053" MODIFIED="1517913421053"/>
+</node>
+<node TEXT="Plugins" FOLDED="true" ID="ID_864461469" CREATED="1517911416939" MODIFIED="1517911486149">
+<node TEXT="While loaders are used to transform certain types of modules, plugins can be leveraged to perform a wider range of tasks. Plugins range from bundle optimization and minification all the way to defining environment-like variables. The plugin interface is extremely powerful and can be used to tackle a wide variety of tasks." ID="ID_1801438276" CREATED="1517913460262" MODIFIED="1517913460262"/>
+<node TEXT="While loaders are used to transform certain types of modules, plugins can be leveraged to perform a wider range of tasks. Plugins range from bundle optimization and minification all the way to defining environment-like variables. The plugin interface is extremely powerful and can be used to tackle a wide variety of tasks." ID="ID_1616043864" CREATED="1517913491231" MODIFIED="1517913491231"/>
+<node TEXT="const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;); //installed via npm&#xa;const webpack = require(&apos;webpack&apos;); //to access built-in plugins&#xa;const path = require(&apos;path&apos;);&#xa;&#xa;const config = {&#xa;    entry: &apos;./path/to/my/entry/file.js&apos;,&#xa;    output: {&#xa;        path: path.resolve(__dirname, &apos;dist&apos;),&#xa;        filename: &apos;my-first-webpack.bundle.js&apos;&#xa;    },&#xa;    module: {&#xa;        rules: [&#xa;            { test: /\.txt$/, use: &apos;raw-loader&apos; }&#xa;        ]&#xa;    },&#xa;    plugins: [&#xa;        new webpack.optimize.UglifyJsPlugin(),&#xa;        new HtmlWebpackPlugin({template: &apos;./src/index.html&apos;})&#xa;    ]&#xa; };&#xa;&#xa;module.exports = config;" ID="ID_1741814789" CREATED="1517913518660" MODIFIED="1517913702217"/>
+<node ID="ID_346240468" CREATED="1517913730752" MODIFIED="1517913730752" LINK="https://webpack.js.org/plugins"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <span style="color: rgb(43, 58, 66); font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline !important; float: none"><font color="rgb(43, 58, 66)" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" size="16px">There are many plugins that webpack provides out of the box! Check out our</font></span><font color="rgb(43, 58, 66)" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" size="16px"><span>&#160;</span></font><a href="https://webpack.js.org/plugins" style="border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; font-style: normal; font-weight: 400; font-size: 16px; line-height: inherit; font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; vertical-align: baseline; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(32, 134, 215); text-decoration: none; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px"><font size="16px" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" color="rgb(32, 134, 215)">list of plugins</font></a><span><font color="rgb(43, 58, 66)" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" size="16px">&#160;</font></span><font color="rgb(43, 58, 66)" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" size="16px"><span style="color: rgb(43, 58, 66); font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline !important; float: none">for more information.</span></font>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="plugins" ID="ID_1175957489" CREATED="1517913811284" MODIFIED="1517913820826"/>
+</node>
+<node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
+</node>
+<node TEXT="linter" FOLDED="true" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
+<node TEXT="exception" FOLDED="true" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
+<node TEXT="// eslint-disable-line" ID="ID_1309138352" CREATED="1519056152043" MODIFIED="1519056157028"/>
 </node>
 </node>
 </node>
@@ -2727,66 +2448,6 @@
 </node>
 </node>
 </node>
-<node TEXT="pattern" FOLDED="true" ID="ID_1641716419" CREATED="1517908745394" MODIFIED="1517908752112">
-<node TEXT="Redux" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1515427483506"/>
-</node>
-<node TEXT="Buildprocess" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1519056082292">
-<node TEXT="taskrunner" FOLDED="true" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
-<node TEXT="webpack" FOLDED="true" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
-<node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
-<node TEXT="Concepts" FOLDED="true" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
-<node TEXT="It is incredibly configurable, but to get started you only need to understand four Core Concepts:" ID="ID_1111641199" CREATED="1517911354399" MODIFIED="1517911354399"/>
-<node TEXT="Entry" FOLDED="true" ID="ID_1230224102" CREATED="1517911359961" MODIFIED="1517911368602">
-<node TEXT="An entry point indicates which module webpack should use to begin building out its internal dependency graph. After entering the entry point, webpack will figure out which other modules and libraries that entry point depends on (directly and indirectly)." ID="ID_1925499690" CREATED="1517911502668" MODIFIED="1517911502668"/>
-<node TEXT="Every dependency is then processed and outputted into files called bundles, which we&apos;ll discuss more in the next section." ID="ID_1789867791" CREATED="1517911612316" MODIFIED="1517911612316"/>
-<node TEXT="You can specify an entry point (or multiple entry points) by configuring the entry property in the webpack-config. file" ID="ID_1845992710" CREATED="1517911679018" MODIFIED="1517911679018"/>
-<node TEXT="example of an entry configuration" ID="ID_1032801950" CREATED="1517912067567" MODIFIED="1517912067567"/>
-<node TEXT="module.exports = { entry: &apos;./path/to/my/entry/file.js&apos; };" ID="ID_174095695" CREATED="1517912151408" MODIFIED="1517912151408"/>
-</node>
-<node TEXT="Output" FOLDED="true" ID="ID_1337471932" CREATED="1517911378781" MODIFIED="1517911385657">
-<node TEXT="The output property tells webpack where to emit the bundles it creates and how to name these files. You can configure this part of the process by specifying an output field in your configuration:" ID="ID_1987001274" CREATED="1517912331400" MODIFIED="1517912331400"/>
-<node TEXT="const path = require(&apos;path&apos;);&#xa; &#xa;module.exports = {&#xa;    entry: &apos;./path/to/my/entry/file.js&apos;,&#xa;    output: {&#xa;        path: path.resolve(__dirname, &apos;dist&apos;),   &#xa;        filename: &apos;my-first-webpack.bundle.js&apos; }&#xa;};" ID="ID_1020961856" CREATED="1517912384745" MODIFIED="1517912494202"/>
-</node>
-<node TEXT="Loaders" FOLDED="true" ID="ID_665395832" CREATED="1517911401707" MODIFIED="1517911412233">
-<node TEXT="Loaders enable webpack to process more than just JavaScript files (webpack itself only understands JavaScript). They give you the ability to leverage webpack&apos;s bundling capabilities for all kinds of files by converting them to valid modules that webpack can process." ID="ID_1474720321" CREATED="1517912748015" MODIFIED="1517912748015"/>
-<node TEXT="At a high level, loaders have two purposes in your webpack configuratio" FOLDED="true" ID="ID_1913667286" CREATED="1517912809652" MODIFIED="1517912809652">
-<node TEXT="The test property identifies which file or files should be transformed." ID="ID_709620578" CREATED="1517912850357" MODIFIED="1517912850357"/>
-<node TEXT="The use property indicates which loader should be used to do the transforming." ID="ID_463301707" CREATED="1517912892028" MODIFIED="1517912892028"/>
-</node>
-<node TEXT="const path = require(&apos;path&apos;);&#xa;&#xa;const config = {&#xa;    entry: &apos;./path/to/my/entry/file.js&apos;,&#xa;    output: {&#xa;        path: path.resolve(__dirname, &apos;dist&apos;),&#xa;        filename: &apos;my-first-webpack.bundle.js&apos;&#xa;    },&#xa;    module: {&#xa;        rules: [&#xa;            { test: /\.txt$/, use: &apos;raw-loader&apos; }&#xa;        ]&#xa;   }&#xa;};&#xa;&#xa;module.exports = config;" ID="ID_1098275703" CREATED="1517913080070" MODIFIED="1517913273249"/>
-<node TEXT="The configuration above has defined a rules property for a single module with two required properties: test and use. This tells webpack&apos;s compiler the following:" ID="ID_781517584" CREATED="1517913320854" MODIFIED="1517913320854"/>
-<node TEXT="&quot;Hey webpack compiler, when you come across a path that resolves to a &apos;.txt&apos; file inside of a require()/import statement, use the raw-loader to transform it before you add it to the bundle.&quot;" ID="ID_1648896157" CREATED="1517913370558" MODIFIED="1517913370558"/>
-<node TEXT="There are other, more specific properties to define on loaders" ID="ID_213026869" CREATED="1517913421053" MODIFIED="1517913421053"/>
-</node>
-<node TEXT="Plugins" FOLDED="true" ID="ID_864461469" CREATED="1517911416939" MODIFIED="1517911486149">
-<node TEXT="While loaders are used to transform certain types of modules, plugins can be leveraged to perform a wider range of tasks. Plugins range from bundle optimization and minification all the way to defining environment-like variables. The plugin interface is extremely powerful and can be used to tackle a wide variety of tasks." ID="ID_1801438276" CREATED="1517913460262" MODIFIED="1517913460262"/>
-<node TEXT="While loaders are used to transform certain types of modules, plugins can be leveraged to perform a wider range of tasks. Plugins range from bundle optimization and minification all the way to defining environment-like variables. The plugin interface is extremely powerful and can be used to tackle a wide variety of tasks." ID="ID_1616043864" CREATED="1517913491231" MODIFIED="1517913491231"/>
-<node TEXT="const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;); //installed via npm&#xa;const webpack = require(&apos;webpack&apos;); //to access built-in plugins&#xa;const path = require(&apos;path&apos;);&#xa;&#xa;const config = {&#xa;    entry: &apos;./path/to/my/entry/file.js&apos;,&#xa;    output: {&#xa;        path: path.resolve(__dirname, &apos;dist&apos;),&#xa;        filename: &apos;my-first-webpack.bundle.js&apos;&#xa;    },&#xa;    module: {&#xa;        rules: [&#xa;            { test: /\.txt$/, use: &apos;raw-loader&apos; }&#xa;        ]&#xa;    },&#xa;    plugins: [&#xa;        new webpack.optimize.UglifyJsPlugin(),&#xa;        new HtmlWebpackPlugin({template: &apos;./src/index.html&apos;})&#xa;    ]&#xa; };&#xa;&#xa;module.exports = config;" ID="ID_1741814789" CREATED="1517913518660" MODIFIED="1517913702217"/>
-<node ID="ID_346240468" CREATED="1517913730752" MODIFIED="1517913730752" LINK="https://webpack.js.org/plugins"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <span style="color: rgb(43, 58, 66); font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline !important; float: none"><font color="rgb(43, 58, 66)" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" size="16px">There are many plugins that webpack provides out of the box! Check out our</font></span><font color="rgb(43, 58, 66)" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" size="16px"><span>&#160;</span></font><a href="https://webpack.js.org/plugins" style="border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; font-style: normal; font-weight: 400; font-size: 16px; line-height: inherit; font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; vertical-align: baseline; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(32, 134, 215); text-decoration: none; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px"><font size="16px" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" color="rgb(32, 134, 215)">list of plugins</font></a><span><font color="rgb(43, 58, 66)" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" size="16px">&#160;</font></span><font color="rgb(43, 58, 66)" face="Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" size="16px"><span style="color: rgb(43, 58, 66); font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; display: inline !important; float: none">for more information.</span></font>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-</node>
-<node TEXT="plugins" ID="ID_1175957489" CREATED="1517913811284" MODIFIED="1517913820826"/>
-</node>
-<node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
-</node>
-<node TEXT="linter" FOLDED="true" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
-<node TEXT="exception" FOLDED="true" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
-<node TEXT="// eslint-disable-line" ID="ID_1309138352" CREATED="1519056152043" MODIFIED="1519056157028"/>
-</node>
-</node>
-</node>
-</node>
 <node TEXT="Links" POSITION="left" ID="ID_1539401799" CREATED="1515277654467" MODIFIED="1517302173470" HGAP_QUANTITY="27.499999597668662 pt" VSHIFT_QUANTITY="-39.74999881535772 pt">
 <edge COLOR="#ff00ff"/>
 <node TEXT="https://unpkg.com/#/" ID="ID_1678468185" CREATED="1515277921812" MODIFIED="1515277921812" LINK="https://unpkg.com/#/"/>
@@ -2895,7 +2556,8 @@
 </node>
 <node TEXT="Tooling" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1519810482190" HGAP_QUANTITY="43.99999910593036 pt" VSHIFT_QUANTITY="11.249999664723884 pt">
 <edge COLOR="#808080"/>
-<node TEXT="Browser tools" FOLDED="true" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
+<node TEXT="Browser tools" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
+<node TEXT="Chrome" ID="ID_1143598703" CREATED="1520848695721" MODIFIED="1520848704139">
 <node TEXT="Chrome dev tools" FOLDED="true" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
 <node TEXT="delete all cookies" FOLDED="true" ID="ID_1406357828" CREATED="1515600581931" MODIFIED="1515600590818">
 <node TEXT="Open tools -&gt; Application -&gt; Clear storage" ID="ID_764055672" CREATED="1515600606187" MODIFIED="1515600649499"/>
@@ -2987,7 +2649,12 @@
 </node>
 </node>
 </node>
+<node TEXT="extentions" ID="ID_1018937192" CREATED="1520848755609" MODIFIED="1520848768849"/>
+</node>
+<node TEXT="Firefox" ID="ID_1181512892" CREATED="1520848705937" MODIFIED="1520848711546">
 <node TEXT="Firefox dev Tools" ID="ID_341753613" CREATED="1517909170190" MODIFIED="1517909180297"/>
+<node TEXT="extentions" ID="ID_61863371" CREATED="1520848772370" MODIFIED="1520848786683"/>
+</node>
 </node>
 <node TEXT="Version Control" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
 <node TEXT="Git" FOLDED="true" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
@@ -3198,6 +2865,9 @@
 <node TEXT="plattform" ID="ID_369395078" CREATED="1520801915048" MODIFIED="1520801922483">
 <node TEXT="https://frontendmasters.com/books/front-end-handbook/2017/" ID="ID_1714048269" CREATED="1520801927389" MODIFIED="1520801927389" LINK="https://frontendmasters.com/books/front-end-handbook/2017/"/>
 </node>
+</node>
+<node TEXT="Security" ID="ID_186255367" CREATED="1520844171048" MODIFIED="1520844184253">
+<node TEXT="https://haveibeenpwned.com/" ID="ID_633001591" CREATED="1520844188943" MODIFIED="1520844188943" LINK="https://haveibeenpwned.com/"/>
 </node>
 </node>
 <node TEXT="Protocols" POSITION="right" ID="ID_155934142" CREATED="1520803096799" MODIFIED="1520803121593">
