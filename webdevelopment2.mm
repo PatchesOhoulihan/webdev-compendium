@@ -1580,6 +1580,33 @@
 <node TEXT="Console" FOLDED="true" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1519030429070">
 <node TEXT="The Console object provides access to the browser&apos;s debugging console (e.g. the Web Console in Firefox). The specifics of how it works varies from browser to browser, but there is a de facto set of features that are typically provided." ID="ID_1019177181" CREATED="1519030454565" MODIFIED="1519030460464"/>
 </node>
+<node TEXT="Selectors API" ID="ID_1368576807" CREATED="1520889550702" MODIFIED="1520889555504">
+<node TEXT="The Selectors API provides methods that make it quick and easy to retrieve Element nodes from the DOM by matching against a set of selectors." ID="ID_1097846325" CREATED="1520890154583" MODIFIED="1520890166583"/>
+<node TEXT="querySelector" ID="ID_1117896581" CREATED="1520890180823" MODIFIED="1520890184414">
+<node TEXT="Returns the first matching Element node within the node&apos;s subtree. If no matching node is found, null is returned." ID="ID_1147142998" CREATED="1520890227135" MODIFIED="1520890231566"/>
+</node>
+<node TEXT="querySelectorAll" ID="ID_164638681" CREATED="1520890198295" MODIFIED="1520890245357">
+<node TEXT="Returns a NodeList containing all matching Element nodes within the node&apos;s subtree, or an empty NodeList if no matches are found." ID="ID_1581498986" CREATED="1520890257430" MODIFIED="1520890262477"/>
+</node>
+<node TEXT="Element" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525">
+<node TEXT="Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements." ID="ID_1706814041" CREATED="1519823638387" MODIFIED="1519823641701"/>
+<node TEXT="More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy." ID="ID_1009801161" CREATED="1519823669452" MODIFIED="1519823671957"/>
+<node TEXT="properties" ID="ID_1553576202" CREATED="1520891507982" MODIFIED="1520891514684">
+<node TEXT=".attributes" ID="ID_1976552739" CREATED="1520891546798" MODIFIED="1520891549300">
+<node TEXT="Returns a NamedNodeMap object containing the assigned attributes of the corresponding HTML element." ID="ID_345515982" CREATED="1520891562053" MODIFIED="1520891564828"/>
+<node TEXT="read only" ID="ID_528976857" CREATED="1520891577453" MODIFIED="1520891585444"/>
+</node>
+<node TEXT=".classList" ID="ID_1624098214" CREATED="1520891618485" MODIFIED="1520891621652">
+<node TEXT="Returns a DOMTokenList containing the list of class attributes." ID="ID_1686994267" CREATED="1520891695301" MODIFIED="1520891698795"/>
+<node TEXT="read only" ID="ID_133524943" CREATED="1520891773804" MODIFIED="1520891781314"/>
+</node>
+<node TEXT=".className" ID="ID_1803983539" CREATED="1520891632885" MODIFIED="1520891637556">
+<node TEXT="Is a DOMString representing the class of the element." ID="ID_1240230459" CREATED="1520891745772" MODIFIED="1520891748811"/>
+</node>
+</node>
+<node TEXT="methods" ID="ID_1102917540" CREATED="1520891516502" MODIFIED="1520891523036"/>
+</node>
+</node>
 </node>
 <node TEXT="cookies" FOLDED="true" ID="ID_194660626" CREATED="1515602020518" MODIFIED="1515602026494">
 <node TEXT="Was sind Third Party Cookies?" FOLDED="true" ID="ID_657863754" CREATED="1515602043953" MODIFIED="1515663572516">
@@ -1654,10 +1681,6 @@
 <node TEXT="show all cookies" FOLDED="true" ID="ID_126151023" CREATED="1515591363104" MODIFIED="1515591371563">
 <node TEXT="document.cookie" ID="ID_1545821702" CREATED="1515591375520" MODIFIED="1515591396272"/>
 </node>
-</node>
-<node TEXT="Element" FOLDED="true" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525">
-<node TEXT="Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements." ID="ID_1706814041" CREATED="1519823638387" MODIFIED="1519823641701"/>
-<node TEXT="More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy." ID="ID_1009801161" CREATED="1519823669452" MODIFIED="1519823671957"/>
 </node>
 <node TEXT="images" FOLDED="true" ID="ID_1671593944" CREATED="1519823921478" MODIFIED="1519823935815">
 <node TEXT="The Document object&apos;s images property returns a collection of the images in the current HTML document." ID="ID_496035063" CREATED="1519823950910" MODIFIED="1519823952869"/>
@@ -2854,6 +2877,11 @@
 <node TEXT="lorem" ID="ID_936891044" CREATED="1520782954857" MODIFIED="1520782959140">
 <node TEXT="http://loremricksum.com" ID="ID_137981762" CREATED="1516207717227" MODIFIED="1516207717227" LINK="http://loremricksum.com"/>
 </node>
+</node>
+<node TEXT="compatibility" ID="ID_366895230" CREATED="1520892023505" MODIFIED="1520892060825">
+<node TEXT="https://caniuse.com/" ID="ID_1669237959" CREATED="1520892084977" MODIFIED="1520892084977" LINK="https://caniuse.com/"/>
+<node TEXT="http://html5test.com/" ID="ID_83412033" CREATED="1520892125770" MODIFIED="1520892128888"/>
+<node TEXT="http://ami.responsivedesign.is/" ID="ID_788527129" CREATED="1520892164979" MODIFIED="1520892164979" LINK="http://ami.responsivedesign.is/"/>
 </node>
 <node TEXT="dev news/blogs" ID="ID_1853924662" CREATED="1520782997977" MODIFIED="1520783011699"/>
 <node TEXT="learning" ID="ID_1263329411" CREATED="1520801676106" MODIFIED="1520801695191">
