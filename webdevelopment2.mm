@@ -1578,8 +1578,22 @@
 </node>
 </node>
 <node TEXT="Web Workers API" ID="ID_1639014560" CREATED="1518085185446" MODIFIED="1518085185446"/>
-<node TEXT="Console" FOLDED="true" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1519030429070">
+<node TEXT="Console Api" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1520975991523">
 <node TEXT="The Console object provides access to the browser&apos;s debugging console (e.g. the Web Console in Firefox). The specifics of how it works varies from browser to browser, but there is a de facto set of features that are typically provided." ID="ID_1019177181" CREATED="1519030454565" MODIFIED="1519030460464"/>
+<node TEXT="The Console object can be accessed from any global object. Window on browsing scopes and WorkerGlobalScope as specific variants in workers via the property console. It&apos;s exposed as Window.console, and can be referenced as simply console." ID="ID_1149192939" CREATED="1520976183480" MODIFIED="1520976191681"/>
+<node TEXT="Methodes" ID="ID_318229738" CREATED="1520976394039" MODIFIED="1520976412472">
+<node TEXT="console.log()" ID="ID_400424110" CREATED="1520976427182" MODIFIED="1520976438248">
+<node TEXT="regular" ID="ID_1078102953" CREATED="1520976447846" MODIFIED="1520976453816">
+<node TEXT="console.log(&apos;hello&apos;);" ID="ID_271379426" CREATED="1520976483486" MODIFIED="1520976498839"/>
+</node>
+<node TEXT="interpolated" ID="ID_1567067051" CREATED="1520976456174" MODIFIED="1520976464384">
+<node TEXT="console.log(&apos;This is %s a string!&apos; , &apos;shit&apos;)" ID="ID_1746417854" CREATED="1520976539277" MODIFIED="1520976585271"/>
+</node>
+<node TEXT="styled" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
+<node TEXT="console.log(&apos;%c I am a pretty print!&apos; &apos;font-size:50px; background:red;&apos;)" ID="ID_1488628482" CREATED="1520976590677" MODIFIED="1520976657350"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Selectors API" ID="ID_1368576807" CREATED="1520889550702" MODIFIED="1520889555504">
 <node TEXT="The Selectors API provides methods that make it quick and easy to retrieve Element nodes from the DOM by matching against a set of selectors." ID="ID_1097846325" CREATED="1520890154583" MODIFIED="1520890166583"/>
@@ -2584,7 +2598,7 @@
 <edge COLOR="#808080"/>
 <node TEXT="Browser tools" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
 <node TEXT="Chrome" ID="ID_1143598703" CREATED="1520848695721" MODIFIED="1520848704139">
-<node TEXT="Chrome dev tools" FOLDED="true" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
+<node TEXT="Chrome dev tools" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
 <node TEXT="delete all cookies" FOLDED="true" ID="ID_1406357828" CREATED="1515600581931" MODIFIED="1515600590818">
 <node TEXT="Open tools -&gt; Application -&gt; Clear storage" ID="ID_764055672" CREATED="1515600606187" MODIFIED="1515600649499"/>
 </node>
@@ -2672,6 +2686,31 @@
 <node TEXT="Control + shift + r" ID="ID_622407417" CREATED="1517908566956" MODIFIED="1517908585010"/>
 </node>
 </node>
+</node>
+</node>
+<node TEXT="break on change" LOCALIZED_STYLE_REF="defaultstyle.attributes" ID="ID_256316626" CREATED="1520975547488" MODIFIED="1520975619405">
+<node TEXT="Want to know which javascript bit change your element?" ID="ID_1149838229" CREATED="1520975624092" MODIFIED="1520975662469"/>
+<node TEXT="open dev tools" ID="ID_1766022263" CREATED="1520975670684" MODIFIED="1520975683581"/>
+<node TEXT="right click the desired element" ID="ID_388539166" CREATED="1520975691827" MODIFIED="1520975711445"/>
+<node TEXT="select break on" ID="ID_1837977877" CREATED="1520975720947" MODIFIED="1520975743141"/>
+<node TEXT="choose between:" ID="ID_1542733136" CREATED="1520975752411" MODIFIED="1520975884100">
+<node TEXT="break on attribute change" ID="ID_874639349" CREATED="1520975890840" MODIFIED="1520975904827"/>
+<node ID="ID_553114567" CREATED="1520975909116" MODIFIED="1520975909116"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      break on subtree change
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="node removal" ID="ID_502308042" CREATED="1520975919314" MODIFIED="1520975952331"/>
 </node>
 </node>
 </node>
