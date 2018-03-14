@@ -2707,7 +2707,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="node removal" ID="ID_502308042" CREATED="1520975919314" MODIFIED="1520975952331"/>
@@ -2897,6 +2896,9 @@
 <node TEXT="video" ID="ID_104993054" CREATED="1520782534708" MODIFIED="1520782539991">
 <node TEXT="https://search.creativecommons.org/" ID="ID_27517993" CREATED="1520783154290" MODIFIED="1520783154290" LINK="https://search.creativecommons.org/"/>
 <node TEXT="http://www.coverr.co/" ID="ID_1184700972" CREATED="1520783217961" MODIFIED="1520783217961" LINK="http://www.coverr.co/"/>
+</node>
+<node TEXT="placeholders" ID="ID_1991620212" CREATED="1521027270177" MODIFIED="1521027277762">
+<node TEXT="http://placeskull.com/" ID="ID_913235319" CREATED="1521027280619" MODIFIED="1521027280619" LINK="http://placeskull.com/"/>
 </node>
 </node>
 <node TEXT="service mockups" ID="ID_1155776576" CREATED="1520783400728" MODIFIED="1520783412208">
