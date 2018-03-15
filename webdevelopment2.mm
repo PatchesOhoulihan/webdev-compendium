@@ -1451,6 +1451,23 @@
 <node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
 <node TEXT="language-core" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
+<node TEXT="datatypes" ID="ID_1729515640" CREATED="1521128790175" MODIFIED="1521128803370">
+<node TEXT="Dynamic typing" ID="ID_1054094230" CREATED="1521128837021" MODIFIED="1521128840773">
+<node TEXT="JavaScript is a loosely typed or a dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types" ID="ID_885926804" CREATED="1521128878013" MODIFIED="1521128896423"/>
+</node>
+<node TEXT="The latest ECMAScript standard defines seven data types" ID="ID_428773070" CREATED="1521128973800" MODIFIED="1521128977529">
+<node TEXT="Six data types that are primitives:" ID="ID_1760285723" CREATED="1521129104632" MODIFIED="1521129152514">
+<node TEXT="Boolean" ID="ID_1681372778" CREATED="1521129014641" MODIFIED="1521129017847"/>
+<node TEXT="Null" ID="ID_1794636900" CREATED="1521129041251" MODIFIED="1521129044186"/>
+<node TEXT="Undefined" ID="ID_1574590799" CREATED="1521129068013" MODIFIED="1521129071202"/>
+<node TEXT="Number" ID="ID_988964745" CREATED="1521129188835" MODIFIED="1521129192155"/>
+<node TEXT="String" ID="ID_923033908" CREATED="1521129212241" MODIFIED="1521129215247"/>
+<node TEXT="Symbol (new in ECMAScript 6)" ID="ID_657135573" CREATED="1521129229519" MODIFIED="1521129232510"/>
+</node>
+<node TEXT="and Object" ID="ID_1294289705" CREATED="1521129265506" MODIFIED="1521129273867"/>
+<node TEXT="All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable." ID="ID_124632379" CREATED="1521129364959" MODIFIED="1521129368619"/>
+</node>
+</node>
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
 <node TEXT="It&#x2019;s a JavaScript expression that allows us to extract data from arrays, objects, maps and sets" ID="ID_546247236" CREATED="1515401730724" MODIFIED="1515401730724"/>
 <node TEXT="const person = {" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
@@ -2531,6 +2548,8 @@
 <node TEXT="https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH" ID="ID_1020988756" CREATED="1520936857426" MODIFIED="1520936857426" LINK="https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH"/>
 <node TEXT="https://www.youtube.com/playlist?list=PLb0zKSynM2PBMF67Fo_18vshTDgGf4oyc" ID="ID_1835623249" CREATED="1520937379501" MODIFIED="1520937379501" LINK="https://www.youtube.com/playlist?list=PLb0zKSynM2PBMF67Fo_18vshTDgGf4oyc"/>
 <node TEXT="https://jwt.io/" ID="ID_22897264" CREATED="1520957698109" MODIFIED="1520957698109" LINK="https://jwt.io/"/>
+<node TEXT="https://www.microsoft.com/de-de/software-download/windows10ISO" ID="ID_453159282" CREATED="1521103334311" MODIFIED="1521103339681"/>
+<node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" ID="ID_1835774918" CREATED="1521132079985" MODIFIED="1521132079985" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"/>
 </node>
 <node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -2892,7 +2911,10 @@
 <node TEXT="pictures" ID="ID_1221541658" CREATED="1520782326462" MODIFIED="1520782331113">
 <node TEXT="https://pixabay.com/" ID="ID_1896151085" CREATED="1519599278403" MODIFIED="1519599281917"/>
 </node>
-<node TEXT="fonts" ID="ID_737167053" CREATED="1520782504053" MODIFIED="1520782510343"/>
+<node TEXT="fonts" ID="ID_737167053" CREATED="1520782504053" MODIFIED="1520782510343">
+<node TEXT="https://www.fontsquirrel.com/" ID="ID_1330675389" CREATED="1521102626477" MODIFIED="1521102631607"/>
+<node TEXT="https://fonts.google.com/" ID="ID_1224240222" CREATED="1521102725827" MODIFIED="1521102730500"/>
+</node>
 <node TEXT="video" ID="ID_104993054" CREATED="1520782534708" MODIFIED="1520782539991">
 <node TEXT="https://search.creativecommons.org/" ID="ID_27517993" CREATED="1520783154290" MODIFIED="1520783154290" LINK="https://search.creativecommons.org/"/>
 <node TEXT="http://www.coverr.co/" ID="ID_1184700972" CREATED="1520783217961" MODIFIED="1520783217961" LINK="http://www.coverr.co/"/>
@@ -2929,6 +2951,7 @@
 </node>
 <node TEXT="dev news/blogs" ID="ID_1853924662" CREATED="1520782997977" MODIFIED="1520783011699">
 <node TEXT="https://css-tricks.com/" ID="ID_614615062" CREATED="1520933945935" MODIFIED="1520933945935" LINK="https://css-tricks.com/"/>
+<node TEXT="https://codeburst.io/" ID="ID_71369027" CREATED="1521102567336" MODIFIED="1521102572156"/>
 </node>
 <node TEXT="learning" ID="ID_1263329411" CREATED="1520801676106" MODIFIED="1520801695191">
 <node TEXT="interactive" ID="ID_1145864293" CREATED="1520801691298" MODIFIED="1520801709151">
