@@ -1468,6 +1468,30 @@
 <node TEXT="All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable." ID="ID_124632379" CREATED="1521129364959" MODIFIED="1521129368619"/>
 </node>
 </node>
+<node TEXT="data structures" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1521190224413"/>
+<node TEXT="Standard built-in objects" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
+<node TEXT="This chapter documents all of JavaScript&apos;s standard, built-in objects, including their methods and properties." ID="ID_731718304" CREATED="1521190331107" MODIFIED="1521190335454"/>
+<node TEXT="The term &quot;global objects&quot; (or standard built-in objects) here is not to be confused with the global object. Here, global objects refer to objects in the global scope." ID="ID_276062820" CREATED="1521190358395" MODIFIED="1521190363389"/>
+<node TEXT="The global object itself can be accessed using the this operator in the global scope (but only if ECMAScript 5 strict mode is not used; in that case it returns undefined)." ID="ID_376537155" CREATED="1521190401587" MODIFIED="1521190411781"/>
+<node TEXT=" In fact, the global scope consists of the properties of the global object, including inherited properties, if any." ID="ID_867838805" CREATED="1521190580052" MODIFIED="1521190583581"/>
+<node TEXT="Other objects in the global scope are either created by the user script or provided by the host application. The host objects available in browser contexts" ID="ID_1066163475" CREATED="1521190629908" MODIFIED="1521190637493"/>
+<node TEXT="Value properties" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653"/>
+<node TEXT="Function properties" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157"/>
+<node TEXT="Fundamental objects" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893"/>
+<node TEXT="Numbers and dates" ID="ID_1446852569" CREATED="1521191012764" MODIFIED="1521191017733"/>
+<node TEXT="Text processing" ID="ID_983507599" CREATED="1521191030612" MODIFIED="1521191035605"/>
+<node TEXT="collections" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
+<node TEXT="Indexed collections" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701"/>
+<node TEXT="Keyed collections" ID="ID_906892615" CREATED="1521191092140" MODIFIED="1521191097285"/>
+<node TEXT="Vector collections" ID="ID_1584418826" CREATED="1521191104916" MODIFIED="1521191107661"/>
+</node>
+<node TEXT="Structured data" ID="ID_155116878" CREATED="1521191116284" MODIFIED="1521191127270"/>
+<node TEXT="Control abstraction objects" ID="ID_1054878500" CREATED="1521191145588" MODIFIED="1521191149270"/>
+<node TEXT="Reflection" ID="ID_1389853796" CREATED="1521191156148" MODIFIED="1521191166589"/>
+<node TEXT="Internationalization" ID="ID_603387814" CREATED="1521191168324" MODIFIED="1521191172118"/>
+<node TEXT="WebAssembly" ID="ID_190760401" CREATED="1521191222188" MODIFIED="1521191227342"/>
+<node TEXT="Other" ID="ID_1140208783" CREATED="1521191234989" MODIFIED="1521191239686"/>
+</node>
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
 <node TEXT="It&#x2019;s a JavaScript expression that allows us to extract data from arrays, objects, maps and sets" ID="ID_546247236" CREATED="1515401730724" MODIFIED="1515401730724"/>
 <node TEXT="const person = {" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
@@ -1561,8 +1585,8 @@
 <node TEXT="Web APIs" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
 <node TEXT="Web Application Programming Interfaces (Web APIs) are used to perform a variety of tasks, such as manipulating the DOM, playing audio or video, or generating 3D graphics." ID="ID_1839416238" CREATED="1517822841024" MODIFIED="1517822864936"/>
 <node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167"/>
-<node TEXT="Web Storage API" FOLDED="true" ID="ID_975504561" CREATED="1515661463986" MODIFIED="1515661463986">
-<node TEXT="The Web Storage API provides mechanisms by which browsers can securely store key/value pairs, in a much more intuitive fashion than using cookies. " ID="ID_1567172796" CREATED="1515661511672" MODIFIED="1515661537408"/>
+<node TEXT="Web Storage API" FOLDED="true" ID="ID_975504561" CREATED="1515661463986" MODIFIED="1521189955393">
+<node TEXT="The Web Storage API provides mechanisms by which browsers can securely store key/value pairs, in a much more intuitive fashion than using cookies. " ID="ID_1567172796" CREATED="1515661511672" MODIFIED="1521189955391"/>
 <node TEXT="Basic concepts" FOLDED="true" ID="ID_1652000095" CREATED="1515661632023" MODIFIED="1515662961836">
 <node TEXT="Storage objects are simple key-value stores, similar to objects, but they stay intact through page loads. The keys and the values are always strings (note that integer keys will be automatically converted to strings, just like what objects do). You can access these values like an object, or with the Storage.getItem() and Storage.setItem() methods. These three lines all set the colorSetting entry in the same way:" ID="ID_26214173" CREATED="1515661663066" MODIFIED="1515661663066"/>
 <node TEXT="localStorage.colorSetting = &apos;#a4509b&apos;;" ID="ID_840151432" CREATED="1515661677379" MODIFIED="1515661677379"/>
@@ -1600,13 +1624,13 @@
 <node TEXT="The Console object can be accessed from any global object. Window on browsing scopes and WorkerGlobalScope as specific variants in workers via the property console. It&apos;s exposed as Window.console, and can be referenced as simply console." ID="ID_1149192939" CREATED="1520976183480" MODIFIED="1520976191681"/>
 <node TEXT="Methodes" ID="ID_318229738" CREATED="1520976394039" MODIFIED="1520976412472">
 <node TEXT="console.log()" ID="ID_400424110" CREATED="1520976427182" MODIFIED="1520976438248">
-<node TEXT="regular" ID="ID_1078102953" CREATED="1520976447846" MODIFIED="1520976453816">
+<node TEXT="regular" FOLDED="true" ID="ID_1078102953" CREATED="1520976447846" MODIFIED="1520976453816">
 <node TEXT="console.log(&apos;hello&apos;);" ID="ID_271379426" CREATED="1520976483486" MODIFIED="1520976498839"/>
 </node>
-<node TEXT="interpolated" ID="ID_1567067051" CREATED="1520976456174" MODIFIED="1520976464384">
+<node TEXT="interpolated" FOLDED="true" ID="ID_1567067051" CREATED="1520976456174" MODIFIED="1520976464384">
 <node TEXT="console.log(&apos;This is %s a string!&apos; , &apos;shit&apos;)" ID="ID_1746417854" CREATED="1520976539277" MODIFIED="1520976585271"/>
 </node>
-<node TEXT="styled" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
+<node TEXT="styled" FOLDED="true" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
 <node TEXT="console.log(&apos;%c I am a pretty print!&apos; &apos;font-size:50px; background:red;&apos;)" ID="ID_1488628482" CREATED="1520976590677" MODIFIED="1520976657350"/>
 </node>
 </node>
@@ -1686,7 +1710,7 @@
 <hook URI="webdevelopment2_files/png_5868046861603241277.png" SIZE="0.80862534" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="Global Object" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1518085056345">
+<node TEXT="host objects" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1521189986520">
 <node TEXT="In a web browser, any code which the script doesn&apos;t specifically start up as a background task has a Window as its global object. This is the vast majority of JavaScript code on the Web." ID="ID_690447496" CREATED="1518085107077" MODIFIED="1518085107077"/>
 <node TEXT="window" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
 <node TEXT="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property." ID="ID_545673075" CREATED="1518094524949" MODIFIED="1518094524949"/>
