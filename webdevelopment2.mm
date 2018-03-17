@@ -130,7 +130,7 @@
 <node TEXT="Though not technically the first browser, Mosaic was the first one that many people experienced and played a big part in popularizing the concept of the World Wide Web and the Web browser." ID="ID_672601724" CREATED="1520200080793" MODIFIED="1520200080793"/>
 </node>
 </node>
-<node TEXT="Tags" FOLDED="true" ID="ID_1907537597" CREATED="1517835208389" MODIFIED="1517909406271">
+<node TEXT="Tags" ID="ID_1907537597" CREATED="1517835208389" MODIFIED="1517909406271">
 <node TEXT="Comment" FOLDED="true" ID="ID_873678968" CREATED="1519592695865" MODIFIED="1519592701707">
 <node TEXT="&lt;!--This is a comment. Comments are not displayed in the browser--&gt;" ID="ID_1466872894" CREATED="1519592708937" MODIFIED="1519592712027"/>
 </node>
@@ -162,7 +162,7 @@
 <node TEXT="&lt;nav&gt;" ID="ID_1155868937" CREATED="1520726315341" MODIFIED="1520726318896"/>
 <node TEXT="&lt;section&gt;" ID="ID_1534995824" CREATED="1520726331061" MODIFIED="1520726333504"/>
 </node>
-<node TEXT="Text content" FOLDED="true" ID="ID_1142534139" CREATED="1520591947597" MODIFIED="1520591950717">
+<node TEXT="Text content" ID="ID_1142534139" CREATED="1520591947597" MODIFIED="1520591950717">
 <node TEXT="Use HTML text content elements to organize blocks or sections of content placed between the opening &lt;body&gt; and closing &lt;/body&gt; tags. Important for accessibility and SEO, these elements identify the purpose or structure of that content." ID="ID_198102019" CREATED="1520726966868" MODIFIED="1520726973028"/>
 <node TEXT="&lt;blockquote&gt;" ID="ID_1735757403" CREATED="1520726654435" MODIFIED="1520726657838"/>
 <node TEXT="&lt;dd&gt;" ID="ID_799321769" CREATED="1520726668211" MODIFIED="1520726670582"/>
@@ -180,7 +180,7 @@
 <node TEXT="&lt;pre&gt;" ID="ID_640476297" CREATED="1520726918241" MODIFIED="1520726921301"/>
 <node TEXT="&lt;ul&gt;" ID="ID_1961562135" CREATED="1520726929657" MODIFIED="1520726957807"/>
 </node>
-<node TEXT="Inline text semantics" FOLDED="true" ID="ID_1943550316" CREATED="1520591962372" MODIFIED="1520591966502">
+<node TEXT="Inline text semantics" ID="ID_1943550316" CREATED="1520591962372" MODIFIED="1520591966502">
 <node TEXT="Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text." ID="ID_1846190442" CREATED="1520727052264" MODIFIED="1520727055852"/>
 <node TEXT="&lt;a&gt;" ID="ID_1139796414" CREATED="1520727085952" MODIFIED="1520727089387"/>
 <node TEXT="&lt;abbr&gt;" ID="ID_922747264" CREATED="1520727143927" MODIFIED="1520727147227"/>
@@ -194,7 +194,11 @@
 <node TEXT="&lt;dfn&gt;" ID="ID_1707797585" CREATED="1520727266007" MODIFIED="1520727269354"/>
 <node TEXT="&lt;em&gt;" ID="ID_1762000015" CREATED="1520727277375" MODIFIED="1520727280666"/>
 <node TEXT="&lt;i&gt;" ID="ID_478779875" CREATED="1520727289431" MODIFIED="1520727292706"/>
-<node TEXT="&lt;kbd&gt;" ID="ID_882397972" CREATED="1520727338990" MODIFIED="1520727341986"/>
+<node TEXT="&lt;kbd&gt;" ID="ID_882397972" CREATED="1520727338990" MODIFIED="1520727341986">
+<node TEXT="The HTML Keyboard Input element (&lt;kbd&gt;) represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device." ID="ID_1892253822" CREATED="1521324692509" MODIFIED="1521324829362"/>
+<node TEXT="By convention, the user agent defaults to rendering the contents of a &lt;kbd&gt; element using its default monospace font, although this is not mandated by the HTML standard." ID="ID_1885643478" CREATED="1521324719459" MODIFIED="1521324724442"/>
+<node TEXT="This element only includes the global attributes." ID="ID_1267560068" CREATED="1521324772459" MODIFIED="1521324776218"/>
+</node>
 <node TEXT="&lt;mark&gt;" ID="ID_616306960" CREATED="1520727354046" MODIFIED="1520727357074"/>
 <node TEXT="&lt;nobr&gt;" ID="ID_823174757" CREATED="1520727364758" MODIFIED="1520727368098"/>
 <node TEXT="&lt;q&gt;" ID="ID_87346674" CREATED="1520727380414" MODIFIED="1520727384194"/>
@@ -202,7 +206,11 @@
 <node TEXT="&lt;rt&gt;" ID="ID_454417195" CREATED="1520727401918" MODIFIED="1520727411032"/>
 <node TEXT="&lt;rtc&gt;" ID="ID_516769901" CREATED="1520727412342" MODIFIED="1520727415281"/>
 <node TEXT="&lt;s&gt;" ID="ID_872705606" CREATED="1520727439454" MODIFIED="1520727442850"/>
-<node TEXT="&lt;samp&gt;" ID="ID_1248102075" CREATED="1520727457262" MODIFIED="1520727460641"/>
+<node TEXT="&lt;samp&gt;" ID="ID_1248102075" CREATED="1520727457262" MODIFIED="1520727460641">
+<node TEXT="The HTML Sample Element (&lt;samp&gt;) is used to enclose inline text which represents sample (or quoted) output from a computer program." ID="ID_1710898226" CREATED="1521324871098" MODIFIED="1521324873769"/>
+<node TEXT="Its contents are typically rendered using the browser&apos;s default monospaced font (such as Courier or Lucida Console)." ID="ID_649493776" CREATED="1521324888602" MODIFIED="1521324899489"/>
+<node TEXT="This element only includes the global attributes." ID="ID_1979353083" CREATED="1521324926602" MODIFIED="1521324929696"/>
+</node>
 <node TEXT="&lt;small&gt;" ID="ID_1935484016" CREATED="1520727469190" MODIFIED="1520727472289"/>
 <node TEXT="&lt;span&gt;" ID="ID_1299893946" CREATED="1520727479974" MODIFIED="1520727482937"/>
 <node TEXT="&lt;strong&gt;" ID="ID_1820222344" CREATED="1520727495629" MODIFIED="1520727498937"/>
@@ -223,7 +231,7 @@
 <node TEXT="&lt;track&gt;" ID="ID_1002263403" CREATED="1520593388191" MODIFIED="1520593392736"/>
 <node TEXT="&lt;video&gt;" ID="ID_1344946774" CREATED="1520593406127" MODIFIED="1520593410337"/>
 </node>
-<node TEXT="Embedded content" FOLDED="true" ID="ID_515819194" CREATED="1520592049709" MODIFIED="1520592055263">
+<node TEXT="Embedded content" ID="ID_515819194" CREATED="1520592049709" MODIFIED="1520592055263">
 <node TEXT="In addition to regular multimedia content, HTML can include a variety of other content, even if it&apos;s not always easy to interact with." ID="ID_370102277" CREATED="1520727696184" MODIFIED="1520727701920"/>
 <node TEXT="&lt;applet&gt;" ID="ID_401266200" CREATED="1520593124420" MODIFIED="1520593131350"/>
 <node TEXT="&lt;embed&gt;" ID="ID_855705740" CREATED="1520593150373" MODIFIED="1520593157254"/>
@@ -233,7 +241,7 @@
 <node TEXT="&lt;picture&gt;" ID="ID_1790167744" CREATED="1520593212333" MODIFIED="1520593216654"/>
 <node TEXT="&lt;source&gt;" ID="ID_1512781250" CREATED="1520593224621" MODIFIED="1520593229582"/>
 </node>
-<node TEXT="Scripting" FOLDED="true" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
+<node TEXT="Scripting" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
 <node TEXT="In order to create dynamic content and Web applications, HTML supports the use of scripting languages, most prominently JavaScript. Certain elements support this capability." ID="ID_1601191736" CREATED="1520727731055" MODIFIED="1520727736767"/>
 <node TEXT="&lt;canvas&gt;" ID="ID_619380127" CREATED="1520592996387" MODIFIED="1520593000725"/>
 <node TEXT="&lt;script&gt;" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1520593070106">
@@ -463,7 +471,7 @@
 </node>
 <node TEXT="Obsolete and deprecated elements" ID="ID_315398082" CREATED="1520592191358" MODIFIED="1520592276840"/>
 </node>
-<node TEXT="Global attributes" FOLDED="true" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
+<node TEXT="Global attributes" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
 <node TEXT="Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements." ID="ID_489227557" CREATED="1520172307612" MODIFIED="1520172312937"/>
 <node TEXT="Global attributes may be specified on all HTML elements, even those not specified in the standard." FOLDED="true" ID="ID_966516826" CREATED="1520172331188" MODIFIED="1520172336504">
 <node TEXT="That means that any non-standard elements must still permit these attributes, even though using those elements means that the document is no longer HTML5-compliant." ID="ID_1736452133" CREATED="1520172374548" MODIFIED="1520172379983"/>
@@ -500,7 +508,7 @@
 <node TEXT="Allows you to specify that a standard HTML element should behave like a registered custom built-in element (see Using custom elements for more details)." ID="ID_349820742" CREATED="1520174887313" MODIFIED="1520174892012"/>
 </node>
 </node>
-<node TEXT="Internationalization" FOLDED="true" ID="ID_1874236465" CREATED="1520172679313" MODIFIED="1520172683165">
+<node TEXT="Internationalization" ID="ID_1874236465" CREATED="1520172679313" MODIFIED="1520172683165">
 <node TEXT="lang" FOLDED="true" ID="ID_749571762" CREATED="1520172707769" MODIFIED="1520172712125">
 <node TEXT="The language of text in an element." ID="ID_1762221161" CREATED="1520172745399" MODIFIED="1520172745399"/>
 <node TEXT="For a wide variety of reasons, it&apos;s important for a browser to know what language your page is written in, including font selection, text-to-speech conversion, spell-checking, hyphenation and automated line breaking, text transforms, automated translation, and more." ID="ID_16869333" CREATED="1520198333598" MODIFIED="1520198339446"/>
@@ -517,7 +525,7 @@
 <node TEXT="auto" ID="ID_864478466" CREATED="1520173256277" MODIFIED="1520173261608"/>
 </node>
 </node>
-<node TEXT="translate" FOLDED="true" ID="ID_904269698" CREATED="1520172775001" MODIFIED="1520172778668">
+<node TEXT="translate" ID="ID_904269698" CREATED="1520172775001" MODIFIED="1520172778668">
 <node TEXT="If text should be translated when a document is localized." ID="ID_862949153" CREATED="1520173275989" MODIFIED="1520173280560"/>
 <node TEXT="Values" FOLDED="true" ID="ID_955512514" CREATED="1520173286605" MODIFIED="1520173300224">
 <node TEXT="yes" ID="ID_1763308558" CREATED="1520173367884" MODIFIED="1520173374688"/>
@@ -644,7 +652,7 @@
 </node>
 </node>
 </node>
-<node TEXT="data-*" FOLDED="true" ID="ID_1446111548" CREATED="1520174666299" MODIFIED="1520174674134">
+<node TEXT="data-*" ID="ID_1446111548" CREATED="1520174666299" MODIFIED="1520174674134">
 <node TEXT="Forms a class of attributes, called custom data attributes, that allow proprietary information to be exchanged between the HTML and its DOM representation that may be used by scripts. All such custom data are available via the HTMLElement interface of the element the attribute is set on. The HTMLElement.dataset property gives access to them." ID="ID_987646576" CREATED="1520174690578" MODIFIED="1520174696598"/>
 </node>
 <node TEXT="html events" FOLDED="true" ID="ID_816931101" CREATED="1520174966528" MODIFIED="1520175375976">
@@ -1090,7 +1098,7 @@
 <node TEXT="Pseudo-classes" ID="ID_1510060852" CREATED="1519516015090" MODIFIED="1519516030388">
 <node TEXT="pseudo-classes can be used to style an element based on its state." ID="ID_1423517617" CREATED="1519519700532" MODIFIED="1519519706251"/>
 <node TEXT="Like regular classes, you can chain together as many pseudo-classes as you want in a selector." ID="ID_755750842" CREATED="1519521426303" MODIFIED="1519521432023"/>
-<node TEXT="Index of standard pseudo-classes" FOLDED="true" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1519520377622">
+<node TEXT="Index of standard pseudo-classes" FOLDED="true" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1521326744883">
 <node TEXT=":active" ID="ID_1143391783" CREATED="1519520388396" MODIFIED="1519520395578"/>
 <node TEXT=":any" ID="ID_1341041150" CREATED="1519520397460" MODIFIED="1519520400502"/>
 <node TEXT=":any-link" ID="ID_941860286" CREATED="1519520453411" MODIFIED="1519520455814"/>
@@ -1112,7 +1120,7 @@
 <node TEXT=":in-range" ID="ID_1364139555" CREATED="1519520825777" MODIFIED="1519520829355"/>
 <node TEXT=":invalid" ID="ID_1283754776" CREATED="1519520869889" MODIFIED="1519520889947"/>
 <node TEXT=":lang()" ID="ID_980965985" CREATED="1519520983664" MODIFIED="1519520986546"/>
-<node TEXT=":last-child" ID="ID_1907173387" CREATED="1519520995536" MODIFIED="1519520998170"/>
+<node TEXT=":last-child" ID="ID_1907173387" CREATED="1519520995536" MODIFIED="1521326744883"/>
 <node TEXT=":last-of-type" ID="ID_1921424115" CREATED="1519521006664" MODIFIED="1519521009674"/>
 <node TEXT=":left" ID="ID_1217414420" CREATED="1519521017807" MODIFIED="1519521020810"/>
 <node TEXT=":link" ID="ID_739574129" CREATED="1519521029487" MODIFIED="1519521032290"/>
@@ -1469,20 +1477,20 @@
 </node>
 </node>
 <node TEXT="data structures" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1521190224413"/>
-<node TEXT="Standard built-in objects" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
+<node TEXT="Standard built-in objects" FOLDED="true" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
 <node TEXT="This chapter documents all of JavaScript&apos;s standard, built-in objects, including their methods and properties." ID="ID_731718304" CREATED="1521190331107" MODIFIED="1521190335454"/>
 <node TEXT="The term &quot;global objects&quot; (or standard built-in objects) here is not to be confused with the global object. Here, global objects refer to objects in the global scope." ID="ID_276062820" CREATED="1521190358395" MODIFIED="1521190363389"/>
 <node TEXT="The global object itself can be accessed using the this operator in the global scope (but only if ECMAScript 5 strict mode is not used; in that case it returns undefined)." ID="ID_376537155" CREATED="1521190401587" MODIFIED="1521190411781"/>
 <node TEXT=" In fact, the global scope consists of the properties of the global object, including inherited properties, if any." ID="ID_867838805" CREATED="1521190580052" MODIFIED="1521190583581"/>
 <node TEXT="Other objects in the global scope are either created by the user script or provided by the host application. The host objects available in browser contexts" ID="ID_1066163475" CREATED="1521190629908" MODIFIED="1521190637493"/>
-<node TEXT="Value properties" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653">
+<node TEXT="Value properties" FOLDED="true" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653">
 <node TEXT="These global properties return a simple value; they have no properties or methods." ID="ID_1820806319" CREATED="1521308519053" MODIFIED="1521308524186"/>
 <node TEXT="Infinity" OBJECT="java.lang.Double|Infinity" ID="ID_170409255" CREATED="1521308534229" MODIFIED="1521308544945"/>
 <node TEXT="NaN" OBJECT="java.lang.Double|NaN" ID="ID_230146644" CREATED="1521308545797" MODIFIED="1521308549911"/>
 <node TEXT="undefined" ID="ID_809751258" CREATED="1521308558061" MODIFIED="1521308562207"/>
 <node TEXT="null literal" ID="ID_1874205737" CREATED="1521308572029" MODIFIED="1521308576094"/>
 </node>
-<node TEXT="Function properties" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
+<node TEXT="Function properties" FOLDED="true" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
 <node TEXT="These global functions&#x2014;functions which are called globally rather than on an object&#x2014;directly return their results to the caller." ID="ID_844058669" CREATED="1521308603949" MODIFIED="1521308606999"/>
 <node TEXT="eval()" ID="ID_1138508202" CREATED="1521308618789" MODIFIED="1521308623606"/>
 <node TEXT="isFinite()" ID="ID_1837829520" CREATED="1521308631852" MODIFIED="1521308635567"/>
@@ -1494,7 +1502,7 @@
 <node TEXT="encodeURI()" ID="ID_1018794098" CREATED="1521308713260" MODIFIED="1521308718046"/>
 <node TEXT="encodeURIComponent()" ID="ID_347321201" CREATED="1521308726828" MODIFIED="1521311823240"/>
 </node>
-<node TEXT="Fundamental objects" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
+<node TEXT="Fundamental objects" FOLDED="true" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
 <node TEXT="These are the fundamental, basic objects upon which all other objects are based. This includes objects that represent general objects, functions, and errors." ID="ID_586945238" CREATED="1521311890350" MODIFIED="1521311893034"/>
 <node TEXT="Object" ID="ID_17690293" CREATED="1521311912454" MODIFIED="1521311916216"/>
 <node TEXT="Function" ID="ID_1904735197" CREATED="1521311925574" MODIFIED="1521311934208"/>
@@ -1509,19 +1517,19 @@
 <node TEXT="TypeError" ID="ID_938187249" CREATED="1521312082133" MODIFIED="1521312092334"/>
 <node TEXT="URIError" ID="ID_1144061054" CREATED="1521312101613" MODIFIED="1521312108222"/>
 </node>
-<node TEXT="Numbers and dates" ID="ID_1446852569" CREATED="1521191012764" MODIFIED="1521191017733">
+<node TEXT="Numbers and dates" FOLDED="true" ID="ID_1446852569" CREATED="1521191012764" MODIFIED="1521191017733">
 <node TEXT="These are the base objects representing numbers, dates, and mathematical calculations." ID="ID_496013201" CREATED="1521312305854" MODIFIED="1521312379158"/>
 <node TEXT="Number" ID="ID_1906808554" CREATED="1521312134852" MODIFIED="1521312137222"/>
 <node TEXT="Math" ID="ID_857904093" CREATED="1521312144612" MODIFIED="1521312146998"/>
 <node TEXT="Date" ID="ID_1361130230" CREATED="1521312190061" MODIFIED="1521312192694"/>
 </node>
-<node TEXT="Text processing" ID="ID_983507599" CREATED="1521191030612" MODIFIED="1521191035605">
+<node TEXT="Text processing" FOLDED="true" ID="ID_983507599" CREATED="1521191030612" MODIFIED="1521191035605">
 <node TEXT="These objects represent strings and support manipulating them." ID="ID_1961440496" CREATED="1521312344893" MODIFIED="1521312352244"/>
 <node TEXT="String" ID="ID_1843826343" CREATED="1521312212204" MODIFIED="1521312213861"/>
 <node TEXT="RegExp" ID="ID_86727286" CREATED="1521312248996" MODIFIED="1521312252781"/>
 </node>
-<node TEXT="collections" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
-<node TEXT="Indexed collections" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
+<node TEXT="collections" FOLDED="true" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
+<node TEXT="Indexed collections" FOLDED="true" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
 <node TEXT="These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs." ID="ID_44580959" CREATED="1521312539650" MODIFIED="1521312544995"/>
 <node TEXT="Array" ID="ID_18798492" CREATED="1521312271147" MODIFIED="1521312274669"/>
 <node TEXT="Int8Array" ID="ID_554670113" CREATED="1521312282475" MODIFIED="1521312286013"/>
@@ -1534,19 +1542,19 @@
 <node TEXT="Float32Array" ID="ID_917704529" CREATED="1521312490162" MODIFIED="1521312493924"/>
 <node TEXT="Float64Array" ID="ID_434490144" CREATED="1521312503786" MODIFIED="1521312507076"/>
 </node>
-<node TEXT="Keyed collections" ID="ID_906892615" CREATED="1521191092140" MODIFIED="1521191097285">
+<node TEXT="Keyed collections" FOLDED="true" ID="ID_906892615" CREATED="1521191092140" MODIFIED="1521191097285">
 <node TEXT="These objects represent collections which use keys; these contain elements which are iterable in the order of insertion." ID="ID_1732348158" CREATED="1521312578193" MODIFIED="1521312582459"/>
 <node TEXT="Map" ID="ID_608513859" CREATED="1521312591497" MODIFIED="1521312594779"/>
 <node TEXT="Set" ID="ID_1280041011" CREATED="1521312601649" MODIFIED="1521312606411"/>
 <node TEXT="WeakMap" ID="ID_1129531467" CREATED="1521312613497" MODIFIED="1521312618251"/>
 <node TEXT="WeakSet" ID="ID_1767195126" CREATED="1521312625665" MODIFIED="1521312630667"/>
 </node>
-<node TEXT="Vector collections" ID="ID_1584418826" CREATED="1521191104916" MODIFIED="1521191107661">
+<node TEXT="Vector collections" FOLDED="true" ID="ID_1584418826" CREATED="1521191104916" MODIFIED="1521191107661">
 <node TEXT="SIMD vector data types are objects where data is arranged into lanes." ID="ID_1450757696" CREATED="1521313039958" MODIFIED="1521313043128"/>
 <node TEXT="experimental" ID="ID_1492953019" CREATED="1521313054039" MODIFIED="1521313061111"/>
 </node>
 </node>
-<node TEXT="Structured data" ID="ID_155116878" CREATED="1521191116284" MODIFIED="1521191127270">
+<node TEXT="Structured data" FOLDED="true" ID="ID_155116878" CREATED="1521191116284" MODIFIED="1521191127270">
 <node TEXT="These objects represent and interact with structured data buffers and data coded using JavaScript Object Notation (JSON)." ID="ID_1705123584" CREATED="1521312790616" MODIFIED="1521312793465"/>
 <node TEXT="ArrayBuffer" ID="ID_510140517" CREATED="1521312804144" MODIFIED="1521312808345"/>
 <node TEXT="DataView" ID="ID_677873570" CREATED="1521312817632" MODIFIED="1521312825065"/>
@@ -1554,23 +1562,23 @@
 <node TEXT="SharedArrayBuffer" ID="ID_147738327" CREATED="1521313074902" MODIFIED="1521313078999"/>
 <node TEXT="Atomics" ID="ID_1203597101" CREATED="1521313089302" MODIFIED="1521313093664"/>
 </node>
-<node TEXT="Control abstraction objects" ID="ID_1054878500" CREATED="1521191145588" MODIFIED="1521191149270">
+<node TEXT="Control abstraction objects" FOLDED="true" ID="ID_1054878500" CREATED="1521191145588" MODIFIED="1521191149270">
 <node TEXT="Promise" ID="ID_1276653573" CREATED="1521312739936" MODIFIED="1521312743114"/>
 <node TEXT="Generator" ID="ID_237737055" CREATED="1521312749088" MODIFIED="1521312752618"/>
 <node TEXT="GeneratorFunction" ID="ID_663968071" CREATED="1521312758672" MODIFIED="1521312762329"/>
 </node>
-<node TEXT="Reflection" ID="ID_1389853796" CREATED="1521191156148" MODIFIED="1521191166589">
+<node TEXT="Reflection" FOLDED="true" ID="ID_1389853796" CREATED="1521191156148" MODIFIED="1521191166589">
 <node TEXT="Reflect" ID="ID_1951759434" CREATED="1521312715768" MODIFIED="1521312717826"/>
 <node TEXT="Proxy" ID="ID_921464942" CREATED="1521312725192" MODIFIED="1521312729322"/>
 </node>
-<node TEXT="Internationalization" ID="ID_603387814" CREATED="1521191168324" MODIFIED="1521191172118">
+<node TEXT="Internationalization" FOLDED="true" ID="ID_603387814" CREATED="1521191168324" MODIFIED="1521191172118">
 <node TEXT="Additions to the ECMAScript core for language-sensitive functionalities." ID="ID_1106706529" CREATED="1521313113934" MODIFIED="1521313118287"/>
 <node TEXT="Intl" ID="ID_913979577" CREATED="1521313124814" MODIFIED="1521313129039"/>
 <node TEXT="Intl.Collator" ID="ID_621873360" CREATED="1521313138406" MODIFIED="1521313142423"/>
 <node TEXT="Intl.DateTimeFormat" ID="ID_403676325" CREATED="1521313152205" MODIFIED="1521313156383"/>
 <node TEXT="Intl.NumberFormat" ID="ID_1900824594" CREATED="1521313162862" MODIFIED="1521313166839"/>
 </node>
-<node TEXT="WebAssembly" ID="ID_190760401" CREATED="1521191222188" MODIFIED="1521191227342">
+<node TEXT="WebAssembly" FOLDED="true" ID="ID_190760401" CREATED="1521191222188" MODIFIED="1521191227342">
 <node TEXT="WebAssembly" ID="ID_1408549604" CREATED="1521313191549" MODIFIED="1521313197831"/>
 <node TEXT="WebAssembly.Module" ID="ID_840529340" CREATED="1521313204909" MODIFIED="1521313208687"/>
 <node TEXT="WebAssembly.Instance" ID="ID_1583301156" CREATED="1521313215141" MODIFIED="1521313219070"/>
@@ -1580,7 +1588,7 @@
 <node TEXT="WebAssembly.LinkError" ID="ID_1374341220" CREATED="1521313263189" MODIFIED="1521313272323"/>
 <node TEXT="WebAssembly.RuntimeError" ID="ID_557148395" CREATED="1521313273530" MODIFIED="1521313278558"/>
 </node>
-<node TEXT="Other" ID="ID_1140208783" CREATED="1521191234989" MODIFIED="1521191239686">
+<node TEXT="Other" FOLDED="true" ID="ID_1140208783" CREATED="1521191234989" MODIFIED="1521191239686">
 <node TEXT="arguments" ID="ID_982127361" CREATED="1521312694041" MODIFIED="1521312698210"/>
 </node>
 </node>
@@ -1598,13 +1606,13 @@
 <node TEXT="var [one, two, three] = foo; &apos;(Array-Destrukturierung)&apos;" ID="ID_778337520" CREATED="1515412678158" MODIFIED="1515412769159"/>
 <node TEXT="The above code says, give me a variable called first, a variable called last, and take it from the person object. We&#x2019;re taking the first property and the last property and putting them into two new variables that will be scoped to the parent block (or window!)." ID="ID_592499181" CREATED="1515412133129" MODIFIED="1515412133129"/>
 </node>
-<node TEXT="Klassenmethoden" FOLDED="true" ID="ID_57798391" CREATED="1517408950485" MODIFIED="1517408974912">
+<node TEXT="Klassenmethoden" FOLDED="true" ID="ID_57798391" CREATED="1517408950485" MODIFIED="1521326471599">
 <node TEXT="Object" FOLDED="true" ID="ID_1553072748" CREATED="1517415218931" MODIFIED="1517415224807">
 <node TEXT="Klonen eines Objekts" FOLDED="true" ID="ID_523661076" CREATED="1517408977642" MODIFIED="1517408977642">
 <node TEXT="Eigenschaften in dem Zielobjekt werden von Eigenschaften aus dem Quellobjekt &#xfc;berschrieben, wenn sie den gleichen Schl&#xfc;ssel haben." ID="ID_516171712" CREATED="1517415105072" MODIFIED="1517415105072"/>
 </node>
 </node>
-<node TEXT="Array" ID="ID_1703991624" CREATED="1517415246859" MODIFIED="1517415256432"/>
+<node TEXT="Array" ID="ID_1703991624" CREATED="1517415246859" MODIFIED="1521326471598"/>
 </node>
 <node TEXT="Nice to know" FOLDED="true" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
 <node TEXT="Swap variables" FOLDED="true" ID="ID_1349446183" CREATED="1519028404553" MODIFIED="1519028413418">
