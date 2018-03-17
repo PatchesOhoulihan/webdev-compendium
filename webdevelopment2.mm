@@ -1886,7 +1886,357 @@
 </node>
 </node>
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
-<node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049"/>
+<node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
+<node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
+<node TEXT="Quick Setup" FOLDED="true" ID="ID_1666734176" CREATED="1515277487524" MODIFIED="1515323490525">
+<node TEXT="1. Create an HTML file" ID="ID_1602235452" CREATED="1515277527954" MODIFIED="1515277527954"/>
+<node TEXT="2. Add scripts to include react.js, react-dom.js and babel.js inside the head of the HTML file" FOLDED="true" ID="ID_1271641365" CREATED="1515277539612" MODIFIED="1515323485901">
+<font NAME="SansSerif" SIZE="12"/>
+<node TEXT="&lt;script src=&quot;https://unpkg.com/react@15/dist/react.min.js&quot;&gt;&lt;/script&gt;       &lt;script src=&quot;https://unpkg.com/react-dom@15/dist/react-dom.min.js&quot;&gt;&lt;/script&gt;       &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js&quot;&gt;&lt;/script&gt;" ID="ID_1187241620" CREATED="1515278725785" MODIFIED="1515278725785" LINK="https://unpkg.com/react@15/dist/react.min.js"/>
+</node>
+<node TEXT="3. Add a babel script within the body of the HTML file" FOLDED="true" ID="ID_1495461944" CREATED="1515277602051" MODIFIED="1515323487709">
+<node TEXT="&lt;script type=&quot;text/babel&quot;&gt;" ID="ID_1122297618" CREATED="1515278757740" MODIFIED="1515278757740"/>
+</node>
+<node TEXT="4. Add &lt;div id=&quot;root&gt;&lt;/div&gt; to the body of the HTML file" ID="ID_1137967348" CREATED="1515277681982" MODIFIED="1515277681982"/>
+<node TEXT="5. Start rendering elements using ReactJS" FOLDED="true" ID="ID_654207240" CREATED="1515277713795" MODIFIED="1515323483347">
+<node TEXT="&lt;script type=&quot;text/babel&quot;&gt;ReactDOM.render(&lt;div&gt;Hello World&lt;/div&gt;, document.getElementById(&quot;root&quot;))      &lt;/script&gt;" ID="ID_232195864" CREATED="1515278785863" MODIFIED="1515278821722"/>
+</node>
+</node>
+<node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
+<node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
+<node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1409151973" CREATED="1515278541958" MODIFIED="1515278541958"/>
+<node TEXT="ReactJS applications are built from React Components - independent resusable components" ID="ID_728172620" CREATED="1515278579191" MODIFIED="1515278579191"/>
+<node TEXT="that describe how the UI should look based on their own state and properties." ID="ID_316601598" CREATED="1515278589469" MODIFIED="1515278592874"/>
+</node>
+<node TEXT="Why should I use ReactJS?" FOLDED="true" ID="ID_1935515619" CREATED="1515278620434" MODIFIED="1515324016705">
+<node TEXT="ReactJS applications are incredibly performant at UI rerendering" ID="ID_1849800554" CREATED="1515278628589" MODIFIED="1515278628589"/>
+<node TEXT="React Components make writing UI components easier" ID="ID_961089749" CREATED="1515278635436" MODIFIED="1515278635436"/>
+<node TEXT="What makes ReactJS so efficient at rerendering?" FOLDED="true" ID="ID_1301101177" CREATED="1515278935116" MODIFIED="1515324015040">
+<node TEXT="React Components are used to generate a Virtual DOM - a light-weight abstraction of the actual HTML DOM. The Virtual DOM is able to be generated much more quickly than the HTML DOM because it does not have to calculate CSS styles and layouts. When a React Component changes state, the Virtual DOM is recreated and the difference between the new Virtual DOM and the previous Virtual DOM is calculated. The ReactJS library then calculates the most efficient way to update the HTML DOM to reflect these changes. This ends up being much faster than regenerating the entire HTML DOM from the top." ID="ID_2187251" CREATED="1515278969363" MODIFIED="1515278969363"/>
+</node>
+</node>
+</node>
+<node TEXT="Rendering Elements/React Nodes" FOLDED="true" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
+<node TEXT="React Elements/ React Nodes" FOLDED="true" ID="ID_1038299905" CREATED="1515279516927" MODIFIED="1515426330695">
+<node TEXT="React elements are the building blocks of react JS applications. React Elements are objects that represent a DOM node. They are written using a syntax extension named JSX which allows us to write HTML tags in our JavaScript code and asign that to a variable. React Elements are different than React Components." ID="ID_989987460" CREATED="1515279546743" MODIFIED="1515281627439"/>
+<node TEXT="A React node is defined as: a light, stateless, immutable, virtual representation of a DOM node." ID="ID_892902770" CREATED="1515426225352" MODIFIED="1515426225352"/>
+</node>
+<node TEXT="Creating React Nodes" FOLDED="true" ID="ID_1231851973" CREATED="1515426352525" MODIFIED="1515426377605">
+<node TEXT="In most cases developers using React will favor JSX and use it to create React nodes. React nodes can be created without JSX, using only JavaScript. " ID="ID_1481251238" CREATED="1515426481126" MODIFIED="1515426511324"/>
+<node TEXT="Creating React nodes using JavaScript is as simple as calling the " ID="ID_517572412" CREATED="1515426572662" MODIFIED="1515426585874"/>
+<node TEXT="React.createElement(type,props,children)" ID="ID_934773581" CREATED="1515426594435" MODIFIED="1515426594435"/>
+<node TEXT="The React.createElement() arguments explained" FOLDED="true" ID="ID_970266944" CREATED="1515426649144" MODIFIED="1515426808788">
+<node TEXT="type (string | React.createClass()):" ID="ID_947152123" CREATED="1515426649145" MODIFIED="1515426649145"/>
+<node TEXT="Can be a string which represents an HTML element (or custom HTML element) or React component instance (i.e., an instance of React.createClass())" ID="ID_1847243533" CREATED="1515426649146" MODIFIED="1515426649146"/>
+<node TEXT="props (null | object):" ID="ID_370258365" CREATED="1515426649148" MODIFIED="1515426649148"/>
+<node TEXT="Can be null or an object containing attributes/props and values" ID="ID_863377617" CREATED="1515426649149" MODIFIED="1515426649149"/>
+<node TEXT="children (null | string | React.createClass() | React.createElement()):" ID="ID_1972419346" CREATED="1515426649149" MODIFIED="1515426649149"/>
+<node TEXT="Children can be null, a string that gets turned into a text node, an instance of React.createClass() or React.createElement()" ID="ID_1629601961" CREATED="1515426649150" MODIFIED="1515426649150"/>
+</node>
+</node>
+<node TEXT="ReactDOM.render()" FOLDED="true" ID="ID_63685709" CREATED="1515279598314" MODIFIED="1515574518520">
+<node TEXT="The ReactDOM.render() method is used to render a React Element into a specified part of the HTML DOM. In most React applications, there is usually a single root node where everything gets rendered into, but you may use as many root nodes as you desire." ID="ID_1086408521" CREATED="1515279623147" MODIFIED="1515279623147"/>
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1154622966" CREATED="1515279739348" MODIFIED="1515323837002">
+<node TEXT="&lt;h1&gt;Hello World!&lt;/h1&gt;," ID="ID_824682517" CREATED="1515279739349" MODIFIED="1515279739349"/>
+<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1622863497" CREATED="1515279739349" MODIFIED="1515279739349"/>
+</node>
+<node TEXT=")" ID="ID_1082349223" CREATED="1515279739349" MODIFIED="1515279739349"/>
+<node TEXT="The ReactDom.render method takes in two arguments. The first being the element that we&apos;re trying to render, and the second being the target." ID="ID_912652637" CREATED="1515281808591" MODIFIED="1515281813647"/>
+<node TEXT="In this case, the &lt;h1&gt;Hello World!&lt;/h1&gt; React Element is rendered into the DOM element with the id of &quot;root&quot;." ID="ID_215091933" CREATED="1515279655161" MODIFIED="1515279655161"/>
+</node>
+<node TEXT="ReactDOM.hydrate(element, container[, callback])" FOLDED="true" ID="ID_1117354309" CREATED="1515574601384" MODIFIED="1515574638653">
+<node TEXT="Same as render(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer. React will attempt to attach event listeners to the existing markup." ID="ID_249940115" CREATED="1515574659766" MODIFIED="1515574659766"/>
+<node TEXT="React expects that the rendered content is identical between the server and the client. It can patch up differences in text content, but you should treat mismatches as bugs and fix them. In development mode, React warns about mismatches during hydration. There are no guarantees that attribute differences will be patched up in case of mismatches. This is important for performance reasons because in most apps, mismatches are rare, and so validating all markup would be prohibitively expensive." ID="ID_1946163722" CREATED="1515574696893" MODIFIED="1515574696893"/>
+</node>
+<node TEXT="Rerendering the DOM using additional render() calls" FOLDED="true" ID="ID_352350568" CREATED="1515279779165" MODIFIED="1515324110192">
+<node TEXT="The following example uses additional render() calls to update the displayed number:" ID="ID_555321991" CREATED="1515279899278" MODIFIED="1515279899278"/>
+<node TEXT="var num = 0;" ID="ID_1623345411" CREATED="1515279916734" MODIFIED="1515279916734"/>
+<node TEXT="function updateNum(){" FOLDED="true" ID="ID_270409922" CREATED="1515279916735" MODIFIED="1515323843874">
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1569473042" CREATED="1515279916735" MODIFIED="1515323842938">
+<node TEXT="&lt;div&gt;{num++}&lt;/div&gt;," ID="ID_614846720" CREATED="1515279916735" MODIFIED="1515279916735"/>
+<node TEXT="document.getElementById(&quot;root&quot;))" ID="ID_1819243240" CREATED="1515279916736" MODIFIED="1515279958619"/>
+</node>
+</node>
+<node TEXT="}" ID="ID_1297237349" CREATED="1515279916736" MODIFIED="1515279916736"/>
+<node TEXT="setInterval(updateNum,100)" ID="ID_1447679119" CREATED="1515279916737" MODIFIED="1515279916737"/>
+<node TEXT="So once a DOM is rendered it will remain the same" ID="ID_1162081155" CREATED="1515281936791" MODIFIED="1515281936791"/>
+<node TEXT="until another ReactDOM.render method is called." ID="ID_301245827" CREATED="1515281936792" MODIFIED="1515281936792"/>
+</node>
+</node>
+<node TEXT="JSX" FOLDED="true" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
+<node TEXT="What is JSX?" FOLDED="true" ID="ID_561960569" CREATED="1515282290585" MODIFIED="1515329962957">
+<node TEXT="JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags." ID="ID_1071991068" CREATED="1515282302327" MODIFIED="1515282302327"/>
+<node TEXT="Using JSX, we can create React Elements easily with HTML Tags:" ID="ID_630607591" CREATED="1515282323768" MODIFIED="1515282323768"/>
+<node TEXT="var element = &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_883849702" CREATED="1515282335884" MODIFIED="1515282335884"/>
+<node TEXT="Without JSX, the process is much slower and more verbose:" ID="ID_728222510" CREATED="1515282354731" MODIFIED="1515282354731"/>
+<node TEXT="var element = React.createElement(&apos;h1&apos;,null,&apos;Hello World!&apos;)" ID="ID_1786494567" CREATED="1515282390081" MODIFIED="1515282390081"/>
+</node>
+<node TEXT="Using JSX with JavaScript Expressions" FOLDED="true" ID="ID_793645520" CREATED="1515282432125" MODIFIED="1515324194368">
+<node TEXT="Curly braces can be used to embed JavaScript expressions into JSX." ID="ID_1050283814" CREATED="1515282443789" MODIFIED="1515282443789"/>
+<node TEXT="The following are all examples of valid JavaScript expressions in JSX:" ID="ID_903535947" CREATED="1515282452938" MODIFIED="1515282452938"/>
+<node TEXT="var str = &quot;World!&quot;" ID="ID_204402998" CREATED="1515282573869" MODIFIED="1515282573869"/>
+<node TEXT="var element =  &lt;h1&gt; Hello {str}&lt;/h1&gt;" ID="ID_377418364" CREATED="1515282583605" MODIFIED="1515282583605"/>
+<node TEXT="OR" ID="ID_532693582" CREATED="1515282586825" MODIFIED="1515282595544"/>
+<node TEXT="var item = {name: &quot;Cheese&quot;,price: 5}" ID="ID_1274136016" CREATED="1515282614588" MODIFIED="1515282614588"/>
+<node TEXT="var element = &lt;p&gt;{item.name} : ${item.price} &lt;/p&gt;" ID="ID_365382006" CREATED="1515282670547" MODIFIED="1515282670547"/>
+<node TEXT="OR" ID="ID_556675437" CREATED="1515282717032" MODIFIED="1515282723384"/>
+<node TEXT="var length = 20" ID="ID_1487716724" CREATED="1515282725657" MODIFIED="1515282725657"/>
+<node TEXT="var width = 10" ID="ID_411558113" CREATED="1515282725657" MODIFIED="1515282725657"/>
+<node TEXT="function calculateArea(x,y){return x * y}" ID="ID_1252891173" CREATED="1515282759075" MODIFIED="1515282759075"/>
+<node TEXT="var element = &lt;div&gt;The Area is: {calculateArea(length,width)}&lt;/div&gt;" ID="ID_1807556477" CREATED="1515282773751" MODIFIED="1515282773751"/>
+</node>
+<node TEXT="Using JSX with Attributes" FOLDED="true" ID="ID_442182466" CREATED="1515282811921" MODIFIED="1515324311151">
+<node TEXT="You can supply attribute values using a string literal surrounded by quotes:" ID="ID_1299864710" CREATED="1515282842249" MODIFIED="1515282842249"/>
+<node TEXT="var element = &lt;button className =&quot;deleteButton&quot;&gt; Delete &lt;/button&gt;" ID="ID_77291909" CREATED="1515282865539" MODIFIED="1515282865539"/>
+<node TEXT="You can also supply attributes values by embedding a JavaScript expression using curly braces:" ID="ID_697166385" CREATED="1515282894820" MODIFIED="1515282894820"/>
+<node TEXT="var element = &lt;img src ={product.imageURL}&gt;&lt;/img&gt;" ID="ID_1863840614" CREATED="1515282919441" MODIFIED="1515282919441"/>
+<node TEXT="Do not surround curly braces with quotes. This will cause your expression to be treated as a string literal:" ID="ID_1129616869" CREATED="1515282943940" MODIFIED="1515282943940"/>
+<node TEXT="var element = &lt;img src =&quot;{product.imageURL}&quot;&gt;&lt;/img&gt;" ID="ID_855540507" CREATED="1515282954514" MODIFIED="1515282954514"/>
+<node TEXT="Some common HTML attributes are named differently in JSX. For example &quot;class&quot; becomes &quot;className&quot; because &quot;class&quot; is a reserved keyword in JavaScript. Furthermore, attribute names in JSX follow the camelCase naming convention so an HTML attribute such as fontsize would become fontSize in JSX." ID="ID_1381293665" CREATED="1515282995210" MODIFIED="1515282995210"/>
+</node>
+<node TEXT="Using JSX with Empty Tags" FOLDED="true" ID="ID_1712000031" CREATED="1515283022704" MODIFIED="1515323861706">
+<node TEXT="If a HTML tag is empty, you can close it with a &apos;/&gt;&apos; instead of using a closing tag." ID="ID_171196410" CREATED="1515283043246" MODIFIED="1515283043246"/>
+<node TEXT="var element = &lt;input className =&quot;nameInput&quot;/&gt;" ID="ID_55019796" CREATED="1515283054508" MODIFIED="1515283054508"/>
+</node>
+<node TEXT="Using JSX with a Style Object" FOLDED="true" ID="ID_148088820" CREATED="1515283038318" MODIFIED="1515324323543">
+<node TEXT="The style attribute can be populated with a style object instead of a string literal" ID="ID_1948763072" CREATED="1515283276363" MODIFIED="1515283276363"/>
+<node TEXT="var styleObject = {" FOLDED="true" ID="ID_403990055" CREATED="1515283291988" MODIFIED="1515323863234">
+<node TEXT="backgroundColor: &apos;red&apos;," ID="ID_704624622" CREATED="1515283291988" MODIFIED="1515283291988"/>
+<node TEXT="color:&apos;blue&apos;," ID="ID_1617281415" CREATED="1515283291989" MODIFIED="1515283291989"/>
+<node TEXT="fontSize: 25," ID="ID_319606715" CREATED="1515283291989" MODIFIED="1515283291989"/>
+<node TEXT="width: 100" ID="ID_183121042" CREATED="1515283291989" MODIFIED="1515283291989"/>
+</node>
+<node TEXT="}" ID="ID_500140108" CREATED="1515283291989" MODIFIED="1515283291989"/>
+<node TEXT="var element = &lt;input style = {styleObject}/&gt;" ID="ID_1145261304" CREATED="1515283304559" MODIFIED="1515283304559"/>
+<node TEXT="In this next example, the first set of curly braces is for the JSX expression while the second set of curly braces is for the style object:" ID="ID_170237697" CREATED="1515283371090" MODIFIED="1515283371090"/>
+<node TEXT="var element = &lt;input style = {{width:200,height:100}}/&gt;" ID="ID_1767842847" CREATED="1515283391052" MODIFIED="1515283391052"/>
+</node>
+<node TEXT="Using JSX with Nested Elements" FOLDED="true" ID="ID_418999237" CREATED="1515283421602" MODIFIED="1515327825780">
+<node TEXT="React Elements can be nested within other React Elements as long as the whole thing is wrapped by in a single element." ID="ID_642461190" CREATED="1515283465935" MODIFIED="1515283465935"/>
+<node TEXT="var element = (" FOLDED="true" ID="ID_1511340065" CREATED="1515283476897" MODIFIED="1515323868730">
+<node TEXT="&lt;div&gt;" FOLDED="true" ID="ID_1954666401" CREATED="1515283476897" MODIFIED="1515323867746">
+<node TEXT="&lt;div&gt;Hello World&lt;/div&gt;" ID="ID_1527521055" CREATED="1515283476897" MODIFIED="1515283476897"/>
+<node TEXT="&lt;div&gt;Hello World&lt;/div&gt;" ID="ID_636164716" CREATED="1515283476898" MODIFIED="1515283476898"/>
+</node>
+<node TEXT="&lt;/div&gt;" ID="ID_421786483" CREATED="1515283476898" MODIFIED="1515283476898"/>
+</node>
+<node TEXT=")" ID="ID_325948283" CREATED="1515283476898" MODIFIED="1515283476898"/>
+<node TEXT="This example is not surrounded with a single wrapping element and will throw an error:" ID="ID_1712866857" CREATED="1515283504758" MODIFIED="1515283504758"/>
+<node TEXT="var element = (" FOLDED="true" ID="ID_1752543518" CREATED="1515283516215" MODIFIED="1515323871034">
+<node TEXT="&lt;div&gt;Hello World&lt;/div&gt;" ID="ID_1444994004" CREATED="1515283516215" MODIFIED="1515283516215"/>
+<node TEXT="&lt;div&gt;Hello World&lt;/div&gt;" ID="ID_560052207" CREATED="1515283516216" MODIFIED="1515283516216"/>
+</node>
+<node TEXT=")" ID="ID_762800295" CREATED="1515283516216" MODIFIED="1515283516216"/>
+<node TEXT="It is recommended to surround nested elements with paranthesis to avoid the problems that occur with automatic semicolon insertion." ID="ID_637831599" CREATED="1515283537736" MODIFIED="1515283537736"/>
+</node>
+<node TEXT="Using JSX Objects" FOLDED="true" ID="ID_9310455" CREATED="1515283565806" MODIFIED="1515327826860">
+<node TEXT="Objects created with JSX can be manipulated just like normal JavaScript objects. They can be passed in arrays, used as arguments or return statements to functions and used inside if statements or for loops." ID="ID_1631462099" CREATED="1515283585770" MODIFIED="1515283585770"/>
+<node TEXT="An example using JSX objects within an If Else statement:" ID="ID_1254079393" CREATED="1515283596769" MODIFIED="1515283596769"/>
+<node TEXT="var product = {name:&quot;apple&quot;,stock:0}" ID="ID_712009844" CREATED="1515283607859" MODIFIED="1515283607859"/>
+<node TEXT="if(product.stock &lt; 0){" FOLDED="true" ID="ID_1297160854" CREATED="1515283616427" MODIFIED="1515323874514">
+<node TEXT="var element = &lt;h1&gt;The product named {product.name} is not in stock&lt;/h1&gt;" ID="ID_251179312" CREATED="1515283616427" MODIFIED="1515283616427"/>
+</node>
+<node TEXT="}" ID="ID_1199348875" CREATED="1515283616428" MODIFIED="1515283616428"/>
+<node TEXT="else{" FOLDED="true" ID="ID_1021563121" CREATED="1515283616428" MODIFIED="1515323875954">
+<node TEXT="var element = &lt;h1&gt;The product named {product.name} and has {product.stock} units in stock&lt;/h1&gt;" ID="ID_1609175272" CREATED="1515283616428" MODIFIED="1515283616428"/>
+</node>
+<node TEXT="}" ID="ID_1051872649" CREATED="1515283616430" MODIFIED="1515283616430"/>
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1433433570" CREATED="1515283629537" MODIFIED="1515323877250">
+<node TEXT="element," ID="ID_216609549" CREATED="1515283629537" MODIFIED="1515283629537"/>
+<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_890089549" CREATED="1515283629538" MODIFIED="1515283629538"/>
+</node>
+<node TEXT=")" ID="ID_1009919121" CREATED="1515283629538" MODIFIED="1515283629538"/>
+</node>
+</node>
+<node TEXT="React Components" FOLDED="true" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1515324690463">
+<node TEXT="A React Component is an independent reusable component that returns an React Element based on its properties and state." ID="ID_694180055" CREATED="1515324663282" MODIFIED="1515327169097"/>
+<node TEXT="There are two types of React Components:" ID="ID_991084746" CREATED="1515324678253" MODIFIED="1515324678253"/>
+<node TEXT="Functional Components" FOLDED="true" ID="ID_735915423" CREATED="1515324693268" MODIFIED="1515327712565">
+<node TEXT="Functional Components are just functions that output React Elements. By convention, the first letter of the function name should be capitalized." ID="ID_1812711183" CREATED="1515324830742" MODIFIED="1515324830742"/>
+<node TEXT="Here is an example:" FOLDED="true" ID="ID_135996708" CREATED="1515324865072" MODIFIED="1515325177129">
+<node TEXT="function HelloWorld(){" FOLDED="true" ID="ID_343678881" CREATED="1515324876845" MODIFIED="1515325161704">
+<node TEXT="return &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_1819345227" CREATED="1515324876845" MODIFIED="1515324876845"/>
+</node>
+<node TEXT="}" ID="ID_211648113" CREATED="1515324876846" MODIFIED="1515324876846"/>
+</node>
+<node TEXT="You can use the React Component in JSX by creating an HTML tag with the same name as the React Component: In our ReactDOM.render function, we can put a tag&#xa;with the functional component&apos;s name as the tag name." FOLDED="true" ID="ID_686953824" CREATED="1515324907866" MODIFIED="1515327563110">
+<node TEXT="var element = &lt;HelloWorld/&gt;" ID="ID_1764753833" CREATED="1515324934806" MODIFIED="1515324934806"/>
+<node TEXT="Another Example:" ID="ID_1569658168" CREATED="1515324963564" MODIFIED="1515324963564"/>
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_60322008" CREATED="1515324972689" MODIFIED="1515327562294">
+<node TEXT="&lt;HelloWorld/&gt;," ID="ID_1791524361" CREATED="1515324972689" MODIFIED="1515324972689"/>
+<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_703443557" CREATED="1515324972690" MODIFIED="1515324972690"/>
+<node TEXT=")" ID="ID_864671950" CREATED="1515324972690" MODIFIED="1515324972690"/>
+</node>
+</node>
+<node TEXT="Adding Properties to Functional Components" FOLDED="true" ID="ID_787645284" CREATED="1515325035933" MODIFIED="1515327275689">
+<node TEXT="The first argument to a Functional Component is an object that contains the component&apos;s properties." ID="ID_1513484994" CREATED="1515325213899" MODIFIED="1515325213899"/>
+<node TEXT="function HelloWorld(props){" FOLDED="true" ID="ID_1253977598" CREATED="1515325270224" MODIFIED="1515325270224">
+<node TEXT="return &lt;h1&gt;Message: {props.message}&lt;/h1&gt;" ID="ID_148170266" CREATED="1515325270225" MODIFIED="1515325270225"/>
+</node>
+<node TEXT="}" ID="ID_1254979526" CREATED="1515325270225" MODIFIED="1515325270225"/>
+<node TEXT="You can supply property values the same way as you supply attribute values:" ID="ID_1412617142" CREATED="1515325300514" MODIFIED="1515325300514"/>
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1462866787" CREATED="1515325325331" MODIFIED="1515325325331">
+<node TEXT="&lt;HelloWorld message=&quot;Hello World!&quot;/&gt;," ID="ID_1678845505" CREATED="1515325325332" MODIFIED="1515325325332"/>
+<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1507856434" CREATED="1515325325332" MODIFIED="1515325325332"/>
+<node TEXT=")" ID="ID_1883244455" CREATED="1515325325333" MODIFIED="1515325325333"/>
+</node>
+<node TEXT="Properties can be string literals, arrays or any other type of JavaScript object including other React Elements:" ID="ID_61232777" CREATED="1515325346261" MODIFIED="1515325346261"/>
+<node TEXT="function HelloWorld(props){" FOLDED="true" ID="ID_459047842" CREATED="1515325442715" MODIFIED="1515325442715">
+<node TEXT="return &lt;h1&gt;Value: {props.numberArray[props.index]} &lt;/h1&gt;" ID="ID_1147158642" CREATED="1515325442716" MODIFIED="1515325442716"/>
+</node>
+<node TEXT="}" ID="ID_1791757458" CREATED="1515325442716" MODIFIED="1515325442716"/>
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_268571859" CREATED="1515325455377" MODIFIED="1515325455377">
+<node TEXT="&lt;HelloWorld index = &quot;3&quot; numberArray={[1,2,3,4,5]}/&gt;," ID="ID_841769864" CREATED="1515325455378" MODIFIED="1515325455378"/>
+<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_450764312" CREATED="1515325455378" MODIFIED="1515325455378"/>
+</node>
+<node TEXT=")" ID="ID_441460993" CREATED="1515325455379" MODIFIED="1515325455379"/>
+<node TEXT="You can supply as many property values as you want and they will all be accessible through the props argument." ID="ID_166969736" CREATED="1515325487379" MODIFIED="1515325487379"/>
+</node>
+</node>
+<node TEXT="Class Components" FOLDED="true" ID="ID_1284006348" CREATED="1515324704374" MODIFIED="1515324704374">
+<node TEXT="React Component written using ES6 classes:" FOLDED="true" ID="ID_1782786029" CREATED="1515879063236" MODIFIED="1515879063236">
+<node TEXT="class Welcome extends React.Component{" FOLDED="true" ID="ID_456614035" CREATED="1515879076453" MODIFIED="1515879076453">
+<node TEXT="render(){" FOLDED="true" ID="ID_1254712957" CREATED="1515879076453" MODIFIED="1515879076453">
+<node TEXT="return &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_97414083" CREATED="1515879076453" MODIFIED="1515879076453"/>
+</node>
+<node TEXT="}" ID="ID_724281677" CREATED="1515879076453" MODIFIED="1515879076453"/>
+</node>
+<node TEXT="}" ID="ID_272323855" CREATED="1515879076453" MODIFIED="1515879076453"/>
+</node>
+<node TEXT="Both types of React Components can be used by writing their name within an HTML tag:" ID="ID_768627998" CREATED="1515879135879" MODIFIED="1515879135879"/>
+<node TEXT="var element = &lt;Welcome/&gt;" ID="ID_1516297552" CREATED="1515879145222" MODIFIED="1515879145222"/>
+<node TEXT="Render()" FOLDED="true" ID="ID_762491199" CREATED="1515879156393" MODIFIED="1515879156393">
+<node TEXT="The render() method of a class component is used to describe what kind of React Element is going to be returned from the Class Component. It the same as the return value of of a Functional Component." ID="ID_1205471840" CREATED="1515879174322" MODIFIED="1515879174322"/>
+</node>
+<node TEXT="For example, the following Class Component will render&lt;h1&gt;Hello World!&lt;/h1&gt;:" FOLDED="true" ID="ID_1860970041" CREATED="1515879251667" MODIFIED="1515879251667">
+<node TEXT="class Welcome extends React.Component{" FOLDED="true" ID="ID_189856148" CREATED="1515879266577" MODIFIED="1515879266577">
+<node TEXT="render(){" FOLDED="true" ID="ID_1303887826" CREATED="1515879266577" MODIFIED="1515879266577">
+<node TEXT="return &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_1650595093" CREATED="1515879266577" MODIFIED="1515879266577"/>
+</node>
+<node TEXT="}" ID="ID_401387150" CREATED="1515879266577" MODIFIED="1515879266577"/>
+</node>
+<node TEXT="}" ID="ID_815800146" CREATED="1515879266577" MODIFIED="1515879266577"/>
+<node TEXT="//renders &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_815639064" CREATED="1515879266579" MODIFIED="1515879266579"/>
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_142075979" CREATED="1515879266579" MODIFIED="1515879266579">
+<node TEXT="&lt;Welcome/&gt;," ID="ID_1209257437" CREATED="1515879266580" MODIFIED="1515879266580"/>
+<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1598134241" CREATED="1515879266580" MODIFIED="1515879266580"/>
+</node>
+<node TEXT=")" ID="ID_330963432" CREATED="1515879266580" MODIFIED="1515879266580"/>
+</node>
+<node TEXT="Adding properties to Class Components" FOLDED="true" ID="ID_556710431" CREATED="1515879309437" MODIFIED="1515879309437">
+<node TEXT="The properties of a Class Component can be accessed through the this.props attribute. This differs slightly from Functional Components where the properties were passed in as a variable." ID="ID_918013746" CREATED="1515879327661" MODIFIED="1515879327661"/>
+<node TEXT="class Welcome extends React.Component{" FOLDED="true" ID="ID_294175750" CREATED="1515879335707" MODIFIED="1515879335707">
+<node TEXT="render(){" FOLDED="true" ID="ID_532446718" CREATED="1515879335707" MODIFIED="1515879335707">
+<node TEXT="return &lt;h1&gt;Message: {this.props.message}&lt;/h1&gt;" ID="ID_360240636" CREATED="1515879335707" MODIFIED="1515879335707"/>
+</node>
+<node TEXT="}" ID="ID_1715405090" CREATED="1515879335707" MODIFIED="1515879335707"/>
+</node>
+<node TEXT="}" ID="ID_1216415764" CREATED="1515879335707" MODIFIED="1515879335707"/>
+<node TEXT="One thing to remember is that you have to do&#xa;this.props.message whereas before with functional&#xa;components you only had to do props.message." ID="ID_208706129" CREATED="1515879661556" MODIFIED="1515879701816"/>
+<node TEXT="You can supply property values the same way as you supply attribute values:" ID="ID_1068337518" CREATED="1515879368915" MODIFIED="1515879368915"/>
+<node TEXT="&lt;Welcome message=&quot;Hello World!&quot;/&gt;" ID="ID_1686976424" CREATED="1515879380366" MODIFIED="1515879380366"/>
+</node>
+<node TEXT="State" FOLDED="true" ID="ID_1884970624" CREATED="1515879759661" MODIFIED="1515879759661">
+<node TEXT="Constructor(props)" FOLDED="true" ID="ID_189601013" CREATED="1515879769945" MODIFIED="1515879769945">
+<node TEXT="The constructor() method is called before a React Component is mounted and is used to set up the initial state of the component. It is important to call super(props) at the beginning of the constructor() method or else the this.props attribute may not work correctly. The first argument to the constructor() method represents the properties that are passed into the component." ID="ID_43186579" CREATED="1515879806576" MODIFIED="1515879806576"/>
+<node TEXT="class Counter extends React.Component{" FOLDED="true" ID="ID_1295913561" CREATED="1515879818551" MODIFIED="1515879818551">
+<node TEXT="constructor(props){" FOLDED="true" ID="ID_1661137296" CREATED="1515879818551" MODIFIED="1515879818551">
+<node TEXT="super(props)" ID="ID_169362911" CREATED="1515879818551" MODIFIED="1515879818551"/>
+</node>
+<node TEXT="}" ID="ID_1612443385" CREATED="1515879818551" MODIFIED="1515879818551"/>
+<node TEXT="render(){" FOLDED="true" ID="ID_223512446" CREATED="1515879818551" MODIFIED="1515879818551">
+<node TEXT="return &lt;div&gt;Hello World!&lt;/div&gt;" ID="ID_743112899" CREATED="1515879818551" MODIFIED="1515879818551"/>
+</node>
+<node TEXT="}" ID="ID_484156300" CREATED="1515879818551" MODIFIED="1515879818551"/>
+</node>
+<node TEXT="}" ID="ID_1128760105" CREATED="1515879818551" MODIFIED="1515879818551"/>
+</node>
+<node TEXT="Adding an initial state to Class Components" FOLDED="true" ID="ID_558384965" CREATED="1515879858391" MODIFIED="1515879858391">
+<node TEXT="The initial state of a Class Component can be declared within the constructor() method. The state of the component must be declared as an object with attributes." ID="ID_1147329310" CREATED="1515879874760" MODIFIED="1515879874760"/>
+<node TEXT="class Counter extends React.Component{" FOLDED="true" ID="ID_1668662282" CREATED="1515879882686" MODIFIED="1515879882686">
+<node TEXT="constructor(props){" FOLDED="true" ID="ID_628270910" CREATED="1515879882686" MODIFIED="1515879882686">
+<node TEXT="super(props)" ID="ID_283361290" CREATED="1515879882686" MODIFIED="1515879882686"/>
+<node TEXT="this.state = {foo:123,bar:456}" ID="ID_1621856336" CREATED="1515879882686" MODIFIED="1515879882686"/>
+</node>
+<node TEXT="}" ID="ID_654456801" CREATED="1515879882686" MODIFIED="1515879882686"/>
+<node TEXT="render(){" FOLDED="true" ID="ID_1327741998" CREATED="1515879882686" MODIFIED="1515879882686">
+<node TEXT="return &lt;div&gt;foo:{this.state.foo} bar:{this.state.bar}&lt;/div&gt;" ID="ID_1283898666" CREATED="1515879882686" MODIFIED="1515879882686"/>
+</node>
+<node TEXT="}" ID="ID_1688159713" CREATED="1515879882686" MODIFIED="1515879882686"/>
+</node>
+<node TEXT="}" ID="ID_1318862500" CREATED="1515879882686" MODIFIED="1515879882686"/>
+</node>
+<node TEXT="Updating state" ID="ID_1289490652" CREATED="1515879903594" MODIFIED="1515879903594"/>
+</node>
+</node>
+<node TEXT="Class Components have state, lifecycle methods, and properties while Functional Components only have properties." ID="ID_1526174180" CREATED="1515324748878" MODIFIED="1515324748878"/>
+</node>
+<node TEXT="Composition" FOLDED="true" ID="ID_1431135044" CREATED="1515327763909" MODIFIED="1515327763909">
+<node TEXT="Composing Components" ID="ID_399784243" CREATED="1515327782693" MODIFIED="1515327785555"/>
+<node TEXT="Functional Components can include other Functional Components in their output. This lets us keep our components organized and readible." ID="ID_999825283" CREATED="1515327806233" MODIFIED="1515327806233"/>
+</node>
+<node TEXT="Conditional Rendering" FOLDED="true" ID="ID_1627735416" CREATED="1515332033127" MODIFIED="1515332340962">
+<node TEXT="The output of a Functional Component can be determined based on its properties." ID="ID_1378183078" CREATED="1515332047245" MODIFIED="1515332047245"/>
+<node TEXT="function Feature(props){" FOLDED="true" ID="ID_1923782035" CREATED="1515332111814" MODIFIED="1515332111814">
+<node TEXT="if (props.active == true){" FOLDED="true" ID="ID_402857323" CREATED="1515332111815" MODIFIED="1515332111815">
+<node TEXT="return &lt;h1&gt;This feature is active&lt;/h1&gt;" ID="ID_853278070" CREATED="1515332111816" MODIFIED="1515332111816"/>
+</node>
+<node TEXT="}" ID="ID_1799705117" CREATED="1515332111816" MODIFIED="1515332111816"/>
+<node TEXT="else{" FOLDED="true" ID="ID_83335930" CREATED="1515332111817" MODIFIED="1515332111817">
+<node TEXT="return &lt;h1&gt;This feature is not active&lt;/h1&gt;" ID="ID_1625574165" CREATED="1515332111817" MODIFIED="1515332111817"/>
+</node>
+<node TEXT="}" ID="ID_1410343253" CREATED="1515332111818" MODIFIED="1515332111818"/>
+</node>
+<node TEXT="}" ID="ID_605237240" CREATED="1515332111818" MODIFIED="1515332111818"/>
+<node TEXT="This can also be accomplished using an inline conditional operator:" ID="ID_763127476" CREATED="1515332200324" MODIFIED="1515332200324"/>
+<node TEXT="function Feature(props){" FOLDED="true" ID="ID_937866524" CREATED="1515332208965" MODIFIED="1515332208965">
+<node TEXT="return &lt;h1&gt;This feature is {props.active? &quot;active&quot; : &quot;not active&quot;}&lt;/h1&gt;" FOLDED="true" ID="ID_1225412583" CREATED="1515332208966" MODIFIED="1515332208966">
+<node TEXT="The output of a Functional Component can be prevented from rendering." ID="ID_1488582542" CREATED="1515332247750" MODIFIED="1515332247750"/>
+</node>
+</node>
+<node TEXT="}" ID="ID_193314684" CREATED="1515332208966" MODIFIED="1515332208966"/>
+<node TEXT="Preventing Rendering" FOLDED="true" ID="ID_814742561" CREATED="1515332222490" MODIFIED="1515332222490">
+<node TEXT="The output of a Functional Component can be prevented from rendering." ID="ID_1847981968" CREATED="1515332251372" MODIFIED="1515332251372"/>
+<node TEXT="function Feature(props){" FOLDED="true" ID="ID_1592615744" CREATED="1515332264581" MODIFIED="1515332264581">
+<node TEXT="if(props.active!){" FOLDED="true" ID="ID_1110087597" CREATED="1515332264582" MODIFIED="1515332264582">
+<node TEXT="return null" ID="ID_679423961" CREATED="1515332264582" MODIFIED="1515332264582"/>
+</node>
+<node TEXT="}" ID="ID_885571432" CREATED="1515332264583" MODIFIED="1515332264583"/>
+<node TEXT="else{" FOLDED="true" ID="ID_1804451959" CREATED="1515332264583" MODIFIED="1515332264583">
+<node TEXT="return &lt;h1&gt;{props.message}&lt;/h1&gt;" ID="ID_831922776" CREATED="1515332264584" MODIFIED="1515332264584"/>
+</node>
+<node TEXT="}" ID="ID_647355168" CREATED="1515332264584" MODIFIED="1515332264584"/>
+</node>
+<node TEXT="}" ID="ID_565840715" CREATED="1515332264584" MODIFIED="1515332264584"/>
+</node>
+<node TEXT="You can also conditionally prevent a feature from rendering using the &amp;&amp; operator:" ID="ID_1529567048" CREATED="1515332291711" MODIFIED="1515332291711"/>
+<node TEXT="function Feature(props){" FOLDED="true" ID="ID_1658172072" CREATED="1515332319665" MODIFIED="1515332319665">
+<node TEXT="return (" FOLDED="true" ID="ID_581577905" CREATED="1515332319665" MODIFIED="1515332319665">
+<node TEXT="props.active &amp;&amp; &lt;h1&gt;{props.message}&lt;/h1&gt;" ID="ID_1007513358" CREATED="1515332319665" MODIFIED="1515332319665"/>
+</node>
+<node TEXT=")" ID="ID_493904579" CREATED="1515332319666" MODIFIED="1515332319666"/>
+</node>
+<node TEXT="}" ID="ID_155316071" CREATED="1515332319666" MODIFIED="1515332319666"/>
+<node TEXT="With the &amp;&amp; operator, true and expression will always evaluate to expression. On the other hand, false and expression will always evaluate to false which won&apos;t render." ID="ID_1534112129" CREATED="1515332339757" MODIFIED="1515332339757"/>
+</node>
+<node TEXT="React Component State" FOLDED="true" ID="ID_1980490444" CREATED="1515493940300" MODIFIED="1515493940300">
+<node TEXT="Most components should simply take in props and render. But, components also offer state, and it is used to store information/data about the component that can change over time. Typically the change comes as a result of user events or system events (i.e., as a response to user input, a server request, or the passage of time)." ID="ID_1023804377" CREATED="1515493962986" MODIFIED="1515493962986"/>
+<node TEXT="According to the React documentation state should:" ID="ID_1827699865" CREATED="1515493992972" MODIFIED="1515493992972"/>
+<node TEXT="Contain data that a component&apos;s event handlers may change to trigger a UI update. In real apps this data tends to be very small and JSON-serializable. When building a stateful component, think about the minimal possible representation of its state, and only store those properties in this.state. Inside of render() simply compute any other information you need based on this state. You&apos;ll find that thinking about and writing applications in this way tends to lead to the most correct application, since adding redundant or computed values to state means that you need to explicitly keep them in sync rather than rely on React computing them for you." ID="ID_614537912" CREATED="1515494005026" MODIFIED="1515494005026"/>
+<node TEXT="Working with component state typically involves setting a components default state, accessing the current state, and updating the state." ID="ID_1261611614" CREATED="1515494041272" MODIFIED="1515494041272"/>
+<node TEXT="Things to keep in mind about React component state:" FOLDED="true" ID="ID_1646606567" CREATED="1515494272468" MODIFIED="1515494272468">
+<node TEXT="If a component has state, a default state should be provided using getInitialState()" ID="ID_537615686" CREATED="1515494292382" MODIFIED="1515494292382"/>
+<node TEXT="State changes are typically how you start the re-rendering of a component and all sub components (i.e., children, grandchildren, great grand chidlren, etc.)." ID="ID_463208936" CREATED="1515494292383" MODIFIED="1515494292383"/>
+<node TEXT="The only way a component should have its state update should be by using this.setState(). While other ways are possible (i.e. forceUpdate()), they should likely not be used (except maybe when integrating with third-party solutions)." ID="ID_1916628822" CREATED="1515494292385" MODIFIED="1515494292385"/>
+<node TEXT="You inform a component of a state change by using this.setState() to set a new state. This will result in re-render of the component and all children components that need re-rendered." ID="ID_1265137980" CREATED="1515494292388" MODIFIED="1515494292388"/>
+<node TEXT="A state change merges new data with old data that is already contained in the state. But this is only a shallow update/merge, it won&apos;t do a deep update/merge." ID="ID_487899536" CREATED="1515494292390" MODIFIED="1515494292390"/>
+<node TEXT="A state change internally deals with calling re-renders. You should never have to call this.render() directly." ID="ID_454789410" CREATED="1515494292392" MODIFIED="1515494292392"/>
+<node TEXT="The state object should only contain the minimal amount of data needed for the UI. Don&apos;t place computed data, other React components, or props in the state object." ID="ID_901219220" CREATED="1515494292392" MODIFIED="1515494292392"/>
+</node>
+</node>
+</node>
+<node TEXT="angular" ID="ID_1778518175" CREATED="1521314662594" MODIFIED="1521314667721"/>
+</node>
 <node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313"/>
 </node>
 </node>
