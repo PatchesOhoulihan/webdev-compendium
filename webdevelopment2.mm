@@ -1422,10 +1422,585 @@
 <node TEXT="Flexbox" ID="ID_1468726557" CREATED="1521328281353" MODIFIED="1521328285927">
 <node TEXT="For a long time, the only reliable cross browser-compatible tools available for creating CSS layouts were things like floats and positioning." ID="ID_273095378" CREATED="1521328570327" MODIFIED="1521328572549"/>
 <node TEXT="These are fine and they work, but in some ways they are also rather limiting and frustrating." ID="ID_827578133" CREATED="1521328591214" MODIFIED="1521328594397"/>
-<node TEXT="The following simple layout requirements are either difficult or impossible to achieve with such tools, in any kind of convenient, flexible way:" FOLDED="true" ID="ID_670889475" CREATED="1521328607590" MODIFIED="1521328612517">
+<node TEXT="The main idea behind the flex layout is to give the container the ability to alter its items&apos; width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow." ID="ID_601594595" CREATED="1521382021048" MODIFIED="1521382115008"/>
+<node TEXT="The following simple layout requirements are either difficult or impossible to achieve with such tools, in any kind of convenient, flexible way:" ID="ID_670889475" CREATED="1521328607590" MODIFIED="1521328612517">
 <node TEXT="Vertically centering a block of content inside its parent." ID="ID_1815352200" CREATED="1521328641102" MODIFIED="1521328648301"/>
 <node TEXT="Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available." ID="ID_951563787" CREATED="1521328658862" MODIFIED="1521328663204"/>
 <node TEXT="Making all columns in a multiple column layout adopt the same height even if they contain a different amount of content." ID="ID_1643966793" CREATED="1521328675673" MODIFIED="1521328680972"/>
+</node>
+<node TEXT="Basics &amp; Terminology" ID="ID_1668911571" CREATED="1521382349699" MODIFIED="1521382356358">
+<node TEXT="Since flexbox is a whole module and not a single property, it involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as &quot;flex container&quot;) whereas the others are meant to be set on the children (said &quot;flex items&quot;)." ID="ID_1772620879" CREATED="1521382427903" MODIFIED="1521382438861"/>
+<node TEXT="If regular layout is based on both block and inline flow directions, the flex layout is based on &quot;flex-flow directions&quot;." ID="ID_708982927" CREATED="1521382499466" MODIFIED="1521382527140"/>
+<node TEXT="flex-basics-flow-direction.png" ID="ID_419168015" CREATED="1521382585946" MODIFIED="1521382585946">
+<hook URI="webdevelopment2_files/flex-basics-flow-direction.png" SIZE="0.9104704" NAME="ExternalObject"/>
+<node ID="ID_1691561526" CREATED="1521382906135" MODIFIED="1521382979304"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>main axis</b>&#160;- The main axis of a flex container is the primary axis along which flex items are laid out. Beware, it is not necessarily horizontal; it depends on the flex-direction property (see below).
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1923602608" CREATED="1521382991278" MODIFIED="1521383004051"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>main-start | main-end</b>&#160;- The flex items are placed within the container starting from main-start and going to main-end.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_439656364" CREATED="1521383063334" MODIFIED="1521383079394"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>main size</b>&#160;- A flex item's width or height, whichever is in the main dimension, is the item's main size. The flex item's main size property is either the &#8216;width&#8217; or &#8216;height&#8217; property, whichever is in the main dimension.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1017324614" CREATED="1521383173341" MODIFIED="1521383185625"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>cross axis</b>&#160;- The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_794348815" CREATED="1521383241197" MODIFIED="1521383258920"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>cross-start | cross-end</b>&#160;- Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_4516685" CREATED="1521383479099" MODIFIED="1521383500039"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>cross size</b>&#160;- The width or height of a flex item, whichever is in the cross dimension, is the item's cross size. The cross size property is whichever of &#8216;width&#8217; or &#8216;height&#8217; that is in the cross dimension.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Basically, items will be laid out following either the main axis (from main-start to main-end) or the cross axis (from cross-start to cross-end)." ID="ID_1269989159" CREATED="1521382783616" MODIFIED="1521382787578"/>
+</node>
+<node TEXT="properties" ID="ID_1881729712" CREATED="1521381603240" MODIFIED="1521383887371">
+<node TEXT="Parent (flex container)" FOLDED="true" ID="ID_1515885863" CREATED="1521383975440" MODIFIED="1521384009866">
+<node TEXT="display:" FOLDED="true" ID="ID_1545806093" CREATED="1521384087167" MODIFIED="1521384978123">
+<node TEXT="This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children." ID="ID_1509149814" CREATED="1521384108063" MODIFIED="1521384111449"/>
+<node TEXT="values" FOLDED="true" ID="ID_259289975" CREATED="1521384139182" MODIFIED="1521384155353">
+<node TEXT="flex" ID="ID_512597191" CREATED="1521384162350" MODIFIED="1521384167817"/>
+<node TEXT="inline-flex" ID="ID_1492774821" CREATED="1521384169134" MODIFIED="1521384184688"/>
+</node>
+</node>
+<node TEXT="flex-direction:" FOLDED="true" ID="ID_969384560" CREATED="1521384244494" MODIFIED="1521384985051">
+<node TEXT="This establishes the main-axis, thus defining the direction flex items are placed in the flex container" ID="ID_1782452548" CREATED="1521384280237" MODIFIED="1521384284224"/>
+<node TEXT="Flexbox is (aside from optional wrapping) a single-direction layout concept. Think of flex items as primarily laying out either in horizontal rows or vertical columns." ID="ID_372098655" CREATED="1521384305189" MODIFIED="1521384309136"/>
+<node TEXT="" FOLDED="true" ID="ID_1217523006" CREATED="1521385098680" MODIFIED="1521385098680">
+<node TEXT="flex-direction.png" ID="ID_788649030" CREATED="1521385132725" MODIFIED="1521385132725">
+<hook URI="webdevelopment2_files/flex-direction.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="values" FOLDED="true" ID="ID_1275808316" CREATED="1521384365245" MODIFIED="1521384373495">
+<node ID="ID_1183693402" CREATED="1521384386005" MODIFIED="1521384468216"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>row </b>(default): left to right in ltr; right to left in rtl
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1175958750" CREATED="1521384415980" MODIFIED="1521384484735"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>row-reverse</b>: right to left in ltr; left to right in rtl
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_89191980" CREATED="1521384427764" MODIFIED="1521384501200"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>column</b>: same as row but top to bottom
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_556545906" CREATED="1521384447788" MODIFIED="1521384515495"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>column-reverse</b>: same as row-reverse but bottom to top
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="flex-wrap:" FOLDED="true" ID="ID_1718692455" CREATED="1521384540652" MODIFIED="1521384992867">
+<node TEXT="By default, flex items will all try to fit onto one line. You can change that and allow the items to wrap as needed with this property." ID="ID_1397999600" CREATED="1521384581451" MODIFIED="1521384584766"/>
+<node TEXT="" FOLDED="true" ID="ID_857770458" CREATED="1521385051136" MODIFIED="1521385051136">
+<node TEXT="flex-wrap.png" ID="ID_1517571916" CREATED="1521385073933" MODIFIED="1521385073933">
+<hook URI="webdevelopment2_files/flex-wrap.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="values" FOLDED="true" ID="ID_1075627870" CREATED="1521384638099" MODIFIED="1521384648741">
+<node ID="ID_64058712" CREATED="1521384661483" MODIFIED="1521384742590"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>nowrap</b>&#160;(default): all flex items will be on one line
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1808679627" CREATED="1521384676219" MODIFIED="1521384757390"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>wrap</b>: flex items will wrap onto multiple lines, from top to bottom.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_148236044" CREATED="1521384692747" MODIFIED="1521384766133"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>wrap-reverse</b>: flex items will wrap onto multiple lines from bottom to top.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="flex-flow:" FOLDED="true" ID="ID_1312901141" CREATED="1521384809450" MODIFIED="1521384999515">
+<node TEXT="This is a shorthand flex-direction and flex-wrap properties, which together define the flex container&apos;s main and cross axes. Default is row nowrap" ID="ID_11442367" CREATED="1521384871673" MODIFIED="1521384875852"/>
+<node TEXT="flex-flow: &lt;&#x2018;flex-direction&#x2019;&gt; || &lt;&#x2018;flex-wrap&#x2019;&gt;" ID="ID_1909639989" CREATED="1521386240928" MODIFIED="1521386244778"/>
+</node>
+<node TEXT="justify-content:" FOLDED="true" ID="ID_1022980246" CREATED="1521384937001" MODIFIED="1521385007795">
+<node TEXT="This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line." ID="ID_640307779" CREATED="1521385221239" MODIFIED="1521385224945"/>
+<node TEXT="flex-justify-content.png" ID="ID_144707977" CREATED="1521385871575" MODIFIED="1521385871575">
+<hook URI="webdevelopment2_files/flex-justify-content.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="values" FOLDED="true" ID="ID_466360107" CREATED="1521385885682" MODIFIED="1521386328038">
+<node ID="ID_301683259" CREATED="1521385937602" MODIFIED="1521386303284"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>flex-start</b>&#160;(default): items are packed toward the start line
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1902931512" CREATED="1521385958258" MODIFIED="1521386322403"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>flex-end: </b>items are packed toward to end line
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_427351105" CREATED="1521385998251" MODIFIED="1521386354627"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>center:</b>&#160;items are centered along the line
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1288596790" CREATED="1521386018961" MODIFIED="1521386366291"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>space-between:</b>&#160;items are evenly distributed in the line; first item is on the start line, last item on the end line
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_912825548" CREATED="1521386046673" MODIFIED="1521386407172"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>space-around:</b>&#160;items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1765066414" CREATED="1521386119681" MODIFIED="1521386432971"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>space-evenly:</b>&#160;items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="align-items:" FOLDED="true" ID="ID_905122637" CREATED="1521386462086" MODIFIED="1521386489305">
+<node TEXT="This defines the default behaviour for how flex items are laid out along the cross axis on the current line. Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis)." ID="ID_265102123" CREATED="1521386536710" MODIFIED="1521386540328"/>
+<node TEXT="flex-align-items.png" ID="ID_257280119" CREATED="1521386608147" MODIFIED="1521386608147">
+<hook URI="webdevelopment2_files/flex-align-items.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="values" FOLDED="true" ID="ID_474782224" CREATED="1521386670453" MODIFIED="1521386678079">
+<node ID="ID_1379190546" CREATED="1521386681165" MODIFIED="1521386786351"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>flex-start</b>: cross-start margin edge of the items is placed on the cross-start line
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1179432314" CREATED="1521386731077" MODIFIED="1521386824240"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>flex-end:</b>&#160;cross-end margin edge of the items is placed on the cross-end line
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_101761038" CREATED="1521386748740" MODIFIED="1521386835840"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>center:</b>&#160;items are centered in the cross-axis
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_965947507" CREATED="1521386762428" MODIFIED="1521386851951"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>baseline:</b>&#160;items are aligned such as their baselines align
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1960922179" CREATED="1521386774524" MODIFIED="1521386886431"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>stretch</b>&#160;(default): stretch to fill the container (still respect min-width/max-width)
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+<node TEXT="align-content" FOLDED="true" ID="ID_220994100" CREATED="1521386921331" MODIFIED="1521386925262">
+<node TEXT="This aligns a flex container&apos;s lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis." ID="ID_142623629" CREATED="1521386994331" MODIFIED="1521386998517"/>
+<node ID="ID_637794322" CREATED="1521387045226" MODIFIED="1521387065286"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Note:</b>&#160;this property has no effect when there is only one line of flex items.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="flex-align content.png" ID="ID_438891701" CREATED="1521387038984" MODIFIED="1521387038984">
+<hook URI="webdevelopment2_files/flex-align%20content.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="values" FOLDED="true" ID="ID_1600166382" CREATED="1521387148818" MODIFIED="1521387156236">
+<node ID="ID_966997281" CREATED="1521387171490" MODIFIED="1521387268518"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>flex-start</b>: lines packed to the start of the container
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1384208880" CREATED="1521387190849" MODIFIED="1521387281244"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>flex-end:</b>&#160;lines packed to the end of the container
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1243021069" CREATED="1521387208473" MODIFIED="1521387291908"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>center:</b>&#160;lines packed to the center of the container
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_107252164" CREATED="1521387220641" MODIFIED="1521387302172"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>space-between</b>: lines evenly distributed; the first line is at the start of the container while the last one is at the end
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1856436407" CREATED="1521387234921" MODIFIED="1521387314244"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>space-around</b>: lines evenly distributed with equal space around each line
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1103524112" CREATED="1521387256761" MODIFIED="1521387325500"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>stretch</b>&#160;(default): lines stretch to take up the remaining space
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Children (flex items)" FOLDED="true" ID="ID_1458433006" CREATED="1521384029119" MODIFIED="1521384054337">
+<node TEXT="order" FOLDED="true" ID="ID_1833557684" CREATED="1521387561663" MODIFIED="1521387566753">
+<node TEXT="By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container." ID="ID_812994023" CREATED="1521387585367" MODIFIED="1521387589977"/>
+<node TEXT="flex-order.png" ID="ID_1974790879" CREATED="1521387636604" MODIFIED="1521387636604">
+<hook URI="webdevelopment2_files/flex-order.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="order: &lt;integer&gt;; /* default is 0 */" ID="ID_43078099" CREATED="1521387668918" MODIFIED="1521387674369"/>
+</node>
+<node TEXT="flex-grow" FOLDED="true" ID="ID_1844102010" CREATED="1521387696502" MODIFIED="1521387700609">
+<node TEXT="This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up." ID="ID_1615171480" CREATED="1521387740822" MODIFIED="1521387745048"/>
+<node TEXT="If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children. If one of the children has a value of 2, the remaining space would take up twice as much space as the others (or it will try to, at least)." ID="ID_98423367" CREATED="1521387763293" MODIFIED="1521387767128"/>
+<node TEXT="flex-grow.png" ID="ID_1049550065" CREATED="1521387845170" MODIFIED="1521387845170">
+<hook URI="webdevelopment2_files/flex-grow.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="flex-grow: &lt;number&gt;; /* default 0 */" ID="ID_599267851" CREATED="1521387862685" MODIFIED="1521387866495"/>
+<node TEXT="Negative numbers are invalid." ID="ID_1769656304" CREATED="1521387883445" MODIFIED="1521387887151"/>
+</node>
+<node TEXT="flex-shrink" FOLDED="true" ID="ID_446268024" CREATED="1521387921300" MODIFIED="1521387924855">
+<node TEXT="This defines the ability for a flex item to shrink if necessary." ID="ID_1507476086" CREATED="1521387941252" MODIFIED="1521387944687"/>
+<node TEXT="flex-shrink: &lt;number&gt;; /* default 1 */" ID="ID_214086193" CREATED="1521387952876" MODIFIED="1521387956038"/>
+<node TEXT="Negative numbers are invalid." ID="ID_349223233" CREATED="1521387963860" MODIFIED="1521387967070"/>
+</node>
+<node TEXT="flex-basis" FOLDED="true" ID="ID_94035700" CREATED="1521387989292" MODIFIED="1521387992846">
+<node TEXT="This defines the default size of an element before the remaining space is distributed." ID="ID_637677598" CREATED="1521388011340" MODIFIED="1521388015046"/>
+<node TEXT="It can be a length (e.g. 20%, 5rem, etc.) or a keyword." ID="ID_1590799469" CREATED="1521388042116" MODIFIED="1521388045230"/>
+<node TEXT="The auto keyword means &quot;look at my width or height property&quot; (which was temporarily done by the main-size keyword until deprecated)." ID="ID_1671150139" CREATED="1521388066075" MODIFIED="1521388069094"/>
+<node TEXT="The content keyword means &quot;size it based on the item&apos;s content&quot; - this keyword isn&apos;t well supported yet, so it&apos;s hard to test and harder to know what its brethren max-content, min-content, and fit-content do." ID="ID_684062324" CREATED="1521388082603" MODIFIED="1521388085942"/>
+<node TEXT="flex-basis: &lt;length&gt; | auto; /* default auto */" ID="ID_701933389" CREATED="1521388105779" MODIFIED="1521388109397"/>
+<node TEXT="If set to 0, the extra space around content isn&apos;t factored in. If set to auto, the extra space is distributed based on its flex-grow value. See this graphic." ID="ID_185799810" CREATED="1521388154835" MODIFIED="1521388159981"/>
+</node>
+<node TEXT="flex" FOLDED="true" ID="ID_249301180" CREATED="1521388176123" MODIFIED="1521388179709">
+<node TEXT="This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto." ID="ID_483527245" CREATED="1521388194707" MODIFIED="1521388198133"/>
+<node TEXT="flex: none | [ &lt;&apos;flex-grow&apos;&gt; &lt;&apos;flex-shrink&apos;&gt;? || &lt;&apos;flex-basis&apos;&gt; ]" ID="ID_1902128583" CREATED="1521388209546" MODIFIED="1521388213029"/>
+</node>
+<node TEXT="align-self" FOLDED="true" ID="ID_396016813" CREATED="1521388260506" MODIFIED="1521388264324">
+<node TEXT="This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items." ID="ID_155705883" CREATED="1521388276762" MODIFIED="1521388280125"/>
+<node TEXT="Please see the align-items explanation to understand the available values." ID="ID_899770862" CREATED="1521388289058" MODIFIED="1521388292180"/>
+<node TEXT="align-self: auto | flex-start | flex-end | center | baseline | stretch;" ID="ID_1851199497" CREATED="1521388323722" MODIFIED="1521388327404"/>
+<node TEXT="Note that float, clear and vertical-align have no effect on a flex item." ID="ID_247355890" CREATED="1521388344626" MODIFIED="1521388397323"/>
+</node>
+</node>
+</node>
+<node TEXT="examples" ID="ID_1492049608" CREATED="1521381614078" MODIFIED="1521381632866">
+<node TEXT="perfect centering" FOLDED="true" ID="ID_644603151" CREATED="1521387371536" MODIFIED="1521387375619">
+<node TEXT=".parent {&#xa;  display: flex;&#xa;  height: 300px; /* Or whatever */&#xa;}&#xa;&#xa;.child {&#xa;  width: 100px;  /* Or whatever */&#xa;  height: 100px; /* Or whatever */&#xa;  margin: auto;  /* Magic! */&#xa;}" ID="ID_893148068" CREATED="1521387436064" MODIFIED="1521387442979"/>
+</node>
 </node>
 </node>
 <node TEXT="Grids" ID="ID_1564708291" CREATED="1521328298609" MODIFIED="1521328301911"/>
@@ -3495,6 +4070,7 @@
 <node TEXT="interactive" ID="ID_1145864293" CREATED="1520801691298" MODIFIED="1520801709151">
 <node TEXT="css" ID="ID_1902075329" CREATED="1520801707690" MODIFIED="1520801713477">
 <node TEXT="http://flukeout.github.io/" ID="ID_1797280075" CREATED="1520802152522" MODIFIED="1520802152522" LINK="http://flukeout.github.io/"/>
+<node TEXT="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties" ID="ID_249840774" CREATED="1521388484923" MODIFIED="1521388484923" LINK="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties"/>
 </node>
 </node>
 <node TEXT="plattform" ID="ID_369395078" CREATED="1520801915048" MODIFIED="1520801922483">
