@@ -7,10 +7,59 @@
     <title>drum-machine</title>
 </head>
 <style>
+    html, body{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        background-image: url('./assets/concert-2616946_1920.jpg');
+        background-size: cover;
+    }
+    .keys {
+        display:flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .key{
+        color: ghostwhite;
+        border: 2px solid ghostwhite;
+        width: 7%;
+        height: 7%;
+        margin: 1%;
+        text-align: center;        
+        border-radius: 12%;
+        transition: 0.05s all;
+    }
+
+    .key > * {
+        display: block;
+        line-height: 200%;
+    }
+
+    .playing {
+        border: 2px solid green;
+        width: 8%;
+        height: 8%;
+    }
+
 
 </style>
 <script>
-    window.addEventListener
+    window.addEventListener('keydown', function(e){
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        console.log(audio);
+        if(!audio){
+            return;
+        }
+        
+        audio.currentTime = 0;
+        audio.play();
+    });
 </script>
 <body>
     <div class="keys">
@@ -24,14 +73,14 @@
         <div data-key="75" class="key"><kbd>K</kbd><span class="sound">TOM</span></div>
         <div data-key="76" class="key"><kbd>L</kbd><span class="sound">TIM</span></div>
     </div>
-    <audio src="" data-key="65" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
-    <audio src="" data-key="83" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
-    <audio src="" data-key="68" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
-    <audio src="" data-key="70" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
-    <audio src="" data-key="71" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
-    <audio src="" data-key="72" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
-    <audio src="" data-key="74" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
-    <audio src="" data-key="75" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
-    <audio src="" data-key="76" src="sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
+    <audio src="" data-key="65" src="sounds/drum/ClHat01.wav"></audio>
+    <audio src="" data-key="83" src="./sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
+    <audio src="" data-key="68" src="./sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
+    <audio src="" data-key="70" src="./sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
+    <audio src="" data-key="71" src="./sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
+    <audio src="" data-key="72" src="./sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
+    <audio src="" data-key="74" src="./sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
+    <audio src="" data-key="75" src="./sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
+    <audio src="" data-key="76" src="./sounds/drum/CyCdh_K3ClHat-01.wav"></audio>
 </body>
 </html>
