@@ -1371,6 +1371,65 @@
 <node TEXT="And if a user&#x2019;s machine is so old that it doesn&#x2019;t support either of these formats, it may be better to just serve them a system font for performance reasons, anyway." ID="ID_974111287" CREATED="1519915774916" MODIFIED="1519915779171"/>
 </node>
 </node>
+<node TEXT="CSS layout" ID="ID_879754980" CREATED="1521327975747" MODIFIED="1521329222552">
+<node TEXT="Introduction" ID="ID_152899663" CREATED="1521328220009" MODIFIED="1521329209208">
+<node TEXT="CSS page layout techniques allow us to take elements contained in a web page and control where they are positioned relative to their default position in normal layout flow, the other elements around them, their parent container, or the main viewport/window." ID="ID_618801366" CREATED="1521329493384" MODIFIED="1521329533134"/>
+<node TEXT="Normal layout flow" FOLDED="true" ID="ID_1718347263" CREATED="1521329554847" MODIFIED="1521329558414">
+<node TEXT="Normal flow is how the browser lays out HTML pages by default when you do nothing to control page layout." ID="ID_122534962" CREATED="1521329576335" MODIFIED="1521329594773"/>
+<node TEXT="example" ID="ID_1046850271" CREATED="1521329596287" MODIFIED="1521329602085">
+<node TEXT="&lt;p&gt;I love my cat.&lt;/p&gt;&#xa;&#xa;&lt;ul&gt;&#xa;  &lt;li&gt;Buy cat food&lt;/li&gt;&#xa;  &lt;li&gt;Exercise&lt;/li&gt;&#xa;  &lt;li&gt;Cheer up friend&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&#xa;&lt;p&gt;The end!&lt;/p&gt;" ID="ID_843200716" CREATED="1521329615815" MODIFIED="1521329618750"/>
+<node TEXT="By default, the browser will display this code as follows:" ID="ID_1267857031" CREATED="1521329644863" MODIFIED="1521329649181"/>
+<node TEXT="I love my cat.&#xa;&#xa;- Buy cat food&#xa;- Exercise&#xa;- Cheer up friend&#xa;The end!" ID="ID_1822748280" CREATED="1521329664751" MODIFIED="1521329695413"/>
+<node TEXT="Note here how the HTML is displayed in the exact order in which it appears in the source code, with elements stacked up on top of one another &#x2014; the first paragraph, followed by the unordered list, followed by the second paragraph." ID="ID_770401053" CREATED="1521329764766" MODIFIED="1521329768988"/>
+</node>
+</node>
+</node>
+<node TEXT="Floats" ID="ID_1386994987" CREATED="1521328232657" MODIFIED="1521328235960">
+<node TEXT="Floats is a technique that allows the elements to float to the left or right of one another, rather than the default of sitting on top of one another. The main uses of floats are to lay out columns and float text around an image." ID="ID_1893717558" CREATED="1521330457040" MODIFIED="1521330460591"/>
+</node>
+<node TEXT="Positioning" ID="ID_1261212471" CREATED="1521328243961" MODIFIED="1521328248560">
+<node TEXT="Positioning allows you to move an element from it&apos;s original spot on the page to another spot with great accuracy." ID="ID_713731963" CREATED="1521330589687" MODIFIED="1521330594014"/>
+<node TEXT="There are four main types of positioning you should know about:" ID="ID_1677216841" CREATED="1521330620215" MODIFIED="1521330624182">
+<node TEXT="Static positioning" ID="ID_328966770" CREATED="1521330642295" MODIFIED="1521330646151">
+<node TEXT="is the default that every element gets" ID="ID_1494411423" CREATED="1521330737398" MODIFIED="1521330741269"/>
+<node TEXT="means &quot;put the element into its normal position in the document layout flow" ID="ID_1360764145" CREATED="1521330754486" MODIFIED="1521330758181"/>
+</node>
+<node TEXT="Relative positioning" ID="ID_1862986095" CREATED="1521330654983" MODIFIED="1521330658837">
+<node TEXT="allows you to modify an element&apos;s position on the page, moving it relative to its position in normal flow" ID="ID_749389363" CREATED="1521330811046" MODIFIED="1521330814548"/>
+<node TEXT="including making it overlap other elements on the page." ID="ID_1230689010" CREATED="1521330837478" MODIFIED="1521330909343"/>
+</node>
+<node TEXT="Absolute positioning" ID="ID_369305483" CREATED="1521330679951" MODIFIED="1521330687733">
+<node TEXT="moves an element completely out of the page&apos;s normal layout flow, like it is sitting on its own separate layer." ID="ID_258159179" CREATED="1521330913445" MODIFIED="1521330923771"/>
+<node TEXT="From there, you can fix it in a position relative to the edges of the page&apos;s &lt;html&gt; element (or its nearest positioned ancestor element)." ID="ID_1262277005" CREATED="1521330957693" MODIFIED="1521330965723"/>
+<node TEXT="This is useful for creating complex layout effects such as tabbed boxes where different content panels sit on top of one another and are shown and hidden as desired, or information panels that sit off screen by default, but can be made to slide on screen using a control button." ID="ID_1864432429" CREATED="1521330994948" MODIFIED="1521330999195"/>
+</node>
+<node TEXT="Fixed positioning" ID="ID_296884178" CREATED="1521330708103" MODIFIED="1521330711645">
+<node TEXT="is very similar to absolute positioning, except that it fixes an element relative to the browser viewport, not another element." ID="ID_416092261" CREATED="1521331037372" MODIFIED="1521331040691"/>
+<node TEXT="This is useful for creating effects such as a persistent navigation menu that always stays in the same place on the screen as the rest of the content scrolls." ID="ID_190315961" CREATED="1521331056980" MODIFIED="1521331062595"/>
+</node>
+</node>
+<node TEXT="rules" ID="ID_1474303459" CREATED="1521331725367" MODIFIED="1521331730390"/>
+<node TEXT="examples" ID="ID_1578139377" CREATED="1521331887046" MODIFIED="1521331895164"/>
+</node>
+<node TEXT="CSS tables" ID="ID_803417659" CREATED="1521328268217" MODIFIED="1521330011938">
+<node TEXT="HTML tables are fine for displaying tabular data, but many years ago &#x2014; before even basic CSS was supported reliably across browsers &#x2014; web developers used to also use tables for entire web page layouts &#x2014; putting their headers, footers, different columns, etc. in various table rows and columns." ID="ID_1056836035" CREATED="1521331371394" MODIFIED="1521331376249"/>
+<node TEXT="This worked at the time, but it has many problems &#x2014; table layouts are inflexible, very heavy on markup, difficult to debug, and semantically wrong (e.g., screen reader users have problems navigating table layouts)." ID="ID_878433812" CREATED="1521331407313" MODIFIED="1521331411656"/>
+<node TEXT="CSS tables exist to allow you to lay out elements like they were a table, without any of the issues described above" ID="ID_19064187" CREATED="1521331430585" MODIFIED="1521331435112"/>
+<node TEXT="this may sound strange, and you should use table elements for tabular data, but sometimes this can be useful. For example, you might want to lay out a form with the labels and text inputs lined up; this can be tricky, but CSS tables make it easy." ID="ID_20663520" CREATED="1521331464121" MODIFIED="1521331468560"/>
+<node TEXT="rules" ID="ID_1576551849" CREATED="1521331737303" MODIFIED="1521331742725"/>
+<node TEXT="examples" ID="ID_1919404898" CREATED="1521331745399" MODIFIED="1521331752557"/>
+</node>
+<node TEXT="Flexbox" ID="ID_1468726557" CREATED="1521328281353" MODIFIED="1521328285927">
+<node TEXT="For a long time, the only reliable cross browser-compatible tools available for creating CSS layouts were things like floats and positioning." ID="ID_273095378" CREATED="1521328570327" MODIFIED="1521328572549"/>
+<node TEXT="These are fine and they work, but in some ways they are also rather limiting and frustrating." ID="ID_827578133" CREATED="1521328591214" MODIFIED="1521328594397"/>
+<node TEXT="The following simple layout requirements are either difficult or impossible to achieve with such tools, in any kind of convenient, flexible way:" FOLDED="true" ID="ID_670889475" CREATED="1521328607590" MODIFIED="1521328612517">
+<node TEXT="Vertically centering a block of content inside its parent." ID="ID_1815352200" CREATED="1521328641102" MODIFIED="1521328648301"/>
+<node TEXT="Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available." ID="ID_951563787" CREATED="1521328658862" MODIFIED="1521328663204"/>
+<node TEXT="Making all columns in a multiple column layout adopt the same height even if they contain a different amount of content." ID="ID_1643966793" CREATED="1521328675673" MODIFIED="1521328680972"/>
+</node>
+</node>
+<node TEXT="Grids" ID="ID_1564708291" CREATED="1521328298609" MODIFIED="1521328301911"/>
+</node>
 </node>
 <node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
 <node TEXT="pattern" FOLDED="true" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067">
@@ -1895,7 +1954,7 @@
 </node>
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
 <node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
-<node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
+<node TEXT="React" FOLDED="true" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
 <node TEXT="Quick Setup" FOLDED="true" ID="ID_1666734176" CREATED="1515277487524" MODIFIED="1515323490525">
 <node TEXT="1. Create an HTML file" ID="ID_1602235452" CREATED="1515277527954" MODIFIED="1515277527954"/>
 <node TEXT="2. Add scripts to include react.js, react-dom.js and babel.js inside the head of the HTML file" FOLDED="true" ID="ID_1271641365" CREATED="1515277539612" MODIFIED="1515323485901">
@@ -3025,6 +3084,7 @@
 <node TEXT="https://www.microsoft.com/de-de/software-download/windows10ISO" ID="ID_453159282" CREATED="1521103334311" MODIFIED="1521103339681"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" ID="ID_1835774918" CREATED="1521132079985" MODIFIED="1521132079985" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" ID="ID_1837208135" CREATED="1521313364052" MODIFIED="1521313369069"/>
+<node TEXT="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction" ID="ID_110825805" CREATED="1521330247666" MODIFIED="1521330247666" LINK="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
