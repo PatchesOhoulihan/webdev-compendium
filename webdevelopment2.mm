@@ -1371,12 +1371,12 @@
 <node TEXT="And if a user&#x2019;s machine is so old that it doesn&#x2019;t support either of these formats, it may be better to just serve them a system font for performance reasons, anyway." ID="ID_974111287" CREATED="1519915774916" MODIFIED="1519915779171"/>
 </node>
 </node>
-<node TEXT="CSS layout" ID="ID_879754980" CREATED="1521327975747" MODIFIED="1521329222552">
-<node TEXT="Introduction" ID="ID_152899663" CREATED="1521328220009" MODIFIED="1521329209208">
+<node TEXT="CSS layout" FOLDED="true" ID="ID_879754980" CREATED="1521327975747" MODIFIED="1521329222552">
+<node TEXT="Introduction" FOLDED="true" ID="ID_152899663" CREATED="1521328220009" MODIFIED="1521329209208">
 <node TEXT="CSS page layout techniques allow us to take elements contained in a web page and control where they are positioned relative to their default position in normal layout flow, the other elements around them, their parent container, or the main viewport/window." ID="ID_618801366" CREATED="1521329493384" MODIFIED="1521329533134"/>
 <node TEXT="Normal layout flow" FOLDED="true" ID="ID_1718347263" CREATED="1521329554847" MODIFIED="1521329558414">
 <node TEXT="Normal flow is how the browser lays out HTML pages by default when you do nothing to control page layout." ID="ID_122534962" CREATED="1521329576335" MODIFIED="1521329594773"/>
-<node TEXT="example" ID="ID_1046850271" CREATED="1521329596287" MODIFIED="1521329602085">
+<node TEXT="example" FOLDED="true" ID="ID_1046850271" CREATED="1521329596287" MODIFIED="1521329602085">
 <node TEXT="&lt;p&gt;I love my cat.&lt;/p&gt;&#xa;&#xa;&lt;ul&gt;&#xa;  &lt;li&gt;Buy cat food&lt;/li&gt;&#xa;  &lt;li&gt;Exercise&lt;/li&gt;&#xa;  &lt;li&gt;Cheer up friend&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&#xa;&lt;p&gt;The end!&lt;/p&gt;" ID="ID_843200716" CREATED="1521329615815" MODIFIED="1521329618750"/>
 <node TEXT="By default, the browser will display this code as follows:" ID="ID_1267857031" CREATED="1521329644863" MODIFIED="1521329649181"/>
 <node TEXT="I love my cat.&#xa;&#xa;- Buy cat food&#xa;- Exercise&#xa;- Cheer up friend&#xa;The end!" ID="ID_1822748280" CREATED="1521329664751" MODIFIED="1521329695413"/>
@@ -1384,26 +1384,26 @@
 </node>
 </node>
 </node>
-<node TEXT="Floats" ID="ID_1386994987" CREATED="1521328232657" MODIFIED="1521328235960">
+<node TEXT="Floats" FOLDED="true" ID="ID_1386994987" CREATED="1521328232657" MODIFIED="1521328235960">
 <node TEXT="Floats is a technique that allows the elements to float to the left or right of one another, rather than the default of sitting on top of one another. The main uses of floats are to lay out columns and float text around an image." ID="ID_1893717558" CREATED="1521330457040" MODIFIED="1521330460591"/>
 </node>
-<node TEXT="Positioning" ID="ID_1261212471" CREATED="1521328243961" MODIFIED="1521328248560">
+<node TEXT="Positioning" FOLDED="true" ID="ID_1261212471" CREATED="1521328243961" MODIFIED="1521328248560">
 <node TEXT="Positioning allows you to move an element from it&apos;s original spot on the page to another spot with great accuracy." ID="ID_713731963" CREATED="1521330589687" MODIFIED="1521330594014"/>
-<node TEXT="There are four main types of positioning you should know about:" ID="ID_1677216841" CREATED="1521330620215" MODIFIED="1521330624182">
-<node TEXT="Static positioning" ID="ID_328966770" CREATED="1521330642295" MODIFIED="1521330646151">
+<node TEXT="There are four main types of positioning you should know about:" FOLDED="true" ID="ID_1677216841" CREATED="1521330620215" MODIFIED="1521330624182">
+<node TEXT="Static positioning" FOLDED="true" ID="ID_328966770" CREATED="1521330642295" MODIFIED="1521330646151">
 <node TEXT="is the default that every element gets" ID="ID_1494411423" CREATED="1521330737398" MODIFIED="1521330741269"/>
 <node TEXT="means &quot;put the element into its normal position in the document layout flow" ID="ID_1360764145" CREATED="1521330754486" MODIFIED="1521330758181"/>
 </node>
-<node TEXT="Relative positioning" ID="ID_1862986095" CREATED="1521330654983" MODIFIED="1521330658837">
+<node TEXT="Relative positioning" FOLDED="true" ID="ID_1862986095" CREATED="1521330654983" MODIFIED="1521330658837">
 <node TEXT="allows you to modify an element&apos;s position on the page, moving it relative to its position in normal flow" ID="ID_749389363" CREATED="1521330811046" MODIFIED="1521330814548"/>
 <node TEXT="including making it overlap other elements on the page." ID="ID_1230689010" CREATED="1521330837478" MODIFIED="1521330909343"/>
 </node>
-<node TEXT="Absolute positioning" ID="ID_369305483" CREATED="1521330679951" MODIFIED="1521330687733">
+<node TEXT="Absolute positioning" FOLDED="true" ID="ID_369305483" CREATED="1521330679951" MODIFIED="1521330687733">
 <node TEXT="moves an element completely out of the page&apos;s normal layout flow, like it is sitting on its own separate layer." ID="ID_258159179" CREATED="1521330913445" MODIFIED="1521330923771"/>
 <node TEXT="From there, you can fix it in a position relative to the edges of the page&apos;s &lt;html&gt; element (or its nearest positioned ancestor element)." ID="ID_1262277005" CREATED="1521330957693" MODIFIED="1521330965723"/>
 <node TEXT="This is useful for creating complex layout effects such as tabbed boxes where different content panels sit on top of one another and are shown and hidden as desired, or information panels that sit off screen by default, but can be made to slide on screen using a control button." ID="ID_1864432429" CREATED="1521330994948" MODIFIED="1521330999195"/>
 </node>
-<node TEXT="Fixed positioning" ID="ID_296884178" CREATED="1521330708103" MODIFIED="1521330711645">
+<node TEXT="Fixed positioning" FOLDED="true" ID="ID_296884178" CREATED="1521330708103" MODIFIED="1521330711645">
 <node TEXT="is very similar to absolute positioning, except that it fixes an element relative to the browser viewport, not another element." ID="ID_416092261" CREATED="1521331037372" MODIFIED="1521331040691"/>
 <node TEXT="This is useful for creating effects such as a persistent navigation menu that always stays in the same place on the screen as the rest of the content scrolls." ID="ID_190315961" CREATED="1521331056980" MODIFIED="1521331062595"/>
 </node>
@@ -1411,7 +1411,7 @@
 <node TEXT="rules" ID="ID_1474303459" CREATED="1521331725367" MODIFIED="1521331730390"/>
 <node TEXT="examples" ID="ID_1578139377" CREATED="1521331887046" MODIFIED="1521331895164"/>
 </node>
-<node TEXT="CSS tables" ID="ID_803417659" CREATED="1521328268217" MODIFIED="1521330011938">
+<node TEXT="CSS tables" FOLDED="true" ID="ID_803417659" CREATED="1521328268217" MODIFIED="1521330011938">
 <node TEXT="HTML tables are fine for displaying tabular data, but many years ago &#x2014; before even basic CSS was supported reliably across browsers &#x2014; web developers used to also use tables for entire web page layouts &#x2014; putting their headers, footers, different columns, etc. in various table rows and columns." ID="ID_1056836035" CREATED="1521331371394" MODIFIED="1521331376249"/>
 <node TEXT="This worked at the time, but it has many problems &#x2014; table layouts are inflexible, very heavy on markup, difficult to debug, and semantically wrong (e.g., screen reader users have problems navigating table layouts)." ID="ID_878433812" CREATED="1521331407313" MODIFIED="1521331411656"/>
 <node TEXT="CSS tables exist to allow you to lay out elements like they were a table, without any of the issues described above" ID="ID_19064187" CREATED="1521331430585" MODIFIED="1521331435112"/>
@@ -1419,19 +1419,19 @@
 <node TEXT="rules" ID="ID_1576551849" CREATED="1521331737303" MODIFIED="1521331742725"/>
 <node TEXT="examples" ID="ID_1919404898" CREATED="1521331745399" MODIFIED="1521331752557"/>
 </node>
-<node TEXT="Flexbox" ID="ID_1468726557" CREATED="1521328281353" MODIFIED="1521328285927">
+<node TEXT="Flexbox" FOLDED="true" ID="ID_1468726557" CREATED="1521328281353" MODIFIED="1521328285927">
 <node TEXT="For a long time, the only reliable cross browser-compatible tools available for creating CSS layouts were things like floats and positioning." ID="ID_273095378" CREATED="1521328570327" MODIFIED="1521328572549"/>
 <node TEXT="These are fine and they work, but in some ways they are also rather limiting and frustrating." ID="ID_827578133" CREATED="1521328591214" MODIFIED="1521328594397"/>
 <node TEXT="The main idea behind the flex layout is to give the container the ability to alter its items&apos; width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow." ID="ID_601594595" CREATED="1521382021048" MODIFIED="1521382115008"/>
-<node TEXT="The following simple layout requirements are either difficult or impossible to achieve with such tools, in any kind of convenient, flexible way:" ID="ID_670889475" CREATED="1521328607590" MODIFIED="1521328612517">
+<node TEXT="The following simple layout requirements are either difficult or impossible to achieve with such tools, in any kind of convenient, flexible way:" FOLDED="true" ID="ID_670889475" CREATED="1521328607590" MODIFIED="1521328612517">
 <node TEXT="Vertically centering a block of content inside its parent." ID="ID_1815352200" CREATED="1521328641102" MODIFIED="1521328648301"/>
 <node TEXT="Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available." ID="ID_951563787" CREATED="1521328658862" MODIFIED="1521328663204"/>
 <node TEXT="Making all columns in a multiple column layout adopt the same height even if they contain a different amount of content." ID="ID_1643966793" CREATED="1521328675673" MODIFIED="1521328680972"/>
 </node>
-<node TEXT="Basics &amp; Terminology" ID="ID_1668911571" CREATED="1521382349699" MODIFIED="1521382356358">
+<node TEXT="Basics &amp; Terminology" FOLDED="true" ID="ID_1668911571" CREATED="1521382349699" MODIFIED="1521382356358">
 <node TEXT="Since flexbox is a whole module and not a single property, it involves a lot of things including its whole set of properties. Some of them are meant to be set on the container (parent element, known as &quot;flex container&quot;) whereas the others are meant to be set on the children (said &quot;flex items&quot;)." ID="ID_1772620879" CREATED="1521382427903" MODIFIED="1521382438861"/>
 <node TEXT="If regular layout is based on both block and inline flow directions, the flex layout is based on &quot;flex-flow directions&quot;." ID="ID_708982927" CREATED="1521382499466" MODIFIED="1521382527140"/>
-<node TEXT="flex-basics-flow-direction.png" ID="ID_419168015" CREATED="1521382585946" MODIFIED="1521382585946">
+<node TEXT="flex-basics-flow-direction.png" FOLDED="true" ID="ID_419168015" CREATED="1521382585946" MODIFIED="1521382585946">
 <hook URI="webdevelopment2_files/flex-basics-flow-direction.png" SIZE="0.9104704" NAME="ExternalObject"/>
 <node ID="ID_1691561526" CREATED="1521382906135" MODIFIED="1521382979304"><richcontent TYPE="NODE">
 
@@ -1521,7 +1521,7 @@
 </node>
 <node TEXT="Basically, items will be laid out following either the main axis (from main-start to main-end) or the cross axis (from cross-start to cross-end)." ID="ID_1269989159" CREATED="1521382783616" MODIFIED="1521382787578"/>
 </node>
-<node TEXT="properties" ID="ID_1881729712" CREATED="1521381603240" MODIFIED="1521383887371">
+<node TEXT="properties" FOLDED="true" ID="ID_1881729712" CREATED="1521381603240" MODIFIED="1521383887371">
 <node TEXT="Parent (flex container)" FOLDED="true" ID="ID_1515885863" CREATED="1521383975440" MODIFIED="1521384009866">
 <node TEXT="display:" FOLDED="true" ID="ID_1545806093" CREATED="1521384087167" MODIFIED="1521384978123">
 <node TEXT="This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children." ID="ID_1509149814" CREATED="1521384108063" MODIFIED="1521384111449"/>
@@ -1997,7 +1997,7 @@
 </node>
 </node>
 </node>
-<node TEXT="examples" ID="ID_1492049608" CREATED="1521381614078" MODIFIED="1521381632866">
+<node TEXT="examples" FOLDED="true" ID="ID_1492049608" CREATED="1521381614078" MODIFIED="1521381632866">
 <node TEXT="perfect centering" FOLDED="true" ID="ID_644603151" CREATED="1521387371536" MODIFIED="1521387375619">
 <node TEXT=".parent {&#xa;  display: flex;&#xa;  height: 300px; /* Or whatever */&#xa;}&#xa;&#xa;.child {&#xa;  width: 100px;  /* Or whatever */&#xa;  height: 100px; /* Or whatever */&#xa;  margin: auto;  /* Magic! */&#xa;}" ID="ID_893148068" CREATED="1521387436064" MODIFIED="1521387442979"/>
 </node>
@@ -2005,6 +2005,45 @@
 </node>
 <node TEXT="Grids" ID="ID_1564708291" CREATED="1521328298609" MODIFIED="1521328301911"/>
 </node>
+<node TEXT="Background" ID="ID_1596337986" CREATED="1521389647529" MODIFIED="1521389711739">
+<node TEXT="background" ID="ID_248370065" CREATED="1521389713496" MODIFIED="1521389716642">
+<node TEXT="The background CSS property lets you adjust all background style options at once, including color, image, origin and size, repeat method, and other features." ID="ID_692336197" CREATED="1521389738184" MODIFIED="1521389742738"/>
+</node>
+<node TEXT="background-attachment" ID="ID_613135042" CREATED="1521389780856" MODIFIED="1521389785010">
+<node TEXT="If a background-image is specified, the background-attachment CSS property determines whether that image&apos;s position is fixed within the viewport, or scrolls along with its containing block." ID="ID_1300395249" CREATED="1521389803624" MODIFIED="1521389808274"/>
+</node>
+<node TEXT="background-clip" ID="ID_1617155992" CREATED="1521389817943" MODIFIED="1521389822514">
+<node TEXT="The background-clip CSS property specifies if an element&apos;s background, whether a &lt;color&gt; or an &lt;image&gt;, extends underneath its border." ID="ID_372044047" CREATED="1521390006030" MODIFIED="1521390009529"/>
+</node>
+<node TEXT="background-color" ID="ID_1666262131" CREATED="1521389830919" MODIFIED="1521389835730">
+<node TEXT="The background-color CSS property sets the background color of an element." ID="ID_1093609822" CREATED="1521390043062" MODIFIED="1521390068208"/>
+</node>
+<node TEXT="background-image" ID="ID_517449244" CREATED="1521389864767" MODIFIED="1521389868770">
+<node TEXT="The background-image CSS property sets one or more background images on an element." ID="ID_1867283481" CREATED="1521390076998" MODIFIED="1521390079272"/>
+</node>
+<node TEXT="background-origin" ID="ID_1073342098" CREATED="1521389876127" MODIFIED="1521389879985">
+<node TEXT="The background-origin CSS property sets the background positioning area, i.e., the origin position of an image specified using the background-image property." ID="ID_1222578300" CREATED="1521390109061" MODIFIED="1521390112272"/>
+</node>
+<node TEXT="background-position" ID="ID_143120696" CREATED="1521389887255" MODIFIED="1521389912865">
+<node TEXT="The background-position CSS property sets the initial position, relative to the background position layer defined by background-origin, for each defined background image." ID="ID_335357749" CREATED="1521390144933" MODIFIED="1521390149056"/>
+</node>
+<node TEXT="background-position-x" ID="ID_822357967" CREATED="1521389914719" MODIFIED="1521389918697">
+<node TEXT="The background-position-x CSS property sets the initial horizontal position, relative to the background position layer defined by background-origin, for each defined background image." ID="ID_410279664" CREATED="1521390180669" MODIFIED="1521390186392"/>
+</node>
+<node TEXT="background-position-y" ID="ID_1373433898" CREATED="1521389926479" MODIFIED="1521389930537">
+<node TEXT="The background-position-y CSS property sets the initial vertical position, relative to the background position layer defined by background-origin, for each defined background image." ID="ID_1177113916" CREATED="1521390199197" MODIFIED="1521390203247"/>
+</node>
+<node TEXT="background-repeat" ID="ID_1907107933" CREATED="1521389937599" MODIFIED="1521389942081">
+<node TEXT="The background-repeat CSS property defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all." ID="ID_1152988275" CREATED="1521390225901" MODIFIED="1521390231119"/>
+</node>
+<node TEXT="background-size" ID="ID_735690108" CREATED="1521389953223" MODIFIED="1521390000490">
+<node TEXT="The background-size CSS property specifies the size of an element&apos;s background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions." ID="ID_1726186800" CREATED="1521390265452" MODIFIED="1521390271015"/>
+<node TEXT="syntax" ID="ID_1340861129" CREATED="1521390300188" MODIFIED="1521390307551">
+<node TEXT="/* Keyword values */&#xa;background-size: cover;&#xa;background-size: contain;&#xa;&#xa;/* One-value syntax */&#xa;/* the width of the image (height becomes &apos;auto&apos;) */&#xa;background-size: 50%;&#xa;background-size: 3.2em;&#xa;background-size: 12px;&#xa;background-size: auto;&#xa;&#xa;/* Two-value syntax */&#xa;/* first value: width of the image, second value: height */&#xa;background-size: 50% auto;&#xa;background-size: 3em 25%;&#xa;background-size: auto 6px;&#xa;background-size: auto auto;&#xa;&#xa;/* Multiple backgrounds */&#xa;background-size: auto, auto; /* Not to be confused with `auto auto` */&#xa;background-size: 50%, 25%, 25%;&#xa;background-size: 6px, auto, contain;&#xa;&#xa;/* Global values */&#xa;background-size: inherit;&#xa;background-size: initial;&#xa;background-size: unset;" ID="ID_717544420" CREATED="1521390316596" MODIFIED="1521390321440"/>
+</node>
+</node>
+</node>
+<node TEXT="Box model" ID="ID_185068251" CREATED="1521390976864" MODIFIED="1521390992266"/>
 </node>
 <node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
 <node TEXT="pattern" FOLDED="true" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067">
@@ -3660,6 +3699,7 @@
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" ID="ID_1835774918" CREATED="1521132079985" MODIFIED="1521132079985" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects" ID="ID_1837208135" CREATED="1521313364052" MODIFIED="1521313369069"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction" ID="ID_110825805" CREATED="1521330247666" MODIFIED="1521330247666" LINK="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction"/>
+<node TEXT="https://github.com/wesbos" ID="ID_1115407747" CREATED="1521394317065" MODIFIED="1521394317065" LINK="https://github.com/wesbos"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
