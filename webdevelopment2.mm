@@ -1515,7 +1515,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1551,7 +1550,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1175958750" CREATED="1521384415980" MODIFIED="1521384484735"><richcontent TYPE="NODE">
@@ -1566,7 +1564,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_89191980" CREATED="1521384427764" MODIFIED="1521384501200"><richcontent TYPE="NODE">
@@ -1581,7 +1578,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_556545906" CREATED="1521384447788" MODIFIED="1521384515495"><richcontent TYPE="NODE">
@@ -1596,7 +1592,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1621,7 +1616,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1808679627" CREATED="1521384676219" MODIFIED="1521384757390"><richcontent TYPE="NODE">
@@ -1636,7 +1630,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_148236044" CREATED="1521384692747" MODIFIED="1521384766133"><richcontent TYPE="NODE">
@@ -1651,7 +1644,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1678,7 +1670,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1902931512" CREATED="1521385958258" MODIFIED="1521386322403"><richcontent TYPE="NODE">
@@ -1693,7 +1684,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_427351105" CREATED="1521385998251" MODIFIED="1521386354627"><richcontent TYPE="NODE">
@@ -1708,7 +1698,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1288596790" CREATED="1521386018961" MODIFIED="1521386366291"><richcontent TYPE="NODE">
@@ -1723,7 +1712,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_912825548" CREATED="1521386046673" MODIFIED="1521386407172"><richcontent TYPE="NODE">
@@ -1738,7 +1726,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1765066414" CREATED="1521386119681" MODIFIED="1521386432971"><richcontent TYPE="NODE">
@@ -1753,7 +1740,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1776,7 +1762,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1179432314" CREATED="1521386731077" MODIFIED="1521386824240"><richcontent TYPE="NODE">
@@ -1791,7 +1776,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_101761038" CREATED="1521386748740" MODIFIED="1521386835840"><richcontent TYPE="NODE">
@@ -1806,7 +1790,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_965947507" CREATED="1521386762428" MODIFIED="1521386851951"><richcontent TYPE="NODE">
@@ -1821,7 +1804,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1960922179" CREATED="1521386774524" MODIFIED="1521386886431"><richcontent TYPE="NODE">
@@ -1836,7 +1818,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1855,7 +1836,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="flex-align content.png" ID="ID_438891701" CREATED="1521387038984" MODIFIED="1521387038984">
@@ -1874,7 +1854,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1384208880" CREATED="1521387190849" MODIFIED="1521387281244"><richcontent TYPE="NODE">
@@ -1889,7 +1868,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1243021069" CREATED="1521387208473" MODIFIED="1521387291908"><richcontent TYPE="NODE">
@@ -1904,7 +1882,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_107252164" CREATED="1521387220641" MODIFIED="1521387302172"><richcontent TYPE="NODE">
@@ -1919,7 +1896,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1856436407" CREATED="1521387234921" MODIFIED="1521387314244"><richcontent TYPE="NODE">
@@ -1934,7 +1910,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1103524112" CREATED="1521387256761" MODIFIED="1521387325500"><richcontent TYPE="NODE">
@@ -1949,7 +1924,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -2149,6 +2123,7 @@
 <node TEXT="All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable." ID="ID_124632379" CREATED="1521129364959" MODIFIED="1521129368619"/>
 </node>
 </node>
+<node TEXT="Operator" ID="ID_1987984397" CREATED="1521469292211" MODIFIED="1521469309828"/>
 <node TEXT="data structures" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1521190224413"/>
 <node TEXT="Standard built-in objects" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
 <node TEXT="This chapter documents all of JavaScript&apos;s standard, built-in objects, including their methods and properties." ID="ID_731718304" CREATED="1521190331107" MODIFIED="1521190335454"/>
