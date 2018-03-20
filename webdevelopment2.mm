@@ -2405,7 +2405,7 @@
 <node TEXT="interpolated" FOLDED="true" ID="ID_1567067051" CREATED="1520976456174" MODIFIED="1520976464384">
 <node TEXT="console.log(&apos;This is %s a string!&apos; , &apos;shit&apos;)" ID="ID_1746417854" CREATED="1520976539277" MODIFIED="1520976585271"/>
 </node>
-<node TEXT="styled" FOLDED="true" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
+<node TEXT="styled" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
 <node TEXT="console.log(&apos;%c I am a pretty print!&apos; &apos;font-size:50px; background:red;&apos;)" ID="ID_1488628482" CREATED="1520976590677" MODIFIED="1520976657350"/>
 </node>
 </node>
