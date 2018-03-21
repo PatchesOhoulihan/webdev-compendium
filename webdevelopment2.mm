@@ -2289,7 +2289,7 @@
 </node>
 <node TEXT="Array" ID="ID_1703991624" CREATED="1517415246859" MODIFIED="1521326471598"/>
 </node>
-<node TEXT="Nice to know" FOLDED="true" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
+<node TEXT="Nice to know" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
 <node TEXT="Swap variables" FOLDED="true" ID="ID_1349446183" CREATED="1519028404553" MODIFIED="1519028413418">
 <node TEXT="Using Array Destructuring to swap values" ID="ID_461036412" CREATED="1519028786859" MODIFIED="1519028793980"/>
 <node TEXT="let a = &apos;world&apos;, b = &apos;hello&apos;&#xa;[a, b] = [b, a]&#xa;console.log(a) // -&gt; hello&#xa;console.log(b) // -&gt; world" ID="ID_531722019" CREATED="1519028812555" MODIFIED="1519028818445"/>
@@ -2353,6 +2353,62 @@
 <node TEXT="Ultra Light Templates" FOLDED="true" ID="ID_1574028339" CREATED="1519116563548" MODIFIED="1519116570637">
 <node TEXT="Are you still concatenating strings using the + operator? Here&#x2019;s a better way to combine a sentence with your data. It&#x2019;s called templating and here&#x2019;s a mini framework in 2.5 lines of code." ID="ID_548197350" CREATED="1519116585188" MODIFIED="1519116592894"/>
 <node TEXT="var firstName = &#x2018;Tal&#x2019;;&#xa;var screenName = &#x2018;ketacode&#x2019;&#xa;// Ugly&#xa;&#x2018;Hi, my name is &#x2018; + firstName + &#x2018; and my twitter screen name is @&#x2019; + screenName;&#xa;// Super&#xa;var template = &#x2018;Hi, my name is {first-name} and my twitter screen name is @{screen-name}&#x2019;;&#xa;var txt = template.replace(&#x2018;{first-name}&#x2019;, firstName)&#xa; .replace(&#x2018;{screen-name}&#x2019;, screenName);" ID="ID_675359012" CREATED="1519116646653" MODIFIED="1519116656047"/>
+</node>
+<node TEXT="Enforcing required parameters" ID="ID_933944900" CREATED="1521620726876" MODIFIED="1521620731369">
+<node TEXT="ES6 provides default parameter values that allow you to set some default value to be used if the function is called without that parameter." ID="ID_1999312974" CREATED="1521620757819" MODIFIED="1521620760556"/>
+<node TEXT="const required = () =&gt; {throw new Error(&apos;Missing parameter&apos;)};&#xa;//The below function will trow an error if either &quot;a&quot; or &quot;b&quot; is missing.&#xa;const add = (a = required(), b = required()) =&gt; a + b;&#xa;add(1, 2) //3&#xa;add(1) // Error: Missing parameter." ID="ID_1860105486" CREATED="1521620791787" MODIFIED="1521620796494"/>
+</node>
+<node TEXT="The mighty &#x201c;reduce&#x201d;" ID="ID_697118199" CREATED="1521620814939" MODIFIED="1521620819765">
+<node TEXT="Array&#x2019;s reduce method is extremely versatile. It is typically used to convert an array of items into a single value." ID="ID_847970729" CREATED="1521620851572" MODIFIED="1521620856542"/>
+<node TEXT="Using reduce to do both map and filter *simultaneously*" ID="ID_384515014" CREATED="1521620874651" MODIFIED="1521620880589">
+<node TEXT="Suppose you have a situation where you have a list of items, and you want to update each item (that is, map) and then filter only a few items (that is, filter). But this means that you would need to run through the list twice!" ID="ID_1317209618" CREATED="1521620913556" MODIFIED="1521620918566"/>
+<node TEXT="In the below example, we want to double the value of items in the array and then pick only those that are greater than 50. Notice how we can use the powerful reduce method to both double (map) and then filter? That&#x2019;s pretty efficient." ID="ID_957551842" CREATED="1521620964652" MODIFIED="1521620969679"/>
+<node TEXT="const numbers = [10, 20, 30, 40];&#xa;const doubledOver50 = numbers.reduce((finalList, num) =&gt; {&#xa; &#xa;  num = num * 2; //double each number (i.e. map)&#xa; &#xa;  //filter number &gt; 50&#xa;  if (num &gt; 50) {&#xa;    finalList.push(num);&#xa;  }&#xa;  return finalList;&#xa;}, []);&#xa;doubledOver50; // [60, 80]" ID="ID_1542803828" CREATED="1521620998565" MODIFIED="1521621002855"/>
+<node TEXT="If you look at the above example (from 2.1) carefully, you&#x2019;ll know that reduce can be used to filter or map over items!" ID="ID_1900126938" CREATED="1521621068270" MODIFIED="1521621073023"/>
+</node>
+<node TEXT="Using reduce to balance parentheses" ID="ID_341011409" CREATED="1521621148575" MODIFIED="1521621153552">
+<node TEXT="Given a string with parentheses, we want to know if they are balanced, that is that there&#x2019;s an equal number of &#x201c;(&#x201c; and &#x201c;)&#x201d;, and if &#x201c;(&#x201c; is before &#x201c;)&#x201d;." ID="ID_948353664" CREATED="1521621274784" MODIFIED="1521621279210"/>
+<node TEXT="We can easily do that in reduce as shown below. We simply hold a variable counter with starting value 0. We count up if we hit ( and count down if we hit ) . If they are balanced, then we should end up with 0." ID="ID_862270595" CREATED="1521621302705" MODIFIED="1521621307338"/>
+<node TEXT="//Returns 0 if balanced.&#xa;const isParensBalanced = (str) =&gt; {&#xa;  return str.split(&apos;&apos;).reduce((counter, char) =&gt; {&#xa;    if(counter &lt; 0) { //matched &quot;)&quot; before &quot;(&quot;&#xa;      return counter;&#xa;    } else if(char === &apos;(&apos;) {&#xa;      return ++counter;&#xa;    } else if(char === &apos;)&apos;) {&#xa;      return --counter;&#xa;    }  else { //matched some other char&#xa;      return counter;&#xa;    }&#xa;   &#xa;  }, 0); //&lt;-- starting value of the counter&#xa;}&#xa;isParensBalanced(&apos;(())&apos;) // 0 &lt;-- balanced&#xa;isParensBalanced(&apos;(asdfds)&apos;) //0 &lt;-- balanced&#xa;isParensBalanced(&apos;(()&apos;) // 1 &lt;-- not balanced&#xa;isParensBalanced(&apos;)(&apos;) // -1 &lt;-- not balanced" ID="ID_44440124" CREATED="1521621351569" MODIFIED="1521621356989"/>
+</node>
+<node TEXT="Counting Duplicate Array Items (Converting Array &#x2192; Object)" ID="ID_244824242" CREATED="1521621387762" MODIFIED="1521621392995">
+<node TEXT="There are times when you want to count duplicate array items or convert an array into an object. You can use reduce for that." ID="ID_1578945656" CREATED="1521621408690" MODIFIED="1521621412595"/>
+<node TEXT="var cars = [&apos;BMW&apos;,&apos;Benz&apos;, &apos;Benz&apos;, &apos;Tesla&apos;, &apos;BMW&apos;, &apos;Toyota&apos;];&#xa;var carsObj = cars.reduce(function (obj, name) {&#xa;   obj[name] = obj[name] ? ++obj[name] : 1;&#xa;  return obj;&#xa;}, {});&#xa;carsObj; // =&gt; { BMW: 2, Benz: 2, Tesla: 1, Toyota: 1 }" ID="ID_1600747593" CREATED="1521621432522" MODIFIED="1521621437572"/>
+</node>
+</node>
+<node TEXT="Object destructuring" ID="ID_1269631508" CREATED="1521621498762" MODIFIED="1521621505268">
+<node TEXT="Removing unwanted properties" ID="ID_19557051" CREATED="1521621513778" MODIFIED="1521621520251">
+<node TEXT="There are times when you want to remove unwanted properties&#x200a;&#x2014;&#x200a;maybe because they contain sensitive info or are just too big." ID="ID_1413762745" CREATED="1521621836493" MODIFIED="1521621840598"/>
+<node TEXT="Instead of iterating over the whole object to removing them, we can simply extract such props to variables and keep the useful ones in the *rest* parameter." ID="ID_1627635846" CREATED="1521621861149" MODIFIED="1521621865527"/>
+<node TEXT="n the below example, we want to remove _internal and tooBig properties. We can assign them to_internal and tooBig variables and store the remaining in a *rest* parameter cleanObject that we can use for later." ID="ID_532349658" CREATED="1521621897973" MODIFIED="1521621921015"/>
+<node TEXT="let {_internal, tooBig, ...cleanObject} = {el1: &apos;1&apos;, _internal:&quot;secret&quot;, tooBig:{}, el2: &apos;2&apos;, el3: &apos;3&apos;};&#xa;console.log(cleanObject); // {el1: &apos;1&apos;, el2: &apos;2&apos;, el3: &apos;3&apos;}" ID="ID_981673009" CREATED="1521621879637" MODIFIED="1521621884551"/>
+</node>
+<node TEXT="Destructure nested objects in function params" ID="ID_1290732028" CREATED="1521621932958" MODIFIED="1521621940807">
+<node TEXT="In the below example, the engine property is a nested-object of the car object. If we are interested in, say, the vin property of engine, we can easily destructure it as shown below." ID="ID_292354216" CREATED="1521621977070" MODIFIED="1521621982071"/>
+</node>
+<node TEXT="Merge objects" ID="ID_1080066907" CREATED="1521622072278" MODIFIED="1521622077136">
+<node TEXT="ES6 comes with a spread operator (denoted by three dots). It is typically used to deconstruct array values, but you can use it on Objects as well." ID="ID_428738254" CREATED="1521622090023" MODIFIED="1521622092663"/>
+<node TEXT="In the following example, we use the spread operator to spread within a new object. Property keys in the 2nd object will override property keys in the 1st object." ID="ID_868380779" CREATED="1521622138239" MODIFIED="1521622143968"/>
+<node TEXT="let object1 = { a:1, b:2,c:3 }&#xa;let object2 = { b:30, c:40, d:50}&#xa;let merged = {&#x2026;object1, &#x2026;object2} //spread and re-add into merged&#xa;console.log(merged) // {a:1, b:30, c:40, d:50}" ID="ID_866730174" CREATED="1521622157151" MODIFIED="1521622162664"/>
+</node>
+</node>
+<node TEXT="Sets" ID="ID_1994730948" CREATED="1521622205303" MODIFIED="1521622211184">
+<node TEXT="De-duping Arrays Using Sets" ID="ID_1009448885" CREATED="1521622238559" MODIFIED="1521622245776">
+<node TEXT="In ES6 you can easily de-dupe items using Sets, as Sets only allows unique values to be stored." ID="ID_1967353877" CREATED="1521622361039" MODIFIED="1521622364352"/>
+</node>
+<node TEXT="Using Array methods" ID="ID_820109920" CREATED="1521622326135" MODIFIED="1521622331520">
+<node TEXT="Converting Sets to an Array is as simple as using a spread operator (&#x2026; ). You can use all the Array methods easily on Sets as well!" ID="ID_1497238684" CREATED="1521622699801" MODIFIED="1521622702266"/>
+<node TEXT="let mySet = new Set([1,2, 3, 4, 5]);&#xa;var filtered = [...mySet].filter((x) =&gt; x &gt; 3) // [4, 5]" ID="ID_1428088626" CREATED="1521622714753" MODIFIED="1521622720410"/>
+</node>
+</node>
+<node TEXT="Array destructuring" ID="ID_159620422" CREATED="1521622769730" MODIFIED="1521622777019">
+<node TEXT="Swap values" ID="ID_414181233" CREATED="1521622795906" MODIFIED="1521622804329">
+<node TEXT="let param1 = 1;&#xa;let param2 = 2;&#xa;//swap and assign param1 &amp; param2 each others values&#xa;[param1, param2] = [param2, param1];&#xa;console.log(param1) // 2&#xa;console.log(param2) // 1" ID="ID_848333508" CREATED="1521622821689" MODIFIED="1521622826402"/>
+</node>
+<node TEXT="Receive and assign multiple values from a function" ID="ID_242939194" CREATED="1521622851186" MODIFIED="1521622855531">
+<node TEXT="In the below example, we are fetching a post at /post and related comments at /comments . Since we are using async / await , the function returns the result in an array. Using array destructuring, we can simply assign the result directly into corresponding variables." ID="ID_1225256604" CREATED="1521622868594" MODIFIED="1521622872339"/>
+<node TEXT="async function getFullPost(){&#xa;  return await Promise.all([&#xa;    fetch(&apos;/post&apos;),&#xa;    fetch(&apos;/comments&apos;)&#xa;  ]);&#xa;}&#xa;const [post, comments] = getFullPost();" ID="ID_165154025" CREATED="1521622881202" MODIFIED="1521622888868"/>
+</node>
 </node>
 </node>
 </node>
