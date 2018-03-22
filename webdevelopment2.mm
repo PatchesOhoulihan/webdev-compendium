@@ -1979,6 +1979,69 @@
 </node>
 <node TEXT="Grids" ID="ID_1564708291" CREATED="1521328298609" MODIFIED="1521328301911"/>
 </node>
+<node TEXT="Box model" ID="ID_185068251" CREATED="1521390976864" MODIFIED="1521390992266">
+<node TEXT="CSS Basic Box Model is a module of CSS that defines the rectangular boxes&#x2014;including their padding and margin&#x2014;that are generated for elements and laid out according to the visual formatting model." ID="ID_696404274" CREATED="1521709126660" MODIFIED="1521709165486">
+<node TEXT="The CSS visual formatting model is an algorithm that processes a document and displays it on visual media. This model is a basic concept of CSS." ID="ID_1584331980" CREATED="1521709176504" MODIFIED="1521709200586"/>
+</node>
+<node TEXT="introduction" ID="ID_496897100" CREATED="1521709239872" MODIFIED="1521709247594">
+<node TEXT="When laying out a document, the browser&apos;s rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes." ID="ID_1723000452" CREATED="1521709752147" MODIFIED="1521709756556"/>
+<node TEXT="Every box is composed of four parts (or areas), defined by their respective edges: the content edge, padding edge, border edge, and margin edge." ID="ID_1214878420" CREATED="1521709772971" MODIFIED="1521709777925"/>
+<node TEXT="basic-boxmodel.png" ID="ID_1303953557" CREATED="1521710023761" MODIFIED="1521710023761">
+<hook URI="webdevelopment2_files/basic-boxmodel.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="content area" ID="ID_1290245999" CREATED="1521710045653" MODIFIED="1521710049182">
+<node TEXT="The content area, bounded by the content edge, contains the &quot;real&quot; content of the element, such as text, an image, or a video player. Its dimensions are the content width (or content-box width) and the content height (or content-box height). It often has a background color or background image." ID="ID_1878093196" CREATED="1521710293991" MODIFIED="1521710298648"/>
+<node TEXT="If the box-sizing property is set to content-box (default), the content area&apos;s size can be explicitly defined with the width, min-width, max-width, height, min-height, and max-height properties." ID="ID_1409225719" CREATED="1521710360727" MODIFIED="1521710365449"/>
+</node>
+<node TEXT="padding area" ID="ID_551405724" CREATED="1521710050749" MODIFIED="1521710059910">
+<node TEXT="The padding area, bounded by the padding edge, extends the content area to include the element&apos;s padding. Its dimensions are the padding-box width and the padding-box height." ID="ID_839814639" CREATED="1521710447952" MODIFIED="1521710452937"/>
+<node TEXT="The thickness of the padding is determined by the padding-top, padding-right, padding-bottom, padding-left, and shorthand padding properties." ID="ID_337813505" CREATED="1521710465408" MODIFIED="1521710470225"/>
+</node>
+<node TEXT="border area" ID="ID_1223214503" CREATED="1521710083493" MODIFIED="1521710088381">
+<node TEXT="The border area, bounded by the border edge, extends the padding area to include the element&apos;s borders. Its dimensions are the border-box width and the border-box height." ID="ID_986497567" CREATED="1521710497472" MODIFIED="1521710501865"/>
+<node TEXT="The thickness of the borders are determined by the border-width and shorthand border properties." ID="ID_1652929199" CREATED="1521710537393" MODIFIED="1521710614154"/>
+<node TEXT="If the box-sizing property is set to border-box, the border area&apos;s size can be explicitly defined with the width, min-width, max-width, height, min-height, and max-height properties." ID="ID_1403880075" CREATED="1521710596593" MODIFIED="1521710601242"/>
+<node TEXT="When there is a background (background-color or background-image) set on a box, it extends to the outer edge of the border (i.e. extends underneath the border in z-ordering). This default behavior can be altered with the background-clip css property." ID="ID_1581421704" CREATED="1521710617281" MODIFIED="1521710621610"/>
+</node>
+<node TEXT="margin area" ID="ID_341660554" CREATED="1521710108998" MODIFIED="1521710113791">
+<node TEXT="The margin area, bounded by the margin edge, extends the border area to include an empty area used to separate the element from its neighbors. Its dimensions are the margin-box width and the margin-box height." ID="ID_715889793" CREATED="1521710550905" MODIFIED="1521710554994"/>
+<node TEXT="The size of the margin area is determined by the margin-top, margin-right, margin-bottom, margin-left, and shorthand margin properties. When margin collapsing occurs, the margin area is not clearly defined since margins are shared between boxes." ID="ID_213648665" CREATED="1521710676113" MODIFIED="1521710681059"/>
+<node TEXT="Finally, note that for non-replaced inline elements, the amount of space taken up (the contribution to the height of the line) is determined by the line-height property, even though the borders and padding are still displayed around the content." ID="ID_225142269" CREATED="1521710826018" MODIFIED="1521710830708"/>
+</node>
+</node>
+<node TEXT="properties" ID="ID_871461325" CREATED="1521709252240" MODIFIED="1521709259098">
+<node TEXT="Properties controlling the flow of content in a box" ID="ID_994838115" CREATED="1521709273993" MODIFIED="1521709277978">
+<node TEXT="overflow" ID="ID_1562699402" CREATED="1521709374569" MODIFIED="1521709378059"/>
+<node TEXT="overflow-x" ID="ID_436730987" CREATED="1521709384889" MODIFIED="1521709388499"/>
+<node TEXT="overflow-y" ID="ID_1884439627" CREATED="1521709396161" MODIFIED="1521709399739"/>
+</node>
+<node TEXT="Properties controlling the size of a box" ID="ID_838364660" CREATED="1521709278649" MODIFIED="1521709289210">
+<node TEXT="height" ID="ID_1121356685" CREATED="1521709408745" MODIFIED="1521709412995"/>
+<node TEXT="width" ID="ID_800458296" CREATED="1521709419553" MODIFIED="1521709423442"/>
+<node TEXT="max-height" ID="ID_12270919" CREATED="1521709434305" MODIFIED="1521709439227"/>
+<node TEXT="max-width" ID="ID_1165552552" CREATED="1521709446202" MODIFIED="1521709450003"/>
+<node TEXT="min-height" ID="ID_1223779824" CREATED="1521709456801" MODIFIED="1521709460787"/>
+<node TEXT="min-width" ID="ID_1654292957" CREATED="1521709470210" MODIFIED="1521709475299"/>
+</node>
+<node TEXT="Properties controlling the margins of a box" ID="ID_1829576504" CREATED="1521709304857" MODIFIED="1521709308962">
+<node TEXT="margin-bottom" ID="ID_1339775698" CREATED="1521709500666" MODIFIED="1521709507091"/>
+<node TEXT="margin-left" ID="ID_198368607" CREATED="1521709514090" MODIFIED="1521709519131"/>
+<node TEXT="margin-right" ID="ID_1524633108" CREATED="1521709525338" MODIFIED="1521709529068"/>
+<node TEXT="margin-top" ID="ID_1384305621" CREATED="1521709537602" MODIFIED="1521709541515"/>
+<node TEXT="margin" ID="ID_1882012464" CREATED="1521709552682" MODIFIED="1521709556956"/>
+</node>
+<node TEXT="Properties controlling the paddings of a box" ID="ID_1087149618" CREATED="1521709578331" MODIFIED="1521709581068">
+<node TEXT="padding-bottom" ID="ID_994974605" CREATED="1521709588203" MODIFIED="1521709590604"/>
+<node TEXT="padding-left" ID="ID_414086134" CREATED="1521709597731" MODIFIED="1521709601476"/>
+<node TEXT="padding-right" ID="ID_1546624397" CREATED="1521709612459" MODIFIED="1521709616164"/>
+<node TEXT="padding-top" ID="ID_1472949877" CREATED="1521709625875" MODIFIED="1521709631916"/>
+<node TEXT="padding" ID="ID_1066888168" CREATED="1521709645307" MODIFIED="1521709650564"/>
+</node>
+<node TEXT="properties controlling the type of the box" ID="ID_711874887" CREATED="1521710384360" MODIFIED="1521710407873">
+<node TEXT="box-sizing" ID="ID_781145907" CREATED="1521710416711" MODIFIED="1521710425401"/>
+</node>
+<node TEXT="Other properties" ID="ID_62296851" CREATED="1521709358449" MODIFIED="1521709362947">
+<node TEXT="visibility" ID="ID_1959108581" CREATED="1521709659995" MODIFIED="1521709663292"/>
 <node TEXT="Background" ID="ID_1596337986" CREATED="1521389647529" MODIFIED="1521389711739">
 <node TEXT="background" ID="ID_248370065" CREATED="1521389713496" MODIFIED="1521389716642">
 <node TEXT="The background CSS property lets you adjust all background style options at once, including color, image, origin and size, repeat method, and other features." ID="ID_692336197" CREATED="1521389738184" MODIFIED="1521389742738"/>
@@ -2017,7 +2080,10 @@
 </node>
 </node>
 </node>
-<node TEXT="Box model" ID="ID_185068251" CREATED="1521390976864" MODIFIED="1521390992266"/>
+<node TEXT="line-height" ID="ID_1174461192" CREATED="1521710879611" MODIFIED="1521710888612"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
 <node TEXT="pattern" FOLDED="true" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067">
