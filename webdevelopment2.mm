@@ -2080,7 +2080,12 @@
 </node>
 </node>
 </node>
-<node TEXT="line-height" ID="ID_1174461192" CREATED="1521710879611" MODIFIED="1521710888612"/>
+<node TEXT="box-shadow" ID="ID_469049242" CREATED="1522054327464" MODIFIED="1522054338673">
+<node TEXT="The box-shadow CSS property is used to add shadow effects around an element&apos;s frame. You can specify multiple effects separated by commas if you wish to do so. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color." ID="ID_76404175" CREATED="1522054477016" MODIFIED="1522054479730"/>
+<node TEXT="The box-shadow property enables you to cast a drop shadow from the frame of almost any element. If a border-radius is specified on the element with a box shadow, the box shadow takes on the same rounded corners. The z-ordering of multiple box shadows is the same as multiple text shadows (the first specified shadow is on top)." ID="ID_642315745" CREATED="1522054582649" MODIFIED="1522054587940"/>
+</node>
+<node TEXT="box-sizing" ID="ID_1829860412" CREATED="1522054350599" MODIFIED="1522054359321"/>
+<node TEXT="border-radius" ID="ID_605345953" CREATED="1522054594609" MODIFIED="1522054608563"/>
 </node>
 </node>
 </node>
