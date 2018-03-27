@@ -1098,7 +1098,7 @@
 <node TEXT="Pseudo-classes" ID="ID_1510060852" CREATED="1519516015090" MODIFIED="1519516030388">
 <node TEXT="pseudo-classes can be used to style an element based on its state." ID="ID_1423517617" CREATED="1519519700532" MODIFIED="1519519706251"/>
 <node TEXT="Like regular classes, you can chain together as many pseudo-classes as you want in a selector." ID="ID_755750842" CREATED="1519521426303" MODIFIED="1519521432023"/>
-<node TEXT="Index of standard pseudo-classes" FOLDED="true" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1521326744883">
+<node TEXT="Index of standard pseudo-classes" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1521326744883">
 <node TEXT=":active" ID="ID_1143391783" CREATED="1519520388396" MODIFIED="1519520395578"/>
 <node TEXT=":any" ID="ID_1341041150" CREATED="1519520397460" MODIFIED="1519520400502"/>
 <node TEXT=":any-link" ID="ID_941860286" CREATED="1519520453411" MODIFIED="1519520455814"/>
@@ -1106,7 +1106,12 @@
 <node TEXT=":default" ID="ID_95266600" CREATED="1519520486227" MODIFIED="1519520487542"/>
 <node TEXT=":defined" ID="ID_1835049666" CREATED="1519520498123" MODIFIED="1519520541820"/>
 <node TEXT=":disabled" ID="ID_1829812875" CREATED="1519520586218" MODIFIED="1519520589405"/>
-<node TEXT=":empty" ID="ID_1687419023" CREATED="1519520604194" MODIFIED="1519520607245"/>
+<node TEXT=":empty" ID="ID_1687419023" CREATED="1519520604194" MODIFIED="1519520607245">
+<node TEXT="The :empty pseudo selector will select elements that contain either nothing or only an HTML comment." ID="ID_1689104534" CREATED="1522165222420" MODIFIED="1522165225469"/>
+<node TEXT="It&apos;s useful for hiding empty elements that might cause weird spacing (e.g. they have padding). Or something like removing the border from the top left table cell element in a cross-referencing table." ID="ID_415614601" CREATED="1522165250548" MODIFIED="1522165253605"/>
+<node TEXT="div:empty {&#xa;   display: none;&#xa;}" ID="ID_1649643530" CREATED="1522165306956" MODIFIED="1522165316341"/>
+<node TEXT="&lt;div&gt;&lt;/div&gt;&#xa;&#xa;&lt;div&gt;&lt;!-- test --&gt;&lt;/div&gt;" ID="ID_1739513476" CREATED="1522165299124" MODIFIED="1522165303270"/>
+</node>
 <node TEXT=":enabled" ID="ID_133281498" CREATED="1519520617954" MODIFIED="1519520621821"/>
 <node TEXT=":first" ID="ID_267810804" CREATED="1519520630642" MODIFIED="1519520634693"/>
 <node TEXT=":first-child" ID="ID_1555645621" CREATED="1519520649986" MODIFIED="1519520659949"/>
@@ -1115,7 +1120,9 @@
 <node TEXT=":focus" ID="ID_1438310843" CREATED="1519520692858" MODIFIED="1519520696068"/>
 <node TEXT=":host" ID="ID_1871286631" CREATED="1519520710026" MODIFIED="1519520713708"/>
 <node TEXT=":host()" ID="ID_656053505" CREATED="1519520748825" MODIFIED="1519520751932"/>
-<node TEXT=":hover" ID="ID_22032631" CREATED="1519520792609" MODIFIED="1519520795468"/>
+<node TEXT=":hover" ID="ID_22032631" CREATED="1519520792609" MODIFIED="1519520795468">
+<node TEXT="The :hover pseudo class in CSS selects elements when the mouse cursor is current over them. It&apos;s commonly associated with link (&lt;a&gt;) elements." ID="ID_459457740" CREATED="1522165395589" MODIFIED="1522165399983"/>
+</node>
 <node TEXT=":indeterminate" ID="ID_1233956048" CREATED="1519520805361" MODIFIED="1519520808108"/>
 <node TEXT=":in-range" ID="ID_1364139555" CREATED="1519520825777" MODIFIED="1519520829355"/>
 <node TEXT=":invalid" ID="ID_1283754776" CREATED="1519520869889" MODIFIED="1519520889947"/>
@@ -1146,7 +1153,7 @@
 </node>
 <node TEXT="Pseudo-elements" ID="ID_1307495510" CREATED="1519516070121" MODIFIED="1519516074348">
 <node TEXT="pseudo-elements can be used to style a specific part of an element." ID="ID_893397212" CREATED="1519519744800" MODIFIED="1519519747811"/>
-<node TEXT="Index of standard pseudo-elements" FOLDED="true" ID="ID_13217850" CREATED="1519599535121" MODIFIED="1519599537940">
+<node TEXT="Index of standard pseudo-elements" ID="ID_13217850" CREATED="1519599535121" MODIFIED="1519599537940">
 <node TEXT="::after" FOLDED="true" ID="ID_400249708" CREATED="1519599546769" MODIFIED="1519599556043">
 <node TEXT="In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default." ID="ID_429044351" CREATED="1519600180908" MODIFIED="1519600185607"/>
 <node TEXT="Syntax" FOLDED="true" ID="ID_1304254130" CREATED="1519600235204" MODIFIED="1519600238214">
@@ -1173,9 +1180,12 @@
 <node TEXT="::cue" ID="ID_205401949" CREATED="1519599571257" MODIFIED="1519599573627"/>
 <node TEXT="::first-letter" ID="ID_1917919652" CREATED="1519599583288" MODIFIED="1519599585771"/>
 <node TEXT="::first-line" ID="ID_1710562009" CREATED="1519599600096" MODIFIED="1519599604987"/>
-<node TEXT="::selection" ID="ID_1215995220" CREATED="1519599616232" MODIFIED="1519599619331"/>
+<node TEXT="::selection" ID="ID_1215995220" CREATED="1519599616232" MODIFIED="1519599619331">
+<node TEXT="You can change the background color and color of selected text by styling ::selection. Styling this pseudo element is great for matching user-selected text to your sites color scheme." ID="ID_485326087" CREATED="1522161784295" MODIFIED="1522161788248"/>
+<node TEXT="p::-moz-selection { color: red}&#xa;p::selection { color: red; }" ID="ID_937965449" CREATED="1522161817767" MODIFIED="1522161820888"/>
+</node>
 <node TEXT="::slotted" ID="ID_332821907" CREATED="1519599629600" MODIFIED="1519599632058"/>
-<node TEXT="experimental" FOLDED="true" ID="ID_755495171" CREATED="1519599687120" MODIFIED="1519599694618">
+<node TEXT="experimental" ID="ID_755495171" CREATED="1519599687120" MODIFIED="1519599694618">
 <node TEXT="::backdrop" ID="ID_1389536548" CREATED="1519599705744" MODIFIED="1519599708178"/>
 <node TEXT="::placeholder" ID="ID_93853094" CREATED="1519599719863" MODIFIED="1519599722594"/>
 <node TEXT="::marker" ID="ID_281336288" CREATED="1519599734399" MODIFIED="1519599736690"/>
@@ -2202,14 +2212,14 @@
 <node TEXT="The global object itself can be accessed using the this operator in the global scope (but only if ECMAScript 5 strict mode is not used; in that case it returns undefined)." ID="ID_376537155" CREATED="1521190401587" MODIFIED="1521190411781"/>
 <node TEXT=" In fact, the global scope consists of the properties of the global object, including inherited properties, if any." ID="ID_867838805" CREATED="1521190580052" MODIFIED="1521190583581"/>
 <node TEXT="Other objects in the global scope are either created by the user script or provided by the host application. The host objects available in browser contexts" ID="ID_1066163475" CREATED="1521190629908" MODIFIED="1521190637493"/>
-<node TEXT="Value properties" FOLDED="true" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653">
+<node TEXT="Value properties" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653">
 <node TEXT="These global properties return a simple value; they have no properties or methods." ID="ID_1820806319" CREATED="1521308519053" MODIFIED="1521308524186"/>
 <node TEXT="Infinity" OBJECT="java.lang.Double|Infinity" ID="ID_170409255" CREATED="1521308534229" MODIFIED="1521308544945"/>
 <node TEXT="NaN" OBJECT="java.lang.Double|NaN" ID="ID_230146644" CREATED="1521308545797" MODIFIED="1521308549911"/>
 <node TEXT="undefined" ID="ID_809751258" CREATED="1521308558061" MODIFIED="1521308562207"/>
 <node TEXT="null literal" ID="ID_1874205737" CREATED="1521308572029" MODIFIED="1521308576094"/>
 </node>
-<node TEXT="Function properties" FOLDED="true" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
+<node TEXT="Function properties" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
 <node TEXT="These global functions&#x2014;functions which are called globally rather than on an object&#x2014;directly return their results to the caller." ID="ID_844058669" CREATED="1521308603949" MODIFIED="1521308606999"/>
 <node TEXT="eval()" ID="ID_1138508202" CREATED="1521308618789" MODIFIED="1521308623606"/>
 <node TEXT="isFinite()" ID="ID_1837829520" CREATED="1521308631852" MODIFIED="1521308635567"/>
@@ -2221,8 +2231,11 @@
 <node TEXT="encodeURI()" ID="ID_1018794098" CREATED="1521308713260" MODIFIED="1521308718046"/>
 <node TEXT="encodeURIComponent()" ID="ID_347321201" CREATED="1521308726828" MODIFIED="1521311823240"/>
 </node>
-<node TEXT="Fundamental objects" FOLDED="true" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
+<node TEXT="Fundamental objects" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
 <node TEXT="These are the fundamental, basic objects upon which all other objects are based. This includes objects that represent general objects, functions, and errors." ID="ID_586945238" CREATED="1521311890350" MODIFIED="1521311893034"/>
+<node TEXT="Array" ID="ID_256959538" CREATED="1522141029633" MODIFIED="1522141036257">
+<node TEXT="The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects." ID="ID_1352549303" CREATED="1522140991855" MODIFIED="1522140994601"/>
+</node>
 <node TEXT="Object" ID="ID_17690293" CREATED="1521311912454" MODIFIED="1521311916216"/>
 <node TEXT="Function" ID="ID_1904735197" CREATED="1521311925574" MODIFIED="1521311934208"/>
 <node TEXT="Boolean" ID="ID_1187453092" CREATED="1521311942238" MODIFIED="1521311954176"/>
@@ -2288,7 +2301,7 @@
 <node TEXT="Value Range: 5.0x10-324 to 1.8x10308" ID="ID_1881512499" CREATED="1521553318981" MODIFIED="1521553494359"/>
 </node>
 </node>
-<node TEXT="Keyed collections" FOLDED="true" ID="ID_906892615" CREATED="1521191092140" MODIFIED="1521191097285">
+<node TEXT="Keyed collections" ID="ID_906892615" CREATED="1521191092140" MODIFIED="1521191097285">
 <node TEXT="These objects represent collections which use keys; these contain elements which are iterable in the order of insertion." ID="ID_1732348158" CREATED="1521312578193" MODIFIED="1521312582459"/>
 <node TEXT="Map" ID="ID_608513859" CREATED="1521312591497" MODIFIED="1521312594779"/>
 <node TEXT="Set" ID="ID_1280041011" CREATED="1521312601649" MODIFIED="1521312606411"/>
@@ -3878,6 +3891,7 @@
 <node TEXT="https://suitcss.github.io/" ID="ID_1738288282" CREATED="1521644878730" MODIFIED="1521644878730" LINK="https://suitcss.github.io/"/>
 <node TEXT="https://en.wikipedia.org/wiki/Rule_110" ID="ID_1261953291" CREATED="1521713886833" MODIFIED="1521713889689"/>
 <node TEXT="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens" ID="ID_1158572188" CREATED="1521713983529" MODIFIED="1521713998186"/>
+<node TEXT="https://css-tricks.com/almanac/" ID="ID_634666562" CREATED="1522162180113" MODIFIED="1522162183706"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
