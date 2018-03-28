@@ -55,7 +55,7 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="34" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
+<node TEXT="Html" FOLDED="true" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Introduction" FOLDED="true" ID="ID_667219144" CREATED="1520200774244" MODIFIED="1520200783932">
 <node TEXT="the &quot;M&quot; in HTML stands for &quot;Markup&quot;, but what does Markup really mean?" FOLDED="true" ID="ID_1067751453" CREATED="1520200875423" MODIFIED="1520200875423">
@@ -118,7 +118,7 @@
 <node TEXT="This information should be easily transferable from one place to another, so that in reading one document, it is easy to access everything related (linked) to it." ID="ID_1920301409" CREATED="1520199615109" MODIFIED="1520199615109"/>
 <node TEXT="Tim Berners-Lee imagined a &quot;Web&quot; of interconnected documents." ID="ID_154095894" CREATED="1520199705734" MODIFIED="1520199705734"/>
 </node>
-<node TEXT="The browser" ID="ID_364812799" CREATED="1520199782776" MODIFIED="1520199785875">
+<node TEXT="The browser" FOLDED="true" ID="ID_364812799" CREATED="1520199782776" MODIFIED="1520199785875">
 <node TEXT="The Internet existed long before the Web came to fruition, and lots of organizations were connected to it, including schools, companies and government organizations." ID="ID_1184113106" CREATED="1520199881462" MODIFIED="1520199881462"/>
 <node TEXT="As things progressed through the 80&apos;s, the Internet was used for file transfers, newsgroups (a kind of open forum), email and other conveniences." ID="ID_596237640" CREATED="1520199899019" MODIFIED="1520199899019"/>
 <node TEXT="At the time there were a number of different programs like &apos;fetch&apos;, &apos;gopher&apos; and &apos;archie&apos; that were used to download, browse and search for files." ID="ID_630706303" CREATED="1520199944426" MODIFIED="1520199944426"/>
@@ -130,7 +130,7 @@
 <node TEXT="Though not technically the first browser, Mosaic was the first one that many people experienced and played a big part in popularizing the concept of the World Wide Web and the Web browser." ID="ID_672601724" CREATED="1520200080793" MODIFIED="1520200080793"/>
 </node>
 </node>
-<node TEXT="Tags" ID="ID_1907537597" CREATED="1517835208389" MODIFIED="1517909406271">
+<node TEXT="Tags" FOLDED="true" ID="ID_1907537597" CREATED="1517835208389" MODIFIED="1517909406271">
 <node TEXT="Comment" FOLDED="true" ID="ID_873678968" CREATED="1519592695865" MODIFIED="1519592701707">
 <node TEXT="&lt;!--This is a comment. Comments are not displayed in the browser--&gt;" ID="ID_1466872894" CREATED="1519592708937" MODIFIED="1519592712027"/>
 </node>
@@ -162,7 +162,7 @@
 <node TEXT="&lt;nav&gt;" ID="ID_1155868937" CREATED="1520726315341" MODIFIED="1520726318896"/>
 <node TEXT="&lt;section&gt;" ID="ID_1534995824" CREATED="1520726331061" MODIFIED="1520726333504"/>
 </node>
-<node TEXT="Text content" ID="ID_1142534139" CREATED="1520591947597" MODIFIED="1520591950717">
+<node TEXT="Text content" FOLDED="true" ID="ID_1142534139" CREATED="1520591947597" MODIFIED="1520591950717">
 <node TEXT="Use HTML text content elements to organize blocks or sections of content placed between the opening &lt;body&gt; and closing &lt;/body&gt; tags. Important for accessibility and SEO, these elements identify the purpose or structure of that content." ID="ID_198102019" CREATED="1520726966868" MODIFIED="1520726973028"/>
 <node TEXT="&lt;blockquote&gt;" ID="ID_1735757403" CREATED="1520726654435" MODIFIED="1520726657838"/>
 <node TEXT="&lt;dd&gt;" ID="ID_799321769" CREATED="1520726668211" MODIFIED="1520726670582"/>
@@ -180,7 +180,7 @@
 <node TEXT="&lt;pre&gt;" ID="ID_640476297" CREATED="1520726918241" MODIFIED="1520726921301"/>
 <node TEXT="&lt;ul&gt;" ID="ID_1961562135" CREATED="1520726929657" MODIFIED="1520726957807"/>
 </node>
-<node TEXT="Inline text semantics" ID="ID_1943550316" CREATED="1520591962372" MODIFIED="1520591966502">
+<node TEXT="Inline text semantics" FOLDED="true" ID="ID_1943550316" CREATED="1520591962372" MODIFIED="1520591966502">
 <node TEXT="Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text." ID="ID_1846190442" CREATED="1520727052264" MODIFIED="1520727055852"/>
 <node TEXT="&lt;a&gt;" ID="ID_1139796414" CREATED="1520727085952" MODIFIED="1520727089387"/>
 <node TEXT="&lt;abbr&gt;" ID="ID_922747264" CREATED="1520727143927" MODIFIED="1520727147227"/>
@@ -194,7 +194,7 @@
 <node TEXT="&lt;dfn&gt;" ID="ID_1707797585" CREATED="1520727266007" MODIFIED="1520727269354"/>
 <node TEXT="&lt;em&gt;" ID="ID_1762000015" CREATED="1520727277375" MODIFIED="1520727280666"/>
 <node TEXT="&lt;i&gt;" ID="ID_478779875" CREATED="1520727289431" MODIFIED="1520727292706"/>
-<node TEXT="&lt;kbd&gt;" ID="ID_882397972" CREATED="1520727338990" MODIFIED="1520727341986">
+<node TEXT="&lt;kbd&gt;" FOLDED="true" ID="ID_882397972" CREATED="1520727338990" MODIFIED="1520727341986">
 <node TEXT="The HTML Keyboard Input element (&lt;kbd&gt;) represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device." ID="ID_1892253822" CREATED="1521324692509" MODIFIED="1521324829362"/>
 <node TEXT="By convention, the user agent defaults to rendering the contents of a &lt;kbd&gt; element using its default monospace font, although this is not mandated by the HTML standard." ID="ID_1885643478" CREATED="1521324719459" MODIFIED="1521324724442"/>
 <node TEXT="This element only includes the global attributes." ID="ID_1267560068" CREATED="1521324772459" MODIFIED="1521324776218"/>
@@ -206,7 +206,7 @@
 <node TEXT="&lt;rt&gt;" ID="ID_454417195" CREATED="1520727401918" MODIFIED="1520727411032"/>
 <node TEXT="&lt;rtc&gt;" ID="ID_516769901" CREATED="1520727412342" MODIFIED="1520727415281"/>
 <node TEXT="&lt;s&gt;" ID="ID_872705606" CREATED="1520727439454" MODIFIED="1520727442850"/>
-<node TEXT="&lt;samp&gt;" ID="ID_1248102075" CREATED="1520727457262" MODIFIED="1520727460641">
+<node TEXT="&lt;samp&gt;" FOLDED="true" ID="ID_1248102075" CREATED="1520727457262" MODIFIED="1520727460641">
 <node TEXT="The HTML Sample Element (&lt;samp&gt;) is used to enclose inline text which represents sample (or quoted) output from a computer program." ID="ID_1710898226" CREATED="1521324871098" MODIFIED="1521324873769"/>
 <node TEXT="Its contents are typically rendered using the browser&apos;s default monospaced font (such as Courier or Lucida Console)." ID="ID_649493776" CREATED="1521324888602" MODIFIED="1521324899489"/>
 <node TEXT="This element only includes the global attributes." ID="ID_1979353083" CREATED="1521324926602" MODIFIED="1521324929696"/>
@@ -231,7 +231,7 @@
 <node TEXT="&lt;track&gt;" ID="ID_1002263403" CREATED="1520593388191" MODIFIED="1520593392736"/>
 <node TEXT="&lt;video&gt;" ID="ID_1344946774" CREATED="1520593406127" MODIFIED="1520593410337"/>
 </node>
-<node TEXT="Embedded content" ID="ID_515819194" CREATED="1520592049709" MODIFIED="1520592055263">
+<node TEXT="Embedded content" FOLDED="true" ID="ID_515819194" CREATED="1520592049709" MODIFIED="1520592055263">
 <node TEXT="In addition to regular multimedia content, HTML can include a variety of other content, even if it&apos;s not always easy to interact with." ID="ID_370102277" CREATED="1520727696184" MODIFIED="1520727701920"/>
 <node TEXT="&lt;applet&gt;" ID="ID_401266200" CREATED="1520593124420" MODIFIED="1520593131350"/>
 <node TEXT="&lt;embed&gt;" ID="ID_855705740" CREATED="1520593150373" MODIFIED="1520593157254"/>
@@ -241,7 +241,7 @@
 <node TEXT="&lt;picture&gt;" ID="ID_1790167744" CREATED="1520593212333" MODIFIED="1520593216654"/>
 <node TEXT="&lt;source&gt;" ID="ID_1512781250" CREATED="1520593224621" MODIFIED="1520593229582"/>
 </node>
-<node TEXT="Scripting" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
+<node TEXT="Scripting" FOLDED="true" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
 <node TEXT="In order to create dynamic content and Web applications, HTML supports the use of scripting languages, most prominently JavaScript. Certain elements support this capability." ID="ID_1601191736" CREATED="1520727731055" MODIFIED="1520727736767"/>
 <node TEXT="&lt;canvas&gt;" ID="ID_619380127" CREATED="1520592996387" MODIFIED="1520593000725"/>
 <node TEXT="&lt;script&gt;" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1520593070106">
@@ -471,7 +471,7 @@
 </node>
 <node TEXT="Obsolete and deprecated elements" ID="ID_315398082" CREATED="1520592191358" MODIFIED="1520592276840"/>
 </node>
-<node TEXT="Global attributes" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
+<node TEXT="Global attributes" FOLDED="true" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
 <node TEXT="Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements." ID="ID_489227557" CREATED="1520172307612" MODIFIED="1520172312937"/>
 <node TEXT="Global attributes may be specified on all HTML elements, even those not specified in the standard." FOLDED="true" ID="ID_966516826" CREATED="1520172331188" MODIFIED="1520172336504">
 <node TEXT="That means that any non-standard elements must still permit these attributes, even though using those elements means that the document is no longer HTML5-compliant." ID="ID_1736452133" CREATED="1520172374548" MODIFIED="1520172379983"/>
@@ -508,7 +508,7 @@
 <node TEXT="Allows you to specify that a standard HTML element should behave like a registered custom built-in element (see Using custom elements for more details)." ID="ID_349820742" CREATED="1520174887313" MODIFIED="1520174892012"/>
 </node>
 </node>
-<node TEXT="Internationalization" ID="ID_1874236465" CREATED="1520172679313" MODIFIED="1520172683165">
+<node TEXT="Internationalization" FOLDED="true" ID="ID_1874236465" CREATED="1520172679313" MODIFIED="1520172683165">
 <node TEXT="lang" FOLDED="true" ID="ID_749571762" CREATED="1520172707769" MODIFIED="1520172712125">
 <node TEXT="The language of text in an element." ID="ID_1762221161" CREATED="1520172745399" MODIFIED="1520172745399"/>
 <node TEXT="For a wide variety of reasons, it&apos;s important for a browser to know what language your page is written in, including font selection, text-to-speech conversion, spell-checking, hyphenation and automated line breaking, text transforms, automated translation, and more." ID="ID_16869333" CREATED="1520198333598" MODIFIED="1520198339446"/>
@@ -525,7 +525,7 @@
 <node TEXT="auto" ID="ID_864478466" CREATED="1520173256277" MODIFIED="1520173261608"/>
 </node>
 </node>
-<node TEXT="translate" ID="ID_904269698" CREATED="1520172775001" MODIFIED="1520172778668">
+<node TEXT="translate" FOLDED="true" ID="ID_904269698" CREATED="1520172775001" MODIFIED="1520172778668">
 <node TEXT="If text should be translated when a document is localized." ID="ID_862949153" CREATED="1520173275989" MODIFIED="1520173280560"/>
 <node TEXT="Values" FOLDED="true" ID="ID_955512514" CREATED="1520173286605" MODIFIED="1520173300224">
 <node TEXT="yes" ID="ID_1763308558" CREATED="1520173367884" MODIFIED="1520173374688"/>
@@ -652,7 +652,7 @@
 </node>
 </node>
 </node>
-<node TEXT="data-*" ID="ID_1446111548" CREATED="1520174666299" MODIFIED="1520174674134">
+<node TEXT="data-*" FOLDED="true" ID="ID_1446111548" CREATED="1520174666299" MODIFIED="1520174674134">
 <node TEXT="Forms a class of attributes, called custom data attributes, that allow proprietary information to be exchanged between the HTML and its DOM representation that may be used by scripts. All such custom data are available via the HTMLElement interface of the element the attribute is set on. The HTMLElement.dataset property gives access to them." ID="ID_987646576" CREATED="1520174690578" MODIFIED="1520174696598"/>
 </node>
 <node TEXT="html events" FOLDED="true" ID="ID_816931101" CREATED="1520174966528" MODIFIED="1520175375976">
@@ -3173,7 +3173,7 @@
 <node TEXT="npm init -y" ID="ID_591563011" CREATED="1516023179088" MODIFIED="1516028492931"/>
 </node>
 </node>
-<node TEXT="install" FOLDED="true" ID="ID_978714246" CREATED="1516095348801" MODIFIED="1516095384179">
+<node TEXT="install" ID="ID_978714246" CREATED="1516095348801" MODIFIED="1516095384179">
 <node TEXT="npm i -s &lt;package&gt;" ID="ID_1010735310" CREATED="1516095378489" MODIFIED="1516095419787"/>
 <node TEXT="npm i -d &lt;package&gt;" ID="ID_1709025496" CREATED="1516095436603" MODIFIED="1516095459333"/>
 <node TEXT="add repo as dependency" FOLDED="true" ID="ID_96475741" CREATED="1518084232930" MODIFIED="1518084248409">
@@ -3181,6 +3181,9 @@
 <node TEXT="&apos;git+https://git@github.com/visionmedia/express.git&apos;" ID="ID_1109711176" CREATED="1518084803225" MODIFIED="1518084803225" LINK="https://git@github.com/visionmedia/express.git&apos;"/>
 <node TEXT="if I want a specific branch git+ssh://....repo.git#branch" ID="ID_384526844" CREATED="1518100221328" MODIFIED="1518100395389"/>
 <node TEXT="OR  install git+https://github.com/user/repo.git\#branch" ID="ID_1917885177" CREATED="1518100398996" MODIFIED="1518100406646"/>
+</node>
+<node TEXT="npm ci" ID="ID_1973963336" CREATED="1522246351703" MODIFIED="1522246361975">
+<node TEXT="Continouse integration" ID="ID_1307152771" CREATED="1522246367951" MODIFIED="1522246474937"/>
 </node>
 </node>
 <node TEXT="uninstall" FOLDED="true" ID="ID_192937003" CREATED="1516481427274" MODIFIED="1516481441026">
@@ -3195,7 +3198,7 @@
 <node TEXT="npm list -g --depth=0" ID="ID_1366468749" CREATED="1516096678164" MODIFIED="1516096678164"/>
 </node>
 </node>
-<node TEXT="Checking Outdated Packages" FOLDED="true" ID="ID_581323007" CREATED="1516550596749" MODIFIED="1516550596749">
+<node TEXT="Checking Outdated Packages" ID="ID_581323007" CREATED="1516550596749" MODIFIED="1516550596749">
 <node ID="ID_1728930816" CREATED="1516552203705" MODIFIED="1516552425223"><richcontent TYPE="NODE">
 
 <html>
@@ -3269,7 +3272,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="Upgrading Packages" FOLDED="true" ID="ID_1948689103" CREATED="1516553337200" MODIFIED="1516553337200">
+<node TEXT="Upgrading Packages" ID="ID_1948689103" CREATED="1516553337200" MODIFIED="1516553337200">
 <node ID="ID_1202311683" CREATED="1516553384556" MODIFIED="1516553400825"><richcontent TYPE="NODE">
 
 <html>
@@ -3336,7 +3339,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Updating and Configuring NPM" FOLDED="true" ID="ID_866096859" CREATED="1516555216739" MODIFIED="1516555216739">
+<node TEXT="Updating and Configuring NPM" ID="ID_866096859" CREATED="1516555216739" MODIFIED="1516555216739">
 <node ID="ID_571923815" CREATED="1516555241436" MODIFIED="1516555279444"><richcontent TYPE="NODE">
 
 <html>
@@ -3892,6 +3895,7 @@
 <node TEXT="https://en.wikipedia.org/wiki/Rule_110" ID="ID_1261953291" CREATED="1521713886833" MODIFIED="1521713889689"/>
 <node TEXT="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens" ID="ID_1158572188" CREATED="1521713983529" MODIFIED="1521713998186"/>
 <node TEXT="https://css-tricks.com/almanac/" ID="ID_634666562" CREATED="1522162180113" MODIFIED="1522162183706"/>
+<node TEXT="https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance" ID="ID_726683773" CREATED="1522230178450" MODIFIED="1522230178450" LINK="https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -4298,6 +4302,9 @@
 <node TEXT="https://css-tricks.com/" ID="ID_614615062" CREATED="1520933945935" MODIFIED="1520933945935" LINK="https://css-tricks.com/"/>
 <node TEXT="https://codeburst.io/" ID="ID_71369027" CREATED="1521102567336" MODIFIED="1521102572156"/>
 <node TEXT="https://hacks.mozilla.org/" ID="ID_1654018839" CREATED="1521807515166" MODIFIED="1521807526880"/>
+<node TEXT="https://www.smashingmagazine.com/" ID="ID_668516788" CREATED="1522223246794" MODIFIED="1522223246794" LINK="https://www.smashingmagazine.com/"/>
+<node TEXT="http://alistapart.com/" ID="ID_1300370293" CREATED="1522223336703" MODIFIED="1522223336703" LINK="http://alistapart.com/"/>
+<node TEXT="https://www.javascript.com/" ID="ID_574301536" CREATED="1522224567104" MODIFIED="1522224567104" LINK="https://www.javascript.com/"/>
 </node>
 <node TEXT="learning" ID="ID_1263329411" CREATED="1520801676106" MODIFIED="1520801695191">
 <node TEXT="interactive" ID="ID_1145864293" CREATED="1520801691298" MODIFIED="1520801709151">
@@ -4310,11 +4317,19 @@
 <node TEXT="https://frontendmasters.com/books/front-end-handbook/2017/" ID="ID_1714048269" CREATED="1520801927389" MODIFIED="1520801927389" LINK="https://frontendmasters.com/books/front-end-handbook/2017/"/>
 </node>
 <node TEXT="references" ID="ID_1265655859" CREATED="1521807287593" MODIFIED="1521807294526">
+<node TEXT="All" ID="ID_600053374" CREATED="1522223642767" MODIFIED="1522223647936">
+<node TEXT="https://devdocs.io/" ID="ID_87884324" CREATED="1522223659504" MODIFIED="1522223659504" LINK="https://devdocs.io/"/>
+</node>
 <node TEXT="html" ID="ID_1396248586" CREATED="1521807297596" MODIFIED="1521807311832"/>
 <node TEXT="css" ID="ID_852789326" CREATED="1521807313740" MODIFIED="1521807318582">
 <node TEXT="https://cssreference.io/" ID="ID_294499460" CREATED="1521807343173" MODIFIED="1521807346358"/>
+<node TEXT="https://css-tricks.com/almanac/" ID="ID_1944714815" CREATED="1522221976971" MODIFIED="1522221976971" LINK="https://css-tricks.com/almanac/"/>
 </node>
 <node TEXT="js" ID="ID_1179341838" CREATED="1521807321173" MODIFIED="1521807329598"/>
+<node TEXT="styleguide" ID="ID_247252920" CREATED="1522221983732" MODIFIED="1522222000582">
+<node TEXT="https://google.github.io/styleguide/jsguide.html" ID="ID_1053772617" CREATED="1522222126408" MODIFIED="1522222126408" LINK="https://google.github.io/styleguide/jsguide.html"/>
+<node TEXT="https://github.com/airbnb/javascript" ID="ID_1394253637" CREATED="1522222166988" MODIFIED="1522222166988" LINK="https://github.com/airbnb/javascript"/>
+</node>
 </node>
 </node>
 <node TEXT="Security" ID="ID_186255367" CREATED="1520844171048" MODIFIED="1520844184253">
