@@ -2052,40 +2052,40 @@
 </node>
 <node TEXT="Other properties" ID="ID_62296851" CREATED="1521709358449" MODIFIED="1521709362947">
 <node TEXT="visibility" ID="ID_1959108581" CREATED="1521709659995" MODIFIED="1521709663292"/>
-<node TEXT="Background" ID="ID_1596337986" CREATED="1521389647529" MODIFIED="1521389711739">
-<node TEXT="background" ID="ID_248370065" CREATED="1521389713496" MODIFIED="1521389716642">
+<node TEXT="Background" FOLDED="true" ID="ID_1596337986" CREATED="1521389647529" MODIFIED="1521389711739">
+<node TEXT="background" FOLDED="true" ID="ID_248370065" CREATED="1521389713496" MODIFIED="1521389716642">
 <node TEXT="The background CSS property lets you adjust all background style options at once, including color, image, origin and size, repeat method, and other features." ID="ID_692336197" CREATED="1521389738184" MODIFIED="1521389742738"/>
 </node>
-<node TEXT="background-attachment" ID="ID_613135042" CREATED="1521389780856" MODIFIED="1521389785010">
+<node TEXT="background-attachment" FOLDED="true" ID="ID_613135042" CREATED="1521389780856" MODIFIED="1521389785010">
 <node TEXT="If a background-image is specified, the background-attachment CSS property determines whether that image&apos;s position is fixed within the viewport, or scrolls along with its containing block." ID="ID_1300395249" CREATED="1521389803624" MODIFIED="1521389808274"/>
 </node>
-<node TEXT="background-clip" ID="ID_1617155992" CREATED="1521389817943" MODIFIED="1521389822514">
+<node TEXT="background-clip" FOLDED="true" ID="ID_1617155992" CREATED="1521389817943" MODIFIED="1521389822514">
 <node TEXT="The background-clip CSS property specifies if an element&apos;s background, whether a &lt;color&gt; or an &lt;image&gt;, extends underneath its border." ID="ID_372044047" CREATED="1521390006030" MODIFIED="1521390009529"/>
 </node>
-<node TEXT="background-color" ID="ID_1666262131" CREATED="1521389830919" MODIFIED="1521389835730">
+<node TEXT="background-color" FOLDED="true" ID="ID_1666262131" CREATED="1521389830919" MODIFIED="1521389835730">
 <node TEXT="The background-color CSS property sets the background color of an element." ID="ID_1093609822" CREATED="1521390043062" MODIFIED="1521390068208"/>
 </node>
-<node TEXT="background-image" ID="ID_517449244" CREATED="1521389864767" MODIFIED="1521389868770">
+<node TEXT="background-image" FOLDED="true" ID="ID_517449244" CREATED="1521389864767" MODIFIED="1521389868770">
 <node TEXT="The background-image CSS property sets one or more background images on an element." ID="ID_1867283481" CREATED="1521390076998" MODIFIED="1521390079272"/>
 </node>
-<node TEXT="background-origin" ID="ID_1073342098" CREATED="1521389876127" MODIFIED="1521389879985">
+<node TEXT="background-origin" FOLDED="true" ID="ID_1073342098" CREATED="1521389876127" MODIFIED="1521389879985">
 <node TEXT="The background-origin CSS property sets the background positioning area, i.e., the origin position of an image specified using the background-image property." ID="ID_1222578300" CREATED="1521390109061" MODIFIED="1521390112272"/>
 </node>
-<node TEXT="background-position" ID="ID_143120696" CREATED="1521389887255" MODIFIED="1521389912865">
+<node TEXT="background-position" FOLDED="true" ID="ID_143120696" CREATED="1521389887255" MODIFIED="1521389912865">
 <node TEXT="The background-position CSS property sets the initial position, relative to the background position layer defined by background-origin, for each defined background image." ID="ID_335357749" CREATED="1521390144933" MODIFIED="1521390149056"/>
 </node>
-<node TEXT="background-position-x" ID="ID_822357967" CREATED="1521389914719" MODIFIED="1521389918697">
+<node TEXT="background-position-x" FOLDED="true" ID="ID_822357967" CREATED="1521389914719" MODIFIED="1521389918697">
 <node TEXT="The background-position-x CSS property sets the initial horizontal position, relative to the background position layer defined by background-origin, for each defined background image." ID="ID_410279664" CREATED="1521390180669" MODIFIED="1521390186392"/>
 </node>
-<node TEXT="background-position-y" ID="ID_1373433898" CREATED="1521389926479" MODIFIED="1521389930537">
+<node TEXT="background-position-y" FOLDED="true" ID="ID_1373433898" CREATED="1521389926479" MODIFIED="1521389930537">
 <node TEXT="The background-position-y CSS property sets the initial vertical position, relative to the background position layer defined by background-origin, for each defined background image." ID="ID_1177113916" CREATED="1521390199197" MODIFIED="1521390203247"/>
 </node>
-<node TEXT="background-repeat" ID="ID_1907107933" CREATED="1521389937599" MODIFIED="1521389942081">
+<node TEXT="background-repeat" FOLDED="true" ID="ID_1907107933" CREATED="1521389937599" MODIFIED="1521389942081">
 <node TEXT="The background-repeat CSS property defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all." ID="ID_1152988275" CREATED="1521390225901" MODIFIED="1521390231119"/>
 </node>
-<node TEXT="background-size" ID="ID_735690108" CREATED="1521389953223" MODIFIED="1521390000490">
+<node TEXT="background-size" FOLDED="true" ID="ID_735690108" CREATED="1521389953223" MODIFIED="1521390000490">
 <node TEXT="The background-size CSS property specifies the size of an element&apos;s background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions." ID="ID_1726186800" CREATED="1521390265452" MODIFIED="1521390271015"/>
-<node TEXT="syntax" ID="ID_1340861129" CREATED="1521390300188" MODIFIED="1521390307551">
+<node TEXT="syntax" FOLDED="true" ID="ID_1340861129" CREATED="1521390300188" MODIFIED="1521390307551">
 <node TEXT="/* Keyword values */&#xa;background-size: cover;&#xa;background-size: contain;&#xa;&#xa;/* One-value syntax */&#xa;/* the width of the image (height becomes &apos;auto&apos;) */&#xa;background-size: 50%;&#xa;background-size: 3.2em;&#xa;background-size: 12px;&#xa;background-size: auto;&#xa;&#xa;/* Two-value syntax */&#xa;/* first value: width of the image, second value: height */&#xa;background-size: 50% auto;&#xa;background-size: 3em 25%;&#xa;background-size: auto 6px;&#xa;background-size: auto auto;&#xa;&#xa;/* Multiple backgrounds */&#xa;background-size: auto, auto; /* Not to be confused with `auto auto` */&#xa;background-size: 50%, 25%, 25%;&#xa;background-size: 6px, auto, contain;&#xa;&#xa;/* Global values */&#xa;background-size: inherit;&#xa;background-size: initial;&#xa;background-size: unset;" ID="ID_717544420" CREATED="1521390316596" MODIFIED="1521390321440"/>
 </node>
 </node>
@@ -2100,8 +2100,15 @@
 </node>
 </node>
 </node>
-<node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899"/>
-<node TEXT="pattern" FOLDED="true" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1519721099067">
+<node TEXT="preprocessors" ID="ID_1427115824" CREATED="1519600622305" MODIFIED="1519600629899">
+<node TEXT="Preprocessors let you add functionality on top of CSS and let you do things that CSS can&apos;t" ID="ID_1072712770" CREATED="1522616718365" MODIFIED="1522616761651"/>
+<node TEXT="Sass" ID="ID_1730385107" CREATED="1522614434805" MODIFIED="1522616088290"/>
+<node TEXT="Less" ID="ID_707622749" CREATED="1522616091362" MODIFIED="1522616098224"/>
+<node TEXT="PostCSS" ID="ID_1877448488" CREATED="1522616101498" MODIFIED="1522616108968"/>
+<node TEXT="Stylus" ID="ID_82230477" CREATED="1522616110402" MODIFIED="1522616120720"/>
+</node>
+<node TEXT="Architecture" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1522616641955">
+<node TEXT="There are multiple ways to structure your CSS better and to make it more maintainable" ID="ID_224699906" CREATED="1522616646798" MODIFIED="1522616687243"/>
 <node TEXT="BEM" FOLDED="true" ID="ID_1940557549" CREATED="1519894238217" MODIFIED="1520729068697">
 <node TEXT="The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project." ID="ID_936859935" CREATED="1519894303413" MODIFIED="1520729068696"/>
 <node TEXT="Block" FOLDED="true" ID="ID_1112380842" CREATED="1519894335941" MODIFIED="1519894342391">
@@ -2114,6 +2121,10 @@
 <node TEXT="modifiers can manipulate the block so that we can theme or style that particular component without inflicting changes on a completely unrelated module. This is done by appending two hyphens to the name of the block just like btn--orange" ID="ID_615609830" CREATED="1519894499766" MODIFIED="1520350315098" HGAP_QUANTITY="23.749999709427364 pt" VSHIFT_QUANTITY="-44.999998658895535 pt"/>
 </node>
 </node>
+<node TEXT="OOCSS" ID="ID_1329658872" CREATED="1522616134514" MODIFIED="1522616142887"/>
+<node TEXT="SMACSS" ID="ID_478025546" CREATED="1522616145834" MODIFIED="1522616155831"/>
+<node TEXT="SUITSCSS" ID="ID_687206945" CREATED="1522616157602" MODIFIED="1522616167767"/>
+<node TEXT="Atomics" ID="ID_464319701" CREATED="1522616169530" MODIFIED="1522616175903"/>
 </node>
 <node TEXT="Nice to know" ID="ID_557912890" CREATED="1519979482931" MODIFIED="1519979496048">
 <node TEXT="Centering in CSS" FOLDED="true" ID="ID_790494261" CREATED="1519979572897" MODIFIED="1519979636755">
@@ -3643,8 +3654,13 @@
 <node TEXT="pattern" FOLDED="true" ID="ID_1641716419" CREATED="1517908745394" MODIFIED="1517908752112">
 <node TEXT="Redux" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1515427483506"/>
 </node>
-<node TEXT="Buildprocess" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1519056082292">
-<node TEXT="taskrunner" FOLDED="true" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
+<node TEXT="Build tools" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
+<node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
+<node TEXT="NPM Scripts" ID="ID_1468674140" CREATED="1522616474887" MODIFIED="1522616485445"/>
+<node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
+<node TEXT="grunt" ID="ID_1183811378" CREATED="1522616448127" MODIFIED="1522616453605"/>
+</node>
+<node TEXT="Building/Bundleing" ID="ID_1833698167" CREATED="1522616261001" MODIFIED="1522616558876">
 <node TEXT="webpack" FOLDED="true" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
 <node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
 <node TEXT="Concepts" FOLDED="true" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
@@ -3691,12 +3707,17 @@
 </node>
 <node TEXT="plugins" ID="ID_1175957489" CREATED="1517913811284" MODIFIED="1517913820826"/>
 </node>
-<node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
+<node TEXT="Rollup" ID="ID_889638306" CREATED="1522616331224" MODIFIED="1522616338862"/>
+<node TEXT="Parcel" ID="ID_1940225577" CREATED="1522616341048" MODIFIED="1522616346718"/>
 </node>
-<node TEXT="linter" FOLDED="true" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
+<node TEXT="linter" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
 <node TEXT="exception" FOLDED="true" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
 <node TEXT="// eslint-disable-line" ID="ID_1309138352" CREATED="1519056152043" MODIFIED="1519056157028"/>
 </node>
+<node TEXT="ESLint" ID="ID_810386740" CREATED="1522616398536" MODIFIED="1522616405333"/>
+<node TEXT="JSLint" ID="ID_1362831951" CREATED="1522616406912" MODIFIED="1522616417165"/>
+<node TEXT="JSHint" ID="ID_589122458" CREATED="1522616418872" MODIFIED="1522616429789"/>
+<node TEXT="JSCS" ID="ID_1235087102" CREATED="1522616432104" MODIFIED="1522616440133"/>
 </node>
 </node>
 <node TEXT="Testing" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
