@@ -1091,14 +1091,271 @@
 <node TEXT="Attribute selector" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
 <node TEXT="Selects elements based on the value of the given attribute." ID="ID_714924094" CREATED="1519516649582" MODIFIED="1519516652784"/>
 <node TEXT="Syntax" ID="ID_421978559" CREATED="1519516666413" MODIFIED="1519516685336">
-<node TEXT="[attr]" ID="ID_1736624769" CREATED="1519517625687" MODIFIED="1519517628386"/>
-<node TEXT="[attr=value]" ID="ID_953712981" CREATED="1519517646367" MODIFIED="1519517653658"/>
-<node TEXT="[attr~=value]" ID="ID_260064258" CREATED="1519517662375" MODIFIED="1519517676266"/>
-<node TEXT="[attr|=value]" ID="ID_1281967344" CREATED="1519517678278" MODIFIED="1519517681329"/>
-<node TEXT="[attr^=value]" ID="ID_1837034828" CREATED="1519517696622" MODIFIED="1519517702113"/>
-<node TEXT="[attr$=value]" ID="ID_532543240" CREATED="1519517713454" MODIFIED="1519517716385"/>
-<node TEXT="[attr*=value]" ID="ID_1464993975" CREATED="1519517748566" MODIFIED="1519517755416"/>
-<node TEXT="[attr operator value i]" ID="ID_580423797" CREATED="1519517771958" MODIFIED="1519517784105"/>
+<node TEXT="[attr]" ID="ID_1736624769" CREATED="1519517625687" MODIFIED="1519517628386">
+<node TEXT="Represents an element with an attribute name of attr." ID="ID_1969913507" CREATED="1522701449262" MODIFIED="1522701453204"/>
+<node ID="ID_384773680" CREATED="1522701945553" MODIFIED="1522701969020"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      /* All divs with a `lang` attribute are bold. */
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>div[lang] { </b>
+    </p>
+    <p>
+      <b>&#160;&#160;font-weight: bold; </b>
+    </p>
+    <p>
+      <b>}</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="[attr=value]" ID="ID_953712981" CREATED="1519517646367" MODIFIED="1519517653658">
+<node TEXT="Represents an element with an attribute name of attr whose value is exactly value." ID="ID_566139473" CREATED="1522701496397" MODIFIED="1522701502150"/>
+<node ID="ID_209490752" CREATED="1522702011089" MODIFIED="1522702028187"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      /* All divs in Portuguese are green. */
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>div[lang=&quot;pt&quot;] { </b>
+    </p>
+    <p>
+      <b>&#160;&#160;color: green; </b>
+    </p>
+    <p>
+      <b>}</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="[attr~=value]" ID="ID_260064258" CREATED="1519517662375" MODIFIED="1519517676266">
+<node TEXT="Represents an element with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value." ID="ID_112925758" CREATED="1522701561851" MODIFIED="1522701565029"/>
+<node ID="ID_1534981309" CREATED="1522702371443" MODIFIED="1522702482832"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      /*selects all tags with title flower in it*/
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>[title~=flower] { </b>
+    </p>
+    <p>
+      <b>&#160;&#160;&#160;&#160;border: 5px solid yellow; </b>
+    </p>
+    <p>
+      <b>}</b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &lt;img src=&quot;klematis.jpg&quot; title=&quot;klematis flower&quot; width=&quot;150&quot; height=&quot;113&quot;&gt;
+    </p>
+    <p>
+      &lt;img src=&quot;img_flwr.gif&quot; title=&quot;flower&quot; width=&quot;224&quot; height=&quot;162&quot;&gt;
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="[attr|=value]" ID="ID_1281967344" CREATED="1519517678278" MODIFIED="1519517681329">
+<node TEXT="Represents an element with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen," ID="ID_1891423523" CREATED="1522701592649" MODIFIED="1522701596741"/>
+<node TEXT="It is often used for language subcode matches." ID="ID_1218949012" CREATED="1522701626228" MODIFIED="1522701634357"/>
+<node ID="ID_1932627170" CREATED="1522702550125" MODIFIED="1522702692375"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      /*selects all tags with top- in it*/
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>[class|=top] { </b>
+    </p>
+    <p>
+      <b>&#160;&#160;&#160;&#160;background: yellow; </b>
+    </p>
+    <p>
+      <b>} </b>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      &lt;h1 class=&quot;top-header&quot;&gt;Welcome&lt;/h1&gt;
+    </p>
+    <p>
+      &lt;p class=&quot;top-text&quot;&gt;Hello world!&lt;/p&gt;
+    </p>
+    <p>
+      &lt;p class=&quot;topcontent&quot;&gt;Are you learning CSS?&lt;/p&gt; /*not selected*/
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="[attr^=value]" ID="ID_1837034828" CREATED="1519517696622" MODIFIED="1519517702113">
+<node TEXT="Represents an element with an attribute name of attr whose value is prefixed (preceded) by value." ID="ID_148576905" CREATED="1522701650658" MODIFIED="1522701653572"/>
+<node ID="ID_1846880176" CREATED="1522702210484" MODIFIED="1522702226218"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      /* Internal links, beginning with &quot;#&quot; */
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>a[href^=&quot;#&quot;] { </b>
+    </p>
+    <p>
+      <b>&#160;&#160;background-color: gold; </b>
+    </p>
+    <p>
+      <b>}</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="[attr$=value]" ID="ID_532543240" CREATED="1519517713454" MODIFIED="1519517716385">
+<node TEXT="Represents an element with an attribute name of attr whose value is suffixed (followed) by value." ID="ID_1126125196" CREATED="1522701672531" MODIFIED="1522701681332"/>
+<node ID="ID_749804537" CREATED="1522702161258" MODIFIED="1522702177515"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      /* Links that end in &quot;.org&quot; */
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>a[href$=&quot;.org&quot;] { </b>
+    </p>
+    <p>
+      <b>&#160;&#160;color: red; </b>
+    </p>
+    <p>
+      <b>}</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="[attr*=value]" ID="ID_1464993975" CREATED="1519517748566" MODIFIED="1519517755416">
+<node TEXT="Represents an element with an attribute name of attr whose value contains at least one occurrence of value within the string." ID="ID_899115978" CREATED="1522701696340" MODIFIED="1522701770291"/>
+<node ID="ID_1253934554" CREATED="1522701899797" MODIFIED="1522701920964"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      /* Links with &quot;example&quot; anywhere in the URL */
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>a[href*=&quot;example&quot;] { </b>
+    </p>
+    <p>
+      <b>&#160;&#160;background-color: silver; </b>
+    </p>
+    <p>
+      <b>}</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="[attr operator value i]" ID="ID_580423797" CREATED="1519517771958" MODIFIED="1519517784105">
+<node TEXT="Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range)." ID="ID_1227481498" CREATED="1522701740723" MODIFIED="1522701743988"/>
+<node ID="ID_75532580" CREATED="1522701829434" MODIFIED="1522701860363"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      /* Links with &quot;insensitive&quot; anywhere in the URL,
+    </p>
+    <p>
+      &#160;&#160;&#160;regardless of capitalization */
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <b>a[href*=&quot;insensitive&quot; i] { </b>
+    </p>
+    <p>
+      <b>&#160;&#160;color: cyan; </b>
+    </p>
+    <p>
+      <b>}</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="Example: [autoplay] will match all elements that have the autoplay attribute set (to any value)." ID="ID_141219151" CREATED="1519516694221" MODIFIED="1519516697648"/>
 </node>
@@ -3212,7 +3469,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1944545073" CREATED="1522624644802" MODIFIED="1522624688680"><richcontent TYPE="NODE">
@@ -3227,7 +3483,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Mounting" ID="ID_744771317" CREATED="1522624703218" MODIFIED="1522624708175">
@@ -3288,7 +3543,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="By convention, the top-level state is an object or some other key-value collection like a Map, but technically it can be any type." ID="ID_351463405" CREATED="1522619547112" MODIFIED="1522619551094"/>
@@ -3310,7 +3564,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Types can be defined as constants and imported from another module. It&apos;s better to use strings for type than Symbols because strings are serializable." ID="ID_722895341" CREATED="1522619388298" MODIFIED="1522619393391"/>
@@ -3333,7 +3586,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Reducers calculate a new state given the previous state and an action." ID="ID_786608455" CREATED="1522619793638" MODIFIED="1522619797340"/>
@@ -3350,7 +3602,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -3373,7 +3624,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="Calling an action creator only produces an action, but does not dispatch it." ID="ID_419348309" CREATED="1522620232491" MODIFIED="1522620236025">
@@ -3409,7 +3659,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_410061313" CREATED="1522620770079" MODIFIED="1522620823813"><richcontent TYPE="NODE">
@@ -3424,7 +3673,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_289026830" CREATED="1522620784295" MODIFIED="1522620833196"><richcontent TYPE="NODE">
@@ -3439,7 +3687,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_220837" CREATED="1522620798119" MODIFIED="1522620843981"><richcontent TYPE="NODE">
@@ -3454,7 +3701,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
