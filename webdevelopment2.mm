@@ -1036,7 +1036,7 @@
 <node TEXT="Syntax: elementname" ID="ID_1020689451" CREATED="1519516246632" MODIFIED="1519516258043"/>
 <node TEXT="Example: input will match any &lt;input&gt; element." ID="ID_1622031297" CREATED="1519516276648" MODIFIED="1519516280331"/>
 </node>
-<node TEXT="Class selector" ID="ID_78596722" CREATED="1519516130281" MODIFIED="1519516140814">
+<node TEXT="Class selector" FOLDED="true" ID="ID_78596722" CREATED="1519516130281" MODIFIED="1519516140814">
 <node TEXT="Selects all elements that have the given class attribute." ID="ID_328956790" CREATED="1519516298888" MODIFIED="1519516302138"/>
 <node TEXT="Syntax: .classname" ID="ID_1674729382" CREATED="1519516309640" MODIFIED="1519516312802"/>
 <node TEXT="Examples:" ID="ID_1413375340" CREATED="1519516320616" MODIFIED="1520803903835">
@@ -1065,7 +1065,7 @@
 <node TEXT="Syntax: #idname" ID="ID_562692321" CREATED="1519516473487" MODIFIED="1519516479481"/>
 <node TEXT="Example: #toc will match the element that has the ID &quot;toc&quot;." ID="ID_1464503627" CREATED="1519516492089" MODIFIED="1519516495745"/>
 </node>
-<node TEXT="Universal selector" ID="ID_817231035" CREATED="1519516159105" MODIFIED="1519516171012">
+<node TEXT="Universal selector" FOLDED="true" ID="ID_817231035" CREATED="1519516159105" MODIFIED="1519516171012">
 <node TEXT="Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces." ID="ID_903491747" CREATED="1519516512774" MODIFIED="1519516515753"/>
 <node TEXT="Syntax: * namespace|* *|*" ID="ID_1007987936" CREATED="1519516524246" MODIFIED="1520804560054"/>
 <node TEXT="Examples:" ID="ID_561692138" CREATED="1519516535153" MODIFIED="1520804541470">
@@ -1091,7 +1091,7 @@
 <node TEXT="Attribute selector" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
 <node TEXT="Selects elements based on the value of the given attribute." ID="ID_714924094" CREATED="1519516649582" MODIFIED="1519516652784"/>
 <node TEXT="Syntax" ID="ID_421978559" CREATED="1519516666413" MODIFIED="1519516685336">
-<node TEXT="[attr]" ID="ID_1736624769" CREATED="1519517625687" MODIFIED="1519517628386">
+<node TEXT="[attr]" FOLDED="true" ID="ID_1736624769" CREATED="1519517625687" MODIFIED="1519517628386">
 <node TEXT="Represents an element with an attribute name of attr." ID="ID_1969913507" CREATED="1522701449262" MODIFIED="1522701453204"/>
 <node ID="ID_384773680" CREATED="1522701945553" MODIFIED="1522701969020"><richcontent TYPE="NODE">
 
@@ -1121,7 +1121,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="[attr=value]" ID="ID_953712981" CREATED="1519517646367" MODIFIED="1519517653658">
+<node TEXT="[attr=value]" FOLDED="true" ID="ID_953712981" CREATED="1519517646367" MODIFIED="1519517653658">
 <node TEXT="Represents an element with an attribute name of attr whose value is exactly value." ID="ID_566139473" CREATED="1522701496397" MODIFIED="1522701502150"/>
 <node ID="ID_209490752" CREATED="1522702011089" MODIFIED="1522702028187"><richcontent TYPE="NODE">
 
@@ -1151,7 +1151,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="[attr~=value]" ID="ID_260064258" CREATED="1519517662375" MODIFIED="1519517676266">
+<node TEXT="[attr~=value]" FOLDED="true" ID="ID_260064258" CREATED="1519517662375" MODIFIED="1519517676266">
 <node TEXT="Represents an element with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value." ID="ID_112925758" CREATED="1522701561851" MODIFIED="1522701565029"/>
 <node ID="ID_1534981309" CREATED="1522702371443" MODIFIED="1522702482832"><richcontent TYPE="NODE">
 
@@ -1190,7 +1190,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="[attr|=value]" ID="ID_1281967344" CREATED="1519517678278" MODIFIED="1519517681329">
+<node TEXT="[attr|=value]" FOLDED="true" ID="ID_1281967344" CREATED="1519517678278" MODIFIED="1519517681329">
 <node TEXT="Represents an element with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen," ID="ID_1891423523" CREATED="1522701592649" MODIFIED="1522701596741"/>
 <node TEXT="It is often used for language subcode matches." ID="ID_1218949012" CREATED="1522701626228" MODIFIED="1522701634357"/>
 <node ID="ID_1932627170" CREATED="1522702550125" MODIFIED="1522702692375"><richcontent TYPE="NODE">
@@ -1233,7 +1233,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="[attr^=value]" ID="ID_1837034828" CREATED="1519517696622" MODIFIED="1519517702113">
+<node TEXT="[attr^=value]" FOLDED="true" ID="ID_1837034828" CREATED="1519517696622" MODIFIED="1519517702113">
 <node TEXT="Represents an element with an attribute name of attr whose value is prefixed (preceded) by value." ID="ID_148576905" CREATED="1522701650658" MODIFIED="1522701653572"/>
 <node ID="ID_1846880176" CREATED="1522702210484" MODIFIED="1522702226218"><richcontent TYPE="NODE">
 
@@ -1263,7 +1263,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="[attr$=value]" ID="ID_532543240" CREATED="1519517713454" MODIFIED="1519517716385">
+<node TEXT="[attr$=value]" FOLDED="true" ID="ID_532543240" CREATED="1519517713454" MODIFIED="1519517716385">
 <node TEXT="Represents an element with an attribute name of attr whose value is suffixed (followed) by value." ID="ID_1126125196" CREATED="1522701672531" MODIFIED="1522701681332"/>
 <node ID="ID_749804537" CREATED="1522702161258" MODIFIED="1522702177515"><richcontent TYPE="NODE">
 
@@ -1293,7 +1293,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="[attr*=value]" ID="ID_1464993975" CREATED="1519517748566" MODIFIED="1519517755416">
+<node TEXT="[attr*=value]" FOLDED="true" ID="ID_1464993975" CREATED="1519517748566" MODIFIED="1519517755416">
 <node TEXT="Represents an element with an attribute name of attr whose value contains at least one occurrence of value within the string." ID="ID_899115978" CREATED="1522701696340" MODIFIED="1522701770291"/>
 <node ID="ID_1253934554" CREATED="1522701899797" MODIFIED="1522701920964"><richcontent TYPE="NODE">
 
@@ -1323,7 +1323,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="[attr operator value i]" ID="ID_580423797" CREATED="1519517771958" MODIFIED="1519517784105">
+<node TEXT="[attr operator value i]" FOLDED="true" ID="ID_580423797" CREATED="1519517771958" MODIFIED="1519517784105">
 <node TEXT="Adding an i (or I) before the closing bracket causes the value to be compared case-insensitively (for characters within the ASCII range)." ID="ID_1227481498" CREATED="1522701740723" MODIFIED="1522701743988"/>
 <node ID="ID_75532580" CREATED="1522701829434" MODIFIED="1522701860363"><richcontent TYPE="NODE">
 
@@ -2545,7 +2545,45 @@
 <node TEXT="All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable." ID="ID_124632379" CREATED="1521129364959" MODIFIED="1521129368619"/>
 </node>
 </node>
-<node TEXT="Operator" ID="ID_1987984397" CREATED="1521469292211" MODIFIED="1521469309828"/>
+<node TEXT="Operators" ID="ID_1987984397" CREATED="1521469292211" MODIFIED="1522706638154">
+<node TEXT="JavaScript operators are used to assign values, compare values, perform arithmetic operations, and more." ID="ID_838826627" CREATED="1522706662141" MODIFIED="1522706668241"/>
+<node TEXT="Arithmetic" ID="ID_227014426" CREATED="1522706640108" MODIFIED="1522706719769">
+<node TEXT="Arithmetic operators are used to perform arithmetic between variables and/or values." ID="ID_325196230" CREATED="1522706683529" MODIFIED="1522706688793"/>
+</node>
+<node TEXT="Assignment" ID="ID_1811171680" CREATED="1522706701231" MODIFIED="1522706714960">
+<node TEXT="Assignment operators are used to assign values to JavaScript variables." ID="ID_59022151" CREATED="1522706800746" MODIFIED="1522706805665"/>
+</node>
+<node TEXT="String" ID="ID_677603901" CREATED="1522706792028" MODIFIED="1522706796757">
+<node TEXT="The + operator, and the += operator can also be used to concatenate (add) strings." ID="ID_566056665" CREATED="1522707243506" MODIFIED="1522707253389"/>
+</node>
+<node TEXT="Comparison" ID="ID_921168356" CREATED="1522706818924" MODIFIED="1522706823001">
+<node TEXT="Comparison operators are used in logical statements to determine equality or difference between variables or values." ID="ID_1931758164" CREATED="1522707220194" MODIFIED="1522707224806"/>
+</node>
+<node TEXT="Conditional (Ternary)" ID="ID_1892924625" CREATED="1522706834782" MODIFIED="1522706840448">
+<node TEXT="The conditional operator assigns a value to a variable based on a condition." ID="ID_1549890852" CREATED="1522707197403" MODIFIED="1522707202022"/>
+</node>
+<node TEXT="Logical" ID="ID_1072007229" CREATED="1522706869484" MODIFIED="1522706874280">
+<node TEXT="Logical operators are used to determine the logic between variables or values." ID="ID_686863670" CREATED="1522707183536" MODIFIED="1522707188926"/>
+</node>
+<node TEXT="Bitwise" ID="ID_1863631860" CREATED="1522706887758" MODIFIED="1522707150313">
+<node TEXT="Bit operators work on 32 bits numbers. Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number." ID="ID_974610643" CREATED="1522707149249" MODIFIED="1522707157366"/>
+</node>
+<node TEXT="typeof" ID="ID_51606624" CREATED="1522706906352" MODIFIED="1522706910864">
+<node TEXT="The typeof operator returns the type of a variable, object, function or expression:" ID="ID_1730479583" CREATED="1522707117540" MODIFIED="1522707122286"/>
+</node>
+<node TEXT="delete" ID="ID_833691886" CREATED="1522706929253" MODIFIED="1522706933064">
+<node TEXT="The delete operator deletes a property from an object:" ID="ID_1572849473" CREATED="1522707099733" MODIFIED="1522707104439"/>
+</node>
+<node TEXT="in" ID="ID_487269675" CREATED="1522706940989" MODIFIED="1522706953528">
+<node TEXT="The in operator returns true if the specified property is in the specified object, otherwise false:" ID="ID_133628607" CREATED="1522707069943" MODIFIED="1522707074711"/>
+</node>
+<node TEXT="instanceof" ID="ID_1278472205" CREATED="1522706954847" MODIFIED="1522706959127">
+<node TEXT="The instanceof operator returns true if the specified object is an instance of the specified object:" ID="ID_1714674602" CREATED="1522707054232" MODIFIED="1522707056743"/>
+</node>
+<node TEXT="void" ID="ID_1933274781" CREATED="1522706970899" MODIFIED="1522706984511">
+<node TEXT="The void operator evaluates an expression and returns undefined. This operator is often used to obtain the undefined primitive value, using &quot;void(0)&quot; (useful when evaluating an expression without using the return value)." ID="ID_1185626633" CREATED="1522707031721" MODIFIED="1522707036895"/>
+</node>
+</node>
 <node TEXT="data structures" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1521190224413"/>
 <node TEXT="Standard built-in objects" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
 <node TEXT="This chapter documents all of JavaScript&apos;s standard, built-in objects, including their methods and properties." ID="ID_731718304" CREATED="1521190331107" MODIFIED="1521190335454"/>
@@ -2574,7 +2612,98 @@
 </node>
 <node TEXT="Fundamental objects" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
 <node TEXT="These are the fundamental, basic objects upon which all other objects are based. This includes objects that represent general objects, functions, and errors." ID="ID_586945238" CREATED="1521311890350" MODIFIED="1521311893034"/>
-<node TEXT="Object" ID="ID_17690293" CREATED="1521311912454" MODIFIED="1521311916216"/>
+<node TEXT="Object" ID="ID_17690293" CREATED="1521311912454" MODIFIED="1521311916216">
+<node TEXT="All objects in JavaScript are descended from Object" ID="ID_611981712" CREATED="1522703493794" MODIFIED="1522703500535"/>
+<node TEXT=" all objects inherit methods and properties from Object.prototype, although they may be overridden." ID="ID_1516151783" CREATED="1522703530076" MODIFIED="1522703536703"/>
+<node TEXT="Changes to the Object prototype object are propagated to all objects unless the properties and methods subject to those changes are overridden further along the prototype chain." ID="ID_900925247" CREATED="1522703616436" MODIFIED="1522703625431"/>
+<node TEXT="Properties" ID="ID_293176746" CREATED="1522703825277" MODIFIED="1522703838093">
+<node TEXT="Object.prototype" ID="ID_600156313" CREATED="1522704248088" MODIFIED="1522704271866">
+<node TEXT="represents the Object prototype object." ID="ID_1563574300" CREATED="1522704297896" MODIFIED="1522704302730"/>
+<node TEXT="Properties" ID="ID_314233773" CREATED="1522704428124" MODIFIED="1522704434081">
+<node TEXT="Object.prototype.constructor" ID="ID_1673825972" CREATED="1522703879020" MODIFIED="1522703883701">
+<node TEXT="Specifies the function that creates an object&apos;s prototype." ID="ID_115705183" CREATED="1522703891674" MODIFIED="1522703896276"/>
+</node>
+<node TEXT="deprecated" FOLDED="true" ID="ID_153436250" CREATED="1522704726288" MODIFIED="1522704732839">
+<node TEXT="Object.prototype.__proto__" FOLDED="true" ID="ID_1529806451" CREATED="1522703948927" MODIFIED="1522703961468">
+<node TEXT="deprecated" ID="ID_1135665512" CREATED="1522703968885" MODIFIED="1522703975332"/>
+<node TEXT="Points to the object which was used as prototype when the object was instantiated." ID="ID_1433349377" CREATED="1522703988672" MODIFIED="1522703992956"/>
+</node>
+<node TEXT="Object.prototype.__noSuchMethod__" FOLDED="true" ID="ID_1798548394" CREATED="1522704030739" MODIFIED="1522704035748">
+<node TEXT="deprecated" ID="ID_66409787" CREATED="1522704039904" MODIFIED="1522704045940"/>
+<node TEXT="Allows a function to be defined that will be executed when an undefined object member is called as a method." ID="ID_465534903" CREATED="1522704059612" MODIFIED="1522704064412"/>
+</node>
+</node>
+</node>
+<node TEXT="Methods" ID="ID_837900714" CREATED="1522704436651" MODIFIED="1522704448121">
+<node TEXT="deprecated" FOLDED="true" ID="ID_1855156793" CREATED="1522704791917" MODIFIED="1522704798327">
+<node TEXT="Object.prototype.__defineGetter__()" FOLDED="true" ID="ID_1102495404" CREATED="1522704640861" MODIFIED="1522704645216">
+<node TEXT="Associates a function with a property that, when accessed, executes that function and returns its return value." ID="ID_155830250" CREATED="1522705093246" MODIFIED="1522705095388"/>
+</node>
+<node TEXT="Object.prototype.__defineSetter__()" FOLDED="true" ID="ID_491911161" CREATED="1522704685033" MODIFIED="1522704688407">
+<node TEXT="Associates a function with a property that, when set, executes that function which modifies the property." ID="ID_1411640507" CREATED="1522705120345" MODIFIED="1522705120345"/>
+</node>
+<node TEXT="Object.prototype.__lookupSetter__()" FOLDED="true" ID="ID_1547544079" CREATED="1522704765944" MODIFIED="1522704769951">
+<node TEXT="Returns the function associated with the specified property by the __defineSetter__() method." ID="ID_107937796" CREATED="1522705195248" MODIFIED="1522705200380"/>
+</node>
+<node TEXT="Object.prototype.__lookupGetter__()" FOLDED="true" ID="ID_1464550582" CREATED="1522704785531" MODIFIED="1522704790198">
+<node TEXT="Returns the function associated with the specified property by the __defineGetter__() method." ID="ID_1121611985" CREATED="1522705172287" MODIFIED="1522705181804"/>
+</node>
+<node TEXT="Object.prototype.toSource()" FOLDED="true" ID="ID_516975868" CREATED="1522704890225" MODIFIED="1522704895174">
+<node TEXT="Returns string containing the source of an object literal representing the object that this method is called upon; you can use this value to create a new object." ID="ID_549185349" CREATED="1522705228110" MODIFIED="1522705232523"/>
+</node>
+<node TEXT="Object.prototype.unwatch()" FOLDED="true" ID="ID_886261775" CREATED="1522704918611" MODIFIED="1522704923117">
+<node TEXT="Removes a watchpoint from a property of the object." ID="ID_1772854503" CREATED="1522705293605" MODIFIED="1522705298203"/>
+</node>
+<node TEXT="Object.prototype.watch()" FOLDED="true" ID="ID_76273450" CREATED="1522704935049" MODIFIED="1522704940222">
+<node TEXT="Adds a watchpoint to a property of the object." ID="ID_352224304" CREATED="1522705241396" MODIFIED="1522705269467"/>
+</node>
+</node>
+<node TEXT="Object.prototype.hasOwnProperty()" ID="ID_1873799913" CREATED="1522704956672" MODIFIED="1522704961614">
+<node TEXT="Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain." ID="ID_1797096838" CREATED="1522705330437" MODIFIED="1522705335939"/>
+</node>
+<node TEXT="Object.prototype.isPrototypeOf()" ID="ID_1462990284" CREATED="1522704977071" MODIFIED="1522704981965">
+<node TEXT="Returns a boolean indicating whether the object this method is called upon is in the prototype chain of the specified object." ID="ID_1284153431" CREATED="1522705360092" MODIFIED="1522705364243"/>
+</node>
+<node TEXT="Object.prototype.propertyIsEnumerable()" ID="ID_14097889" CREATED="1522704991429" MODIFIED="1522704996861">
+<node TEXT="Returns a boolean indicating if the internal ECMAScript [[Enumerable]] attribute is set." ID="ID_610591160" CREATED="1522705374746" MODIFIED="1522705379058"/>
+</node>
+<node TEXT="Object.prototype.toLocaleString()" ID="ID_1774261266" CREATED="1522705009333" MODIFIED="1522705014357">
+<node TEXT="Calls toString()." ID="ID_997358645" CREATED="1522705386889" MODIFIED="1522705391274"/>
+</node>
+<node TEXT="Object.prototype.toString()" ID="ID_972466789" CREATED="1522705039889" MODIFIED="1522705044501">
+<node TEXT="Returns a string representation of the object." ID="ID_779114348" CREATED="1522705398690" MODIFIED="1522705414210"/>
+</node>
+<node TEXT="Object.prototype.valueOf()" ID="ID_1958965727" CREATED="1522705057380" MODIFIED="1522705073965">
+<node TEXT="Returns the primitive value of the specified object." ID="ID_8799655" CREATED="1522705429948" MODIFIED="1522705435826"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Methods" ID="ID_1361031550" CREATED="1522703840688" MODIFIED="1522703860013">
+<node TEXT="Object.assign()" ID="ID_120797924" CREATED="1522705466019" MODIFIED="1522705470858">
+<node TEXT="Copies the values of all enumerable own properties from one or more source objects to a target object." ID="ID_547057416" CREATED="1522705909872" MODIFIED="1522705916039"/>
+</node>
+<node TEXT="Object.create()" ID="ID_545310240" CREATED="1522705485516" MODIFIED="1522705490130"/>
+<node TEXT="Object.defineProperties()" ID="ID_19590006" CREATED="1522705508513" MODIFIED="1522705514234"/>
+<node TEXT="Object.defineProperty()" ID="ID_940813043" CREATED="1522705525417" MODIFIED="1522705534353"/>
+<node TEXT="Object.entries()" ID="ID_1585321307" CREATED="1522705596456" MODIFIED="1522705600937"/>
+<node TEXT="Object.freeze()" ID="ID_334195749" CREATED="1522705613778" MODIFIED="1522705618929"/>
+<node TEXT="Object.getOwnPropertyDescriptor()" ID="ID_774263728" CREATED="1522705638870" MODIFIED="1522705650836"/>
+<node TEXT="Object.getOwnPropertyDescriptors()" ID="ID_496732246" CREATED="1522705652942" MODIFIED="1522705657665"/>
+<node TEXT="Object.getOwnPropertyNames()" ID="ID_1401819249" CREATED="1522705665571" MODIFIED="1522705670073"/>
+<node TEXT="Object.getOwnPropertySymbols()" ID="ID_987221104" CREATED="1522705678646" MODIFIED="1522705683289"/>
+<node TEXT="Object.getPrototypeOf()" ID="ID_473363100" CREATED="1522705696954" MODIFIED="1522705701624"/>
+<node TEXT="Object.is()" ID="ID_1005448239" CREATED="1522705716126" MODIFIED="1522705721233"/>
+<node TEXT="Object.isExtensible()" ID="ID_1876979299" CREATED="1522705733151" MODIFIED="1522705739888"/>
+<node TEXT="Object.isFrozen()" ID="ID_628636553" CREATED="1522705759716" MODIFIED="1522705762240"/>
+<node TEXT="Object.isSealed()" ID="ID_696322045" CREATED="1522705770180" MODIFIED="1522705774752"/>
+<node TEXT="Object.keys()" ID="ID_1308076321" CREATED="1522705782693" MODIFIED="1522705786659"/>
+<node TEXT="Object.preventExtensions()" ID="ID_873772845" CREATED="1522705795532" MODIFIED="1522705799744"/>
+<node TEXT="Object.seal()" ID="ID_1065498414" CREATED="1522705835023" MODIFIED="1522705840255"/>
+<node TEXT="Object.setPrototypeOf()" ID="ID_890044482" CREATED="1522705850900" MODIFIED="1522705855119"/>
+<node TEXT="Object.values()" ID="ID_871981620" CREATED="1522705861859" MODIFIED="1522705866383"/>
+</node>
+</node>
 <node TEXT="Function" ID="ID_1904735197" CREATED="1521311925574" MODIFIED="1521311934208">
 <node TEXT="Every JavaScript function is actually a Function object." ID="ID_79488743" CREATED="1522629782156" MODIFIED="1522629785785"/>
 </node>
@@ -2595,7 +2724,7 @@
 <node TEXT="Math" ID="ID_857904093" CREATED="1521312144612" MODIFIED="1521312146998"/>
 <node TEXT="Date" ID="ID_1361130230" CREATED="1521312190061" MODIFIED="1521312192694"/>
 </node>
-<node TEXT="Text processing" FOLDED="true" ID="ID_983507599" CREATED="1521191030612" MODIFIED="1521191035605">
+<node TEXT="Text processing" ID="ID_983507599" CREATED="1521191030612" MODIFIED="1521191035605">
 <node TEXT="These objects represent strings and support manipulating them." ID="ID_1961440496" CREATED="1521312344893" MODIFIED="1521312352244"/>
 <node TEXT="String" ID="ID_1843826343" CREATED="1521312212204" MODIFIED="1521312213861"/>
 <node TEXT="RegExp" ID="ID_86727286" CREATED="1521312248996" MODIFIED="1521312252781"/>
@@ -4968,7 +5097,9 @@
 <node TEXT="https://cssreference.io/" ID="ID_294499460" CREATED="1521807343173" MODIFIED="1521807346358"/>
 <node TEXT="https://css-tricks.com/almanac/" ID="ID_1944714815" CREATED="1522221976971" MODIFIED="1522221976971" LINK="https://css-tricks.com/almanac/"/>
 </node>
-<node TEXT="js" ID="ID_1179341838" CREATED="1521807321173" MODIFIED="1521807329598"/>
+<node TEXT="js" ID="ID_1179341838" CREATED="1521807321173" MODIFIED="1521807329598">
+<node TEXT="https://www.w3schools.com/jsref/default.asp" ID="ID_928059534" CREATED="1522706564171" MODIFIED="1522706570595"/>
+</node>
 <node TEXT="styleguide" ID="ID_247252920" CREATED="1522221983732" MODIFIED="1522222000582">
 <node TEXT="https://google.github.io/styleguide/jsguide.html" ID="ID_1053772617" CREATED="1522222126408" MODIFIED="1522222126408" LINK="https://google.github.io/styleguide/jsguide.html"/>
 <node TEXT="https://github.com/airbnb/javascript" ID="ID_1394253637" CREATED="1522222166988" MODIFIED="1522222166988" LINK="https://github.com/airbnb/javascript"/>
