@@ -2548,22 +2548,22 @@
 <node TEXT="Operators" ID="ID_1987984397" CREATED="1521469292211" MODIFIED="1522706638154">
 <node TEXT="JavaScript operators are used to assign values, compare values, perform arithmetic operations, and more." ID="ID_838826627" CREATED="1522706662141" MODIFIED="1522706668241"/>
 <node TEXT="Arithmetic" ID="ID_227014426" CREATED="1522706640108" MODIFIED="1522706719769">
-<node TEXT="Arithmetic operators are used to perform arithmetic between variables and/or values." ID="ID_325196230" CREATED="1522706683529" MODIFIED="1522706688793"/>
+<node TEXT="used to perform arithmetic between variables and/or values." ID="ID_325196230" CREATED="1522706683529" MODIFIED="1522707518514"/>
 </node>
 <node TEXT="Assignment" ID="ID_1811171680" CREATED="1522706701231" MODIFIED="1522706714960">
-<node TEXT="Assignment operators are used to assign values to JavaScript variables." ID="ID_59022151" CREATED="1522706800746" MODIFIED="1522706805665"/>
+<node TEXT="used to assign values to JavaScript variables." ID="ID_59022151" CREATED="1522706800746" MODIFIED="1522707549296"/>
 </node>
 <node TEXT="String" ID="ID_677603901" CREATED="1522706792028" MODIFIED="1522706796757">
-<node TEXT="The + operator, and the += operator can also be used to concatenate (add) strings." ID="ID_566056665" CREATED="1522707243506" MODIFIED="1522707253389"/>
+<node TEXT="used to concatenate (add) strings." ID="ID_566056665" CREATED="1522707243506" MODIFIED="1522707501634"/>
 </node>
 <node TEXT="Comparison" ID="ID_921168356" CREATED="1522706818924" MODIFIED="1522706823001">
-<node TEXT="Comparison operators are used in logical statements to determine equality or difference between variables or values." ID="ID_1931758164" CREATED="1522707220194" MODIFIED="1522707224806"/>
+<node TEXT="used in logical statements to determine equality or difference between variables or values." ID="ID_1931758164" CREATED="1522707220194" MODIFIED="1522707506348"/>
 </node>
 <node TEXT="Conditional (Ternary)" ID="ID_1892924625" CREATED="1522706834782" MODIFIED="1522706840448">
-<node TEXT="The conditional operator assigns a value to a variable based on a condition." ID="ID_1549890852" CREATED="1522707197403" MODIFIED="1522707202022"/>
+<node TEXT="assigns a value to a variable based on a condition." ID="ID_1549890852" CREATED="1522707197403" MODIFIED="1522707557459"/>
 </node>
 <node TEXT="Logical" ID="ID_1072007229" CREATED="1522706869484" MODIFIED="1522706874280">
-<node TEXT="Logical operators are used to determine the logic between variables or values." ID="ID_686863670" CREATED="1522707183536" MODIFIED="1522707188926"/>
+<node TEXT="used to determine the logic between variables or values." ID="ID_686863670" CREATED="1522707183536" MODIFIED="1522707566779"/>
 </node>
 <node TEXT="Bitwise" ID="ID_1863631860" CREATED="1522706887758" MODIFIED="1522707150313">
 <node TEXT="Bit operators work on 32 bits numbers. Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number." ID="ID_974610643" CREATED="1522707149249" MODIFIED="1522707157366"/>
@@ -2584,7 +2584,18 @@
 <node TEXT="The void operator evaluates an expression and returns undefined. This operator is often used to obtain the undefined primitive value, using &quot;void(0)&quot; (useful when evaluating an expression without using the return value)." ID="ID_1185626633" CREATED="1522707031721" MODIFIED="1522707036895"/>
 </node>
 </node>
-<node TEXT="data structures" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1521190224413"/>
+<node TEXT="Control flow" ID="ID_265187798" CREATED="1522708180202" MODIFIED="1522708200343"/>
+<node TEXT="Loops and iteration" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1522708158383">
+<node TEXT="for statement" ID="ID_667345979" CREATED="1522708285849" MODIFIED="1522708288430"/>
+<node TEXT="do...while statement" ID="ID_1713309196" CREATED="1522708296873" MODIFIED="1522708301590"/>
+<node TEXT="while statement" ID="ID_1740234502" CREATED="1522708310319" MODIFIED="1522708314286"/>
+<node TEXT="labeled statement" ID="ID_73755514" CREATED="1522708329596" MODIFIED="1522708334190"/>
+<node TEXT="break statement" ID="ID_1346248177" CREATED="1522708346004" MODIFIED="1522708356846"/>
+<node TEXT="continue statement" ID="ID_1564764735" CREATED="1522708357986" MODIFIED="1522708362878"/>
+<node TEXT="for...of statement" ID="ID_1360925004" CREATED="1522708425876" MODIFIED="1522708429613"/>
+<node TEXT="for...in statement" ID="ID_1889645923" CREATED="1522708438756" MODIFIED="1522708471309"/>
+</node>
+<node TEXT="error handling" ID="ID_836948526" CREATED="1522708182779" MODIFIED="1522708212543"/>
 <node TEXT="Standard built-in objects" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
 <node TEXT="This chapter documents all of JavaScript&apos;s standard, built-in objects, including their methods and properties." ID="ID_731718304" CREATED="1521190331107" MODIFIED="1521190335454"/>
 <node TEXT="The term &quot;global objects&quot; (or standard built-in objects) here is not to be confused with the global object. Here, global objects refer to objects in the global scope." ID="ID_276062820" CREATED="1521190358395" MODIFIED="1521190363389"/>
@@ -2836,7 +2847,7 @@
 <node TEXT="var [one, two, three] = foo; &apos;(Array-Destrukturierung)&apos;" ID="ID_778337520" CREATED="1515412678158" MODIFIED="1515412769159"/>
 <node TEXT="The above code says, give me a variable called first, a variable called last, and take it from the person object. We&#x2019;re taking the first property and the last property and putting them into two new variables that will be scoped to the parent block (or window!)." ID="ID_592499181" CREATED="1515412133129" MODIFIED="1515412133129"/>
 </node>
-<node TEXT="Klassenmethoden" FOLDED="true" ID="ID_57798391" CREATED="1517408950485" MODIFIED="1521326471599">
+<node TEXT="Klassenmethoden" ID="ID_57798391" CREATED="1517408950485" MODIFIED="1521326471599">
 <node TEXT="Object" FOLDED="true" ID="ID_1553072748" CREATED="1517415218931" MODIFIED="1517415224807">
 <node TEXT="Klonen eines Objekts" FOLDED="true" ID="ID_523661076" CREATED="1517408977642" MODIFIED="1517408977642">
 <node TEXT="Eigenschaften in dem Zielobjekt werden von Eigenschaften aus dem Quellobjekt &#xfc;berschrieben, wenn sie den gleichen Schl&#xfc;ssel haben." ID="ID_516171712" CREATED="1517415105072" MODIFIED="1517415105072"/>
@@ -2970,6 +2981,12 @@
 <node TEXT="Frontend" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
 <node TEXT="Web APIs" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
 <node TEXT="Web Application Programming Interfaces (Web APIs) are used to perform a variety of tasks, such as manipulating the DOM, playing audio or video, or generating 3D graphics." ID="ID_1839416238" CREATED="1517822841024" MODIFIED="1517822864936"/>
+<node TEXT="Browser Object Model (BOM)" ID="ID_1893654671" CREATED="1522708994126" MODIFIED="1522709012930">
+<node TEXT="The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser. Unlike the Document Object Model, there is no standard for implementation and no strict definition, so browser vendors are free to implement the BOM in any way they wish." ID="ID_77849223" CREATED="1522709063275" MODIFIED="1522709067929"/>
+<node TEXT="bom-index.png" ID="ID_1000644901" CREATED="1522709178078" MODIFIED="1522709178078">
+<hook URI="webdevelopment2_files/bom-index.png" SIZE="0.9049774" NAME="ExternalObject"/>
+</node>
+</node>
 <node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167">
 <node TEXT="The DOM is an API that allows access to and modification of the current document. It allows manipulation of document Node and Element. HTML, XML and SVG have extended it to manipulate their specific elements." ID="ID_400476465" CREATED="1521814879418" MODIFIED="1521814884461"/>
 </node>
@@ -4667,6 +4684,7 @@
 <node TEXT="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w/videos" ID="ID_1419995867" CREATED="1522621870639" MODIFIED="1522621870639" LINK="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w/videos"/>
 <node TEXT="https://www.youtube.com/channel/UCCHcJejvdlXxLlG0encr53Q/playlists" ID="ID_1395782973" CREATED="1522622565458" MODIFIED="1522622569247"/>
 <node TEXT="https://www.youtube.com/watch?v=SGOFxK-28ns&amp;list=PL2dKqfImstaSl8Hi6UrovwraEHvK2MNPt" ID="ID_1229224787" CREATED="1522622617562" MODIFIED="1522622621095"/>
+<node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" ID="ID_1106465499" CREATED="1522708682079" MODIFIED="1522708689132"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
