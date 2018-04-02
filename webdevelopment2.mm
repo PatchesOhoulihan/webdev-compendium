@@ -55,7 +55,7 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="34" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Html" FOLDED="true" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
+<node TEXT="Html" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Introduction" FOLDED="true" ID="ID_667219144" CREATED="1520200774244" MODIFIED="1520200783932">
 <node TEXT="the &quot;M&quot; in HTML stands for &quot;Markup&quot;, but what does Markup really mean?" FOLDED="true" ID="ID_1067751453" CREATED="1520200875423" MODIFIED="1520200875423">
@@ -130,7 +130,7 @@
 <node TEXT="Though not technically the first browser, Mosaic was the first one that many people experienced and played a big part in popularizing the concept of the World Wide Web and the Web browser." ID="ID_672601724" CREATED="1520200080793" MODIFIED="1520200080793"/>
 </node>
 </node>
-<node TEXT="Tags" FOLDED="true" ID="ID_1907537597" CREATED="1517835208389" MODIFIED="1517909406271">
+<node TEXT="Tags" ID="ID_1907537597" CREATED="1517835208389" MODIFIED="1517909406271">
 <node TEXT="Comment" FOLDED="true" ID="ID_873678968" CREATED="1519592695865" MODIFIED="1519592701707">
 <node TEXT="&lt;!--This is a comment. Comments are not displayed in the browser--&gt;" ID="ID_1466872894" CREATED="1519592708937" MODIFIED="1519592712027"/>
 </node>
@@ -322,13 +322,13 @@
 <node TEXT="&lt;thead&gt;" ID="ID_498216222" CREATED="1520728062122" MODIFIED="1520728067773"/>
 <node TEXT="&lt;tr&gt;" ID="ID_970425691" CREATED="1520728074962" MODIFIED="1520728079333"/>
 </node>
-<node TEXT="Forms" FOLDED="true" ID="ID_1033436963" CREATED="1520592129774" MODIFIED="1520592134310">
+<node TEXT="Forms" ID="ID_1033436963" CREATED="1520592129774" MODIFIED="1520592134310">
 <node TEXT="HTML provides a number of elements which can be used together to create forms which the user can fill out and submit to the Web site or application." ID="ID_1101883564" CREATED="1520727847670" MODIFIED="1520727852879"/>
 <node TEXT="&lt;button&gt;" ID="ID_668248935" CREATED="1520592511056" MODIFIED="1520592514736"/>
 <node TEXT="&lt;datalist&gt;" ID="ID_29394233" CREATED="1520592528793" MODIFIED="1520592535169"/>
 <node TEXT="&lt;fieldset&gt;" ID="ID_843179194" CREATED="1520592545528" MODIFIED="1520592550122"/>
 <node TEXT="&lt;form&gt;" ID="ID_38499095" CREATED="1520592566185" MODIFIED="1520592570858"/>
-<node TEXT="&lt;input&gt;" FOLDED="true" ID="ID_1618525284" CREATED="1520330027730" MODIFIED="1520592609233">
+<node TEXT="&lt;input&gt;" ID="ID_1618525284" CREATED="1520330027730" MODIFIED="1520592609233">
 <node TEXT="The HTML &lt;input&gt; element is used to create interactive controls for web-based forms in order to accept data from the user." ID="ID_1497170820" CREATED="1520330792999" MODIFIED="1520330802456"/>
 <node TEXT="input attributes" FOLDED="true" ID="ID_1886962322" CREATED="1520334747345" MODIFIED="1520334762841">
 <node TEXT="This section lists the attributes available to all form &lt;input&gt; types. Non-global attributes &#x2014; and global attributes that behave differently when specified on different &lt;input&gt; types &#x2014; are listed on those types&apos; individual pages." ID="ID_1928104140" CREATED="1520334792041" MODIFIED="1520334798099"/>
@@ -441,7 +441,6 @@
 <node TEXT="value" ID="ID_558010448" CREATED="1520343043033" MODIFIED="1520343046226"/>
 <node TEXT="width" ID="ID_1903941196" CREATED="1520343056354" MODIFIED="1520343059641"/>
 </node>
-<node TEXT="" ID="ID_1267623223" CREATED="1520340794410" MODIFIED="1520340794410"/>
 </node>
 <node TEXT="&lt;label&gt;" ID="ID_1309106101" CREATED="1520592632690" MODIFIED="1520592636859"/>
 <node TEXT="&lt;legend&gt;" ID="ID_937770746" CREATED="1520592645730" MODIFIED="1520592650146"/>
@@ -451,7 +450,75 @@
 <node TEXT="&lt;output&gt;" ID="ID_1596616092" CREATED="1520592787498" MODIFIED="1520592792267"/>
 <node TEXT="&lt;progress&gt;" ID="ID_242350282" CREATED="1520592801018" MODIFIED="1520592805620"/>
 <node TEXT="&lt;select&gt;" ID="ID_1061081820" CREATED="1520592828259" MODIFIED="1520592833492"/>
-<node TEXT="&lt;textarea&gt;" ID="ID_1995177550" CREATED="1520592840747" MODIFIED="1520592845700"/>
+<node TEXT="&lt;textarea&gt;" ID="ID_1995177550" CREATED="1520592840747" MODIFIED="1520592845700">
+<node TEXT="The HTML &lt;textarea&gt; element represents a multi-line plain-text editing control." ID="ID_1347876219" CREATED="1522627333942" MODIFIED="1522627338740"/>
+<node TEXT="Attributes" ID="ID_1825797332" CREATED="1522627409214" MODIFIED="1522627412299">
+<node TEXT="This element includes the global attributes." ID="ID_594991709" CREATED="1522627451734" MODIFIED="1522627456643"/>
+<node TEXT="autocapitalize" ID="ID_1755360406" CREATED="1522627508053" MODIFIED="1522627511930">
+<node TEXT="This is a nonstandard attribute supported by WebKit on iOS (therefore nearly all browsers running on iOS, including Safari, Firefox, and Chrome)" ID="ID_667664547" CREATED="1522627530309" MODIFIED="1522627533586"/>
+<node TEXT="which controls whether and how the text value should be automatically capitalized as it is entered/edited by the user. The non-deprecated values are available in iOS 5 and later." ID="ID_1835542145" CREATED="1522627552917" MODIFIED="1522627556922"/>
+<node TEXT="values" ID="ID_1632215110" CREATED="1522627558677" MODIFIED="1522627564666"/>
+</node>
+<node TEXT="autocomplete" ID="ID_1820743851" CREATED="1522627582245" MODIFIED="1522627586130">
+<node TEXT="This attribute indicates whether the value of the control can be automatically completed by the browser." ID="ID_392812181" CREATED="1522628034289" MODIFIED="1522628036518"/>
+<node TEXT="Possible values are:" ID="ID_1409743573" CREATED="1522628059833" MODIFIED="1522628062862">
+<node TEXT="off: The user must explicitly enter a value into this field for every use, or the document provides its own auto-completion method; the browser does not automatically complete the entry." ID="ID_1269192817" CREATED="1522628090921" MODIFIED="1522628095614"/>
+<node TEXT="on: The browser can automatically complete the value based on values that the user has entered during previous uses." ID="ID_908727418" CREATED="1522628102209" MODIFIED="1522628106430"/>
+</node>
+</node>
+<node TEXT="autofocus" ID="ID_52791204" CREATED="1522627594141" MODIFIED="1522627602114">
+<node TEXT="This Boolean attribute lets you specify that a form control should have input focus when the page loads, unless the user overrides it, for example by typing in a different control." ID="ID_1321396297" CREATED="1522627988610" MODIFIED="1522627992015"/>
+<node TEXT="Only one form-associated element in a document can have this attribute specified." ID="ID_710558634" CREATED="1522628001130" MODIFIED="1522628004927"/>
+</node>
+<node TEXT="cols" ID="ID_1283907295" CREATED="1522627612700" MODIFIED="1522627616386">
+<node TEXT="The visible width of the text control, in average character widths. If it is specified, it must be a positive integer. If it is not specified, the default value is 20 (HTML5)." ID="ID_1718562101" CREATED="1522627952994" MODIFIED="1522627955903"/>
+</node>
+<node TEXT="disabled" ID="ID_1270977079" CREATED="1522627625964" MODIFIED="1522627629769">
+<node TEXT="This Boolean attribute indicates that the user cannot interact with the control." ID="ID_1244123787" CREATED="1522628117105" MODIFIED="1522628120158"/>
+<node TEXT="(If this attribute is not specified, the control inherits its setting from the containing element, for example &lt;fieldset&gt;; if there is no containing element with the disabled attribute set, then the control is enabled.)" ID="ID_1873626797" CREATED="1522628132608" MODIFIED="1522628135590"/>
+</node>
+<node TEXT="form" ID="ID_1814604690" CREATED="1522627640548" MODIFIED="1522627644081">
+<node TEXT="The form element that the &lt;textarea&gt; element is associated with (its &quot;form owner&quot;)." ID="ID_1597336576" CREATED="1522627819995" MODIFIED="1522627823040"/>
+<node TEXT="The value of the attribute must be the ID of a form element in the same document." ID="ID_1225906048" CREATED="1522627834491" MODIFIED="1522627837424"/>
+<node TEXT="If this attribute is not specified, the &lt;textarea&gt; element must be a descendant of a form element." ID="ID_541032375" CREATED="1522627860970" MODIFIED="1522627865288"/>
+<node TEXT="This attribute enables you to place &lt;textarea&gt; elements anywhere within a document, not just as descendants of their form elements." ID="ID_374826307" CREATED="1522627905394" MODIFIED="1522627910383"/>
+</node>
+<node TEXT="maxlength" ID="ID_1786116610" CREATED="1522627651868" MODIFIED="1522627656009">
+<node TEXT="The maximum number of characters (Unicode code points) that the user can enter. If this value isn&apos;t specified, the user can enter an unlimited number of characters." ID="ID_648339638" CREATED="1522627789555" MODIFIED="1522627798352"/>
+</node>
+<node TEXT="minlength" ID="ID_386240455" CREATED="1522627662804" MODIFIED="1522627666489">
+<node TEXT="The minimum number of characters (Unicode code points) required that the user should enter." ID="ID_1752172072" CREATED="1522627919962" MODIFIED="1522627924119"/>
+</node>
+<node TEXT="name" ID="ID_1984276218" CREATED="1522627680612" MODIFIED="1522627685601">
+<node TEXT="The name of the control." ID="ID_1829736112" CREATED="1522627778163" MODIFIED="1522627781520"/>
+</node>
+<node TEXT="placeholder" ID="ID_1712197401" CREATED="1522627696356" MODIFIED="1522627699897">
+<node TEXT="A hint to the user of what can be entered in the control. Carriage returns or line-feeds within the placeholder text must be treated as line breaks when rendering the hint." ID="ID_516507462" CREATED="1522628151864" MODIFIED="1522628156718"/>
+</node>
+<node TEXT="readonly" ID="ID_767882414" CREATED="1522627710172" MODIFIED="1522627714121">
+<node TEXT="This Boolean attribute indicates that the user cannot modify the value of the control." ID="ID_781238646" CREATED="1522628171880" MODIFIED="1522628176133"/>
+<node TEXT="Unlike the disabled attribute, the readonly attribute does not prevent the user from clicking or selecting in the control. The value of a read-only control is still submitted with the form." ID="ID_112279193" CREATED="1522628191952" MODIFIED="1522628198381"/>
+</node>
+<node TEXT="required" ID="ID_1359049621" CREATED="1522627720076" MODIFIED="1522627724649">
+<node TEXT="This attribute specifies that the user must fill in a value before submitting a form." ID="ID_563488254" CREATED="1522628218568" MODIFIED="1522628221133"/>
+</node>
+<node TEXT="rows" ID="ID_132616375" CREATED="1522627732587" MODIFIED="1522627736297">
+<node TEXT="The number of visible text lines for the control." ID="ID_352117162" CREATED="1522628228200" MODIFIED="1522628230845"/>
+</node>
+<node TEXT="spellcheck" ID="ID_390776035" CREATED="1522627744843" MODIFIED="1522627748505">
+<node TEXT="Setting the value of this attribute to true indicates that the element needs to have its spelling and grammar checked." ID="ID_488338909" CREATED="1522628244208" MODIFIED="1522628248677"/>
+<node TEXT="The value default indicates that the element is to act according to a default behavior, possibly based on the parent element&apos;s own spellcheck value." ID="ID_1887244349" CREATED="1522628263944" MODIFIED="1522628268229"/>
+<node TEXT="The value false indicates that the element should not be checked." ID="ID_1101531772" CREATED="1522628275039" MODIFIED="1522628278549"/>
+</node>
+<node TEXT="wrap" ID="ID_1262410608" CREATED="1522627759395" MODIFIED="1522627764256">
+<node TEXT="Indicates how the control wraps text. Possible values are:" ID="ID_397993043" CREATED="1522628288551" MODIFIED="1522628292220"/>
+<node TEXT="hard: The browser automatically inserts line breaks (CR+LF) so that each line has no more than the width of the control; the cols attribute must be specified." ID="ID_1842173569" CREATED="1522628299415" MODIFIED="1522628302964"/>
+<node TEXT="soft: The browser ensures that all line breaks in the value consist of a CR+LF pair, but does not insert any additional line breaks." ID="ID_748644848" CREATED="1522628314495" MODIFIED="1522628318764"/>
+<node TEXT="off:  Like soft but changes appearance to white-space: pre so line segments exceeding cols are not wrapped and area becomes horizontally scrollable." ID="ID_1993365410" CREATED="1522628324903" MODIFIED="1522628331005"/>
+<node TEXT="If this attribute is not specified, soft is its default value." ID="ID_808569221" CREATED="1522628341567" MODIFIED="1522628345244"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Interactive elements" FOLDED="true" ID="ID_1603568566" CREATED="1520592145118" MODIFIED="1520592151049">
 <node TEXT="HTML offers a selection of elements which help to create interactive user interface objects." ID="ID_143218652" CREATED="1520728124117" MODIFIED="1520728128861"/>
@@ -2250,11 +2317,10 @@
 </node>
 <node TEXT="Fundamental objects" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
 <node TEXT="These are the fundamental, basic objects upon which all other objects are based. This includes objects that represent general objects, functions, and errors." ID="ID_586945238" CREATED="1521311890350" MODIFIED="1521311893034"/>
-<node TEXT="Array" ID="ID_256959538" CREATED="1522141029633" MODIFIED="1522141036257">
-<node TEXT="The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects." ID="ID_1352549303" CREATED="1522140991855" MODIFIED="1522140994601"/>
-</node>
 <node TEXT="Object" ID="ID_17690293" CREATED="1521311912454" MODIFIED="1521311916216"/>
-<node TEXT="Function" ID="ID_1904735197" CREATED="1521311925574" MODIFIED="1521311934208"/>
+<node TEXT="Function" ID="ID_1904735197" CREATED="1521311925574" MODIFIED="1521311934208">
+<node TEXT="Every JavaScript function is actually a Function object." ID="ID_79488743" CREATED="1522629782156" MODIFIED="1522629785785"/>
+</node>
 <node TEXT="Boolean" ID="ID_1187453092" CREATED="1521311942238" MODIFIED="1521311954176"/>
 <node TEXT="Symbol" ID="ID_637202656" CREATED="1521311961590" MODIFIED="1521311963567"/>
 <node TEXT="Error" ID="ID_1641352493" CREATED="1521312004117" MODIFIED="1521312006039"/>
@@ -2280,7 +2346,9 @@
 <node TEXT="collections" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
 <node TEXT="Indexed collections" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
 <node TEXT="These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs." ID="ID_44580959" CREATED="1521312539650" MODIFIED="1521312544995"/>
-<node TEXT="Array" ID="ID_18798492" CREATED="1521312271147" MODIFIED="1521312274669"/>
+<node TEXT="Array" ID="ID_18798492" CREATED="1521312271147" MODIFIED="1521312274669">
+<node TEXT="The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects." ID="ID_1352549303" CREATED="1522140991855" MODIFIED="1522140994601"/>
+</node>
 <node TEXT="Int8Array" ID="ID_554670113" CREATED="1521312282475" MODIFIED="1521312286013">
 <node TEXT="8-bit two&apos;s complement signed integer" ID="ID_980206242" CREATED="1521553115960" MODIFIED="1521553119658"/>
 <node TEXT="Value Range: -128 to 127" ID="ID_668320618" CREATED="1521553254125" MODIFIED="1521553339711"/>
@@ -2390,7 +2458,7 @@
 </node>
 <node TEXT="Array" ID="ID_1703991624" CREATED="1517415246859" MODIFIED="1521326471598"/>
 </node>
-<node TEXT="Nice to know" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
+<node TEXT="Nice to know" FOLDED="true" ID="ID_427795702" CREATED="1519028355549" MODIFIED="1519028371431">
 <node TEXT="Swap variables" FOLDED="true" ID="ID_1349446183" CREATED="1519028404553" MODIFIED="1519028413418">
 <node TEXT="Using Array Destructuring to swap values" ID="ID_461036412" CREATED="1519028786859" MODIFIED="1519028793980"/>
 <node TEXT="let a = &apos;world&apos;, b = &apos;hello&apos;&#xa;[a, b] = [b, a]&#xa;console.log(a) // -&gt; hello&#xa;console.log(b) // -&gt; world" ID="ID_531722019" CREATED="1519028812555" MODIFIED="1519028818445"/>
@@ -2455,58 +2523,58 @@
 <node TEXT="Are you still concatenating strings using the + operator? Here&#x2019;s a better way to combine a sentence with your data. It&#x2019;s called templating and here&#x2019;s a mini framework in 2.5 lines of code." ID="ID_548197350" CREATED="1519116585188" MODIFIED="1519116592894"/>
 <node TEXT="var firstName = &#x2018;Tal&#x2019;;&#xa;var screenName = &#x2018;ketacode&#x2019;&#xa;// Ugly&#xa;&#x2018;Hi, my name is &#x2018; + firstName + &#x2018; and my twitter screen name is @&#x2019; + screenName;&#xa;// Super&#xa;var template = &#x2018;Hi, my name is {first-name} and my twitter screen name is @{screen-name}&#x2019;;&#xa;var txt = template.replace(&#x2018;{first-name}&#x2019;, firstName)&#xa; .replace(&#x2018;{screen-name}&#x2019;, screenName);" ID="ID_675359012" CREATED="1519116646653" MODIFIED="1519116656047"/>
 </node>
-<node TEXT="Enforcing required parameters" ID="ID_933944900" CREATED="1521620726876" MODIFIED="1521620731369">
+<node TEXT="Enforcing required parameters" FOLDED="true" ID="ID_933944900" CREATED="1521620726876" MODIFIED="1521620731369">
 <node TEXT="ES6 provides default parameter values that allow you to set some default value to be used if the function is called without that parameter." ID="ID_1999312974" CREATED="1521620757819" MODIFIED="1521620760556"/>
 <node TEXT="const required = () =&gt; {throw new Error(&apos;Missing parameter&apos;)};&#xa;//The below function will trow an error if either &quot;a&quot; or &quot;b&quot; is missing.&#xa;const add = (a = required(), b = required()) =&gt; a + b;&#xa;add(1, 2) //3&#xa;add(1) // Error: Missing parameter." ID="ID_1860105486" CREATED="1521620791787" MODIFIED="1521620796494"/>
 </node>
-<node TEXT="The mighty &#x201c;reduce&#x201d;" ID="ID_697118199" CREATED="1521620814939" MODIFIED="1521620819765">
+<node TEXT="The mighty &#x201c;reduce&#x201d;" FOLDED="true" ID="ID_697118199" CREATED="1521620814939" MODIFIED="1521620819765">
 <node TEXT="Array&#x2019;s reduce method is extremely versatile. It is typically used to convert an array of items into a single value." ID="ID_847970729" CREATED="1521620851572" MODIFIED="1521620856542"/>
-<node TEXT="Using reduce to do both map and filter *simultaneously*" ID="ID_384515014" CREATED="1521620874651" MODIFIED="1521620880589">
+<node TEXT="Using reduce to do both map and filter *simultaneously*" FOLDED="true" ID="ID_384515014" CREATED="1521620874651" MODIFIED="1521620880589">
 <node TEXT="Suppose you have a situation where you have a list of items, and you want to update each item (that is, map) and then filter only a few items (that is, filter). But this means that you would need to run through the list twice!" ID="ID_1317209618" CREATED="1521620913556" MODIFIED="1521620918566"/>
 <node TEXT="In the below example, we want to double the value of items in the array and then pick only those that are greater than 50. Notice how we can use the powerful reduce method to both double (map) and then filter? That&#x2019;s pretty efficient." ID="ID_957551842" CREATED="1521620964652" MODIFIED="1521620969679"/>
 <node TEXT="const numbers = [10, 20, 30, 40];&#xa;const doubledOver50 = numbers.reduce((finalList, num) =&gt; {&#xa; &#xa;  num = num * 2; //double each number (i.e. map)&#xa; &#xa;  //filter number &gt; 50&#xa;  if (num &gt; 50) {&#xa;    finalList.push(num);&#xa;  }&#xa;  return finalList;&#xa;}, []);&#xa;doubledOver50; // [60, 80]" ID="ID_1542803828" CREATED="1521620998565" MODIFIED="1521621002855"/>
 <node TEXT="If you look at the above example (from 2.1) carefully, you&#x2019;ll know that reduce can be used to filter or map over items!" ID="ID_1900126938" CREATED="1521621068270" MODIFIED="1521621073023"/>
 </node>
-<node TEXT="Using reduce to balance parentheses" ID="ID_341011409" CREATED="1521621148575" MODIFIED="1521621153552">
+<node TEXT="Using reduce to balance parentheses" FOLDED="true" ID="ID_341011409" CREATED="1521621148575" MODIFIED="1521621153552">
 <node TEXT="Given a string with parentheses, we want to know if they are balanced, that is that there&#x2019;s an equal number of &#x201c;(&#x201c; and &#x201c;)&#x201d;, and if &#x201c;(&#x201c; is before &#x201c;)&#x201d;." ID="ID_948353664" CREATED="1521621274784" MODIFIED="1521621279210"/>
 <node TEXT="We can easily do that in reduce as shown below. We simply hold a variable counter with starting value 0. We count up if we hit ( and count down if we hit ) . If they are balanced, then we should end up with 0." ID="ID_862270595" CREATED="1521621302705" MODIFIED="1521621307338"/>
 <node TEXT="//Returns 0 if balanced.&#xa;const isParensBalanced = (str) =&gt; {&#xa;  return str.split(&apos;&apos;).reduce((counter, char) =&gt; {&#xa;    if(counter &lt; 0) { //matched &quot;)&quot; before &quot;(&quot;&#xa;      return counter;&#xa;    } else if(char === &apos;(&apos;) {&#xa;      return ++counter;&#xa;    } else if(char === &apos;)&apos;) {&#xa;      return --counter;&#xa;    }  else { //matched some other char&#xa;      return counter;&#xa;    }&#xa;   &#xa;  }, 0); //&lt;-- starting value of the counter&#xa;}&#xa;isParensBalanced(&apos;(())&apos;) // 0 &lt;-- balanced&#xa;isParensBalanced(&apos;(asdfds)&apos;) //0 &lt;-- balanced&#xa;isParensBalanced(&apos;(()&apos;) // 1 &lt;-- not balanced&#xa;isParensBalanced(&apos;)(&apos;) // -1 &lt;-- not balanced" ID="ID_44440124" CREATED="1521621351569" MODIFIED="1521621356989"/>
 </node>
-<node TEXT="Counting Duplicate Array Items (Converting Array &#x2192; Object)" ID="ID_244824242" CREATED="1521621387762" MODIFIED="1521621392995">
+<node TEXT="Counting Duplicate Array Items (Converting Array &#x2192; Object)" FOLDED="true" ID="ID_244824242" CREATED="1521621387762" MODIFIED="1521621392995">
 <node TEXT="There are times when you want to count duplicate array items or convert an array into an object. You can use reduce for that." ID="ID_1578945656" CREATED="1521621408690" MODIFIED="1521621412595"/>
 <node TEXT="var cars = [&apos;BMW&apos;,&apos;Benz&apos;, &apos;Benz&apos;, &apos;Tesla&apos;, &apos;BMW&apos;, &apos;Toyota&apos;];&#xa;var carsObj = cars.reduce(function (obj, name) {&#xa;   obj[name] = obj[name] ? ++obj[name] : 1;&#xa;  return obj;&#xa;}, {});&#xa;carsObj; // =&gt; { BMW: 2, Benz: 2, Tesla: 1, Toyota: 1 }" ID="ID_1600747593" CREATED="1521621432522" MODIFIED="1521621437572"/>
 </node>
 </node>
-<node TEXT="Object destructuring" ID="ID_1269631508" CREATED="1521621498762" MODIFIED="1521621505268">
-<node TEXT="Removing unwanted properties" ID="ID_19557051" CREATED="1521621513778" MODIFIED="1521621520251">
+<node TEXT="Object destructuring" FOLDED="true" ID="ID_1269631508" CREATED="1521621498762" MODIFIED="1521621505268">
+<node TEXT="Removing unwanted properties" FOLDED="true" ID="ID_19557051" CREATED="1521621513778" MODIFIED="1521621520251">
 <node TEXT="There are times when you want to remove unwanted properties&#x200a;&#x2014;&#x200a;maybe because they contain sensitive info or are just too big." ID="ID_1413762745" CREATED="1521621836493" MODIFIED="1521621840598"/>
 <node TEXT="Instead of iterating over the whole object to removing them, we can simply extract such props to variables and keep the useful ones in the *rest* parameter." ID="ID_1627635846" CREATED="1521621861149" MODIFIED="1521621865527"/>
 <node TEXT="n the below example, we want to remove _internal and tooBig properties. We can assign them to_internal and tooBig variables and store the remaining in a *rest* parameter cleanObject that we can use for later." ID="ID_532349658" CREATED="1521621897973" MODIFIED="1521621921015"/>
 <node TEXT="let {_internal, tooBig, ...cleanObject} = {el1: &apos;1&apos;, _internal:&quot;secret&quot;, tooBig:{}, el2: &apos;2&apos;, el3: &apos;3&apos;};&#xa;console.log(cleanObject); // {el1: &apos;1&apos;, el2: &apos;2&apos;, el3: &apos;3&apos;}" ID="ID_981673009" CREATED="1521621879637" MODIFIED="1521621884551"/>
 </node>
-<node TEXT="Destructure nested objects in function params" ID="ID_1290732028" CREATED="1521621932958" MODIFIED="1521621940807">
+<node TEXT="Destructure nested objects in function params" FOLDED="true" ID="ID_1290732028" CREATED="1521621932958" MODIFIED="1521621940807">
 <node TEXT="In the below example, the engine property is a nested-object of the car object. If we are interested in, say, the vin property of engine, we can easily destructure it as shown below." ID="ID_292354216" CREATED="1521621977070" MODIFIED="1521621982071"/>
 </node>
-<node TEXT="Merge objects" ID="ID_1080066907" CREATED="1521622072278" MODIFIED="1521622077136">
+<node TEXT="Merge objects" FOLDED="true" ID="ID_1080066907" CREATED="1521622072278" MODIFIED="1521622077136">
 <node TEXT="ES6 comes with a spread operator (denoted by three dots). It is typically used to deconstruct array values, but you can use it on Objects as well." ID="ID_428738254" CREATED="1521622090023" MODIFIED="1521622092663"/>
 <node TEXT="In the following example, we use the spread operator to spread within a new object. Property keys in the 2nd object will override property keys in the 1st object." ID="ID_868380779" CREATED="1521622138239" MODIFIED="1521622143968"/>
 <node TEXT="let object1 = { a:1, b:2,c:3 }&#xa;let object2 = { b:30, c:40, d:50}&#xa;let merged = {&#x2026;object1, &#x2026;object2} //spread and re-add into merged&#xa;console.log(merged) // {a:1, b:30, c:40, d:50}" ID="ID_866730174" CREATED="1521622157151" MODIFIED="1521622162664"/>
 </node>
 </node>
-<node TEXT="Sets" ID="ID_1994730948" CREATED="1521622205303" MODIFIED="1521622211184">
-<node TEXT="De-duping Arrays Using Sets" ID="ID_1009448885" CREATED="1521622238559" MODIFIED="1521622245776">
+<node TEXT="Sets" FOLDED="true" ID="ID_1994730948" CREATED="1521622205303" MODIFIED="1521622211184">
+<node TEXT="De-duping Arrays Using Sets" FOLDED="true" ID="ID_1009448885" CREATED="1521622238559" MODIFIED="1521622245776">
 <node TEXT="In ES6 you can easily de-dupe items using Sets, as Sets only allows unique values to be stored." ID="ID_1967353877" CREATED="1521622361039" MODIFIED="1521622364352"/>
 </node>
-<node TEXT="Using Array methods" ID="ID_820109920" CREATED="1521622326135" MODIFIED="1521622331520">
+<node TEXT="Using Array methods" FOLDED="true" ID="ID_820109920" CREATED="1521622326135" MODIFIED="1521622331520">
 <node TEXT="Converting Sets to an Array is as simple as using a spread operator (&#x2026; ). You can use all the Array methods easily on Sets as well!" ID="ID_1497238684" CREATED="1521622699801" MODIFIED="1521622702266"/>
 <node TEXT="let mySet = new Set([1,2, 3, 4, 5]);&#xa;var filtered = [...mySet].filter((x) =&gt; x &gt; 3) // [4, 5]" ID="ID_1428088626" CREATED="1521622714753" MODIFIED="1521622720410"/>
 </node>
 </node>
-<node TEXT="Array destructuring" ID="ID_159620422" CREATED="1521622769730" MODIFIED="1521622777019">
-<node TEXT="Swap values" ID="ID_414181233" CREATED="1521622795906" MODIFIED="1521622804329">
+<node TEXT="Array destructuring" FOLDED="true" ID="ID_159620422" CREATED="1521622769730" MODIFIED="1521622777019">
+<node TEXT="Swap values" FOLDED="true" ID="ID_414181233" CREATED="1521622795906" MODIFIED="1521622804329">
 <node TEXT="let param1 = 1;&#xa;let param2 = 2;&#xa;//swap and assign param1 &amp; param2 each others values&#xa;[param1, param2] = [param2, param1];&#xa;console.log(param1) // 2&#xa;console.log(param2) // 1" ID="ID_848333508" CREATED="1521622821689" MODIFIED="1521622826402"/>
 </node>
-<node TEXT="Receive and assign multiple values from a function" ID="ID_242939194" CREATED="1521622851186" MODIFIED="1521622855531">
+<node TEXT="Receive and assign multiple values from a function" FOLDED="true" ID="ID_242939194" CREATED="1521622851186" MODIFIED="1521622855531">
 <node TEXT="In the below example, we are fetching a post at /post and related comments at /comments . Since we are using async / await , the function returns the result in an array. Using array destructuring, we can simply assign the result directly into corresponding variables." ID="ID_1225256604" CREATED="1521622868594" MODIFIED="1521622872339"/>
 <node TEXT="async function getFullPost(){&#xa;  return await Promise.all([&#xa;    fetch(&apos;/post&apos;),&#xa;    fetch(&apos;/comments&apos;)&#xa;  ]);&#xa;}&#xa;const [post, comments] = getFullPost();" ID="ID_165154025" CREATED="1521622881202" MODIFIED="1521622888868"/>
 </node>
@@ -2688,7 +2756,7 @@
 <hook URI="webdevelopment2_files/png_5868046861603241277.png" SIZE="0.80862534" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="host objects" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1521189986520">
+<node TEXT="Global/host object" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1522618276727">
 <node TEXT="In a web browser, any code which the script doesn&apos;t specifically start up as a background task has a Window as its global object. This is the vast majority of JavaScript code on the Web." ID="ID_690447496" CREATED="1518085107077" MODIFIED="1518085107077"/>
 <node TEXT="window" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
 <node TEXT="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property." ID="ID_545673075" CREATED="1518094524949" MODIFIED="1518094524949"/>
@@ -2774,7 +2842,22 @@
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
 <node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
 <node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
-<node TEXT="Quick Setup" FOLDED="true" ID="ID_1666734176" CREATED="1515277487524" MODIFIED="1515323490525">
+<node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
+<node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
+<node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1409151973" CREATED="1515278541958" MODIFIED="1515278541958"/>
+<node TEXT="ReactJS applications are built from React Components - independent resusable components" ID="ID_728172620" CREATED="1515278579191" MODIFIED="1515278579191"/>
+<node TEXT="that describe how the UI should look based on their own state and properties." ID="ID_316601598" CREATED="1515278589469" MODIFIED="1515278592874"/>
+</node>
+<node TEXT="Why should I use ReactJS?" FOLDED="true" ID="ID_1935515619" CREATED="1515278620434" MODIFIED="1515324016705">
+<node TEXT="ReactJS applications are incredibly performant at UI rerendering" ID="ID_1849800554" CREATED="1515278628589" MODIFIED="1515278628589"/>
+<node TEXT="React Components make writing UI components easier" ID="ID_961089749" CREATED="1515278635436" MODIFIED="1515278635436"/>
+<node TEXT="What makes ReactJS so efficient at rerendering?" FOLDED="true" ID="ID_1301101177" CREATED="1515278935116" MODIFIED="1515324015040">
+<node TEXT="React Components are used to generate a Virtual DOM - a light-weight abstraction of the actual HTML DOM. The Virtual DOM is able to be generated much more quickly than the HTML DOM because it does not have to calculate CSS styles and layouts. When a React Component changes state, the Virtual DOM is recreated and the difference between the new Virtual DOM and the previous Virtual DOM is calculated. The ReactJS library then calculates the most efficient way to update the HTML DOM to reflect these changes. This ends up being much faster than regenerating the entire HTML DOM from the top." ID="ID_2187251" CREATED="1515278969363" MODIFIED="1515278969363"/>
+</node>
+</node>
+</node>
+<node TEXT="setup" ID="ID_508007486" CREATED="1522621514634" MODIFIED="1522621521639">
+<node TEXT="Quick Setup" ID="ID_1666734176" CREATED="1515277487524" MODIFIED="1515323490525">
 <node TEXT="1. Create an HTML file" ID="ID_1602235452" CREATED="1515277527954" MODIFIED="1515277527954"/>
 <node TEXT="2. Add scripts to include react.js, react-dom.js and babel.js inside the head of the HTML file" FOLDED="true" ID="ID_1271641365" CREATED="1515277539612" MODIFIED="1515323485901">
 <font NAME="SansSerif" SIZE="12"/>
@@ -2788,17 +2871,12 @@
 <node TEXT="&lt;script type=&quot;text/babel&quot;&gt;ReactDOM.render(&lt;div&gt;Hello World&lt;/div&gt;, document.getElementById(&quot;root&quot;))      &lt;/script&gt;" ID="ID_232195864" CREATED="1515278785863" MODIFIED="1515278821722"/>
 </node>
 </node>
-<node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
-<node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
-<node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1409151973" CREATED="1515278541958" MODIFIED="1515278541958"/>
-<node TEXT="ReactJS applications are built from React Components - independent resusable components" ID="ID_728172620" CREATED="1515278579191" MODIFIED="1515278579191"/>
-<node TEXT="that describe how the UI should look based on their own state and properties." ID="ID_316601598" CREATED="1515278589469" MODIFIED="1515278592874"/>
+<node TEXT="npm react cli" ID="ID_1146136474" CREATED="1522621535170" MODIFIED="1522621546335">
+<node TEXT="installation" ID="ID_949675496" CREATED="1522621609681" MODIFIED="1522621619534">
+<node TEXT="npm i -g create-react-app" ID="ID_1741156289" CREATED="1522621565649" MODIFIED="1522621578846"/>
 </node>
-<node TEXT="Why should I use ReactJS?" FOLDED="true" ID="ID_1935515619" CREATED="1515278620434" MODIFIED="1515324016705">
-<node TEXT="ReactJS applications are incredibly performant at UI rerendering" ID="ID_1849800554" CREATED="1515278628589" MODIFIED="1515278628589"/>
-<node TEXT="React Components make writing UI components easier" ID="ID_961089749" CREATED="1515278635436" MODIFIED="1515278635436"/>
-<node TEXT="What makes ReactJS so efficient at rerendering?" FOLDED="true" ID="ID_1301101177" CREATED="1515278935116" MODIFIED="1515324015040">
-<node TEXT="React Components are used to generate a Virtual DOM - a light-weight abstraction of the actual HTML DOM. The Virtual DOM is able to be generated much more quickly than the HTML DOM because it does not have to calculate CSS styles and layouts. When a React Component changes state, the Virtual DOM is recreated and the difference between the new Virtual DOM and the previous Virtual DOM is calculated. The ReactJS library then calculates the most efficient way to update the HTML DOM to reflect these changes. This ends up being much faster than regenerating the entire HTML DOM from the top." ID="ID_2187251" CREATED="1515278969363" MODIFIED="1515278969363"/>
+<node TEXT="create new app" ID="ID_1170784122" CREATED="1522621634497" MODIFIED="1522621642614">
+<node TEXT="create-react-app &lt;app-name&gt;" ID="ID_1208739955" CREATED="1522622166525" MODIFIED="1522622182154"/>
 </node>
 </node>
 </node>
@@ -3120,13 +3198,285 @@
 <node TEXT="The state object should only contain the minimal amount of data needed for the UI. Don&apos;t place computed data, other React components, or props in the state object." ID="ID_901219220" CREATED="1515494292392" MODIFIED="1515494292392"/>
 </node>
 </node>
+<node TEXT="The Component Lifecycle" ID="ID_780863661" CREATED="1522624585491" MODIFIED="1522624592376">
+<node TEXT="Each component has several &#x201c;lifecycle methods&#x201d; that you can override to run code at particular times in the process." ID="ID_224871210" CREATED="1522624612251" MODIFIED="1522624617712"/>
+<node ID="ID_144430928" CREATED="1522624632026" MODIFIED="1522624676560"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Methods prefixed with <b>will </b>are called right <b>before</b>&#160;something happens,
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1944545073" CREATED="1522624644802" MODIFIED="1522624688680"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      and methods prefixed with <b>did</b>&#160;are called right <b>after</b>&#160; something happens.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Mounting" ID="ID_744771317" CREATED="1522624703218" MODIFIED="1522624708175">
+<node TEXT="These methods are called when an instance of a component is being created and inserted into the DOM:" ID="ID_204370199" CREATED="1522624800641" MODIFIED="1522624804958"/>
+<node TEXT="methods" ID="ID_508245468" CREATED="1522625107503" MODIFIED="1522625120660">
+<node TEXT="constructor()" ID="ID_1167946362" CREATED="1522624812937" MODIFIED="1522624816494"/>
+<node TEXT="static getDerivedStateFromProps()" ID="ID_293307645" CREATED="1522624838425" MODIFIED="1522624841230"/>
+<node TEXT="componentWillMount() / UNSAFE_componentWillMount()" ID="ID_461299007" CREATED="1522624850073" MODIFIED="1522624859630"/>
+<node TEXT="render()" ID="ID_1531473962" CREATED="1522624861361" MODIFIED="1522624865750"/>
+<node TEXT="componentDidMount()" ID="ID_1125248640" CREATED="1522624873297" MODIFIED="1522624877566"/>
+</node>
+</node>
+<node TEXT="Updating" ID="ID_1119106608" CREATED="1522624724650" MODIFIED="1522624728391">
+<node TEXT="An update can be caused by changes to props or state. These methods are called when a component is being re-rendered:" ID="ID_971893709" CREATED="1522624914288" MODIFIED="1522624916878"/>
+<node TEXT="methods" ID="ID_1384973452" CREATED="1522625135887" MODIFIED="1522625141772">
+<node TEXT="componentWillReceiveProps() / UNSAFE_componentWillReceiveProps()" ID="ID_764468297" CREATED="1522624971344" MODIFIED="1522624975389"/>
+<node TEXT="static getDerivedStateFromProps()" ID="ID_1449181487" CREATED="1522624976360" MODIFIED="1522624984893"/>
+<node TEXT="shouldComponentUpdate()" ID="ID_478500104" CREATED="1522624985680" MODIFIED="1522624994853"/>
+<node TEXT="componentWillUpdate() / UNSAFE_componentWillUpdate()" ID="ID_515873324" CREATED="1522625000768" MODIFIED="1522625006197"/>
+<node TEXT="render()" ID="ID_14616147" CREATED="1522625006952" MODIFIED="1522625016229"/>
+<node TEXT="getSnapshotBeforeUpdate()" ID="ID_1398451208" CREATED="1522625023688" MODIFIED="1522625027702"/>
+<node TEXT="componentDidUpdate()" ID="ID_814910577" CREATED="1522625035680" MODIFIED="1522625039693"/>
+</node>
+</node>
+<node TEXT="Unmounting" ID="ID_800042047" CREATED="1522624744026" MODIFIED="1522624748487">
+<node TEXT="This method is called when a component is being removed from the DOM:" ID="ID_545469151" CREATED="1522625067895" MODIFIED="1522625072277"/>
+<node TEXT="componentWillUnmount()" ID="ID_633740733" CREATED="1522625164855" MODIFIED="1522625169436"/>
+</node>
+<node TEXT="Error Handling" ID="ID_1807840083" CREATED="1522624764730" MODIFIED="1522624797967">
+<node TEXT="This method is called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component." ID="ID_1329218457" CREATED="1522625181654" MODIFIED="1522625186244"/>
+<node TEXT="componentDidCatch()" ID="ID_812235118" CREATED="1522625194790" MODIFIED="1522625198876"/>
+</node>
+</node>
 </node>
 <node TEXT="angular" ID="ID_1778518175" CREATED="1521314662594" MODIFIED="1521314667721"/>
 </node>
 <node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313"/>
 </node>
 <node TEXT="Architecture" ID="ID_1222369571" CREATED="1522617086899" MODIFIED="1522617102043">
-<node TEXT="Redux" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432"/>
+<node TEXT="Redux" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432">
+<node TEXT="introduction" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
+<node TEXT="Redux is a predictable state container for JavaScript apps. It helps developers write applications that behave consistently, run in different environments (client, server, and native), and are easy to test." ID="ID_1211224515" CREATED="1522618885749" MODIFIED="1522618906011"/>
+<node TEXT="Additionally, it provides improvements to the developer experience, like live code editing combined with a time traveling debugger." ID="ID_1994213069" CREATED="1522618909533" MODIFIED="1522618931394"/>
+<node TEXT="Redux can be used together with React, or with other view libraries. The Redux file size is small, 2kB, including dependencies." ID="ID_1457393343" CREATED="1522618950389" MODIFIED="1522618954306"/>
+</node>
+<node TEXT="terminology" ID="ID_1767781134" CREATED="1522619005804" MODIFIED="1522619062345">
+<node TEXT="state" ID="ID_976637588" CREATED="1522619102028" MODIFIED="1522619107905">
+<node TEXT="State (also called the state tree) is a broad term, but in the Redux API it usually refers to the single state value that is managed by the store and returned by getState()" ID="ID_109853515" CREATED="1522619450561" MODIFIED="1522619453888"/>
+<node ID="ID_919135901" CREATED="1522619467809" MODIFIED="1522619487527"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>It represents the entire state of a Redux application</b>, which is often a deeply nested object.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="By convention, the top-level state is an object or some other key-value collection like a Map, but technically it can be any type." ID="ID_351463405" CREATED="1522619547112" MODIFIED="1522619551094"/>
+<node TEXT="Still, you should do your best to keep the state serializable. Don&apos;t put anything inside it that you can&apos;t easily turn into JSON." ID="ID_757080883" CREATED="1522619569408" MODIFIED="1522619573334"/>
+</node>
+<node TEXT="action" ID="ID_1391084089" CREATED="1522619111995" MODIFIED="1522619120265">
+<node TEXT="An action is a plain object that represents an intention to change the state." ID="ID_1265939815" CREATED="1522619203755" MODIFIED="1522619207536"/>
+<node TEXT="Actions are the only way to get data into the store." ID="ID_565796530" CREATED="1522619234003" MODIFIED="1522619237584"/>
+<node TEXT="Any data, whether from UI events, network callbacks, or other sources such as WebSockets needs to eventually be dispatched as actions." ID="ID_517106" CREATED="1522619255563" MODIFIED="1522619259440"/>
+<node ID="ID_1237680772" CREATED="1522619296722" MODIFIED="1522619326585"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Actions must have a type field</b>&#160;that indicates the type of action being performed.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Types can be defined as constants and imported from another module. It&apos;s better to use strings for type than Symbols because strings are serializable." ID="ID_722895341" CREATED="1522619388298" MODIFIED="1522619393391"/>
+<node TEXT="Other than type, the structure of an action object is really up to you." ID="ID_1441813673" CREATED="1522619416889" MODIFIED="1522619420303"/>
+</node>
+<node TEXT="reducer" ID="ID_1033220480" CREATED="1522619128411" MODIFIED="1522619137249">
+<node TEXT="A reducer (also called a reducing function) is a function that accepts an accumulation and a value and returns a new accumulation. They are used to reduce a collection of values down to a single value." ID="ID_1483962171" CREATED="1522619617216" MODIFIED="1522619620965"/>
+<node TEXT="Reducers are not unique to Redux&#x2014;they are a fundamental concept in functional programming." ID="ID_1175675688" CREATED="1522619649784" MODIFIED="1522619653829">
+<node TEXT="Even most non-functional languages, like JavaScript, have a built-in API for reducing. In JavaScript, it&apos;s Array.prototype.reduce()." ID="ID_1678806158" CREATED="1522619710023" MODIFIED="1522619714917"/>
+</node>
+<node ID="ID_668913811" CREATED="1522619739503" MODIFIED="1522619761581"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>In Redux, the accumulated value is the state object, and the values being accumulated are actions.</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Reducers calculate a new state given the previous state and an action." ID="ID_786608455" CREATED="1522619793638" MODIFIED="1522619797340"/>
+<node TEXT="They must be pure functions&#x2014;functions that return the exact same output for given inputs. They should also be free of side-effects. This is what enables exciting features like hot reloading and time travel." ID="ID_828958310" CREATED="1522619816814" MODIFIED="1522619827348"/>
+<node ID="ID_784590371" CREATED="1522619843030" MODIFIED="1522619856036"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Reducers are the most important concept in Redux.</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Dispatching Function" ID="ID_486699287" CREATED="1522619924958" MODIFIED="1522619928787">
+<node TEXT="A dispatching function (or simply dispatch function) is a function that accepts an action or an async action; it then may or may not dispatch one or more actions to the store." ID="ID_533816032" CREATED="1522619945789" MODIFIED="1522619949355"/>
+<node TEXT="We must distinguish between dispatching functions in general and the base dispatch function provided by the store instance without any middleware." ID="ID_1584110292" CREATED="1522620018917" MODIFIED="1522620023082"/>
+<node TEXT="The base dispatch function always synchronously sends an action to the store&apos;s reducer, along with the previous state returned by the store, to calculate a new state. It expects actions to be plain objects ready to be consumed by the reducer." ID="ID_293986832" CREATED="1522620047445" MODIFIED="1522620051218"/>
+<node TEXT="&#x200a;Middleware wraps the base dispatch function. It allows the dispatch function to handle async actions in addition to actions. Middleware may transform, delay, ignore, or otherwise interpret actions or async actions before passing them to the next middleware. See below for more information." ID="ID_1338902460" CREATED="1522620084716" MODIFIED="1522620088386"/>
+</node>
+<node TEXT="action creator" ID="ID_1917752922" CREATED="1522620141676" MODIFIED="1522620151337">
+<node ID="ID_1552571801" CREATED="1522620180732" MODIFIED="1522620202266"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      An action creator is, quite simply, a function that creates an action. Do not confuse the two terms&#8212;again, <b>an action is a payload of information, and an action creator is a factory that creates an action.</b>
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="Calling an action creator only produces an action, but does not dispatch it." ID="ID_419348309" CREATED="1522620232491" MODIFIED="1522620236025">
+<node TEXT="You need to call the store&apos;s dispatch function to actually cause the mutation." ID="ID_87944580" CREATED="1522620261739" MODIFIED="1522620270456"/>
+<node TEXT="Sometimes we say bound action creators to mean functions that call an action creator and immediately dispatch its result to a specific store instance." ID="ID_425912857" CREATED="1522620291907" MODIFIED="1522620300192"/>
+</node>
+<node TEXT="If an action creator needs to read the current state, perform an API call, or cause a side effect, like a routing transition, it should return an async action instead of an action." ID="ID_160417724" CREATED="1522620333810" MODIFIED="1522620337632"/>
+</node>
+<node TEXT="async action" ID="ID_489458546" CREATED="1522620418226" MODIFIED="1522620433415">
+<node TEXT="An async action is a value that is sent to a dispatching function, but is not yet ready for consumption by the reducer." ID="ID_613018791" CREATED="1522620450962" MODIFIED="1522620454735"/>
+<node TEXT="It will be transformed by middleware into an action (or a series of actions) before being sent to the base dispatch() function." ID="ID_342307227" CREATED="1522620468377" MODIFIED="1522620470431"/>
+<node TEXT="Async actions may have different types, depending on the middleware you use." ID="ID_1241688918" CREATED="1522620510233" MODIFIED="1522620515414">
+<node TEXT="They are often asynchronous primitives, like a Promise or a thunk, which are not passed to the reducer immediately, but trigger action dispatches once an operation has completed." ID="ID_289206944" CREATED="1522620530681" MODIFIED="1522620535782"/>
+</node>
+</node>
+<node TEXT="middleware" ID="ID_1666993751" CREATED="1522620545417" MODIFIED="1522620556830">
+<node TEXT="A middleware is a higher-order function that composes a dispatch function to return a new dispatch function. It often turns async actions into actions." ID="ID_1934890055" CREATED="1522620580233" MODIFIED="1522620587654"/>
+<node TEXT="Middleware is composable using function composition. It is useful for logging actions, performing side effects like routing, or turning an asynchronous API call into a series of synchronous actions." ID="ID_639636260" CREATED="1522620605208" MODIFIED="1522620609358"/>
+</node>
+<node TEXT="store" ID="ID_1375579091" CREATED="1522620629224" MODIFIED="1522620635638">
+<node TEXT="A store is an object that holds the application&apos;s state tree." ID="ID_1394617328" CREATED="1522620657112" MODIFIED="1522620659253"/>
+<node TEXT="There should only be a single store in a Redux app, as the composition happens on the reducer level." ID="ID_834992405" CREATED="1522620674960" MODIFIED="1522620679413"/>
+<node TEXT="methods" ID="ID_391715616" CREATED="1522620729103" MODIFIED="1522620735533">
+<node ID="ID_295822283" CREATED="1522620757039" MODIFIED="1522620810805"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>dispatch(action) </b>is the base dispatch function described above.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_410061313" CREATED="1522620770079" MODIFIED="1522620823813"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>&#8202;getState()</b>&#160;returns the current state of the store.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_289026830" CREATED="1522620784295" MODIFIED="1522620833196"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>subscribe(listener)</b>&#160;registers a function to be called on state changes.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_220837" CREATED="1522620798119" MODIFIED="1522620843981"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>replaceReducer(nextReducer)</b>&#160;can be used to implement hot reloading and code splitting. Most likely you won't use it.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="store creator" ID="ID_1759618484" CREATED="1522620867623" MODIFIED="1522620877316">
+<node TEXT="A store creator is a function that creates a Redux store." ID="ID_206446507" CREATED="1522620896998" MODIFIED="1522620901068"/>
+<node TEXT="Like with dispatching function, we must distinguish the base store creator, createStore(reducer, preloadedState) exported from the Redux package, from store creators that are returned from the store enhancers." ID="ID_159298036" CREATED="1522620924638" MODIFIED="1522620928627"/>
+</node>
+<node TEXT="store enhancer" ID="ID_983418670" CREATED="1522620880998" MODIFIED="1522620888308">
+<node TEXT="A store enhancer is a higher-order function that composes a store creator to return a new, enhanced store creator." ID="ID_1505326299" CREATED="1522620954862" MODIFIED="1522620961019"/>
+<node TEXT="This is similar to middleware in that it allows you to alter the store interface in a composable way." ID="ID_1996836697" CREATED="1522620973870" MODIFIED="1522620978339"/>
+<node TEXT="Store enhancers are much the same concept as higher-order components in React, which are also occasionally called &#x201c;component enhancers&#x201d;." ID="ID_711336039" CREATED="1522621005653" MODIFIED="1522621008203"/>
+<node TEXT="Because a store is not an instance, but rather a plain-object collection of functions, copies can be easily created and modified without mutating the original store." ID="ID_946320417" CREATED="1522621036829" MODIFIED="1522621040722"/>
+<node TEXT="Most likely you&apos;ll never write a store enhancer, but you may use the one provided by the developer tools. It is what makes time travel possible without the app being aware it is happening. Amusingly, the Redux middleware implementation is itself a store enhancer." ID="ID_1077282299" CREATED="1522621067973" MODIFIED="1522621073546"/>
+</node>
+</node>
+</node>
+<node TEXT="data flow" ID="ID_771678683" CREATED="1522621091693" MODIFIED="1522621101490">
+<node TEXT="redux-data-flow.png" ID="ID_141702417" CREATED="1522621130796" MODIFIED="1522621130796">
+<hook URI="webdevelopment2_files/redux-data-flow.png" SIZE="0.94043887" NAME="ExternalObject"/>
+</node>
+</node>
+</node>
 <node TEXT="Mobx" ID="ID_1204779131" CREATED="1522617485512" MODIFIED="1522617497325"/>
 </node>
 </node>
@@ -3915,7 +4265,6 @@
 <node TEXT="https://testmysite.withgoogle.com/intl/en-gb" ID="ID_1953440308" CREATED="1517838500036" MODIFIED="1517838500036" LINK="https://testmysite.withgoogle.com/intl/en-gb"/>
 <node TEXT="https://www.npmjs.com/package/webpack-bundle-analyzer" ID="ID_1542456321" CREATED="1517841584063" MODIFIED="1517841584063" LINK="https://www.npmjs.com/package/webpack-bundle-analyzer"/>
 <node TEXT="http://www.cs.ucc.ie/~gavin/javascript/05_JS4.html" ID="ID_456245604" CREATED="1518088710918" MODIFIED="1518088710918" LINK="http://www.cs.ucc.ie/~gavin/javascript/05_JS4.html"/>
-<node TEXT="https://hackernoon.com/" ID="ID_1877415063" CREATED="1518166662524" MODIFIED="1518166662524" LINK="https://hackernoon.com/"/>
 <node TEXT="http://vanseodesign.com/css/vertical-centering/" ID="ID_192734385" CREATED="1518166978288" MODIFIED="1518166978288" LINK="http://vanseodesign.com/css/vertical-centering/"/>
 <node TEXT="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b" ID="ID_1358236291" CREATED="1519059367226" MODIFIED="1519059367226" LINK="https://medium.com/dailyjs/7-hacks-for-es6-developers-4e24ff425d0b"/>
 <node TEXT="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" ID="ID_236529775" CREATED="1519898225296" MODIFIED="1519898231796"/>
@@ -3939,8 +4288,10 @@
 <node TEXT="https://suitcss.github.io/" ID="ID_1738288282" CREATED="1521644878730" MODIFIED="1521644878730" LINK="https://suitcss.github.io/"/>
 <node TEXT="https://en.wikipedia.org/wiki/Rule_110" ID="ID_1261953291" CREATED="1521713886833" MODIFIED="1521713889689"/>
 <node TEXT="https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens" ID="ID_1158572188" CREATED="1521713983529" MODIFIED="1521713998186"/>
-<node TEXT="https://css-tricks.com/almanac/" ID="ID_634666562" CREATED="1522162180113" MODIFIED="1522162183706"/>
 <node TEXT="https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance" ID="ID_726683773" CREATED="1522230178450" MODIFIED="1522230178450" LINK="https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance"/>
+<node TEXT="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w/videos" ID="ID_1419995867" CREATED="1522621870639" MODIFIED="1522621870639" LINK="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w/videos"/>
+<node TEXT="https://www.youtube.com/channel/UCCHcJejvdlXxLlG0encr53Q/playlists" ID="ID_1395782973" CREATED="1522622565458" MODIFIED="1522622569247"/>
+<node TEXT="https://www.youtube.com/watch?v=SGOFxK-28ns&amp;list=PL2dKqfImstaSl8Hi6UrovwraEHvK2MNPt" ID="ID_1229224787" CREATED="1522622617562" MODIFIED="1522622621095"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -4101,11 +4452,11 @@
 </node>
 </node>
 </node>
-<node TEXT="break on change" LOCALIZED_STYLE_REF="defaultstyle.attributes" ID="ID_256316626" CREATED="1520975547488" MODIFIED="1520975619405">
+<node TEXT="break on change" LOCALIZED_STYLE_REF="defaultstyle.attributes" FOLDED="true" ID="ID_256316626" CREATED="1520975547488" MODIFIED="1522618168824">
 <node TEXT="Want to know which javascript bit change your element?" ID="ID_1149838229" CREATED="1520975624092" MODIFIED="1520975662469"/>
 <node TEXT="open dev tools" ID="ID_1766022263" CREATED="1520975670684" MODIFIED="1520975683581"/>
 <node TEXT="right click the desired element" ID="ID_388539166" CREATED="1520975691827" MODIFIED="1520975711445"/>
-<node TEXT="select break on" ID="ID_1837977877" CREATED="1520975720947" MODIFIED="1520975743141"/>
+<node TEXT="select break on" ID="ID_1837977877" CREATED="1520975720947" MODIFIED="1522618168824"/>
 <node TEXT="choose between:" ID="ID_1542733136" CREATED="1520975752411" MODIFIED="1520975884100">
 <node TEXT="break on attribute change" ID="ID_874639349" CREATED="1520975890840" MODIFIED="1520975904827"/>
 <node ID="ID_553114567" CREATED="1520975909116" MODIFIED="1520975909116"><richcontent TYPE="NODE">
@@ -4350,6 +4701,7 @@
 <node TEXT="https://www.smashingmagazine.com/" ID="ID_668516788" CREATED="1522223246794" MODIFIED="1522223246794" LINK="https://www.smashingmagazine.com/"/>
 <node TEXT="http://alistapart.com/" ID="ID_1300370293" CREATED="1522223336703" MODIFIED="1522223336703" LINK="http://alistapart.com/"/>
 <node TEXT="https://www.javascript.com/" ID="ID_574301536" CREATED="1522224567104" MODIFIED="1522224567104" LINK="https://www.javascript.com/"/>
+<node TEXT="https://hackernoon.com/" ID="ID_1877415063" CREATED="1518166662524" MODIFIED="1518166662524" LINK="https://hackernoon.com/"/>
 </node>
 <node TEXT="learning" ID="ID_1263329411" CREATED="1520801676106" MODIFIED="1520801695191">
 <node TEXT="interactive" ID="ID_1145864293" CREATED="1520801691298" MODIFIED="1520801709151">
@@ -4387,6 +4739,7 @@
 <node TEXT="Protocols" POSITION="right" ID="ID_155934142" CREATED="1520803096799" MODIFIED="1520803121593">
 <edge COLOR="#808080"/>
 <node TEXT="http" ID="ID_1251503067" CREATED="1520803131687" MODIFIED="1520803136161"/>
+<node TEXT="https" ID="ID_1210591709" CREATED="1522618188274" MODIFIED="1522618193256"/>
 </node>
 </node>
 </map>
