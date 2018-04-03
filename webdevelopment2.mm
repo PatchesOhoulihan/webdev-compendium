@@ -2580,19 +2580,94 @@
 <node TEXT="spreadoperator" ID="ID_1513748660" CREATED="1522713970661" MODIFIED="1522713979728"/>
 </node>
 <node TEXT="Control flow" ID="ID_265187798" CREATED="1522708180202" MODIFIED="1522708200343"/>
-<node TEXT="Loops and iteration" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1522708158383">
-<node TEXT="for statement" ID="ID_667345979" CREATED="1522708285849" MODIFIED="1522708288430"/>
-<node TEXT="do...while statement" ID="ID_1713309196" CREATED="1522708296873" MODIFIED="1522708301590"/>
-<node TEXT="while statement" ID="ID_1740234502" CREATED="1522708310319" MODIFIED="1522708314286"/>
-<node TEXT="labeled statement" ID="ID_73755514" CREATED="1522708329596" MODIFIED="1522708334190"/>
-<node TEXT="break statement" ID="ID_1346248177" CREATED="1522708346004" MODIFIED="1522708356846"/>
-<node TEXT="continue statement" ID="ID_1564764735" CREATED="1522708357986" MODIFIED="1522708362878"/>
-<node TEXT="for...of statement" ID="ID_1360925004" CREATED="1522708425876" MODIFIED="1522708429613"/>
-<node TEXT="for...in statement" ID="ID_1889645923" CREATED="1522708438756" MODIFIED="1522708471309"/>
+<node TEXT="Loops and iteration" FOLDED="true" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1522708158383">
+<node TEXT="for statement" FOLDED="true" ID="ID_667345979" CREATED="1522708285849" MODIFIED="1522708288430">
+<node TEXT="A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop. A for statement looks as follows:" ID="ID_902639572" CREATED="1522756947134" MODIFIED="1522756951777"/>
+<node TEXT="example" FOLDED="true" ID="ID_1362468226" CREATED="1522756973931" MODIFIED="1522756979609">
+<node TEXT="  for (var i = 0; i &lt; selectObject.options.length; i++) {&#xa;    if (selectObject.options[i].selected) {&#xa;      numberSelected++;&#xa;    }&#xa;  }" ID="ID_521045120" CREATED="1522757004378" MODIFIED="1522757009097"/>
+</node>
+</node>
+<node TEXT="do...while statement" FOLDED="true" ID="ID_1713309196" CREATED="1522708296873" MODIFIED="1522708301590">
+<node TEXT="The do...while statement repeats until a specified condition evaluates to false. A do...while statement looks as follows:" ID="ID_799098188" CREATED="1522757034026" MODIFIED="1522757038688"/>
+<node TEXT="do&#xa;  statement&#xa;while (condition);" ID="ID_1950791126" CREATED="1522757051277" MODIFIED="1522757055424"/>
+<node TEXT="statement executes once before the condition is checked. To execute multiple statements, use a block statement ({ ... }) to group those statements." ID="ID_784480257" CREATED="1522757076595" MODIFIED="1522757083192"/>
+<node TEXT=" If condition is true, the statement executes again." ID="ID_693349636" CREATED="1522757129716" MODIFIED="1522757134488"/>
+<node TEXT="At the end of every execution, the condition is checked. When the condition is false, execution stops and control passes to the statement following do...while." ID="ID_638822175" CREATED="1522757146360" MODIFIED="1522757150600"/>
+<node TEXT="example" FOLDED="true" ID="ID_1714858673" CREATED="1522757210476" MODIFIED="1522757216799">
+<node TEXT="var i = 0;&#xa;&#xa;do {&#xa;  i += 1;&#xa;  console.log(i);&#xa;} while (i &lt; 5);" ID="ID_1134951724" CREATED="1522757220905" MODIFIED="1522757257095"/>
+</node>
+</node>
+<node TEXT="while statement" FOLDED="true" ID="ID_1740234502" CREATED="1522708310319" MODIFIED="1522708314286">
+<node TEXT="A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:" ID="ID_1050616559" CREATED="1522757120897" MODIFIED="1522757278919"/>
+<node TEXT="while (condition)&#xa;  statement" ID="ID_1362891175" CREATED="1522757290495" MODIFIED="1522757299023"/>
+<node TEXT="If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop." ID="ID_575941647" CREATED="1522757326545" MODIFIED="1522757332863"/>
+<node TEXT="example" FOLDED="true" ID="ID_1290680711" CREATED="1522757386937" MODIFIED="1522757393902">
+<node TEXT="var n = 0;&#xa;var x = 0;&#xa;&#xa;while (n &lt; 3) {&#xa;  n++;&#xa;  x += n;&#xa;}" ID="ID_117375208" CREATED="1522757397816" MODIFIED="1522757408206"/>
+</node>
+</node>
+<node TEXT="labeled statement" FOLDED="true" ID="ID_73755514" CREATED="1522708329596" MODIFIED="1522708334190">
+<node TEXT="A label provides a statement with an identifier that lets you refer to it elsewhere in your program." ID="ID_714373010" CREATED="1522757465526" MODIFIED="1522757470501"/>
+<node TEXT="For example, you can use a label to identify a loop, and then use the break or continue statements to indicate whether a program should interrupt the loop or continue its execution." ID="ID_654929764" CREATED="1522757491152" MODIFIED="1522757496525"/>
+<node TEXT="label :&#xa;   statement" ID="ID_1962502862" CREATED="1522757521109" MODIFIED="1522757525381"/>
+<node TEXT="The value of label may be any JavaScript identifier that is not a reserved word. The statement that you identify with a label may be any statement." ID="ID_1564517783" CREATED="1522757586478" MODIFIED="1522757590828"/>
+<node TEXT="example" FOLDED="true" ID="ID_1145935442" CREATED="1522757531035" MODIFIED="1522757543869">
+<node TEXT="markLoop:&#xa;while (theMark == true) {&#xa;   doSomething();&#xa;}" ID="ID_20416052" CREATED="1522757668858" MODIFIED="1522757673628"/>
+</node>
+</node>
+<node TEXT="break statement" FOLDED="true" ID="ID_1346248177" CREATED="1522708346004" MODIFIED="1522708356846">
+<node TEXT="Use the break statement to terminate a loop, switch, or in conjunction with a labeled statement." FOLDED="true" ID="ID_672875339" CREATED="1522757702954" MODIFIED="1522757707708">
+<node TEXT="When you use break without a label, it terminates the innermost enclosing while, do-while, for, or switch immediately and transfers control to the following statement." ID="ID_997993257" CREATED="1522757781674" MODIFIED="1522757787571"/>
+<node TEXT="When you use break with a label, it terminates the specified labeled statement." ID="ID_1330796586" CREATED="1522757795129" MODIFIED="1522757798971"/>
+</node>
+<node TEXT="break [label];" ID="ID_436762466" CREATED="1522757832619" MODIFIED="1522757836843"/>
+<node TEXT="example" FOLDED="true" ID="ID_456896896" CREATED="1522757855665" MODIFIED="1522757864786">
+<node TEXT="basic" FOLDED="true" ID="ID_335037888" CREATED="1522757883590" MODIFIED="1522757888802">
+<node TEXT="The following example iterates through the elements in an array until it finds the index of an element whose value is theValue:" ID="ID_1524199132" CREATED="1522757919490" MODIFIED="1522757923810"/>
+<node TEXT="for (var i = 0; i &lt; a.length; i++) {&#xa;  if (a[i] == theValue) {&#xa;    break;&#xa;  }&#xa;}" ID="ID_220781440" CREATED="1522757935419" MODIFIED="1522757940274"/>
+</node>
+<node TEXT="Breaking to a label" ID="ID_1444687587" CREATED="1522757896650" MODIFIED="1522757900554"/>
+<node TEXT="var x = 0;&#xa;var z = 0;&#xa;&#xa;labelCancelLoops: while (true) {&#xa;  console.log(&apos;Outer loops: &apos; + x);&#xa;  x += 1;&#xa;  z = 1;&#xa;&#xa;  while (true) {&#xa;    console.log(&apos;Inner loops: &apos; + z);&#xa;    z += 1;&#xa;    if (z === 10 &amp;&amp; x === 10) {&#xa;      break labelCancelLoops;&#xa;    } else if (z === 10) {&#xa;      break;&#xa;    }&#xa;  }&#xa;}" ID="ID_345497190" CREATED="1522757967594" MODIFIED="1522757998435"/>
+</node>
+</node>
+<node TEXT="continue statement" FOLDED="true" ID="ID_1564764735" CREATED="1522708357986" MODIFIED="1522708362878">
+<node TEXT="The continue statement can be used to restart a while, do-while, for, or label statement." FOLDED="true" ID="ID_1775585673" CREATED="1522758051287" MODIFIED="1522758056049">
+<node TEXT="When you use continue without a label, it terminates the current iteration of the innermost enclosing while, do-while, or for statement and continues execution of the loop with the next iteration." ID="ID_764891635" CREATED="1522758094673" MODIFIED="1522758098769"/>
+<node TEXT="In contrast to the break statement, continue does not terminate the execution of the loop entirely. In a while loop, it jumps back to the condition. In a for loop, it jumps to the increment-expression." ID="ID_1851450169" CREATED="1522758161817" MODIFIED="1522758166520"/>
+<node TEXT="When you use continue with a label, it applies to the looping statement identified with that label." ID="ID_1869367269" CREATED="1522758188317" MODIFIED="1522758192832"/>
+</node>
+<node TEXT="continue [label];" ID="ID_963326263" CREATED="1522758304627" MODIFIED="1522758310527"/>
+<node TEXT="example" FOLDED="true" ID="ID_44752801" CREATED="1522758314940" MODIFIED="1522758321359">
+<node TEXT="basic" FOLDED="true" ID="ID_43070641" CREATED="1522758390330" MODIFIED="1522758395591">
+<node TEXT="The following example shows a while loop with a continue statement that executes when the value of i is three. Thus, n takes on the values one, three, seven, and twelve." ID="ID_733176176" CREATED="1522758441858" MODIFIED="1522758446158"/>
+<node TEXT="var i = 0;&#xa;var n = 0;&#xa;&#xa;while (i &lt; 5) {&#xa;  i++;&#xa;  if (i == 3) {&#xa;    continue;&#xa;  }&#xa;  n += i;&#xa;}" ID="ID_1847979440" CREATED="1522758463254" MODIFIED="1522758492751"/>
+</node>
+<node TEXT="with label" FOLDED="true" ID="ID_1936909204" CREATED="1522758399490" MODIFIED="1522758405751">
+<node TEXT="A statement labeled checkiandj contains a statement labeled checkj. If continue is encountered, the program terminates the current iteration of checkj and begins the next iteration." ID="ID_1436995553" CREATED="1522758543589" MODIFIED="1522758548006"/>
+<node TEXT="Each time continue is encountered, checkj reiterates until its condition returns false." ID="ID_1312642452" CREATED="1522758577795" MODIFIED="1522758583933"/>
+<node TEXT="When false is returned, the remainder of the checkiandj statement is completed, and checkiandj reiterates until its condition returns false." ID="ID_594262743" CREATED="1522758599528" MODIFIED="1522758604133"/>
+<node TEXT="When false is returned, the program continues at the statement following checkiandj." ID="ID_365969812" CREATED="1522758619005" MODIFIED="1522758623205"/>
+<node TEXT="If continue had a label of checkiandj, the program would continue at the top of the checkiandj statement." ID="ID_618379907" CREATED="1522758639159" MODIFIED="1522758643709"/>
+<node TEXT="var i = 0;&#xa;var j = 10;&#xa;&#xa;checkiandj:&#xa;  while (i &lt; 4) {&#xa;    console.log(i);&#xa;    i += 1;&#xa;    checkj:&#xa;      while (j &gt; 4) {&#xa;        console.log(j);&#xa;        j -= 1;&#xa;        if ((j % 2) == 0) {&#xa;          continue checkj;&#xa;        }&#xa;        console.log(j + &apos; is odd.&apos;);&#xa;      }&#xa;      console.log(&apos;i = &apos; + i);&#xa;      console.log(&apos;j = &apos; + j);&#xa;  }" ID="ID_1453405815" CREATED="1522758653702" MODIFIED="1522758680222"/>
+</node>
+</node>
+</node>
+<node TEXT="for...in statement" FOLDED="true" ID="ID_1360925004" CREATED="1522708425876" MODIFIED="1522759001625">
+<node TEXT="The for...in statement iterates a specified variable over all the enumerable properties of an object. For each distinct property, JavaScript executes the specified statements. A for...in statement looks as follows:" ID="ID_1237182121" CREATED="1522758700427" MODIFIED="1522758702701"/>
+<node TEXT="for (variable in object) {&#xa;  statements&#xa;}" ID="ID_50650819" CREATED="1522758718094" MODIFIED="1522758723132"/>
+<node TEXT="example" FOLDED="true" ID="ID_1668398960" CREATED="1522759136790" MODIFIED="1522759165473">
+<node TEXT="var arr = [3, 5, 7];&#xa;arr.foo = &apos;hello&apos;;&#xa;&#xa;for (var i in arr) {&#xa;   console.log(i);   // logs &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;foo&quot;&#xa;}" ID="ID_1793895669" CREATED="1522759225667" MODIFIED="1522759250345"/>
+</node>
+</node>
+<node TEXT="for...of statement" FOLDED="true" ID="ID_1889645923" CREATED="1522708438756" MODIFIED="1522759018770">
+<node TEXT="The for...of statement creates a loop Iterating over iterable objects (including Array, Map, Set, arguments object and so on), invoking a custom iteration hook with statements to be executed for the value of each distinct property." ID="ID_1705445778" CREATED="1522758856749" MODIFIED="1522758860499"/>
+<node TEXT="for (variable of object) {&#xa;  statement&#xa;}" ID="ID_830965236" CREATED="1522758910948" MODIFIED="1522758918283"/>
+<node TEXT="example" FOLDED="true" ID="ID_927473495" CREATED="1522759171147" MODIFIED="1522759178969">
+<node TEXT="var arr = [3, 5, 7];&#xa;arr.foo = &apos;hello&apos;;&#xa;&#xa;for (var i of arr) {&#xa;   console.log(i); // logs 3, 5, 7&#xa;}" ID="ID_1627773639" CREATED="1522759257246" MODIFIED="1522759268209"/>
+</node>
+</node>
 </node>
 <node TEXT="error handling" ID="ID_836948526" CREATED="1522708182779" MODIFIED="1522708212543"/>
 <node TEXT="Standard built-in objects" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
-<node TEXT="This chapter documents all of JavaScript&apos;s standard, built-in objects, including their methods and properties." ID="ID_731718304" CREATED="1521190331107" MODIFIED="1521190335454"/>
 <node TEXT="The term &quot;global objects&quot; (or standard built-in objects) here is not to be confused with the global object. Here, global objects refer to objects in the global scope." ID="ID_276062820" CREATED="1521190358395" MODIFIED="1521190363389"/>
 <node TEXT="The global object itself can be accessed using the this operator in the global scope (but only if ECMAScript 5 strict mode is not used; in that case it returns undefined)." ID="ID_376537155" CREATED="1521190401587" MODIFIED="1521190411781"/>
 <node TEXT=" In fact, the global scope consists of the properties of the global object, including inherited properties, if any." ID="ID_867838805" CREATED="1521190580052" MODIFIED="1521190583581"/>
