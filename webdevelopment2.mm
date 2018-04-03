@@ -304,12 +304,12 @@
 </node>
 </node>
 </node>
-<node TEXT="Demarcating edits" FOLDED="true" ID="ID_202686193" CREATED="1520592098718" MODIFIED="1520592105958">
+<node TEXT="Demarcating edits" ID="ID_202686193" CREATED="1520592098718" MODIFIED="1520592105958">
 <node TEXT="These elements let you provide indications that specific parts of the text have been altered." ID="ID_1123692602" CREATED="1520727782527" MODIFIED="1520727787551"/>
 <node TEXT="&lt;del&gt;" ID="ID_700220872" CREATED="1520592892163" MODIFIED="1520592896900"/>
 <node TEXT="&lt;ins&gt;" ID="ID_256794353" CREATED="1520592905579" MODIFIED="1520592909980"/>
 </node>
-<node TEXT="Table content" FOLDED="true" ID="ID_523038220" CREATED="1520592115310" MODIFIED="1520728063650">
+<node TEXT="Table content" ID="ID_523038220" CREATED="1520592115310" MODIFIED="1520728063650">
 <node TEXT="The elements here are used to create and handle tabular data." ID="ID_798873591" CREATED="1520727814195" MODIFIED="1520727817551"/>
 <node TEXT="&lt;caption&gt;" ID="ID_71380728" CREATED="1520727946411" MODIFIED="1520727949494"/>
 <node TEXT="&lt;col&gt;" ID="ID_194488583" CREATED="1520727957635" MODIFIED="1520727961062"/>
@@ -538,7 +538,7 @@
 </node>
 <node TEXT="Obsolete and deprecated elements" ID="ID_315398082" CREATED="1520592191358" MODIFIED="1520592276840"/>
 </node>
-<node TEXT="Global attributes" FOLDED="true" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
+<node TEXT="Global attributes" ID="ID_259941935" CREATED="1517827655668" MODIFIED="1517827704307">
 <node TEXT="Global attributes are attributes common to all HTML elements; they can be used on all elements, though they may have no effect on some elements." ID="ID_489227557" CREATED="1520172307612" MODIFIED="1520172312937"/>
 <node TEXT="Global attributes may be specified on all HTML elements, even those not specified in the standard." FOLDED="true" ID="ID_966516826" CREATED="1520172331188" MODIFIED="1520172336504">
 <node TEXT="That means that any non-standard elements must still permit these attributes, even though using those elements means that the document is no longer HTML5-compliant." ID="ID_1736452133" CREATED="1520172374548" MODIFIED="1520172379983"/>
@@ -600,7 +600,7 @@
 </node>
 </node>
 </node>
-<node TEXT="User Interaction" FOLDED="true" ID="ID_134700370" CREATED="1520173429324" MODIFIED="1520728894904">
+<node TEXT="User Interaction" ID="ID_134700370" CREATED="1520173429324" MODIFIED="1520728894904">
 <node TEXT="accesskey" FOLDED="true" ID="ID_238561868" CREATED="1520173468683" MODIFIED="1520173471855">
 <node TEXT="Associates a keyboard shortcut to an element." ID="ID_568393313" CREATED="1520173579490" MODIFIED="1520173579490"/>
 <node TEXT="values" FOLDED="true" ID="ID_1354578351" CREATED="1520173793481" MODIFIED="1520173796781">
@@ -696,7 +696,7 @@
 </node>
 <node TEXT="draggable" FOLDED="true" ID="ID_1083080441" CREATED="1520173535691" MODIFIED="1520173539563">
 <node TEXT="States if an element is draggable, typically used to facilitate drag and drop. Should always be accompanied by a title attribute as an accessibility consideration." ID="ID_284434919" CREATED="1520173672338" MODIFIED="1520173676558"/>
-<node TEXT="values" FOLDED="true" ID="ID_18106220" CREATED="1520173839905" MODIFIED="1520173843812">
+<node TEXT="values" ID="ID_18106220" CREATED="1520173839905" MODIFIED="1520173843812">
 <node TEXT="true" ID="ID_1327488783" CREATED="1520173967992" MODIFIED="1520173973147"/>
 <node TEXT="false" ID="ID_254464979" CREATED="1520173975631" MODIFIED="1520173984227"/>
 <node TEXT="none (auto)" ID="ID_1013711282" CREATED="1520174091487" MODIFIED="1520174102690"/>
@@ -722,7 +722,9 @@
 <node TEXT="data-*" FOLDED="true" ID="ID_1446111548" CREATED="1520174666299" MODIFIED="1520174674134">
 <node TEXT="Forms a class of attributes, called custom data attributes, that allow proprietary information to be exchanged between the HTML and its DOM representation that may be used by scripts. All such custom data are available via the HTMLElement interface of the element the attribute is set on. The HTMLElement.dataset property gives access to them." ID="ID_987646576" CREATED="1520174690578" MODIFIED="1520174696598"/>
 </node>
-<node TEXT="html events" FOLDED="true" ID="ID_816931101" CREATED="1520174966528" MODIFIED="1520175375976">
+<node TEXT="html events" ID="ID_816931101" CREATED="1520174966528" MODIFIED="1520175375976">
+<node TEXT="HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document." ID="ID_561440711" CREATED="1522750707790" MODIFIED="1522750713621"/>
+<node TEXT="Events are normally used in combination with functions, and the function will not be executed before the event occurs (such as when a user clicks a button)." ID="ID_1337323341" CREATED="1522750738295" MODIFIED="1522750743276"/>
 <node TEXT="Window Event Attributes" FOLDED="true" ID="ID_1980096227" CREATED="1520175427085" MODIFIED="1520175477465">
 <node TEXT="Events triggered for the window object (applies to the &lt;body&gt; tag):" ID="ID_1057171305" CREATED="1520175970380" MODIFIED="1520175979445"/>
 <node TEXT="printing the Site" FOLDED="true" ID="ID_63258499" CREATED="1520176058032" MODIFIED="1520176069659">
@@ -869,13 +871,13 @@
 </node>
 <node TEXT="aria-*" ID="ID_93471121" CREATED="1520175005320" MODIFIED="1520175008531"/>
 </node>
-<node TEXT="Validatoren" FOLDED="true" ID="ID_1055361650" CREATED="1520104471918" MODIFIED="1520104479277">
+<node TEXT="Validatoren" ID="ID_1055361650" CREATED="1520104471918" MODIFIED="1520104479277">
 <node TEXT="WC3 Validatoren" FOLDED="true" ID="ID_587023938" CREATED="1520170128415" MODIFIED="1520170145709">
 <node TEXT="For almost 15 years, the W3C has been developing and hosting free and open source tools used every day by millions of Web developers and Web designers. All the tools listed below are Web-based, and are available as downloadable sources or as free services on the W3C Developers tools site." ID="ID_1831671025" CREATED="1520170276955" MODIFIED="1520170312471"/>
 <node TEXT="http://w3c.github.io/developers/tools/" ID="ID_1691254472" CREATED="1520170331760" MODIFIED="1520170331760" LINK="http://w3c.github.io/developers/tools/"/>
 </node>
 </node>
-<node TEXT="Best Practise" FOLDED="true" ID="ID_589177114" CREATED="1517780648521" MODIFIED="1520193341531">
+<node TEXT="Best Practise" ID="ID_589177114" CREATED="1517780648521" MODIFIED="1520193341531">
 <node TEXT="Head" FOLDED="true" ID="ID_1301576260" CREATED="1517780802504" MODIFIED="1520193341531">
 <node TEXT="Doctype" FOLDED="true" ID="ID_1597176771" CREATED="1517780835863" MODIFIED="1517780844101">
 <node TEXT="Doctype: The Doctype is HTML5 and is at the top of all your HTML pages." ID="ID_164583589" CREATED="1517780856689" MODIFIED="1517780856689"/>
@@ -1029,8 +1031,8 @@
 <node TEXT="1. Inline style (inside an HTML element)&#xa;2. External and internal style sheets (in the head section)&#xa;3. Browser default" ID="ID_812367423" CREATED="1519591619160" MODIFIED="1519591882873"/>
 </node>
 </node>
-<node TEXT="Selectors" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
-<node TEXT="Simple selectors" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
+<node TEXT="Selectors" FOLDED="true" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
+<node TEXT="Simple selectors" FOLDED="true" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
 <node TEXT="Type selector" FOLDED="true" ID="ID_835537567" CREATED="1519516109081" MODIFIED="1519516113404">
 <node TEXT="Selects all elements that match the given node name." ID="ID_1746383443" CREATED="1519516234152" MODIFIED="1519516237323"/>
 <node TEXT="Syntax: elementname" ID="ID_1020689451" CREATED="1519516246632" MODIFIED="1519516258043"/>
@@ -1039,7 +1041,7 @@
 <node TEXT="Class selector" FOLDED="true" ID="ID_78596722" CREATED="1519516130281" MODIFIED="1519516140814">
 <node TEXT="Selects all elements that have the given class attribute." ID="ID_328956790" CREATED="1519516298888" MODIFIED="1519516302138"/>
 <node TEXT="Syntax: .classname" ID="ID_1674729382" CREATED="1519516309640" MODIFIED="1519516312802"/>
-<node TEXT="Examples:" ID="ID_1413375340" CREATED="1519516320616" MODIFIED="1520803903835">
+<node TEXT="Examples:" FOLDED="true" ID="ID_1413375340" CREATED="1519516320616" MODIFIED="1520803903835">
 <node ID="ID_148585936" CREATED="1520803907877" MODIFIED="1520803907877"><richcontent TYPE="NODE">
 
 <html>
@@ -1054,7 +1056,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Combine the Class Selector" ID="ID_566063322" CREATED="1520803921480" MODIFIED="1520803927779">
+<node TEXT="Combine the Class Selector" FOLDED="true" ID="ID_566063322" CREATED="1520803921480" MODIFIED="1520803927779">
 <node TEXT="ul.important" ID="ID_459094117" CREATED="1520803937968" MODIFIED="1520803940547"/>
 <node TEXT="selects all ul elements that have class=&quot;important&quot;" ID="ID_795924207" CREATED="1520803952608" MODIFIED="1520803956786"/>
 </node>
@@ -1068,7 +1070,7 @@
 <node TEXT="Universal selector" FOLDED="true" ID="ID_817231035" CREATED="1519516159105" MODIFIED="1519516171012">
 <node TEXT="Selects all elements. Optionally, it may be restricted to a specific namespace or to all namespaces." ID="ID_903491747" CREATED="1519516512774" MODIFIED="1519516515753"/>
 <node TEXT="Syntax: * namespace|* *|*" ID="ID_1007987936" CREATED="1519516524246" MODIFIED="1520804560054"/>
-<node TEXT="Examples:" ID="ID_561692138" CREATED="1519516535153" MODIFIED="1520804541470">
+<node TEXT="Examples:" FOLDED="true" ID="ID_561692138" CREATED="1519516535153" MODIFIED="1520804541470">
 <node ID="ID_73035432" CREATED="1520804544709" MODIFIED="1520804544709"><richcontent TYPE="NODE">
 
 <html>
@@ -1083,14 +1085,14 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="p *" ID="ID_1872284890" CREATED="1520804575619" MODIFIED="1520804578229">
+<node TEXT="p *" FOLDED="true" ID="ID_1872284890" CREATED="1520804575619" MODIFIED="1520804578229">
 <node TEXT="selects any element inside all p elements." ID="ID_1882078128" CREATED="1520804606507" MODIFIED="1520804611862"/>
 </node>
 </node>
 </node>
-<node TEXT="Attribute selector" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
+<node TEXT="Attribute selector" FOLDED="true" ID="ID_946402471" CREATED="1519516192105" MODIFIED="1519516210483">
 <node TEXT="Selects elements based on the value of the given attribute." ID="ID_714924094" CREATED="1519516649582" MODIFIED="1519516652784"/>
-<node TEXT="Syntax" ID="ID_421978559" CREATED="1519516666413" MODIFIED="1519516685336">
+<node TEXT="Syntax" FOLDED="true" ID="ID_421978559" CREATED="1519516666413" MODIFIED="1519516685336">
 <node TEXT="[attr]" FOLDED="true" ID="ID_1736624769" CREATED="1519517625687" MODIFIED="1519517628386">
 <node TEXT="Represents an element with an attribute name of attr." ID="ID_1969913507" CREATED="1522701449262" MODIFIED="1522701453204"/>
 <node ID="ID_384773680" CREATED="1522701945553" MODIFIED="1522701969020"><richcontent TYPE="NODE">
@@ -1117,7 +1119,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1147,7 +1148,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1186,7 +1186,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1229,7 +1228,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1259,7 +1257,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1289,7 +1286,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1319,7 +1315,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1352,7 +1347,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -1360,11 +1354,11 @@
 <node TEXT="Example: [autoplay] will match all elements that have the autoplay attribute set (to any value)." ID="ID_141219151" CREATED="1519516694221" MODIFIED="1519516697648"/>
 </node>
 </node>
-<node TEXT="Combinators" ID="ID_1799111666" CREATED="1519515989026" MODIFIED="1519515995645">
-<node TEXT="Adjacent sibling combinator" ID="ID_683669578" CREATED="1519518750135" MODIFIED="1519518752650">
+<node TEXT="Combinators" FOLDED="true" ID="ID_1799111666" CREATED="1519515989026" MODIFIED="1519515995645">
+<node TEXT="Adjacent sibling combinator" FOLDED="true" ID="ID_683669578" CREATED="1519518750135" MODIFIED="1519518752650">
 <node TEXT="The + combinator selects adjacent siblings. This means that the second element directly follows the first, and both share the same parent." ID="ID_503399944" CREATED="1519518851310" MODIFIED="1519518854633"/>
 <node TEXT="Syntax: A + B" ID="ID_1449827583" CREATED="1519518867702" MODIFIED="1519518869833"/>
-<node TEXT="Examples:" ID="ID_981775896" CREATED="1519518891142" MODIFIED="1520804708253">
+<node TEXT="Examples:" FOLDED="true" ID="ID_981775896" CREATED="1519518891142" MODIFIED="1520804708253">
 <node ID="ID_1436482549" CREATED="1520804710564" MODIFIED="1520804710564"><richcontent TYPE="NODE">
 
 <html>
@@ -1379,50 +1373,50 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="p + .intro" ID="ID_1759255465" CREATED="1520804745210" MODIFIED="1520804751708">
+<node TEXT="p + .intro" FOLDED="true" ID="ID_1759255465" CREATED="1520804745210" MODIFIED="1520804751708">
 <node TEXT="selects every element with class=&quot;intro&quot; that directly follows a p" ID="ID_955543334" CREATED="1520804766505" MODIFIED="1520804769356"/>
 </node>
 </node>
 </node>
-<node TEXT="General sibling combinator" ID="ID_432651750" CREATED="1519518763119" MODIFIED="1519518766106">
+<node TEXT="General sibling combinator" FOLDED="true" ID="ID_432651750" CREATED="1519518763119" MODIFIED="1519518766106">
 <node TEXT="The ~ combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent." ID="ID_1933531855" CREATED="1519518954462" MODIFIED="1519518956289"/>
 <node TEXT="Syntax: A ~ B" ID="ID_108398723" CREATED="1519518969694" MODIFIED="1519518974256"/>
 <node TEXT="Example: p ~ span will match all &lt;span&gt; elements that follow a &lt;p&gt;." ID="ID_841111398" CREATED="1519518992533" MODIFIED="1519519003128"/>
 </node>
-<node TEXT="Child combinator" ID="ID_331871209" CREATED="1519518811535" MODIFIED="1519518814353">
+<node TEXT="Child combinator" FOLDED="true" ID="ID_331871209" CREATED="1519518811535" MODIFIED="1519518814353">
 <node TEXT="The &gt; combinator selects nodes that are direct children of the first element." ID="ID_309146250" CREATED="1519519097829" MODIFIED="1519519101303"/>
 <node TEXT="Syntax: A &gt; B" ID="ID_435099312" CREATED="1519519138564" MODIFIED="1519519145087"/>
 <node TEXT="ul &gt; li will match all &lt;li&gt; elements that are nested directly inside a &lt;ul&gt; element." ID="ID_1835762929" CREATED="1519519159820" MODIFIED="1519519162415"/>
 </node>
-<node TEXT="Descendant combinator" ID="ID_1169938730" CREATED="1519518822143" MODIFIED="1519518824866">
+<node TEXT="Descendant combinator" FOLDED="true" ID="ID_1169938730" CREATED="1519518822143" MODIFIED="1519518824866">
 <node TEXT="Select an element inside another element" ID="ID_1961895085" CREATED="1520803315432" MODIFIED="1520803323816"/>
 <node TEXT="The combinator selects nodes that are descendants of the first element." ID="ID_305549736" CREATED="1519519201204" MODIFIED="1520803294152"/>
 <node TEXT="Syntax: A B" ID="ID_1702071400" CREATED="1519519215828" MODIFIED="1519519217838"/>
-<node TEXT="Examples" ID="ID_1589200782" CREATED="1519519231988" MODIFIED="1520803516598">
-<node TEXT="basic" ID="ID_1297436737" CREATED="1520803631989" MODIFIED="1520803638349">
+<node TEXT="Examples" FOLDED="true" ID="ID_1589200782" CREATED="1519519231988" MODIFIED="1520803516598">
+<node TEXT="basic" FOLDED="true" ID="ID_1297436737" CREATED="1520803631989" MODIFIED="1520803638349">
 <node TEXT="p  strong" ID="ID_739204082" CREATED="1520803571371" MODIFIED="1520803575398"/>
 <node TEXT="selects all &lt;strong&gt; elements that are inside of any &lt;p&gt;" ID="ID_1169731581" CREATED="1520803595515" MODIFIED="1520803613357"/>
 </node>
-<node TEXT="You can combine any selector with the descendent selector." ID="ID_360106428" CREATED="1520803709058" MODIFIED="1520803712863">
+<node TEXT="You can combine any selector with the descendent selector." FOLDED="true" ID="ID_360106428" CREATED="1520803709058" MODIFIED="1520803712863">
 <node TEXT="#cool span" ID="ID_1910538864" CREATED="1520803726090" MODIFIED="1520803728964"/>
 <node TEXT="selects all span elements that are inside of elements with id=&quot;cool&quot;" ID="ID_925569728" CREATED="1520803748866" MODIFIED="1520803751788"/>
 </node>
 </node>
 </node>
-<node TEXT="Comma Combinator" ID="ID_650029037" CREATED="1520804128487" MODIFIED="1520804174498">
+<node TEXT="Comma Combinator" FOLDED="true" ID="ID_650029037" CREATED="1520804128487" MODIFIED="1520804174498">
 <node TEXT="Combine, selectors, with... commas!" ID="ID_487372250" CREATED="1520804169390" MODIFIED="1520804191657"/>
 <node TEXT="Syntax: A, B" ID="ID_1610024356" CREATED="1520804207638" MODIFIED="1520804348983"/>
 <node TEXT="Thanks to Shatner technology, this selects all A and B elements. You can combine any selectors this way, and you can specify more than two." ID="ID_193162247" CREATED="1520804239598" MODIFIED="1520804242559"/>
-<node TEXT="Examples" ID="ID_1411385905" CREATED="1520804283805" MODIFIED="1520804293560">
+<node TEXT="Examples" FOLDED="true" ID="ID_1411385905" CREATED="1520804283805" MODIFIED="1520804293560">
 <node TEXT="p, .fun" ID="ID_1228429609" CREATED="1520804305717" MODIFIED="1520804310688"/>
 <node TEXT="selects all p elements as well as all elements with class=&quot;fun&quot;" ID="ID_1169459920" CREATED="1520804328205" MODIFIED="1520804331616"/>
 </node>
 </node>
 </node>
-<node TEXT="Pseudo-classes" ID="ID_1510060852" CREATED="1519516015090" MODIFIED="1519516030388">
+<node TEXT="Pseudo-classes" FOLDED="true" ID="ID_1510060852" CREATED="1519516015090" MODIFIED="1519516030388">
 <node TEXT="pseudo-classes can be used to style an element based on its state." ID="ID_1423517617" CREATED="1519519700532" MODIFIED="1519519706251"/>
 <node TEXT="Like regular classes, you can chain together as many pseudo-classes as you want in a selector." ID="ID_755750842" CREATED="1519521426303" MODIFIED="1519521432023"/>
-<node TEXT="Index of standard pseudo-classes" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1521326744883">
+<node TEXT="Index of standard pseudo-classes" FOLDED="true" ID="ID_834739069" CREATED="1519520374396" MODIFIED="1521326744883">
 <node TEXT=":active" ID="ID_1143391783" CREATED="1519520388396" MODIFIED="1519520395578"/>
 <node TEXT=":any" ID="ID_1341041150" CREATED="1519520397460" MODIFIED="1519520400502"/>
 <node TEXT=":any-link" ID="ID_941860286" CREATED="1519520453411" MODIFIED="1519520455814"/>
@@ -1430,7 +1424,7 @@
 <node TEXT=":default" ID="ID_95266600" CREATED="1519520486227" MODIFIED="1519520487542"/>
 <node TEXT=":defined" ID="ID_1835049666" CREATED="1519520498123" MODIFIED="1519520541820"/>
 <node TEXT=":disabled" ID="ID_1829812875" CREATED="1519520586218" MODIFIED="1519520589405"/>
-<node TEXT=":empty" ID="ID_1687419023" CREATED="1519520604194" MODIFIED="1519520607245">
+<node TEXT=":empty" FOLDED="true" ID="ID_1687419023" CREATED="1519520604194" MODIFIED="1519520607245">
 <node TEXT="The :empty pseudo selector will select elements that contain either nothing or only an HTML comment." ID="ID_1689104534" CREATED="1522165222420" MODIFIED="1522165225469"/>
 <node TEXT="It&apos;s useful for hiding empty elements that might cause weird spacing (e.g. they have padding). Or something like removing the border from the top left table cell element in a cross-referencing table." ID="ID_415614601" CREATED="1522165250548" MODIFIED="1522165253605"/>
 <node TEXT="div:empty {&#xa;   display: none;&#xa;}" ID="ID_1649643530" CREATED="1522165306956" MODIFIED="1522165316341"/>
@@ -1444,7 +1438,7 @@
 <node TEXT=":focus" ID="ID_1438310843" CREATED="1519520692858" MODIFIED="1519520696068"/>
 <node TEXT=":host" ID="ID_1871286631" CREATED="1519520710026" MODIFIED="1519520713708"/>
 <node TEXT=":host()" ID="ID_656053505" CREATED="1519520748825" MODIFIED="1519520751932"/>
-<node TEXT=":hover" ID="ID_22032631" CREATED="1519520792609" MODIFIED="1519520795468">
+<node TEXT=":hover" FOLDED="true" ID="ID_22032631" CREATED="1519520792609" MODIFIED="1519520795468">
 <node TEXT="The :hover pseudo class in CSS selects elements when the mouse cursor is current over them. It&apos;s commonly associated with link (&lt;a&gt;) elements." ID="ID_459457740" CREATED="1522165395589" MODIFIED="1522165399983"/>
 </node>
 <node TEXT=":indeterminate" ID="ID_1233956048" CREATED="1519520805361" MODIFIED="1519520808108"/>
@@ -1475,9 +1469,9 @@
 <node TEXT=":visited" ID="ID_383763468" CREATED="1519521373797" MODIFIED="1519521377200"/>
 </node>
 </node>
-<node TEXT="Pseudo-elements" ID="ID_1307495510" CREATED="1519516070121" MODIFIED="1519516074348">
+<node TEXT="Pseudo-elements" FOLDED="true" ID="ID_1307495510" CREATED="1519516070121" MODIFIED="1519516074348">
 <node TEXT="pseudo-elements can be used to style a specific part of an element." ID="ID_893397212" CREATED="1519519744800" MODIFIED="1519519747811"/>
-<node TEXT="Index of standard pseudo-elements" ID="ID_13217850" CREATED="1519599535121" MODIFIED="1519599537940">
+<node TEXT="Index of standard pseudo-elements" FOLDED="true" ID="ID_13217850" CREATED="1519599535121" MODIFIED="1519599537940">
 <node TEXT="::after" FOLDED="true" ID="ID_400249708" CREATED="1519599546769" MODIFIED="1519599556043">
 <node TEXT="In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default." ID="ID_429044351" CREATED="1519600180908" MODIFIED="1519600185607"/>
 <node TEXT="Syntax" FOLDED="true" ID="ID_1304254130" CREATED="1519600235204" MODIFIED="1519600238214">
@@ -1504,12 +1498,12 @@
 <node TEXT="::cue" ID="ID_205401949" CREATED="1519599571257" MODIFIED="1519599573627"/>
 <node TEXT="::first-letter" ID="ID_1917919652" CREATED="1519599583288" MODIFIED="1519599585771"/>
 <node TEXT="::first-line" ID="ID_1710562009" CREATED="1519599600096" MODIFIED="1519599604987"/>
-<node TEXT="::selection" ID="ID_1215995220" CREATED="1519599616232" MODIFIED="1519599619331">
+<node TEXT="::selection" FOLDED="true" ID="ID_1215995220" CREATED="1519599616232" MODIFIED="1519599619331">
 <node TEXT="You can change the background color and color of selected text by styling ::selection. Styling this pseudo element is great for matching user-selected text to your sites color scheme." ID="ID_485326087" CREATED="1522161784295" MODIFIED="1522161788248"/>
 <node TEXT="p::-moz-selection { color: red}&#xa;p::selection { color: red; }" ID="ID_937965449" CREATED="1522161817767" MODIFIED="1522161820888"/>
 </node>
 <node TEXT="::slotted" ID="ID_332821907" CREATED="1519599629600" MODIFIED="1519599632058"/>
-<node TEXT="experimental" ID="ID_755495171" CREATED="1519599687120" MODIFIED="1519599694618">
+<node TEXT="experimental" FOLDED="true" ID="ID_755495171" CREATED="1519599687120" MODIFIED="1519599694618">
 <node TEXT="::backdrop" ID="ID_1389536548" CREATED="1519599705744" MODIFIED="1519599708178"/>
 <node TEXT="::placeholder" ID="ID_93853094" CREATED="1519599719863" MODIFIED="1519599722594"/>
 <node TEXT="::marker" ID="ID_281336288" CREATED="1519599734399" MODIFIED="1519599736690"/>
@@ -2313,43 +2307,43 @@
 </node>
 <node TEXT="Grids" ID="ID_1564708291" CREATED="1521328298609" MODIFIED="1521328301911"/>
 </node>
-<node TEXT="Box model" ID="ID_185068251" CREATED="1521390976864" MODIFIED="1521390992266">
-<node TEXT="CSS Basic Box Model is a module of CSS that defines the rectangular boxes&#x2014;including their padding and margin&#x2014;that are generated for elements and laid out according to the visual formatting model." ID="ID_696404274" CREATED="1521709126660" MODIFIED="1521709165486">
+<node TEXT="Box model" FOLDED="true" ID="ID_185068251" CREATED="1521390976864" MODIFIED="1521390992266">
+<node TEXT="CSS Basic Box Model is a module of CSS that defines the rectangular boxes&#x2014;including their padding and margin&#x2014;that are generated for elements and laid out according to the visual formatting model." FOLDED="true" ID="ID_696404274" CREATED="1521709126660" MODIFIED="1521709165486">
 <node TEXT="The CSS visual formatting model is an algorithm that processes a document and displays it on visual media. This model is a basic concept of CSS." ID="ID_1584331980" CREATED="1521709176504" MODIFIED="1521709200586"/>
 </node>
-<node TEXT="introduction" ID="ID_496897100" CREATED="1521709239872" MODIFIED="1521709247594">
+<node TEXT="introduction" FOLDED="true" ID="ID_496897100" CREATED="1521709239872" MODIFIED="1521709247594">
 <node TEXT="When laying out a document, the browser&apos;s rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes." ID="ID_1723000452" CREATED="1521709752147" MODIFIED="1521709756556"/>
 <node TEXT="Every box is composed of four parts (or areas), defined by their respective edges: the content edge, padding edge, border edge, and margin edge." ID="ID_1214878420" CREATED="1521709772971" MODIFIED="1521709777925"/>
 <node TEXT="basic-boxmodel.png" ID="ID_1303953557" CREATED="1521710023761" MODIFIED="1521710023761">
 <hook URI="webdevelopment2_files/basic-boxmodel.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
-<node TEXT="content area" ID="ID_1290245999" CREATED="1521710045653" MODIFIED="1521710049182">
+<node TEXT="content area" FOLDED="true" ID="ID_1290245999" CREATED="1521710045653" MODIFIED="1521710049182">
 <node TEXT="The content area, bounded by the content edge, contains the &quot;real&quot; content of the element, such as text, an image, or a video player. Its dimensions are the content width (or content-box width) and the content height (or content-box height). It often has a background color or background image." ID="ID_1878093196" CREATED="1521710293991" MODIFIED="1521710298648"/>
 <node TEXT="If the box-sizing property is set to content-box (default), the content area&apos;s size can be explicitly defined with the width, min-width, max-width, height, min-height, and max-height properties." ID="ID_1409225719" CREATED="1521710360727" MODIFIED="1521710365449"/>
 </node>
-<node TEXT="padding area" ID="ID_551405724" CREATED="1521710050749" MODIFIED="1521710059910">
+<node TEXT="padding area" FOLDED="true" ID="ID_551405724" CREATED="1521710050749" MODIFIED="1521710059910">
 <node TEXT="The padding area, bounded by the padding edge, extends the content area to include the element&apos;s padding. Its dimensions are the padding-box width and the padding-box height." ID="ID_839814639" CREATED="1521710447952" MODIFIED="1521710452937"/>
 <node TEXT="The thickness of the padding is determined by the padding-top, padding-right, padding-bottom, padding-left, and shorthand padding properties." ID="ID_337813505" CREATED="1521710465408" MODIFIED="1521710470225"/>
 </node>
-<node TEXT="border area" ID="ID_1223214503" CREATED="1521710083493" MODIFIED="1521710088381">
+<node TEXT="border area" FOLDED="true" ID="ID_1223214503" CREATED="1521710083493" MODIFIED="1521710088381">
 <node TEXT="The border area, bounded by the border edge, extends the padding area to include the element&apos;s borders. Its dimensions are the border-box width and the border-box height." ID="ID_986497567" CREATED="1521710497472" MODIFIED="1521710501865"/>
 <node TEXT="The thickness of the borders are determined by the border-width and shorthand border properties." ID="ID_1652929199" CREATED="1521710537393" MODIFIED="1521710614154"/>
 <node TEXT="If the box-sizing property is set to border-box, the border area&apos;s size can be explicitly defined with the width, min-width, max-width, height, min-height, and max-height properties." ID="ID_1403880075" CREATED="1521710596593" MODIFIED="1521710601242"/>
 <node TEXT="When there is a background (background-color or background-image) set on a box, it extends to the outer edge of the border (i.e. extends underneath the border in z-ordering). This default behavior can be altered with the background-clip css property." ID="ID_1581421704" CREATED="1521710617281" MODIFIED="1521710621610"/>
 </node>
-<node TEXT="margin area" ID="ID_341660554" CREATED="1521710108998" MODIFIED="1521710113791">
+<node TEXT="margin area" FOLDED="true" ID="ID_341660554" CREATED="1521710108998" MODIFIED="1521710113791">
 <node TEXT="The margin area, bounded by the margin edge, extends the border area to include an empty area used to separate the element from its neighbors. Its dimensions are the margin-box width and the margin-box height." ID="ID_715889793" CREATED="1521710550905" MODIFIED="1521710554994"/>
 <node TEXT="The size of the margin area is determined by the margin-top, margin-right, margin-bottom, margin-left, and shorthand margin properties. When margin collapsing occurs, the margin area is not clearly defined since margins are shared between boxes." ID="ID_213648665" CREATED="1521710676113" MODIFIED="1521710681059"/>
 <node TEXT="Finally, note that for non-replaced inline elements, the amount of space taken up (the contribution to the height of the line) is determined by the line-height property, even though the borders and padding are still displayed around the content." ID="ID_225142269" CREATED="1521710826018" MODIFIED="1521710830708"/>
 </node>
 </node>
-<node TEXT="properties" ID="ID_871461325" CREATED="1521709252240" MODIFIED="1521709259098">
-<node TEXT="Properties controlling the flow of content in a box" ID="ID_994838115" CREATED="1521709273993" MODIFIED="1521709277978">
+<node TEXT="properties" FOLDED="true" ID="ID_871461325" CREATED="1521709252240" MODIFIED="1521709259098">
+<node TEXT="Properties controlling the flow of content in a box" FOLDED="true" ID="ID_994838115" CREATED="1521709273993" MODIFIED="1521709277978">
 <node TEXT="overflow" ID="ID_1562699402" CREATED="1521709374569" MODIFIED="1521709378059"/>
 <node TEXT="overflow-x" ID="ID_436730987" CREATED="1521709384889" MODIFIED="1521709388499"/>
 <node TEXT="overflow-y" ID="ID_1884439627" CREATED="1521709396161" MODIFIED="1521709399739"/>
 </node>
-<node TEXT="Properties controlling the size of a box" ID="ID_838364660" CREATED="1521709278649" MODIFIED="1521709289210">
+<node TEXT="Properties controlling the size of a box" FOLDED="true" ID="ID_838364660" CREATED="1521709278649" MODIFIED="1521709289210">
 <node TEXT="height" ID="ID_1121356685" CREATED="1521709408745" MODIFIED="1521709412995"/>
 <node TEXT="width" ID="ID_800458296" CREATED="1521709419553" MODIFIED="1521709423442"/>
 <node TEXT="max-height" ID="ID_12270919" CREATED="1521709434305" MODIFIED="1521709439227"/>
@@ -2357,24 +2351,24 @@
 <node TEXT="min-height" ID="ID_1223779824" CREATED="1521709456801" MODIFIED="1521709460787"/>
 <node TEXT="min-width" ID="ID_1654292957" CREATED="1521709470210" MODIFIED="1521709475299"/>
 </node>
-<node TEXT="Properties controlling the margins of a box" ID="ID_1829576504" CREATED="1521709304857" MODIFIED="1521709308962">
+<node TEXT="Properties controlling the margins of a box" FOLDED="true" ID="ID_1829576504" CREATED="1521709304857" MODIFIED="1521709308962">
 <node TEXT="margin-bottom" ID="ID_1339775698" CREATED="1521709500666" MODIFIED="1521709507091"/>
 <node TEXT="margin-left" ID="ID_198368607" CREATED="1521709514090" MODIFIED="1521709519131"/>
 <node TEXT="margin-right" ID="ID_1524633108" CREATED="1521709525338" MODIFIED="1521709529068"/>
 <node TEXT="margin-top" ID="ID_1384305621" CREATED="1521709537602" MODIFIED="1521709541515"/>
 <node TEXT="margin" ID="ID_1882012464" CREATED="1521709552682" MODIFIED="1521709556956"/>
 </node>
-<node TEXT="Properties controlling the paddings of a box" ID="ID_1087149618" CREATED="1521709578331" MODIFIED="1521709581068">
+<node TEXT="Properties controlling the paddings of a box" FOLDED="true" ID="ID_1087149618" CREATED="1521709578331" MODIFIED="1521709581068">
 <node TEXT="padding-bottom" ID="ID_994974605" CREATED="1521709588203" MODIFIED="1521709590604"/>
 <node TEXT="padding-left" ID="ID_414086134" CREATED="1521709597731" MODIFIED="1521709601476"/>
 <node TEXT="padding-right" ID="ID_1546624397" CREATED="1521709612459" MODIFIED="1521709616164"/>
 <node TEXT="padding-top" ID="ID_1472949877" CREATED="1521709625875" MODIFIED="1521709631916"/>
 <node TEXT="padding" ID="ID_1066888168" CREATED="1521709645307" MODIFIED="1521709650564"/>
 </node>
-<node TEXT="properties controlling the type of the box" ID="ID_711874887" CREATED="1521710384360" MODIFIED="1521710407873">
+<node TEXT="properties controlling the type of the box" FOLDED="true" ID="ID_711874887" CREATED="1521710384360" MODIFIED="1521710407873">
 <node TEXT="box-sizing" ID="ID_781145907" CREATED="1521710416711" MODIFIED="1521710425401"/>
 </node>
-<node TEXT="Other properties" ID="ID_62296851" CREATED="1521709358449" MODIFIED="1521709362947">
+<node TEXT="Other properties" FOLDED="true" ID="ID_62296851" CREATED="1521709358449" MODIFIED="1521709362947">
 <node TEXT="visibility" ID="ID_1959108581" CREATED="1521709659995" MODIFIED="1521709663292"/>
 <node TEXT="Background" FOLDED="true" ID="ID_1596337986" CREATED="1521389647529" MODIFIED="1521389711739">
 <node TEXT="background" FOLDED="true" ID="ID_248370065" CREATED="1521389713496" MODIFIED="1521389716642">
@@ -2414,7 +2408,7 @@
 </node>
 </node>
 </node>
-<node TEXT="box-shadow" ID="ID_469049242" CREATED="1522054327464" MODIFIED="1522054338673">
+<node TEXT="box-shadow" FOLDED="true" ID="ID_469049242" CREATED="1522054327464" MODIFIED="1522054338673">
 <node TEXT="The box-shadow CSS property is used to add shadow effects around an element&apos;s frame. You can specify multiple effects separated by commas if you wish to do so. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color." ID="ID_76404175" CREATED="1522054477016" MODIFIED="1522054479730"/>
 <node TEXT="The box-shadow property enables you to cast a drop shadow from the frame of almost any element. If a border-radius is specified on the element with a box shadow, the box shadow takes on the same rounded corners. The z-ordering of multiple box shadows is the same as multiple text shadows (the first specified shadow is on top)." ID="ID_642315745" CREATED="1522054582649" MODIFIED="1522054587940"/>
 </node>
@@ -2583,6 +2577,7 @@
 <node TEXT="void" ID="ID_1933274781" CREATED="1522706970899" MODIFIED="1522706984511">
 <node TEXT="The void operator evaluates an expression and returns undefined. This operator is often used to obtain the undefined primitive value, using &quot;void(0)&quot; (useful when evaluating an expression without using the return value)." ID="ID_1185626633" CREATED="1522707031721" MODIFIED="1522707036895"/>
 </node>
+<node TEXT="spreadoperator" ID="ID_1513748660" CREATED="1522713970661" MODIFIED="1522713979728"/>
 </node>
 <node TEXT="Control flow" ID="ID_265187798" CREATED="1522708180202" MODIFIED="1522708200343"/>
 <node TEXT="Loops and iteration" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1522708158383">
@@ -2833,7 +2828,7 @@
 <node TEXT="arguments" ID="ID_982127361" CREATED="1521312694041" MODIFIED="1521312698210"/>
 </node>
 </node>
-<node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
+<node TEXT="Destructuring" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
 <node TEXT="It&#x2019;s a JavaScript expression that allows us to extract data from arrays, objects, maps and sets" ID="ID_546247236" CREATED="1515401730724" MODIFIED="1515401730724"/>
 <node TEXT="const person = {" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
 <node TEXT="first: &apos;Wes&apos;," ID="ID_1169293402" CREATED="1515401828817" MODIFIED="1515401828817"/>
@@ -2986,182 +2981,8 @@
 <node TEXT="bom-index.png" ID="ID_1000644901" CREATED="1522709178078" MODIFIED="1522709178078">
 <hook URI="webdevelopment2_files/bom-index.png" SIZE="0.9049774" NAME="ExternalObject"/>
 </node>
-</node>
-<node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167">
-<node TEXT="The DOM is an API that allows access to and modification of the current document. It allows manipulation of document Node and Element. HTML, XML and SVG have extended it to manipulate their specific elements." ID="ID_400476465" CREATED="1521814879418" MODIFIED="1521814884461"/>
-</node>
-<node TEXT="Device APIs" ID="ID_1826537008" CREATED="1521814761690" MODIFIED="1521814773403">
-<node TEXT="This set of APIs allows access to various hardware features available to Web pages and applications." ID="ID_448957946" CREATED="1521814906154" MODIFIED="1521814912316"/>
-<node TEXT=" Ambient Light Sensor API" ID="ID_490340727" CREATED="1521814939907" MODIFIED="1521814946137"/>
-<node TEXT="Battery Status API" ID="ID_1483764625" CREATED="1521814960299" MODIFIED="1521814963748"/>
-<node TEXT=" Geolocation API" ID="ID_278394236" CREATED="1521814979507" MODIFIED="1521814982516"/>
-<node TEXT="Pointer Lock API" ID="ID_1045216472" CREATED="1521815001123" MODIFIED="1521815005717"/>
-<node TEXT=" Proximity API" ID="ID_208754827" CREATED="1521815016307" MODIFIED="1521815020060"/>
-<node TEXT=" Device Orientation API" ID="ID_999903887" CREATED="1521815035643" MODIFIED="1521815039445"/>
-<node TEXT="Screen Orientation API" ID="ID_1557356085" CREATED="1521815050787" MODIFIED="1521815057325"/>
-<node TEXT=" Vibration API" ID="ID_1684469783" CREATED="1521815105404" MODIFIED="1521815110134"/>
-</node>
-<node TEXT="Communication APIs" ID="ID_719246936" CREATED="1521814774089" MODIFIED="1521814784867">
-<node TEXT="These APIs let Web pages and applications communicate with other pages or devices." ID="ID_1947591787" CREATED="1521815124804" MODIFIED="1521815129493"/>
-<node TEXT=" Network Information API" ID="ID_667816301" CREATED="1521815143572" MODIFIED="1521815147853"/>
-<node TEXT="Web Notifications" ID="ID_1580676630" CREATED="1521815163180" MODIFIED="1521815165925"/>
-<node TEXT="Simple Push API" ID="ID_839800433" CREATED="1521815176788" MODIFIED="1521815182166"/>
-</node>
-<node TEXT="Data management APIs" ID="ID_1170619429" CREATED="1521814785433" MODIFIED="1521814804890">
-<node TEXT="User data can be stored and managed using this set of APIs." ID="ID_829491973" CREATED="1521815203381" MODIFIED="1521815207911"/>
-<node TEXT=" FileHandle API" ID="ID_928444851" CREATED="1521815220061" MODIFIED="1521815224222"/>
-<node TEXT="IndexedDB" ID="ID_1369300434" CREATED="1521815232764" MODIFIED="1521815236821"/>
-</node>
-<node TEXT="Privileged APIs" ID="ID_1192514583" CREATED="1521814832962" MODIFIED="1521814838060">
-<node TEXT="A privileged application is an installed app that has been given specific rights by the user." ID="ID_935799373" CREATED="1521815260676" MODIFIED="1521815266486"/>
-<node TEXT=" TCP Socket API" ID="ID_957822147" CREATED="1521815285037" MODIFIED="1521815288102"/>
-<node TEXT="Contacts API" ID="ID_1439028015" CREATED="1521815316110" MODIFIED="1521815320685"/>
-<node TEXT="Device Storage API" ID="ID_474395882" CREATED="1521815331757" MODIFIED="1521815359334"/>
-<node TEXT="Browser API" ID="ID_28444162" CREATED="1521815351149" MODIFIED="1521815355685"/>
-<node TEXT="Camera API" ID="ID_376051487" CREATED="1521815372278" MODIFIED="1521815376559"/>
-</node>
-<node TEXT="Certified APIs" ID="ID_1979311447" CREATED="1521814841762" MODIFIED="1521814856267">
-<node TEXT="A certified application is a low-level application performing critical operations in an operating system like Firefox OS. Less privileged application interact with these applications using Web Activities." ID="ID_660472391" CREATED="1521815427118" MODIFIED="1521815431119"/>
-<node TEXT="Bluetooth API" ID="ID_811757563" CREATED="1521815466894" MODIFIED="1521815472312"/>
-<node TEXT=" Mobile Connection API" ID="ID_1332094932" CREATED="1521815484430" MODIFIED="1521815489175"/>
-<node TEXT="Network Stats API" ID="ID_905410952" CREATED="1521815500775" MODIFIED="1521815505671"/>
-<node TEXT="Telephony" ID="ID_1211764679" CREATED="1521815513959" MODIFIED="1521815518770"/>
-<node TEXT=" WebSMS" ID="ID_618265229" CREATED="1521815528511" MODIFIED="1521815532696"/>
-<node TEXT="WiFi Information API" ID="ID_1439081313" CREATED="1521815544895" MODIFIED="1521815548816"/>
-<node TEXT=" Power Management API" ID="ID_1764242144" CREATED="1521815561071" MODIFIED="1521815565728"/>
-<node TEXT=" Settings API" ID="ID_1611535984" CREATED="1521815581367" MODIFIED="1521815586144"/>
-<node TEXT=" Idle API" ID="ID_1200404515" CREATED="1521815635887" MODIFIED="1521815639880"/>
-<node TEXT=" Permissions API" ID="ID_1288975783" CREATED="1521815650512" MODIFIED="1521815655880"/>
-<node TEXT="Time/Clock API" ID="ID_42379450" CREATED="1521815673200" MODIFIED="1521815677280"/>
-</node>
-<node TEXT="Web Storage API" FOLDED="true" ID="ID_975504561" CREATED="1515661463986" MODIFIED="1521189955393">
-<node TEXT="The Web Storage API provides mechanisms by which browsers can securely store key/value pairs, in a much more intuitive fashion than using cookies. " ID="ID_1567172796" CREATED="1515661511672" MODIFIED="1521189955391"/>
-<node TEXT="Basic concepts" FOLDED="true" ID="ID_1652000095" CREATED="1515661632023" MODIFIED="1515662961836">
-<node TEXT="Storage objects are simple key-value stores, similar to objects, but they stay intact through page loads. The keys and the values are always strings (note that integer keys will be automatically converted to strings, just like what objects do). You can access these values like an object, or with the Storage.getItem() and Storage.setItem() methods. These three lines all set the colorSetting entry in the same way:" ID="ID_26214173" CREATED="1515661663066" MODIFIED="1515661663066"/>
-<node TEXT="localStorage.colorSetting = &apos;#a4509b&apos;;" ID="ID_840151432" CREATED="1515661677379" MODIFIED="1515661677379"/>
-<node TEXT="localStorage[&apos;colorSetting&apos;] = &apos;#a4509b&apos;;" ID="ID_1104328722" CREATED="1515661677381" MODIFIED="1515661677381"/>
-<node TEXT="localStorage.setItem(&apos;colorSetting&apos;, &apos;#a4509b&apos;);" ID="ID_457764506" CREATED="1515661677381" MODIFIED="1515661677381"/>
-<node TEXT="sessionStorage" ID="ID_1898386258" CREATED="1515661384870" MODIFIED="1517823250960">
-<arrowlink SHAPE="LINE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1898386258" STARTINCLINATION="0;0;" ENDINCLINATION="0;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
-<linktarget COLOR="#b0b0b0" DESTINATION="ID_1898386258" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_310862773" SOURCE="ID_1898386258" STARTARROW="None" STARTINCLINATION="0;0;"/>
-</node>
-<node TEXT="maintains a separate storage area for each given origin that&apos;s available for the duration of the page session (as long as the browser is open, including page reloads and restores). " ID="ID_1032752383" CREATED="1515661912609" MODIFIED="1515661915892"/>
-<node TEXT="localStorage" ID="ID_316477597" CREATED="1515661400284" MODIFIED="1515661400284"/>
-<node TEXT="does the same thing, but persists even when the browser is closed and reopened. " ID="ID_1763601637" CREATED="1515661934609" MODIFIED="1515661937562"/>
-</node>
-<node TEXT="Local Storage vs Session Storage vs Cookie" FOLDED="true" ID="ID_667026147" CREATED="1515662620682" MODIFIED="1515662919772">
-<node TEXT="LocalStorage" FOLDED="true" ID="ID_1260766077" CREATED="1515662635522" MODIFIED="1515662904845">
-<node TEXT="Stores data with no expiration date, and gets cleared only through JavaScript, or clearing the Browser cache / Locally Stored Data" ID="ID_853342055" CREATED="1515662661729" MODIFIED="1515662661729"/>
-<node TEXT="Storage limit is the maximum amongst the three" ID="ID_1390903048" CREATED="1515662661731" MODIFIED="1515662661731"/>
-</node>
-<node TEXT="SessionStorage" FOLDED="true" ID="ID_1847879931" CREATED="1515662642449" MODIFIED="1515662906918">
-<node TEXT="The sessionStorage object stores data only for a session, meaning that the data is stored until the browser (or tab) is closed." ID="ID_265963929" CREATED="1515662671289" MODIFIED="1515662671289"/>
-<node TEXT="Data is never transferred to the server." ID="ID_1754614246" CREATED="1515662671291" MODIFIED="1515662671291"/>
-<node TEXT="Storage limit is larger than a cookie (at least 5MB)." ID="ID_522752581" CREATED="1515662671292" MODIFIED="1515662671292"/>
-</node>
-<node TEXT="Cookie" FOLDED="true" ID="ID_153902170" CREATED="1515662648522" MODIFIED="1515662909709">
-<node TEXT="Stores data that has to be sent back to the server with subsequent requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side (normally from server-side)." ID="ID_21907825" CREATED="1515662723566" MODIFIED="1515662723566"/>
-<node TEXT="Cookies are primarily for server-side reading (can also be read on client-side), localStorage and sessionStorage can only be read on client-side." ID="ID_325474851" CREATED="1515662723568" MODIFIED="1515662723568"/>
-<node TEXT="Size must be less than 4KB." ID="ID_212124319" CREATED="1515662723569" MODIFIED="1515662723569"/>
-<node TEXT="Cookies can be made secure by setting the httpOnly flag as true for that cookie. This prevents client-side access to that cookie" ID="ID_1273149658" CREATED="1515662723570" MODIFIED="1515662723570"/>
-</node>
-</node>
-</node>
-<node TEXT="Web Workers API" ID="ID_1639014560" CREATED="1518085185446" MODIFIED="1518085185446"/>
-<node TEXT="Console Api" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1520975991523">
-<node TEXT="The Console object provides access to the browser&apos;s debugging console (e.g. the Web Console in Firefox). The specifics of how it works varies from browser to browser, but there is a de facto set of features that are typically provided." ID="ID_1019177181" CREATED="1519030454565" MODIFIED="1519030460464"/>
-<node TEXT="The Console object can be accessed from any global object. Window on browsing scopes and WorkerGlobalScope as specific variants in workers via the property console. It&apos;s exposed as Window.console, and can be referenced as simply console." ID="ID_1149192939" CREATED="1520976183480" MODIFIED="1520976191681"/>
-<node TEXT="Methodes" ID="ID_318229738" CREATED="1520976394039" MODIFIED="1520976412472">
-<node TEXT="console.log()" ID="ID_400424110" CREATED="1520976427182" MODIFIED="1520976438248">
-<node TEXT="regular" FOLDED="true" ID="ID_1078102953" CREATED="1520976447846" MODIFIED="1520976453816">
-<node TEXT="console.log(&apos;hello&apos;);" ID="ID_271379426" CREATED="1520976483486" MODIFIED="1520976498839"/>
-</node>
-<node TEXT="interpolated" FOLDED="true" ID="ID_1567067051" CREATED="1520976456174" MODIFIED="1520976464384">
-<node TEXT="console.log(&apos;This is %s a string!&apos; , &apos;shit&apos;)" ID="ID_1746417854" CREATED="1520976539277" MODIFIED="1520976585271"/>
-</node>
-<node TEXT="styled" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
-<node TEXT="console.log(&apos;%c I am a pretty print!&apos; &apos;font-size:50px; background:red;&apos;)" ID="ID_1488628482" CREATED="1520976590677" MODIFIED="1520976657350"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Selectors API" ID="ID_1368576807" CREATED="1520889550702" MODIFIED="1520889555504">
-<node TEXT="The Selectors API provides methods that make it quick and easy to retrieve Element nodes from the DOM by matching against a set of selectors." ID="ID_1097846325" CREATED="1520890154583" MODIFIED="1520890166583"/>
-<node TEXT="querySelector" ID="ID_1117896581" CREATED="1520890180823" MODIFIED="1520890184414">
-<node TEXT="Returns the first matching Element node within the node&apos;s subtree. If no matching node is found, null is returned." ID="ID_1147142998" CREATED="1520890227135" MODIFIED="1520890231566"/>
-</node>
-<node TEXT="querySelectorAll" ID="ID_164638681" CREATED="1520890198295" MODIFIED="1520890245357">
-<node TEXT="Returns a NodeList containing all matching Element nodes within the node&apos;s subtree, or an empty NodeList if no matches are found." ID="ID_1581498986" CREATED="1520890257430" MODIFIED="1520890262477"/>
-</node>
-<node TEXT="Element" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525">
-<node TEXT="Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements." ID="ID_1706814041" CREATED="1519823638387" MODIFIED="1519823641701"/>
-<node TEXT="More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy." ID="ID_1009801161" CREATED="1519823669452" MODIFIED="1519823671957"/>
-<node TEXT="properties" ID="ID_1553576202" CREATED="1520891507982" MODIFIED="1520891514684">
-<node TEXT=".attributes" ID="ID_1976552739" CREATED="1520891546798" MODIFIED="1520891549300">
-<node TEXT="Returns a NamedNodeMap object containing the assigned attributes of the corresponding HTML element." ID="ID_345515982" CREATED="1520891562053" MODIFIED="1520891564828"/>
-<node TEXT="read only" ID="ID_528976857" CREATED="1520891577453" MODIFIED="1520891585444"/>
-</node>
-<node TEXT=".classList" ID="ID_1624098214" CREATED="1520891618485" MODIFIED="1520891621652">
-<node TEXT="Returns a DOMTokenList containing the list of class attributes." ID="ID_1686994267" CREATED="1520891695301" MODIFIED="1520891698795"/>
-<node TEXT="read only" ID="ID_133524943" CREATED="1520891773804" MODIFIED="1520891781314"/>
-</node>
-<node TEXT=".className" ID="ID_1803983539" CREATED="1520891632885" MODIFIED="1520891637556">
-<node TEXT="Is a DOMString representing the class of the element." ID="ID_1240230459" CREATED="1520891745772" MODIFIED="1520891748811"/>
-</node>
-</node>
-<node TEXT="methods" ID="ID_1102917540" CREATED="1520891516502" MODIFIED="1520891523036"/>
-</node>
-</node>
-</node>
-<node TEXT="cookies" FOLDED="true" ID="ID_194660626" CREATED="1515602020518" MODIFIED="1515602026494">
-<node TEXT="Was sind Third Party Cookies?" FOLDED="true" ID="ID_657863754" CREATED="1515602043953" MODIFIED="1515663572516">
-<node TEXT="Third Party Cookies werden von Werbetreibenden genutzt, die &#xfc;ber ihre Werbeschaltungen auf anderen Seiten mit den Cookies Nutzerinformationen sammeln. Es handelt sich dabei um Datens&#xe4;tze, die im Browser des Nutzers hinterlegt werden, wenn er eine Seite mit der Werbung besucht. Besucht er erneut eine Seite mit Werbung des gleichen Anbieters, wird er wiedererkannt." ID="ID_1968279038" CREATED="1515602066435" MODIFIED="1515602066435"/>
-<node TEXT="Da sich mit Third Party Cookies die Wege des Nutzers im Internet verfolgen lassen, kann der Werbetreibende bei einem erneuten Besuch auf das &#x201c;Profil&#x201d; des Nutzers zugeschnittene Werbung ausspielen." ID="ID_1184664273" CREATED="1515602066442" MODIFIED="1515602066442"/>
-</node>
-<node TEXT="Unterschied zu First Party Cookies" FOLDED="true" ID="ID_1007566117" CREATED="1515602082658" MODIFIED="1515663574972">
-<node TEXT="Das Wort &#x201c;Party&#x201d; in First/Third Party Cookies bezieht sich auf die Domain, von der der Cookie stammt. W&#xe4;hrend ein First Party Cookie in der Regel vom Websitebetreiber selbst stammt, lassen sich Third Party Cookies auf eine andere &#x2013; eben &#x201c;dritte&#x201d; &#x2013; Person zur&#xfc;ckf&#xfc;hren, die ihre Cookies auf einer anderen Seite platzieren." ID="ID_1878575424" CREATED="1515602101112" MODIFIED="1515602101112"/>
-<node TEXT="Es ist also m&#xf6;glich, dass auf Ihrem Rechner nach dem Besuch einer Website sowohl Third Party Cookies als auch First Party Cookies gespeichert werden &#x2013; von der Seite selbst und von einer dritten Partei, die Werbung auf dieser Seite platziert hat. Bei einem First Party Cookie kann der Nutzer nur von der Seite wiedererkannt werden, von der der Cookie stammt, nicht aber &#xfc;ber mehrere Domains hinweg. Die Daten werden dadurch auch nicht an Dritte weitergegeben." ID="ID_519018942" CREATED="1515602101123" MODIFIED="1515602101123"/>
-<node TEXT="Third Party Cookies lassen sich technisch einfacher implementieren als First Party Cookies. Auf der Website, auf der die Cookies eingebunden werden sollen, muss kein Code hinterlegt werden. Es reicht die Werbeanzeige (Ad) vom AdServer des Drittanbieters." ID="ID_1924401888" CREATED="1515602101129" MODIFIED="1515602101129"/>
-</node>
-</node>
-<node TEXT="Critical Rendering Path" FOLDED="true" ID="ID_518386952" CREATED="1516872631933" MODIFIED="1516872631933">
-<node TEXT="When a browser receives the HTML response for a page from the server, there are a lot of steps to be taken before pixels are drawn on the screen. This sequence the browsers needs to run through for the initial paint of the page is called the &quot;Critical Rendering Path&quot;. this includes 6 steps" ID="ID_1112849103" CREATED="1516872683995" MODIFIED="1516872977686"/>
-<node TEXT="Constructing the DOM Tree" FOLDED="true" ID="ID_771777683" CREATED="1516872728612" MODIFIED="1516872835497">
-<node TEXT="The DOM (Document Object Model) Tree is an Object representation of the fully parsed HTML page. Starting with the root element, &lt;html&gt;, nodes are created for each element/text on the page. Elements nested within other elements are represented as child nodes and each node contains the full attributes for that element. For example, an &lt;a&gt; element will have the href attribute associated with it&#x2019;s node." ID="ID_728957923" CREATED="1516887642664" MODIFIED="1516887642664"/>
-<node TEXT="A good thing about HTML is that it can be executed in parts. The full document doesn&apos;t have to be loaded for content to start appearing on the page. However, other resources, CSS and JavaScript, can block the render of the page." ID="ID_916688323" CREATED="1516983036345" MODIFIED="1516983036345"/>
-</node>
-<node TEXT="Constructing the CSSOM Tree" FOLDED="true" ID="ID_430741044" CREATED="1516872748187" MODIFIED="1516872846742">
-<node TEXT="The CSSOM (CSS Object Model) is an Object representation of the styles associated with the DOM. It is represented in a similar way to the DOM, but with the associated styles for each node, whether they explicitly declared or implicitly inherited, included. In the style.css file from the document mentioned above, we have the folowing styles -" ID="ID_1128680039" CREATED="1516983134326" MODIFIED="1516983134326"/>
-<node TEXT="CSS is considered a &quot;render blocking resource&quot;. This means that the Render Tree (see below) cannot be constructed without first fully parsing the resource. Unlike HTML, CSS cannot be used in parts because of its inherit cascading nature. Styles defined later in the document can override and change styles that were previously defined. This means that CSS must be fully parsed before we can move on to the next stage." ID="ID_856909644" CREATED="1516983220780" MODIFIED="1516983360742"/>
-<node TEXT="CSS files are only considered render blocking if they apply to the current device. The &lt;link rel=&quot;stylesheet&quot;&gt; tag can accept a media attribute, in which we can specify any media query which the styles within apply to. If, for example, we have a stylesheet with a media attribute of orientation:landscape, and we are viewing the page in portrait mode, that resource will not be considered render blocking." ID="ID_1842791749" CREATED="1516983282131" MODIFIED="1516983282131"/>
-<node TEXT="CSS can also be &quot;script blocking&quot;. This is because JavaScript files must wait until the CSSOM has been constructed before it can run." ID="ID_1059854394" CREATED="1516983315123" MODIFIED="1516983315123"/>
-</node>
-<node TEXT="Running JavaScript" FOLDED="true" ID="ID_1164211512" CREATED="1516872794757" MODIFIED="1516872794757">
-<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript." ID="ID_757640489" CREATED="1516983535081" MODIFIED="1516983535081"/>
-<node TEXT="When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it. This why, if we have a JavaScript file that references elements within the document, it must be placed after the appearance of that document." ID="ID_581676260" CREATED="1516983609337" MODIFIED="1516983609337"/>
-<node TEXT="To avoid JavaScript being parser blocking, it can be loaded asynchronously be applying the async attribute." ID="ID_1094428563" CREATED="1516983682056" MODIFIED="1516983682056"/>
-</node>
-<node TEXT="Creating the Rendering Tree" FOLDED="true" ID="ID_1794295488" CREATED="1516983830758" MODIFIED="1516983846695">
-<node TEXT="The Render Tree is a combination of both the DOM and CSSOM. It is a Tree that represents what will be eventually rendered on the page. This means that it only captures the visible content and will not include, for example, elements that have been hidden with CSS using display: none." ID="ID_584899773" CREATED="1516983863810" MODIFIED="1516983863810"/>
-</node>
-<node TEXT="Generating the Layout" FOLDED="true" ID="ID_1334468117" CREATED="1516872873744" MODIFIED="1516872873744">
-<node TEXT="The Layout is what determines what the size of the viewport is, which provides context for CSS styles that are dependent on it, e.g. percentage or viewport units. The viewport size is determined by the meta viewport tag provided in the document head or, if no tag is provided, the default viewport width of 980px is used." ID="ID_815379728" CREATED="1516983934600" MODIFIED="1516983934600"/>
-<node TEXT="For example, the most common meta viewport value is to set the viewport size to correspond to the device width -" ID="ID_1724393420" CREATED="1516983963671" MODIFIED="1516983963671"/>
-<node TEXT="&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;" ID="ID_1634446684" CREATED="1516984027457" MODIFIED="1516984027457"/>
-<node TEXT="If the user visits the webpage on a device with a width of, for example, 1000px, then sizes will be based on that unit. Half the viewport will be 500px, 10vw will be 100px, and so on." ID="ID_658413742" CREATED="1516984072865" MODIFIED="1516984072865"/>
-</node>
-<node TEXT="Painting" FOLDED="true" ID="ID_1713412525" CREATED="1516872897910" MODIFIED="1516872926233">
-<node TEXT="Finally, in the Painting step, the visible content of the page can be converted to pixels to be displayed on the screen." ID="ID_1019783291" CREATED="1516984129430" MODIFIED="1516984129430"/>
-<node TEXT="How much time the paint step takes depends on the size of the DOM, as well as what styles are applied. Some styles require more work to execute than others. For example, a complicated gradient background-image will require more time than a simple solid background colour." ID="ID_1917224877" CREATED="1516984175519" MODIFIED="1516984175519"/>
-</node>
-<node TEXT="To see the Critical Rendering Path in process, we can inspect it in DevTools. In Chrome, it is under the Performance tab." ID="ID_761408470" CREATED="1516984221277" MODIFIED="1516984286253"/>
-<node TEXT="png_5868046861603241277.png" ID="ID_126447519" CREATED="1516982981163" MODIFIED="1516982981163">
-<hook URI="webdevelopment2_files/png_5868046861603241277.png" SIZE="0.80862534" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="Global/host object" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1522618276727">
+<node TEXT="window (Global/host object)" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1522710973988">
 <node TEXT="In a web browser, any code which the script doesn&apos;t specifically start up as a background task has a Window as its global object. This is the vast majority of JavaScript code on the Web." ID="ID_690447496" CREATED="1518085107077" MODIFIED="1518085107077"/>
-<node TEXT="window" ID="ID_426078047" CREATED="1518085353049" MODIFIED="1518085364617">
 <node TEXT="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property." ID="ID_545673075" CREATED="1518094524949" MODIFIED="1518094524949"/>
 <node ID="ID_1193762135" CREATED="1520517980561" MODIFIED="1520518046917"><richcontent TYPE="NODE">
 
@@ -3240,6 +3061,307 @@
 </node>
 </node>
 <node TEXT="Methods" ID="ID_903700765" CREATED="1518183733206" MODIFIED="1518183740755"/>
+<node TEXT="A certified application is a low-level application performing critical operations in an operating system like Firefox OS. Less privileged application interact with these applications using Web Activities." ID="ID_660472391" CREATED="1521815427118" MODIFIED="1521815431119"/>
+</node>
+</node>
+<node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167">
+<node TEXT="The DOM is an API that allows access to and modification of the current document. It allows manipulation of document Node and Element. HTML, XML and SVG have extended it to manipulate their specific elements." ID="ID_400476465" CREATED="1521814879418" MODIFIED="1521814884461"/>
+<node TEXT="DOM Attribute Object" ID="ID_1852722778" CREATED="1522748245960" MODIFIED="1522748254095">
+<node TEXT="Attr Object" ID="ID_352948765" CREATED="1522748281535" MODIFIED="1522748288022"/>
+<node TEXT="NamedNodeMap Object" ID="ID_1962905300" CREATED="1522748297116" MODIFIED="1522748302270"/>
+<node TEXT="Properties" FOLDED="true" ID="ID_1060728101" CREATED="1522748308877" MODIFIED="1522748316702">
+<node TEXT="attr.isId" ID="ID_1175949193" CREATED="1522748358567" MODIFIED="1522748358567">
+<node TEXT="Returns true if the attribute is of type Id, otherwise it returns false" ID="ID_378414918" CREATED="1522748525399" MODIFIED="1522748525399"/>
+<node TEXT="This property is read-only." ID="ID_1302265870" CREATED="1522748675820" MODIFIED="1522748681076"/>
+<node TEXT="/* Find out if an attribute is the element&apos;s ID attribute or not */&#xa;&#xa;var x = document.getElementById(&quot;demo&quot;).attributes[0].isId;" ID="ID_1735139984" CREATED="1522748708432" MODIFIED="1522748765261"/>
+</node>
+<node TEXT="attr.name" ID="ID_437573175" CREATED="1522748370075" MODIFIED="1522748373966">
+<node TEXT="Returns the name of an attribute" ID="ID_162729574" CREATED="1522748534564" MODIFIED="1522748534564"/>
+<node TEXT="This property is read-only." ID="ID_661443165" CREATED="1522748799610" MODIFIED="1522748804572"/>
+<node TEXT="/* Get the name of an attribute */&#xa;&#xa;var x = document.getElementsByTagName(&quot;BUTTON&quot;)[0].attributes[0].name;" ID="ID_1740984164" CREATED="1522748860838" MODIFIED="1522748889034"/>
+</node>
+<node TEXT="attr.value" ID="ID_614793731" CREATED="1522748383255" MODIFIED="1522748386966">
+<node TEXT="Sets or returns the value of the attribute" ID="ID_1509952981" CREATED="1522748544644" MODIFIED="1522748544644"/>
+<node TEXT="/* Get the value of the &lt;button&gt; element&apos;s first attribute: */&#xa;&#xa;var x = document.getElementsByTagName(&quot;BUTTON&quot;)[0].attributes[0].value;" ID="ID_1597274746" CREATED="1522748950587" MODIFIED="1522749009113"/>
+</node>
+<node TEXT="attr.specified" ID="ID_835006831" CREATED="1522748396200" MODIFIED="1522748430675">
+<node TEXT="Returns true if the attribute has been specified, otherwise it returns false" ID="ID_264336340" CREATED="1522748566363" MODIFIED="1522748566363"/>
+<node TEXT="Returns true also if the attribute has been created but not been attached to an element yet." ID="ID_1921793418" CREATED="1522749102862" MODIFIED="1522749102862"/>
+<node TEXT="/* Find out if an attribute has been specified or not: */&#xa;&#xa;var x = document.getElementById(&quot;demo&quot;).attributes[0].specified;" ID="ID_1029633612" CREATED="1522749151893" MODIFIED="1522749181240"/>
+</node>
+</node>
+<node TEXT="Methods" FOLDED="true" ID="ID_1987714074" CREATED="1522748319616" MODIFIED="1522748329078">
+<node TEXT="nodemap.getNamedItem()" ID="ID_264370816" CREATED="1522748431895" MODIFIED="1522748436149">
+<node TEXT="Returns a specified attribute node from a NamedNodeMap" ID="ID_868185726" CREATED="1522748584713" MODIFIED="1522748584713"/>
+<node TEXT="/* Get the value of the onclick attribute of a button element */&#xa;&#xa;var btn = document.getElementsByTagName(&quot;BUTTON&quot;)[0];&#xa;btn.attributes.getNamedItem(&quot;onclick&quot;).value;" ID="ID_1281934123" CREATED="1522749539762" MODIFIED="1522749577533"/>
+</node>
+<node TEXT="nodemap.item()" ID="ID_848750011" CREATED="1522748443445" MODIFIED="1522748454443">
+<node TEXT="Returns the attribute node at a specified index in a NamedNodeMap" ID="ID_1360744462" CREATED="1522749304711" MODIFIED="1522749308495"/>
+<node TEXT="/* Get the name of the first attribute of a &lt;button&gt; element: */&#xa;&#xa;var x = document.getElementsByTagName(&quot;BUTTON&quot;)[0].attributes.item(0).nodeName;" ID="ID_1640380352" CREATED="1522749620938" MODIFIED="1522749653621"/>
+</node>
+<node TEXT="nodemap.length" ID="ID_476972354" CREATED="1522748455609" MODIFIED="1522748459773">
+<node TEXT="  Returns the number of attribute nodes in a NamedNodeMap" ID="ID_1239014294" CREATED="1522749318492" MODIFIED="1522749323807"/>
+<node TEXT="/* Get the number of attributes of a &lt;button&gt; element */&#xa;&#xa;var x = document.getElementsByTagName(&quot;BUTTON&quot;)[0].attributes.length;" ID="ID_1846409929" CREATED="1522749722424" MODIFIED="1522749858411"/>
+</node>
+<node TEXT="nodemap.removeNamedItem()" ID="ID_1516196026" CREATED="1522748468057" MODIFIED="1522748472701">
+<node TEXT="Removes a specified attribute node" ID="ID_846250311" CREATED="1522749332555" MODIFIED="1522749339342"/>
+<node TEXT="/* Remove the type attribute from an input button: */&#xa;&#xa;var btn = document.getElementsByTagName(&quot;INPUT&quot;)[0];&#xa;btn.attributes.removeNamedItem(&quot;type&quot;);" ID="ID_793831929" CREATED="1522750047084" MODIFIED="1522750108474"/>
+</node>
+<node TEXT="nodemap.setNamedItem()" ID="ID_1727916742" CREATED="1522748480304" MODIFIED="1522748484597">
+<node TEXT="Sets the specified attribute node (by name)" ID="ID_856975674" CREATED="1522749412733" MODIFIED="1522749417822"/>
+<node TEXT="/* Set a H1&apos;s class attribute: */&#xa;&#xa;var h = document.getElementsByTagName(&quot;H1&quot;)[0];&#xa;var typ = document.createAttribute(&quot;class&quot;);&#xa;typ.value = &quot;democlass&quot;;&#xa;h.attributes.setNamedItem(typ);" ID="ID_1704266036" CREATED="1522750181001" MODIFIED="1522750309841"/>
+</node>
+</node>
+</node>
+<node TEXT="DOM Element Object" ID="ID_107031089" CREATED="1522750984798" MODIFIED="1522751009594">
+<node TEXT="introduction" FOLDED="true" ID="ID_1502809209" CREATED="1522752519512" MODIFIED="1522752527536">
+<node TEXT="In the HTML DOM, the Element object represents an HTML element." ID="ID_1313597068" CREATED="1522751011273" MODIFIED="1522751015659"/>
+<node TEXT="Element objects can have child nodes of type element nodes, text nodes, or comment nodes." ID="ID_47801274" CREATED="1522751076772" MODIFIED="1522751081242"/>
+<node TEXT="A NodeList object represents a list of nodes, like an HTML element&apos;s collection of child nodes." ID="ID_7109157" CREATED="1522751093783" MODIFIED="1522751099330"/>
+<node TEXT="Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements." ID="ID_1706814041" CREATED="1519823638387" MODIFIED="1519823641701"/>
+<node TEXT="More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy." ID="ID_1009801161" CREATED="1519823669452" MODIFIED="1519823671957"/>
+</node>
+<node TEXT="properties" ID="ID_1553576202" CREATED="1520891507982" MODIFIED="1522753295988">
+<node TEXT="Inherits properties from its parent interface, Node, and by extension that interface&apos;s parent, EventTarget. It implements the properties of ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable." ID="ID_899310690" CREATED="1522754274277" MODIFIED="1522754279020"/>
+<node TEXT="accessKey" ID="ID_129442942" CREATED="1522752967305" MODIFIED="1522752973373"/>
+<node TEXT=".attributes" ID="ID_1976552739" CREATED="1520891546798" MODIFIED="1520891549300">
+<node TEXT="Returns a NamedNodeMap object containing the assigned attributes of the corresponding HTML element." ID="ID_345515982" CREATED="1520891562053" MODIFIED="1520891564828"/>
+<node TEXT="read only" ID="ID_528976857" CREATED="1520891577453" MODIFIED="1520891585444"/>
+</node>
+<node TEXT="childElementCount" ID="ID_115304427" CREATED="1522753022803" MODIFIED="1522753027684"/>
+<node TEXT="children" ID="ID_1441541508" CREATED="1522753061827" MODIFIED="1522753066740"/>
+<node TEXT=".classList" ID="ID_1624098214" CREATED="1520891618485" MODIFIED="1520891621652">
+<node TEXT="Returns a DOMTokenList containing the list of class attributes." ID="ID_1686994267" CREATED="1520891695301" MODIFIED="1520891698795"/>
+<node TEXT="read only" ID="ID_133524943" CREATED="1520891773804" MODIFIED="1520891781314"/>
+</node>
+<node TEXT=".className" ID="ID_1803983539" CREATED="1520891632885" MODIFIED="1520891637556">
+<node TEXT="Is a DOMString representing the class of the element." ID="ID_1240230459" CREATED="1520891745772" MODIFIED="1520891748811"/>
+</node>
+<node TEXT="clientHeight" ID="ID_768720831" CREATED="1522753092413" MODIFIED="1522753095340"/>
+<node TEXT="clientLeft" ID="ID_1047311236" CREATED="1522753103633" MODIFIED="1522753112511"/>
+<node TEXT="clientTop" ID="ID_1505847130" CREATED="1522753114226" MODIFIED="1522753118532"/>
+<node TEXT="clientWidth" ID="ID_671358161" CREATED="1522753130640" MODIFIED="1522753141179"/>
+<node TEXT="currentStyle" ID="ID_1329188297" CREATED="1522753142281" MODIFIED="1522753148396"/>
+<node TEXT="firstElementChild" ID="ID_1681232170" CREATED="1522753203178" MODIFIED="1522753210019"/>
+<node TEXT="id" ID="ID_1750701395" CREATED="1522753222781" MODIFIED="1522753226531"/>
+<node TEXT="innerHTML" ID="ID_376805019" CREATED="1522753234998" MODIFIED="1522753238395"/>
+<node TEXT="lastElementChild" ID="ID_1378182856" CREATED="1522753245817" MODIFIED="1522753251019"/>
+<node TEXT="localName" ID="ID_341447317" CREATED="1522753259623" MODIFIED="1522753263899"/>
+<node TEXT="name" ID="ID_127389084" CREATED="1522753271365" MODIFIED="1522753274619"/>
+<node TEXT="namespaceURI" ID="ID_594789595" CREATED="1522753282129" MODIFIED="1522753286227"/>
+<node TEXT="nextElementSibling" ID="ID_209798331" CREATED="1522753294637" MODIFIED="1522753301754"/>
+<node TEXT="ongotpointercapture" ID="ID_144498157" CREATED="1522753310393" MODIFIED="1522753314698"/>
+<node TEXT="onlostpointercapture" ID="ID_1394869710" CREATED="1522753321534" MODIFIED="1522753342675"/>
+<node TEXT="outerHTML" ID="ID_252906454" CREATED="1522753370449" MODIFIED="1522753373650"/>
+<node TEXT="prefix" ID="ID_1213906740" CREATED="1522753380792" MODIFIED="1522753384338"/>
+<node TEXT="previousElementSibling" ID="ID_1070892602" CREATED="1522753392763" MODIFIED="1522753396322"/>
+<node TEXT="runtimeStyle" ID="ID_1328199812" CREATED="1522753574141" MODIFIED="1522753577673"/>
+<node TEXT="scrollHeight" ID="ID_153144784" CREATED="1522753586138" MODIFIED="1522753590129"/>
+<node TEXT="scrollLeft" ID="ID_447220266" CREATED="1522753595935" MODIFIED="1522753599344"/>
+<node TEXT="scrollLeftMax" ID="ID_1741669224" CREATED="1522753605430" MODIFIED="1522753609240"/>
+<node TEXT="scrollTop" ID="ID_1722976831" CREATED="1522753616640" MODIFIED="1522753620288"/>
+<node TEXT="scrollTopMax" ID="ID_1924036574" CREATED="1522753627283" MODIFIED="1522753630984"/>
+<node TEXT="scrollWidth" ID="ID_647583581" CREATED="1522753638162" MODIFIED="1522753642168"/>
+<node TEXT="shadowRoot" ID="ID_614328425" CREATED="1522753649037" MODIFIED="1522753652528"/>
+<node TEXT="slot" ID="ID_1123099098" CREATED="1522753697671" MODIFIED="1522753701656"/>
+</node>
+<node TEXT="methods" FOLDED="true" ID="ID_1102917540" CREATED="1520891516502" MODIFIED="1520891523036">
+<node TEXT="Inherits methods from its parents Node, and its own parent, EventTarget, and implements those of ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable." ID="ID_1275943289" CREATED="1522754327960" MODIFIED="1522754330531"/>
+<node TEXT="EventTarget.addEventListener()" ID="ID_93154158" CREATED="1522754402570" MODIFIED="1522754409347"/>
+<node TEXT="Element.attachShadow()" ID="ID_1926930250" CREATED="1522754417399" MODIFIED="1522754421755"/>
+<node TEXT="Element.animate()" ID="ID_1212933245" CREATED="1522754432855" MODIFIED="1522754437115"/>
+<node TEXT="Element.closest()" ID="ID_755512863" CREATED="1522754448581" MODIFIED="1522754452034"/>
+<node TEXT="Element.createShadowRoot()" ID="ID_1383202899" CREATED="1522754461216" MODIFIED="1522754465259"/>
+<node TEXT="EventTarget.dispatchEvent()" ID="ID_736146410" CREATED="1522754575194" MODIFIED="1522754579386"/>
+<node TEXT="Element.getAnimations()" ID="ID_942320627" CREATED="1522754503387" MODIFIED="1522754506818"/>
+<node TEXT="Element.getAttribute()" ID="ID_1680932229" CREATED="1522754515340" MODIFIED="1522754519290"/>
+<node TEXT="Element.getAttributeNames()" ID="ID_96920404" CREATED="1522754528735" MODIFIED="1522754532962"/>
+<node TEXT="Element.getAttributeNS()" ID="ID_1669664148" CREATED="1522754542351" MODIFIED="1522754546930"/>
+<node TEXT="Element.getAttributeNodeNS()" ID="ID_1022886256" CREATED="1522754612167" MODIFIED="1522754616073"/>
+<node TEXT="Element.getBoundingClientRect()" ID="ID_408760785" CREATED="1522754637029" MODIFIED="1522754641393"/>
+<node TEXT="Element.getClientRects()" ID="ID_808501423" CREATED="1522754651562" MODIFIED="1522754656097"/>
+<node TEXT="Element.getElementsByClassName()" ID="ID_1545055809" CREATED="1522754665088" MODIFIED="1522754670017"/>
+<node TEXT="Element.getElementsByTagName()" ID="ID_1210307566" CREATED="1522754678961" MODIFIED="1522754682529"/>
+<node TEXT="Element.getElementsByTagNameNS()" ID="ID_1501778520" CREATED="1522754689444" MODIFIED="1522754707393"/>
+<node TEXT="Element.hasAttribute()" ID="ID_1938732066" CREATED="1522754718486" MODIFIED="1522754722712"/>
+<node TEXT="Element.hasAttributeNS()" ID="ID_968730278" CREATED="1522754730318" MODIFIED="1522754734480"/>
+<node TEXT="Element.hasAttributes()" ID="ID_1421034882" CREATED="1522754744906" MODIFIED="1522754748448"/>
+<node TEXT="Element.insertAdjacentElement" ID="ID_857955870" CREATED="1522754772189" MODIFIED="1522754776376"/>
+<node TEXT="Element.insertAdjacentHTML" ID="ID_124535861" CREATED="1522754784116" MODIFIED="1522754787920"/>
+<node TEXT="Element.insertAdjacentText" ID="ID_650248942" CREATED="1522754800424" MODIFIED="1522754803872"/>
+<node TEXT="Element.matches()" ID="ID_1508897558" CREATED="1522754813800" MODIFIED="1522754817632"/>
+<node TEXT="Element.querySelector()" ID="ID_1469479312" CREATED="1522754852684" MODIFIED="1522754856351"/>
+<node TEXT="Element.querySelectorAll()" ID="ID_1479747789" CREATED="1522754905144" MODIFIED="1522754909311"/>
+<node TEXT="Element.releasePointerCapture()" ID="ID_1051568938" CREATED="1522754918830" MODIFIED="1522754923111"/>
+<node TEXT="ChildNode.remove()" ID="ID_1337484055" CREATED="1522754967454" MODIFIED="1522754971375"/>
+<node TEXT="Element.removeAttribute()" ID="ID_1899411771" CREATED="1522754980539" MODIFIED="1522754985119"/>
+<node TEXT="Element.removeAttributeNS()" ID="ID_719530518" CREATED="1522754993744" MODIFIED="1522754997767"/>
+<node TEXT="Element.removeAttributeNode()" ID="ID_1300887062" CREATED="1522755007521" MODIFIED="1522755011758"/>
+<node TEXT="Element.requestFullscreen()" ID="ID_1478102356" CREATED="1522755060237" MODIFIED="1522755064022"/>
+<node TEXT="Element.requestPointerLock()" ID="ID_409467165" CREATED="1522755074630" MODIFIED="1522755080502"/>
+<node TEXT="Element.scrollIntoView()" ID="ID_1575137621" CREATED="1522755090512" MODIFIED="1522755095206"/>
+<node TEXT="Element.setAttribute()" ID="ID_1142940655" CREATED="1522755107266" MODIFIED="1522755111246"/>
+<node TEXT="Element.setAttributeNS()" ID="ID_1674214947" CREATED="1522755119670" MODIFIED="1522755159397"/>
+<node TEXT="Element.setAttributeNode()" ID="ID_1068052540" CREATED="1522755161040" MODIFIED="1522755167078"/>
+<node TEXT="Element.setAttributeNodeNS()" ID="ID_1110999592" CREATED="1522755178878" MODIFIED="1522755191173"/>
+<node TEXT="Element.setCapture()" ID="ID_703606476" CREATED="1522755205584" MODIFIED="1522755209685"/>
+<node TEXT="Element.setPointerCapture()" ID="ID_615356857" CREATED="1522755218258" MODIFIED="1522755221717"/>
+</node>
+</node>
+<node TEXT="properties" ID="ID_1615733263" CREATED="1522755318334" MODIFIED="1522755325276">
+<node TEXT="This interface also inherits from the Node and EventTarget interfaces." ID="ID_802425142" CREATED="1522755569263" MODIFIED="1522755616602"/>
+</node>
+<node TEXT="methods" ID="ID_131225570" CREATED="1522755330096" MODIFIED="1522755337812"/>
+</node>
+<node TEXT="Device APIs" ID="ID_1826537008" CREATED="1521814761690" MODIFIED="1521814773403">
+<node TEXT="This set of APIs allows access to various hardware features available to Web pages and applications." ID="ID_448957946" CREATED="1521814906154" MODIFIED="1521814912316"/>
+<node TEXT=" Ambient Light Sensor API" ID="ID_490340727" CREATED="1521814939907" MODIFIED="1521814946137"/>
+<node TEXT="Battery Status API" ID="ID_1483764625" CREATED="1521814960299" MODIFIED="1521814963748"/>
+<node TEXT=" Geolocation API" ID="ID_278394236" CREATED="1521814979507" MODIFIED="1521814982516"/>
+<node TEXT="Pointer Lock API" ID="ID_1045216472" CREATED="1521815001123" MODIFIED="1521815005717"/>
+<node TEXT=" Proximity API" ID="ID_208754827" CREATED="1521815016307" MODIFIED="1521815020060"/>
+<node TEXT=" Device Orientation API" ID="ID_999903887" CREATED="1521815035643" MODIFIED="1521815039445"/>
+<node TEXT="Screen Orientation API" ID="ID_1557356085" CREATED="1521815050787" MODIFIED="1521815057325"/>
+<node TEXT=" Vibration API" ID="ID_1684469783" CREATED="1521815105404" MODIFIED="1521815110134"/>
+</node>
+<node TEXT="Communication APIs" ID="ID_719246936" CREATED="1521814774089" MODIFIED="1521814784867">
+<node TEXT="These APIs let Web pages and applications communicate with other pages or devices." ID="ID_1947591787" CREATED="1521815124804" MODIFIED="1521815129493"/>
+<node TEXT=" Network Information API" ID="ID_667816301" CREATED="1521815143572" MODIFIED="1521815147853"/>
+<node TEXT="Web Notifications" ID="ID_1580676630" CREATED="1521815163180" MODIFIED="1521815165925"/>
+<node TEXT="Simple Push API" ID="ID_839800433" CREATED="1521815176788" MODIFIED="1521815182166"/>
+</node>
+<node TEXT="Data management APIs" ID="ID_1170619429" CREATED="1521814785433" MODIFIED="1521814804890">
+<node TEXT="User data can be stored and managed using this set of APIs." ID="ID_829491973" CREATED="1521815203381" MODIFIED="1521815207911"/>
+<node TEXT=" FileHandle API" ID="ID_928444851" CREATED="1521815220061" MODIFIED="1521815224222"/>
+<node TEXT="IndexedDB" ID="ID_1369300434" CREATED="1521815232764" MODIFIED="1521815236821"/>
+</node>
+<node TEXT="Privileged APIs" ID="ID_1192514583" CREATED="1521814832962" MODIFIED="1521814838060">
+<node TEXT="A privileged application is an installed app that has been given specific rights by the user." ID="ID_935799373" CREATED="1521815260676" MODIFIED="1521815266486"/>
+<node TEXT=" TCP Socket API" ID="ID_957822147" CREATED="1521815285037" MODIFIED="1521815288102"/>
+<node TEXT="Contacts API" ID="ID_1439028015" CREATED="1521815316110" MODIFIED="1521815320685"/>
+<node TEXT="Device Storage API" ID="ID_474395882" CREATED="1521815331757" MODIFIED="1521815359334"/>
+<node TEXT="Browser API" ID="ID_28444162" CREATED="1521815351149" MODIFIED="1521815355685"/>
+<node TEXT="Camera API" ID="ID_376051487" CREATED="1521815372278" MODIFIED="1521815376559"/>
+</node>
+<node TEXT="Certified APIs" ID="ID_1979311447" CREATED="1521814841762" MODIFIED="1521814856267">
+<node TEXT="Bluetooth API" ID="ID_811757563" CREATED="1521815466894" MODIFIED="1521815472312"/>
+<node TEXT=" Mobile Connection API" ID="ID_1332094932" CREATED="1521815484430" MODIFIED="1521815489175"/>
+<node TEXT="Network Stats API" ID="ID_905410952" CREATED="1521815500775" MODIFIED="1521815505671"/>
+<node TEXT="Telephony" ID="ID_1211764679" CREATED="1521815513959" MODIFIED="1521815518770"/>
+<node TEXT=" WebSMS" ID="ID_618265229" CREATED="1521815528511" MODIFIED="1521815532696"/>
+<node TEXT="WiFi Information API" ID="ID_1439081313" CREATED="1521815544895" MODIFIED="1521815548816"/>
+<node TEXT=" Power Management API" ID="ID_1764242144" CREATED="1521815561071" MODIFIED="1521815565728"/>
+<node TEXT=" Settings API" ID="ID_1611535984" CREATED="1521815581367" MODIFIED="1521815586144"/>
+<node TEXT=" Idle API" ID="ID_1200404515" CREATED="1521815635887" MODIFIED="1521815639880"/>
+<node TEXT=" Permissions API" ID="ID_1288975783" CREATED="1521815650512" MODIFIED="1521815655880"/>
+<node TEXT="Time/Clock API" ID="ID_42379450" CREATED="1521815673200" MODIFIED="1521815677280"/>
+</node>
+<node TEXT="Web Storage API" FOLDED="true" ID="ID_975504561" CREATED="1515661463986" MODIFIED="1521189955393">
+<node TEXT="The Web Storage API provides mechanisms by which browsers can securely store key/value pairs, in a much more intuitive fashion than using cookies. " ID="ID_1567172796" CREATED="1515661511672" MODIFIED="1521189955391"/>
+<node TEXT="Basic concepts" FOLDED="true" ID="ID_1652000095" CREATED="1515661632023" MODIFIED="1515662961836">
+<node TEXT="Storage objects are simple key-value stores, similar to objects, but they stay intact through page loads. The keys and the values are always strings (note that integer keys will be automatically converted to strings, just like what objects do). You can access these values like an object, or with the Storage.getItem() and Storage.setItem() methods. These three lines all set the colorSetting entry in the same way:" ID="ID_26214173" CREATED="1515661663066" MODIFIED="1515661663066"/>
+<node TEXT="localStorage.colorSetting = &apos;#a4509b&apos;;" ID="ID_840151432" CREATED="1515661677379" MODIFIED="1515661677379"/>
+<node TEXT="localStorage[&apos;colorSetting&apos;] = &apos;#a4509b&apos;;" ID="ID_1104328722" CREATED="1515661677381" MODIFIED="1515661677381"/>
+<node TEXT="localStorage.setItem(&apos;colorSetting&apos;, &apos;#a4509b&apos;);" ID="ID_457764506" CREATED="1515661677381" MODIFIED="1515661677381"/>
+<node TEXT="sessionStorage" ID="ID_1898386258" CREATED="1515661384870" MODIFIED="1517823250960">
+<arrowlink SHAPE="LINE" COLOR="#000000" WIDTH="2" TRANSPARENCY="80" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1898386258" STARTINCLINATION="0;0;" ENDINCLINATION="0;0;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_1898386258" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_310862773" SOURCE="ID_1898386258" STARTARROW="None" STARTINCLINATION="0;0;"/>
+</node>
+<node TEXT="maintains a separate storage area for each given origin that&apos;s available for the duration of the page session (as long as the browser is open, including page reloads and restores). " ID="ID_1032752383" CREATED="1515661912609" MODIFIED="1515661915892"/>
+<node TEXT="localStorage" ID="ID_316477597" CREATED="1515661400284" MODIFIED="1515661400284"/>
+<node TEXT="does the same thing, but persists even when the browser is closed and reopened. " ID="ID_1763601637" CREATED="1515661934609" MODIFIED="1515661937562"/>
+</node>
+<node TEXT="Local Storage vs Session Storage vs Cookie" FOLDED="true" ID="ID_667026147" CREATED="1515662620682" MODIFIED="1515662919772">
+<node TEXT="LocalStorage" FOLDED="true" ID="ID_1260766077" CREATED="1515662635522" MODIFIED="1515662904845">
+<node TEXT="Stores data with no expiration date, and gets cleared only through JavaScript, or clearing the Browser cache / Locally Stored Data" ID="ID_853342055" CREATED="1515662661729" MODIFIED="1515662661729"/>
+<node TEXT="Storage limit is the maximum amongst the three" ID="ID_1390903048" CREATED="1515662661731" MODIFIED="1515662661731"/>
+</node>
+<node TEXT="SessionStorage" FOLDED="true" ID="ID_1847879931" CREATED="1515662642449" MODIFIED="1515662906918">
+<node TEXT="The sessionStorage object stores data only for a session, meaning that the data is stored until the browser (or tab) is closed." ID="ID_265963929" CREATED="1515662671289" MODIFIED="1515662671289"/>
+<node TEXT="Data is never transferred to the server." ID="ID_1754614246" CREATED="1515662671291" MODIFIED="1515662671291"/>
+<node TEXT="Storage limit is larger than a cookie (at least 5MB)." ID="ID_522752581" CREATED="1515662671292" MODIFIED="1515662671292"/>
+</node>
+<node TEXT="Cookie" FOLDED="true" ID="ID_153902170" CREATED="1515662648522" MODIFIED="1515662909709">
+<node TEXT="Stores data that has to be sent back to the server with subsequent requests. Its expiration varies based on the type and the expiration duration can be set from either server-side or client-side (normally from server-side)." ID="ID_21907825" CREATED="1515662723566" MODIFIED="1515662723566"/>
+<node TEXT="Cookies are primarily for server-side reading (can also be read on client-side), localStorage and sessionStorage can only be read on client-side." ID="ID_325474851" CREATED="1515662723568" MODIFIED="1515662723568"/>
+<node TEXT="Size must be less than 4KB." ID="ID_212124319" CREATED="1515662723569" MODIFIED="1515662723569"/>
+<node TEXT="Cookies can be made secure by setting the httpOnly flag as true for that cookie. This prevents client-side access to that cookie" ID="ID_1273149658" CREATED="1515662723570" MODIFIED="1515662723570"/>
+</node>
+</node>
+</node>
+<node TEXT="Web Workers API" ID="ID_1639014560" CREATED="1518085185446" MODIFIED="1518085185446"/>
+<node TEXT="Console Api" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1520975991523">
+<node TEXT="The Console object provides access to the browser&apos;s debugging console (e.g. the Web Console in Firefox). The specifics of how it works varies from browser to browser, but there is a de facto set of features that are typically provided." ID="ID_1019177181" CREATED="1519030454565" MODIFIED="1519030460464"/>
+<node TEXT="The Console object can be accessed from any global object. Window on browsing scopes and WorkerGlobalScope as specific variants in workers via the property console. It&apos;s exposed as Window.console, and can be referenced as simply console." ID="ID_1149192939" CREATED="1520976183480" MODIFIED="1520976191681"/>
+<node TEXT="Methodes" ID="ID_318229738" CREATED="1520976394039" MODIFIED="1520976412472">
+<node TEXT="console.log()" ID="ID_400424110" CREATED="1520976427182" MODIFIED="1520976438248">
+<node TEXT="regular" FOLDED="true" ID="ID_1078102953" CREATED="1520976447846" MODIFIED="1520976453816">
+<node TEXT="console.log(&apos;hello&apos;);" ID="ID_271379426" CREATED="1520976483486" MODIFIED="1520976498839"/>
+</node>
+<node TEXT="interpolated" FOLDED="true" ID="ID_1567067051" CREATED="1520976456174" MODIFIED="1520976464384">
+<node TEXT="console.log(&apos;This is %s a string!&apos; , &apos;shit&apos;)" ID="ID_1746417854" CREATED="1520976539277" MODIFIED="1520976585271"/>
+</node>
+<node TEXT="styled" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
+<node TEXT="console.log(&apos;%c I am a pretty print!&apos; &apos;font-size:50px; background:red;&apos;)" ID="ID_1488628482" CREATED="1520976590677" MODIFIED="1520976657350"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Selectors API" ID="ID_1368576807" CREATED="1520889550702" MODIFIED="1520889555504">
+<node TEXT="The Selectors API provides methods that make it quick and easy to retrieve Element nodes from the DOM by matching against a set of selectors." ID="ID_1097846325" CREATED="1520890154583" MODIFIED="1520890166583"/>
+<node TEXT="querySelector" ID="ID_1117896581" CREATED="1520890180823" MODIFIED="1520890184414">
+<node TEXT="Returns the first matching Element node within the node&apos;s subtree. If no matching node is found, null is returned." ID="ID_1147142998" CREATED="1520890227135" MODIFIED="1520890231566"/>
+</node>
+<node TEXT="querySelectorAll" ID="ID_164638681" CREATED="1520890198295" MODIFIED="1520890245357">
+<node TEXT="Returns a NodeList containing all matching Element nodes within the node&apos;s subtree, or an empty NodeList if no matches are found." ID="ID_1581498986" CREATED="1520890257430" MODIFIED="1520890262477"/>
+</node>
+<node TEXT="Element" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525"/>
+</node>
+</node>
+<node TEXT="cookies" FOLDED="true" ID="ID_194660626" CREATED="1515602020518" MODIFIED="1515602026494">
+<node TEXT="Was sind Third Party Cookies?" FOLDED="true" ID="ID_657863754" CREATED="1515602043953" MODIFIED="1515663572516">
+<node TEXT="Third Party Cookies werden von Werbetreibenden genutzt, die &#xfc;ber ihre Werbeschaltungen auf anderen Seiten mit den Cookies Nutzerinformationen sammeln. Es handelt sich dabei um Datens&#xe4;tze, die im Browser des Nutzers hinterlegt werden, wenn er eine Seite mit der Werbung besucht. Besucht er erneut eine Seite mit Werbung des gleichen Anbieters, wird er wiedererkannt." ID="ID_1968279038" CREATED="1515602066435" MODIFIED="1515602066435"/>
+<node TEXT="Da sich mit Third Party Cookies die Wege des Nutzers im Internet verfolgen lassen, kann der Werbetreibende bei einem erneuten Besuch auf das &#x201c;Profil&#x201d; des Nutzers zugeschnittene Werbung ausspielen." ID="ID_1184664273" CREATED="1515602066442" MODIFIED="1515602066442"/>
+</node>
+<node TEXT="Unterschied zu First Party Cookies" FOLDED="true" ID="ID_1007566117" CREATED="1515602082658" MODIFIED="1515663574972">
+<node TEXT="Das Wort &#x201c;Party&#x201d; in First/Third Party Cookies bezieht sich auf die Domain, von der der Cookie stammt. W&#xe4;hrend ein First Party Cookie in der Regel vom Websitebetreiber selbst stammt, lassen sich Third Party Cookies auf eine andere &#x2013; eben &#x201c;dritte&#x201d; &#x2013; Person zur&#xfc;ckf&#xfc;hren, die ihre Cookies auf einer anderen Seite platzieren." ID="ID_1878575424" CREATED="1515602101112" MODIFIED="1515602101112"/>
+<node TEXT="Es ist also m&#xf6;glich, dass auf Ihrem Rechner nach dem Besuch einer Website sowohl Third Party Cookies als auch First Party Cookies gespeichert werden &#x2013; von der Seite selbst und von einer dritten Partei, die Werbung auf dieser Seite platziert hat. Bei einem First Party Cookie kann der Nutzer nur von der Seite wiedererkannt werden, von der der Cookie stammt, nicht aber &#xfc;ber mehrere Domains hinweg. Die Daten werden dadurch auch nicht an Dritte weitergegeben." ID="ID_519018942" CREATED="1515602101123" MODIFIED="1515602101123"/>
+<node TEXT="Third Party Cookies lassen sich technisch einfacher implementieren als First Party Cookies. Auf der Website, auf der die Cookies eingebunden werden sollen, muss kein Code hinterlegt werden. Es reicht die Werbeanzeige (Ad) vom AdServer des Drittanbieters." ID="ID_1924401888" CREATED="1515602101129" MODIFIED="1515602101129"/>
+</node>
+</node>
+<node TEXT="Critical Rendering Path" FOLDED="true" ID="ID_518386952" CREATED="1516872631933" MODIFIED="1516872631933">
+<node TEXT="When a browser receives the HTML response for a page from the server, there are a lot of steps to be taken before pixels are drawn on the screen. This sequence the browsers needs to run through for the initial paint of the page is called the &quot;Critical Rendering Path&quot;. this includes 6 steps" ID="ID_1112849103" CREATED="1516872683995" MODIFIED="1516872977686"/>
+<node TEXT="Constructing the DOM Tree" FOLDED="true" ID="ID_771777683" CREATED="1516872728612" MODIFIED="1516872835497">
+<node TEXT="The DOM (Document Object Model) Tree is an Object representation of the fully parsed HTML page. Starting with the root element, &lt;html&gt;, nodes are created for each element/text on the page. Elements nested within other elements are represented as child nodes and each node contains the full attributes for that element. For example, an &lt;a&gt; element will have the href attribute associated with it&#x2019;s node." ID="ID_728957923" CREATED="1516887642664" MODIFIED="1516887642664"/>
+<node TEXT="A good thing about HTML is that it can be executed in parts. The full document doesn&apos;t have to be loaded for content to start appearing on the page. However, other resources, CSS and JavaScript, can block the render of the page." ID="ID_916688323" CREATED="1516983036345" MODIFIED="1516983036345"/>
+</node>
+<node TEXT="Constructing the CSSOM Tree" FOLDED="true" ID="ID_430741044" CREATED="1516872748187" MODIFIED="1516872846742">
+<node TEXT="The CSSOM (CSS Object Model) is an Object representation of the styles associated with the DOM. It is represented in a similar way to the DOM, but with the associated styles for each node, whether they explicitly declared or implicitly inherited, included. In the style.css file from the document mentioned above, we have the folowing styles -" ID="ID_1128680039" CREATED="1516983134326" MODIFIED="1516983134326"/>
+<node TEXT="CSS is considered a &quot;render blocking resource&quot;. This means that the Render Tree (see below) cannot be constructed without first fully parsing the resource. Unlike HTML, CSS cannot be used in parts because of its inherit cascading nature. Styles defined later in the document can override and change styles that were previously defined. This means that CSS must be fully parsed before we can move on to the next stage." ID="ID_856909644" CREATED="1516983220780" MODIFIED="1516983360742"/>
+<node TEXT="CSS files are only considered render blocking if they apply to the current device. The &lt;link rel=&quot;stylesheet&quot;&gt; tag can accept a media attribute, in which we can specify any media query which the styles within apply to. If, for example, we have a stylesheet with a media attribute of orientation:landscape, and we are viewing the page in portrait mode, that resource will not be considered render blocking." ID="ID_1842791749" CREATED="1516983282131" MODIFIED="1516983282131"/>
+<node TEXT="CSS can also be &quot;script blocking&quot;. This is because JavaScript files must wait until the CSSOM has been constructed before it can run." ID="ID_1059854394" CREATED="1516983315123" MODIFIED="1516983315123"/>
+</node>
+<node TEXT="Running JavaScript" FOLDED="true" ID="ID_1164211512" CREATED="1516872794757" MODIFIED="1516872794757">
+<node TEXT="JavaScript is considered a &quot;parser blocking resource&quot;. This means that the parsing of the HTML document itself is blocked by JavaScript." ID="ID_757640489" CREATED="1516983535081" MODIFIED="1516983535081"/>
+<node TEXT="When the parser reaches a &lt;script&gt; tag, whether that be internal or external, it stops to fetch (if it is external) and run it. This why, if we have a JavaScript file that references elements within the document, it must be placed after the appearance of that document." ID="ID_581676260" CREATED="1516983609337" MODIFIED="1516983609337"/>
+<node TEXT="To avoid JavaScript being parser blocking, it can be loaded asynchronously be applying the async attribute." ID="ID_1094428563" CREATED="1516983682056" MODIFIED="1516983682056"/>
+</node>
+<node TEXT="Creating the Rendering Tree" FOLDED="true" ID="ID_1794295488" CREATED="1516983830758" MODIFIED="1516983846695">
+<node TEXT="The Render Tree is a combination of both the DOM and CSSOM. It is a Tree that represents what will be eventually rendered on the page. This means that it only captures the visible content and will not include, for example, elements that have been hidden with CSS using display: none." ID="ID_584899773" CREATED="1516983863810" MODIFIED="1516983863810"/>
+</node>
+<node TEXT="Generating the Layout" FOLDED="true" ID="ID_1334468117" CREATED="1516872873744" MODIFIED="1516872873744">
+<node TEXT="The Layout is what determines what the size of the viewport is, which provides context for CSS styles that are dependent on it, e.g. percentage or viewport units. The viewport size is determined by the meta viewport tag provided in the document head or, if no tag is provided, the default viewport width of 980px is used." ID="ID_815379728" CREATED="1516983934600" MODIFIED="1516983934600"/>
+<node TEXT="For example, the most common meta viewport value is to set the viewport size to correspond to the device width -" ID="ID_1724393420" CREATED="1516983963671" MODIFIED="1516983963671"/>
+<node TEXT="&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;" ID="ID_1634446684" CREATED="1516984027457" MODIFIED="1516984027457"/>
+<node TEXT="If the user visits the webpage on a device with a width of, for example, 1000px, then sizes will be based on that unit. Half the viewport will be 500px, 10vw will be 100px, and so on." ID="ID_658413742" CREATED="1516984072865" MODIFIED="1516984072865"/>
+</node>
+<node TEXT="Painting" FOLDED="true" ID="ID_1713412525" CREATED="1516872897910" MODIFIED="1516872926233">
+<node TEXT="Finally, in the Painting step, the visible content of the page can be converted to pixels to be displayed on the screen." ID="ID_1019783291" CREATED="1516984129430" MODIFIED="1516984129430"/>
+<node TEXT="How much time the paint step takes depends on the size of the DOM, as well as what styles are applied. Some styles require more work to execute than others. For example, a complicated gradient background-image will require more time than a simple solid background colour." ID="ID_1917224877" CREATED="1516984175519" MODIFIED="1516984175519"/>
+</node>
+<node TEXT="To see the Critical Rendering Path in process, we can inspect it in DevTools. In Chrome, it is under the Performance tab." ID="ID_761408470" CREATED="1516984221277" MODIFIED="1516984286253"/>
+<node TEXT="png_5868046861603241277.png" ID="ID_126447519" CREATED="1516982981163" MODIFIED="1516982981163">
+<hook URI="webdevelopment2_files/png_5868046861603241277.png" SIZE="0.80862534" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
@@ -3867,6 +3989,9 @@
 <node TEXT="redux-data-flow.png" ID="ID_141702417" CREATED="1522621130796" MODIFIED="1522621130796">
 <hook URI="webdevelopment2_files/redux-data-flow.png" SIZE="0.94043887" NAME="ExternalObject"/>
 </node>
+</node>
+<node TEXT="resources" ID="ID_1596190764" CREATED="1522713315330" MODIFIED="1522713324301">
+<node TEXT="https://github.com/reactjs/redux/tree/master/docs" ID="ID_1366589383" CREATED="1522713333693" MODIFIED="1522713333693" LINK="https://github.com/reactjs/redux/tree/master/docs"/>
 </node>
 </node>
 <node TEXT="Mobx" ID="ID_1204779131" CREATED="1522617485512" MODIFIED="1522617497325"/>
@@ -4685,6 +4810,7 @@
 <node TEXT="https://www.youtube.com/channel/UCCHcJejvdlXxLlG0encr53Q/playlists" ID="ID_1395782973" CREATED="1522622565458" MODIFIED="1522622569247"/>
 <node TEXT="https://www.youtube.com/watch?v=SGOFxK-28ns&amp;list=PL2dKqfImstaSl8Hi6UrovwraEHvK2MNPt" ID="ID_1229224787" CREATED="1522622617562" MODIFIED="1522622621095"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" ID="ID_1106465499" CREATED="1522708682079" MODIFIED="1522708689132"/>
+<node TEXT="https://developer.mozilla.org/en-US/docs/Web/API/Document" ID="ID_1744516039" CREATED="1522755700783" MODIFIED="1522755705962"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -5116,9 +5242,9 @@
 <node TEXT="https://css-tricks.com/almanac/" ID="ID_1944714815" CREATED="1522221976971" MODIFIED="1522221976971" LINK="https://css-tricks.com/almanac/"/>
 </node>
 <node TEXT="js" ID="ID_1179341838" CREATED="1521807321173" MODIFIED="1521807329598">
-<node TEXT="https://www.w3schools.com/jsref/default.asp" ID="ID_928059534" CREATED="1522706564171" MODIFIED="1522706570595"/>
+<node TEXT="https://www.w3schools.com/jsref/default.asp" ID="ID_949903332" CREATED="1522747755660" MODIFIED="1522747755660" LINK="https://www.w3schools.com/jsref/default.asp"/>
 </node>
-<node TEXT="styleguide" ID="ID_247252920" CREATED="1522221983732" MODIFIED="1522222000582">
+<node TEXT="styleguides" ID="ID_247252920" CREATED="1522221983732" MODIFIED="1522752033163">
 <node TEXT="https://google.github.io/styleguide/jsguide.html" ID="ID_1053772617" CREATED="1522222126408" MODIFIED="1522222126408" LINK="https://google.github.io/styleguide/jsguide.html"/>
 <node TEXT="https://github.com/airbnb/javascript" ID="ID_1394253637" CREATED="1522222166988" MODIFIED="1522222166988" LINK="https://github.com/airbnb/javascript"/>
 </node>
@@ -5126,6 +5252,9 @@
 </node>
 <node TEXT="Security" ID="ID_186255367" CREATED="1520844171048" MODIFIED="1520844184253">
 <node TEXT="https://haveibeenpwned.com/" ID="ID_633001591" CREATED="1520844188943" MODIFIED="1520844188943" LINK="https://haveibeenpwned.com/"/>
+</node>
+<node TEXT="specifications" ID="ID_1968463408" CREATED="1522752109569" MODIFIED="1522752118515">
+<node TEXT="https://www.w3.org/TR/" ID="ID_1976453487" CREATED="1522752122571" MODIFIED="1522752122571" LINK="https://www.w3.org/TR/"/>
 </node>
 <node TEXT="little helper" ID="ID_371759216" CREATED="1520937175504" MODIFIED="1520937219195">
 <node TEXT="http://keycode.info/" ID="ID_1157481173" CREATED="1520937224500" MODIFIED="1520937224500" LINK="http://keycode.info/"/>
