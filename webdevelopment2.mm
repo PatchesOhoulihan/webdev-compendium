@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff" show_icon_for_attributes="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -1031,7 +1031,7 @@
 <node TEXT="1. Inline style (inside an HTML element)&#xa;2. External and internal style sheets (in the head section)&#xa;3. Browser default" ID="ID_812367423" CREATED="1519591619160" MODIFIED="1519591882873"/>
 </node>
 </node>
-<node TEXT="Selectors" FOLDED="true" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
+<node TEXT="Selectors" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
 <node TEXT="Simple selectors" FOLDED="true" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
 <node TEXT="Type selector" FOLDED="true" ID="ID_835537567" CREATED="1519516109081" MODIFIED="1519516113404">
 <node TEXT="Selects all elements that match the given node name." ID="ID_1746383443" CREATED="1519516234152" MODIFIED="1519516237323"/>
@@ -2701,14 +2701,80 @@
 <node TEXT="The global object itself can be accessed using the this operator in the global scope (but only if ECMAScript 5 strict mode is not used; in that case it returns undefined)." ID="ID_376537155" CREATED="1521190401587" MODIFIED="1521190411781"/>
 <node TEXT=" In fact, the global scope consists of the properties of the global object, including inherited properties, if any." ID="ID_867838805" CREATED="1521190580052" MODIFIED="1521190583581"/>
 <node TEXT="Other objects in the global scope are either created by the user script or provided by the host application. The host objects available in browser contexts" ID="ID_1066163475" CREATED="1521190629908" MODIFIED="1521190637493"/>
-<node TEXT="Value properties" FOLDED="true" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653">
+<node TEXT="Value properties" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653">
 <node TEXT="These global properties return a simple value; they have no properties or methods." ID="ID_1820806319" CREATED="1521308519053" MODIFIED="1521308524186"/>
-<node TEXT="Infinity" OBJECT="java.lang.Double|Infinity" ID="ID_170409255" CREATED="1521308534229" MODIFIED="1521308544945"/>
-<node TEXT="NaN" OBJECT="java.lang.Double|NaN" ID="ID_230146644" CREATED="1521308545797" MODIFIED="1521308549911"/>
-<node TEXT="undefined" ID="ID_809751258" CREATED="1521308558061" MODIFIED="1521308562207"/>
-<node TEXT="null literal" ID="ID_1874205737" CREATED="1521308572029" MODIFIED="1521308576094"/>
+<node TEXT="Infinity" OBJECT="java.lang.Double|Infinity" ID="ID_170409255" CREATED="1521308534229" MODIFIED="1521308544945">
+<node TEXT="description" ID="ID_1198201734" CREATED="1523122757416" MODIFIED="1523124704708">
+<node TEXT="The global Infinity property is a numeric value representing infinity." ID="ID_183677450" CREATED="1523122460939" MODIFIED="1523122460939"/>
+<node TEXT="Infinity is a property of the global object, or in other words, a variable in global scope." ID="ID_873153727" CREATED="1523122514802" MODIFIED="1523122570900"/>
+<node TEXT="The initial value of Infinity is Number.POSITIVE_INFINITY. The value Infinity (positive infinity) is greater than any other number." ID="ID_944046667" CREATED="1523122634593" MODIFIED="1523122640012"/>
+<node TEXT="Mathematically, this value behaves the same as infinity; for example, any positive number multiplied by Infinity equals Infinity, and any number divided by Infinity equals 0." ID="ID_207656390" CREATED="1523122658985" MODIFIED="1523122664044"/>
+<node TEXT="As defined by the ECMAScript 5 specification, Infinity is read-only" ID="ID_47540567" CREATED="1523122682585" MODIFIED="1523122687547"/>
 </node>
-<node TEXT="Function properties" FOLDED="true" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
+<node TEXT="examples" ID="ID_324219772" CREATED="1523122717233" MODIFIED="1523122723219">
+<node TEXT="console.log(Infinity          ); /* Infinity */ &#xa;console.log(Infinity + 1      ); /* Infinity */ &#xa;console.log(Math.pow(10, 1000)); /* Infinity */ &#xa;console.log(Math.log(0)       ); /* -Infinity */ &#xa;console.log(1 / Infinity      ); /* 0 */" ID="ID_1631325993" CREATED="1523122739432" MODIFIED="1523122742315"/>
+<node TEXT="var maxNumber = Math.pow(10, 1000); // max positive number  if (maxNumber === Infinity) {   console.log(&quot;Let&apos;s call it Infinity!&quot;);   // expected output: &quot;Let&apos;s call it Infinity!&quot; }  console.log(1 / maxNumber); // expected output: 0" ID="ID_1224079163" CREATED="1523122748264" MODIFIED="1523122752299"/>
+</node>
+</node>
+<node TEXT="NaN" OBJECT="java.lang.Double|NaN" ID="ID_230146644" CREATED="1521308545797" MODIFIED="1521308549911">
+<node TEXT="description" ID="ID_1550987128" CREATED="1523122857055" MODIFIED="1523124720036">
+<node TEXT="NaN is a property of the global object." ID="ID_90693284" CREATED="1523122991922" MODIFIED="1523122991922"/>
+<node TEXT="The initial value of NaN is Not-A-Number &#x2014; the same as the value of Number.NaN. In modern browsers, NaN is a non-configurable, non-writable property. Even when this is not the case, avoid overriding it." ID="ID_337256363" CREATED="1523124608851" MODIFIED="1523124612374"/>
+<node TEXT="It is rather rare to use NaN in a program. It is the returned value when Math functions fail (Math.sqrt(-1)) or when a function trying to parse a number fails (parseInt(&quot;blabla&quot;))." ID="ID_602919142" CREATED="1523124635298" MODIFIED="1523124649493"/>
+</node>
+<node TEXT="testing against NaN" ID="ID_172186221" CREATED="1523122865967" MODIFIED="1523122982249">
+<node TEXT="NaN compares unequal (via ==, !=, ===, and !==) to any other value -- including to another NaN value." ID="ID_40620040" CREATED="1523124312140" MODIFIED="1523124312140"/>
+<node TEXT="Use Number.isNaN() or isNaN() to most clearly determine whether a value is NaN." ID="ID_1458738122" CREATED="1523124407015" MODIFIED="1523124407015"/>
+<node TEXT="Or perform a self-comparison: NaN, and only NaN, will compare unequal to itself." ID="ID_1474501802" CREATED="1523124428856" MODIFIED="1523124428856"/>
+<node TEXT="NaN === NaN;        // false&#xa;Number.NaN === NaN; // false&#xa;isNaN(NaN);         // true&#xa;isNaN(Number.NaN);  // true&#xa;&#xa;function valueIsNaN(v) { return v !== v; }&#xa;valueIsNaN(1);          // false&#xa;valueIsNaN(NaN);        // true&#xa;valueIsNaN(Number.NaN); // true" ID="ID_170018400" CREATED="1523124474956" MODIFIED="1523124479695"/>
+<node TEXT="However, do note the difference between isNaN() and Number.isNaN(): the former will return true if the value is currently NaN, or if it is going to be NaN after it is coerced to a number, while the latter will return true only if the value is currently NaN" ID="ID_504837626" CREATED="1523124516461" MODIFIED="1523124516461"/>
+<node TEXT="isNaN(&apos;hello world&apos;); // returns &apos;true&apos;.&#xa;Number.isNaN(&apos;hello world&apos;); // returns &apos;false&apos;." ID="ID_1436132466" CREATED="1523124552619" MODIFIED="1523124556262"/>
+</node>
+</node>
+<node TEXT="undefined" ID="ID_809751258" CREATED="1521308558061" MODIFIED="1521308562207">
+<node TEXT="description" ID="ID_1972217304" CREATED="1523124947176" MODIFIED="1523124954874">
+<node TEXT="undefined is a property of the global object; i.e., it is a variable in global scope. The initial value of undefined is the primitive value undefined." ID="ID_602327083" CREATED="1523124777943" MODIFIED="1523124777943"/>
+<node TEXT="In modern browsers (JavaScript 1.8.5 / Firefox 4+), undefined is a non-configurable, non-writable property per the ECMAScript 5 specification. Even when this is not the case, avoid overriding it." ID="ID_1208766290" CREATED="1523124856728" MODIFIED="1523124861867"/>
+<node TEXT="A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned." ID="ID_1800717005" CREATED="1523125010711" MODIFIED="1523125015498"/>
+<node TEXT="anti-pattern" ID="ID_1924874518" CREATED="1523125081831" MODIFIED="1523125106569">
+<node TEXT="While it is possible to use it as an identifier (variable name) in any scope other than the global scope (because undefined is not a reserved word), doing so is a very bad idea that will make your code difficult to maintain and debug." ID="ID_1992160656" CREATED="1523125109482" MODIFIED="1523125109482"/>
+<node TEXT="//DON&apos;T DO THIS&#xa;&#xa;// logs &quot;foo string&quot;&#xa;(function() { var undefined = &apos;foo&apos;; console.log(undefined, typeof undefined); })();&#xa;&#xa;// logs &quot;foo string&quot;&#xa;(function(undefined) { console.log(undefined, typeof undefined); })(&apos;foo&apos;);" ID="ID_1501920856" CREATED="1523125134959" MODIFIED="1523125139290"/>
+</node>
+</node>
+<node TEXT="examples" ID="ID_236753915" CREATED="1523125209390" MODIFIED="1523125313116">
+<node TEXT="Strict equality and undefined" ID="ID_276201174" CREATED="1523125283748" MODIFIED="1523125283748">
+<node TEXT="You can use undefined and the strict equality and inequality operators to determine whether a variable has a value. In the following code, the variable x is not defined, and the if statement evaluates to true." ID="ID_884002438" CREATED="1523125402589" MODIFIED="1523125407343"/>
+<node TEXT="var x;&#xa;if (x === undefined) {&#xa;   // these statements execute&#xa;}&#xa;else {&#xa;   // these statements do not execute&#xa;}" ID="ID_216939149" CREATED="1523125415924" MODIFIED="1523125420311"/>
+<node TEXT="Note: The strict equality operator rather than the standard equality operator must be used here, because x == undefined also checks whether x is null, while strict equality doesn&apos;t. null is not equivalent to undefined." ID="ID_1371511339" CREATED="1523125498548" MODIFIED="1523125498548"/>
+</node>
+<node TEXT="Typeof operator and undefined" ID="ID_1047203971" CREATED="1523125311445" MODIFIED="1523125317528">
+<node TEXT="One reason to use typeof is that it does not throw an error if the variable has not been declared." ID="ID_245426212" CREATED="1523125530378" MODIFIED="1523125530378"/>
+<node TEXT="var x;&#xa;if (typeof x === &apos;undefined&apos;) {&#xa;   // these statements execute&#xa;}" ID="ID_557838885" CREATED="1523125549979" MODIFIED="1523125553350"/>
+<node TEXT="// x has not been declared before&#xa;&#xa;if (typeof x === &apos;undefined&apos;) { // evaluates to true without errors&#xa;   // these statements execute&#xa;}&#xa;&#xa;if (x === undefined) { // throws a ReferenceError&#xa;&#xa;}" ID="ID_1082624339" CREATED="1523125655995" MODIFIED="1523125671175"/>
+<node TEXT="However, this kind of technique should be avoided. JavaScript is a statically scoped language, so knowing if a variable is declared can be read by seeing whether it is declared in an enclosing context." ID="ID_133775032" CREATED="1523125698042" MODIFIED="1523125731141"/>
+<node TEXT="The only exception is the global scope, but the global scope is bound to the global object, so checking the existence of a variable in the global context can be done by checking the existence of a property on the global object (using the in operator, for instance)." ID="ID_1369387441" CREATED="1523125787330" MODIFIED="1523125792076"/>
+</node>
+<node TEXT="Void operator and undefined" ID="ID_533615670" CREATED="1523125330645" MODIFIED="1523125335304">
+<node TEXT="The void operator is a third alternative." ID="ID_1493531712" CREATED="1523125804605" MODIFIED="1523125804605"/>
+<node TEXT="var x;&#xa;if (x === void 0) {&#xa;   // these statements execute&#xa;}&#xa;&#xa;// y has not been declared before&#xa;if (y === void 0) {&#xa;   // throws a - Uncaught ReferenceError: y is not defined&#xa;}" ID="ID_953294084" CREATED="1523125813266" MODIFIED="1523125818068"/>
+</node>
+</node>
+</node>
+<node TEXT="null literal" ID="ID_1874205737" CREATED="1521308572029" MODIFIED="1521308576094">
+<node TEXT="description" ID="ID_420652633" CREATED="1523126484948" MODIFIED="1523126497415">
+<node TEXT="The value null is written with a literal: null." ID="ID_1866084412" CREATED="1523126407741" MODIFIED="1523126413784"/>
+<node TEXT="null is not an identifier for a property of the global object, like undefined can be." ID="ID_316211175" CREATED="1523126434901" MODIFIED="1523126438975"/>
+<node TEXT="Instead, null expresses a lack of identification, indicating that a variable points to no object." ID="ID_1327544181" CREATED="1523126458381" MODIFIED="1523126462727"/>
+<node TEXT="In APIs, null is often retrieved in a place where an object can be expected but no object is relevant." ID="ID_1690903504" CREATED="1523126479709" MODIFIED="1523126506759"/>
+<node TEXT="// foo does not exist. It is not defined and has never been initialized:&#xa;foo;&#xa;&quot;ReferenceError: foo is not defined&quot;&#xa;&#xa;// foo is known to exist now but it has no type or value:&#xa;var foo = null;&#xa;foo;&#xa;&quot;null&quot;" ID="ID_1870351452" CREATED="1523126562348" MODIFIED="1523126577455"/>
+</node>
+<node TEXT="Difference between null and undefined" ID="ID_379929793" CREATED="1523126593844" MODIFIED="1523126598086">
+<node TEXT="When checking for null or undefined, beware of the differences between equality (==) and identity (===) operators, as the former performs type-conversion." ID="ID_1779190336" CREATED="1523127043856" MODIFIED="1523127052507"/>
+<node TEXT="typeof null          // &quot;object&quot; (not &quot;null&quot; for legacy reasons)&#xa;typeof undefined     // &quot;undefined&quot;&#xa;null === undefined   // false&#xa;null  == undefined   // true&#xa;null === null        // true&#xa;null == null         // true&#xa;!null                // true&#xa;isNaN(1 + null)      // false&#xa;isNaN(1 + undefined) // true" ID="ID_1990757524" CREATED="1523127066584" MODIFIED="1523127069844"/>
+</node>
+</node>
+</node>
+<node TEXT="Function properties" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
 <node TEXT="These global functions&#x2014;functions which are called globally rather than on an object&#x2014;directly return their results to the caller." ID="ID_844058669" CREATED="1521308603949" MODIFIED="1521308606999"/>
 <node TEXT="eval()" ID="ID_1138508202" CREATED="1521308618789" MODIFIED="1521308623606"/>
 <node TEXT="isFinite()" ID="ID_1837829520" CREATED="1521308631852" MODIFIED="1521308635567"/>
@@ -2816,6 +2882,46 @@
 </node>
 <node TEXT="Function" ID="ID_1904735197" CREATED="1521311925574" MODIFIED="1521311934208">
 <node TEXT="Every JavaScript function is actually a Function object." ID="ID_79488743" CREATED="1522629782156" MODIFIED="1522629785785"/>
+<node TEXT="Function instances inherit methods and properties from Function.prototype. As with all constructors, you can change the constructor&apos;s prototype object to make changes to all Function instances." ID="ID_1829988648" CREATED="1523122246196" MODIFIED="1523122253039"/>
+<node TEXT="Syntax" ID="ID_306580719" CREATED="1523121465082" MODIFIED="1523121471516"/>
+<node TEXT="properties" ID="ID_432371091" CREATED="1523121476210" MODIFIED="1523121485469">
+<node TEXT="Function.arguments" ID="ID_1724262393" CREATED="1523121557441" MODIFIED="1523121557441">
+<node TEXT="" ID="ID_1998077749" CREATED="1523121584449" MODIFIED="1523121584449"/>
+</node>
+<node TEXT="Function.caller" ID="ID_801104360" CREATED="1523121588689" MODIFIED="1523121591604">
+<node TEXT="Specifies the function that invoked the currently executing function." ID="ID_1354329281" CREATED="1523121728894" MODIFIED="1523121728894"/>
+</node>
+<node TEXT="Function.length" ID="ID_1708025282" CREATED="1523121604505" MODIFIED="1523121608171">
+<node TEXT="Specifies the number of arguments expected by the function." ID="ID_262110163" CREATED="1523121683359" MODIFIED="1523121683359"/>
+</node>
+<node TEXT="Function.name" ID="ID_345220363" CREATED="1523121616105" MODIFIED="1523121618867">
+<node TEXT="The name of the function." ID="ID_1251129257" CREATED="1523121668134" MODIFIED="1523121668134"/>
+</node>
+<node TEXT="Function.displayName" ID="ID_128291486" CREATED="1523121628273" MODIFIED="1523121633243">
+<node TEXT="The display name of the function." ID="ID_1073462371" CREATED="1523121872889" MODIFIED="1523121872889"/>
+</node>
+<node TEXT="Function.prototype.constructor" ID="ID_1684599986" CREATED="1523121646865" MODIFIED="1523121649819"/>
+</node>
+<node TEXT="methods" ID="ID_1610828398" CREATED="1523121488234" MODIFIED="1523121495212">
+<node TEXT="Function.prototype.apply()" ID="ID_1344725949" CREATED="1523122030355" MODIFIED="1523122030355">
+<node TEXT="Calls a function and sets its this to the provided value, arguments can be passed as an Array object." ID="ID_1860297892" CREATED="1523122050918" MODIFIED="1523122054328"/>
+</node>
+<node TEXT="Function.prototype.bind()" ID="ID_1667332677" CREATED="1523122066645" MODIFIED="1523122069768">
+<node TEXT="Creates a new function which, when called, has its this set to the provided value, with a given sequence of arguments preceding any provided when the new function was called." ID="ID_1613389781" CREATED="1523122092506" MODIFIED="1523122092506"/>
+</node>
+<node TEXT="Function.prototype.call()" ID="ID_1627700956" CREATED="1523122107837" MODIFIED="1523122110840">
+<node TEXT="Calls (executes) a function and sets its this to the provided value, arguments can be passed as they are." ID="ID_535176268" CREATED="1523122118900" MODIFIED="1523122118900"/>
+</node>
+<node TEXT="Function.prototype.isGenerator()" ID="ID_880704137" CREATED="1523122148101" MODIFIED="1523122151183">
+<node TEXT="Returns true if the function is a generator; otherwise returns false." ID="ID_1930678463" CREATED="1523122161628" MODIFIED="1523122161628"/>
+</node>
+<node TEXT="Function.prototype.toSource()" ID="ID_116421834" CREATED="1523122181597" MODIFIED="1523122184647">
+<node TEXT="Returns a string representing the source code of the function. Overrides the Object.prototype.toSource method." ID="ID_1921256495" CREATED="1523122191430" MODIFIED="1523122191430"/>
+</node>
+<node TEXT="Function.prototype.toString()" ID="ID_1691855533" CREATED="1523122206061" MODIFIED="1523122206061">
+<node TEXT="Returns a string representing the source code of the function. Overrides the Object.prototype.toString method." ID="ID_924511163" CREATED="1523122215538" MODIFIED="1523122215538"/>
+</node>
+</node>
 </node>
 <node TEXT="Boolean" ID="ID_1187453092" CREATED="1521311942238" MODIFIED="1521311954176"/>
 <node TEXT="Symbol" ID="ID_637202656" CREATED="1521311961590" MODIFIED="1521311963567"/>
@@ -2828,7 +2934,7 @@
 <node TEXT="TypeError" ID="ID_938187249" CREATED="1521312082133" MODIFIED="1521312092334"/>
 <node TEXT="URIError" ID="ID_1144061054" CREATED="1521312101613" MODIFIED="1521312108222"/>
 </node>
-<node TEXT="Numbers and dates" FOLDED="true" ID="ID_1446852569" CREATED="1521191012764" MODIFIED="1521191017733">
+<node TEXT="Numbers and dates" ID="ID_1446852569" CREATED="1521191012764" MODIFIED="1521191017733">
 <node TEXT="These are the base objects representing numbers, dates, and mathematical calculations." ID="ID_496013201" CREATED="1521312305854" MODIFIED="1521312379158"/>
 <node TEXT="Number" ID="ID_1906808554" CREATED="1521312134852" MODIFIED="1521312137222"/>
 <node TEXT="Math" ID="ID_857904093" CREATED="1521312144612" MODIFIED="1521312146998"/>
@@ -2839,11 +2945,20 @@
 <node TEXT="String" ID="ID_1843826343" CREATED="1521312212204" MODIFIED="1521312213861"/>
 <node TEXT="RegExp" ID="ID_86727286" CREATED="1521312248996" MODIFIED="1521312252781"/>
 </node>
-<node TEXT="collections" FOLDED="true" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
-<node TEXT="Indexed collections" FOLDED="true" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
+<node TEXT="collections" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
+<node TEXT="Indexed collections" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
 <node TEXT="These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs." ID="ID_44580959" CREATED="1521312539650" MODIFIED="1521312544995"/>
 <node TEXT="Array" ID="ID_18798492" CREATED="1521312271147" MODIFIED="1521312274669">
 <node TEXT="The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects." ID="ID_1352549303" CREATED="1522140991855" MODIFIED="1522140994601"/>
+</node>
+<node TEXT="typed arrays" ID="ID_1225077270" CREATED="1523120710276" MODIFIED="1523120750250">
+<node TEXT="JavaScript typed arrays are array-like objects and provide a mechanism for accessing raw binary data." ID="ID_1369702157" CREATED="1523120771819" MODIFIED="1523120771819"/>
+<node TEXT="introduction" ID="ID_1315261815" CREATED="1523120823751" MODIFIED="1523120831001">
+<node TEXT="As you may already know, Array objects grow and shrink dynamically and can have any JavaScript value." ID="ID_94798129" CREATED="1523120849974" MODIFIED="1523120854386"/>
+<node TEXT="JavaScript engines perform optimizations so that these arrays are fast." ID="ID_551813439" CREATED="1523120869702" MODIFIED="1523120877969"/>
+<node TEXT="However, as web applications become more and more powerful, adding features such as audio and video manipulation, access to raw data using WebSockets, and so forth, it has become clear that there are times when it would be helpful for JavaScript code to be able to quickly and easily manipulate raw binary data in typed arrays." ID="ID_1369770587" CREATED="1523120922270" MODIFIED="1523120927825"/>
+<node TEXT="However, typed arrays are not to be confused with normal arrays, as calling Array.isArray() on a typed array returns false." ID="ID_361221795" CREATED="1523120965118" MODIFIED="1523120970568"/>
+<node TEXT="Moreover, not all methods available for normal arrays are supported by typed arrays (e.g. push and pop)." ID="ID_443700327" CREATED="1523120986741" MODIFIED="1523120989728"/>
 </node>
 <node TEXT="Int8Array" ID="ID_554670113" CREATED="1521312282475" MODIFIED="1521312286013">
 <node TEXT="8-bit two&apos;s complement signed integer" ID="ID_980206242" CREATED="1521553115960" MODIFIED="1521553119658"/>
@@ -2880,6 +2995,7 @@
 <node TEXT="Float64Array" ID="ID_434490144" CREATED="1521312503786" MODIFIED="1521312507076">
 <node TEXT="64-bit IEEE floating point number (16 significant digits e.g. 1.123...15)" ID="ID_520773705" CREATED="1521553236957" MODIFIED="1521553240694"/>
 <node TEXT="Value Range: 5.0x10-324 to 1.8x10308" ID="ID_1881512499" CREATED="1521553318981" MODIFIED="1521553494359"/>
+</node>
 </node>
 </node>
 <node TEXT="Keyed collections" FOLDED="true" ID="ID_906892615" CREATED="1521191092140" MODIFIED="1521191097285">
@@ -4703,13 +4819,27 @@
 <node TEXT="Parcel" ID="ID_1940225577" CREATED="1522616341048" MODIFIED="1522616346718"/>
 </node>
 <node TEXT="linter" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
+<node TEXT="introduction" ID="ID_331603887" CREATED="1523118526688" MODIFIED="1523118537626">
+<node TEXT="Linters have two categories of rules:" ID="ID_761766782" CREATED="1523118557916" MODIFIED="1523118557916">
+<node TEXT="Formatting rules" ID="ID_964712752" CREATED="1523118572927" MODIFIED="1523118576450">
+<node TEXT="max-len, no-mixed-spaces-and-tabs, keyword-spacing, comma-style" ID="ID_514832881" CREATED="1523118616011" MODIFIED="1523118616011"/>
+</node>
+<node TEXT="Code-quality rules" ID="ID_1608639669" CREATED="1523118582804" MODIFIED="1523118586586">
+<node TEXT="no-unused-vars, no-extra-bind, no-implicit-globals, prefer-promise-reject-errors" ID="ID_1517506784" CREATED="1523118635956" MODIFIED="1523118635956"/>
+</node>
+</node>
+</node>
+<node TEXT="ESLint" ID="ID_810386740" CREATED="1522616398536" MODIFIED="1522616405333">
 <node TEXT="exception" FOLDED="true" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
 <node TEXT="// eslint-disable-line" ID="ID_1309138352" CREATED="1519056152043" MODIFIED="1519056157028"/>
 </node>
-<node TEXT="ESLint" ID="ID_810386740" CREATED="1522616398536" MODIFIED="1522616405333"/>
+</node>
 <node TEXT="JSLint" ID="ID_1362831951" CREATED="1522616406912" MODIFIED="1522616417165"/>
 <node TEXT="JSHint" ID="ID_589122458" CREATED="1522616418872" MODIFIED="1522616429789"/>
 <node TEXT="JSCS" ID="ID_1235087102" CREATED="1522616432104" MODIFIED="1522616440133"/>
+<node TEXT="Prettier" ID="ID_376673966" CREATED="1523118468860" MODIFIED="1523118471836">
+<node TEXT="https://prettier.io/" ID="ID_719827984" CREATED="1523119138524" MODIFIED="1523119142142"/>
+</node>
 </node>
 </node>
 <node TEXT="Testing" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
@@ -5101,7 +5231,9 @@
 </node>
 </node>
 </node>
-<node TEXT="extentions" ID="ID_1018937192" CREATED="1520848755609" MODIFIED="1520848768849"/>
+<node TEXT="extentions" ID="ID_1018937192" CREATED="1520848755609" MODIFIED="1520848768849">
+<node TEXT="https://sizzy.co/" ID="ID_1377826931" CREATED="1523118850531" MODIFIED="1523118850531" LINK="https://sizzy.co/"/>
+</node>
 </node>
 <node TEXT="Firefox" ID="ID_1181512892" CREATED="1520848705937" MODIFIED="1520848711546">
 <node TEXT="Firefox dev Tools" ID="ID_341753613" CREATED="1517909170190" MODIFIED="1517909180297"/>
@@ -5283,6 +5415,7 @@
 <node TEXT="fonts" ID="ID_737167053" CREATED="1520782504053" MODIFIED="1520782510343">
 <node TEXT="https://www.fontsquirrel.com/" ID="ID_1330675389" CREATED="1521102626477" MODIFIED="1521102631607"/>
 <node TEXT="https://fonts.google.com/" ID="ID_1224240222" CREATED="1521102725827" MODIFIED="1521102730500"/>
+<node TEXT="http://fontmap.ideo.com/" ID="ID_1926928475" CREATED="1523117937504" MODIFIED="1523117937504" LINK="http://fontmap.ideo.com/"/>
 </node>
 <node TEXT="video" ID="ID_104993054" CREATED="1520782534708" MODIFIED="1520782539991">
 <node TEXT="https://search.creativecommons.org/" ID="ID_27517993" CREATED="1520783154290" MODIFIED="1520783154290" LINK="https://search.creativecommons.org/"/>
@@ -5294,6 +5427,7 @@
 </node>
 <node TEXT="service mockups" ID="ID_1155776576" CREATED="1520783400728" MODIFIED="1520783412208">
 <node TEXT="https://jsonplaceholder.typicode.com/" ID="ID_312084990" CREATED="1520783465201" MODIFIED="1520783465201" LINK="https://jsonplaceholder.typicode.com/"/>
+<node TEXT="https://github.com/toddmotto/public-apis" ID="ID_477314071" CREATED="1523118166536" MODIFIED="1523118166536" LINK="https://github.com/toddmotto/public-apis"/>
 </node>
 <node TEXT="auditing" ID="ID_1103733360" CREATED="1520782558644" MODIFIED="1520782565439">
 <node TEXT="https://sonarwhal.com/" ID="ID_1330114462" CREATED="1517836675801" MODIFIED="1517836675801" LINK="https://sonarwhal.com/"/>
@@ -5304,6 +5438,9 @@
 <node TEXT="https://github.com/thedaviddias/Front-End-Checklist" ID="ID_934011737" CREATED="1515411958783" MODIFIED="1515411958783" LINK="https://github.com/thedaviddias/Front-End-Checklist"/>
 </node>
 </node>
+<node TEXT="prototyping" ID="ID_1390288205" CREATED="1523117803177" MODIFIED="1523117813269">
+<node TEXT="https://trueuxapp.pythonanywhere.com/" ID="ID_57744162" CREATED="1523117837048" MODIFIED="1523117837048" LINK="https://trueuxapp.pythonanywhere.com/"/>
+</node>
 <node TEXT="online editors" ID="ID_1719754808" CREATED="1520782759395" MODIFIED="1520782767693">
 <node TEXT="https://webflow.com/" ID="ID_1818196222" CREATED="1520601363869" MODIFIED="1520601367645"/>
 <node TEXT="&lt;https://codesandbox.io/&gt;" ID="ID_551852019" CREATED="1520782924393" MODIFIED="1520782927996"/>
@@ -5312,6 +5449,7 @@
 <node TEXT="lorem" ID="ID_936891044" CREATED="1520782954857" MODIFIED="1520782959140">
 <node TEXT="http://loremricksum.com" ID="ID_137981762" CREATED="1516207717227" MODIFIED="1516207717227" LINK="http://loremricksum.com"/>
 </node>
+<node TEXT="http://www.lists.design/" ID="ID_1832185980" CREATED="1523117577655" MODIFIED="1523117577655" LINK="http://www.lists.design/"/>
 </node>
 <node TEXT="compatibility" ID="ID_366895230" CREATED="1520892023505" MODIFIED="1520892060825">
 <node TEXT="https://caniuse.com/" ID="ID_1669237959" CREATED="1520892084977" MODIFIED="1520892084977" LINK="https://caniuse.com/"/>
