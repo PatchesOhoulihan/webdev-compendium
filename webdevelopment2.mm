@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff" show_icon_for_attributes="true"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -2776,15 +2776,137 @@
 </node>
 <node TEXT="Function properties" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
 <node TEXT="These global functions&#x2014;functions which are called globally rather than on an object&#x2014;directly return their results to the caller." ID="ID_844058669" CREATED="1521308603949" MODIFIED="1521308606999"/>
-<node TEXT="eval()" ID="ID_1138508202" CREATED="1521308618789" MODIFIED="1521308623606"/>
-<node TEXT="isFinite()" ID="ID_1837829520" CREATED="1521308631852" MODIFIED="1521308635567"/>
-<node TEXT="isNaN()" ID="ID_510804328" CREATED="1521308642300" MODIFIED="1521308646630"/>
-<node TEXT="parseFloat()" ID="ID_838223104" CREATED="1521308662132" MODIFIED="1521308666350"/>
-<node TEXT="parseInt()" ID="ID_536957290" CREATED="1521308673900" MODIFIED="1521308677398"/>
-<node TEXT="decodeURI()" ID="ID_1849334257" CREATED="1521308684916" MODIFIED="1521308689806"/>
+<node TEXT="eval()" ID="ID_1138508202" CREATED="1521308618789" MODIFIED="1521308623606">
+<node TEXT="Do not ever use eval!" ID="ID_959194058" CREATED="1523202773999" MODIFIED="1523202777802"/>
+<node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" ID="ID_40988892" CREATED="1523202786343" MODIFIED="1523202791170"/>
+</node>
+<node TEXT="isFinite()" ID="ID_1837829520" CREATED="1521308631852" MODIFIED="1521308635567">
+<node TEXT="The global isFinite() function determines whether the passed value is a finite number. If  needed, the parameter is first converted to a number." ID="ID_603409527" CREATED="1523202424294" MODIFIED="1523202430754"/>
+<node TEXT="description" ID="ID_1257605281" CREATED="1523202434978" MODIFIED="1523202446181">
+<node TEXT="isFinite is a top-level function and is not associated with any object." ID="ID_241941753" CREATED="1523202462354" MODIFIED="1523202467076"/>
+<node TEXT="You can use this function to determine whether a number is a finite number." ID="ID_1265256016" CREATED="1523202479641" MODIFIED="1523202484796"/>
+<node TEXT="The isFinite function examines the number in its argument. If the argument is NaN, positive infinity, or negative infinity, this method returns false; otherwise, it returns true." ID="ID_4229993" CREATED="1523202510793" MODIFIED="1523202518220"/>
+</node>
+<node TEXT="examples" ID="ID_1182265854" CREATED="1523202713756" MODIFIED="1523202722115">
+<node TEXT="isFinite(Infinity);  // false&#xa;isFinite(NaN);       // false&#xa;isFinite(-Infinity); // false&#xa;&#xa;isFinite(0);         // true&#xa;isFinite(2e64);      // true&#xa;isFinite(910);       // true&#xa;&#xa;isFinite(null);      // true, would&apos;ve been false with the&#xa;                     // more robust Number.isFinite(null)&#xa;&#xa;isFinite(&apos;0&apos;);       // true, would&apos;ve been false with the&#xa;                     // more robust Number.isFinite(&quot;0&quot;)" ID="ID_439169756" CREATED="1523202724776" MODIFIED="1523202730869"/>
+</node>
+</node>
+<node TEXT="isNaN()" ID="ID_510804328" CREATED="1521308642300" MODIFIED="1521308646630">
+<node TEXT="The isNaN() function determines whether a value is NaN or not. Note: coercion inside the isNaN function has interesting rules; you may alternatively want to use Number.isNaN(), as defined in ECMAScript 2015." ID="ID_688819637" CREATED="1523202937534" MODIFIED="1523202943569"/>
+<node TEXT="description" ID="ID_478140324" CREATED="1523203105605" MODIFIED="1523203115472">
+<node TEXT="The necessity of an isNaN function" ID="ID_1548096715" CREATED="1523203178637" MODIFIED="1523203182599">
+<node TEXT="Unlike all other possible values in JavaScript, it is not possible to rely on the equality operators (== and ===) to determine whether a value is NaN or not, because both NaN == NaN and NaN === NaN evaluate to false." ID="ID_466487191" CREATED="1523203213276" MODIFIED="1523203216888"/>
+</node>
+<node TEXT="Origin of NaN values" ID="ID_1910388958" CREATED="1523203228996" MODIFIED="1523203233182">
+<node TEXT="NaN values are generated when arithmetic operations result in undefined or unrepresentable values." ID="ID_562080316" CREATED="1523203251108" MODIFIED="1523203254495"/>
+<node TEXT="Such values do not necessarily represent overflow conditions. A NaN also results from attempted coercion to numeric values of non-numeric values for which no primitive numeric value is available." ID="ID_581348934" CREATED="1523203282892" MODIFIED="1523203287145"/>
+<node TEXT="For example, dividing zero by zero results in a NaN &#x2014; but dividing other numbers by zero does not." ID="ID_1406434915" CREATED="1523203299932" MODIFIED="1523203305279"/>
+</node>
+<node TEXT="Confusing special-case behavior" ID="ID_1208830651" CREATED="1523203345667" MODIFIED="1523203350552">
+<node TEXT="Since the very earliest versions of the isNaN function specification, its behavior for non-numeric arguments has been confusing." ID="ID_1681341298" CREATED="1523203426235" MODIFIED="1523203430078"/>
+<node TEXT="When the argument to the isNaN function is not of type Number, the value is first coerced to a Number. The resulting value is then tested to determine whether it is NaN." ID="ID_90784954" CREATED="1523203447907" MODIFIED="1523203453151"/>
+<node TEXT="Thus for non-numbers that when coerced to numeric type result in a valid non-NaN numeric value (notably the empty string and boolean primitives, which when coerced give numeric values zero or one), the &quot;false&quot; returned value may be unexpected; the empty string, for example, is surely &quot;not a number.&quot;" ID="ID_1014185523" CREATED="1523203492170" MODIFIED="1523203496885"/>
+<node TEXT="The latest version of ECMAScript (ES2015) contains the Number.isNaN() function. Number.isNaN(x) will be a reliable way to test whether x is NaN or not." ID="ID_1297817416" CREATED="1523203540266" MODIFIED="1523203546021"/>
+<node TEXT="Even with Number.isNaN, however, the meaning of NaN remains the precise numeric meaning, and not simply, &quot;not a number&quot;." ID="ID_348277526" CREATED="1523203582818" MODIFIED="1523203587490"/>
+<node TEXT="Alternatively, in absense of Number.isNaN, the expression (x != x) is a more reliable way to test whether variable x is NaN or not, as the result is not subject to the false positives that make isNaN unreliable." ID="ID_1275849201" CREATED="1523203671242" MODIFIED="1523203674540"/>
+</node>
+</node>
+<node TEXT="examples" ID="ID_110724441" CREATED="1523203125685" MODIFIED="1523203132864">
+<node TEXT="isNaN(NaN);       // true&#xa;isNaN(undefined); // true&#xa;isNaN({});        // true&#xa;&#xa;isNaN(true);      // false&#xa;isNaN(null);      // false&#xa;isNaN(37);        // false&#xa;&#xa;// strings&#xa;isNaN(&apos;37&apos;);      // false: &quot;37&quot; is converted to the number 37 which is not NaN&#xa;isNaN(&apos;37.37&apos;);   // false: &quot;37.37&quot; is converted to the number 37.37 which is not NaN&#xa;isNaN(&quot;37,5&quot;);    // true&#xa;isNaN(&apos;123ABC&apos;);  // true:  parseInt(&quot;123ABC&quot;) is 123 but Number(&quot;123ABC&quot;) is NaN&#xa;isNaN(&apos;&apos;);        // false: the empty string is converted to 0 which is not NaN&#xa;isNaN(&apos; &apos;);       // false: a string with spaces is converted to 0 which is not NaN&#xa;&#xa;// dates&#xa;isNaN(new Date());                // false&#xa;isNaN(new Date().toString());     // true&#xa;&#xa;// This is a false positive and the reason why isNaN is not entirely reliable&#xa;isNaN(&apos;blabla&apos;);   // true: &quot;blabla&quot; is converted to a number.&#xa;                   // Parsing this as a number fails and returns NaN" ID="ID_1220136967" CREATED="1523203142941" MODIFIED="1523203147075"/>
+</node>
+</node>
+<node TEXT="parseFloat()" ID="ID_838223104" CREATED="1521308662132" MODIFIED="1521308666350">
+<node TEXT="description" ID="ID_267766862" CREATED="1523203791864" MODIFIED="1523203802763">
+<node TEXT="parseFloat is a top-level function and is not associated with any object." ID="ID_1207205371" CREATED="1523203809112" MODIFIED="1523203811595"/>
+<node TEXT="parseFloat parses its argument, and returns a floating point number." ID="ID_1491707590" CREATED="1523203824392" MODIFIED="1523203831051"/>
+<node TEXT="If it encounters a character other than a sign (+ or -), numeral (0-9), a decimal point, or an exponent, it returns the value up to that point and ignores that character and all succeeding characters." ID="ID_978584688" CREATED="1523203855080" MODIFIED="1523203859171"/>
+<node TEXT="Leading and trailing spaces are allowed." ID="ID_736555179" CREATED="1523203881488" MODIFIED="1523203888459"/>
+<node TEXT="If the value is a string and first character cannot be converted to a number, parseFloat returns NaN." ID="ID_1235387604" CREATED="1523203912880" MODIFIED="1523203949628"/>
+<node TEXT="For arithmetic purposes, the NaN value is not a number in any radix. You can call the isNaN function to determine if the result of parseFloat is NaN. If NaN is passed on to arithmetic operations, the operation results will also be NaN." ID="ID_428531593" CREATED="1523203951463" MODIFIED="1523203956258"/>
+</node>
+<node TEXT="examples" ID="ID_1943264866" CREATED="1523203979415" MODIFIED="1523203985362">
+<node TEXT="parseFloat returning a number" ID="ID_14234087" CREATED="1523204001863" MODIFIED="1523204003641">
+<node TEXT="The following examples all return 3.14" ID="ID_110085130" CREATED="1523204096934" MODIFIED="1523204099425"/>
+<node TEXT="parseFloat(3.14);&#xa;parseFloat(&apos;3.14&apos;);&#xa;parseFloat(&apos;314e-2&apos;);&#xa;parseFloat(&apos;0.0314E+2&apos;);&#xa;parseFloat(&apos;3.14more non-digit characters&apos;);&#xa;&#xa;var foo = Object.create(null);&#xa;foo.toString = function () { return &quot;3.14&quot;; };&#xa;parseFloat(foo);&#xa;&#xa;var foo = Object.create(null);&#xa;foo.valueOf = function () { return &quot;3.14&quot;; };&#xa;parseFloat(foo);&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;" ID="ID_1410782701" CREATED="1523204108526" MODIFIED="1523204113521"/>
+</node>
+<node TEXT="parseFloat returning NaN" ID="ID_321260914" CREATED="1523204017583" MODIFIED="1523204021378">
+<node TEXT="The following example returns NaN" ID="ID_1248554992" CREATED="1523204139982" MODIFIED="1523204146873"/>
+<node TEXT="parseFloat(&apos;FF2&apos;);" ID="ID_1178592226" CREATED="1523204153582" MODIFIED="1523204158377"/>
+</node>
+<node TEXT="A stricter parse function" ID="ID_1726486615" CREATED="1523204072599" MODIFIED="1523204078369">
+<node TEXT="It is sometime useful to have a stricter way to parse float values, regular expressions can help :" ID="ID_1465903852" CREATED="1523204238773" MODIFIED="1523204241504"/>
+<node TEXT="var filterFloat = function(value) {&#xa;    if (/^(\-|\+)?([0-9]+(\.[0-9]+)?|Infinity)$/&#xa;      .test(value))&#xa;      return Number(value);&#xa;  return NaN;&#xa;}&#xa;&#xa;console.log(filterFloat(&apos;421&apos;));               // 421&#xa;console.log(filterFloat(&apos;-421&apos;));              // -421&#xa;console.log(filterFloat(&apos;+421&apos;));              // 421&#xa;console.log(filterFloat(&apos;Infinity&apos;));          // Infinity&#xa;console.log(filterFloat(&apos;1.61803398875&apos;));     // 1.61803398875&#xa;console.log(filterFloat(&apos;421e+0&apos;));            // NaN&#xa;console.log(filterFloat(&apos;421hop&apos;));            // NaN&#xa;console.log(filterFloat(&apos;hop1.61803398875&apos;));  // NaN" ID="ID_1635769826" CREATED="1523204252445" MODIFIED="1523204262017"/>
+</node>
+</node>
+</node>
+<node TEXT="parseInt()" ID="ID_536957290" CREATED="1521308673900" MODIFIED="1521308677398">
+<node TEXT="description" ID="ID_1247499504" CREATED="1523204582387" MODIFIED="1523204588917">
+<node TEXT="The parseInt function converts its first argument to a string, parses it, and returns an integer or NaN." ID="ID_1460642293" CREATED="1523204654787" MODIFIED="1523204659318"/>
+<node TEXT=" If not NaN, the returned value will be the integer that is the first argument taken as a number in the specified radix (base)." ID="ID_480567322" CREATED="1523204678658" MODIFIED="1523204682885"/>
+<node TEXT="For example, a radix of 10 indicates to convert from a decimal number, 8 octal, 16 hexadecimal, and so on." ID="ID_854629486" CREATED="1523204710394" MODIFIED="1523204717453"/>
+<node TEXT="For radices above 10, the letters of the alphabet indicate numerals greater than 9. For example, for hexadecimal numbers (base 16), A through F are used." ID="ID_7941843" CREATED="1523204738362" MODIFIED="1523204742804"/>
+<node TEXT="If parseInt encounters a character that is not a numeral in the specified radix, it ignores it and all succeeding characters and returns the integer value parsed up to that point. parseInt truncates numbers to integer values. Leading and trailing spaces are allowed." ID="ID_621091298" CREATED="1523204760850" MODIFIED="1523204765596"/>
+<node TEXT="Because some numbers include the e character in their string representation (e.g. 6.022e23), using parseInt to truncate numeric values will produce unexpected results when used on very large or very small numbers. parseInt should not be used as a substitute for Math.floor()." ID="ID_1345458440" CREATED="1523204833793" MODIFIED="1523204839964"/>
+</node>
+<node TEXT="syntax" ID="ID_750967534" CREATED="1523204589811" MODIFIED="1523204598005">
+<node TEXT="parseInt(string, radix);" ID="ID_1979039624" CREATED="1523204856385" MODIFIED="1523204860428"/>
+<node TEXT="Parameters" ID="ID_456235861" CREATED="1523204870273" MODIFIED="1523204874228">
+<node TEXT="string" ID="ID_290307653" CREATED="1523204881369" MODIFIED="1523204885019">
+<node TEXT="The value to parse. If the string argument is not a string, then it is converted to a string (using the ToString abstract operation). Leading whitespace in the string argument is ignored." ID="ID_1946432149" CREATED="1523204907297" MODIFIED="1523204912827"/>
+</node>
+<node TEXT="radix" ID="ID_1975827778" CREATED="1523204893177" MODIFIED="1523204897123">
+<node TEXT="An integer between 2 and 36 that represents the radix (the base in mathematical numeral systems) of the above mentioned string." ID="ID_1838830970" CREATED="1523204934489" MODIFIED="1523204938395"/>
+<node TEXT="Specify 10 for the decimal numeral system commonly used by humans. Always specify this parameter to eliminate reader confusion and to guarantee predictable behavior. Different implementations produce different results when a radix is not specified, usually defaulting the value to 10." ID="ID_47811423" CREATED="1523204945009" MODIFIED="1523204949100"/>
+</node>
+</node>
+<node TEXT="return value" ID="ID_1899121944" CREATED="1523204965808" MODIFIED="1523204975611">
+<node TEXT="An integer number parsed from the given string. If the first character cannot be converted to a number, NaN is returned." ID="ID_1734395461" CREATED="1523204982184" MODIFIED="1523204986971"/>
+</node>
+</node>
+<node TEXT="examples" ID="ID_1094200181" CREATED="1523204598699" MODIFIED="1523204604997">
+<node TEXT="The following examples all return 15" ID="ID_1727991286" CREATED="1523205031184" MODIFIED="1523205035387">
+<node TEXT="parseInt(&apos; 0xF&apos;, 16);&#xa;parseInt(&apos; F&apos;, 16);&#xa;parseInt(&apos;17&apos;, 8);&#xa;parseInt(021, 8);&#xa;parseInt(&apos;015&apos;, 10);   // parseInt(015, 10); will return 15&#xa;parseInt(15.99, 10);&#xa;parseInt(&apos;15,123&apos;, 10);&#xa;parseInt(&apos;FXX123&apos;, 16);&#xa;parseInt(&apos;1111&apos;, 2);&#xa;parseInt(&apos;15 * 3&apos;, 10);&#xa;parseInt(&apos;15e2&apos;, 10);&#xa;parseInt(&apos;15px&apos;, 10);&#xa;parseInt(&apos;12&apos;, 13);" ID="ID_1439345363" CREATED="1523205045080" MODIFIED="1523205048491"/>
+</node>
+<node TEXT="The following examples all return NaN:" ID="ID_594279908" CREATED="1523205062664" MODIFIED="1523205067210">
+<node TEXT="parseInt(&apos;Hello&apos;, 8); // Not a number at all&#xa;parseInt(&apos;546&apos;, 2);   // Digits are not valid for binary representations" ID="ID_497457493" CREATED="1523205076136" MODIFIED="1523205080914"/>
+</node>
+<node TEXT="The following examples all return -15:" ID="ID_1605647331" CREATED="1523205102711" MODIFIED="1523205108986">
+<node TEXT="parseInt(&apos;-F&apos;, 16);&#xa;parseInt(&apos;-0F&apos;, 16);&#xa;parseInt(&apos;-0XF&apos;, 16);&#xa;parseInt(-15.1, 10);&#xa;parseInt(&apos; -17&apos;, 8);&#xa;parseInt(&apos; -15&apos;, 10);&#xa;parseInt(&apos;-1111&apos;, 2);&#xa;parseInt(&apos;-15e1&apos;, 10);&#xa;parseInt(&apos;-12&apos;, 13);" ID="ID_1980884713" CREATED="1523205115831" MODIFIED="1523205120498"/>
+</node>
+<node TEXT="The following examples all return 4:" ID="ID_1122530447" CREATED="1523205128703" MODIFIED="1523205133162">
+<node TEXT="parseInt(4.7, 10);&#xa;parseInt(4.7 * 1e22, 10); // Very large number becomes 4&#xa;parseInt(0.00000000000434, 10); // Very small number becomes 4" ID="ID_1110656492" CREATED="1523205139519" MODIFIED="1523205144202"/>
+</node>
+<node TEXT="The following example returns 224:" ID="ID_1423788054" CREATED="1523205152295" MODIFIED="1523205158234">
+<node TEXT="parseInt(&apos;0e0&apos;, 16);" ID="ID_1767032960" CREATED="1523205169703" MODIFIED="1523205174217"/>
+</node>
+</node>
+</node>
+<node TEXT="URI Handling Functions" ID="ID_683150752" CREATED="1523202607313" MODIFIED="1523202612019">
+<node TEXT="decodeURI()" ID="ID_1849334257" CREATED="1521308684916" MODIFIED="1521308689806">
+<node TEXT="description" ID="ID_140208526" CREATED="1523205505909" MODIFIED="1523205514623">
+<node TEXT="The decodeURI() function decodes a Uniform Resource Identifier (URI) previously created by encodeURI or by a similar routine." ID="ID_73184812" CREATED="1523205452645" MODIFIED="1523205457599"/>
+<node TEXT="Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by encodeURI. The character &#x201c;#&#x201d; is not decoded from escape sequences." ID="ID_362957464" CREATED="1523205498277" MODIFIED="1523205502927"/>
+</node>
+<node TEXT="examples" ID="ID_703318240" CREATED="1523205533549" MODIFIED="1523205558783">
+<node TEXT="var uri = &apos;https://mozilla.org/?x=&#x448;&#x435;&#x43b;&#x43b;&#x44b;&apos;;&#xa;var encoded = encodeURI(uri);&#xa;console.log(encoded);&#xa;// expected output: &quot;https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B&quot;&#xa;&#xa;try {&#xa;  console.log(decodeURI(encoded));&#xa;  // expected output: &quot;https://mozilla.org/?x=&#x448;&#x435;&#x43b;&#x43b;&#x44b;&quot;&#xa;&#xa;} catch(e) { // catches a malformed URI&#xa;  console.error(e);&#xa;}" ID="ID_485664341" CREATED="1523205591708" MODIFIED="1523205646560"/>
+</node>
+</node>
 <node TEXT="decodeURIComponent()" ID="ID_503910473" CREATED="1521308700844" MODIFIED="1521308705118"/>
-<node TEXT="encodeURI()" ID="ID_1018794098" CREATED="1521308713260" MODIFIED="1521308718046"/>
+<node TEXT="encodeURI()" ID="ID_1018794098" CREATED="1521308713260" MODIFIED="1521308718046">
+<node TEXT="description" ID="ID_1390304807" CREATED="1523205832515" MODIFIED="1523205840173">
+<node TEXT="The encodeURI() function encodes a Uniform Resource Identifier (URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the UTF-8 encoding of the character (will only be four escape sequences for characters composed of two &quot;surrogate&quot; characters)." ID="ID_564286341" CREATED="1523205845906" MODIFIED="1523205849853"/>
+<node TEXT="Does not encode characters that have special meaning (reserved characters) for a URI." ID="ID_1509947173" CREATED="1523205867170" MODIFIED="1523205871157"/>
+<node TEXT="The following example shows all the parts that a URI &quot;scheme&quot; can possibly contain. Note how certain characters are used to signify special meaning:" ID="ID_982328922" CREATED="1523205885194" MODIFIED="1523205889612"/>
+<node TEXT="http://username:password@www.example.com:80/path/to/file.php?foo=316&amp;bar=this+has+spaces#anchor" ID="ID_1917652193" CREATED="1523205905650" MODIFIED="1523205912476"/>
+<node TEXT="encodeURI escapes all characters except:" ID="ID_1958403271" CREATED="1523205927626" MODIFIED="1523205931828"/>
+<node TEXT=" A-Z a-z 0-9 ; , / ? : @ &amp; = + $ - _ . ! ~ * &apos; ( ) #" ID="ID_1008577540" CREATED="1523205939962" MODIFIED="1523205944204"/>
+</node>
+<node TEXT="examples" ID="ID_611060487" CREATED="1523205882306" MODIFIED="1523206040427">
+<node TEXT="var uri = &apos;https://mozilla.org/?x=&#x448;&#x435;&#x43b;&#x43b;&#x44b;&apos;;&#xa;var encoded = encodeURI(uri);&#xa;console.log(encoded);&#xa;// expected output: &quot;https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B&quot;&#xa;&#xa;try {&#xa;  console.log(decodeURI(encoded));&#xa;  // expected output: &quot;https://mozilla.org/?x=&#x448;&#x435;&#x43b;&#x43b;&#x44b;&quot;&quot;&#xa;} catch(e) { // catches a malformed URI&#xa;  console.error(e);&#xa;}" ID="ID_739754429" CREATED="1523206080329" MODIFIED="1523206084844"/>
+</node>
+</node>
 <node TEXT="encodeURIComponent()" ID="ID_347321201" CREATED="1521308726828" MODIFIED="1521311823240"/>
+</node>
 </node>
 <node TEXT="Fundamental objects" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
 <node TEXT="These are the fundamental, basic objects upon which all other objects are based. This includes objects that represent general objects, functions, and errors." ID="ID_586945238" CREATED="1521311890350" MODIFIED="1521311893034"/>
@@ -3587,11 +3709,13 @@
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
 <node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
 <node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
-<node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
+<node TEXT="What is React?" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
 <node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
 <node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1409151973" CREATED="1515278541958" MODIFIED="1515278541958"/>
 <node TEXT="ReactJS applications are built from React Components - independent resusable components" ID="ID_728172620" CREATED="1515278579191" MODIFIED="1515278579191"/>
 <node TEXT="that describe how the UI should look based on their own state and properties." ID="ID_316601598" CREATED="1515278589469" MODIFIED="1515278592874"/>
+<node TEXT="React is component based" ID="ID_391038133" CREATED="1523127805691" MODIFIED="1523127817813"/>
+<node TEXT="Coding style is declarative &apos;what shall be displayed on the screen&apos;" ID="ID_1151431577" CREATED="1523127819051" MODIFIED="1523127902748"/>
 </node>
 <node TEXT="Why should I use ReactJS?" FOLDED="true" ID="ID_1935515619" CREATED="1515278620434" MODIFIED="1515324016705">
 <node TEXT="ReactJS applications are incredibly performant at UI rerendering" ID="ID_1849800554" CREATED="1515278628589" MODIFIED="1515278628589"/>
@@ -3603,20 +3727,9 @@
 </node>
 <node TEXT="setup" ID="ID_508007486" CREATED="1522621514634" MODIFIED="1522621521639">
 <node TEXT="Quick Setup" ID="ID_1666734176" CREATED="1515277487524" MODIFIED="1515323490525">
-<node TEXT="1. Create an HTML file" ID="ID_1602235452" CREATED="1515277527954" MODIFIED="1515277527954"/>
-<node TEXT="2. Add scripts to include react.js, react-dom.js and babel.js inside the head of the HTML file" FOLDED="true" ID="ID_1271641365" CREATED="1515277539612" MODIFIED="1515323485901">
-<font NAME="SansSerif" SIZE="12"/>
-<node TEXT="&lt;script src=&quot;https://unpkg.com/react@15/dist/react.min.js&quot;&gt;&lt;/script&gt;       &lt;script src=&quot;https://unpkg.com/react-dom@15/dist/react-dom.min.js&quot;&gt;&lt;/script&gt;       &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js&quot;&gt;&lt;/script&gt;" ID="ID_1187241620" CREATED="1515278725785" MODIFIED="1515278725785" LINK="https://unpkg.com/react@15/dist/react.min.js"/>
+<node TEXT="&lt;!DOCTYPE html&gt;&#xa;&lt;html&gt;&#xa;&#xa;  &lt;head&gt;&#xa;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#xa;   &#xa;    &lt;!--Base Package --&gt;&#xa;    &lt;script crossorigin src=&quot;https://unpkg.com/react@latest/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&#xa;    &#xa;    &lt;!--Everything dom related --&gt;&#xa;    &lt;script crossorigin src=&quot;https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&#xa;&#xa;    &lt;!-- Transpiles javascript --&gt;&#xa;    &lt;script src=&quot;https://unpkg.com/babel-standalone@6.15.0/babel.min.js&quot;&gt;&lt;/script&gt;&#xa;  &lt;/head&gt;&#xa;&#xa;    &lt;script type=&quot;text/babel&quot;&gt;&#xa;&#xa;      ReactDOM.render(&#xa;          &lt;div&gt;Hello World dies das&lt;/div&gt;,&#xa;          document.getElementById(&quot;root&quot;)&#xa;      );&#xa;&#xa;    &lt;/script&gt;&#xa;&#xa;  &lt;body&gt;&#xa;     &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&#xa;  &lt;/body&gt;&#xa;&#xa;&lt;/html&gt;" ID="ID_1695577798" CREATED="1523132136962" MODIFIED="1523132259567"/>
 </node>
-<node TEXT="3. Add a babel script within the body of the HTML file" FOLDED="true" ID="ID_1495461944" CREATED="1515277602051" MODIFIED="1515323487709">
-<node TEXT="&lt;script type=&quot;text/babel&quot;&gt;" ID="ID_1122297618" CREATED="1515278757740" MODIFIED="1515278757740"/>
-</node>
-<node TEXT="4. Add &lt;div id=&quot;root&gt;&lt;/div&gt; to the body of the HTML file" ID="ID_1137967348" CREATED="1515277681982" MODIFIED="1515277681982"/>
-<node TEXT="5. Start rendering elements using ReactJS" FOLDED="true" ID="ID_654207240" CREATED="1515277713795" MODIFIED="1515323483347">
-<node TEXT="&lt;script type=&quot;text/babel&quot;&gt;ReactDOM.render(&lt;div&gt;Hello World&lt;/div&gt;, document.getElementById(&quot;root&quot;))      &lt;/script&gt;" ID="ID_232195864" CREATED="1515278785863" MODIFIED="1515278821722"/>
-</node>
-</node>
-<node TEXT="npm react cli" ID="ID_1146136474" CREATED="1522621535170" MODIFIED="1522621546335">
+<node TEXT="npm react cli" FOLDED="true" ID="ID_1146136474" CREATED="1522621535170" MODIFIED="1522621546335">
 <node TEXT="installation" ID="ID_949675496" CREATED="1522621609681" MODIFIED="1522621619534">
 <node TEXT="npm i -g create-react-app" ID="ID_1741156289" CREATED="1522621565649" MODIFIED="1522621578846"/>
 </node>
@@ -3625,12 +3738,12 @@
 </node>
 </node>
 </node>
-<node TEXT="Rendering Elements/React Nodes" FOLDED="true" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
-<node TEXT="React Elements/ React Nodes" FOLDED="true" ID="ID_1038299905" CREATED="1515279516927" MODIFIED="1515426330695">
+<node TEXT="Rendering Elements/React Nodes" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
+<node TEXT="React Elements/ React Nodes" ID="ID_1038299905" CREATED="1515279516927" MODIFIED="1515426330695">
 <node TEXT="React elements are the building blocks of react JS applications. React Elements are objects that represent a DOM node. They are written using a syntax extension named JSX which allows us to write HTML tags in our JavaScript code and asign that to a variable. React Elements are different than React Components." ID="ID_989987460" CREATED="1515279546743" MODIFIED="1515281627439"/>
 <node TEXT="A React node is defined as: a light, stateless, immutable, virtual representation of a DOM node." ID="ID_892902770" CREATED="1515426225352" MODIFIED="1515426225352"/>
 </node>
-<node TEXT="Creating React Nodes" FOLDED="true" ID="ID_1231851973" CREATED="1515426352525" MODIFIED="1515426377605">
+<node TEXT="Creating React Nodes" ID="ID_1231851973" CREATED="1515426352525" MODIFIED="1515426377605">
 <node TEXT="In most cases developers using React will favor JSX and use it to create React nodes. React nodes can be created without JSX, using only JavaScript. " ID="ID_1481251238" CREATED="1515426481126" MODIFIED="1515426511324"/>
 <node TEXT="Creating React nodes using JavaScript is as simple as calling the " ID="ID_517572412" CREATED="1515426572662" MODIFIED="1515426585874"/>
 <node TEXT="React.createElement(type,props,children)" ID="ID_934773581" CREATED="1515426594435" MODIFIED="1515426594435"/>
@@ -3672,15 +3785,16 @@
 <node TEXT="until another ReactDOM.render method is called." ID="ID_301245827" CREATED="1515281936792" MODIFIED="1515281936792"/>
 </node>
 </node>
-<node TEXT="JSX" FOLDED="true" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
-<node TEXT="What is JSX?" FOLDED="true" ID="ID_561960569" CREATED="1515282290585" MODIFIED="1515329962957">
+<node TEXT="JSX" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
+<node TEXT="What is JSX?" ID="ID_561960569" CREATED="1515282290585" MODIFIED="1515329962957">
 <node TEXT="JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags." ID="ID_1071991068" CREATED="1515282302327" MODIFIED="1515282302327"/>
 <node TEXT="Using JSX, we can create React Elements easily with HTML Tags:" ID="ID_630607591" CREATED="1515282323768" MODIFIED="1515282323768"/>
 <node TEXT="var element = &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_883849702" CREATED="1515282335884" MODIFIED="1515282335884"/>
 <node TEXT="Without JSX, the process is much slower and more verbose:" ID="ID_728222510" CREATED="1515282354731" MODIFIED="1515282354731"/>
 <node TEXT="var element = React.createElement(&apos;h1&apos;,null,&apos;Hello World!&apos;)" ID="ID_1786494567" CREATED="1515282390081" MODIFIED="1515282390081"/>
+<node TEXT="Don&apos;t forget JSX is only syntactial sugar, intern you still use React.createElement" ID="ID_1402784288" CREATED="1523132745878" MODIFIED="1523132816456"/>
 </node>
-<node TEXT="Using JSX with JavaScript Expressions" FOLDED="true" ID="ID_793645520" CREATED="1515282432125" MODIFIED="1515324194368">
+<node TEXT="Using JSX with JavaScript Expressions" ID="ID_793645520" CREATED="1515282432125" MODIFIED="1515324194368">
 <node TEXT="Curly braces can be used to embed JavaScript expressions into JSX." ID="ID_1050283814" CREATED="1515282443789" MODIFIED="1515282443789"/>
 <node TEXT="The following are all examples of valid JavaScript expressions in JSX:" ID="ID_903535947" CREATED="1515282452938" MODIFIED="1515282452938"/>
 <node TEXT="var str = &quot;World!&quot;" ID="ID_204402998" CREATED="1515282573869" MODIFIED="1515282573869"/>
@@ -3703,7 +3817,7 @@
 <node TEXT="var element = &lt;img src =&quot;{product.imageURL}&quot;&gt;&lt;/img&gt;" ID="ID_855540507" CREATED="1515282954514" MODIFIED="1515282954514"/>
 <node TEXT="Some common HTML attributes are named differently in JSX. For example &quot;class&quot; becomes &quot;className&quot; because &quot;class&quot; is a reserved keyword in JavaScript. Furthermore, attribute names in JSX follow the camelCase naming convention so an HTML attribute such as fontsize would become fontSize in JSX." ID="ID_1381293665" CREATED="1515282995210" MODIFIED="1515282995210"/>
 </node>
-<node TEXT="Using JSX with Empty Tags" FOLDED="true" ID="ID_1712000031" CREATED="1515283022704" MODIFIED="1515323861706">
+<node TEXT="Using JSX with Empty Tags" ID="ID_1712000031" CREATED="1515283022704" MODIFIED="1515323861706">
 <node TEXT="If a HTML tag is empty, you can close it with a &apos;/&gt;&apos; instead of using a closing tag." ID="ID_171196410" CREATED="1515283043246" MODIFIED="1515283043246"/>
 <node TEXT="var element = &lt;input className =&quot;nameInput&quot;/&gt;" ID="ID_55019796" CREATED="1515283054508" MODIFIED="1515283054508"/>
 </node>
@@ -3757,10 +3871,10 @@
 <node TEXT=")" ID="ID_1009919121" CREATED="1515283629538" MODIFIED="1515283629538"/>
 </node>
 </node>
-<node TEXT="React Components" FOLDED="true" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1515324690463">
+<node TEXT="React Components" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1515324690463">
 <node TEXT="A React Component is an independent reusable component that returns an React Element based on its properties and state." ID="ID_694180055" CREATED="1515324663282" MODIFIED="1515327169097"/>
 <node TEXT="There are two types of React Components:" ID="ID_991084746" CREATED="1515324678253" MODIFIED="1515324678253"/>
-<node TEXT="Functional Components" FOLDED="true" ID="ID_735915423" CREATED="1515324693268" MODIFIED="1515327712565">
+<node TEXT="Functional Components" ID="ID_735915423" CREATED="1515324693268" MODIFIED="1515327712565">
 <node TEXT="Functional Components are just functions that output React Elements. By convention, the first letter of the function name should be capitalized." ID="ID_1812711183" CREATED="1515324830742" MODIFIED="1515324830742"/>
 <node TEXT="Here is an example:" FOLDED="true" ID="ID_135996708" CREATED="1515324865072" MODIFIED="1515325177129">
 <node TEXT="function HelloWorld(){" FOLDED="true" ID="ID_343678881" CREATED="1515324876845" MODIFIED="1515325161704">
@@ -3777,7 +3891,7 @@
 <node TEXT=")" ID="ID_864671950" CREATED="1515324972690" MODIFIED="1515324972690"/>
 </node>
 </node>
-<node TEXT="Adding Properties to Functional Components" FOLDED="true" ID="ID_787645284" CREATED="1515325035933" MODIFIED="1515327275689">
+<node TEXT="Adding Properties to Functional Components" ID="ID_787645284" CREATED="1515325035933" MODIFIED="1515327275689">
 <node TEXT="The first argument to a Functional Component is an object that contains the component&apos;s properties." ID="ID_1513484994" CREATED="1515325213899" MODIFIED="1515325213899"/>
 <node TEXT="function HelloWorld(props){" FOLDED="true" ID="ID_1253977598" CREATED="1515325270224" MODIFIED="1515325270224">
 <node TEXT="return &lt;h1&gt;Message: {props.message}&lt;/h1&gt;" ID="ID_148170266" CREATED="1515325270225" MODIFIED="1515325270225"/>
@@ -3802,7 +3916,7 @@
 <node TEXT="You can supply as many property values as you want and they will all be accessible through the props argument." ID="ID_166969736" CREATED="1515325487379" MODIFIED="1515325487379"/>
 </node>
 </node>
-<node TEXT="Class Components" FOLDED="true" ID="ID_1284006348" CREATED="1515324704374" MODIFIED="1515324704374">
+<node TEXT="Class Components" ID="ID_1284006348" CREATED="1515324704374" MODIFIED="1515324704374">
 <node TEXT="React Component written using ES6 classes:" FOLDED="true" ID="ID_1782786029" CREATED="1515879063236" MODIFIED="1515879063236">
 <node TEXT="class Welcome extends React.Component{" FOLDED="true" ID="ID_456614035" CREATED="1515879076453" MODIFIED="1515879076453">
 <node TEXT="render(){" FOLDED="true" ID="ID_1254712957" CREATED="1515879076453" MODIFIED="1515879076453">
@@ -3832,9 +3946,9 @@
 </node>
 <node TEXT=")" ID="ID_330963432" CREATED="1515879266580" MODIFIED="1515879266580"/>
 </node>
-<node TEXT="Adding properties to Class Components" FOLDED="true" ID="ID_556710431" CREATED="1515879309437" MODIFIED="1515879309437">
+<node TEXT="Adding properties to Class Components" ID="ID_556710431" CREATED="1515879309437" MODIFIED="1515879309437">
 <node TEXT="The properties of a Class Component can be accessed through the this.props attribute. This differs slightly from Functional Components where the properties were passed in as a variable." ID="ID_918013746" CREATED="1515879327661" MODIFIED="1515879327661"/>
-<node TEXT="class Welcome extends React.Component{" FOLDED="true" ID="ID_294175750" CREATED="1515879335707" MODIFIED="1515879335707">
+<node TEXT="class Welcome extends React.Component{" ID="ID_294175750" CREATED="1515879335707" MODIFIED="1515879335707">
 <node TEXT="render(){" FOLDED="true" ID="ID_532446718" CREATED="1515879335707" MODIFIED="1515879335707">
 <node TEXT="return &lt;h1&gt;Message: {this.props.message}&lt;/h1&gt;" ID="ID_360240636" CREATED="1515879335707" MODIFIED="1515879335707"/>
 </node>
@@ -3928,7 +4042,7 @@
 <node TEXT="}" ID="ID_155316071" CREATED="1515332319666" MODIFIED="1515332319666"/>
 <node TEXT="With the &amp;&amp; operator, true and expression will always evaluate to expression. On the other hand, false and expression will always evaluate to false which won&apos;t render." ID="ID_1534112129" CREATED="1515332339757" MODIFIED="1515332339757"/>
 </node>
-<node TEXT="React Component State" FOLDED="true" ID="ID_1980490444" CREATED="1515493940300" MODIFIED="1515493940300">
+<node TEXT="React Component State" ID="ID_1980490444" CREATED="1515493940300" MODIFIED="1515493940300">
 <node TEXT="Most components should simply take in props and render. But, components also offer state, and it is used to store information/data about the component that can change over time. Typically the change comes as a result of user events or system events (i.e., as a response to user input, a server request, or the passage of time)." ID="ID_1023804377" CREATED="1515493962986" MODIFIED="1515493962986"/>
 <node TEXT="According to the React documentation state should:" ID="ID_1827699865" CREATED="1515493992972" MODIFIED="1515493992972"/>
 <node TEXT="Contain data that a component&apos;s event handlers may change to trigger a UI update. In real apps this data tends to be very small and JSON-serializable. When building a stateful component, think about the minimal possible representation of its state, and only store those properties in this.state. Inside of render() simply compute any other information you need based on this state. You&apos;ll find that thinking about and writing applications in this way tends to lead to the most correct application, since adding redundant or computed values to state means that you need to explicitly keep them in sync rather than rely on React computing them for you." ID="ID_614537912" CREATED="1515494005026" MODIFIED="1515494005026"/>
@@ -3943,7 +4057,7 @@
 <node TEXT="The state object should only contain the minimal amount of data needed for the UI. Don&apos;t place computed data, other React components, or props in the state object." ID="ID_901219220" CREATED="1515494292392" MODIFIED="1515494292392"/>
 </node>
 </node>
-<node TEXT="The Component Lifecycle" ID="ID_780863661" CREATED="1522624585491" MODIFIED="1522624592376">
+<node TEXT="The Component Lifecycle" FOLDED="true" ID="ID_780863661" CREATED="1522624585491" MODIFIED="1522624592376">
 <node TEXT="Each component has several &#x201c;lifecycle methods&#x201d; that you can override to run code at particular times in the process." ID="ID_224871210" CREATED="1522624612251" MODIFIED="1522624617712"/>
 <node ID="ID_144430928" CREATED="1522624632026" MODIFIED="1522624676560"><richcontent TYPE="NODE">
 
@@ -4003,6 +4117,22 @@
 <node TEXT="This method is called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component." ID="ID_1329218457" CREATED="1522625181654" MODIFIED="1522625186244"/>
 <node TEXT="componentDidCatch()" ID="ID_812235118" CREATED="1522625194790" MODIFIED="1522625198876"/>
 </node>
+</node>
+<node TEXT="Pure Functions" ID="ID_382616966" CREATED="1523133219531" MODIFIED="1523133231116">
+<node TEXT="Call with the same parameter always return the same value (Idempotenz)" ID="ID_184085460" CREATED="1523133234267" MODIFIED="1523133684808"/>
+<node TEXT="no Sideeffects" ID="ID_1586927655" CREATED="1523133274235" MODIFIED="1523133497050"/>
+<node TEXT="indiependent from external state changes" ID="ID_115525350" CREATED="1523133290747" MODIFIED="1523133334737"/>
+<node TEXT="Impure Functions does not apply all the all of the above mentioned properties" ID="ID_1402638177" CREATED="1523133374554" MODIFIED="1523133475091"/>
+<node TEXT="OR Generates only from the given props its new state." ID="ID_1575939305" CREATED="1523133738127" MODIFIED="1523133765025"/>
+<node TEXT="examples" ID="ID_1882693201" CREATED="1523133544273" MODIFIED="1523133552570">
+<node TEXT="pure" ID="ID_757132856" CREATED="1523133556601" MODIFIED="1523133559172">
+<node TEXT="function pure(props){&#xa;    return props.x + props.y;&#xa;}" ID="ID_911012678" CREATED="1523133570608" MODIFIED="1523133619434"/>
+</node>
+<node TEXT="impure" ID="ID_1044527417" CREATED="1523133560225" MODIFIED="1523133630985">
+<node TEXT="let z = 0;&#xa;&#xa;function impure(props) {&#xa;    z++;&#xa;    props.y = 42;&#xa;    window.foo = &apos;bar&apos;;&#xa;    return props.x + props.y + z;&#xa;}" ID="ID_779972198" CREATED="1523133629544" MODIFIED="1523133953409"/>
+</node>
+</node>
+<node TEXT="You should always aim for pure functions in your project" ID="ID_886201790" CREATED="1523134110789" MODIFIED="1523134140606"/>
 </node>
 </node>
 <node TEXT="angular" ID="ID_1778518175" CREATED="1521314662594" MODIFIED="1521314667721"/>
@@ -4761,6 +4891,7 @@
 </node>
 <node TEXT="Architecture" ID="ID_1641716419" CREATED="1517908745394" MODIFIED="1522617014617">
 <node TEXT="MVC" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1522617059504"/>
+<node TEXT="single page application" ID="ID_1754289522" CREATED="1523128034273" MODIFIED="1523128051635"/>
 </node>
 <node TEXT="Build tools" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
 <node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
@@ -5428,6 +5559,10 @@
 <node TEXT="service mockups" ID="ID_1155776576" CREATED="1520783400728" MODIFIED="1520783412208">
 <node TEXT="https://jsonplaceholder.typicode.com/" ID="ID_312084990" CREATED="1520783465201" MODIFIED="1520783465201" LINK="https://jsonplaceholder.typicode.com/"/>
 <node TEXT="https://github.com/toddmotto/public-apis" ID="ID_477314071" CREATED="1523118166536" MODIFIED="1523118166536" LINK="https://github.com/toddmotto/public-apis"/>
+</node>
+<node TEXT="Frontend script loading" ID="ID_1042837871" CREATED="1523129521246" MODIFIED="1523129577512">
+<node TEXT="https://rawgit.com/" ID="ID_674637895" CREATED="1523129472350" MODIFIED="1523129472350" LINK="https://rawgit.com/"/>
+<node TEXT="https://unpkg.com/#/" ID="ID_884824766" CREATED="1523129627836" MODIFIED="1523129627836" LINK="https://unpkg.com/#/"/>
 </node>
 <node TEXT="auditing" ID="ID_1103733360" CREATED="1520782558644" MODIFIED="1520782565439">
 <node TEXT="https://sonarwhal.com/" ID="ID_1330114462" CREATED="1517836675801" MODIFIED="1517836675801" LINK="https://sonarwhal.com/"/>
