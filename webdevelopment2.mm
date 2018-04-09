@@ -241,10 +241,10 @@
 <node TEXT="&lt;picture&gt;" ID="ID_1790167744" CREATED="1520593212333" MODIFIED="1520593216654"/>
 <node TEXT="&lt;source&gt;" ID="ID_1512781250" CREATED="1520593224621" MODIFIED="1520593229582"/>
 </node>
-<node TEXT="Scripting" FOLDED="true" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
+<node TEXT="Scripting" ID="ID_1913380430" CREATED="1520592075742" MODIFIED="1520592083751">
 <node TEXT="In order to create dynamic content and Web applications, HTML supports the use of scripting languages, most prominently JavaScript. Certain elements support this capability." ID="ID_1601191736" CREATED="1520727731055" MODIFIED="1520727736767"/>
 <node TEXT="&lt;canvas&gt;" ID="ID_619380127" CREATED="1520592996387" MODIFIED="1520593000725"/>
-<node TEXT="&lt;script&gt;" FOLDED="true" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1520593070106">
+<node TEXT="&lt;script&gt;" ID="ID_141498082" CREATED="1515280692862" MODIFIED="1520593070106">
 <node TEXT="type attribute" FOLDED="true" ID="ID_54630004" CREATED="1515280774637" MODIFIED="1515323493853">
 <node TEXT="The type attribute specifies the Internet media type (formerly known as MIME type) of a script." ID="ID_822896220" CREATED="1515280767645" MODIFIED="1515280767645"/>
 <node TEXT="The type attribute identifies the content between the &lt;script&gt; and &lt;/script&gt; tags." ID="ID_1435470214" CREATED="1515280820009" MODIFIED="1515280820009"/>
@@ -725,7 +725,7 @@
 <node TEXT="html events" ID="ID_816931101" CREATED="1520174966528" MODIFIED="1520175375976">
 <node TEXT="HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document." ID="ID_561440711" CREATED="1522750707790" MODIFIED="1522750713621"/>
 <node TEXT="Events are normally used in combination with functions, and the function will not be executed before the event occurs (such as when a user clicks a button)." ID="ID_1337323341" CREATED="1522750738295" MODIFIED="1522750743276"/>
-<node TEXT="Window Event Attributes" FOLDED="true" ID="ID_1980096227" CREATED="1520175427085" MODIFIED="1520175477465">
+<node TEXT="Window Event Attributes" ID="ID_1980096227" CREATED="1520175427085" MODIFIED="1520175477465">
 <node TEXT="Events triggered for the window object (applies to the &lt;body&gt; tag):" ID="ID_1057171305" CREATED="1520175970380" MODIFIED="1520175979445"/>
 <node TEXT="printing the Site" FOLDED="true" ID="ID_63258499" CREATED="1520176058032" MODIFIED="1520176069659">
 <node TEXT="onafterprint" FOLDED="true" ID="ID_651296976" CREATED="1520175833282" MODIFIED="1520175836837">
@@ -1001,6 +1001,11 @@
 </node>
 </node>
 <node TEXT="SEO" ID="ID_628491381" CREATED="1517783261967" MODIFIED="1517783268941"/>
+</node>
+</node>
+<node TEXT="Quirks/hacks" ID="ID_96987309" CREATED="1523259134309" MODIFIED="1523259167032">
+<node TEXT="delete weird whitespaces between spans" ID="ID_95538814" CREATED="1523259181979" MODIFIED="1523259567863">
+<node TEXT="&lt;p&gt;&#xa;  &lt;span&gt;text 1&lt;/span&gt;&lt;!-- --&gt;&#xa;  &lt;span&gt;text 2&lt;/span&gt;&#xa;  &lt;span&gt;text 3&lt;/span&gt;&#xa;&lt;/p&gt;" ID="ID_1529577803" CREATED="1523259575861" MODIFIED="1523259581840"/>
 </node>
 </node>
 </node>
@@ -3896,7 +3901,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="This differs slightly from Functional Components where the properties were passed in as a variable." ID="ID_510554502" CREATED="1523213244472" MODIFIED="1523213252242"/>
@@ -3920,7 +3924,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="But, components also offer state, and it is used to store information/data about the component that can change over time." ID="ID_1793816240" CREATED="1523214042690" MODIFIED="1523214045861"/>
@@ -3938,7 +3941,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="In real apps this data tends to be very small and JSON-serializable." ID="ID_330973779" CREATED="1523214181706" MODIFIED="1523214196444"/>
@@ -4092,6 +4094,11 @@
 <node TEXT="componentDidCatch()" ID="ID_1386257458" CREATED="1522625194790" MODIFIED="1522625198876"/>
 </node>
 </node>
+</node>
+</node>
+<node TEXT="Typechecking With PropTypes" ID="ID_1324084661" CREATED="1523272175294" MODIFIED="1523272181603">
+<node TEXT="examples" ID="ID_1380868875" CREATED="1523272185781" MODIFIED="1523272192870">
+<node TEXT="import PropTypes from &apos;prop-types&apos;;&#xa;&#xa;MyComponent.propTypes = {&#xa;  // You can declare that a prop is a specific JS type. By default, these&#xa;  // are all optional.&#xa;  optionalArray: PropTypes.array,&#xa;  optionalBool: PropTypes.bool,&#xa;  optionalFunc: PropTypes.func,&#xa;  optionalNumber: PropTypes.number,&#xa;  optionalObject: PropTypes.object,&#xa;  optionalString: PropTypes.string,&#xa;  optionalSymbol: PropTypes.symbol,&#xa;&#xa;  // Anything that can be rendered: numbers, strings, elements or an array&#xa;  // (or fragment) containing these types.&#xa;  optionalNode: PropTypes.node,&#xa;&#xa;  // A React element.&#xa;  optionalElement: PropTypes.element,&#xa;&#xa;  // You can also declare that a prop is an instance of a class. This uses&#xa;  // JS&apos;s instanceof operator.&#xa;  optionalMessage: PropTypes.instanceOf(Message),&#xa;&#xa;  // You can ensure that your prop is limited to specific values by treating&#xa;  // it as an enum.&#xa;  optionalEnum: PropTypes.oneOf([&apos;News&apos;, &apos;Photos&apos;]),&#xa;&#xa;  // An object that could be one of many types&#xa;  optionalUnion: PropTypes.oneOfType([&#xa;    PropTypes.string,&#xa;    PropTypes.number,&#xa;    PropTypes.instanceOf(Message)&#xa;  ]),&#xa;&#xa;  // An array of a certain type&#xa;  optionalArrayOf: PropTypes.arrayOf(PropTypes.number),&#xa;&#xa;  // An object with property values of a certain type&#xa;  optionalObjectOf: PropTypes.objectOf(PropTypes.number),&#xa;&#xa;  // An object taking on a particular shape&#xa;  optionalObjectWithShape: PropTypes.shape({&#xa;    color: PropTypes.string,&#xa;    fontSize: PropTypes.number&#xa;  }),&#xa;&#xa;  // You can chain any of the above with `isRequired` to make sure a warning&#xa;  // is shown if the prop isn&apos;t provided.&#xa;  requiredFunc: PropTypes.func.isRequired,&#xa;&#xa;  // A value of any data type&#xa;  requiredAny: PropTypes.any.isRequired,&#xa;&#xa;  // You can also specify a custom validator. It should return an Error&#xa;  // object if the validation fails. Don&apos;t `console.warn` or throw, as this&#xa;  // won&apos;t work inside `oneOfType`.&#xa;  customProp: function(props, propName, componentName) {&#xa;    if (!/matchme/.test(props[propName])) {&#xa;      return new Error(&#xa;        &apos;Invalid prop `&apos; + propName + &apos;` supplied to&apos; +&#xa;        &apos; `&apos; + componentName + &apos;`. Validation failed.&apos;&#xa;      );&#xa;    }&#xa;  },&#xa;&#xa;  // You can also supply a custom validator to `arrayOf` and `objectOf`.&#xa;  // It should return an Error object if the validation fails. The validator&#xa;  // will be called for each key in the array or object. The first two&#xa;  // arguments of the validator are the array or object itself, and the&#xa;  // current item&apos;s key.&#xa;  customArrayProp: PropTypes.arrayOf(function(propValue, key, componentName, location, propFullName) {&#xa;    if (!/matchme/.test(propValue[key])) {&#xa;      return new Error(&#xa;        &apos;Invalid prop `&apos; + propFullName + &apos;` supplied to&apos; +&#xa;        &apos; `&apos; + componentName + &apos;`. Validation failed.&apos;&#xa;      );&#xa;    }&#xa;  })&#xa;};" ID="ID_1095027162" CREATED="1523272292797" MODIFIED="1523272303537"/>
 </node>
 </node>
 </node>
@@ -5665,6 +5672,9 @@
 </node>
 <node TEXT="little helper" ID="ID_371759216" CREATED="1520937175504" MODIFIED="1520937219195">
 <node TEXT="http://keycode.info/" ID="ID_1157481173" CREATED="1520937224500" MODIFIED="1520937224500" LINK="http://keycode.info/"/>
+</node>
+<node TEXT="Hosting" ID="ID_1734576649" CREATED="1523286063351" MODIFIED="1523286070512">
+<node TEXT="https://uberspace.de/prices" ID="ID_1809450183" CREATED="1523286073534" MODIFIED="1523286073534" LINK="https://uberspace.de/prices"/>
 </node>
 </node>
 <node TEXT="Protocols" POSITION="right" ID="ID_155934142" CREATED="1520803096799" MODIFIED="1520803121593">
