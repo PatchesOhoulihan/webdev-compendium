@@ -1,0 +1,16 @@
+webpack 4: using babel-loader without a configuration file
+There is another method for using webpack loaders.
+
+The --module-bindflag lets you specify loaders from the command line. Thank you Cezar for pointing this out.
+
+The flag is not webpack 4 specific. It was there since version 3.
+
+To use babel-loader without a configuration file configure your npm scripts in package.json like so:
+
+"scripts": {
+    "dev": "webpack --mode development --module-bind js=babel-loader",
+    "build": "webpack --mode production --module-bind js=babel-loader"
+  }
+And you’re ready to run the build.
+
+I’m not a fan of this method (I don’t like fat npm scripts) but it is interesting nonetheless.

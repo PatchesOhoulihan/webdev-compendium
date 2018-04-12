@@ -1,0 +1,46 @@
+webpack 4: production and development mode
+Having 2 configuration files is a common pattern in webpack.
+
+A typical project may have:
+
+a configuration file for development, for defining webpack dev server and other stuff
+a configuration file for production, for defining UglifyJSPlugin, sourcemaps and so on
+While bigger projects may still need 2 files, in webpack 4 you can get by without a single line of configuration.
+
+How so?
+
+webpack 4 introduces production and development mode.
+
+In fact if you pay attention at the output of npm run buildyou’ll see a nice warning:
+
+webpack 4 development and production mode
+
+The ‘mode’ option has not been set. Set ‘mode’ option to ‘development’ or ‘production’ to enable defaults for this environment.
+
+What does that mean? Let’s see.
+
+Open up package.json and fill the script section like the following:
+
+"scripts": {
+  "dev": "webpack --mode development",
+  "build": "webpack --mode production"
+}
+Now try to run:
+
+npm run dev
+and take a look at ./dist/main.js. What do you see? Yes, I know, a boring bundle… not minified!
+
+Now try to run:
+
+npm run build
+and take a look at ./dist/main.js. What do you see now? A minified bundle!
+
+Yes!
+
+Production mode enables all sorts of optimizations out of the box. Including minification, scope hoisting, tree-shaking and more.
+
+Development mode on the other hand is optimized for speed and does nothing more than providing an un-minified bundle.
+
+So here is the second news: webpack 4 introduces production and development mode.
+
+In webpack 4 you can get by without a single line of configuration! Just define the --modeflag and you get everything for free!

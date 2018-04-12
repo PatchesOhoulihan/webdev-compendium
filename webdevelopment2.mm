@@ -5213,6 +5213,7 @@
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction" ID="ID_1106465499" CREATED="1522708682079" MODIFIED="1522708689132"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/API/Document" ID="ID_1744516039" CREATED="1522755700783" MODIFIED="1522755705962"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements" ID="ID_960537571" CREATED="1522761897643" MODIFIED="1522761897643" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements"/>
+<node TEXT="https://www.valentinog.com/blog/webpack-4-tutorial/" ID="ID_996798584" CREATED="1523547611455" MODIFIED="1523547611455" LINK="https://www.valentinog.com/blog/webpack-4-tutorial/"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -5596,6 +5597,10 @@
 <node TEXT="https://jsonplaceholder.typicode.com/" ID="ID_312084990" CREATED="1520783465201" MODIFIED="1520783465201" LINK="https://jsonplaceholder.typicode.com/"/>
 <node TEXT="https://github.com/toddmotto/public-apis" ID="ID_477314071" CREATED="1523118166536" MODIFIED="1523118166536" LINK="https://github.com/toddmotto/public-apis"/>
 </node>
+<node TEXT="colorpicker" ID="ID_1264306828" CREATED="1523544753427" MODIFIED="1523544775487">
+<node TEXT="http://websafecolors.info/color-chart" ID="ID_979427941" CREATED="1523544781216" MODIFIED="1523544781216" LINK="http://websafecolors.info/color-chart"/>
+<node TEXT="https://www.impressivewebs.com/weird-css-color-names/" ID="ID_741724520" CREATED="1523545661189" MODIFIED="1523545661189" LINK="https://www.impressivewebs.com/weird-css-color-names/"/>
+</node>
 <node TEXT="Frontend script loading" ID="ID_1042837871" CREATED="1523129521246" MODIFIED="1523129577512">
 <node TEXT="https://rawgit.com/" ID="ID_674637895" CREATED="1523129472350" MODIFIED="1523129472350" LINK="https://rawgit.com/"/>
 <node TEXT="https://unpkg.com/#/" ID="ID_884824766" CREATED="1523129627836" MODIFIED="1523129627836" LINK="https://unpkg.com/#/"/>
@@ -5681,6 +5686,14 @@
 <edge COLOR="#808080"/>
 <node TEXT="http" ID="ID_1251503067" CREATED="1520803131687" MODIFIED="1520803136161"/>
 <node TEXT="https" ID="ID_1210591709" CREATED="1522618188274" MODIFIED="1522618193256"/>
+<node TEXT="header" ID="ID_1087971464" CREATED="1523461849473" MODIFIED="1523461856026"/>
+<node TEXT="status codes" ID="ID_1800511115" CREATED="1523461861308" MODIFIED="1523461874094">
+<node TEXT="1xx Informational responses" ID="ID_1219192341" CREATED="1523462027253" MODIFIED="1523462032400"/>
+<node TEXT="2xx Success" ID="ID_1641489406" CREATED="1523462039222" MODIFIED="1523462041904"/>
+<node TEXT="3xx Redirection" ID="ID_1742791972" CREATED="1523462042462" MODIFIED="1523462052479"/>
+<node TEXT="4xx Client errors" ID="ID_477164657" CREATED="1523462053126" MODIFIED="1523462065175"/>
+<node TEXT="5xx Server errors" ID="ID_1062592407" CREATED="1523462075454" MODIFIED="1523462080592"/>
+</node>
 </node>
 </node>
 </map>

@@ -1,0 +1,10 @@
+I love webpack 4 zero conf but how about overriding the default entry point? And the default output?
+
+Configure them in package.json!
+
+Here’s an example:
+
+"scripts": {
+  "dev": "webpack --mode development ./foo/src/js/index.js --output ./foo/main.js",
+  "build": "webpack --mode production ./foo/src/js/index.js --output ./foo/main.js"
+}

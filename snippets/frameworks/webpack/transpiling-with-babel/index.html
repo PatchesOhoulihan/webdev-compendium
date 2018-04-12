@@ -1,0 +1,78 @@
+Modern Javascript is mostly written in ES6.
+
+But not every browser know how to deal with ES6. We need some kind of transformation.
+
+This transformation step is called transpiling. Transpiling is the act of taking ES6 and making it understandable by older browsers.
+
+Webpack doesn’t know how to make the transformation but has loaders: think of them as of transformers.
+
+babel-loader is the webpack loader for transpiling ES6 and above, down to ES5.
+
+To start using the loader we need to install a bunch of dependencies. In particular:
+
+babel-core
+babel-loader
+babel-preset-env for compiling Javascript ES6 code down to ES5
+Let’s do it:
+
+npm i babel-core babel-loader babel-preset-env --save-dev
+Next up configure Babel by creating a new file named .babelrc inside the project folder:
+
+{
+    "presets": [
+        "env"
+    ]
+}
+At this point we have 2 options for configuring babel-loader:
+
+using a configuration file for webpack
+using --module-bindin your npm scripts
+Yes, I know what you’re thinking. webpack 4 markets itself as a zero configuration tool. Why would you write a configuration file again?
+
+The concept of zero configuration in webpack 4 applies to:
+
+the entry point. Default to ./src/index.js
+the output. Default to ./dist/main.js
+production and development mode (no need to create 2 separate confs for production and development)
+And it’s enough. But for using loaders in webpack 4 you still have to create a configuration file.
+
+I’ve asked Sean about this. Will loaders in webpack 4 work the same as webpack 3? Is there any plan to provide 0 conf for common loaders like babel-loader?
+
+His response:
+
+“For the future (after v4, maybe 4.x or 5.0), we have already started the exploration of how a preset or addon system will help define this. What we don’t want: To try and shove a bunch of things into core as defaults What we do want: Allow other to extend”
+
+For now you must still rely on webpack.config.js. Let’s take a look…
+
+webpack 4: using babel-loader with a configuration file
+Give webpack a configuration file for using babel-loader in the most classical way.
+
+Create a new file named webpack.config.jsand configure the loader:
+
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  }
+};
+There is no need to specify the entry point unless you want to customize it.
+
+Next up open ./src/index.js and write some ES6:
+
+const arr = [1, 2, 3];
+const iAmJavascriptES6 = () => console.log(...arr);
+window.iAmJavascriptES6 = iAmJavascriptES6;
+Finally create the bundle with:
+
+npm run build
+Now take a look at ./dist/main.js to see the transpiled code.
+
+
+

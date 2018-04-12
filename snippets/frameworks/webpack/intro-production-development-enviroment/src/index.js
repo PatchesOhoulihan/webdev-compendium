@@ -1,0 +1,1 @@
+console.log('Ich bin der default entrypoint');

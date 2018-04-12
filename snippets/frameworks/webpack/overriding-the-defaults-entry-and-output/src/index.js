@@ -1,0 +1,1 @@
+console.log('Ich bin der standart entry point');
