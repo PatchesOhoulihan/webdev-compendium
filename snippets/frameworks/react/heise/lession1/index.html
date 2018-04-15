@@ -10,12 +10,52 @@
 
     <!-- Transpiles javascript/JSX -->
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <title>react lesson 2</title>
 </head>
 
-<script type="text/babel"> 
+<script type="text/babel">
+
+    function FunctionalComponent(props){
+        return <div>Hello, {props.name}</div>
+    }
+
+    class ClassComponent extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {counter: 0};
+        }
+
+        componentDidMount() {
+            this.intervalId = setInterval(() => {
+                this.setState((prevState, props) => ({counter: prevState.counter + 1}))
+            }, 1000)
+        }
+
+        componentWillUnmount(){
+            clearInterval(this.intervalId);
+        }
+
+        render(){
+            console.log('render(....)', this.state);
+
+            return(
+                <div>
+                    <h1>Counter</h1>
+                    <p>{this.state.counter}</p>
+                    <p>{this.props.name}</p>
+                </div>
+            )
+        }
+    }
 
     ReactDOM.render(
-        <div>Hello World dies das</div>, 
+        <div>
+            <FunctionalComponent name="DiggiFunc" />
+            <ClassComponent name='DiggiClass'/ >
+        </div>
+        , 
         document.getElementById("root") 
     ); 
 
@@ -26,3 +66,4 @@
 </body>
 
 </html>
+
