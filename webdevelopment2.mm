@@ -2532,7 +2532,7 @@
 <node TEXT="JavaScript is a loosely typed or a dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types" ID="ID_885926804" CREATED="1521128878013" MODIFIED="1521128896423"/>
 </node>
 <node TEXT="The latest ECMAScript standard defines seven data types" ID="ID_428773070" CREATED="1521128973800" MODIFIED="1521128977529">
-<node TEXT="Six data types that are primitives:" ID="ID_1760285723" CREATED="1521129104632" MODIFIED="1521129152514">
+<node TEXT="Six data types that are primitives(immutable):" ID="ID_1760285723" CREATED="1521129104632" MODIFIED="1523789849679">
 <node TEXT="Boolean" ID="ID_1681372778" CREATED="1521129014641" MODIFIED="1521129017847"/>
 <node TEXT="Null" ID="ID_1794636900" CREATED="1521129041251" MODIFIED="1521129044186"/>
 <node TEXT="Undefined" ID="ID_1574590799" CREATED="1521129068013" MODIFIED="1521129071202"/>
@@ -2540,7 +2540,7 @@
 <node TEXT="String" ID="ID_923033908" CREATED="1521129212241" MODIFIED="1521129215247"/>
 <node TEXT="Symbol (new in ECMAScript 6)" ID="ID_657135573" CREATED="1521129229519" MODIFIED="1521129232510"/>
 </node>
-<node TEXT="and Object" ID="ID_1294289705" CREATED="1521129265506" MODIFIED="1521129273867"/>
+<node TEXT="and Object(mutable)" ID="ID_1294289705" CREATED="1521129265506" MODIFIED="1523789878724"/>
 <node TEXT="All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable." ID="ID_124632379" CREATED="1521129364959" MODIFIED="1521129368619"/>
 </node>
 </node>
@@ -4020,7 +4020,12 @@
 <node TEXT="methods" ID="ID_1384973452" CREATED="1522625135887" MODIFIED="1522625141772">
 <node TEXT="componentWillReceiveProps() / UNSAFE_componentWillReceiveProps()" ID="ID_764468297" CREATED="1522624971344" MODIFIED="1522624975389"/>
 <node TEXT="static getDerivedStateFromProps()" ID="ID_1449181487" CREATED="1522624976360" MODIFIED="1522624984893"/>
-<node TEXT="shouldComponentUpdate()" ID="ID_478500104" CREATED="1522624985680" MODIFIED="1522624994853"/>
+<node TEXT="shouldComponentUpdate()" ID="ID_478500104" CREATED="1522624985680" MODIFIED="1522624994853">
+<node TEXT="This method can help to bump up performance" ID="ID_1119338707" CREATED="1523790054205" MODIFIED="1523790093602"/>
+<node TEXT="if you work on immutable data" ID="ID_166747121" CREATED="1523790097429" MODIFIED="1523790117626"/>
+<node TEXT="Not needed if you inherence from purecomponent" ID="ID_1021328713" CREATED="1523790119509" MODIFIED="1523790139482"/>
+<node TEXT="a purecomponent performs a shallow compare by itself" ID="ID_1228758045" CREATED="1523790173380" MODIFIED="1523790214681"/>
+</node>
 <node TEXT="componentWillUpdate() / UNSAFE_componentWillUpdate()" ID="ID_515873324" CREATED="1522625000768" MODIFIED="1522625006197"/>
 <node TEXT="render()" ID="ID_14616147" CREATED="1522625006952" MODIFIED="1522625016229"/>
 <node TEXT="getSnapshotBeforeUpdate()" ID="ID_1398451208" CREATED="1522625023688" MODIFIED="1522625027702"/>
