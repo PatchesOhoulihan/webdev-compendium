@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--Base Package -->
+    <!-- <script crossorigin src="https://unpkg.com/react@latest/umd/react.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <!--Everything dom related -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- Transpiles javascript/JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <title>react lesson 3</title>
+</head>
+
+
+<!--++++++++++++++++++++++++++++++++ styling +++++++++++++++++++++++++++++++++++++++++++-->
+<style>
+
+</style>
+
+
+<!--++++++++++++++++++++++++++++++++ scripting +++++++++++++++++++++++++++++++++++++++++-->
+<script type="text/babel">
+
+        // Uncontrolled Component
+        // state of the inputelements are managed by the dom
+        // Direct DOM reference
+        // Input values can be called if needed (ref)
+        // alternative you can let the string control the input field
+
+        // Controlled Component
+        // Have Control over the state of the inputelements
+        // Input Values and Component-state are synchronized
+
+
+
+        /*
+            Event-Propagation
+
+            Bubbling, the event is propagated upwards 
+            - By default eventlistener only listens to bubbling phase
+
+            <div onClick={this.handleOuterClick}> { SECOND }
+                <button onClick={this.handleInnerClick}>Click me</button> { FIRST }
+            </div>
+
+            Trickling or Capturing, the event is propagated downwards 
+            - Browser DOM starts with Capturing/Trickling the event downwards and 
+              than after it arrives on the leaves of the DOM tree it bubbles up again
+            
+            <div onClick={this.handleOuterClick}> { FIRST }
+                <button onClick={this.handleInnerClick}>Click me</button> { SECOND }
+            </div>
+
+            
+            
+            Stop Propagation
+
+            - The Propagation of the Event is prevent
+
+            <div onClick={this.handleOuterClick}> { SECOND }
+                <button onClick={event => event.stopPropagation() }>Click me</button> { FIRST }
+            </div>
+
+
+
+            Event Prevent Defaults
+
+            - prevents the element from its default browser behavior
+            - example: site refresh by click onSubmit
+            - This is not desireable in React
+
+            <form onSubmit={event => event.preventDefaults()}>
+                <label>
+                    Name:
+                    <input type="text" name="name" />
+                </label>
+                <input type="submit" value="Submit" />
+            </form>
+
+        */
+
+    class InputProcessing extends React.Component {
+
+        constructor(){
+            super();
+            this.state = {
+                name: 'init value',
+                isJavaScriptDeveloper: false,
+                favoriteDrink: 'mate'
+            };
+        }
+
+/*         handleInputProcessing = event => {
+            event.stopPropagation();
+            console.log(this.state.name);
+        }
+ */
+
+        handleInputProcessing = event => {
+            event.preventDefault();
+            console.log(this.state);
+        }
+
+        handleInputChange = event => {
+
+            const newValue = event.target.type === 'checkbox'
+                ? event.target.checked 
+                : event.target.value;
+
+            this.setState({[event.target.name]: newValue});
+        }
+
+        handleOuterClick = () => {
+            console.log('outer clicked');
+        }
+      
+        render(){
+            return (
+                <div onClick={this.handleOuterClick}>
+                {/*onClickCapture listens on the Caturing phase*/}
+                    <form onSubmit={this.handleInputProcessing}>
+                        <label>
+                        Name:
+                        {/*
+                        <input type="text" name="name" ref={input => this.input = input}/>
+
+                        Alternative you can tell the input element that this is its state, display it 
+                        Without onChange there is noway to alter the given text
+                        */}
+                        <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange}/>
+                        </label>
+
+                        <p>{this.state.name}</p>
+
+                        <label>
+                            Javascript-developer?
+                            <input 
+                                type="checkbox" 
+                                name="isJavaScriptDeveloper" 
+                                checked={this.state.isJavaScriptDeveloper}
+                                onChange={this.handleInputChange}
+                            />
+                        </label>
+
+                        <label>
+                            favorite drink?
+                            <select value={this.state.favoriteDrink} name="favoriteDrink" onChange={this.handleInputChange}>
+                                <option value="cola">Kola</option>
+                                <option value="mate">Mate</option>
+                                <option value="beer">Bier</option>
+                                <option value="coffee">Kaffee</option>
+                            </select>
+                        </label>
+
+                        <ul>
+                            <li>Name: {this.state.name} </li>
+                            <li>Javascript-Developer: {this.state.isJavaScriptDeveloper.toString()} </li>
+                            <li>Favorite Drink: {this.state.favoriteDrink.toString()} </li>
+                        </ul>
+                        
+                        {/*<button onClick={this.handleInputProcessing}>Eingabe verarbeiten</button>*/}
+                        <input type="submit" value="Eingabe verarbeiten" />
+                    </form>
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(
+        <div>
+            <InputProcessing />
+        </div>
+        , 
+        document.getElementById("root") 
+    ); 
+
+</script>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
