@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--Base Package -->
+    <script crossorigin src="https://unpkg.com/react@latest/umd/react.production.min.js"></script>
+    <!--Everything dom related -->
+    <script crossorigin src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script>
+
+    <!-- Transpiles javascript/JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <title>Setup production (no tooling)</title>
+</head>
+
+<script type="text/babel">
+
+    ReactDOM.render(
+        <div>
+            <p>Hallo world PROD</p>
+        </div>
+        , 
+        document.getElementById("root") 
+    ); 
+
+    </script>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--Base Package -->
+    <!-- <script crossorigin src="https://unpkg.com/react@latest/umd/react.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <!--Everything dom related -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- Transpiles javascript/JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <title>Setup development (no tooling)</title>
+</head>
+
+
+<!--++++++++++++++++++++++++++++++++ styling +++++++++++++++++++++++++++++++++++++++++++-->
+<style>
+
+</style>
+
+
+<!--++++++++++++++++++++++++++++++++ scripting +++++++++++++++++++++++++++++++++++++++++-->
+<script type="text/babel">
+
+    ReactDOM.render(
+        <div>
+            <p>Hello world DEV</p>
+        </div>
+        , 
+        document.getElementById("root") 
+    ); 
+
+</script>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
