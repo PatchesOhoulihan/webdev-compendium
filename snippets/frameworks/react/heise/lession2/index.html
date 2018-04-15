@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--Base Package -->
+    <!-- <script crossorigin src="https://unpkg.com/react@latest/umd/react.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <!--Everything dom related -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- Transpiles javascript/JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <title>react lesson 2</title>
+</head>
+
+
+<!--++++++++++++++++++++++++++++++++ styling +++++++++++++++++++++++++++++++++++++++++++-->
+<style>
+
+    .quantity{
+        color: royalblue;
+        font-weight:  bold;
+    }
+
+</style>
+
+
+
+<!--++++++++++++++++++++++++++++++++ scripting +++++++++++++++++++++++++++++++++++++++++++-->
+<script type="text/babel">
+
+    function FunctionalComponent(props){
+        return <div>Hello, {props.name}</div>
+    }
+    
+    function formatAsBinary(dec){
+        // returns String in Binary representation
+        return dec.toString(2);
+    }
+
+    class Probability {
+        constructor(probability){
+            if(probability < 0) throw new Error('Invalid probability');
+            if(probability < 0) throw new Error('Invalid probability');
+
+            this.probability = probability;
+        }
+
+        equals(other) {
+            const epsilion = 0.01;
+
+            return Math.abs(this.probability - other.probability) < epsilon;
+        }
+
+        inverse() {
+/*             this.probability = 1 - this.probability;
+            return this.probability; */
+            return new Probability(1 - this.probability);
+        }
+
+        combined(other) {
+/*             this.probability * other.probability; */
+            return new Probability(this.probability * other.probability);
+        }
+    }
+
+    const p1 = new Probability(0.3);
+    console.log(p1.probability);
+    console.log(p1.inverse());
+
+    const obj = { counter: 1};
+    const newObj = {...obj, counter: 2};
+
+    console.log(obj);
+    console.log(newObj);
+
+    const arr = [0,1,2];
+    const newArr = [...arr, 3];
+
+    console.log(arr);
+    console.log(newArr);
+
+    //If you use PureComponent for inheritence you get shouldComponentUpdate and a shallow compare automatically.
+    class Count extends React.PureComponent {
+
+        //Decide when the component needs a new rendering only works with immutealbe types
+        //if reference type is used the reference must differ.
+/*         shouldComponentUpdate(nextProps, nextState){
+            return this.props.quantity !== nextProps.quantity;
+        } */
+
+        render(){
+            return (
+                <div className="quantity">
+                    <p> Decimal: {this.props.quantity.value}</p>
+                    <p> Binary: {formatAsBinary(this.props.quantity.value)}</p>
+                </div>
+            );
+        }
+    }
+
+    class ClassComponent extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {counter: {value : 0}};
+            
+            //by default react don't bind eventhandlers to the Component 
+            //this.handleClick = this.handleClick.bind(this);
+        }
+
+        componentDidMount() {
+            this.intervalId = setInterval(() => {
+                this.setState((prevState, props) => {
+                    
+                    // This won't update the counter because state is still the same reference (mutable)
+                    // Because in the Count component checks with shouldComponentUpdate for a new reference
+/*                  const newCounter = prevState.counter;
+                    newCounter.value = newCounter.value + 1; */
+                    const newCounter = {...prevState.counter};
+                    newCounter.value = newCounter.value + 1;
+                    return {counter: newCounter}
+                })
+            }, 1000)
+        }
+
+        componentWillUnmount(){
+            clearInterval(this.intervalId);
+        }
+
+        /*
+        handleClick() {
+            console.log(this);
+        } 
+
+        if you call the Eventhandler this way you need to bind handleclick
+        <button onClick={this.handleClick}>reset</button> 
+        
+        if you do it this way no binding to the component is needed
+        button onClick={() => {this.handleClick()}}>reset</button> 
+        
+        if you use class properties you can do this
+        <button onClick={this.handleClick}>reset</button> */
+
+        //class properties
+        handleClick = () => {
+            this.setState({counter: {value : 0}});
+        }
+
+        render(){
+            console.log('render(....)', this.state);
+
+
+            return(
+                <div>
+                    <h1>Counter</h1>
+                    <Count quantity={this.state.counter}/>
+                    <p>{this.props.name}</p>
+                    <button onClick={this.handleClick}>reset</button> 
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(
+        <div>
+            <FunctionalComponent name="DiggiFunc" />
+            <ClassComponent name='DiggiClass'/ >
+        </div>
+        , 
+        document.getElementById("root") 
+    ); 
+
+    </script>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
