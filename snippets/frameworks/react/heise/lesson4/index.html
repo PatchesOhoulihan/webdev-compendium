@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--Base Package -->
+    <!-- <script crossorigin src="https://unpkg.com/react@latest/umd/react.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <!--Everything dom related -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script> -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- Transpiles javascript/JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <title>react lession 4</title>
+</head>
+
+
+<!--++++++++++++++++++++++++++++++++ styling +++++++++++++++++++++++++++++++++++++++++++-->
+<style>
+
+    .quantity{
+        color: royalblue;
+        font-weight:  bold;
+    }
+
+</style>
+
+
+
+<!--++++++++++++++++++++++++++++++++ scripting +++++++++++++++++++++++++++++++++++++++++++-->
+<script type="text/babel">
+
+    /*
+        React lifecycle
+
+        Contains three phases
+
+        1. Mounting
+        2. Updating
+        3. Unmounting
+
+        For each Phase there are Methode to control the behavior.
+
+        -------------------------------------------------------------------------------------
+        1.1 Mounting
+        -------------------------------------------------------------------------------------
+
+        Mounting begins with the creation of the component and ends with the intial Rendering 
+        in the DOM
+
+        Methods in order of there call:
+
+        1. constructor
+        2. componentWillMount()
+        3. render()
+        4. componentDidMount()
+
+
+
+        1.2 Constructor
+        - creation of the component instance
+        - creating initial state
+        - binding of Event-handlern
+
+        class App extends React.Component {
+            constructor (props) {
+                super(props);
+
+                this.state = {foo: 'bar'};
+                this.handleEvent = this.handleEvent.bind(this);
+            }
+        }
+
+
+
+        1.3 componentWillMount()
+        - Initializing BEFORE the first rendering 
+        - by class based components facebook empfiehlt Constructor.
+        - Call of setState do not start a new rendering.
+        - The only serversite lifecycle Method
+        
+        So whats the reason for this method to exist?
+
+        In the dark days before es6 components in react where created differently
+
+        const Comp = React.createClass({
+            componentWillMount(){
+
+            }
+        })
+
+        This are no real classe so they have no contructor. So componentWillMount() takes the place
+        of the constructor.
+
+        React.createClass is not included in react 16 anymore.
+
+        But is there a need for it use require('create-react-class')
+
+
+
+        1.4 render()
+        - firsttime rendering
+        - declaring ui-representation
+            - usage of state and props (read only);
+
+        render() {
+            <div>UI-representation {this.state.foo} {this.props.bar} </div>
+        }
+
+        1.5 componentDidMount()
+        - Initialisation AFTER the first rendering call.
+        - setState triggers a new rendering call
+
+        - execution of async code, can introduce siteeffects
+            - call for data, subscriptions, intervald , Real DOM-exes
+        
+        class App extends React.Component {
+            componentDidMount() {
+                this.intervalId = setInterval(() => {
+                    this.setState(prevState =>({counter: prevState.counter + 1 }));
+                }, 1000);
+            }
+        }
+
+
+
+        2.0 Updating
+        - After the initial Rendering call the component is in update mode.
+        - Methods in order of there call
+            - componentWillReceiveProps()
+            - shouldComponentUpdate()
+            - componentWillUpdate()
+            - render()
+            - componentDidUpdate()
+
+
+        2.1 componentWillReceiveProps()
+        - component get new props
+        - scenario update of the state after alteration of the props
+        - React can call this method even whitout a change of props.
+            - Check on change needs to triggered manually.
+        - Because of the order of the components a setState call will not 
+          trigger a new rendering call because it's is called later because of the order
+        - React dont check if the props are changed. Everytime when a parent component is rendered
+          the componentWillReceiveProps event is raised in child component. 
+
+        class App extends React.Component {
+            componentWillReceiveProps (nextProps) {
+                if(this.propsinitialCount !== nextProps.initialCount){
+                    this.setState({counter: nextProps.initialCount});
+                }
+            }
+        }
+
+        2.2 shouldComponentUpdate()
+    
+    */
+
+    class Counter extends React.Component{
+
+        //--------------------------------------------------------------
+        // class methods
+        //--------------------------------------------------------------
+
+        logColored = message => {
+            console.log(`%c${message}`, 'color: tomato; font-weight:bold');
+        }
+
+        //--------------------------------------------------------------
+        // Mounting
+        //--------------------------------------------------------------
+
+        constructor(){
+            super();
+            this.state = {counter: 0};
+            this.logColored('constructor(.....)');
+        }
+
+        componentWillMount(){
+            this.logColored('componentWillMount(...)');
+        }
+
+        componentDidMount(){
+            this.logColored('componentDidMount(...)');
+        }
+
+
+        //--------------------------------------------------------------
+        // Updating
+        //--------------------------------------------------------------
+
+        componentWillReceiveProps(nextProps){
+            this.logColored(`componentWillReceiveProps(${JSON.stringify(nextProps)})`);
+            this.setState({counter: nextProps.initialCount});
+        }
+
+        render(){
+
+            this.logColored(`counter-render(${JSON.stringify(this.state)})`);
+
+            return (
+                <div>
+                    counter {this.state.counter}
+                    <div>
+                        child-counter:
+                    </div>
+                </div>
+            );
+        }
+    }
+
+
+    class LifecyclePlayground extends React.Component {
+
+        //--------------------------------------------------------------
+        // Mounting
+        //--------------------------------------------------------------
+
+        constructor(){
+            super();
+            this.state = {counter: 0};
+            console.log('counter-constructor(.....)');
+        }
+
+        componentWillMount(){
+            console.log('counter-componentWillMount(...)');
+            //No new rendering because this happens before the component 
+            // is rendered for the first time.
+            this.setState({counter: 1})
+        }
+
+        componentDidMount(){
+            console.log('counter-componentDidMount(...)');
+            this.setState({counter: 2});
+        }
+
+
+        //--------------------------------------------------------------
+        // Updating
+        //--------------------------------------------------------------
+
+
+
+        //--------------------------------------------------------------
+        // Class Methods
+        //--------------------------------------------------------------
+
+        handleDecrement = event => {
+            this.setState(prevState => ({counter: prevState.counter-1}));
+        }
+
+        handleIncrement = event => {
+            this.setState(prevState => ({counter: prevState.counter+1}));
+        }
+
+        render(){
+            {/*this.state({counter: 3});*/} // Won't work and creates an endless loop. react stopps after 1000 calls
+            //setState triggers a new rendering call except in componentWillMount.
+
+            console.log(`render(${JSON.stringify(this.state)})`);
+
+            return (
+                <div>
+                    counter {this.state.counter}
+                    <div>
+                        <button onClick={this.handleIncrement}>Increment</button>
+                        <button onClick={this.handleDecrement}>Decrement</button>
+                    </div>
+                    <Counter initialCount={this.state.counter}/>
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(
+        <div>
+            <LifecyclePlayground />
+        </div>
+        , 
+        document.getElementById("root") 
+    ); 
+
+</script>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
