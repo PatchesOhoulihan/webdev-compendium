@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -2696,7 +2696,9 @@
 <node TEXT="void" ID="ID_1933274781" CREATED="1522706970899" MODIFIED="1522706984511">
 <node TEXT="The void operator evaluates an expression and returns undefined. This operator is often used to obtain the undefined primitive value, using &quot;void(0)&quot; (useful when evaluating an expression without using the return value)." ID="ID_1185626633" CREATED="1522707031721" MODIFIED="1522707036895"/>
 </node>
-<node TEXT="spreadoperator" ID="ID_1513748660" CREATED="1522713970661" MODIFIED="1522713979728"/>
+<node TEXT="spreadoperator" ID="ID_1513748660" CREATED="1522713970661" MODIFIED="1522713979728">
+<node TEXT="    const obj = { counter: 1};&#xa;    const newObj = {...obj, counter: 2};&#xa;&#xa;    console.log(obj);&#xa;    console.log(newObj);&#xa;&#xa;    const arr = [0,1,2];&#xa;    const newArr = [...arr, 3];&#xa;&#xa;    console.log(arr);&#xa;    console.log(newArr);" ID="ID_1285643230" CREATED="1523750309031" MODIFIED="1523750313691"/>
+</node>
 </node>
 <node TEXT="Control flow" ID="ID_265187798" CREATED="1522708180202" MODIFIED="1522708200343"/>
 <node TEXT="Loops and iteration" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1522708158383"/>
@@ -5434,7 +5436,7 @@
 </node>
 <node TEXT="svn" ID="ID_452984544" CREATED="1520729407081" MODIFIED="1520729413301"/>
 </node>
-<node TEXT="Ide" FOLDED="true" ID="ID_1795387417" CREATED="1517909035463" MODIFIED="1517909052048">
+<node TEXT="Ide" ID="ID_1795387417" CREATED="1517909035463" MODIFIED="1517909052048">
 <node TEXT="phpstorm" FOLDED="true" ID="ID_1915688729" CREATED="1516351424887" MODIFIED="1517301554346">
 <node TEXT="Search everywhere" FOLDED="true" ID="ID_95241345" CREATED="1516351443986" MODIFIED="1516351459357">
 <node TEXT="As the name suggests, the Search everywhere popup allows you to search for anything in your project, as well as in the IDE itself. You can search for files, symbols, functions, variables, classes or components in your code and quickly navigate to them:" ID="ID_1998284517" CREATED="1516351621877" MODIFIED="1516351642854"/>
@@ -5465,10 +5467,13 @@
 <node TEXT="right-click on the file" ID="ID_1881798060" CREATED="1517578822887" MODIFIED="1517578848609"/>
 </node>
 </node>
-<node TEXT="Visual studio code" FOLDED="true" ID="ID_1063730680" CREATED="1515278180287" MODIFIED="1515323893338">
-<node TEXT="shortcuts" FOLDED="true" ID="ID_66373857" CREATED="1515278203231" MODIFIED="1515323892490">
-<node TEXT="Format code" FOLDED="true" ID="ID_1401227338" CREATED="1515278212215" MODIFIED="1515323891762">
+<node TEXT="Visual studio code" ID="ID_1063730680" CREATED="1515278180287" MODIFIED="1515323893338">
+<node TEXT="shortcuts" ID="ID_66373857" CREATED="1515278203231" MODIFIED="1515323892490">
+<node TEXT="Format code" ID="ID_1401227338" CREATED="1515278212215" MODIFIED="1515323891762">
 <node TEXT="ctrl + shift + i" ID="ID_1443742418" CREATED="1515278221447" MODIFIED="1515278243308"/>
+</node>
+<node TEXT="vs-code-cheatsheet-linux.png" ID="ID_1725173061" CREATED="1523740397684" MODIFIED="1523740397684">
+<hook URI="webdevelopment2_files/vs-code-cheatsheet-linux.png" SIZE="0.31880978" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
