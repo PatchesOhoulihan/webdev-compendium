@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -3715,19 +3715,19 @@
 </node>
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
 <node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
-<node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
-<node TEXT="What is React?" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
-<node TEXT="What is ReactJS?" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
+<node TEXT="React" FOLDED="true" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
+<node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
+<node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
 <node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1409151973" CREATED="1515278541958" MODIFIED="1515278541958"/>
 <node TEXT="ReactJS applications are built from React Components - independent resusable components" ID="ID_728172620" CREATED="1515278579191" MODIFIED="1515278579191"/>
 <node TEXT="that describe how the UI should look based on their own state and properties." ID="ID_316601598" CREATED="1515278589469" MODIFIED="1515278592874"/>
 <node TEXT="React is component based" ID="ID_391038133" CREATED="1523127805691" MODIFIED="1523127817813"/>
 <node TEXT="Coding style is declarative &apos;what shall be displayed on the screen&apos;" ID="ID_1151431577" CREATED="1523127819051" MODIFIED="1523127902748"/>
 </node>
-<node TEXT="Why should I use ReactJS?" ID="ID_1935515619" CREATED="1515278620434" MODIFIED="1515324016705">
+<node TEXT="Why should I use ReactJS?" FOLDED="true" ID="ID_1935515619" CREATED="1515278620434" MODIFIED="1515324016705">
 <node TEXT="ReactJS applications are incredibly performant at UI rerendering" ID="ID_1849800554" CREATED="1515278628589" MODIFIED="1515278628589"/>
 <node TEXT="React Components make writing UI components easier" ID="ID_961089749" CREATED="1515278635436" MODIFIED="1515278635436"/>
-<node TEXT="What makes ReactJS so efficient at rerendering?" ID="ID_1301101177" CREATED="1515278935116" MODIFIED="1515324015040">
+<node TEXT="What makes ReactJS so efficient at rerendering?" FOLDED="true" ID="ID_1301101177" CREATED="1515278935116" MODIFIED="1515324015040">
 <node TEXT="React Components are used to generate a Virtual DOM - a light-weight abstraction of the actual HTML DOM." ID="ID_1983982418" CREATED="1523207100442" MODIFIED="1523207105948"/>
 <node TEXT=" The Virtual DOM is able to be generated much more quickly than the HTML DOM because it does not have to calculate CSS styles and layouts." ID="ID_1380215181" CREATED="1523207130441" MODIFIED="1523207135749"/>
 <node TEXT="When a React Component changes state, the Virtual DOM is recreated and the difference between the new Virtual DOM and the previous Virtual DOM is calculated." ID="ID_1819982583" CREATED="1523207205481" MODIFIED="1523207210612"/>
@@ -3735,32 +3735,32 @@
 </node>
 </node>
 </node>
-<node TEXT="setup" ID="ID_508007486" CREATED="1522621514634" MODIFIED="1522621521639">
+<node TEXT="setup" FOLDED="true" ID="ID_508007486" CREATED="1522621514634" MODIFIED="1522621521639">
 <node TEXT="Quick Setup" FOLDED="true" ID="ID_1666734176" CREATED="1515277487524" MODIFIED="1515323490525">
 <node TEXT="&lt;!DOCTYPE html&gt;&#xa;&lt;html&gt;&#xa;&#xa;  &lt;head&gt;&#xa;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#xa;   &#xa;    &lt;!--Base Package --&gt;&#xa;    &lt;script crossorigin src=&quot;https://unpkg.com/react@latest/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&#xa;    &#xa;    &lt;!--Everything dom related --&gt;&#xa;    &lt;script crossorigin src=&quot;https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&#xa;&#xa;    &lt;!-- Transpiles javascript --&gt;&#xa;    &lt;script src=&quot;https://unpkg.com/babel-standalone@6.15.0/babel.min.js&quot;&gt;&lt;/script&gt;&#xa;  &lt;/head&gt;&#xa;&#xa;    &lt;script type=&quot;text/babel&quot;&gt;&#xa;&#xa;      ReactDOM.render(&#xa;          &lt;div&gt;Hello World dies das&lt;/div&gt;,&#xa;          document.getElementById(&quot;root&quot;)&#xa;      );&#xa;&#xa;    &lt;/script&gt;&#xa;&#xa;  &lt;body&gt;&#xa;     &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&#xa;  &lt;/body&gt;&#xa;&#xa;&lt;/html&gt;" ID="ID_1695577798" CREATED="1523132136962" MODIFIED="1523132259567"/>
 </node>
-<node TEXT="npm react cli" ID="ID_1146136474" CREATED="1522621535170" MODIFIED="1522621546335">
-<node TEXT="installation" ID="ID_949675496" CREATED="1522621609681" MODIFIED="1522621619534">
+<node TEXT="npm react cli" FOLDED="true" ID="ID_1146136474" CREATED="1522621535170" MODIFIED="1522621546335">
+<node TEXT="installation" FOLDED="true" ID="ID_949675496" CREATED="1522621609681" MODIFIED="1522621619534">
 <node TEXT="npm i -g create-react-app" ID="ID_1741156289" CREATED="1522621565649" MODIFIED="1522621578846"/>
 </node>
-<node TEXT="create new app" ID="ID_1170784122" CREATED="1522621634497" MODIFIED="1522621642614">
+<node TEXT="create new app" FOLDED="true" ID="ID_1170784122" CREATED="1522621634497" MODIFIED="1522621642614">
 <node TEXT="create-react-app &lt;app-name&gt;" ID="ID_1208739955" CREATED="1522622166525" MODIFIED="1522622182154"/>
 </node>
 </node>
 </node>
-<node TEXT="Rendering Elements/React Nodes" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
-<node TEXT="introduction" ID="ID_1038299905" CREATED="1515279516927" MODIFIED="1523207408442">
+<node TEXT="Rendering Elements/React Nodes" FOLDED="true" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
+<node TEXT="introduction" FOLDED="true" ID="ID_1038299905" CREATED="1515279516927" MODIFIED="1523207408442">
 <node TEXT="React elements are the building blocks of react JS applications." ID="ID_1181057969" CREATED="1523207441351" MODIFIED="1523207447491"/>
 <node TEXT="React Elements are objects that represent a DOM node." ID="ID_1029148896" CREATED="1523207485103" MODIFIED="1523207489586"/>
 <node TEXT="They are written using a syntax extension named JSX which allows us to write HTML tags in our JavaScript code and asign that to a variable." ID="ID_989987460" CREATED="1515279546743" MODIFIED="1523207514090"/>
 <node TEXT="React Elements are different than React Components." ID="ID_1013715188" CREATED="1523207518831" MODIFIED="1523207522514"/>
 <node TEXT="A React node is defined as: a light, stateless, immutable, virtual representation of a DOM node." ID="ID_892902770" CREATED="1515426225352" MODIFIED="1515426225352"/>
 </node>
-<node TEXT="Creating React Nodes" ID="ID_1231851973" CREATED="1515426352525" MODIFIED="1515426377605">
+<node TEXT="Creating React Nodes" FOLDED="true" ID="ID_1231851973" CREATED="1515426352525" MODIFIED="1515426377605">
 <node TEXT="In most cases developers using React will favor JSX and use it to create React nodes. React nodes can be created without JSX, using only JavaScript. " ID="ID_1481251238" CREATED="1515426481126" MODIFIED="1515426511324"/>
 <node TEXT="Creating React nodes using JavaScript is as simple as calling the " ID="ID_517572412" CREATED="1515426572662" MODIFIED="1515426585874"/>
 <node TEXT="React.createElement(type,props,children)" ID="ID_934773581" CREATED="1515426594435" MODIFIED="1515426594435"/>
-<node TEXT="The React.createElement() arguments explained" ID="ID_970266944" CREATED="1515426649144" MODIFIED="1515426808788">
+<node TEXT="The React.createElement() arguments explained" FOLDED="true" ID="ID_970266944" CREATED="1515426649144" MODIFIED="1515426808788">
 <node TEXT="type (string | React.createClass()):" ID="ID_947152123" CREATED="1515426649145" MODIFIED="1515426649145"/>
 <node TEXT="Can be a string which represents an HTML element (or custom HTML element) or React component instance (i.e., an instance of React.createClass())" ID="ID_1847243533" CREATED="1515426649146" MODIFIED="1515426649146"/>
 <node TEXT="props (null | object):" ID="ID_370258365" CREATED="1515426649148" MODIFIED="1515426649148"/>
@@ -3798,99 +3798,99 @@
 <node TEXT="until another ReactDOM.render method is called." ID="ID_301245827" CREATED="1515281936792" MODIFIED="1515281936792"/>
 </node>
 </node>
-<node TEXT="JSX" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
-<node TEXT="What is JSX?" ID="ID_561960569" CREATED="1515282290585" MODIFIED="1515329962957">
+<node TEXT="JSX" FOLDED="true" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
+<node TEXT="What is JSX?" FOLDED="true" ID="ID_561960569" CREATED="1515282290585" MODIFIED="1515329962957">
 <node TEXT="JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags." ID="ID_1071991068" CREATED="1515282302327" MODIFIED="1515282302327"/>
 <node TEXT="Using JSX, we can create React Elements easily with HTML Tags:" ID="ID_630607591" CREATED="1515282323768" MODIFIED="1515282323768"/>
 <node TEXT="var element = &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_883849702" CREATED="1515282335884" MODIFIED="1515282335884"/>
 <node TEXT="Without JSX, the process is much slower and more verbose:" ID="ID_728222510" CREATED="1515282354731" MODIFIED="1515282354731"/>
 <node TEXT="var element = React.createElement(&apos;h1&apos;,null,&apos;Hello World!&apos;)" ID="ID_1786494567" CREATED="1515282390081" MODIFIED="1515282390081"/>
-<node TEXT="Fundamentally, JSX just provides syntactic sugar for the React.createElement(component, props, ...children) function." ID="ID_1402784288" CREATED="1523132745878" MODIFIED="1523208167829">
+<node TEXT="Fundamentally, JSX just provides syntactic sugar for the React.createElement(component, props, ...children) function." FOLDED="true" ID="ID_1402784288" CREATED="1523132745878" MODIFIED="1523208167829">
 <node TEXT="&lt;MyButton color=&quot;blue&quot; shadowSize={2}&gt;&#xa;  Click Me&#xa;&lt;/MyButton&gt;" ID="ID_1474013062" CREATED="1523208184490" MODIFIED="1523208188445"/>
 <node TEXT="compiles into:" ID="ID_1072177123" CREATED="1523208207962" MODIFIED="1523208211205"/>
 <node TEXT="React.createElement(&#xa;  MyButton,&#xa;  {color: &apos;blue&apos;, shadowSize: 2},&#xa;  &apos;Click Me&apos;&#xa;)" ID="ID_433692238" CREATED="1523208223554" MODIFIED="1523208227693"/>
 </node>
 </node>
-<node TEXT="Using JSX with JavaScript Expressions" ID="ID_793645520" CREATED="1515282432125" MODIFIED="1515324194368">
+<node TEXT="Using JSX with JavaScript Expressions" FOLDED="true" ID="ID_793645520" CREATED="1515282432125" MODIFIED="1515324194368">
 <node TEXT="Curly braces can be used to embed JavaScript expressions into JSX." ID="ID_1050283814" CREATED="1515282443789" MODIFIED="1515282443789"/>
-<node TEXT="The following are all examples of valid JavaScript expressions in JSX:" ID="ID_903535947" CREATED="1515282452938" MODIFIED="1515282452938">
+<node TEXT="The following are all examples of valid JavaScript expressions in JSX:" FOLDED="true" ID="ID_903535947" CREATED="1515282452938" MODIFIED="1515282452938">
 <node TEXT="var str = &quot;World!&quot;&#xa;var element = &lt;h1&gt; Hello {str}&lt;/h1&gt;" ID="ID_928347733" CREATED="1523207644774" MODIFIED="1523207670713"/>
 <node TEXT="var item = {name: &quot;Cheese&quot;,price: 5}&#xa;var element = &lt;p&gt;{item.name} : ${item.price} &lt;/p&gt;" ID="ID_786921625" CREATED="1523207749981" MODIFIED="1523207773992"/>
 <node TEXT="var length = 20&#xa;var width = 10&#xa;&#xa;function calculateArea(x,y){&#xa;    return x * y&#xa;}&#xa;&#xa;var element = &lt;div&gt;The Area is: {calculateArea(length,width)}&lt;/div&gt;" ID="ID_1670980068" CREATED="1523207836117" MODIFIED="1523207895968"/>
 </node>
 </node>
-<node TEXT="Using JSX with Attributes" ID="ID_442182466" CREATED="1515282811921" MODIFIED="1515324311151">
+<node TEXT="Using JSX with Attributes" FOLDED="true" ID="ID_442182466" CREATED="1515282811921" MODIFIED="1515324311151">
 <node TEXT="You can supply attribute values using a string literal surrounded by quotes:" ID="ID_1299864710" CREATED="1515282842249" MODIFIED="1515282842249"/>
 <node TEXT="var element = &lt;button className =&quot;deleteButton&quot;&gt; Delete &lt;/button&gt;" ID="ID_77291909" CREATED="1515282865539" MODIFIED="1515282865539"/>
-<node TEXT="You can also supply attributes values by embedding a JavaScript expression using curly braces:" ID="ID_697166385" CREATED="1515282894820" MODIFIED="1515282894820">
+<node TEXT="You can also supply attributes values by embedding a JavaScript expression using curly braces:" FOLDED="true" ID="ID_697166385" CREATED="1515282894820" MODIFIED="1515282894820">
 <node TEXT="var element = &lt;img src ={product.imageURL}&gt;&lt;/img&gt;" ID="ID_1863840614" CREATED="1515282919441" MODIFIED="1515282919441"/>
 </node>
-<node TEXT="Do not surround curly braces with quotes. This will cause your expression to be treated as a string literal:" ID="ID_1129616869" CREATED="1515282943940" MODIFIED="1515282943940">
+<node TEXT="Do not surround curly braces with quotes. This will cause your expression to be treated as a string literal:" FOLDED="true" ID="ID_1129616869" CREATED="1515282943940" MODIFIED="1515282943940">
 <node TEXT="var element = &lt;img src =&quot;{product.imageURL}&quot;&gt;&lt;/img&gt;" ID="ID_855540507" CREATED="1515282954514" MODIFIED="1515282954514"/>
 </node>
 <node TEXT="Some common HTML attributes are named differently in JSX." ID="ID_1381293665" CREATED="1515282995210" MODIFIED="1523208042622"/>
 <node TEXT="For example &quot;class&quot; becomes &quot;className&quot; because &quot;class&quot; is a reserved keyword in JavaScript." ID="ID_1355406510" CREATED="1523208018044" MODIFIED="1523208023606"/>
 <node TEXT="Furthermore, attribute names in JSX follow the camelCase naming convention so an HTML attribute such as fontsize would become fontSize in JSX." ID="ID_1421622675" CREATED="1523208047707" MODIFIED="1523208051254"/>
 </node>
-<node TEXT="Using JSX with Empty Tags" ID="ID_1712000031" CREATED="1515283022704" MODIFIED="1515323861706">
+<node TEXT="Using JSX with Empty Tags" FOLDED="true" ID="ID_1712000031" CREATED="1515283022704" MODIFIED="1515323861706">
 <node TEXT="If a HTML tag is empty, you can close it with a &apos;/&gt;&apos; instead of using a closing tag." ID="ID_171196410" CREATED="1515283043246" MODIFIED="1515283043246"/>
 <node TEXT="var element = &lt;input className =&quot;nameInput&quot;/&gt;" ID="ID_55019796" CREATED="1515283054508" MODIFIED="1515283054508"/>
 </node>
-<node TEXT="Using JSX with a Style Object" ID="ID_148088820" CREATED="1515283038318" MODIFIED="1523208344989">
+<node TEXT="Using JSX with a Style Object" FOLDED="true" ID="ID_148088820" CREATED="1515283038318" MODIFIED="1523208344989">
 <node TEXT="The style attribute can be populated with a style object instead of a string literal" ID="ID_1948763072" CREATED="1515283276363" MODIFIED="1515283276363"/>
 <node TEXT="var styleObject = {&#xa;    backgroundColor: &apos;red&apos;,&#xa;    color:&apos;blue&apos;,&#xa;    fontSize: 25,&#xa;    width: 100&#xa;}&#xa;&#xa;var element = &lt;input style = {styleObject}/&gt;" ID="ID_500140108" CREATED="1515283291989" MODIFIED="1523208578315"/>
 <node TEXT="In this next example, the first set of curly braces is for the JSX expression while the second set of curly braces is for the style object:" ID="ID_170237697" CREATED="1515283371090" MODIFIED="1515283371090"/>
 <node TEXT="var element = &lt;input style = {{width:200,height:100}}/&gt;" ID="ID_1767842847" CREATED="1515283391052" MODIFIED="1515283391052"/>
 </node>
-<node TEXT="Using JSX with Nested Elements" ID="ID_418999237" CREATED="1515283421602" MODIFIED="1515327825780">
+<node TEXT="Using JSX with Nested Elements" FOLDED="true" ID="ID_418999237" CREATED="1515283421602" MODIFIED="1515327825780">
 <node TEXT="React Elements can be nested within other React Elements as long as the whole thing is wrapped by in a single element." ID="ID_642461190" CREATED="1515283465935" MODIFIED="1515283465935"/>
 <node TEXT="var element = (&#xa;    &lt;div&gt;&#xa;        &lt;div&gt;Hello World&lt;/div&gt;&#xa;        &lt;div&gt;Hello World&lt;/div&gt;&#xa;    &lt;/div&gt;&#xa;)" ID="ID_325948283" CREATED="1515283476898" MODIFIED="1523208648570"/>
 <node TEXT="This example is not surrounded with a single wrapping element and will throw an error:" ID="ID_1712866857" CREATED="1515283504758" MODIFIED="1515283504758"/>
 <node TEXT="var element = (&#xa;    &lt;div&gt;Hello World&lt;/div&gt;&#xa;    &lt;div&gt;Hello World&lt;/div&gt;&#xa;)" ID="ID_762800295" CREATED="1515283516216" MODIFIED="1523208699905"/>
 <node TEXT="It is recommended to surround nested elements with paranthesis to avoid the problems that occur with automatic semicolon insertion." ID="ID_637831599" CREATED="1515283537736" MODIFIED="1515283537736"/>
 </node>
-<node TEXT="Using JSX Objects" ID="ID_9310455" CREATED="1515283565806" MODIFIED="1515327826860">
+<node TEXT="Using JSX Objects" FOLDED="true" ID="ID_9310455" CREATED="1515283565806" MODIFIED="1515327826860">
 <node TEXT="Objects created with JSX can be manipulated just like normal JavaScript objects. They can be passed in arrays, used as arguments or return statements to functions and used inside if statements or for loops." ID="ID_1631462099" CREATED="1515283585770" MODIFIED="1515283585770"/>
 <node TEXT="An example using JSX objects within an If Else statement:" ID="ID_1254079393" CREATED="1515283596769" MODIFIED="1515283596769"/>
 <node TEXT="var product = {name:&quot;apple&quot;,stock:0}&#xa;&#xa;if(product.stock &lt; 0){&#xa;    var element = &lt;h1&gt;The product named {product.name} is not in stock&lt;/h1&gt;&#xa;&#xa;} else{&#xa;    var element = &lt;h1&gt;The product named {product.name} and has {product.stock} units in stock&lt;/h1&gt;&#xa;&#xa;}&#xa;&#xa;ReactDOM.render( element, document.getElementById(&quot;root&quot;) )" ID="ID_912041482" CREATED="1523208818062" MODIFIED="1523208949153"/>
 </node>
 </node>
-<node TEXT="React Components" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1515324690463">
+<node TEXT="React Components" FOLDED="true" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1515324690463">
 <node TEXT="A React Component is an independent reusable component that returns an React Element based on its properties and state." ID="ID_694180055" CREATED="1515324663282" MODIFIED="1515327169097"/>
-<node TEXT="There are two types of React Components:" ID="ID_991084746" CREATED="1515324678253" MODIFIED="1515324678253">
-<node TEXT="Functional Components" ID="ID_735915423" CREATED="1515324693268" MODIFIED="1515327712565">
+<node TEXT="There are two types of React Components:" FOLDED="true" ID="ID_991084746" CREATED="1515324678253" MODIFIED="1515324678253">
+<node TEXT="Functional Components" FOLDED="true" ID="ID_735915423" CREATED="1515324693268" MODIFIED="1515327712565">
 <node TEXT="Functional Components are just functions that output React Elements. By convention, the first letter of the function name should be capitalized." ID="ID_1812711183" CREATED="1515324830742" MODIFIED="1515324830742"/>
-<node TEXT="example:" ID="ID_135996708" CREATED="1515324865072" MODIFIED="1523212705310">
+<node TEXT="example:" FOLDED="true" ID="ID_135996708" CREATED="1515324865072" MODIFIED="1523212705310">
 <node TEXT="function HelloWorld() {&#xa;    return &lt;h1&gt;Hello World!&lt;/h1&gt;&#xa;}" ID="ID_343678881" CREATED="1515324876845" MODIFIED="1523212467960"/>
 </node>
-<node TEXT="You can use the React Component in JSX by creating an HTML tag with the same name as the React Component: In our ReactDOM.render function, we can put a tag&#xa;with the functional component&apos;s name as the tag name." ID="ID_686953824" CREATED="1515324907866" MODIFIED="1515327563110">
+<node TEXT="You can use the React Component in JSX by creating an HTML tag with the same name as the React Component: In our ReactDOM.render function, we can put a tag&#xa;with the functional component&apos;s name as the tag name." FOLDED="true" ID="ID_686953824" CREATED="1515324907866" MODIFIED="1515327563110">
 <node TEXT="var element = &lt;HelloWorld/&gt;&#xa;&#xa;ReactDOM.render(&#xa;    &lt;HelloWorld/&gt;,&#xa;    document.getElementById(&quot;root&quot;)&#xa;)" ID="ID_60322008" CREATED="1515324972689" MODIFIED="1523212656215"/>
 </node>
-<node TEXT="Adding Properties to Functional Components" ID="ID_787645284" CREATED="1515325035933" MODIFIED="1515327275689">
-<node TEXT="The first argument to a Functional Component is an object that contains the component&apos;s properties." ID="ID_1513484994" CREATED="1515325213899" MODIFIED="1515325213899">
+<node TEXT="Adding Properties to Functional Components" FOLDED="true" ID="ID_787645284" CREATED="1515325035933" MODIFIED="1515327275689">
+<node TEXT="The first argument to a Functional Component is an object that contains the component&apos;s properties." FOLDED="true" ID="ID_1513484994" CREATED="1515325213899" MODIFIED="1515325213899">
 <node TEXT="function HelloWorld(props){&#xa;    return &lt;h1&gt;Message: {props.message}&lt;/h1&gt;&#xa;}" ID="ID_1885059403" CREATED="1523209037461" MODIFIED="1523209044943"/>
 </node>
-<node TEXT="You can supply property values the same way as you supply attribute values:" ID="ID_1412617142" CREATED="1515325300514" MODIFIED="1515325300514">
+<node TEXT="You can supply property values the same way as you supply attribute values:" FOLDED="true" ID="ID_1412617142" CREATED="1515325300514" MODIFIED="1515325300514">
 <node TEXT="ReactDOM.render(&#xa;    &lt;HelloWorld message=&quot;Hello World!&quot;/&gt;,&#xa;    document.getElementById(&quot;root&quot;)&#xa;)" ID="ID_872156906" CREATED="1523211833194" MODIFIED="1523211856756"/>
 </node>
-<node TEXT="Properties can be string literals, arrays or any other type of JavaScript object including other React Elements:" ID="ID_61232777" CREATED="1515325346261" MODIFIED="1515325346261">
+<node TEXT="Properties can be string literals, arrays or any other type of JavaScript object including other React Elements:" FOLDED="true" ID="ID_61232777" CREATED="1515325346261" MODIFIED="1515325346261">
 <node TEXT="function HelloWorld(props){&#xa;    return &lt;h1&gt;Value: {props.numberArray[props.index]} &lt;/h1&gt;&#xa;}&#xa;&#xa;ReactDOM.render(&#xa;     &lt;HelloWorld index = &quot;3&quot; numberArray={[1,2,3,4,5]}/&gt;,     &#xa;     document.getElementById(&quot;root&quot;)&#xa;);" ID="ID_1791757458" CREATED="1515325442716" MODIFIED="1523212296482"/>
 </node>
 <node TEXT="You can supply as many property values as you want and they will all be accessible through the props argument." ID="ID_166969736" CREATED="1515325487379" MODIFIED="1515325487379"/>
 </node>
 </node>
-<node TEXT="Class Components" ID="ID_1284006348" CREATED="1515324704374" MODIFIED="1515324704374">
+<node TEXT="Class Components" FOLDED="true" ID="ID_1284006348" CREATED="1515324704374" MODIFIED="1515324704374">
 <node TEXT="Class Components have state, lifecycle methods, and properties while Functional Components only have properties." ID="ID_1472352716" CREATED="1523213169016" MODIFIED="1523213172043"/>
-<node TEXT="React Component written using ES6 classes:" ID="ID_1782786029" CREATED="1515879063236" MODIFIED="1515879063236">
+<node TEXT="React Component written using ES6 classes:" FOLDED="true" ID="ID_1782786029" CREATED="1515879063236" MODIFIED="1515879063236">
 <node TEXT="class Welcome extends React.Component{&#xa;&#xa;    render(){&#xa;        return &lt;h1&gt;Hello World!&lt;/h1&gt;&#xa;    }&#xa;}" ID="ID_456614035" CREATED="1515879076453" MODIFIED="1523212846646"/>
 </node>
-<node TEXT="Render()" ID="ID_762491199" CREATED="1515879156393" MODIFIED="1515879156393">
+<node TEXT="Render()" FOLDED="true" ID="ID_762491199" CREATED="1515879156393" MODIFIED="1515879156393">
 <node TEXT="The render() method of a class component is used to describe what kind of React Element is going to be returned from the Class Component. It the same as the return value of of a Functional Component." ID="ID_1205471840" CREATED="1515879174322" MODIFIED="1515879174322"/>
 </node>
-<node TEXT="For example, the following Class Component will render&lt;h1&gt;Hello World!&lt;/h1&gt;:" ID="ID_1860970041" CREATED="1515879251667" MODIFIED="1515879251667">
+<node TEXT="For example, the following Class Component will render&lt;h1&gt;Hello World!&lt;/h1&gt;:" FOLDED="true" ID="ID_1860970041" CREATED="1515879251667" MODIFIED="1515879251667">
 <node TEXT="class Welcome extends React.Component{&#xa;    render(){&#xa;        return &lt;h1&gt;Hello World!&lt;/h1&gt;&#xa;   }&#xa;}&#xa;&#xa;//renders &lt;h1&gt;Hello World!&lt;/h1&gt;&#xa;ReactDOM.render(&#xa;    &lt;Welcome/&gt;,&#xa;    document.getElementById(&quot;root&quot;)&#xa;)" ID="ID_189856148" CREATED="1515879266577" MODIFIED="1523213084228"/>
 </node>
-<node TEXT="Adding properties to Class Components" ID="ID_556710431" CREATED="1515879309437" MODIFIED="1515879309437">
+<node TEXT="Adding properties to Class Components" FOLDED="true" ID="ID_556710431" CREATED="1515879309437" MODIFIED="1515879309437">
 <node ID="ID_918013746" CREATED="1515879327661" MODIFIED="1523213353002"><richcontent TYPE="NODE">
 
 <html>
@@ -3912,8 +3912,8 @@
 <node TEXT="You can supply property values the same way as you supply attribute values:" ID="ID_1068337518" CREATED="1515879368915" MODIFIED="1515879368915"/>
 <node TEXT="&lt;Welcome message=&quot;Hello World!&quot;/&gt;" ID="ID_1686976424" CREATED="1515879380366" MODIFIED="1515879380366"/>
 </node>
-<node TEXT="State" ID="ID_1884970624" CREATED="1515879759661" MODIFIED="1515879759661">
-<node TEXT="introduction" ID="ID_1753803509" CREATED="1523213938459" MODIFIED="1523213949069">
+<node TEXT="State" FOLDED="true" ID="ID_1884970624" CREATED="1515879759661" MODIFIED="1515879759661">
+<node TEXT="introduction" FOLDED="true" ID="ID_1753803509" CREATED="1523213938459" MODIFIED="1523213949069">
 <node ID="ID_1308718392" CREATED="1523213976156" MODIFIED="1523213976156"><richcontent TYPE="NODE">
 
 <html>
@@ -3930,7 +3930,7 @@
 </node>
 <node TEXT="But, components also offer state, and it is used to store information/data about the component that can change over time." ID="ID_1793816240" CREATED="1523214042690" MODIFIED="1523214045861"/>
 <node TEXT="Typically the change comes as a result of user events or system events (i.e., as a response to user input, a server request, or the passage of time)." ID="ID_842045113" CREATED="1523214074346" MODIFIED="1523214079765"/>
-<node TEXT="According to the React documentation state should:" ID="ID_1825593464" CREATED="1523214094834" MODIFIED="1523214098036">
+<node TEXT="According to the React documentation state should:" FOLDED="true" ID="ID_1825593464" CREATED="1523214094834" MODIFIED="1523214098036">
 <node ID="ID_588446810" CREATED="1523214160171" MODIFIED="1523214160171"><richcontent TYPE="NODE">
 
 <html>
@@ -3950,16 +3950,16 @@
 <node TEXT="Thinking about and writing applications in this way tends to lead to the most correct application, since adding redundant or computed values to state means that you need to explicitly keep them in sync rather than rely on React computing them for you." ID="ID_300892799" CREATED="1523219051568" MODIFIED="1523219061563"/>
 </node>
 </node>
-<node TEXT="Constructor(props)" ID="ID_189601013" CREATED="1515879769945" MODIFIED="1515879769945">
+<node TEXT="Constructor(props)" FOLDED="true" ID="ID_189601013" CREATED="1515879769945" MODIFIED="1515879769945">
 <node TEXT="The constructor() method is called before a React Component is mounted and is used to set up the initial state of the component." ID="ID_43186579" CREATED="1515879806576" MODIFIED="1523213771631"/>
 <node TEXT="It is important to call super(props) at the beginning of the constructor() method or else the this.props attribute may not work correctly." ID="ID_751532511" CREATED="1523213723269" MODIFIED="1523213728839"/>
 <node TEXT="The first argument to the constructor() method represents the properties that are passed into the component." ID="ID_1586241019" CREATED="1523213772644" MODIFIED="1523213777023"/>
 <node TEXT="class Counter extends React.Component{&#xa;    constructor(props){&#xa;        super(props)&#xa;    }&#xa;&#xa;    render(){&#xa;        return &lt;div&gt;Hello World!&lt;/div&gt;&#xa;    }&#xa;}" ID="ID_1295913561" CREATED="1515879818551" MODIFIED="1523213685432"/>
 </node>
-<node TEXT="Adding an initial state to Class Components" ID="ID_558384965" CREATED="1515879858391" MODIFIED="1515879858391">
-<node TEXT="introduction" ID="ID_984664809" CREATED="1523219101640" MODIFIED="1523219110490">
+<node TEXT="Adding an initial state to Class Components" FOLDED="true" ID="ID_558384965" CREATED="1515879858391" MODIFIED="1515879858391">
+<node TEXT="introduction" FOLDED="true" ID="ID_984664809" CREATED="1523219101640" MODIFIED="1523219110490">
 <node TEXT="Working with component state typically involves setting a components default state, accessing the current state, and updating the state." ID="ID_1261611614" CREATED="1515494041272" MODIFIED="1515494041272"/>
-<node TEXT="Things to keep in mind about React component state:" ID="ID_1646606567" CREATED="1515494272468" MODIFIED="1515494272468">
+<node TEXT="Things to keep in mind about React component state:" FOLDED="true" ID="ID_1646606567" CREATED="1515494272468" MODIFIED="1515494272468">
 <node TEXT="If a component has state, a default state should be provided using getInitialState()" ID="ID_537615686" CREATED="1515494292382" MODIFIED="1515494292382"/>
 <node TEXT="State changes are typically how you start the re-rendering of a component and all sub components (i.e., children, grandchildren, great grand chidlren, etc.)." ID="ID_463208936" CREATED="1515494292383" MODIFIED="1515494292383"/>
 <node TEXT="The only way a component should have its state update should be by using this.setState(). While other ways are possible (i.e. forceUpdate()), they should likely not be used (except maybe when integrating with third-party solutions)." ID="ID_1916628822" CREATED="1515494292385" MODIFIED="1515494292385"/>
@@ -3969,13 +3969,13 @@
 <node TEXT="The state object should only contain the minimal amount of data needed for the UI. Don&apos;t place computed data, other React components, or props in the state object." ID="ID_901219220" CREATED="1515494292392" MODIFIED="1515494292392"/>
 </node>
 </node>
-<node TEXT="example" ID="ID_1049473172" CREATED="1523219167816" MODIFIED="1523219175762">
+<node TEXT="example" FOLDED="true" ID="ID_1049473172" CREATED="1523219167816" MODIFIED="1523219175762">
 <node TEXT="The initial state of a Class Component can be declared within the constructor() method. The state of the component must be declared as an object with attributes." ID="ID_1147329310" CREATED="1515879874760" MODIFIED="1515879874760"/>
 <node TEXT="class Counter extends React.Component{&#xa;    constructor(props){&#xa;        super(props)&#xa;        this.state = {foo:123,bar:456}&#xa;    }&#xa;   &#xa;    render(){&#xa;        return &lt;div&gt;foo:{this.state.foo} bar:{this.state.bar}&lt;/div&gt;&#xa;   }&#xa;}" ID="ID_1668662282" CREATED="1515879882686" MODIFIED="1523213599969"/>
 </node>
 </node>
 <node TEXT="Updating state" ID="ID_1289490652" CREATED="1515879903594" MODIFIED="1515879903594"/>
-<node TEXT="The Component Lifecycle" ID="ID_780863661" CREATED="1522624585491" MODIFIED="1522624592376">
+<node TEXT="The Component Lifecycle" FOLDED="true" ID="ID_780863661" CREATED="1522624585491" MODIFIED="1522624592376">
 <node TEXT="Each component has several &#x201c;lifecycle methods&#x201d; that you can override to run code at particular times in the process." ID="ID_224871210" CREATED="1522624612251" MODIFIED="1522624617712"/>
 <node ID="ID_144430928" CREATED="1522624632026" MODIFIED="1522624676560"><richcontent TYPE="NODE">
 
@@ -4005,9 +4005,9 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Mounting" ID="ID_744771317" CREATED="1522624703218" MODIFIED="1522624708175">
+<node TEXT="Mounting" FOLDED="true" ID="ID_744771317" CREATED="1522624703218" MODIFIED="1522624708175">
 <node TEXT="These methods are called when an instance of a component is being created and inserted into the DOM:" ID="ID_204370199" CREATED="1522624800641" MODIFIED="1522624804958"/>
-<node TEXT="methods" ID="ID_508245468" CREATED="1522625107503" MODIFIED="1522625120660">
+<node TEXT="methods" FOLDED="true" ID="ID_508245468" CREATED="1522625107503" MODIFIED="1522625120660">
 <node TEXT="constructor()" ID="ID_1167946362" CREATED="1522624812937" MODIFIED="1522624816494"/>
 <node TEXT="static getDerivedStateFromProps()" ID="ID_293307645" CREATED="1522624838425" MODIFIED="1522624841230"/>
 <node TEXT="componentWillMount() / UNSAFE_componentWillMount()" ID="ID_461299007" CREATED="1522624850073" MODIFIED="1522624859630"/>
@@ -4015,12 +4015,12 @@
 <node TEXT="componentDidMount()" ID="ID_1125248640" CREATED="1522624873297" MODIFIED="1522624877566"/>
 </node>
 </node>
-<node TEXT="Updating" ID="ID_1119106608" CREATED="1522624724650" MODIFIED="1522624728391">
+<node TEXT="Updating" FOLDED="true" ID="ID_1119106608" CREATED="1522624724650" MODIFIED="1522624728391">
 <node TEXT="An update can be caused by changes to props or state. These methods are called when a component is being re-rendered:" ID="ID_971893709" CREATED="1522624914288" MODIFIED="1522624916878"/>
-<node TEXT="methods" ID="ID_1384973452" CREATED="1522625135887" MODIFIED="1522625141772">
+<node TEXT="methods" FOLDED="true" ID="ID_1384973452" CREATED="1522625135887" MODIFIED="1522625141772">
 <node TEXT="componentWillReceiveProps() / UNSAFE_componentWillReceiveProps()" ID="ID_764468297" CREATED="1522624971344" MODIFIED="1522624975389"/>
 <node TEXT="static getDerivedStateFromProps()" ID="ID_1449181487" CREATED="1522624976360" MODIFIED="1522624984893"/>
-<node TEXT="shouldComponentUpdate()" ID="ID_478500104" CREATED="1522624985680" MODIFIED="1522624994853">
+<node TEXT="shouldComponentUpdate()" FOLDED="true" ID="ID_478500104" CREATED="1522624985680" MODIFIED="1522624994853">
 <node TEXT="This method can help to bump up performance" ID="ID_1119338707" CREATED="1523790054205" MODIFIED="1523790093602"/>
 <node TEXT="if you work on immutable data" ID="ID_166747121" CREATED="1523790097429" MODIFIED="1523790117626"/>
 <node TEXT="Not needed if you inherence from purecomponent" ID="ID_1021328713" CREATED="1523790119509" MODIFIED="1523790139482"/>
@@ -4032,15 +4032,15 @@
 <node TEXT="componentDidUpdate()" ID="ID_814910577" CREATED="1522625035680" MODIFIED="1522625039693"/>
 </node>
 </node>
-<node TEXT="Unmounting" ID="ID_800042047" CREATED="1522624744026" MODIFIED="1522624748487">
+<node TEXT="Unmounting" FOLDED="true" ID="ID_800042047" CREATED="1522624744026" MODIFIED="1522624748487">
 <node TEXT="This method is called when a component is being removed from the DOM:" ID="ID_545469151" CREATED="1522625067895" MODIFIED="1522625072277"/>
 <node TEXT="componentWillUnmount()" ID="ID_633740733" CREATED="1522625164855" MODIFIED="1522625169436"/>
 </node>
-<node TEXT="Error Handling" ID="ID_1807840083" CREATED="1522624764730" MODIFIED="1522624797967">
+<node TEXT="Error Handling" FOLDED="true" ID="ID_1807840083" CREATED="1522624764730" MODIFIED="1522624797967">
 <node TEXT="This method is called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component." ID="ID_1329218457" CREATED="1522625181654" MODIFIED="1522625186244"/>
 <node TEXT="componentDidCatch()" ID="ID_812235118" CREATED="1522625194790" MODIFIED="1522625198876"/>
 </node>
-<node TEXT="The Component Lifecycle" ID="ID_1953740691" CREATED="1522624585491" MODIFIED="1522624592376">
+<node TEXT="The Component Lifecycle" FOLDED="true" ID="ID_1953740691" CREATED="1522624585491" MODIFIED="1522624592376">
 <node TEXT="Each component has several &#x201c;lifecycle methods&#x201d; that you can override to run code at particular times in the process." ID="ID_199837504" CREATED="1522624612251" MODIFIED="1522624617712"/>
 <node ID="ID_874473165" CREATED="1522624632026" MODIFIED="1522624676560"><richcontent TYPE="NODE">
 
@@ -4070,9 +4070,9 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Mounting" ID="ID_989730886" CREATED="1522624703218" MODIFIED="1522624708175">
+<node TEXT="Mounting" FOLDED="true" ID="ID_989730886" CREATED="1522624703218" MODIFIED="1522624708175">
 <node TEXT="These methods are called when an instance of a component is being created and inserted into the DOM:" ID="ID_1539377129" CREATED="1522624800641" MODIFIED="1522624804958"/>
-<node TEXT="methods" ID="ID_718590551" CREATED="1522625107503" MODIFIED="1522625120660">
+<node TEXT="methods" FOLDED="true" ID="ID_718590551" CREATED="1522625107503" MODIFIED="1522625120660">
 <node TEXT="constructor()" ID="ID_464598852" CREATED="1522624812937" MODIFIED="1522624816494"/>
 <node TEXT="static getDerivedStateFromProps()" ID="ID_1356715897" CREATED="1522624838425" MODIFIED="1522624841230"/>
 <node TEXT="componentWillMount() / UNSAFE_componentWillMount()" ID="ID_1847357656" CREATED="1522624850073" MODIFIED="1522624859630"/>
@@ -4080,9 +4080,9 @@
 <node TEXT="componentDidMount()" ID="ID_1376369206" CREATED="1522624873297" MODIFIED="1522624877566"/>
 </node>
 </node>
-<node TEXT="Updating" ID="ID_91703518" CREATED="1522624724650" MODIFIED="1522624728391">
+<node TEXT="Updating" FOLDED="true" ID="ID_91703518" CREATED="1522624724650" MODIFIED="1522624728391">
 <node TEXT="An update can be caused by changes to props or state. These methods are called when a component is being re-rendered:" ID="ID_1809756405" CREATED="1522624914288" MODIFIED="1522624916878"/>
-<node TEXT="methods" ID="ID_1873281023" CREATED="1522625135887" MODIFIED="1522625141772">
+<node TEXT="methods" FOLDED="true" ID="ID_1873281023" CREATED="1522625135887" MODIFIED="1522625141772">
 <node TEXT="componentWillReceiveProps() / UNSAFE_componentWillReceiveProps()" ID="ID_789008791" CREATED="1522624971344" MODIFIED="1522624975389"/>
 <node TEXT="static getDerivedStateFromProps()" ID="ID_1338229482" CREATED="1522624976360" MODIFIED="1522624984893"/>
 <node TEXT="shouldComponentUpdate()" ID="ID_1829212256" CREATED="1522624985680" MODIFIED="1522624994853"/>
@@ -4092,19 +4092,19 @@
 <node TEXT="componentDidUpdate()" ID="ID_388250820" CREATED="1522625035680" MODIFIED="1522625039693"/>
 </node>
 </node>
-<node TEXT="Unmounting" ID="ID_1878345641" CREATED="1522624744026" MODIFIED="1522624748487">
+<node TEXT="Unmounting" FOLDED="true" ID="ID_1878345641" CREATED="1522624744026" MODIFIED="1522624748487">
 <node TEXT="This method is called when a component is being removed from the DOM:" ID="ID_1818046916" CREATED="1522625067895" MODIFIED="1522625072277"/>
 <node TEXT="componentWillUnmount()" ID="ID_1807767750" CREATED="1522625164855" MODIFIED="1522625169436"/>
 </node>
-<node TEXT="Error Handling" ID="ID_264012982" CREATED="1522624764730" MODIFIED="1522624797967">
+<node TEXT="Error Handling" FOLDED="true" ID="ID_264012982" CREATED="1522624764730" MODIFIED="1522624797967">
 <node TEXT="This method is called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component." ID="ID_312145447" CREATED="1522625181654" MODIFIED="1522625186244"/>
 <node TEXT="componentDidCatch()" ID="ID_1386257458" CREATED="1522625194790" MODIFIED="1522625198876"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="Typechecking With PropTypes" ID="ID_1324084661" CREATED="1523272175294" MODIFIED="1523272181603">
-<node TEXT="examples" ID="ID_1380868875" CREATED="1523272185781" MODIFIED="1523272192870">
+<node TEXT="Typechecking With PropTypes" FOLDED="true" ID="ID_1324084661" CREATED="1523272175294" MODIFIED="1523272181603">
+<node TEXT="examples" FOLDED="true" ID="ID_1380868875" CREATED="1523272185781" MODIFIED="1523272192870">
 <node TEXT="import PropTypes from &apos;prop-types&apos;;&#xa;&#xa;MyComponent.propTypes = {&#xa;  // You can declare that a prop is a specific JS type. By default, these&#xa;  // are all optional.&#xa;  optionalArray: PropTypes.array,&#xa;  optionalBool: PropTypes.bool,&#xa;  optionalFunc: PropTypes.func,&#xa;  optionalNumber: PropTypes.number,&#xa;  optionalObject: PropTypes.object,&#xa;  optionalString: PropTypes.string,&#xa;  optionalSymbol: PropTypes.symbol,&#xa;&#xa;  // Anything that can be rendered: numbers, strings, elements or an array&#xa;  // (or fragment) containing these types.&#xa;  optionalNode: PropTypes.node,&#xa;&#xa;  // A React element.&#xa;  optionalElement: PropTypes.element,&#xa;&#xa;  // You can also declare that a prop is an instance of a class. This uses&#xa;  // JS&apos;s instanceof operator.&#xa;  optionalMessage: PropTypes.instanceOf(Message),&#xa;&#xa;  // You can ensure that your prop is limited to specific values by treating&#xa;  // it as an enum.&#xa;  optionalEnum: PropTypes.oneOf([&apos;News&apos;, &apos;Photos&apos;]),&#xa;&#xa;  // An object that could be one of many types&#xa;  optionalUnion: PropTypes.oneOfType([&#xa;    PropTypes.string,&#xa;    PropTypes.number,&#xa;    PropTypes.instanceOf(Message)&#xa;  ]),&#xa;&#xa;  // An array of a certain type&#xa;  optionalArrayOf: PropTypes.arrayOf(PropTypes.number),&#xa;&#xa;  // An object with property values of a certain type&#xa;  optionalObjectOf: PropTypes.objectOf(PropTypes.number),&#xa;&#xa;  // An object taking on a particular shape&#xa;  optionalObjectWithShape: PropTypes.shape({&#xa;    color: PropTypes.string,&#xa;    fontSize: PropTypes.number&#xa;  }),&#xa;&#xa;  // You can chain any of the above with `isRequired` to make sure a warning&#xa;  // is shown if the prop isn&apos;t provided.&#xa;  requiredFunc: PropTypes.func.isRequired,&#xa;&#xa;  // A value of any data type&#xa;  requiredAny: PropTypes.any.isRequired,&#xa;&#xa;  // You can also specify a custom validator. It should return an Error&#xa;  // object if the validation fails. Don&apos;t `console.warn` or throw, as this&#xa;  // won&apos;t work inside `oneOfType`.&#xa;  customProp: function(props, propName, componentName) {&#xa;    if (!/matchme/.test(props[propName])) {&#xa;      return new Error(&#xa;        &apos;Invalid prop `&apos; + propName + &apos;` supplied to&apos; +&#xa;        &apos; `&apos; + componentName + &apos;`. Validation failed.&apos;&#xa;      );&#xa;    }&#xa;  },&#xa;&#xa;  // You can also supply a custom validator to `arrayOf` and `objectOf`.&#xa;  // It should return an Error object if the validation fails. The validator&#xa;  // will be called for each key in the array or object. The first two&#xa;  // arguments of the validator are the array or object itself, and the&#xa;  // current item&apos;s key.&#xa;  customArrayProp: PropTypes.arrayOf(function(propValue, key, componentName, location, propFullName) {&#xa;    if (!/matchme/.test(propValue[key])) {&#xa;      return new Error(&#xa;        &apos;Invalid prop `&apos; + propFullName + &apos;` supplied to&apos; +&#xa;        &apos; `&apos; + componentName + &apos;`. Validation failed.&apos;&#xa;      );&#xa;    }&#xa;  })&#xa;};" ID="ID_1095027162" CREATED="1523272292797" MODIFIED="1523272303537"/>
 </node>
 </node>
@@ -4161,17 +4161,17 @@
 <node TEXT="}" ID="ID_155316071" CREATED="1515332319666" MODIFIED="1515332319666"/>
 <node TEXT="With the &amp;&amp; operator, true and expression will always evaluate to expression. On the other hand, false and expression will always evaluate to false which won&apos;t render." ID="ID_1534112129" CREATED="1515332339757" MODIFIED="1515332339757"/>
 </node>
-<node TEXT="Pure Functions" ID="ID_382616966" CREATED="1523133219531" MODIFIED="1523133231116">
+<node TEXT="Pure Functions" FOLDED="true" ID="ID_382616966" CREATED="1523133219531" MODIFIED="1523133231116">
 <node TEXT="Call with the same parameter always return the same value (Idempotenz)" ID="ID_184085460" CREATED="1523133234267" MODIFIED="1523133684808"/>
 <node TEXT="no Sideeffects" ID="ID_1586927655" CREATED="1523133274235" MODIFIED="1523133497050"/>
 <node TEXT="indiependent from external state changes" ID="ID_115525350" CREATED="1523133290747" MODIFIED="1523133334737"/>
 <node TEXT="Impure Functions does not apply all the all of the above mentioned properties" ID="ID_1402638177" CREATED="1523133374554" MODIFIED="1523133475091"/>
 <node TEXT="OR Generates only from the given props its new state." ID="ID_1575939305" CREATED="1523133738127" MODIFIED="1523133765025"/>
-<node TEXT="examples" ID="ID_1882693201" CREATED="1523133544273" MODIFIED="1523133552570">
-<node TEXT="pure" ID="ID_757132856" CREATED="1523133556601" MODIFIED="1523133559172">
+<node TEXT="examples" FOLDED="true" ID="ID_1882693201" CREATED="1523133544273" MODIFIED="1523133552570">
+<node TEXT="pure" FOLDED="true" ID="ID_757132856" CREATED="1523133556601" MODIFIED="1523133559172">
 <node TEXT="function pure(props){&#xa;    return props.x + props.y;&#xa;}" ID="ID_911012678" CREATED="1523133570608" MODIFIED="1523133619434"/>
 </node>
-<node TEXT="impure" ID="ID_1044527417" CREATED="1523133560225" MODIFIED="1523133630985">
+<node TEXT="impure" FOLDED="true" ID="ID_1044527417" CREATED="1523133560225" MODIFIED="1523133630985">
 <node TEXT="let z = 0;&#xa;&#xa;function impure(props) {&#xa;    z++;&#xa;    props.y = 42;&#xa;    window.foo = &apos;bar&apos;;&#xa;    return props.x + props.y + z;&#xa;}" ID="ID_779972198" CREATED="1523133629544" MODIFIED="1523133953409"/>
 </node>
 </node>
@@ -4183,14 +4183,14 @@
 <node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313"/>
 </node>
 <node TEXT="Architecture" ID="ID_1222369571" CREATED="1522617086899" MODIFIED="1522617102043">
-<node TEXT="Redux" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432">
-<node TEXT="introduction" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
+<node TEXT="Redux" FOLDED="true" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432">
+<node TEXT="introduction" FOLDED="true" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
 <node TEXT="Redux is a predictable state container for JavaScript apps. It helps developers write applications that behave consistently, run in different environments (client, server, and native), and are easy to test." ID="ID_1211224515" CREATED="1522618885749" MODIFIED="1522618906011"/>
 <node TEXT="Additionally, it provides improvements to the developer experience, like live code editing combined with a time traveling debugger." ID="ID_1994213069" CREATED="1522618909533" MODIFIED="1522618931394"/>
 <node TEXT="Redux can be used together with React, or with other view libraries. The Redux file size is small, 2kB, including dependencies." ID="ID_1457393343" CREATED="1522618950389" MODIFIED="1522618954306"/>
 </node>
-<node TEXT="terminology" ID="ID_1767781134" CREATED="1522619005804" MODIFIED="1522619062345">
-<node TEXT="state" ID="ID_976637588" CREATED="1522619102028" MODIFIED="1522619107905">
+<node TEXT="terminology" FOLDED="true" ID="ID_1767781134" CREATED="1522619005804" MODIFIED="1522619062345">
+<node TEXT="state" FOLDED="true" ID="ID_976637588" CREATED="1522619102028" MODIFIED="1522619107905">
 <node TEXT="State (also called the state tree) is a broad term, but in the Redux API it usually refers to the single state value that is managed by the store and returned by getState()" ID="ID_109853515" CREATED="1522619450561" MODIFIED="1522619453888"/>
 <node ID="ID_919135901" CREATED="1522619467809" MODIFIED="1522619487527"><richcontent TYPE="NODE">
 
@@ -4209,7 +4209,7 @@
 <node TEXT="By convention, the top-level state is an object or some other key-value collection like a Map, but technically it can be any type." ID="ID_351463405" CREATED="1522619547112" MODIFIED="1522619551094"/>
 <node TEXT="Still, you should do your best to keep the state serializable. Don&apos;t put anything inside it that you can&apos;t easily turn into JSON." ID="ID_757080883" CREATED="1522619569408" MODIFIED="1522619573334"/>
 </node>
-<node TEXT="action" ID="ID_1391084089" CREATED="1522619111995" MODIFIED="1522619120265">
+<node TEXT="action" FOLDED="true" ID="ID_1391084089" CREATED="1522619111995" MODIFIED="1522619120265">
 <node TEXT="An action is a plain object that represents an intention to change the state." ID="ID_1265939815" CREATED="1522619203755" MODIFIED="1522619207536"/>
 <node TEXT="Actions are the only way to get data into the store." ID="ID_565796530" CREATED="1522619234003" MODIFIED="1522619237584"/>
 <node TEXT="Any data, whether from UI events, network callbacks, or other sources such as WebSockets needs to eventually be dispatched as actions." ID="ID_517106" CREATED="1522619255563" MODIFIED="1522619259440"/>
@@ -4230,9 +4230,9 @@
 <node TEXT="Types can be defined as constants and imported from another module. It&apos;s better to use strings for type than Symbols because strings are serializable." ID="ID_722895341" CREATED="1522619388298" MODIFIED="1522619393391"/>
 <node TEXT="Other than type, the structure of an action object is really up to you." ID="ID_1441813673" CREATED="1522619416889" MODIFIED="1522619420303"/>
 </node>
-<node TEXT="reducer" ID="ID_1033220480" CREATED="1522619128411" MODIFIED="1522619137249">
+<node TEXT="reducer" FOLDED="true" ID="ID_1033220480" CREATED="1522619128411" MODIFIED="1522619137249">
 <node TEXT="A reducer (also called a reducing function) is a function that accepts an accumulation and a value and returns a new accumulation. They are used to reduce a collection of values down to a single value." ID="ID_1483962171" CREATED="1522619617216" MODIFIED="1522619620965"/>
-<node TEXT="Reducers are not unique to Redux&#x2014;they are a fundamental concept in functional programming." ID="ID_1175675688" CREATED="1522619649784" MODIFIED="1522619653829">
+<node TEXT="Reducers are not unique to Redux&#x2014;they are a fundamental concept in functional programming." FOLDED="true" ID="ID_1175675688" CREATED="1522619649784" MODIFIED="1522619653829">
 <node TEXT="Even most non-functional languages, like JavaScript, have a built-in API for reducing. In JavaScript, it&apos;s Array.prototype.reduce()." ID="ID_1678806158" CREATED="1522619710023" MODIFIED="1522619714917"/>
 </node>
 <node ID="ID_668913811" CREATED="1522619739503" MODIFIED="1522619761581"><richcontent TYPE="NODE">
@@ -4266,13 +4266,13 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="Dispatching Function" ID="ID_486699287" CREATED="1522619924958" MODIFIED="1522619928787">
+<node TEXT="Dispatching Function" FOLDED="true" ID="ID_486699287" CREATED="1522619924958" MODIFIED="1522619928787">
 <node TEXT="A dispatching function (or simply dispatch function) is a function that accepts an action or an async action; it then may or may not dispatch one or more actions to the store." ID="ID_533816032" CREATED="1522619945789" MODIFIED="1522619949355"/>
 <node TEXT="We must distinguish between dispatching functions in general and the base dispatch function provided by the store instance without any middleware." ID="ID_1584110292" CREATED="1522620018917" MODIFIED="1522620023082"/>
 <node TEXT="The base dispatch function always synchronously sends an action to the store&apos;s reducer, along with the previous state returned by the store, to calculate a new state. It expects actions to be plain objects ready to be consumed by the reducer." ID="ID_293986832" CREATED="1522620047445" MODIFIED="1522620051218"/>
 <node TEXT="&#x200a;Middleware wraps the base dispatch function. It allows the dispatch function to handle async actions in addition to actions. Middleware may transform, delay, ignore, or otherwise interpret actions or async actions before passing them to the next middleware. See below for more information." ID="ID_1338902460" CREATED="1522620084716" MODIFIED="1522620088386"/>
 </node>
-<node TEXT="action creator" ID="ID_1917752922" CREATED="1522620141676" MODIFIED="1522620151337">
+<node TEXT="action creator" FOLDED="true" ID="ID_1917752922" CREATED="1522620141676" MODIFIED="1522620151337">
 <node ID="ID_1552571801" CREATED="1522620180732" MODIFIED="1522620202266"><richcontent TYPE="NODE">
 
 <html>
@@ -4287,27 +4287,27 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Calling an action creator only produces an action, but does not dispatch it." ID="ID_419348309" CREATED="1522620232491" MODIFIED="1522620236025">
+<node TEXT="Calling an action creator only produces an action, but does not dispatch it." FOLDED="true" ID="ID_419348309" CREATED="1522620232491" MODIFIED="1522620236025">
 <node TEXT="You need to call the store&apos;s dispatch function to actually cause the mutation." ID="ID_87944580" CREATED="1522620261739" MODIFIED="1522620270456"/>
 <node TEXT="Sometimes we say bound action creators to mean functions that call an action creator and immediately dispatch its result to a specific store instance." ID="ID_425912857" CREATED="1522620291907" MODIFIED="1522620300192"/>
 </node>
 <node TEXT="If an action creator needs to read the current state, perform an API call, or cause a side effect, like a routing transition, it should return an async action instead of an action." ID="ID_160417724" CREATED="1522620333810" MODIFIED="1522620337632"/>
 </node>
-<node TEXT="async action" ID="ID_489458546" CREATED="1522620418226" MODIFIED="1522620433415">
+<node TEXT="async action" FOLDED="true" ID="ID_489458546" CREATED="1522620418226" MODIFIED="1522620433415">
 <node TEXT="An async action is a value that is sent to a dispatching function, but is not yet ready for consumption by the reducer." ID="ID_613018791" CREATED="1522620450962" MODIFIED="1522620454735"/>
 <node TEXT="It will be transformed by middleware into an action (or a series of actions) before being sent to the base dispatch() function." ID="ID_342307227" CREATED="1522620468377" MODIFIED="1522620470431"/>
-<node TEXT="Async actions may have different types, depending on the middleware you use." ID="ID_1241688918" CREATED="1522620510233" MODIFIED="1522620515414">
+<node TEXT="Async actions may have different types, depending on the middleware you use." FOLDED="true" ID="ID_1241688918" CREATED="1522620510233" MODIFIED="1522620515414">
 <node TEXT="They are often asynchronous primitives, like a Promise or a thunk, which are not passed to the reducer immediately, but trigger action dispatches once an operation has completed." ID="ID_289206944" CREATED="1522620530681" MODIFIED="1522620535782"/>
 </node>
 </node>
-<node TEXT="middleware" ID="ID_1666993751" CREATED="1522620545417" MODIFIED="1522620556830">
+<node TEXT="middleware" FOLDED="true" ID="ID_1666993751" CREATED="1522620545417" MODIFIED="1522620556830">
 <node TEXT="A middleware is a higher-order function that composes a dispatch function to return a new dispatch function. It often turns async actions into actions." ID="ID_1934890055" CREATED="1522620580233" MODIFIED="1522620587654"/>
 <node TEXT="Middleware is composable using function composition. It is useful for logging actions, performing side effects like routing, or turning an asynchronous API call into a series of synchronous actions." ID="ID_639636260" CREATED="1522620605208" MODIFIED="1522620609358"/>
 </node>
-<node TEXT="store" ID="ID_1375579091" CREATED="1522620629224" MODIFIED="1522620635638">
+<node TEXT="store" FOLDED="true" ID="ID_1375579091" CREATED="1522620629224" MODIFIED="1522620635638">
 <node TEXT="A store is an object that holds the application&apos;s state tree." ID="ID_1394617328" CREATED="1522620657112" MODIFIED="1522620659253"/>
 <node TEXT="There should only be a single store in a Redux app, as the composition happens on the reducer level." ID="ID_834992405" CREATED="1522620674960" MODIFIED="1522620679413"/>
-<node TEXT="methods" ID="ID_391715616" CREATED="1522620729103" MODIFIED="1522620735533">
+<node TEXT="methods" FOLDED="true" ID="ID_391715616" CREATED="1522620729103" MODIFIED="1522620735533">
 <node ID="ID_295822283" CREATED="1522620757039" MODIFIED="1522620810805"><richcontent TYPE="NODE">
 
 <html>
@@ -4365,11 +4365,11 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="store creator" ID="ID_1759618484" CREATED="1522620867623" MODIFIED="1522620877316">
+<node TEXT="store creator" FOLDED="true" ID="ID_1759618484" CREATED="1522620867623" MODIFIED="1522620877316">
 <node TEXT="A store creator is a function that creates a Redux store." ID="ID_206446507" CREATED="1522620896998" MODIFIED="1522620901068"/>
 <node TEXT="Like with dispatching function, we must distinguish the base store creator, createStore(reducer, preloadedState) exported from the Redux package, from store creators that are returned from the store enhancers." ID="ID_159298036" CREATED="1522620924638" MODIFIED="1522620928627"/>
 </node>
-<node TEXT="store enhancer" ID="ID_983418670" CREATED="1522620880998" MODIFIED="1522620888308">
+<node TEXT="store enhancer" FOLDED="true" ID="ID_983418670" CREATED="1522620880998" MODIFIED="1522620888308">
 <node TEXT="A store enhancer is a higher-order function that composes a store creator to return a new, enhanced store creator." ID="ID_1505326299" CREATED="1522620954862" MODIFIED="1522620961019"/>
 <node TEXT="This is similar to middleware in that it allows you to alter the store interface in a composable way." ID="ID_1996836697" CREATED="1522620973870" MODIFIED="1522620978339"/>
 <node TEXT="Store enhancers are much the same concept as higher-order components in React, which are also occasionally called &#x201c;component enhancers&#x201d;." ID="ID_711336039" CREATED="1522621005653" MODIFIED="1522621008203"/>
@@ -4378,12 +4378,12 @@
 </node>
 </node>
 </node>
-<node TEXT="data flow" ID="ID_771678683" CREATED="1522621091693" MODIFIED="1522621101490">
+<node TEXT="data flow" FOLDED="true" ID="ID_771678683" CREATED="1522621091693" MODIFIED="1522621101490">
 <node TEXT="redux-data-flow.png" ID="ID_141702417" CREATED="1522621130796" MODIFIED="1522621130796">
 <hook URI="webdevelopment2_files/redux-data-flow.png" SIZE="0.94043887" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="resources" ID="ID_1596190764" CREATED="1522713315330" MODIFIED="1522713324301">
+<node TEXT="resources" FOLDED="true" ID="ID_1596190764" CREATED="1522713315330" MODIFIED="1522713324301">
 <node TEXT="https://github.com/reactjs/redux/tree/master/docs" ID="ID_1366589383" CREATED="1522713333693" MODIFIED="1522713333693" LINK="https://github.com/reactjs/redux/tree/master/docs"/>
 </node>
 </node>
@@ -5017,8 +5017,9 @@
 </node>
 </node>
 <node TEXT="Testing" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
-<node TEXT="Karma" FOLDED="true" ID="ID_1308980703" CREATED="1516004806956" MODIFIED="1516004819297">
-<node TEXT="How It Works" FOLDED="true" ID="ID_689036405" CREATED="1516004868654" MODIFIED="1516004868654">
+<node TEXT="Karma" ID="ID_1308980703" CREATED="1516004806956" MODIFIED="1516004819297">
+<node TEXT="deprecated" FOLDED="true" ID="ID_603925992" CREATED="1523878739354" MODIFIED="1523878749273">
+<node TEXT="How It Works" ID="ID_689036405" CREATED="1516004868654" MODIFIED="1516004868654">
 <node ID="ID_1119331921" CREATED="1516004892812" MODIFIED="1516004892812"><richcontent TYPE="NODE">
 
 <html>
@@ -5122,7 +5123,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="Installation" FOLDED="true" ID="ID_952875725" CREATED="1516095820331" MODIFIED="1516095828476">
+<node TEXT="Installation" ID="ID_952875725" CREATED="1516095820331" MODIFIED="1516095828476">
 <node TEXT="Installing Karma and plugins" FOLDED="true" ID="ID_472691324" CREATED="1516095857498" MODIFIED="1516095857498">
 <node TEXT="The recommended approach is to install Karma (and all the plugins your project needs) locally in the project&apos;s directory" ID="ID_1010481043" CREATED="1516095925485" MODIFIED="1516095925485"/>
 <node TEXT="install karma" ID="ID_573690186" CREATED="1516096098264" MODIFIED="1516096110273"/>
@@ -5130,17 +5131,26 @@
 <node TEXT="Install plugins that your project needs:" ID="ID_1480157717" CREATED="1516096127161" MODIFIED="1516096127161"/>
 <node TEXT="$ npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev" ID="ID_1661486512" CREATED="1516096184274" MODIFIED="1516096184274"/>
 </node>
-<node TEXT="Commandline Interface" FOLDED="true" ID="ID_1979805307" CREATED="1516096279587" MODIFIED="1516096279587">
+<node TEXT="Commandline Interface" ID="ID_1979805307" CREATED="1516096279587" MODIFIED="1516096279587">
 <node TEXT="Typing ./node_modules/karma/bin/karma start sucks and so you might find it useful to install karma-cli globally. You will need to do this if you want to run Karma on Windows from the command line." ID="ID_1562387639" CREATED="1516096322629" MODIFIED="1516096322629"/>
 <node TEXT="$ npm install -g karma-cli" ID="ID_1689879384" CREATED="1516096380188" MODIFIED="1516096380188"/>
 <node TEXT="Then, you can run Karma simply by karma from anywhere and it will always run the local version." ID="ID_1205864982" CREATED="1516096448461" MODIFIED="1516096448461"/>
 </node>
 </node>
-<node TEXT="Generating the config file" FOLDED="true" ID="ID_1976586629" CREATED="1516091613158" MODIFIED="1516091613158">
+<node TEXT="Generating the config file" ID="ID_1976586629" CREATED="1516091613158" MODIFIED="1516091613158">
 <node TEXT="The configuration file can be generated using" ID="ID_1807103175" CREATED="1516091704846" MODIFIED="1516091704846"/>
-<node TEXT="karma init" FOLDED="true" ID="ID_109494188" CREATED="1516091721212" MODIFIED="1516091747141">
+<node TEXT="karma init" ID="ID_109494188" CREATED="1516091721212" MODIFIED="1516091747141">
 <node TEXT="# Install Karma:" ID="ID_63044773" CREATED="1516096025864" MODIFIED="1516096025864"/>
 </node>
+</node>
+</node>
+<node TEXT="What&#x2019;s Karma?" ID="ID_1453799940" CREATED="1523878798785" MODIFIED="1523878804786">
+<node TEXT="Karma is a tool that enables the running of source code (i.e. JavaScript) against real browsers via the CLI." ID="ID_387421049" CREATED="1523878825601" MODIFIED="1523878832786"/>
+<node TEXT="The fact that it runs against real browsers rather than &#x201c;fakes&#x201d; with a virtual DOM is extremely powerful." ID="ID_1481498989" CREATED="1523878853209" MODIFIED="1523878861811"/>
+<node TEXT="DOM implementations vary across browsers therefore the idea is to use the actual browsers for correctness." ID="ID_461727616" CREATED="1523878874681" MODIFIED="1523878880162"/>
+</node>
+<node TEXT="example" ID="ID_1575153068" CREATED="1523880287962" MODIFIED="1523880297572">
+<node TEXT="// Karma configuration&#xa;&#xa;module.exports = function(config) {&#xa;  config.set({&#xa;&#xa;    // base path, that will be used to resolve files and exclude&#xa;    basePath: &apos;&apos;,&#xa;&#xa;    // frameworks to use&#xa;    frameworks: [&apos;jasmine&apos;],&#xa;&#xa;    // list of files / patterns to load in the browser&#xa;    files: [&#xa;      // vendor files&#xa;      &quot;bower_components/jquery/dist/jquery.js&quot;,&#xa;&#xa;      // src files&#xa;      &quot;src/module.js&quot;,&#xa;&#xa;      // test files&#xa;      &quot;test/**/*.js&quot;&#xa;    ],&#xa;&#xa;    // list of files to exclude&#xa;    exclude: [],&#xa;&#xa;    // test results reporter to use&#xa;    // possible values: &apos;dots&apos;, &apos;progress&apos;, &apos;junit&apos;, &apos;growl&apos;, &apos;coverage&apos;&#xa;    reporters: [&apos;nyan&apos;],&#xa;&#xa;    // web server port&#xa;    port: 9876,&#xa;&#xa;    // enable / disable colors in the output (reporters and logs)&#xa;    colors: true,&#xa;&#xa;    // level of logging&#xa;    // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG&#xa;    logLevel: config.LOG_INFO,&#xa;&#xa;    // enable / disable watching file and executing tests whenever any file changes&#xa;    autoWatch: false,&#xa;&#xa;    // Start these browsers, currently available:&#xa;    // - Chrome&#xa;    // - ChromeCanary&#xa;    // - Firefox&#xa;    // - Opera (has to be installed with `npm install karma-opera-launcher`)&#xa;    // - Safari (only Mac; has to be installed with `npm install karma-safari-launcher`)&#xa;    // - PhantomJS&#xa;    // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)&#xa;    browsers: [&apos;PhantomJS&apos;],&#xa;&#xa;    // If browser does not capture in given timeout [ms], kill it&#xa;    captureTimeout: 60000,&#xa;&#xa;    // Continuous Integration mode&#xa;    // if true, it capture browsers, run tests and exit&#xa;    singleRun: true&#xa;  });&#xa;};" ID="ID_542549494" CREATED="1523880302810" MODIFIED="1523880309567"/>
 </node>
 </node>
 <node TEXT="Mocha" FOLDED="true" ID="ID_909998289" CREATED="1516020705549" MODIFIED="1516020721104" LINK="https://plainjs.com">
@@ -5221,6 +5231,8 @@
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/API/Document" ID="ID_1744516039" CREATED="1522755700783" MODIFIED="1522755705962"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements" ID="ID_960537571" CREATED="1522761897643" MODIFIED="1522761897643" LINK="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements"/>
 <node TEXT="https://www.valentinog.com/blog/webpack-4-tutorial/" ID="ID_996798584" CREATED="1523547611455" MODIFIED="1523547611455" LINK="https://www.valentinog.com/blog/webpack-4-tutorial/"/>
+<node TEXT="https://blog.codecentric.de/category/javascript-3/" ID="ID_59982186" CREATED="1524476181832" MODIFIED="1524476181832" LINK="https://blog.codecentric.de/category/javascript-3/"/>
+<node TEXT="https://github.com/reactjs/react-router-tutorial" ID="ID_1804394990" CREATED="1524490598023" MODIFIED="1524490598023" LINK="https://github.com/reactjs/react-router-tutorial"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -5594,6 +5606,7 @@
 <node TEXT="https://www.fontsquirrel.com/" ID="ID_1330675389" CREATED="1521102626477" MODIFIED="1521102631607"/>
 <node TEXT="https://fonts.google.com/" ID="ID_1224240222" CREATED="1521102725827" MODIFIED="1521102730500"/>
 <node TEXT="http://fontmap.ideo.com/" ID="ID_1926928475" CREATED="1523117937504" MODIFIED="1523117937504" LINK="http://fontmap.ideo.com/"/>
+<node TEXT="https://typekit.com/" ID="ID_1934755563" CREATED="1524140287130" MODIFIED="1524140287130" LINK="https://typekit.com/"/>
 </node>
 <node TEXT="video" ID="ID_104993054" CREATED="1520782534708" MODIFIED="1520782539991">
 <node TEXT="https://search.creativecommons.org/" ID="ID_27517993" CREATED="1520783154290" MODIFIED="1520783154290" LINK="https://search.creativecommons.org/"/>
