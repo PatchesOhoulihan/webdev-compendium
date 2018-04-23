@@ -1,0 +1,66 @@
+<p>webpack 4 as a zero configuration module bundler
+  webpack is powerful and has a lot of unique features but one of its pain point is the configuration file.</p>
+
+<p> a configuration for webpack is not a big deal in medium to bigger projects. You can’t live without one. Yet, for smaller ones it’s kind of annoying, especially when you want to kickstart some toy app.</p>
+
+<p>That’s why Parcel gained a lot of traction.</p>
+
+<p>Here’s the breaking news now: webpack 4 doesn’t need a configuration file by default!</p>
+
+<p>Let’s try that out.</p>
+
+<p>webpack 4: getting started with zero conf<br>
+  Create a new directory and move into it:</p>
+
+<p>mkdir webpack-4-quickstart && cd $_
+  Initialize a package.json by running:</p>
+
+<p><code>npm init -y</code></p>
+<p>and pull webpack 4 in:</p>
+
+npm i webpack --save-dev
+<p>We need webpack-cli also, which lives as a separate package:</p>
+
+npm i webpack-cli --save-dev
+<p>Now open up package.json and add a build script:</p>
+
+"scripts": {
+  "build": "webpack"
+}
+
+<p>Close the file and save it.</p>
+
+<p>Try to run:</p>
+npm run build
+<p>and see what happens:</p>
+
+ERROR in Entry module not found: Error: Can't resolve './src' in '~/webpack-4-quickstart'
+webpack 4 is looking for an entry point in ./src! If you don’t know what that means go check out my previous article on switching from Gulp to webpack.
+
+<p>In brief: the entry point is the file webpack looks for to start building your Javascript bundle.</p>
+
+<p>In the previous version of webpack the entry point has to be defined inside a configuration file named webpack.config.js.</p>
+
+<p>But starting from webpack 4 there is no need to define the entry point: it will take ./src/index.js as the default!</p>
+
+<p>Testing the new feature is easy. Create<code>./src/index.js:</code></p> 
+
+<p><code>console.log(`I'm a silly entry point`);</code><br>and run the build again:</p>
+
+
+
+npm run build
+You will get the bundle in ~/webpack-4-quickstart/dist/main.js.
+
+<p>What? Wait a moment. There is no need to define the output file? Exactly.</p>
+
+<p>In webpack 4 there is no need to define neither the entry point, nor the output file.</p>
+
+<p>webpack’s main strength is code splitting. But trust me, having a zero configuration tool speeds things up.</p>
+
+<p>So here is the first news: webpack 4 doesn’t need a configuration file.</p>
+
+<p>It will look in ./src/index.js as the default entry point. Moreover, it will spit out the bundle in ./dist/main.js.</p>
+
+<p>In the next section we’ll see another nice feature of webpack 4: production and development mode. </p>
+
