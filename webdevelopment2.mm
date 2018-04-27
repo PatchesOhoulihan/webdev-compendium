@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -5233,6 +5233,9 @@
 <node TEXT="https://www.valentinog.com/blog/webpack-4-tutorial/" ID="ID_996798584" CREATED="1523547611455" MODIFIED="1523547611455" LINK="https://www.valentinog.com/blog/webpack-4-tutorial/"/>
 <node TEXT="https://blog.codecentric.de/category/javascript-3/" ID="ID_59982186" CREATED="1524476181832" MODIFIED="1524476181832" LINK="https://blog.codecentric.de/category/javascript-3/"/>
 <node TEXT="https://github.com/reactjs/react-router-tutorial" ID="ID_1804394990" CREATED="1524490598023" MODIFIED="1524490598023" LINK="https://github.com/reactjs/react-router-tutorial"/>
+<node TEXT="https://github.com/getify/You-Dont-Know-JS" ID="ID_1781583603" CREATED="1524649843112" MODIFIED="1524649843112" LINK="https://github.com/getify/You-Dont-Know-JS"/>
+<node TEXT="https://github.com/marijnh/Eloquent-JavaScript" ID="ID_570035489" CREATED="1524649871300" MODIFIED="1524649871300" LINK="https://github.com/marijnh/Eloquent-JavaScript"/>
+<node TEXT="https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf" ID="ID_461498120" CREATED="1524671946882" MODIFIED="1524671946882" LINK="https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
