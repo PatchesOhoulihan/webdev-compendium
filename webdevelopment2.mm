@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -4998,12 +4998,49 @@
 <node TEXT="Formatting rules" ID="ID_964712752" CREATED="1523118572927" MODIFIED="1523118576450">
 <node TEXT="max-len, no-mixed-spaces-and-tabs, keyword-spacing, comma-style" ID="ID_514832881" CREATED="1523118616011" MODIFIED="1523118616011"/>
 </node>
-<node TEXT="Code-quality rules" ID="ID_1608639669" CREATED="1523118582804" MODIFIED="1523118586586">
+<node TEXT="Code-quality rules" ID="ID_1608639669" CREATED="1523118582804" MODIFIED="1524950204331">
+<font ITALIC="true"/>
 <node TEXT="no-unused-vars, no-extra-bind, no-implicit-globals, prefer-promise-reject-errors" ID="ID_1517506784" CREATED="1523118635956" MODIFIED="1523118635956"/>
 </node>
 </node>
 </node>
 <node TEXT="ESLint" ID="ID_810386740" CREATED="1522616398536" MODIFIED="1522616405333">
+<node TEXT="intro" ID="ID_740180055" CREATED="1524949552401" MODIFIED="1524949559844">
+<node TEXT="ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs." ID="ID_199668136" CREATED="1524949874423" MODIFIED="1524949892238"/>
+<node TEXT="In many ways, it is similar to JSLint and JSHint with a few exceptions:" ID="ID_631335254" CREATED="1524949893444" MODIFIED="1524949899358">
+<node TEXT="ESLint uses Espree for JavaScript parsing." ID="ID_1062848189" CREATED="1524949906032" MODIFIED="1524949911006"/>
+<node TEXT="ESLint uses an AST to evaluate patterns in code." ID="ID_805307204" CREATED="1524949918295" MODIFIED="1524949922358"/>
+<node TEXT="ESLint is completely pluggable, every single rule is a plugin and you can add more at runtime." ID="ID_2496491" CREATED="1524949934213" MODIFIED="1524949936965"/>
+</node>
+</node>
+<node TEXT="Installation and Usage" ID="ID_707889736" CREATED="1524949954837" MODIFIED="1524949958581">
+<node TEXT="Local Installation and Usage" ID="ID_288967180" CREATED="1524949967221" MODIFIED="1524949970941">
+<node TEXT="If you want to include ESLint as part of your project&#x2019;s build system, we recommend installing it locally" ID="ID_472600452" CREATED="1524950002715" MODIFIED="1524950014157"/>
+<node TEXT="npm install eslint --save-dev" ID="ID_736743714" CREATED="1524950034415" MODIFIED="1524950060037">
+<font ITALIC="true"/>
+</node>
+<node TEXT="You should then setup a configuration file:" ID="ID_1576294833" CREATED="1524950081190" MODIFIED="1524950084836"/>
+<node TEXT="./node_modules/.bin/eslint --init" ID="ID_1120626817" CREATED="1524950095222" MODIFIED="1524950100715">
+<font ITALIC="true"/>
+</node>
+<node TEXT="After that, you can run ESLint in your project&#x2019;s root directory like this:" ID="ID_1722447382" CREATED="1524950228346" MODIFIED="1524950234027"/>
+<node TEXT="./node_modules/.bin/eslint yourfile.js" ID="ID_207340211" CREATED="1524950242459" MODIFIED="1524950251082">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Global Installation and Usage" ID="ID_1428947614" CREATED="1524950132311" MODIFIED="1524950136220">
+<node TEXT="If you want to make ESLint available to tools that run across all of your projects, we recommend installing ESLint globally." ID="ID_989404170" CREATED="1524950153266" MODIFIED="1524950156988"/>
+<node TEXT="npm install -g eslint" ID="ID_449532356" CREATED="1524950167700" MODIFIED="1524950174691">
+<font ITALIC="true"/>
+</node>
+<node TEXT="You should then setup a configuration file:" ID="ID_1860712457" CREATED="1524950187157" MODIFIED="1524950191003"/>
+<node TEXT="eslint --init" ID="ID_1737476391" CREATED="1524950198557" MODIFIED="1524950208898">
+<font ITALIC="true"/>
+</node>
+<node TEXT="After that, you can run ESLint on any file or directory like this:" ID="ID_924176888" CREATED="1524950261214" MODIFIED="1524950264931"/>
+<node TEXT="eslint yourfile.js" ID="ID_1608188297" CREATED="1524950271972" MODIFIED="1524950276875"/>
+</node>
+</node>
 <node TEXT="exception" FOLDED="true" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
 <node TEXT="// eslint-disable-line" ID="ID_1309138352" CREATED="1519056152043" MODIFIED="1519056157028"/>
 </node>
