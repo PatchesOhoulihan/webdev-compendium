@@ -2428,7 +2428,64 @@
 <node TEXT="Sass" ID="ID_1730385107" CREATED="1522614434805" MODIFIED="1522616088290"/>
 <node TEXT="Less" ID="ID_707622749" CREATED="1522616091362" MODIFIED="1522616098224"/>
 <node TEXT="PostCSS" ID="ID_1877448488" CREATED="1522616101498" MODIFIED="1522616108968"/>
-<node TEXT="Stylus" ID="ID_82230477" CREATED="1522616110402" MODIFIED="1522616120720"/>
+<node TEXT="Stylus" FOLDED="true" ID="ID_82230477" CREATED="1522616110402" MODIFIED="1522616120720">
+<node TEXT="intro" FOLDED="true" ID="ID_1608491735" CREATED="1524951038310" MODIFIED="1524951065485">
+<node TEXT="Its design is influenced by Sass and LESS." ID="ID_1282892875" CREATED="1524951097950" MODIFIED="1524951104150"/>
+<node TEXT="It&apos;s regarded as the fourth most used CSS preprocessor syntax." ID="ID_1564278598" CREATED="1524951116649" MODIFIED="1524951120637"/>
+<node TEXT="It was created by TJ Holowaychuk, a former programmer for Node.js and the creator of the Luna language." ID="ID_1206090563" CREATED="1524951121657" MODIFIED="1524951135549"/>
+<node TEXT="It is written in JADE and Node.js." ID="ID_951405957" CREATED="1524951154209" MODIFIED="1524951158037"/>
+</node>
+<node TEXT="selectors" FOLDED="true" ID="ID_754189492" CREATED="1524951144458" MODIFIED="1524951152853">
+<node TEXT="Unlike CSS, which uses braces to open and close declaration blocks, indentation is used." ID="ID_625036886" CREATED="1524951179943" MODIFIED="1524951186436"/>
+<node TEXT="Additionally, semi-colons (;) are optionally omitted. Hence, the following CSS:" ID="ID_767007984" CREATED="1524951197238" MODIFIED="1524951199964"/>
+<node TEXT="body {&#xa;    color: white;&#xa;}" ID="ID_300794616" CREATED="1524951216666" MODIFIED="1524951223180">
+<font ITALIC="true"/>
+</node>
+<node TEXT="can be shortened to:" ID="ID_1830339449" CREATED="1524951227214" MODIFIED="1524951236332"/>
+<node TEXT="body&#xa;    color: white" ID="ID_1216885080" CREATED="1524951244043" MODIFIED="1524951249819">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Further, colons (:) and commas (,) are also optional; that means the above can be written as," ID="ID_605753691" CREATED="1524951265205" MODIFIED="1524951269612"/>
+<node TEXT="body&#xa;    color white" ID="ID_750898229" CREATED="1524951279543" MODIFIED="1524951285507">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Variables" FOLDED="true" ID="ID_1368347810" CREATED="1524951307432" MODIFIED="1524951313524">
+<node TEXT="Stylus allows variables to be defined, however unlike LESS and Sass, it doesn&apos;t use a symbol to define variables." ID="ID_1455939540" CREATED="1524951328464" MODIFIED="1524951330507"/>
+<node TEXT="Additionally, variable assignment is done automatically by separating the property and keyword(s)." ID="ID_1246049507" CREATED="1524951355987" MODIFIED="1524951359243"/>
+<node TEXT="In this way, variables are similar to the variables in Python" ID="ID_613043707" CREATED="1524951373935" MODIFIED="1524951377915"/>
+<node TEXT="message = &apos;Hello, World!&apos;&#xa;&#xa;div::before&#xa;  content message&#xa;  color #ffffff" ID="ID_652710922" CREATED="1524951392680" MODIFIED="1524951400587">
+<font ITALIC="true"/>
+</node>
+<node TEXT="The Stylus compiler would translate the above document to:" ID="ID_550970539" CREATED="1524951416864" MODIFIED="1524951422963"/>
+<node TEXT="div::before {&#xa;  content: &apos;Hello, World!&apos;;&#xa;  color: #ffffff;&#xa;}" ID="ID_619856207" CREATED="1524951430310" MODIFIED="1524951436226">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Mixins and functions" FOLDED="true" ID="ID_576644384" CREATED="1524951371232" MODIFIED="1524951452939">
+<node TEXT="Both mixins and functions are defined in the same manner, but they are applied in different ways." ID="ID_1933642144" CREATED="1524951473174" MODIFIED="1524951477994"/>
+<node TEXT="For example, if you wanted to define the CSS border radius property without having to use various Vendor Prefixes you can create:" ID="ID_826697033" CREATED="1524951492536" MODIFIED="1524951504082"/>
+<node TEXT="border-radius(n)&#xa;  -webkit-border-radius n&#xa;  -moz-border-radius n&#xa;  border-radius n" ID="ID_1548615686" CREATED="1524951560562" MODIFIED="1524951566609">
+<font ITALIC="true"/>
+</node>
+<node TEXT="then, to include this as a mixin, you would reference it as:" ID="ID_1953928064" CREATED="1524951574554" MODIFIED="1524951579266"/>
+<node TEXT="div.rectangle&#xa;  border-radius(10px)" ID="ID_1724201415" CREATED="1524951587489" MODIFIED="1524951591306"/>
+<node TEXT="this would compile to:" ID="ID_49134988" CREATED="1524951599667" MODIFIED="1524951603730"/>
+<node TEXT="div.rectangle {&#xa;  -webkit-border-radius: 10px;&#xa;  -moz-border-radius: 10px;&#xa;  border-radius: 10px;&#xa;}" ID="ID_1019154025" CREATED="1524951611378" MODIFIED="1524951617281">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Interpolation" FOLDED="true" ID="ID_309682991" CREATED="1524951490340" MODIFIED="1524951636897">
+<node TEXT="To include variables in arguments and identifiers, brace characters surround the variable(s). For example," ID="ID_1835225548" CREATED="1524951666359" MODIFIED="1524951670513"/>
+<node TEXT=" -webkit-{&apos;border&apos; + &apos;-radius&apos;}" ID="ID_968079995" CREATED="1524951677358" MODIFIED="1524951713600">
+<font ITALIC="true"/>
+</node>
+<node TEXT="evaluates to" ID="ID_1070587756" CREATED="1524951690508" MODIFIED="1524951695145"/>
+<node TEXT="-webkit-border-radius" ID="ID_824054824" CREATED="1524951705098" MODIFIED="1524951716704">
+<font ITALIC="true"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Architecture" ID="ID_596067584" CREATED="1519721094278" MODIFIED="1522616641955">
 <node TEXT="There are multiple ways to structure your CSS better and to make it more maintainable" ID="ID_224699906" CREATED="1522616646798" MODIFIED="1522616687243"/>
@@ -2521,7 +2578,9 @@
 </node>
 <node TEXT="Both Horizontally and Vertically" ID="ID_1881990528" CREATED="1519979724859" MODIFIED="1519979743500"/>
 </node>
-<node TEXT="Quirks" ID="ID_1682547469" CREATED="1520929657878" MODIFIED="1520929668800"/>
+<node TEXT="Quirks" ID="ID_1682547469" CREATED="1520929657878" MODIFIED="1520929668800">
+<node TEXT="margin-collapse" ID="ID_416566109" CREATED="1524951067423" MODIFIED="1524951075222"/>
+</node>
 </node>
 </node>
 <node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
