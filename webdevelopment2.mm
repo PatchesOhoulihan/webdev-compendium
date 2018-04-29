@@ -5396,6 +5396,16 @@
 <node TEXT="$ rm -rf letters/" ID="ID_1327420155" CREATED="1521322289559" MODIFIED="1521322297321"/>
 </node>
 </node>
+<node TEXT="Increasing the amount of inotify watchers" ID="ID_1561282337" CREATED="1525030218755" MODIFIED="1525030222545">
+<node TEXT="You can get your current inotify file watch limit by executing:" ID="ID_1150068683" CREATED="1525030234155" MODIFIED="1525030237297"/>
+<node TEXT="cat /proc/sys/fs/inotify/max_user_watches" ID="ID_1188133173" CREATED="1525031053301" MODIFIED="1525031061578">
+<font ITALIC="true"/>
+</node>
+<node TEXT="If you are running Debian, RedHat, or another similar Linux distribution, run the following in a terminal:" ID="ID_1241910223" CREATED="1525030296579" MODIFIED="1525030299609"/>
+<node TEXT="echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p" ID="ID_1352703136" CREATED="1525031070229" MODIFIED="1525031079741">
+<font ITALIC="true"/>
+</node>
+</node>
 </node>
 </node>
 <node TEXT="Tooling" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1519810482190" HGAP_QUANTITY="43.99999910593036 pt" VSHIFT_QUANTITY="11.249999664723884 pt">
