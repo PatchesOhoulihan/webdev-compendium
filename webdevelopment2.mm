@@ -5537,8 +5537,8 @@
 </node>
 </node>
 <node TEXT="Version Control" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
-<node TEXT="Git" FOLDED="true" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
-<node TEXT="commands" FOLDED="true" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
+<node TEXT="Git" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
+<node TEXT="commands" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
 <node TEXT="git cherry-pick" FOLDED="true" ID="ID_931768391" CREATED="1517820565432" MODIFIED="1517820582422">
 <node TEXT="Here&apos;s the scenario: You&apos;re working in a feature branch that isn&apos;t quite ready for a full merge but you do have a few commits in there that you want to push to master (for a release or whatever reason). This is just one of possibly many situations where making use of Git&apos;s cherry-pick command might prove useful." ID="ID_672906785" CREATED="1517820603735" MODIFIED="1517820603735"/>
 <node TEXT="First, from within your feature branch, copy the first six or seven characters of the ID of the commit that you want to bring in: (use git log)" ID="ID_558811321" CREATED="1517820728494" MODIFIED="1517820788071"/>
@@ -5549,14 +5549,62 @@
 <node TEXT="Now if you do a git log you will see your cherry-picked commit at the top." ID="ID_1532876959" CREATED="1517820979568" MODIFIED="1517820979568"/>
 <node TEXT="Be wary of cherry-picking a lot of commits out of order, the Git log will reflect the order in which you cherry-picked, not the chronological order of the original commits (The original commit date is preserved, however)." ID="ID_989095425" CREATED="1517820997061" MODIFIED="1517820997061"/>
 </node>
-<node TEXT="credentials" ID="ID_1170751793" CREATED="1519290262464" MODIFIED="1519290267309">
-<node TEXT="get" FOLDED="true" ID="ID_769889911" CREATED="1519290285543" MODIFIED="1519290289192">
+</node>
+<node TEXT="config" ID="ID_1128402828" CREATED="1525031360523" MODIFIED="1525031367040">
+<node TEXT="username" ID="ID_1738305618" CREATED="1525031824808" MODIFIED="1525031829821">
+<node TEXT="Setting your Git username for every repository on your computer" ID="ID_689129103" CREATED="1525031403499" MODIFIED="1525031408440">
+<node TEXT="Set a Git username:" ID="ID_275165501" CREATED="1525031486451" MODIFIED="1525031486451"/>
+<node TEXT="git config --global user.name &quot;Mona Lisa&quot;" ID="ID_1131528620" CREATED="1525031505378" MODIFIED="1525031577990">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Confirm that you have set the Git username correctly:" ID="ID_1898908380" CREATED="1525031544794" MODIFIED="1525031548711"/>
+<node TEXT="git config --global user.name" ID="ID_1699903470" CREATED="1525031569001" MODIFIED="1525031574550">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Setting your Git username for a single repository" ID="ID_634843297" CREATED="1525031593177" MODIFIED="1525031597719">
+<node TEXT="Change the current working directory to the local repository where you want to configure the name that is associated with your Git commits." ID="ID_1028865038" CREATED="1525031610841" MODIFIED="1525031613599"/>
+<node TEXT="Set a Git username:" ID="ID_294937001" CREATED="1525031619785" MODIFIED="1525031624318"/>
+<node TEXT="git config user.name &quot;Mona Lisa&quot;" ID="ID_563637172" CREATED="1525031652625" MODIFIED="1525031657974">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Confirm that you have set the Git username correctly:" ID="ID_1997816156" CREATED="1525031667185" MODIFIED="1525031670478"/>
+<node TEXT="git config user.name" ID="ID_262614423" CREATED="1525031682545" MODIFIED="1525031686637">
+<font ITALIC="true"/>
+</node>
+</node>
+</node>
+<node TEXT="email" ID="ID_1408398685" CREATED="1525031848895" MODIFIED="1525031873998">
+<node TEXT="Setting your email address for every repository on your computer" ID="ID_1039267182" CREATED="1525031876467" MODIFIED="1525031876467">
+<node TEXT="Set an email address in Git. You can use your GitHub-provided no-reply email address or any email address." ID="ID_1518728817" CREATED="1525031916655" MODIFIED="1525031919420"/>
+<node TEXT="git config --global user.email &quot;email@example.com&quot;" ID="ID_663373801" CREATED="1525031926663" MODIFIED="1525031930740">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Confirm that you have set the email address correctly in Git:" ID="ID_1127706032" CREATED="1525031938743" MODIFIED="1525031959396"/>
+<node TEXT="git config --global user.email" ID="ID_888229670" CREATED="1525031973550" MODIFIED="1525031978803">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Add the email address to your GitHub account by setting your commit email address on GitHub, so that your commits are attributed to you and appear in your contributions graph." ID="ID_1059756535" CREATED="1525032022622" MODIFIED="1525032026828"/>
+</node>
+<node TEXT="Setting your email address for a single repository" ID="ID_1846962" CREATED="1525031898159" MODIFIED="1525031903140">
+<node TEXT="Change the current working directory to the local repository where you want to configure the email address that you associate with your Git commits." ID="ID_389926756" CREATED="1525032200461" MODIFIED="1525032314361">
+<font ITALIC="false"/>
+</node>
+<node TEXT="Set an email address in Git. You can use your GitHub-provided no-reply email address or any email address." ID="ID_443823743" CREATED="1525032230044" MODIFIED="1525032235890"/>
+<node TEXT="git config user.email &quot;email@example.com&quot;" ID="ID_1750149088" CREATED="1525032242084" MODIFIED="1525032321809">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Confirm that you have set the email address correctly in Git:" ID="ID_748994075" CREATED="1525032254324" MODIFIED="1525032311481">
+<font ITALIC="false"/>
+</node>
+<node TEXT="git config user.email" ID="ID_399438719" CREATED="1525032297892" MODIFIED="1525032318081">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Add the email address to your GitHub account by setting your commit email address on GitHub, so that your commits are attributed to you and appear in your contributions graph." ID="ID_1353489902" CREATED="1525032347044" MODIFIED="1525032350577"/>
+</node>
+</node>
+<node TEXT="Get the config used by the repo or global" ID="ID_177159469" CREATED="1525031895279" MODIFIED="1525032450680">
 <node TEXT="git config --list" ID="ID_1951854395" CREATED="1519290295943" MODIFIED="1519290309698"/>
-</node>
-<node TEXT="set" FOLDED="true" ID="ID_214463756" CREATED="1519290314791" MODIFIED="1519290329089">
-<node TEXT="git config --global user.name &lt;username&gt;" ID="ID_886144222" CREATED="1519290340479" MODIFIED="1519290400801"/>
-<node TEXT="git config --global user.email &lt;email&gt;" ID="ID_170989192" CREATED="1519290405224" MODIFIED="1519290422689"/>
-</node>
 </node>
 </node>
 </node>
