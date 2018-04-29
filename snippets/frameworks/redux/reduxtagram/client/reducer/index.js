@@ -5,6 +5,10 @@ import { routerReducer } from 'react-router-redux';
 import posts from './posts';
 import comments from './comments';
 
+//-----------------------------------------------------------------
+// Everytime there is an action dispathed all reducers are executed
+//-----------------------------------------------------------------
+
 const rootReducer = combineReducers({
     posts,
     comments,

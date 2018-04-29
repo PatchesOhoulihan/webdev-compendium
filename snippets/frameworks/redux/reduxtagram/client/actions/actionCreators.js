@@ -1,4 +1,5 @@
 export function increment(index){
+    console.log('perform action increment');
     return {
         type: 'INCREMENT_LIKES',
         index
@@ -6,6 +7,7 @@ export function increment(index){
 }
 
 export function addComment(postId, author, comment){
+    console.log('perform action addcomment');
     return {
         type:'ADD_COMMENT',
         postId,
@@ -15,6 +17,7 @@ export function addComment(postId, author, comment){
 }
 
 export function removeComment(postId, i){
+    console.log('perform action removecomment');
     return {
         type: 'REMOVE_COMMENT',
         i,
