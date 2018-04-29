@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -5584,12 +5584,24 @@
 </node>
 </node>
 <node TEXT="Visual studio code" ID="ID_1063730680" CREATED="1515278180287" MODIFIED="1515323893338">
-<node TEXT="shortcuts" ID="ID_66373857" CREATED="1515278203231" MODIFIED="1515323892490">
-<node TEXT="Format code" ID="ID_1401227338" CREATED="1515278212215" MODIFIED="1515323891762">
+<node TEXT="shortcuts" FOLDED="true" ID="ID_66373857" CREATED="1515278203231" MODIFIED="1515323892490">
+<node TEXT="Format code" FOLDED="true" ID="ID_1401227338" CREATED="1515278212215" MODIFIED="1515323891762">
 <node TEXT="ctrl + shift + i" ID="ID_1443742418" CREATED="1515278221447" MODIFIED="1515278243308"/>
 </node>
 <node TEXT="vs-code-cheatsheet-linux.png" ID="ID_1725173061" CREATED="1523740397684" MODIFIED="1523740397684">
 <hook URI="webdevelopment2_files/vs-code-cheatsheet-linux.png" SIZE="0.31880978" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="JSX Emmet support in VSCode" ID="ID_1496766891" CREATED="1525019929907" MODIFIED="1525019934635">
+<node TEXT="How to enable emmet for JSX:" ID="ID_689096830" CREATED="1525019985464" MODIFIED="1525020051052">
+<node TEXT="Open the Workspace setting ( cmd + , ) from Edit menu and choose workspace settings tab and paste the following and save it." ID="ID_415779397" CREATED="1525020025863" MODIFIED="1525020030541"/>
+<node TEXT="    &quot;emmet.includeLanguages&quot;: {&#xa;            &quot;javascript&quot;: &quot;javascriptreact&quot;,&#xa;            &quot;jsx-sublime-babel-tags&quot;: &quot;javascriptreact&quot;&#xa;    }" ID="ID_1499297587" CREATED="1525020048407" MODIFIED="1525022110911">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="Also It is better to exclude the node_modules folder from being watched by vscode process which will slow down the VSCode. You can do this by adding following configuration in settings.json" ID="ID_1654650947" CREATED="1525020010231" MODIFIED="1525020138420"/>
+<node TEXT="&quot;files.watcherExclude&quot;: {&#xa;    &quot;**/.git/objects/**&quot;: true,&#xa;    &quot;**/.git/subtree-cache/**&quot;: true,&#xa;    &quot;**/node_modules/**&quot;: true,&#xa;    &quot;**/web/node_modules&quot;: true,&#xa;    &quot;**/web/build&quot;: true, // will change frequently by build command&#xa;    &quot;**/admin/node_modules&quot;: true&#xa;}" ID="ID_644607040" CREATED="1525020157214" MODIFIED="1525020163787">
+<font ITALIC="true"/>
 </node>
 </node>
 </node>
