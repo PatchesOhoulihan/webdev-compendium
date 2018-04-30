@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -5872,6 +5872,11 @@
 </node>
 <node TEXT="Hosting" ID="ID_1734576649" CREATED="1523286063351" MODIFIED="1523286070512">
 <node TEXT="https://uberspace.de/prices" ID="ID_1809450183" CREATED="1523286073534" MODIFIED="1523286073534" LINK="https://uberspace.de/prices"/>
+</node>
+<node TEXT="User Agent Stylesheets" ID="ID_830397751" CREATED="1525098983715" MODIFIED="1525098997784">
+<node TEXT="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css" ID="ID_622935492" CREATED="1525099337131" MODIFIED="1525099337131" LINK="https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css"/>
+<node TEXT="https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css" ID="ID_427903801" CREATED="1525099368890" MODIFIED="1525099368890" LINK="https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css"/>
+<node TEXT="http://web.archive.org/web/20170122223926/http://www.iecss.com/" ID="ID_1810986697" CREATED="1525099424475" MODIFIED="1525099424475" LINK="http://web.archive.org/web/20170122223926/http://www.iecss.com/"/>
 </node>
 </node>
 <node TEXT="Protocols" POSITION="right" ID="ID_155934142" CREATED="1520803096799" MODIFIED="1520803121593">
