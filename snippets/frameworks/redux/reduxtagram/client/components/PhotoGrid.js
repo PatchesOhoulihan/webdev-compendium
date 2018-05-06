@@ -14,7 +14,7 @@ class PhotoGrid extends React.Component{
                 */}
                 {/*Why key AND an index? 
                 Because key is used by react and you can t access key in the component*/}
-                {this.props.posts.map((post, i) => <Photo { ...this.props } key={ i } index={i} post={post}/>)}
+                {this.props.posts.map((post, i) => <Photo { ...this.props } key={ i } index={ i } post={post}/>)}
             </div>
         );
     }

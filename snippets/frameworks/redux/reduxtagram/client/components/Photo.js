@@ -4,9 +4,9 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Photo extends React.Component{
     render() {
-        const { post, i, comments } = this.props
-        console.log(comments);
-        console.log(comments[post.code]);
+        const { post, index, comments } = this.props
+        console.log(`increment: ${this.props.increment} , i: ${index} allprops: ${this.props}`);
+        console.log(this.props);
         return (
             <figure className='grid-figure'>
                 <div className="grid-photo-wrap">
@@ -24,7 +24,7 @@ class Photo extends React.Component{
                 <figcaption>
                     <p>{post.caption}</p>
                     <div className="control-buttons">
-                        <button onClick={this.props.increment.bind(null, i)} className="likes">&hearts; {post.likes}</button>
+                        <button onClick={this.props.increment.bind(null, index)} className="likes">&hearts; {post.likes}</button>
                         <Link className="button" to={`/view/${post.code}`}>
                         <span className="comment-count">
                             <span className="speech-bubble"></span>
