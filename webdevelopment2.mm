@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -4242,13 +4242,18 @@
 <node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313"/>
 </node>
 <node TEXT="Architecture" ID="ID_1222369571" CREATED="1522617086899" MODIFIED="1522617102043">
-<node TEXT="Redux" FOLDED="true" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432">
-<node TEXT="introduction" FOLDED="true" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
+<node TEXT="Redux" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432">
+<node TEXT="introduction" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
 <node TEXT="Redux is a predictable state container for JavaScript apps. It helps developers write applications that behave consistently, run in different environments (client, server, and native), and are easy to test." ID="ID_1211224515" CREATED="1522618885749" MODIFIED="1522618906011"/>
 <node TEXT="Additionally, it provides improvements to the developer experience, like live code editing combined with a time traveling debugger." ID="ID_1994213069" CREATED="1522618909533" MODIFIED="1522618931394"/>
 <node TEXT="Redux can be used together with React, or with other view libraries. The Redux file size is small, 2kB, including dependencies." ID="ID_1457393343" CREATED="1522618950389" MODIFIED="1522618954306"/>
+<node TEXT="3 Redux core principles" ID="ID_1980494364" CREATED="1525626797508" MODIFIED="1525626816881">
+<node TEXT="One immutable store" ID="ID_479559491" CREATED="1525627045631" MODIFIED="1525627058321"/>
+<node TEXT="Only Actions trigger changes" ID="ID_426955571" CREATED="1525627099879" MODIFIED="1525627112536"/>
+<node TEXT="Reducers returns update state" ID="ID_1663061832" CREATED="1525627114559" MODIFIED="1525631711393"/>
 </node>
-<node TEXT="terminology" FOLDED="true" ID="ID_1767781134" CREATED="1522619005804" MODIFIED="1522619062345">
+</node>
+<node TEXT="terminology" ID="ID_1767781134" CREATED="1522619005804" MODIFIED="1522619062345">
 <node TEXT="state" FOLDED="true" ID="ID_976637588" CREATED="1522619102028" MODIFIED="1522619107905">
 <node TEXT="State (also called the state tree) is a broad term, but in the Redux API it usually refers to the single state value that is managed by the store and returned by getState()" ID="ID_109853515" CREATED="1522619450561" MODIFIED="1522619453888"/>
 <node ID="ID_919135901" CREATED="1522619467809" MODIFIED="1522619487527"><richcontent TYPE="NODE">
@@ -4268,7 +4273,7 @@
 <node TEXT="By convention, the top-level state is an object or some other key-value collection like a Map, but technically it can be any type." ID="ID_351463405" CREATED="1522619547112" MODIFIED="1522619551094"/>
 <node TEXT="Still, you should do your best to keep the state serializable. Don&apos;t put anything inside it that you can&apos;t easily turn into JSON." ID="ID_757080883" CREATED="1522619569408" MODIFIED="1522619573334"/>
 </node>
-<node TEXT="action" FOLDED="true" ID="ID_1391084089" CREATED="1522619111995" MODIFIED="1522619120265">
+<node TEXT="action" ID="ID_1391084089" CREATED="1522619111995" MODIFIED="1522619120265">
 <node TEXT="An action is a plain object that represents an intention to change the state." ID="ID_1265939815" CREATED="1522619203755" MODIFIED="1522619207536"/>
 <node TEXT="Actions are the only way to get data into the store." ID="ID_565796530" CREATED="1522619234003" MODIFIED="1522619237584"/>
 <node TEXT="Any data, whether from UI events, network callbacks, or other sources such as WebSockets needs to eventually be dispatched as actions." ID="ID_517106" CREATED="1522619255563" MODIFIED="1522619259440"/>
@@ -4331,7 +4336,7 @@
 <node TEXT="The base dispatch function always synchronously sends an action to the store&apos;s reducer, along with the previous state returned by the store, to calculate a new state. It expects actions to be plain objects ready to be consumed by the reducer." ID="ID_293986832" CREATED="1522620047445" MODIFIED="1522620051218"/>
 <node TEXT="&#x200a;Middleware wraps the base dispatch function. It allows the dispatch function to handle async actions in addition to actions. Middleware may transform, delay, ignore, or otherwise interpret actions or async actions before passing them to the next middleware. See below for more information." ID="ID_1338902460" CREATED="1522620084716" MODIFIED="1522620088386"/>
 </node>
-<node TEXT="action creator" FOLDED="true" ID="ID_1917752922" CREATED="1522620141676" MODIFIED="1522620151337">
+<node TEXT="action creator" ID="ID_1917752922" CREATED="1522620141676" MODIFIED="1522620151337">
 <node ID="ID_1552571801" CREATED="1522620180732" MODIFIED="1522620202266"><richcontent TYPE="NODE">
 
 <html>
