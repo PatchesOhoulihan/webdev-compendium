@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -5858,6 +5858,7 @@
 <node TEXT="css" ID="ID_852789326" CREATED="1521807313740" MODIFIED="1521807318582">
 <node TEXT="https://cssreference.io/" ID="ID_294499460" CREATED="1521807343173" MODIFIED="1521807346358"/>
 <node TEXT="https://css-tricks.com/almanac/" ID="ID_1944714815" CREATED="1522221976971" MODIFIED="1522221976971" LINK="https://css-tricks.com/almanac/"/>
+<node TEXT="http://howtocenterincss.com/" ID="ID_1737989893" CREATED="1525685624952" MODIFIED="1525685624952" LINK="http://howtocenterincss.com/"/>
 </node>
 <node TEXT="js" ID="ID_1179341838" CREATED="1521807321173" MODIFIED="1521807329598">
 <node TEXT="https://www.w3schools.com/jsref/default.asp" ID="ID_949903332" CREATED="1522747755660" MODIFIED="1522747755660" LINK="https://www.w3schools.com/jsref/default.asp"/>
