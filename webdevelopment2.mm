@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -3774,7 +3774,8 @@
 </node>
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
 <node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
-<node TEXT="React" FOLDED="true" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
+<node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
+<node TEXT="core" ID="ID_1471975184" CREATED="1526846655943" MODIFIED="1526846661475">
 <node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
 <node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
 <node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1409151973" CREATED="1515278541958" MODIFIED="1515278541958"/>
@@ -4235,6 +4236,72 @@
 </node>
 </node>
 <node TEXT="You should always aim for pure functions in your project" ID="ID_886201790" CREATED="1523134110789" MODIFIED="1523134140606"/>
+</node>
+</node>
+<node TEXT="extentions" ID="ID_582425876" CREATED="1526846664247" MODIFIED="1526846672602">
+<node TEXT="React-Router" ID="ID_616574208" CREATED="1526846697967" MODIFIED="1526846712586">
+<node TEXT="setup" ID="ID_100179145" CREATED="1526846721190" MODIFIED="1526846728594">
+<node ID="ID_1256991731" CREATED="1526846753422" MODIFIED="1526846869174"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      React Router has been broken into three packages: <i>react-router</i>, <i>react-router-dom</i>, and <i>react-router-native</i>.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="You should almost never have to install react-router directly. That package provides the core routing components and functions for React Router applications." ID="ID_392726263" CREATED="1526846773142" MODIFIED="1526846782274"/>
+<node TEXT="The other two provide environment specific (browser and react-native) components, but they both also re-export all of react-router&apos;s exports." ID="ID_939342884" CREATED="1526846809838" MODIFIED="1526846816466"/>
+<node TEXT="When we are building a website (something that will be run in browsers), so we will install react-router-dom." ID="ID_734973446" CREATED="1526846912541" MODIFIED="1526846930001"/>
+<node TEXT="npm install --save react-router-dom" ID="ID_501861204" CREATED="1526846940037" MODIFIED="1526846945056"/>
+</node>
+<node TEXT="The router" ID="ID_495016147" CREATED="1526847086724" MODIFIED="1526847094359">
+<node TEXT="When starting a new project, you need to determine which type of router to use. For browser based projects, there are &lt;BrowserRouter&gt; and &lt;HashRouter&gt; components." ID="ID_1906481341" CREATED="1526847119124" MODIFIED="1526847124335">
+<node TEXT="The &lt;BrowserRouter&gt; should be used when you have a server that will handle dynamic requests (knows how to respond to any possible URI)" ID="ID_1600041175" CREATED="1526847141268" MODIFIED="1526847145695"/>
+<node TEXT=" The &lt;HashRouter&gt; should be used for static websites (where the server can only respond to requests for files that it knows about)." ID="ID_1561074951" CREATED="1526847158435" MODIFIED="1526847167879"/>
+</node>
+<node TEXT="Usually it is preferable to use a &lt;BrowserRouter&gt;, but if your website will be hosted on a server that only serves static files, then the &lt;HashRouter&gt; is a good solution." ID="ID_1226895890" CREATED="1526847195507" MODIFIED="1526847205127"/>
+<node TEXT="History" ID="ID_1347423878" CREATED="1526847266027" MODIFIED="1526847269886">
+<node TEXT="Each router creates a history object, which it uses to keep track of the current location[1] and re-render the website whenever that changes." ID="ID_645877469" CREATED="1526847286290" MODIFIED="1526847726408">
+<font ITALIC="false"/>
+</node>
+<node TEXT="The other components provided by React Router rely on having that history object available through React&#x2019;s context, so they must be rendered as descendants of a router component." ID="ID_391955049" CREATED="1526847363498" MODIFIED="1526847367446"/>
+<node TEXT="A React Router component that does not have a router as one of its ancestors will fail to work." ID="ID_805393172" CREATED="1526847381162" MODIFIED="1526847729330">
+<font ITALIC="false"/>
+</node>
+</node>
+<node TEXT="Rendering a &lt;Router&gt;" ID="ID_586335849" CREATED="1526847616184" MODIFIED="1526847623476">
+<node TEXT="Router components only expect to receive a single child element." ID="ID_221345856" CREATED="1526847640312" MODIFIED="1526847644404"/>
+<node TEXT="To work within this limitation, it is useful to create an &lt;App&gt; component that renders the rest of your application." ID="ID_897372590" CREATED="1526847666648" MODIFIED="1526847670419"/>
+<node TEXT="Separating your application from the router is also useful for server rendering because you can re-use the &lt;App&gt; on the server while switching the router to a &lt;MemoryRouter&gt;" ID="ID_602070584" CREATED="1526847699264" MODIFIED="1526847702979"/>
+<node TEXT="import { BrowserRouter } from &apos;react-router-dom&apos;&#xa;ReactDOM.render((&#xa;  &lt;BrowserRouter&gt;&#xa;    &lt;App /&gt;&#xa;  &lt;/BrowserRouter&gt;&#xa;), document.getElementById(&apos;root&apos;))" ID="ID_405904997" CREATED="1526847712728" MODIFIED="1526847732874">
+<font ITALIC="true"/>
+</node>
+</node>
+</node>
+<node TEXT="The &lt;App&gt;" ID="ID_1781266479" CREATED="1526847851607" MODIFIED="1526847854922">
+<node TEXT="Our application is defined within the&lt;App&gt; component. To simplify things, we will split our application into two parts." ID="ID_646044341" CREATED="1526847876926" MODIFIED="1526847880386">
+<node TEXT="The &lt;Header&gt; component will contain links to navigate throughout the website." ID="ID_1298844301" CREATED="1526847898942" MODIFIED="1526847902170"/>
+<node TEXT="The &lt;Main&gt; component is where the rest of the content will be rendered." ID="ID_437005122" CREATED="1526847915198" MODIFIED="1526847918626"/>
+</node>
+<node TEXT="// this component will be rendered by our &lt;___Router&gt;&#xa;const App = () =&gt; (&#xa;  &lt;div&gt;&#xa;    &lt;Header /&gt;&#xa;    &lt;Main /&gt;&#xa;  &lt;/div&gt;&#xa;)" ID="ID_1135909241" CREATED="1526847933038" MODIFIED="1526847936722"/>
+</node>
+<node TEXT="Routes" ID="ID_410532073" CREATED="1526847965950" MODIFIED="1526847977073">
+<node TEXT="The &lt;Route&gt; component is the main building block of React Router." ID="ID_1839547282" CREATED="1526848002406" MODIFIED="1526848006057"/>
+<node TEXT="Anywhere that you want to only render content based on the location&#x2019;s pathname, you should use a &lt;Route&gt; element." ID="ID_1990024225" CREATED="1526848027877" MODIFIED="1526848031129"/>
+<node TEXT="Path" ID="ID_1003638435" CREATED="1526848088285" MODIFIED="1526848118216">
+<node TEXT="A &lt;Route&gt; expects a path prop, which is a string that describes the pathname that the route matche" ID="ID_724483951" CREATED="1526848140829" MODIFIED="1526848145424"/>
+<node TEXT="&lt;Route path=&apos;/roster&apos;/&gt; should match a pathname that begins with /roster" ID="ID_1262516590" CREATED="1526848164949" MODIFIED="1526848191048"/>
+<node TEXT=" When the current location&#x2019;s pathname is matched by the path, the route will render a React element. When the path does not match, the route will not render anything" ID="ID_905706653" CREATED="1526848197148" MODIFIED="1526848203256"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 <node TEXT="angular" ID="ID_1778518175" CREATED="1521314662594" MODIFIED="1521314667721"/>
@@ -5030,7 +5097,7 @@
 <node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
 <node TEXT="grunt" ID="ID_1183811378" CREATED="1522616448127" MODIFIED="1522616453605"/>
 </node>
-<node TEXT="Building/Bundleing" ID="ID_1833698167" CREATED="1522616261001" MODIFIED="1522616558876">
+<node TEXT="Building/Bundling" ID="ID_1833698167" CREATED="1522616261001" MODIFIED="1526835518055">
 <node TEXT="webpack" FOLDED="true" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
 <node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
 <node TEXT="Concepts" FOLDED="true" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
@@ -5129,8 +5196,14 @@
 <node TEXT="eslint yourfile.js" ID="ID_1608188297" CREATED="1524950271972" MODIFIED="1524950276875"/>
 </node>
 </node>
-<node TEXT="exception" FOLDED="true" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
+<node TEXT="exception" ID="ID_105513186" CREATED="1519056123891" MODIFIED="1519056141949">
 <node TEXT="// eslint-disable-line" ID="ID_1309138352" CREATED="1519056152043" MODIFIED="1519056157028"/>
+</node>
+<node TEXT="docs" ID="ID_422173037" CREATED="1526835322511" MODIFIED="1526835328589">
+<node TEXT="https://eslint.org/docs/rules/" ID="ID_95989242" CREATED="1526835335302" MODIFIED="1526835335302" LINK="https://eslint.org/docs/rules/"/>
+</node>
+<node TEXT="reference files" ID="ID_769277701" CREATED="1526835478251" MODIFIED="1526835489135">
+<node TEXT="https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb#eslint-config-airbnb-1" ID="ID_1200035502" CREATED="1526835502217" MODIFIED="1526835502217" LINK="https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb#eslint-config-airbnb-1"/>
 </node>
 </node>
 <node TEXT="JSLint" ID="ID_1362831951" CREATED="1522616406912" MODIFIED="1522616417165"/>
@@ -5364,6 +5437,8 @@
 <node TEXT="https://github.com/enaqx/awesome-react" ID="ID_1602949292" CREATED="1525430466921" MODIFIED="1525430466921" LINK="https://github.com/enaqx/awesome-react"/>
 <node TEXT="https://github.com/happypoulp/redux-tutorial" ID="ID_1319773217" CREATED="1525430714972" MODIFIED="1525430714972" LINK="https://github.com/happypoulp/redux-tutorial"/>
 <node TEXT="https://developers.googleblog.com/2018/05/open-sourcing-seurat.html" ID="ID_137374846" CREATED="1525853616509" MODIFIED="1525853616509" LINK="https://developers.googleblog.com/2018/05/open-sourcing-seurat.html"/>
+<node TEXT="https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd" ID="ID_1111892822" CREATED="1526847467022" MODIFIED="1526847467022" LINK="https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd"/>
+<node TEXT="https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf" ID="ID_467878204" CREATED="1526847482356" MODIFIED="1526847482356" LINK="https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -5893,6 +5968,9 @@
 <node TEXT="https://github.com/airbnb/javascript" ID="ID_1394253637" CREATED="1522222166988" MODIFIED="1522222166988" LINK="https://github.com/airbnb/javascript"/>
 </node>
 </node>
+</node>
+<node TEXT="inspiration" ID="ID_1052599159" CREATED="1526835407715" MODIFIED="1526835418624">
+<node TEXT="https://tympanus.net/codrops/" ID="ID_1025898889" CREATED="1526835425409" MODIFIED="1526835425409" LINK="https://tympanus.net/codrops/"/>
 </node>
 <node TEXT="Security" ID="ID_186255367" CREATED="1520844171048" MODIFIED="1520844184253">
 <node TEXT="https://haveibeenpwned.com/" ID="ID_633001591" CREATED="1520844188943" MODIFIED="1520844188943" LINK="https://haveibeenpwned.com/"/>
