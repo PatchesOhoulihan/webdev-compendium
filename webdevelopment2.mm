@@ -2762,33 +2762,33 @@
 <node TEXT="Control flow" ID="ID_265187798" CREATED="1522708180202" MODIFIED="1522708200343"/>
 <node TEXT="Loops and iteration" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1522708158383"/>
 <node TEXT="error handling" ID="ID_836948526" CREATED="1522708182779" MODIFIED="1522708212543"/>
-<node TEXT="Standard built-in objects" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
+<node TEXT="Standard built-in objects" FOLDED="true" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
 <node TEXT="The term &quot;global objects&quot; (or standard built-in objects) here is not to be confused with the global object. Here, global objects refer to objects in the global scope." ID="ID_276062820" CREATED="1521190358395" MODIFIED="1521190363389"/>
 <node TEXT="The global object itself can be accessed using the this operator in the global scope (but only if ECMAScript 5 strict mode is not used; in that case it returns undefined)." ID="ID_376537155" CREATED="1521190401587" MODIFIED="1521190411781"/>
 <node TEXT=" In fact, the global scope consists of the properties of the global object, including inherited properties, if any." ID="ID_867838805" CREATED="1521190580052" MODIFIED="1521190583581"/>
 <node TEXT="Other objects in the global scope are either created by the user script or provided by the host application. The host objects available in browser contexts" ID="ID_1066163475" CREATED="1521190629908" MODIFIED="1521190637493"/>
-<node TEXT="Value properties" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653">
+<node TEXT="Value properties" FOLDED="true" ID="ID_410762600" CREATED="1521190956668" MODIFIED="1521190973653">
 <node TEXT="These global properties return a simple value; they have no properties or methods." ID="ID_1820806319" CREATED="1521308519053" MODIFIED="1521308524186"/>
-<node TEXT="Infinity" OBJECT="java.lang.Double|Infinity" ID="ID_170409255" CREATED="1521308534229" MODIFIED="1521308544945">
-<node TEXT="description" ID="ID_1198201734" CREATED="1523122757416" MODIFIED="1523124704708">
+<node TEXT="Infinity" OBJECT="java.lang.Double|Infinity" FOLDED="true" ID="ID_170409255" CREATED="1521308534229" MODIFIED="1521308544945">
+<node TEXT="description" FOLDED="true" ID="ID_1198201734" CREATED="1523122757416" MODIFIED="1523124704708">
 <node TEXT="The global Infinity property is a numeric value representing infinity." ID="ID_183677450" CREATED="1523122460939" MODIFIED="1523122460939"/>
 <node TEXT="Infinity is a property of the global object, or in other words, a variable in global scope." ID="ID_873153727" CREATED="1523122514802" MODIFIED="1523122570900"/>
 <node TEXT="The initial value of Infinity is Number.POSITIVE_INFINITY. The value Infinity (positive infinity) is greater than any other number." ID="ID_944046667" CREATED="1523122634593" MODIFIED="1523122640012"/>
 <node TEXT="Mathematically, this value behaves the same as infinity; for example, any positive number multiplied by Infinity equals Infinity, and any number divided by Infinity equals 0." ID="ID_207656390" CREATED="1523122658985" MODIFIED="1523122664044"/>
 <node TEXT="As defined by the ECMAScript 5 specification, Infinity is read-only" ID="ID_47540567" CREATED="1523122682585" MODIFIED="1523122687547"/>
 </node>
-<node TEXT="examples" ID="ID_324219772" CREATED="1523122717233" MODIFIED="1523122723219">
+<node TEXT="examples" FOLDED="true" ID="ID_324219772" CREATED="1523122717233" MODIFIED="1523122723219">
 <node TEXT="console.log(Infinity          ); /* Infinity */ &#xa;console.log(Infinity + 1      ); /* Infinity */ &#xa;console.log(Math.pow(10, 1000)); /* Infinity */ &#xa;console.log(Math.log(0)       ); /* -Infinity */ &#xa;console.log(1 / Infinity      ); /* 0 */" ID="ID_1631325993" CREATED="1523122739432" MODIFIED="1523122742315"/>
 <node TEXT="var maxNumber = Math.pow(10, 1000); // max positive number  if (maxNumber === Infinity) {   console.log(&quot;Let&apos;s call it Infinity!&quot;);   // expected output: &quot;Let&apos;s call it Infinity!&quot; }  console.log(1 / maxNumber); // expected output: 0" ID="ID_1224079163" CREATED="1523122748264" MODIFIED="1523122752299"/>
 </node>
 </node>
-<node TEXT="NaN" OBJECT="java.lang.Double|NaN" ID="ID_230146644" CREATED="1521308545797" MODIFIED="1521308549911">
-<node TEXT="description" ID="ID_1550987128" CREATED="1523122857055" MODIFIED="1523124720036">
+<node TEXT="NaN" OBJECT="java.lang.Double|NaN" FOLDED="true" ID="ID_230146644" CREATED="1521308545797" MODIFIED="1521308549911">
+<node TEXT="description" FOLDED="true" ID="ID_1550987128" CREATED="1523122857055" MODIFIED="1523124720036">
 <node TEXT="NaN is a property of the global object." ID="ID_90693284" CREATED="1523122991922" MODIFIED="1523122991922"/>
 <node TEXT="The initial value of NaN is Not-A-Number &#x2014; the same as the value of Number.NaN. In modern browsers, NaN is a non-configurable, non-writable property. Even when this is not the case, avoid overriding it." ID="ID_337256363" CREATED="1523124608851" MODIFIED="1523124612374"/>
 <node TEXT="It is rather rare to use NaN in a program. It is the returned value when Math functions fail (Math.sqrt(-1)) or when a function trying to parse a number fails (parseInt(&quot;blabla&quot;))." ID="ID_602919142" CREATED="1523124635298" MODIFIED="1523124649493"/>
 </node>
-<node TEXT="testing against NaN" ID="ID_172186221" CREATED="1523122865967" MODIFIED="1523122982249">
+<node TEXT="testing against NaN" FOLDED="true" ID="ID_172186221" CREATED="1523122865967" MODIFIED="1523122982249">
 <node TEXT="NaN compares unequal (via ==, !=, ===, and !==) to any other value -- including to another NaN value." ID="ID_40620040" CREATED="1523124312140" MODIFIED="1523124312140"/>
 <node TEXT="Use Number.isNaN() or isNaN() to most clearly determine whether a value is NaN." ID="ID_1458738122" CREATED="1523124407015" MODIFIED="1523124407015"/>
 <node TEXT="Or perform a self-comparison: NaN, and only NaN, will compare unequal to itself." ID="ID_1474501802" CREATED="1523124428856" MODIFIED="1523124428856"/>
@@ -2797,78 +2797,78 @@
 <node TEXT="isNaN(&apos;hello world&apos;); // returns &apos;true&apos;.&#xa;Number.isNaN(&apos;hello world&apos;); // returns &apos;false&apos;." ID="ID_1436132466" CREATED="1523124552619" MODIFIED="1523124556262"/>
 </node>
 </node>
-<node TEXT="undefined" ID="ID_809751258" CREATED="1521308558061" MODIFIED="1521308562207">
-<node TEXT="description" ID="ID_1972217304" CREATED="1523124947176" MODIFIED="1523124954874">
+<node TEXT="undefined" FOLDED="true" ID="ID_809751258" CREATED="1521308558061" MODIFIED="1521308562207">
+<node TEXT="description" FOLDED="true" ID="ID_1972217304" CREATED="1523124947176" MODIFIED="1523124954874">
 <node TEXT="undefined is a property of the global object; i.e., it is a variable in global scope. The initial value of undefined is the primitive value undefined." ID="ID_602327083" CREATED="1523124777943" MODIFIED="1523124777943"/>
 <node TEXT="In modern browsers (JavaScript 1.8.5 / Firefox 4+), undefined is a non-configurable, non-writable property per the ECMAScript 5 specification. Even when this is not the case, avoid overriding it." ID="ID_1208766290" CREATED="1523124856728" MODIFIED="1523124861867"/>
 <node TEXT="A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned." ID="ID_1800717005" CREATED="1523125010711" MODIFIED="1523125015498"/>
-<node TEXT="anti-pattern" ID="ID_1924874518" CREATED="1523125081831" MODIFIED="1523125106569">
+<node TEXT="anti-pattern" FOLDED="true" ID="ID_1924874518" CREATED="1523125081831" MODIFIED="1523125106569">
 <node TEXT="While it is possible to use it as an identifier (variable name) in any scope other than the global scope (because undefined is not a reserved word), doing so is a very bad idea that will make your code difficult to maintain and debug." ID="ID_1992160656" CREATED="1523125109482" MODIFIED="1523125109482"/>
 <node TEXT="//DON&apos;T DO THIS&#xa;&#xa;// logs &quot;foo string&quot;&#xa;(function() { var undefined = &apos;foo&apos;; console.log(undefined, typeof undefined); })();&#xa;&#xa;// logs &quot;foo string&quot;&#xa;(function(undefined) { console.log(undefined, typeof undefined); })(&apos;foo&apos;);" ID="ID_1501920856" CREATED="1523125134959" MODIFIED="1523125139290"/>
 </node>
 </node>
-<node TEXT="examples" ID="ID_236753915" CREATED="1523125209390" MODIFIED="1523125313116">
-<node TEXT="Strict equality and undefined" ID="ID_276201174" CREATED="1523125283748" MODIFIED="1523125283748">
+<node TEXT="examples" FOLDED="true" ID="ID_236753915" CREATED="1523125209390" MODIFIED="1523125313116">
+<node TEXT="Strict equality and undefined" FOLDED="true" ID="ID_276201174" CREATED="1523125283748" MODIFIED="1523125283748">
 <node TEXT="You can use undefined and the strict equality and inequality operators to determine whether a variable has a value. In the following code, the variable x is not defined, and the if statement evaluates to true." ID="ID_884002438" CREATED="1523125402589" MODIFIED="1523125407343"/>
 <node TEXT="var x;&#xa;if (x === undefined) {&#xa;   // these statements execute&#xa;}&#xa;else {&#xa;   // these statements do not execute&#xa;}" ID="ID_216939149" CREATED="1523125415924" MODIFIED="1523125420311"/>
 <node TEXT="Note: The strict equality operator rather than the standard equality operator must be used here, because x == undefined also checks whether x is null, while strict equality doesn&apos;t. null is not equivalent to undefined." ID="ID_1371511339" CREATED="1523125498548" MODIFIED="1523125498548"/>
 </node>
-<node TEXT="Typeof operator and undefined" ID="ID_1047203971" CREATED="1523125311445" MODIFIED="1523125317528">
+<node TEXT="Typeof operator and undefined" FOLDED="true" ID="ID_1047203971" CREATED="1523125311445" MODIFIED="1523125317528">
 <node TEXT="One reason to use typeof is that it does not throw an error if the variable has not been declared." ID="ID_245426212" CREATED="1523125530378" MODIFIED="1523125530378"/>
 <node TEXT="var x;&#xa;if (typeof x === &apos;undefined&apos;) {&#xa;   // these statements execute&#xa;}" ID="ID_557838885" CREATED="1523125549979" MODIFIED="1523125553350"/>
 <node TEXT="// x has not been declared before&#xa;&#xa;if (typeof x === &apos;undefined&apos;) { // evaluates to true without errors&#xa;   // these statements execute&#xa;}&#xa;&#xa;if (x === undefined) { // throws a ReferenceError&#xa;&#xa;}" ID="ID_1082624339" CREATED="1523125655995" MODIFIED="1523125671175"/>
 <node TEXT="However, this kind of technique should be avoided. JavaScript is a statically scoped language, so knowing if a variable is declared can be read by seeing whether it is declared in an enclosing context." ID="ID_133775032" CREATED="1523125698042" MODIFIED="1523125731141"/>
 <node TEXT="The only exception is the global scope, but the global scope is bound to the global object, so checking the existence of a variable in the global context can be done by checking the existence of a property on the global object (using the in operator, for instance)." ID="ID_1369387441" CREATED="1523125787330" MODIFIED="1523125792076"/>
 </node>
-<node TEXT="Void operator and undefined" ID="ID_533615670" CREATED="1523125330645" MODIFIED="1523125335304">
+<node TEXT="Void operator and undefined" FOLDED="true" ID="ID_533615670" CREATED="1523125330645" MODIFIED="1523125335304">
 <node TEXT="The void operator is a third alternative." ID="ID_1493531712" CREATED="1523125804605" MODIFIED="1523125804605"/>
 <node TEXT="var x;&#xa;if (x === void 0) {&#xa;   // these statements execute&#xa;}&#xa;&#xa;// y has not been declared before&#xa;if (y === void 0) {&#xa;   // throws a - Uncaught ReferenceError: y is not defined&#xa;}" ID="ID_953294084" CREATED="1523125813266" MODIFIED="1523125818068"/>
 </node>
 </node>
 </node>
-<node TEXT="null literal" ID="ID_1874205737" CREATED="1521308572029" MODIFIED="1521308576094">
-<node TEXT="description" ID="ID_420652633" CREATED="1523126484948" MODIFIED="1523126497415">
+<node TEXT="null literal" FOLDED="true" ID="ID_1874205737" CREATED="1521308572029" MODIFIED="1521308576094">
+<node TEXT="description" FOLDED="true" ID="ID_420652633" CREATED="1523126484948" MODIFIED="1523126497415">
 <node TEXT="The value null is written with a literal: null." ID="ID_1866084412" CREATED="1523126407741" MODIFIED="1523126413784"/>
 <node TEXT="null is not an identifier for a property of the global object, like undefined can be." ID="ID_316211175" CREATED="1523126434901" MODIFIED="1523126438975"/>
 <node TEXT="Instead, null expresses a lack of identification, indicating that a variable points to no object." ID="ID_1327544181" CREATED="1523126458381" MODIFIED="1523126462727"/>
 <node TEXT="In APIs, null is often retrieved in a place where an object can be expected but no object is relevant." ID="ID_1690903504" CREATED="1523126479709" MODIFIED="1523126506759"/>
 <node TEXT="// foo does not exist. It is not defined and has never been initialized:&#xa;foo;&#xa;&quot;ReferenceError: foo is not defined&quot;&#xa;&#xa;// foo is known to exist now but it has no type or value:&#xa;var foo = null;&#xa;foo;&#xa;&quot;null&quot;" ID="ID_1870351452" CREATED="1523126562348" MODIFIED="1523126577455"/>
 </node>
-<node TEXT="Difference between null and undefined" ID="ID_379929793" CREATED="1523126593844" MODIFIED="1523126598086">
+<node TEXT="Difference between null and undefined" FOLDED="true" ID="ID_379929793" CREATED="1523126593844" MODIFIED="1523126598086">
 <node TEXT="When checking for null or undefined, beware of the differences between equality (==) and identity (===) operators, as the former performs type-conversion." ID="ID_1779190336" CREATED="1523127043856" MODIFIED="1523127052507"/>
 <node TEXT="typeof null          // &quot;object&quot; (not &quot;null&quot; for legacy reasons)&#xa;typeof undefined     // &quot;undefined&quot;&#xa;null === undefined   // false&#xa;null  == undefined   // true&#xa;null === null        // true&#xa;null == null         // true&#xa;!null                // true&#xa;isNaN(1 + null)      // false&#xa;isNaN(1 + undefined) // true" ID="ID_1990757524" CREATED="1523127066584" MODIFIED="1523127069844"/>
 </node>
 </node>
 </node>
-<node TEXT="Function properties" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
+<node TEXT="Function properties" FOLDED="true" ID="ID_631638485" CREATED="1521190983404" MODIFIED="1521190988157">
 <node TEXT="These global functions&#x2014;functions which are called globally rather than on an object&#x2014;directly return their results to the caller." ID="ID_844058669" CREATED="1521308603949" MODIFIED="1521308606999"/>
-<node TEXT="eval()" ID="ID_1138508202" CREATED="1521308618789" MODIFIED="1521308623606">
+<node TEXT="eval()" FOLDED="true" ID="ID_1138508202" CREATED="1521308618789" MODIFIED="1521308623606">
 <node TEXT="Do not ever use eval!" ID="ID_959194058" CREATED="1523202773999" MODIFIED="1523202777802"/>
 <node TEXT="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval" ID="ID_40988892" CREATED="1523202786343" MODIFIED="1523202791170"/>
 </node>
-<node TEXT="isFinite()" ID="ID_1837829520" CREATED="1521308631852" MODIFIED="1521308635567">
+<node TEXT="isFinite()" FOLDED="true" ID="ID_1837829520" CREATED="1521308631852" MODIFIED="1521308635567">
 <node TEXT="The global isFinite() function determines whether the passed value is a finite number. If  needed, the parameter is first converted to a number." ID="ID_603409527" CREATED="1523202424294" MODIFIED="1523202430754"/>
-<node TEXT="description" ID="ID_1257605281" CREATED="1523202434978" MODIFIED="1523202446181">
+<node TEXT="description" FOLDED="true" ID="ID_1257605281" CREATED="1523202434978" MODIFIED="1523202446181">
 <node TEXT="isFinite is a top-level function and is not associated with any object." ID="ID_241941753" CREATED="1523202462354" MODIFIED="1523202467076"/>
 <node TEXT="You can use this function to determine whether a number is a finite number." ID="ID_1265256016" CREATED="1523202479641" MODIFIED="1523202484796"/>
 <node TEXT="The isFinite function examines the number in its argument. If the argument is NaN, positive infinity, or negative infinity, this method returns false; otherwise, it returns true." ID="ID_4229993" CREATED="1523202510793" MODIFIED="1523202518220"/>
 </node>
-<node TEXT="examples" ID="ID_1182265854" CREATED="1523202713756" MODIFIED="1523202722115">
+<node TEXT="examples" FOLDED="true" ID="ID_1182265854" CREATED="1523202713756" MODIFIED="1523202722115">
 <node TEXT="isFinite(Infinity);  // false&#xa;isFinite(NaN);       // false&#xa;isFinite(-Infinity); // false&#xa;&#xa;isFinite(0);         // true&#xa;isFinite(2e64);      // true&#xa;isFinite(910);       // true&#xa;&#xa;isFinite(null);      // true, would&apos;ve been false with the&#xa;                     // more robust Number.isFinite(null)&#xa;&#xa;isFinite(&apos;0&apos;);       // true, would&apos;ve been false with the&#xa;                     // more robust Number.isFinite(&quot;0&quot;)" ID="ID_439169756" CREATED="1523202724776" MODIFIED="1523202730869"/>
 </node>
 </node>
-<node TEXT="isNaN()" ID="ID_510804328" CREATED="1521308642300" MODIFIED="1521308646630">
+<node TEXT="isNaN()" FOLDED="true" ID="ID_510804328" CREATED="1521308642300" MODIFIED="1521308646630">
 <node TEXT="The isNaN() function determines whether a value is NaN or not. Note: coercion inside the isNaN function has interesting rules; you may alternatively want to use Number.isNaN(), as defined in ECMAScript 2015." ID="ID_688819637" CREATED="1523202937534" MODIFIED="1523202943569"/>
-<node TEXT="description" ID="ID_478140324" CREATED="1523203105605" MODIFIED="1523203115472">
-<node TEXT="The necessity of an isNaN function" ID="ID_1548096715" CREATED="1523203178637" MODIFIED="1523203182599">
+<node TEXT="description" FOLDED="true" ID="ID_478140324" CREATED="1523203105605" MODIFIED="1523203115472">
+<node TEXT="The necessity of an isNaN function" FOLDED="true" ID="ID_1548096715" CREATED="1523203178637" MODIFIED="1523203182599">
 <node TEXT="Unlike all other possible values in JavaScript, it is not possible to rely on the equality operators (== and ===) to determine whether a value is NaN or not, because both NaN == NaN and NaN === NaN evaluate to false." ID="ID_466487191" CREATED="1523203213276" MODIFIED="1523203216888"/>
 </node>
-<node TEXT="Origin of NaN values" ID="ID_1910388958" CREATED="1523203228996" MODIFIED="1523203233182">
+<node TEXT="Origin of NaN values" FOLDED="true" ID="ID_1910388958" CREATED="1523203228996" MODIFIED="1523203233182">
 <node TEXT="NaN values are generated when arithmetic operations result in undefined or unrepresentable values." ID="ID_562080316" CREATED="1523203251108" MODIFIED="1523203254495"/>
 <node TEXT="Such values do not necessarily represent overflow conditions. A NaN also results from attempted coercion to numeric values of non-numeric values for which no primitive numeric value is available." ID="ID_581348934" CREATED="1523203282892" MODIFIED="1523203287145"/>
 <node TEXT="For example, dividing zero by zero results in a NaN &#x2014; but dividing other numbers by zero does not." ID="ID_1406434915" CREATED="1523203299932" MODIFIED="1523203305279"/>
 </node>
-<node TEXT="Confusing special-case behavior" ID="ID_1208830651" CREATED="1523203345667" MODIFIED="1523203350552">
+<node TEXT="Confusing special-case behavior" FOLDED="true" ID="ID_1208830651" CREATED="1523203345667" MODIFIED="1523203350552">
 <node TEXT="Since the very earliest versions of the isNaN function specification, its behavior for non-numeric arguments has been confusing." ID="ID_1681341298" CREATED="1523203426235" MODIFIED="1523203430078"/>
 <node TEXT="When the argument to the isNaN function is not of type Number, the value is first coerced to a Number. The resulting value is then tested to determine whether it is NaN." ID="ID_90784954" CREATED="1523203447907" MODIFIED="1523203453151"/>
 <node TEXT="Thus for non-numbers that when coerced to numeric type result in a valid non-NaN numeric value (notably the empty string and boolean primitives, which when coerced give numeric values zero or one), the &quot;false&quot; returned value may be unexpected; the empty string, for example, is surely &quot;not a number.&quot;" ID="ID_1014185523" CREATED="1523203492170" MODIFIED="1523203496885"/>
@@ -2877,12 +2877,12 @@
 <node TEXT="Alternatively, in absense of Number.isNaN, the expression (x != x) is a more reliable way to test whether variable x is NaN or not, as the result is not subject to the false positives that make isNaN unreliable." ID="ID_1275849201" CREATED="1523203671242" MODIFIED="1523203674540"/>
 </node>
 </node>
-<node TEXT="examples" ID="ID_110724441" CREATED="1523203125685" MODIFIED="1523203132864">
+<node TEXT="examples" FOLDED="true" ID="ID_110724441" CREATED="1523203125685" MODIFIED="1523203132864">
 <node TEXT="isNaN(NaN);       // true&#xa;isNaN(undefined); // true&#xa;isNaN({});        // true&#xa;&#xa;isNaN(true);      // false&#xa;isNaN(null);      // false&#xa;isNaN(37);        // false&#xa;&#xa;// strings&#xa;isNaN(&apos;37&apos;);      // false: &quot;37&quot; is converted to the number 37 which is not NaN&#xa;isNaN(&apos;37.37&apos;);   // false: &quot;37.37&quot; is converted to the number 37.37 which is not NaN&#xa;isNaN(&quot;37,5&quot;);    // true&#xa;isNaN(&apos;123ABC&apos;);  // true:  parseInt(&quot;123ABC&quot;) is 123 but Number(&quot;123ABC&quot;) is NaN&#xa;isNaN(&apos;&apos;);        // false: the empty string is converted to 0 which is not NaN&#xa;isNaN(&apos; &apos;);       // false: a string with spaces is converted to 0 which is not NaN&#xa;&#xa;// dates&#xa;isNaN(new Date());                // false&#xa;isNaN(new Date().toString());     // true&#xa;&#xa;// This is a false positive and the reason why isNaN is not entirely reliable&#xa;isNaN(&apos;blabla&apos;);   // true: &quot;blabla&quot; is converted to a number.&#xa;                   // Parsing this as a number fails and returns NaN" ID="ID_1220136967" CREATED="1523203142941" MODIFIED="1523203147075"/>
 </node>
 </node>
-<node TEXT="parseFloat()" ID="ID_838223104" CREATED="1521308662132" MODIFIED="1521308666350">
-<node TEXT="description" ID="ID_267766862" CREATED="1523203791864" MODIFIED="1523203802763">
+<node TEXT="parseFloat()" FOLDED="true" ID="ID_838223104" CREATED="1521308662132" MODIFIED="1521308666350">
+<node TEXT="description" FOLDED="true" ID="ID_267766862" CREATED="1523203791864" MODIFIED="1523203802763">
 <node TEXT="parseFloat is a top-level function and is not associated with any object." ID="ID_1207205371" CREATED="1523203809112" MODIFIED="1523203811595"/>
 <node TEXT="parseFloat parses its argument, and returns a floating point number." ID="ID_1491707590" CREATED="1523203824392" MODIFIED="1523203831051"/>
 <node TEXT="If it encounters a character other than a sign (+ or -), numeral (0-9), a decimal point, or an exponent, it returns the value up to that point and ignores that character and all succeeding characters." ID="ID_978584688" CREATED="1523203855080" MODIFIED="1523203859171"/>
@@ -2890,23 +2890,23 @@
 <node TEXT="If the value is a string and first character cannot be converted to a number, parseFloat returns NaN." ID="ID_1235387604" CREATED="1523203912880" MODIFIED="1523203949628"/>
 <node TEXT="For arithmetic purposes, the NaN value is not a number in any radix. You can call the isNaN function to determine if the result of parseFloat is NaN. If NaN is passed on to arithmetic operations, the operation results will also be NaN." ID="ID_428531593" CREATED="1523203951463" MODIFIED="1523203956258"/>
 </node>
-<node TEXT="examples" ID="ID_1943264866" CREATED="1523203979415" MODIFIED="1523203985362">
-<node TEXT="parseFloat returning a number" ID="ID_14234087" CREATED="1523204001863" MODIFIED="1523204003641">
+<node TEXT="examples" FOLDED="true" ID="ID_1943264866" CREATED="1523203979415" MODIFIED="1523203985362">
+<node TEXT="parseFloat returning a number" FOLDED="true" ID="ID_14234087" CREATED="1523204001863" MODIFIED="1523204003641">
 <node TEXT="The following examples all return 3.14" ID="ID_110085130" CREATED="1523204096934" MODIFIED="1523204099425"/>
 <node TEXT="parseFloat(3.14);&#xa;parseFloat(&apos;3.14&apos;);&#xa;parseFloat(&apos;314e-2&apos;);&#xa;parseFloat(&apos;0.0314E+2&apos;);&#xa;parseFloat(&apos;3.14more non-digit characters&apos;);&#xa;&#xa;var foo = Object.create(null);&#xa;foo.toString = function () { return &quot;3.14&quot;; };&#xa;parseFloat(foo);&#xa;&#xa;var foo = Object.create(null);&#xa;foo.valueOf = function () { return &quot;3.14&quot;; };&#xa;parseFloat(foo);&#x200b;&#x200b;&#x200b;&#x200b;&#x200b;" ID="ID_1410782701" CREATED="1523204108526" MODIFIED="1523204113521"/>
 </node>
-<node TEXT="parseFloat returning NaN" ID="ID_321260914" CREATED="1523204017583" MODIFIED="1523204021378">
+<node TEXT="parseFloat returning NaN" FOLDED="true" ID="ID_321260914" CREATED="1523204017583" MODIFIED="1523204021378">
 <node TEXT="The following example returns NaN" ID="ID_1248554992" CREATED="1523204139982" MODIFIED="1523204146873"/>
 <node TEXT="parseFloat(&apos;FF2&apos;);" ID="ID_1178592226" CREATED="1523204153582" MODIFIED="1523204158377"/>
 </node>
-<node TEXT="A stricter parse function" ID="ID_1726486615" CREATED="1523204072599" MODIFIED="1523204078369">
+<node TEXT="A stricter parse function" FOLDED="true" ID="ID_1726486615" CREATED="1523204072599" MODIFIED="1523204078369">
 <node TEXT="It is sometime useful to have a stricter way to parse float values, regular expressions can help :" ID="ID_1465903852" CREATED="1523204238773" MODIFIED="1523204241504"/>
 <node TEXT="var filterFloat = function(value) {&#xa;    if (/^(\-|\+)?([0-9]+(\.[0-9]+)?|Infinity)$/&#xa;      .test(value))&#xa;      return Number(value);&#xa;  return NaN;&#xa;}&#xa;&#xa;console.log(filterFloat(&apos;421&apos;));               // 421&#xa;console.log(filterFloat(&apos;-421&apos;));              // -421&#xa;console.log(filterFloat(&apos;+421&apos;));              // 421&#xa;console.log(filterFloat(&apos;Infinity&apos;));          // Infinity&#xa;console.log(filterFloat(&apos;1.61803398875&apos;));     // 1.61803398875&#xa;console.log(filterFloat(&apos;421e+0&apos;));            // NaN&#xa;console.log(filterFloat(&apos;421hop&apos;));            // NaN&#xa;console.log(filterFloat(&apos;hop1.61803398875&apos;));  // NaN" ID="ID_1635769826" CREATED="1523204252445" MODIFIED="1523204262017"/>
 </node>
 </node>
 </node>
-<node TEXT="parseInt()" ID="ID_536957290" CREATED="1521308673900" MODIFIED="1521308677398">
-<node TEXT="description" ID="ID_1247499504" CREATED="1523204582387" MODIFIED="1523204588917">
+<node TEXT="parseInt()" FOLDED="true" ID="ID_536957290" CREATED="1521308673900" MODIFIED="1521308677398">
+<node TEXT="description" FOLDED="true" ID="ID_1247499504" CREATED="1523204582387" MODIFIED="1523204588917">
 <node TEXT="The parseInt function converts its first argument to a string, parses it, and returns an integer or NaN." ID="ID_1460642293" CREATED="1523204654787" MODIFIED="1523204659318"/>
 <node TEXT=" If not NaN, the returned value will be the integer that is the first argument taken as a number in the specified radix (base)." ID="ID_480567322" CREATED="1523204678658" MODIFIED="1523204682885"/>
 <node TEXT="For example, a radix of 10 indicates to convert from a decimal number, 8 octal, 16 hexadecimal, and so on." ID="ID_854629486" CREATED="1523204710394" MODIFIED="1523204717453"/>
@@ -2914,52 +2914,52 @@
 <node TEXT="If parseInt encounters a character that is not a numeral in the specified radix, it ignores it and all succeeding characters and returns the integer value parsed up to that point. parseInt truncates numbers to integer values. Leading and trailing spaces are allowed." ID="ID_621091298" CREATED="1523204760850" MODIFIED="1523204765596"/>
 <node TEXT="Because some numbers include the e character in their string representation (e.g. 6.022e23), using parseInt to truncate numeric values will produce unexpected results when used on very large or very small numbers. parseInt should not be used as a substitute for Math.floor()." ID="ID_1345458440" CREATED="1523204833793" MODIFIED="1523204839964"/>
 </node>
-<node TEXT="syntax" ID="ID_750967534" CREATED="1523204589811" MODIFIED="1523204598005">
+<node TEXT="syntax" FOLDED="true" ID="ID_750967534" CREATED="1523204589811" MODIFIED="1523204598005">
 <node TEXT="parseInt(string, radix);" ID="ID_1979039624" CREATED="1523204856385" MODIFIED="1523204860428"/>
-<node TEXT="Parameters" ID="ID_456235861" CREATED="1523204870273" MODIFIED="1523204874228">
-<node TEXT="string" ID="ID_290307653" CREATED="1523204881369" MODIFIED="1523204885019">
+<node TEXT="Parameters" FOLDED="true" ID="ID_456235861" CREATED="1523204870273" MODIFIED="1523204874228">
+<node TEXT="string" FOLDED="true" ID="ID_290307653" CREATED="1523204881369" MODIFIED="1523204885019">
 <node TEXT="The value to parse. If the string argument is not a string, then it is converted to a string (using the ToString abstract operation). Leading whitespace in the string argument is ignored." ID="ID_1946432149" CREATED="1523204907297" MODIFIED="1523204912827"/>
 </node>
-<node TEXT="radix" ID="ID_1975827778" CREATED="1523204893177" MODIFIED="1523204897123">
+<node TEXT="radix" FOLDED="true" ID="ID_1975827778" CREATED="1523204893177" MODIFIED="1523204897123">
 <node TEXT="An integer between 2 and 36 that represents the radix (the base in mathematical numeral systems) of the above mentioned string." ID="ID_1838830970" CREATED="1523204934489" MODIFIED="1523204938395"/>
 <node TEXT="Specify 10 for the decimal numeral system commonly used by humans. Always specify this parameter to eliminate reader confusion and to guarantee predictable behavior. Different implementations produce different results when a radix is not specified, usually defaulting the value to 10." ID="ID_47811423" CREATED="1523204945009" MODIFIED="1523204949100"/>
 </node>
 </node>
-<node TEXT="return value" ID="ID_1899121944" CREATED="1523204965808" MODIFIED="1523204975611">
+<node TEXT="return value" FOLDED="true" ID="ID_1899121944" CREATED="1523204965808" MODIFIED="1523204975611">
 <node TEXT="An integer number parsed from the given string. If the first character cannot be converted to a number, NaN is returned." ID="ID_1734395461" CREATED="1523204982184" MODIFIED="1523204986971"/>
 </node>
 </node>
-<node TEXT="examples" ID="ID_1094200181" CREATED="1523204598699" MODIFIED="1523204604997">
-<node TEXT="The following examples all return 15" ID="ID_1727991286" CREATED="1523205031184" MODIFIED="1523205035387">
+<node TEXT="examples" FOLDED="true" ID="ID_1094200181" CREATED="1523204598699" MODIFIED="1523204604997">
+<node TEXT="The following examples all return 15" FOLDED="true" ID="ID_1727991286" CREATED="1523205031184" MODIFIED="1523205035387">
 <node TEXT="parseInt(&apos; 0xF&apos;, 16);&#xa;parseInt(&apos; F&apos;, 16);&#xa;parseInt(&apos;17&apos;, 8);&#xa;parseInt(021, 8);&#xa;parseInt(&apos;015&apos;, 10);   // parseInt(015, 10); will return 15&#xa;parseInt(15.99, 10);&#xa;parseInt(&apos;15,123&apos;, 10);&#xa;parseInt(&apos;FXX123&apos;, 16);&#xa;parseInt(&apos;1111&apos;, 2);&#xa;parseInt(&apos;15 * 3&apos;, 10);&#xa;parseInt(&apos;15e2&apos;, 10);&#xa;parseInt(&apos;15px&apos;, 10);&#xa;parseInt(&apos;12&apos;, 13);" ID="ID_1439345363" CREATED="1523205045080" MODIFIED="1523205048491"/>
 </node>
-<node TEXT="The following examples all return NaN:" ID="ID_594279908" CREATED="1523205062664" MODIFIED="1523205067210">
+<node TEXT="The following examples all return NaN:" FOLDED="true" ID="ID_594279908" CREATED="1523205062664" MODIFIED="1523205067210">
 <node TEXT="parseInt(&apos;Hello&apos;, 8); // Not a number at all&#xa;parseInt(&apos;546&apos;, 2);   // Digits are not valid for binary representations" ID="ID_497457493" CREATED="1523205076136" MODIFIED="1523205080914"/>
 </node>
-<node TEXT="The following examples all return -15:" ID="ID_1605647331" CREATED="1523205102711" MODIFIED="1523205108986">
+<node TEXT="The following examples all return -15:" FOLDED="true" ID="ID_1605647331" CREATED="1523205102711" MODIFIED="1523205108986">
 <node TEXT="parseInt(&apos;-F&apos;, 16);&#xa;parseInt(&apos;-0F&apos;, 16);&#xa;parseInt(&apos;-0XF&apos;, 16);&#xa;parseInt(-15.1, 10);&#xa;parseInt(&apos; -17&apos;, 8);&#xa;parseInt(&apos; -15&apos;, 10);&#xa;parseInt(&apos;-1111&apos;, 2);&#xa;parseInt(&apos;-15e1&apos;, 10);&#xa;parseInt(&apos;-12&apos;, 13);" ID="ID_1980884713" CREATED="1523205115831" MODIFIED="1523205120498"/>
 </node>
-<node TEXT="The following examples all return 4:" ID="ID_1122530447" CREATED="1523205128703" MODIFIED="1523205133162">
+<node TEXT="The following examples all return 4:" FOLDED="true" ID="ID_1122530447" CREATED="1523205128703" MODIFIED="1523205133162">
 <node TEXT="parseInt(4.7, 10);&#xa;parseInt(4.7 * 1e22, 10); // Very large number becomes 4&#xa;parseInt(0.00000000000434, 10); // Very small number becomes 4" ID="ID_1110656492" CREATED="1523205139519" MODIFIED="1523205144202"/>
 </node>
-<node TEXT="The following example returns 224:" ID="ID_1423788054" CREATED="1523205152295" MODIFIED="1523205158234">
+<node TEXT="The following example returns 224:" FOLDED="true" ID="ID_1423788054" CREATED="1523205152295" MODIFIED="1523205158234">
 <node TEXT="parseInt(&apos;0e0&apos;, 16);" ID="ID_1767032960" CREATED="1523205169703" MODIFIED="1523205174217"/>
 </node>
 </node>
 </node>
-<node TEXT="URI Handling Functions" ID="ID_683150752" CREATED="1523202607313" MODIFIED="1523202612019">
-<node TEXT="decodeURI()" ID="ID_1849334257" CREATED="1521308684916" MODIFIED="1521308689806">
-<node TEXT="description" ID="ID_140208526" CREATED="1523205505909" MODIFIED="1523205514623">
+<node TEXT="URI Handling Functions" FOLDED="true" ID="ID_683150752" CREATED="1523202607313" MODIFIED="1523202612019">
+<node TEXT="decodeURI()" FOLDED="true" ID="ID_1849334257" CREATED="1521308684916" MODIFIED="1521308689806">
+<node TEXT="description" FOLDED="true" ID="ID_140208526" CREATED="1523205505909" MODIFIED="1523205514623">
 <node TEXT="The decodeURI() function decodes a Uniform Resource Identifier (URI) previously created by encodeURI or by a similar routine." ID="ID_73184812" CREATED="1523205452645" MODIFIED="1523205457599"/>
 <node TEXT="Replaces each escape sequence in the encoded URI with the character that it represents, but does not decode escape sequences that could not have been introduced by encodeURI. The character &#x201c;#&#x201d; is not decoded from escape sequences." ID="ID_362957464" CREATED="1523205498277" MODIFIED="1523205502927"/>
 </node>
-<node TEXT="examples" ID="ID_703318240" CREATED="1523205533549" MODIFIED="1523205558783">
+<node TEXT="examples" FOLDED="true" ID="ID_703318240" CREATED="1523205533549" MODIFIED="1523205558783">
 <node TEXT="var uri = &apos;https://mozilla.org/?x=&#x448;&#x435;&#x43b;&#x43b;&#x44b;&apos;;&#xa;var encoded = encodeURI(uri);&#xa;console.log(encoded);&#xa;// expected output: &quot;https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B&quot;&#xa;&#xa;try {&#xa;  console.log(decodeURI(encoded));&#xa;  // expected output: &quot;https://mozilla.org/?x=&#x448;&#x435;&#x43b;&#x43b;&#x44b;&quot;&#xa;&#xa;} catch(e) { // catches a malformed URI&#xa;  console.error(e);&#xa;}" ID="ID_485664341" CREATED="1523205591708" MODIFIED="1523205646560"/>
 </node>
 </node>
 <node TEXT="decodeURIComponent()" ID="ID_503910473" CREATED="1521308700844" MODIFIED="1521308705118"/>
-<node TEXT="encodeURI()" ID="ID_1018794098" CREATED="1521308713260" MODIFIED="1521308718046">
-<node TEXT="description" ID="ID_1390304807" CREATED="1523205832515" MODIFIED="1523205840173">
+<node TEXT="encodeURI()" FOLDED="true" ID="ID_1018794098" CREATED="1521308713260" MODIFIED="1521308718046">
+<node TEXT="description" FOLDED="true" ID="ID_1390304807" CREATED="1523205832515" MODIFIED="1523205840173">
 <node TEXT="The encodeURI() function encodes a Uniform Resource Identifier (URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the UTF-8 encoding of the character (will only be four escape sequences for characters composed of two &quot;surrogate&quot; characters)." ID="ID_564286341" CREATED="1523205845906" MODIFIED="1523205849853"/>
 <node TEXT="Does not encode characters that have special meaning (reserved characters) for a URI." ID="ID_1509947173" CREATED="1523205867170" MODIFIED="1523205871157"/>
 <node TEXT="The following example shows all the parts that a URI &quot;scheme&quot; can possibly contain. Note how certain characters are used to signify special meaning:" ID="ID_982328922" CREATED="1523205885194" MODIFIED="1523205889612"/>
@@ -2967,24 +2967,24 @@
 <node TEXT="encodeURI escapes all characters except:" ID="ID_1958403271" CREATED="1523205927626" MODIFIED="1523205931828"/>
 <node TEXT=" A-Z a-z 0-9 ; , / ? : @ &amp; = + $ - _ . ! ~ * &apos; ( ) #" ID="ID_1008577540" CREATED="1523205939962" MODIFIED="1523205944204"/>
 </node>
-<node TEXT="examples" ID="ID_611060487" CREATED="1523205882306" MODIFIED="1523206040427">
+<node TEXT="examples" FOLDED="true" ID="ID_611060487" CREATED="1523205882306" MODIFIED="1523206040427">
 <node TEXT="var uri = &apos;https://mozilla.org/?x=&#x448;&#x435;&#x43b;&#x43b;&#x44b;&apos;;&#xa;var encoded = encodeURI(uri);&#xa;console.log(encoded);&#xa;// expected output: &quot;https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B&quot;&#xa;&#xa;try {&#xa;  console.log(decodeURI(encoded));&#xa;  // expected output: &quot;https://mozilla.org/?x=&#x448;&#x435;&#x43b;&#x43b;&#x44b;&quot;&quot;&#xa;} catch(e) { // catches a malformed URI&#xa;  console.error(e);&#xa;}" ID="ID_739754429" CREATED="1523206080329" MODIFIED="1523206084844"/>
 </node>
 </node>
 <node TEXT="encodeURIComponent()" ID="ID_347321201" CREATED="1521308726828" MODIFIED="1521311823240"/>
 </node>
 </node>
-<node TEXT="Fundamental objects" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
+<node TEXT="Fundamental objects" FOLDED="true" ID="ID_1123884866" CREATED="1521191000788" MODIFIED="1521191004893">
 <node TEXT="These are the fundamental, basic objects upon which all other objects are based. This includes objects that represent general objects, functions, and errors." ID="ID_586945238" CREATED="1521311890350" MODIFIED="1521311893034"/>
-<node TEXT="Object" ID="ID_17690293" CREATED="1521311912454" MODIFIED="1521311916216">
+<node TEXT="Object" FOLDED="true" ID="ID_17690293" CREATED="1521311912454" MODIFIED="1521311916216">
 <node TEXT="All objects in JavaScript are descended from Object" ID="ID_611981712" CREATED="1522703493794" MODIFIED="1522703500535"/>
 <node TEXT=" all objects inherit methods and properties from Object.prototype, although they may be overridden." ID="ID_1516151783" CREATED="1522703530076" MODIFIED="1522703536703"/>
 <node TEXT="Changes to the Object prototype object are propagated to all objects unless the properties and methods subject to those changes are overridden further along the prototype chain." ID="ID_900925247" CREATED="1522703616436" MODIFIED="1522703625431"/>
-<node TEXT="Properties" ID="ID_293176746" CREATED="1522703825277" MODIFIED="1522703838093">
-<node TEXT="Object.prototype" ID="ID_600156313" CREATED="1522704248088" MODIFIED="1522704271866">
+<node TEXT="Properties" FOLDED="true" ID="ID_293176746" CREATED="1522703825277" MODIFIED="1522703838093">
+<node TEXT="Object.prototype" FOLDED="true" ID="ID_600156313" CREATED="1522704248088" MODIFIED="1522704271866">
 <node TEXT="represents the Object prototype object." ID="ID_1563574300" CREATED="1522704297896" MODIFIED="1522704302730"/>
-<node TEXT="Properties" ID="ID_314233773" CREATED="1522704428124" MODIFIED="1522704434081">
-<node TEXT="Object.prototype.constructor" ID="ID_1673825972" CREATED="1522703879020" MODIFIED="1522703883701">
+<node TEXT="Properties" FOLDED="true" ID="ID_314233773" CREATED="1522704428124" MODIFIED="1522704434081">
+<node TEXT="Object.prototype.constructor" FOLDED="true" ID="ID_1673825972" CREATED="1522703879020" MODIFIED="1522703883701">
 <node TEXT="Specifies the function that creates an object&apos;s prototype." ID="ID_115705183" CREATED="1522703891674" MODIFIED="1522703896276"/>
 </node>
 <node TEXT="deprecated" FOLDED="true" ID="ID_153436250" CREATED="1522704726288" MODIFIED="1522704732839">
@@ -2998,7 +2998,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Methods" ID="ID_837900714" CREATED="1522704436651" MODIFIED="1522704448121">
+<node TEXT="Methods" FOLDED="true" ID="ID_837900714" CREATED="1522704436651" MODIFIED="1522704448121">
 <node TEXT="deprecated" FOLDED="true" ID="ID_1855156793" CREATED="1522704791917" MODIFIED="1522704798327">
 <node TEXT="Object.prototype.__defineGetter__()" FOLDED="true" ID="ID_1102495404" CREATED="1522704640861" MODIFIED="1522704645216">
 <node TEXT="Associates a function with a property that, when accessed, executes that function and returns its return value." ID="ID_155830250" CREATED="1522705093246" MODIFIED="1522705095388"/>
@@ -3022,29 +3022,29 @@
 <node TEXT="Adds a watchpoint to a property of the object." ID="ID_352224304" CREATED="1522705241396" MODIFIED="1522705269467"/>
 </node>
 </node>
-<node TEXT="Object.prototype.hasOwnProperty()" ID="ID_1873799913" CREATED="1522704956672" MODIFIED="1522704961614">
+<node TEXT="Object.prototype.hasOwnProperty()" FOLDED="true" ID="ID_1873799913" CREATED="1522704956672" MODIFIED="1522704961614">
 <node TEXT="Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain." ID="ID_1797096838" CREATED="1522705330437" MODIFIED="1522705335939"/>
 </node>
-<node TEXT="Object.prototype.isPrototypeOf()" ID="ID_1462990284" CREATED="1522704977071" MODIFIED="1522704981965">
+<node TEXT="Object.prototype.isPrototypeOf()" FOLDED="true" ID="ID_1462990284" CREATED="1522704977071" MODIFIED="1522704981965">
 <node TEXT="Returns a boolean indicating whether the object this method is called upon is in the prototype chain of the specified object." ID="ID_1284153431" CREATED="1522705360092" MODIFIED="1522705364243"/>
 </node>
-<node TEXT="Object.prototype.propertyIsEnumerable()" ID="ID_14097889" CREATED="1522704991429" MODIFIED="1522704996861">
+<node TEXT="Object.prototype.propertyIsEnumerable()" FOLDED="true" ID="ID_14097889" CREATED="1522704991429" MODIFIED="1522704996861">
 <node TEXT="Returns a boolean indicating if the internal ECMAScript [[Enumerable]] attribute is set." ID="ID_610591160" CREATED="1522705374746" MODIFIED="1522705379058"/>
 </node>
-<node TEXT="Object.prototype.toLocaleString()" ID="ID_1774261266" CREATED="1522705009333" MODIFIED="1522705014357">
+<node TEXT="Object.prototype.toLocaleString()" FOLDED="true" ID="ID_1774261266" CREATED="1522705009333" MODIFIED="1522705014357">
 <node TEXT="Calls toString()." ID="ID_997358645" CREATED="1522705386889" MODIFIED="1522705391274"/>
 </node>
-<node TEXT="Object.prototype.toString()" ID="ID_972466789" CREATED="1522705039889" MODIFIED="1522705044501">
+<node TEXT="Object.prototype.toString()" FOLDED="true" ID="ID_972466789" CREATED="1522705039889" MODIFIED="1522705044501">
 <node TEXT="Returns a string representation of the object." ID="ID_779114348" CREATED="1522705398690" MODIFIED="1522705414210"/>
 </node>
-<node TEXT="Object.prototype.valueOf()" ID="ID_1958965727" CREATED="1522705057380" MODIFIED="1522705073965">
+<node TEXT="Object.prototype.valueOf()" FOLDED="true" ID="ID_1958965727" CREATED="1522705057380" MODIFIED="1522705073965">
 <node TEXT="Returns the primitive value of the specified object." ID="ID_8799655" CREATED="1522705429948" MODIFIED="1522705435826"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="Methods" ID="ID_1361031550" CREATED="1522703840688" MODIFIED="1522703860013">
-<node TEXT="Object.assign()" ID="ID_120797924" CREATED="1522705466019" MODIFIED="1522705470858">
+<node TEXT="Methods" FOLDED="true" ID="ID_1361031550" CREATED="1522703840688" MODIFIED="1522703860013">
+<node TEXT="Object.assign()" FOLDED="true" ID="ID_120797924" CREATED="1522705466019" MODIFIED="1522705470858">
 <node TEXT="Copies the values of all enumerable own properties from one or more source objects to a target object." ID="ID_547057416" CREATED="1522705909872" MODIFIED="1522705916039"/>
 </node>
 <node TEXT="Object.create()" ID="ID_545310240" CREATED="1522705485516" MODIFIED="1522705490130"/>
@@ -3068,45 +3068,45 @@
 <node TEXT="Object.values()" ID="ID_871981620" CREATED="1522705861859" MODIFIED="1522705866383"/>
 </node>
 </node>
-<node TEXT="Function" ID="ID_1904735197" CREATED="1521311925574" MODIFIED="1521311934208">
+<node TEXT="Function" FOLDED="true" ID="ID_1904735197" CREATED="1521311925574" MODIFIED="1521311934208">
 <node TEXT="Every JavaScript function is actually a Function object." ID="ID_79488743" CREATED="1522629782156" MODIFIED="1522629785785"/>
 <node TEXT="Function instances inherit methods and properties from Function.prototype. As with all constructors, you can change the constructor&apos;s prototype object to make changes to all Function instances." ID="ID_1829988648" CREATED="1523122246196" MODIFIED="1523122253039"/>
 <node TEXT="Syntax" ID="ID_306580719" CREATED="1523121465082" MODIFIED="1523121471516"/>
-<node TEXT="properties" ID="ID_432371091" CREATED="1523121476210" MODIFIED="1523121485469">
-<node TEXT="Function.arguments" ID="ID_1724262393" CREATED="1523121557441" MODIFIED="1523121557441">
+<node TEXT="properties" FOLDED="true" ID="ID_432371091" CREATED="1523121476210" MODIFIED="1523121485469">
+<node TEXT="Function.arguments" FOLDED="true" ID="ID_1724262393" CREATED="1523121557441" MODIFIED="1523121557441">
 <node TEXT="" ID="ID_1998077749" CREATED="1523121584449" MODIFIED="1523121584449"/>
 </node>
-<node TEXT="Function.caller" ID="ID_801104360" CREATED="1523121588689" MODIFIED="1523121591604">
+<node TEXT="Function.caller" FOLDED="true" ID="ID_801104360" CREATED="1523121588689" MODIFIED="1523121591604">
 <node TEXT="Specifies the function that invoked the currently executing function." ID="ID_1354329281" CREATED="1523121728894" MODIFIED="1523121728894"/>
 </node>
-<node TEXT="Function.length" ID="ID_1708025282" CREATED="1523121604505" MODIFIED="1523121608171">
+<node TEXT="Function.length" FOLDED="true" ID="ID_1708025282" CREATED="1523121604505" MODIFIED="1523121608171">
 <node TEXT="Specifies the number of arguments expected by the function." ID="ID_262110163" CREATED="1523121683359" MODIFIED="1523121683359"/>
 </node>
-<node TEXT="Function.name" ID="ID_345220363" CREATED="1523121616105" MODIFIED="1523121618867">
+<node TEXT="Function.name" FOLDED="true" ID="ID_345220363" CREATED="1523121616105" MODIFIED="1523121618867">
 <node TEXT="The name of the function." ID="ID_1251129257" CREATED="1523121668134" MODIFIED="1523121668134"/>
 </node>
-<node TEXT="Function.displayName" ID="ID_128291486" CREATED="1523121628273" MODIFIED="1523121633243">
+<node TEXT="Function.displayName" FOLDED="true" ID="ID_128291486" CREATED="1523121628273" MODIFIED="1523121633243">
 <node TEXT="The display name of the function." ID="ID_1073462371" CREATED="1523121872889" MODIFIED="1523121872889"/>
 </node>
 <node TEXT="Function.prototype.constructor" ID="ID_1684599986" CREATED="1523121646865" MODIFIED="1523121649819"/>
 </node>
-<node TEXT="methods" ID="ID_1610828398" CREATED="1523121488234" MODIFIED="1523121495212">
-<node TEXT="Function.prototype.apply()" ID="ID_1344725949" CREATED="1523122030355" MODIFIED="1523122030355">
+<node TEXT="methods" FOLDED="true" ID="ID_1610828398" CREATED="1523121488234" MODIFIED="1523121495212">
+<node TEXT="Function.prototype.apply()" FOLDED="true" ID="ID_1344725949" CREATED="1523122030355" MODIFIED="1523122030355">
 <node TEXT="Calls a function and sets its this to the provided value, arguments can be passed as an Array object." ID="ID_1860297892" CREATED="1523122050918" MODIFIED="1523122054328"/>
 </node>
-<node TEXT="Function.prototype.bind()" ID="ID_1667332677" CREATED="1523122066645" MODIFIED="1523122069768">
+<node TEXT="Function.prototype.bind()" FOLDED="true" ID="ID_1667332677" CREATED="1523122066645" MODIFIED="1523122069768">
 <node TEXT="Creates a new function which, when called, has its this set to the provided value, with a given sequence of arguments preceding any provided when the new function was called." ID="ID_1613389781" CREATED="1523122092506" MODIFIED="1523122092506"/>
 </node>
-<node TEXT="Function.prototype.call()" ID="ID_1627700956" CREATED="1523122107837" MODIFIED="1523122110840">
+<node TEXT="Function.prototype.call()" FOLDED="true" ID="ID_1627700956" CREATED="1523122107837" MODIFIED="1523122110840">
 <node TEXT="Calls (executes) a function and sets its this to the provided value, arguments can be passed as they are." ID="ID_535176268" CREATED="1523122118900" MODIFIED="1523122118900"/>
 </node>
-<node TEXT="Function.prototype.isGenerator()" ID="ID_880704137" CREATED="1523122148101" MODIFIED="1523122151183">
+<node TEXT="Function.prototype.isGenerator()" FOLDED="true" ID="ID_880704137" CREATED="1523122148101" MODIFIED="1523122151183">
 <node TEXT="Returns true if the function is a generator; otherwise returns false." ID="ID_1930678463" CREATED="1523122161628" MODIFIED="1523122161628"/>
 </node>
-<node TEXT="Function.prototype.toSource()" ID="ID_116421834" CREATED="1523122181597" MODIFIED="1523122184647">
+<node TEXT="Function.prototype.toSource()" FOLDED="true" ID="ID_116421834" CREATED="1523122181597" MODIFIED="1523122184647">
 <node TEXT="Returns a string representing the source code of the function. Overrides the Object.prototype.toSource method." ID="ID_1921256495" CREATED="1523122191430" MODIFIED="1523122191430"/>
 </node>
-<node TEXT="Function.prototype.toString()" ID="ID_1691855533" CREATED="1523122206061" MODIFIED="1523122206061">
+<node TEXT="Function.prototype.toString()" FOLDED="true" ID="ID_1691855533" CREATED="1523122206061" MODIFIED="1523122206061">
 <node TEXT="Returns a string representing the source code of the function. Overrides the Object.prototype.toString method." ID="ID_924511163" CREATED="1523122215538" MODIFIED="1523122215538"/>
 </node>
 </node>
@@ -3122,7 +3122,7 @@
 <node TEXT="TypeError" ID="ID_938187249" CREATED="1521312082133" MODIFIED="1521312092334"/>
 <node TEXT="URIError" ID="ID_1144061054" CREATED="1521312101613" MODIFIED="1521312108222"/>
 </node>
-<node TEXT="Numbers and dates" ID="ID_1446852569" CREATED="1521191012764" MODIFIED="1521191017733">
+<node TEXT="Numbers and dates" FOLDED="true" ID="ID_1446852569" CREATED="1521191012764" MODIFIED="1521191017733">
 <node TEXT="These are the base objects representing numbers, dates, and mathematical calculations." ID="ID_496013201" CREATED="1521312305854" MODIFIED="1521312379158"/>
 <node TEXT="Number" ID="ID_1906808554" CREATED="1521312134852" MODIFIED="1521312137222"/>
 <node TEXT="Math" ID="ID_857904093" CREATED="1521312144612" MODIFIED="1521312146998"/>
@@ -3133,54 +3133,54 @@
 <node TEXT="String" ID="ID_1843826343" CREATED="1521312212204" MODIFIED="1521312213861"/>
 <node TEXT="RegExp" ID="ID_86727286" CREATED="1521312248996" MODIFIED="1521312252781"/>
 </node>
-<node TEXT="collections" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
-<node TEXT="Indexed collections" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
+<node TEXT="collections" FOLDED="true" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
+<node TEXT="Indexed collections" FOLDED="true" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
 <node TEXT="These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs." ID="ID_44580959" CREATED="1521312539650" MODIFIED="1521312544995"/>
-<node TEXT="Array" ID="ID_18798492" CREATED="1521312271147" MODIFIED="1521312274669">
+<node TEXT="Array" FOLDED="true" ID="ID_18798492" CREATED="1521312271147" MODIFIED="1521312274669">
 <node TEXT="The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects." ID="ID_1352549303" CREATED="1522140991855" MODIFIED="1522140994601"/>
 </node>
-<node TEXT="typed arrays" ID="ID_1225077270" CREATED="1523120710276" MODIFIED="1523120750250">
+<node TEXT="typed arrays" FOLDED="true" ID="ID_1225077270" CREATED="1523120710276" MODIFIED="1523120750250">
 <node TEXT="JavaScript typed arrays are array-like objects and provide a mechanism for accessing raw binary data." ID="ID_1369702157" CREATED="1523120771819" MODIFIED="1523120771819"/>
-<node TEXT="introduction" ID="ID_1315261815" CREATED="1523120823751" MODIFIED="1523120831001">
+<node TEXT="introduction" FOLDED="true" ID="ID_1315261815" CREATED="1523120823751" MODIFIED="1523120831001">
 <node TEXT="As you may already know, Array objects grow and shrink dynamically and can have any JavaScript value." ID="ID_94798129" CREATED="1523120849974" MODIFIED="1523120854386"/>
 <node TEXT="JavaScript engines perform optimizations so that these arrays are fast." ID="ID_551813439" CREATED="1523120869702" MODIFIED="1523120877969"/>
 <node TEXT="However, as web applications become more and more powerful, adding features such as audio and video manipulation, access to raw data using WebSockets, and so forth, it has become clear that there are times when it would be helpful for JavaScript code to be able to quickly and easily manipulate raw binary data in typed arrays." ID="ID_1369770587" CREATED="1523120922270" MODIFIED="1523120927825"/>
 <node TEXT="However, typed arrays are not to be confused with normal arrays, as calling Array.isArray() on a typed array returns false." ID="ID_361221795" CREATED="1523120965118" MODIFIED="1523120970568"/>
 <node TEXT="Moreover, not all methods available for normal arrays are supported by typed arrays (e.g. push and pop)." ID="ID_443700327" CREATED="1523120986741" MODIFIED="1523120989728"/>
 </node>
-<node TEXT="Int8Array" ID="ID_554670113" CREATED="1521312282475" MODIFIED="1521312286013">
+<node TEXT="Int8Array" FOLDED="true" ID="ID_554670113" CREATED="1521312282475" MODIFIED="1521312286013">
 <node TEXT="8-bit two&apos;s complement signed integer" ID="ID_980206242" CREATED="1521553115960" MODIFIED="1521553119658"/>
 <node TEXT="Value Range: -128 to 127" ID="ID_668320618" CREATED="1521553254125" MODIFIED="1521553339711"/>
 </node>
-<node TEXT="Uint8Array" ID="ID_444826977" CREATED="1521312423251" MODIFIED="1521312426476">
+<node TEXT="Uint8Array" FOLDED="true" ID="ID_444826977" CREATED="1521312423251" MODIFIED="1521312426476">
 <node TEXT="8-bit unsigned integer" ID="ID_1317978645" CREATED="1521553137276" MODIFIED="1521553141174"/>
 <node TEXT="Value Range: 0 to 255" ID="ID_1426783095" CREATED="1521553274565" MODIFIED="1521553351774"/>
 </node>
-<node TEXT="Uint8ClampedArray" ID="ID_1794746276" CREATED="1521312433306" MODIFIED="1521553160258">
+<node TEXT="Uint8ClampedArray" FOLDED="true" ID="ID_1794746276" CREATED="1521312433306" MODIFIED="1521553160258">
 <node TEXT="8-bit unsigned integer (clamped)" ID="ID_383003443" CREATED="1521553153244" MODIFIED="1521553163870"/>
 <node TEXT="Value Range: 0 to 255" ID="ID_1785463082" CREATED="1521553285661" MODIFIED="1521553364703"/>
 </node>
-<node TEXT="Int16Array" ID="ID_1860329996" CREATED="1521312444426" MODIFIED="1521312447724">
+<node TEXT="Int16Array" FOLDED="true" ID="ID_1860329996" CREATED="1521312444426" MODIFIED="1521312447724">
 <node TEXT="16-bit two&apos;s complement signed integer" ID="ID_1475001557" CREATED="1521553173236" MODIFIED="1521553177102"/>
 <node TEXT="Value Range: -32768 to 32767" ID="ID_233432411" CREATED="1521553293365" MODIFIED="1521553378905"/>
 </node>
-<node TEXT="Uint16Array" ID="ID_1176987205" CREATED="1521312455266" MODIFIED="1521312458668">
+<node TEXT="Uint16Array" FOLDED="true" ID="ID_1176987205" CREATED="1521312455266" MODIFIED="1521312458668">
 <node TEXT="16-bit unsigned integer" ID="ID_1978691448" CREATED="1521553183349" MODIFIED="1521553187830"/>
 <node TEXT="Value Range: 0 to 65535" ID="ID_1500995054" CREATED="1521553299053" MODIFIED="1521553412239"/>
 </node>
-<node TEXT="Int32Array" ID="ID_1600134451" CREATED="1521312467418" MODIFIED="1521312470788">
+<node TEXT="Int32Array" FOLDED="true" ID="ID_1600134451" CREATED="1521312467418" MODIFIED="1521312470788">
 <node TEXT="32-bit two&apos;s complement signed integer" ID="ID_994309598" CREATED="1521553197973" MODIFIED="1521553202310"/>
 <node TEXT="Value Range: -2147483648 to 2147483647" ID="ID_1822535937" CREATED="1521553304077" MODIFIED="1521553431159"/>
 </node>
-<node TEXT="Uint32Array" ID="ID_1968910032" CREATED="1521312478994" MODIFIED="1521312482412">
+<node TEXT="Uint32Array" FOLDED="true" ID="ID_1968910032" CREATED="1521312478994" MODIFIED="1521312482412">
 <node TEXT="32-bit unsigned integer" ID="ID_75474529" CREATED="1521553210589" MODIFIED="1521553215158"/>
 <node TEXT="Value Range: 0 to 4294967295" ID="ID_769949244" CREATED="1521553308997" MODIFIED="1521553450823"/>
 </node>
-<node TEXT="Float32Array" ID="ID_917704529" CREATED="1521312490162" MODIFIED="1521312493924">
+<node TEXT="Float32Array" FOLDED="true" ID="ID_917704529" CREATED="1521312490162" MODIFIED="1521312493924">
 <node TEXT="32-bit IEEE floating point number ( 7 significant digits e.g. 1.1234567)" ID="ID_207184009" CREATED="1521553223365" MODIFIED="1521553228150"/>
 <node TEXT="Value Range: 1.2x10-38 to 3.4x1038" ID="ID_1404223800" CREATED="1521553313837" MODIFIED="1521553472296"/>
 </node>
-<node TEXT="Float64Array" ID="ID_434490144" CREATED="1521312503786" MODIFIED="1521312507076">
+<node TEXT="Float64Array" FOLDED="true" ID="ID_434490144" CREATED="1521312503786" MODIFIED="1521312507076">
 <node TEXT="64-bit IEEE floating point number (16 significant digits e.g. 1.123...15)" ID="ID_520773705" CREATED="1521553236957" MODIFIED="1521553240694"/>
 <node TEXT="Value Range: 5.0x10-324 to 1.8x10308" ID="ID_1881512499" CREATED="1521553318981" MODIFIED="1521553494359"/>
 </node>
@@ -3211,7 +3211,7 @@
 <node TEXT="Generator" ID="ID_237737055" CREATED="1521312749088" MODIFIED="1521312752618"/>
 <node TEXT="GeneratorFunction" ID="ID_663968071" CREATED="1521312758672" MODIFIED="1521312762329"/>
 </node>
-<node TEXT="Reflection" ID="ID_1389853796" CREATED="1521191156148" MODIFIED="1521191166589">
+<node TEXT="Reflection" FOLDED="true" ID="ID_1389853796" CREATED="1521191156148" MODIFIED="1521191166589">
 <node TEXT="Reflect" ID="ID_1951759434" CREATED="1521312715768" MODIFIED="1521312717826"/>
 <node TEXT="Proxy" ID="ID_921464942" CREATED="1521312725192" MODIFIED="1521312729322"/>
 </node>
@@ -3382,14 +3382,14 @@
 </node>
 </node>
 <node TEXT="Frontend" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
-<node TEXT="Web APIs" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
+<node TEXT="Web APIs" FOLDED="true" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
 <node TEXT="Web Application Programming Interfaces (Web APIs) are used to perform a variety of tasks, such as manipulating the DOM, playing audio or video, or generating 3D graphics." ID="ID_1839416238" CREATED="1517822841024" MODIFIED="1517822864936"/>
-<node TEXT="Browser Object Model (BOM)" ID="ID_1893654671" CREATED="1522708994126" MODIFIED="1522709012930">
+<node TEXT="Browser Object Model (BOM)" FOLDED="true" ID="ID_1893654671" CREATED="1522708994126" MODIFIED="1522709012930">
 <node TEXT="The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser. Unlike the Document Object Model, there is no standard for implementation and no strict definition, so browser vendors are free to implement the BOM in any way they wish." ID="ID_77849223" CREATED="1522709063275" MODIFIED="1522709067929"/>
 <node TEXT="bom-index.png" ID="ID_1000644901" CREATED="1522709178078" MODIFIED="1522709178078">
 <hook URI="webdevelopment2_files/bom-index.png" SIZE="0.9049774" NAME="ExternalObject"/>
 </node>
-<node TEXT="window (Global/host object)" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1522710973988">
+<node TEXT="window (Global/host object)" FOLDED="true" ID="ID_404080933" CREATED="1518085043028" MODIFIED="1522710973988">
 <node TEXT="In a web browser, any code which the script doesn&apos;t specifically start up as a background task has a Window as its global object. This is the vast majority of JavaScript code on the Web." ID="ID_690447496" CREATED="1518085107077" MODIFIED="1518085107077"/>
 <node TEXT="The window object represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property." ID="ID_545673075" CREATED="1518094524949" MODIFIED="1518094524949"/>
 <node ID="ID_1193762135" CREATED="1520517980561" MODIFIED="1520518046917"><richcontent TYPE="NODE">
@@ -3406,8 +3406,8 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="properties" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1520729640707">
-<node TEXT="document" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1518688431758">
+<node TEXT="properties" FOLDED="true" ID="ID_1420436837" CREATED="1518183724326" MODIFIED="1520729640707">
+<node TEXT="document" FOLDED="true" ID="ID_152858823" CREATED="1515591331657" MODIFIED="1518688431758">
 <node TEXT="The Document interface represents any web page loaded in the browser and serves as an entry point into the web page&apos;s content, which is the DOM tree." ID="ID_309209743" CREATED="1518688425972" MODIFIED="1520729997993"/>
 <node TEXT="The DOM tree includes elements such as &lt;body&gt; and &lt;table&gt;, among many others. It provides functionality globally to the document, like how to obtain the page&apos;s URL and create new elements in the document." ID="ID_1721784397" CREATED="1520730004585" MODIFIED="1520730012113"/>
 <node TEXT="DOMTree" ID="ID_1575157735" CREATED="1518688537072" MODIFIED="1518688549086"/>
@@ -3421,7 +3421,7 @@
 <node TEXT="var imageCollection = document.images;" ID="ID_1893581891" CREATED="1519823963158" MODIFIED="1519823966039"/>
 </node>
 </node>
-<node TEXT="crypto" ID="ID_1661758857" CREATED="1518181455829" MODIFIED="1518181461481">
+<node TEXT="crypto" FOLDED="true" ID="ID_1661758857" CREATED="1518181455829" MODIFIED="1518181461481">
 <node TEXT="The Window.crypto read-only property returns the Crypto object associated to the global object. This object allows web pages access to certain cryptographic related services. a cryptographic source of random numbers for a non-cryptographic source use math.random()" ID="ID_1077315428" CREATED="1518182742783" MODIFIED="1518183203028"/>
 <node TEXT="var cryptoObj = window.crypto || window.msCrypto; // for IE 11" ID="ID_1683961405" CREATED="1518182771522" MODIFIED="1518182771522"/>
 <node TEXT="getRandomValues(typedArray)" FOLDED="true" ID="ID_412669943" CREATED="1518182894763" MODIFIED="1518182894763">
@@ -3439,7 +3439,7 @@
 <hook URI="webdevelopment2_files/png_1598505959378295120.png" SIZE="0.8130081" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="navigator" ID="ID_743829260" CREATED="1520527919978" MODIFIED="1520527930326">
+<node TEXT="navigator" FOLDED="true" ID="ID_743829260" CREATED="1520527919978" MODIFIED="1520527930326">
 <node TEXT="The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities." ID="ID_126759162" CREATED="1520528118503" MODIFIED="1520528130179"/>
 <node TEXT="A Navigator object can be retrieved using the read-only window.navigator property." ID="ID_1126770568" CREATED="1520528141983" MODIFIED="1520528154489"/>
 <node TEXT="properties" ID="ID_1284873333" CREATED="1520528162064" MODIFIED="1520528168929"/>
@@ -3472,56 +3472,56 @@
 <node TEXT="A certified application is a low-level application performing critical operations in an operating system like Firefox OS. Less privileged application interact with these applications using Web Activities." ID="ID_660472391" CREATED="1521815427118" MODIFIED="1521815431119"/>
 </node>
 </node>
-<node TEXT="Document Object Model (DOM)" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167">
+<node TEXT="Document Object Model (DOM)" FOLDED="true" ID="ID_1792566380" CREATED="1517823241167" MODIFIED="1517823241167">
 <node TEXT="The DOM is an API that allows access to and modification of the current document. It allows manipulation of document Node and Element. HTML, XML and SVG have extended it to manipulate their specific elements." ID="ID_400476465" CREATED="1521814879418" MODIFIED="1521814884461"/>
-<node TEXT="DOM Attribute Object" ID="ID_1852722778" CREATED="1522748245960" MODIFIED="1522748254095">
+<node TEXT="DOM Attribute Object" FOLDED="true" ID="ID_1852722778" CREATED="1522748245960" MODIFIED="1522748254095">
 <node TEXT="Attr Object" ID="ID_352948765" CREATED="1522748281535" MODIFIED="1522748288022"/>
 <node TEXT="NamedNodeMap Object" ID="ID_1962905300" CREATED="1522748297116" MODIFIED="1522748302270"/>
 <node TEXT="Properties" FOLDED="true" ID="ID_1060728101" CREATED="1522748308877" MODIFIED="1522748316702">
-<node TEXT="attr.isId" ID="ID_1175949193" CREATED="1522748358567" MODIFIED="1522748358567">
+<node TEXT="attr.isId" FOLDED="true" ID="ID_1175949193" CREATED="1522748358567" MODIFIED="1522748358567">
 <node TEXT="Returns true if the attribute is of type Id, otherwise it returns false" ID="ID_378414918" CREATED="1522748525399" MODIFIED="1522748525399"/>
 <node TEXT="This property is read-only." ID="ID_1302265870" CREATED="1522748675820" MODIFIED="1522748681076"/>
 <node TEXT="/* Find out if an attribute is the element&apos;s ID attribute or not */&#xa;&#xa;var x = document.getElementById(&quot;demo&quot;).attributes[0].isId;" ID="ID_1735139984" CREATED="1522748708432" MODIFIED="1522748765261"/>
 </node>
-<node TEXT="attr.name" ID="ID_437573175" CREATED="1522748370075" MODIFIED="1522748373966">
+<node TEXT="attr.name" FOLDED="true" ID="ID_437573175" CREATED="1522748370075" MODIFIED="1522748373966">
 <node TEXT="Returns the name of an attribute" ID="ID_162729574" CREATED="1522748534564" MODIFIED="1522748534564"/>
 <node TEXT="This property is read-only." ID="ID_661443165" CREATED="1522748799610" MODIFIED="1522748804572"/>
 <node TEXT="/* Get the name of an attribute */&#xa;&#xa;var x = document.getElementsByTagName(&quot;BUTTON&quot;)[0].attributes[0].name;" ID="ID_1740984164" CREATED="1522748860838" MODIFIED="1522748889034"/>
 </node>
-<node TEXT="attr.value" ID="ID_614793731" CREATED="1522748383255" MODIFIED="1522748386966">
+<node TEXT="attr.value" FOLDED="true" ID="ID_614793731" CREATED="1522748383255" MODIFIED="1522748386966">
 <node TEXT="Sets or returns the value of the attribute" ID="ID_1509952981" CREATED="1522748544644" MODIFIED="1522748544644"/>
 <node TEXT="/* Get the value of the &lt;button&gt; element&apos;s first attribute: */&#xa;&#xa;var x = document.getElementsByTagName(&quot;BUTTON&quot;)[0].attributes[0].value;" ID="ID_1597274746" CREATED="1522748950587" MODIFIED="1522749009113"/>
 </node>
-<node TEXT="attr.specified" ID="ID_835006831" CREATED="1522748396200" MODIFIED="1522748430675">
+<node TEXT="attr.specified" FOLDED="true" ID="ID_835006831" CREATED="1522748396200" MODIFIED="1522748430675">
 <node TEXT="Returns true if the attribute has been specified, otherwise it returns false" ID="ID_264336340" CREATED="1522748566363" MODIFIED="1522748566363"/>
 <node TEXT="Returns true also if the attribute has been created but not been attached to an element yet." ID="ID_1921793418" CREATED="1522749102862" MODIFIED="1522749102862"/>
 <node TEXT="/* Find out if an attribute has been specified or not: */&#xa;&#xa;var x = document.getElementById(&quot;demo&quot;).attributes[0].specified;" ID="ID_1029633612" CREATED="1522749151893" MODIFIED="1522749181240"/>
 </node>
 </node>
 <node TEXT="Methods" FOLDED="true" ID="ID_1987714074" CREATED="1522748319616" MODIFIED="1522748329078">
-<node TEXT="nodemap.getNamedItem()" ID="ID_264370816" CREATED="1522748431895" MODIFIED="1522748436149">
+<node TEXT="nodemap.getNamedItem()" FOLDED="true" ID="ID_264370816" CREATED="1522748431895" MODIFIED="1522748436149">
 <node TEXT="Returns a specified attribute node from a NamedNodeMap" ID="ID_868185726" CREATED="1522748584713" MODIFIED="1522748584713"/>
 <node TEXT="/* Get the value of the onclick attribute of a button element */&#xa;&#xa;var btn = document.getElementsByTagName(&quot;BUTTON&quot;)[0];&#xa;btn.attributes.getNamedItem(&quot;onclick&quot;).value;" ID="ID_1281934123" CREATED="1522749539762" MODIFIED="1522749577533"/>
 </node>
-<node TEXT="nodemap.item()" ID="ID_848750011" CREATED="1522748443445" MODIFIED="1522748454443">
+<node TEXT="nodemap.item()" FOLDED="true" ID="ID_848750011" CREATED="1522748443445" MODIFIED="1522748454443">
 <node TEXT="Returns the attribute node at a specified index in a NamedNodeMap" ID="ID_1360744462" CREATED="1522749304711" MODIFIED="1522749308495"/>
 <node TEXT="/* Get the name of the first attribute of a &lt;button&gt; element: */&#xa;&#xa;var x = document.getElementsByTagName(&quot;BUTTON&quot;)[0].attributes.item(0).nodeName;" ID="ID_1640380352" CREATED="1522749620938" MODIFIED="1522749653621"/>
 </node>
-<node TEXT="nodemap.length" ID="ID_476972354" CREATED="1522748455609" MODIFIED="1522748459773">
+<node TEXT="nodemap.length" FOLDED="true" ID="ID_476972354" CREATED="1522748455609" MODIFIED="1522748459773">
 <node TEXT="  Returns the number of attribute nodes in a NamedNodeMap" ID="ID_1239014294" CREATED="1522749318492" MODIFIED="1522749323807"/>
 <node TEXT="/* Get the number of attributes of a &lt;button&gt; element */&#xa;&#xa;var x = document.getElementsByTagName(&quot;BUTTON&quot;)[0].attributes.length;" ID="ID_1846409929" CREATED="1522749722424" MODIFIED="1522749858411"/>
 </node>
-<node TEXT="nodemap.removeNamedItem()" ID="ID_1516196026" CREATED="1522748468057" MODIFIED="1522748472701">
+<node TEXT="nodemap.removeNamedItem()" FOLDED="true" ID="ID_1516196026" CREATED="1522748468057" MODIFIED="1522748472701">
 <node TEXT="Removes a specified attribute node" ID="ID_846250311" CREATED="1522749332555" MODIFIED="1522749339342"/>
 <node TEXT="/* Remove the type attribute from an input button: */&#xa;&#xa;var btn = document.getElementsByTagName(&quot;INPUT&quot;)[0];&#xa;btn.attributes.removeNamedItem(&quot;type&quot;);" ID="ID_793831929" CREATED="1522750047084" MODIFIED="1522750108474"/>
 </node>
-<node TEXT="nodemap.setNamedItem()" ID="ID_1727916742" CREATED="1522748480304" MODIFIED="1522748484597">
+<node TEXT="nodemap.setNamedItem()" FOLDED="true" ID="ID_1727916742" CREATED="1522748480304" MODIFIED="1522748484597">
 <node TEXT="Sets the specified attribute node (by name)" ID="ID_856975674" CREATED="1522749412733" MODIFIED="1522749417822"/>
 <node TEXT="/* Set a H1&apos;s class attribute: */&#xa;&#xa;var h = document.getElementsByTagName(&quot;H1&quot;)[0];&#xa;var typ = document.createAttribute(&quot;class&quot;);&#xa;typ.value = &quot;democlass&quot;;&#xa;h.attributes.setNamedItem(typ);" ID="ID_1704266036" CREATED="1522750181001" MODIFIED="1522750309841"/>
 </node>
 </node>
 </node>
-<node TEXT="DOM Element Object" ID="ID_107031089" CREATED="1522750984798" MODIFIED="1522751009594">
+<node TEXT="DOM Element Object" FOLDED="true" ID="ID_107031089" CREATED="1522750984798" MODIFIED="1522751009594">
 <node TEXT="introduction" FOLDED="true" ID="ID_1502809209" CREATED="1522752519512" MODIFIED="1522752527536">
 <node TEXT="In the HTML DOM, the Element object represents an HTML element." ID="ID_1313597068" CREATED="1522751011273" MODIFIED="1522751015659"/>
 <node TEXT="Element objects can have child nodes of type element nodes, text nodes, or comment nodes." ID="ID_47801274" CREATED="1522751076772" MODIFIED="1522751081242"/>
@@ -3529,20 +3529,20 @@
 <node TEXT="Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements." ID="ID_1706814041" CREATED="1519823638387" MODIFIED="1519823641701"/>
 <node TEXT="More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy." ID="ID_1009801161" CREATED="1519823669452" MODIFIED="1519823671957"/>
 </node>
-<node TEXT="properties" ID="ID_1553576202" CREATED="1520891507982" MODIFIED="1522753295988">
+<node TEXT="properties" FOLDED="true" ID="ID_1553576202" CREATED="1520891507982" MODIFIED="1522753295988">
 <node TEXT="Inherits properties from its parent interface, Node, and by extension that interface&apos;s parent, EventTarget. It implements the properties of ParentNode, ChildNode, NonDocumentTypeChildNode, and Animatable." ID="ID_899310690" CREATED="1522754274277" MODIFIED="1522754279020"/>
 <node TEXT="accessKey" ID="ID_129442942" CREATED="1522752967305" MODIFIED="1522752973373"/>
-<node TEXT=".attributes" ID="ID_1976552739" CREATED="1520891546798" MODIFIED="1520891549300">
+<node TEXT=".attributes" FOLDED="true" ID="ID_1976552739" CREATED="1520891546798" MODIFIED="1520891549300">
 <node TEXT="Returns a NamedNodeMap object containing the assigned attributes of the corresponding HTML element." ID="ID_345515982" CREATED="1520891562053" MODIFIED="1520891564828"/>
 <node TEXT="read only" ID="ID_528976857" CREATED="1520891577453" MODIFIED="1520891585444"/>
 </node>
 <node TEXT="childElementCount" ID="ID_115304427" CREATED="1522753022803" MODIFIED="1522753027684"/>
 <node TEXT="children" ID="ID_1441541508" CREATED="1522753061827" MODIFIED="1522753066740"/>
-<node TEXT=".classList" ID="ID_1624098214" CREATED="1520891618485" MODIFIED="1520891621652">
+<node TEXT=".classList" FOLDED="true" ID="ID_1624098214" CREATED="1520891618485" MODIFIED="1520891621652">
 <node TEXT="Returns a DOMTokenList containing the list of class attributes." ID="ID_1686994267" CREATED="1520891695301" MODIFIED="1520891698795"/>
 <node TEXT="read only" ID="ID_133524943" CREATED="1520891773804" MODIFIED="1520891781314"/>
 </node>
-<node TEXT=".className" ID="ID_1803983539" CREATED="1520891632885" MODIFIED="1520891637556">
+<node TEXT=".className" FOLDED="true" ID="ID_1803983539" CREATED="1520891632885" MODIFIED="1520891637556">
 <node TEXT="Is a DOMString representing the class of the element." ID="ID_1240230459" CREATED="1520891745772" MODIFIED="1520891748811"/>
 </node>
 <node TEXT="clientHeight" ID="ID_768720831" CREATED="1522753092413" MODIFIED="1522753095340"/>
@@ -3616,12 +3616,12 @@
 <node TEXT="Element.setPointerCapture()" ID="ID_615356857" CREATED="1522755218258" MODIFIED="1522755221717"/>
 </node>
 </node>
-<node TEXT="properties" ID="ID_1615733263" CREATED="1522755318334" MODIFIED="1522755325276">
+<node TEXT="properties" FOLDED="true" ID="ID_1615733263" CREATED="1522755318334" MODIFIED="1522755325276">
 <node TEXT="This interface also inherits from the Node and EventTarget interfaces." ID="ID_802425142" CREATED="1522755569263" MODIFIED="1522755616602"/>
 </node>
 <node TEXT="methods" ID="ID_131225570" CREATED="1522755330096" MODIFIED="1522755337812"/>
 </node>
-<node TEXT="Device APIs" ID="ID_1826537008" CREATED="1521814761690" MODIFIED="1521814773403">
+<node TEXT="Device APIs" FOLDED="true" ID="ID_1826537008" CREATED="1521814761690" MODIFIED="1521814773403">
 <node TEXT="This set of APIs allows access to various hardware features available to Web pages and applications." ID="ID_448957946" CREATED="1521814906154" MODIFIED="1521814912316"/>
 <node TEXT=" Ambient Light Sensor API" ID="ID_490340727" CREATED="1521814939907" MODIFIED="1521814946137"/>
 <node TEXT="Battery Status API" ID="ID_1483764625" CREATED="1521814960299" MODIFIED="1521814963748"/>
@@ -3632,18 +3632,18 @@
 <node TEXT="Screen Orientation API" ID="ID_1557356085" CREATED="1521815050787" MODIFIED="1521815057325"/>
 <node TEXT=" Vibration API" ID="ID_1684469783" CREATED="1521815105404" MODIFIED="1521815110134"/>
 </node>
-<node TEXT="Communication APIs" ID="ID_719246936" CREATED="1521814774089" MODIFIED="1521814784867">
+<node TEXT="Communication APIs" FOLDED="true" ID="ID_719246936" CREATED="1521814774089" MODIFIED="1521814784867">
 <node TEXT="These APIs let Web pages and applications communicate with other pages or devices." ID="ID_1947591787" CREATED="1521815124804" MODIFIED="1521815129493"/>
 <node TEXT=" Network Information API" ID="ID_667816301" CREATED="1521815143572" MODIFIED="1521815147853"/>
 <node TEXT="Web Notifications" ID="ID_1580676630" CREATED="1521815163180" MODIFIED="1521815165925"/>
 <node TEXT="Simple Push API" ID="ID_839800433" CREATED="1521815176788" MODIFIED="1521815182166"/>
 </node>
-<node TEXT="Data management APIs" ID="ID_1170619429" CREATED="1521814785433" MODIFIED="1521814804890">
+<node TEXT="Data management APIs" FOLDED="true" ID="ID_1170619429" CREATED="1521814785433" MODIFIED="1521814804890">
 <node TEXT="User data can be stored and managed using this set of APIs." ID="ID_829491973" CREATED="1521815203381" MODIFIED="1521815207911"/>
 <node TEXT=" FileHandle API" ID="ID_928444851" CREATED="1521815220061" MODIFIED="1521815224222"/>
 <node TEXT="IndexedDB" ID="ID_1369300434" CREATED="1521815232764" MODIFIED="1521815236821"/>
 </node>
-<node TEXT="Privileged APIs" ID="ID_1192514583" CREATED="1521814832962" MODIFIED="1521814838060">
+<node TEXT="Privileged APIs" FOLDED="true" ID="ID_1192514583" CREATED="1521814832962" MODIFIED="1521814838060">
 <node TEXT="A privileged application is an installed app that has been given specific rights by the user." ID="ID_935799373" CREATED="1521815260676" MODIFIED="1521815266486"/>
 <node TEXT=" TCP Socket API" ID="ID_957822147" CREATED="1521815285037" MODIFIED="1521815288102"/>
 <node TEXT="Contacts API" ID="ID_1439028015" CREATED="1521815316110" MODIFIED="1521815320685"/>
@@ -3651,7 +3651,7 @@
 <node TEXT="Browser API" ID="ID_28444162" CREATED="1521815351149" MODIFIED="1521815355685"/>
 <node TEXT="Camera API" ID="ID_376051487" CREATED="1521815372278" MODIFIED="1521815376559"/>
 </node>
-<node TEXT="Certified APIs" ID="ID_1979311447" CREATED="1521814841762" MODIFIED="1521814856267">
+<node TEXT="Certified APIs" FOLDED="true" ID="ID_1979311447" CREATED="1521814841762" MODIFIED="1521814856267">
 <node TEXT="Bluetooth API" ID="ID_811757563" CREATED="1521815466894" MODIFIED="1521815472312"/>
 <node TEXT=" Mobile Connection API" ID="ID_1332094932" CREATED="1521815484430" MODIFIED="1521815489175"/>
 <node TEXT="Network Stats API" ID="ID_905410952" CREATED="1521815500775" MODIFIED="1521815505671"/>
@@ -3698,29 +3698,29 @@
 </node>
 </node>
 <node TEXT="Web Workers API" ID="ID_1639014560" CREATED="1518085185446" MODIFIED="1518085185446"/>
-<node TEXT="Console Api" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1520975991523">
+<node TEXT="Console Api" FOLDED="true" ID="ID_1730583249" CREATED="1519030422797" MODIFIED="1520975991523">
 <node TEXT="The Console object provides access to the browser&apos;s debugging console (e.g. the Web Console in Firefox). The specifics of how it works varies from browser to browser, but there is a de facto set of features that are typically provided." ID="ID_1019177181" CREATED="1519030454565" MODIFIED="1519030460464"/>
 <node TEXT="The Console object can be accessed from any global object. Window on browsing scopes and WorkerGlobalScope as specific variants in workers via the property console. It&apos;s exposed as Window.console, and can be referenced as simply console." ID="ID_1149192939" CREATED="1520976183480" MODIFIED="1520976191681"/>
-<node TEXT="Methodes" ID="ID_318229738" CREATED="1520976394039" MODIFIED="1520976412472">
-<node TEXT="console.log()" ID="ID_400424110" CREATED="1520976427182" MODIFIED="1520976438248">
+<node TEXT="Methodes" FOLDED="true" ID="ID_318229738" CREATED="1520976394039" MODIFIED="1520976412472">
+<node TEXT="console.log()" FOLDED="true" ID="ID_400424110" CREATED="1520976427182" MODIFIED="1520976438248">
 <node TEXT="regular" FOLDED="true" ID="ID_1078102953" CREATED="1520976447846" MODIFIED="1520976453816">
 <node TEXT="console.log(&apos;hello&apos;);" ID="ID_271379426" CREATED="1520976483486" MODIFIED="1520976498839"/>
 </node>
 <node TEXT="interpolated" FOLDED="true" ID="ID_1567067051" CREATED="1520976456174" MODIFIED="1520976464384">
 <node TEXT="console.log(&apos;This is %s a string!&apos; , &apos;shit&apos;)" ID="ID_1746417854" CREATED="1520976539277" MODIFIED="1520976585271"/>
 </node>
-<node TEXT="styled" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
+<node TEXT="styled" FOLDED="true" ID="ID_1533990117" CREATED="1520976466854" MODIFIED="1520976475056">
 <node TEXT="console.log(&apos;%c I am a pretty print!&apos; &apos;font-size:50px; background:red;&apos;)" ID="ID_1488628482" CREATED="1520976590677" MODIFIED="1520976657350"/>
 </node>
 </node>
 </node>
 </node>
-<node TEXT="Selectors API" ID="ID_1368576807" CREATED="1520889550702" MODIFIED="1520889555504">
+<node TEXT="Selectors API" FOLDED="true" ID="ID_1368576807" CREATED="1520889550702" MODIFIED="1520889555504">
 <node TEXT="The Selectors API provides methods that make it quick and easy to retrieve Element nodes from the DOM by matching against a set of selectors." ID="ID_1097846325" CREATED="1520890154583" MODIFIED="1520890166583"/>
-<node TEXT="querySelector" ID="ID_1117896581" CREATED="1520890180823" MODIFIED="1520890184414">
+<node TEXT="querySelector" FOLDED="true" ID="ID_1117896581" CREATED="1520890180823" MODIFIED="1520890184414">
 <node TEXT="Returns the first matching Element node within the node&apos;s subtree. If no matching node is found, null is returned." ID="ID_1147142998" CREATED="1520890227135" MODIFIED="1520890231566"/>
 </node>
-<node TEXT="querySelectorAll" ID="ID_164638681" CREATED="1520890198295" MODIFIED="1520890245357">
+<node TEXT="querySelectorAll" FOLDED="true" ID="ID_164638681" CREATED="1520890198295" MODIFIED="1520890245357">
 <node TEXT="Returns a NodeList containing all matching Element nodes within the node&apos;s subtree, or an empty NodeList if no matches are found." ID="ID_1581498986" CREATED="1520890257430" MODIFIED="1520890262477"/>
 </node>
 <node TEXT="Element" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525"/>
@@ -3915,18 +3915,18 @@
 <node TEXT="var product = {name:&quot;apple&quot;,stock:0}&#xa;&#xa;if(product.stock &lt; 0){&#xa;    var element = &lt;h1&gt;The product named {product.name} is not in stock&lt;/h1&gt;&#xa;&#xa;} else{&#xa;    var element = &lt;h1&gt;The product named {product.name} and has {product.stock} units in stock&lt;/h1&gt;&#xa;&#xa;}&#xa;&#xa;ReactDOM.render( element, document.getElementById(&quot;root&quot;) )" ID="ID_912041482" CREATED="1523208818062" MODIFIED="1523208949153"/>
 </node>
 </node>
-<node TEXT="React Components" FOLDED="true" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1515324690463">
+<node TEXT="React Components" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1515324690463">
 <node TEXT="A React Component is an independent reusable component that returns an React Element based on its properties and state." ID="ID_694180055" CREATED="1515324663282" MODIFIED="1515327169097"/>
-<node TEXT="There are two types of React Components:" FOLDED="true" ID="ID_991084746" CREATED="1515324678253" MODIFIED="1515324678253">
-<node TEXT="Functional Components" FOLDED="true" ID="ID_735915423" CREATED="1515324693268" MODIFIED="1515327712565">
+<node TEXT="There are two types of React Components:" ID="ID_991084746" CREATED="1515324678253" MODIFIED="1515324678253">
+<node TEXT="Functional Components" ID="ID_735915423" CREATED="1515324693268" MODIFIED="1515327712565">
 <node TEXT="Functional Components are just functions that output React Elements. By convention, the first letter of the function name should be capitalized." ID="ID_1812711183" CREATED="1515324830742" MODIFIED="1515324830742"/>
-<node TEXT="example:" FOLDED="true" ID="ID_135996708" CREATED="1515324865072" MODIFIED="1523212705310">
+<node TEXT="example:" ID="ID_135996708" CREATED="1515324865072" MODIFIED="1523212705310">
 <node TEXT="function HelloWorld() {&#xa;    return &lt;h1&gt;Hello World!&lt;/h1&gt;&#xa;}" ID="ID_343678881" CREATED="1515324876845" MODIFIED="1523212467960"/>
 </node>
 <node TEXT="You can use the React Component in JSX by creating an HTML tag with the same name as the React Component: In our ReactDOM.render function, we can put a tag&#xa;with the functional component&apos;s name as the tag name." FOLDED="true" ID="ID_686953824" CREATED="1515324907866" MODIFIED="1515327563110">
 <node TEXT="var element = &lt;HelloWorld/&gt;&#xa;&#xa;ReactDOM.render(&#xa;    &lt;HelloWorld/&gt;,&#xa;    document.getElementById(&quot;root&quot;)&#xa;)" ID="ID_60322008" CREATED="1515324972689" MODIFIED="1523212656215"/>
 </node>
-<node TEXT="Adding Properties to Functional Components" FOLDED="true" ID="ID_787645284" CREATED="1515325035933" MODIFIED="1515327275689">
+<node TEXT="Adding Properties to Functional Components" ID="ID_787645284" CREATED="1515325035933" MODIFIED="1515327275689">
 <node TEXT="The first argument to a Functional Component is an object that contains the component&apos;s properties." FOLDED="true" ID="ID_1513484994" CREATED="1515325213899" MODIFIED="1515325213899">
 <node TEXT="function HelloWorld(props){&#xa;    return &lt;h1&gt;Message: {props.message}&lt;/h1&gt;&#xa;}" ID="ID_1885059403" CREATED="1523209037461" MODIFIED="1523209044943"/>
 </node>
@@ -4253,7 +4253,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="You should almost never have to install react-router directly. That package provides the core routing components and functions for React Router applications." ID="ID_392726263" CREATED="1526846773142" MODIFIED="1526846782274"/>
@@ -4738,6 +4737,26 @@
 </richcontent>
 </node>
 </node>
+<node TEXT="npx" ID="ID_255850540" CREATED="1527380370260" MODIFIED="1527380435308">
+<node TEXT="introduction" ID="ID_1250719753" CREATED="1527380703953" MODIFIED="1527380711997">
+<node TEXT="an npm package runner" ID="ID_575878268" CREATED="1527381010487" MODIFIED="1527381014979"/>
+<node TEXT="npx is a tool intended to help round out the experience of using packages from the npm registry&#x200a;" ID="ID_974076085" CREATED="1527380437627" MODIFIED="1527380441464"/>
+<node TEXT="the same way npm makes it super easy to install and manage dependencies hosted on the npm registry, npx makes it easy to use CLI tools and other executables hosted on the registry." ID="ID_103103549" CREATED="1527380473483" MODIFIED="1527380563318"/>
+<node TEXT="For the past couple of years, the npm ecosystem has been moving more and more towards installing tools as project-local devDependencies, instead of requiring users to install them globally." ID="ID_480715148" CREATED="1527380589954" MODIFIED="1527380597166"/>
+</node>
+<node TEXT="examples" ID="ID_952059230" CREATED="1527381057167" MODIFIED="1527381065867">
+<node TEXT="Using locally-installed tools without npm run-script" ID="ID_441098265" CREATED="1527381076695" MODIFIED="1527381081306">
+<node TEXT="npm i -D cowsay" ID="ID_91521984" CREATED="1527381095438" MODIFIED="1527381112858"/>
+<node TEXT="npx cowsay hello" ID="ID_781772789" CREATED="1527381132486" MODIFIED="1527381155314"/>
+</node>
+<node TEXT="Executing one-off commands" ID="ID_1439137229" CREATED="1527381197566" MODIFIED="1527381202449">
+<node TEXT="want to try some CLI tool, but it&#x2019;s annoying to have to install a global just to run it once?" ID="ID_14505840" CREATED="1527381222398" MODIFIED="1527381226410"/>
+<node TEXT="Calling npx &lt;command&gt; when &lt;command&gt; isn&#x2019;t already in your $PATH will automatically install a package with that name from the npm registry for you, and invoke it." ID="ID_1391619091" CREATED="1527381243341" MODIFIED="1527381247449"/>
+<node TEXT="When it&#x2019;s done, the installed package won&#x2019;t be anywhere in your globals, so you won&#x2019;t have to worry about pollution in the long-term." ID="ID_1120656982" CREATED="1527381289749" MODIFIED="1527381293314"/>
+<node TEXT="npx create-react-app my-cool-new-app" ID="ID_287760963" CREATED="1527381297613" MODIFIED="1527381334193"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Versioning" FOLDED="true" ID="ID_76464107" CREATED="1516550625595" MODIFIED="1516550625595">
 <node TEXT="Basics" FOLDED="true" ID="ID_1022357353" CREATED="1516550861609" MODIFIED="1516550867305">
@@ -5098,9 +5117,9 @@
 <node TEXT="grunt" ID="ID_1183811378" CREATED="1522616448127" MODIFIED="1522616453605"/>
 </node>
 <node TEXT="Building/Bundling" ID="ID_1833698167" CREATED="1522616261001" MODIFIED="1526835518055">
-<node TEXT="webpack" FOLDED="true" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
+<node TEXT="webpack" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
 <node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
-<node TEXT="Concepts" FOLDED="true" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
+<node TEXT="Concepts" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
 <node TEXT="It is incredibly configurable, but to get started you only need to understand four Core Concepts:" ID="ID_1111641199" CREATED="1517911354399" MODIFIED="1517911354399"/>
 <node TEXT="Entry" FOLDED="true" ID="ID_1230224102" CREATED="1517911359961" MODIFIED="1517911368602">
 <node TEXT="An entry point indicates which module webpack should use to begin building out its internal dependency graph. After entering the entry point, webpack will figure out which other modules and libraries that entry point depends on (directly and indirectly)." ID="ID_1925499690" CREATED="1517911502668" MODIFIED="1517911502668"/>
@@ -5143,6 +5162,12 @@
 </node>
 </node>
 <node TEXT="plugins" ID="ID_1175957489" CREATED="1517913811284" MODIFIED="1517913820826"/>
+<node TEXT="extentions" ID="ID_1635273834" CREATED="1527384122562" MODIFIED="1527384130509">
+<node TEXT="webpack-dev-server" ID="ID_1757415126" CREATED="1527384153450" MODIFIED="1527384164565">
+<node TEXT="type in  the browser http://localhost:8080/webpack-dev-server for config" ID="ID_1055143965" CREATED="1527384240593" MODIFIED="1527384262172"/>
+<node TEXT="you also see a list of modules that where hotreloaded" ID="ID_1360941429" CREATED="1527425965758" MODIFIED="1527439857682"/>
+</node>
+</node>
 </node>
 <node TEXT="Rollup" ID="ID_889638306" CREATED="1522616331224" MODIFIED="1522616338862"/>
 <node TEXT="Parcel" ID="ID_1940225577" CREATED="1522616341048" MODIFIED="1522616346718"/>
@@ -5439,6 +5464,8 @@
 <node TEXT="https://developers.googleblog.com/2018/05/open-sourcing-seurat.html" ID="ID_137374846" CREATED="1525853616509" MODIFIED="1525853616509" LINK="https://developers.googleblog.com/2018/05/open-sourcing-seurat.html"/>
 <node TEXT="https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd" ID="ID_1111892822" CREATED="1526847467022" MODIFIED="1526847467022" LINK="https://medium.com/@pshrmn/a-little-bit-of-history-f245306f48dd"/>
 <node TEXT="https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf" ID="ID_467878204" CREATED="1526847482356" MODIFIED="1526847482356" LINK="https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf"/>
+<node TEXT="http://www.marcusoft.net/2015/08/npm-scripting-configs-and-arguments.html" ID="ID_1913976050" CREATED="1527380091243" MODIFIED="1527380091243" LINK="http://www.marcusoft.net/2015/08/npm-scripting-configs-and-arguments.html"/>
+<node TEXT="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b" ID="ID_1529981111" CREATED="1527381482773" MODIFIED="1527381482773" LINK="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b"/>
 </node>
 <node TEXT="Operating System" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
@@ -5771,7 +5798,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Buildprocess" FOLDED="true" ID="ID_884984155" CREATED="1516874696613" MODIFIED="1517301554349">
+<node TEXT="Buildprocess" ID="ID_884984155" CREATED="1516874696613" MODIFIED="1517301554349">
 <node TEXT="Docker" FOLDED="true" ID="ID_908985180" CREATED="1516874721215" MODIFIED="1516874726017">
 <node TEXT="Docker is an open source project supported by a commercial entity of the same name that makes it super-easy to run an application process inside a relatively isolated environment called a container. Unlike a virtual machine (VM), which has its own kernel, a container is dependent on the host operating system&#x2019;s kernel." ID="ID_791082804" CREATED="1516874840928" MODIFIED="1516874840928"/>
 </node>
