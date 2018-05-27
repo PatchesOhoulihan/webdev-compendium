@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<!--Base Package -->
+
+			<!--Everything dom related -->
+			<script crossorigin src="https://unpkg.com/react@latest/umd/react.production.min.js"></script>
+			<script crossorigin src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script>
+
+			<!-- Transpiles javascript -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+	</head>
+
+	<style>
+		button {
+			display:block;
+			margin: 20px;
+		}
+	</style>
+
+	<script type="text/babel">
+
+		//Component Properties are Immutible
+		//Functional Components don't have a state and state Object.
+		//functional components receive one argument, props.
+		const FuncButton = function (props) {
+			return <button>{props.label} Go</button>;
+			//After transpiling jsx the compiler see something like this: React.createElement('button', null, 'Go');
+		};
+
+		class ClassButton extends React.Component {
+			constructor(props) {
+				super(props);
+				this.state = { counter: 0 };
+			}
+
+			//Instance property, in this case there is no need vor methode binding.
+			handleClick = () => {
+				//setState is a async function in this case we are writing in reading counter
+				//so there is a possible racecondition. in this form below.
+/* 			this.setState({
+					counter: this.state.counter + 1,
+				}); */
+				//To evade racecondition use:
+				this.setState((prevState) => {
+					return {
+						counter: prevState.counter + 1,
+					}
+				})
+			}
+
+			render() {
+				return (
+					<button onClick={this.handleClick}>{this.state.counter}</button>
+				);
+			}
+		}
+
+		ReactDOM.render(
+			<div>
+				<FuncButton label="Ready set "/>
+				<ClassButton />
+			</div>,
+				document.getElementById("root")
+		);
+
+	</script>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
