@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -5984,6 +5984,9 @@
 <node TEXT="css" ID="ID_1902075329" CREATED="1520801707690" MODIFIED="1520801713477">
 <node TEXT="http://flukeout.github.io/" ID="ID_1797280075" CREATED="1520802152522" MODIFIED="1520802152522" LINK="http://flukeout.github.io/"/>
 <node TEXT="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties" ID="ID_249840774" CREATED="1521388484923" MODIFIED="1521388484923" LINK="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties"/>
+</node>
+<node TEXT="react" ID="ID_1407994584" CREATED="1528665958249" MODIFIED="1528665963546">
+<node TEXT="http://react-toolbox.io/#/" ID="ID_540705661" CREATED="1528665968582" MODIFIED="1528665968582" LINK="http://react-toolbox.io/#/"/>
 </node>
 </node>
 <node TEXT="plattform" ID="ID_369395078" CREATED="1520801915048" MODIFIED="1520801922483">
