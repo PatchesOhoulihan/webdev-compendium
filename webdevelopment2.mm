@@ -2585,6 +2585,18 @@
 </node>
 <node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
+<node TEXT="Introduction" ID="ID_1370505634" CREATED="1529181284956" MODIFIED="1529181293032">
+<node TEXT="TC39 Stages" ID="ID_1503146558" CREATED="1529181296540" MODIFIED="1529181308544">
+<node TEXT="The TC39 is the standards committee for JavaScript, so the TC39 committee decides what new features are added to JavaScript." ID="ID_779281811" CREATED="1529181352938" MODIFIED="1529181352938"/>
+<node TEXT="They categorize proposals for features into four stages." ID="ID_92877477" CREATED="1529181371906" MODIFIED="1529181371906">
+<node TEXT="0 is just an idea," ID="ID_1322861998" CREATED="1529181383937" MODIFIED="1529181561574"/>
+<node TEXT="1 is a proposal," ID="ID_1625938632" CREATED="1529181406403" MODIFIED="1529181557029"/>
+<node TEXT="2 is a draft, which contains an initial speck," ID="ID_424133701" CREATED="1529181427869" MODIFIED="1529181546318"/>
+<node TEXT="3 is a candidate, which means that there&apos;s a complete spec and initial browser implementation, so by the time you hit stage three it&apos;s really something quite solid" ID="ID_832299239" CREATED="1529181454779" MODIFIED="1529181542405"/>
+<node TEXT="4 means that it&apos;s finished, and it will be added to the next yearly release." ID="ID_1635219606" CREATED="1529181495747" MODIFIED="1529181533199"/>
+</node>
+</node>
+</node>
 <node TEXT="language-core" FOLDED="true" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
 <node TEXT="datatypes" ID="ID_1729515640" CREATED="1521128790175" MODIFIED="1521128803370">
 <node TEXT="Dynamic typing" ID="ID_1054094230" CREATED="1521128837021" MODIFIED="1521128840773">
@@ -4652,21 +4664,21 @@
 </node>
 <node TEXT="Atomic Design" ID="ID_535826344" CREATED="1529140580150" MODIFIED="1529140596009">
 <node TEXT="Atomic design is an approach to component design that was popularized by Brad Frost. Describes components with scientific terms." ID="ID_1175621170" CREATED="1529149373733" MODIFIED="1529150637255"/>
-<node TEXT="introduction" ID="ID_1481591635" CREATED="1529147550306" MODIFIED="1529147560373">
-<node TEXT="What is Atomic Design?" ID="ID_1254152651" CREATED="1529147821960" MODIFIED="1529147851651">
-<node TEXT="It&apos;s a language for describing components written at multiple layers of abstraction." ID="ID_369276396" CREATED="1529147951423" MODIFIED="1529147956970">
+<node TEXT="introduction" FOLDED="true" ID="ID_1481591635" CREATED="1529147550306" MODIFIED="1529147560373">
+<node TEXT="What is Atomic Design?" FOLDED="true" ID="ID_1254152651" CREATED="1529147821960" MODIFIED="1529147851651">
+<node TEXT="It&apos;s a language for describing components written at multiple layers of abstraction." FOLDED="true" ID="ID_369276396" CREATED="1529147951423" MODIFIED="1529147956970">
 <node TEXT="Atoms are the smallest, simplest components. They provide the basic building blocks for larger components." ID="ID_57070719" CREATED="1529149734554" MODIFIED="1529149756598"/>
 <node TEXT="Molecules group two or more atoms together into a larger unit." ID="ID_229049918" CREATED="1529149775946" MODIFIED="1529149783701"/>
 <node TEXT="Organisms are groups of molecules functioning together." ID="ID_1804006738" CREATED="1529149801010" MODIFIED="1529149809773"/>
 <node TEXT="Templates put the components in a layout." ID="ID_915536360" CREATED="1529149827089" MODIFIED="1529149834061"/>
 <node TEXT=" Pages populate templates with real content." ID="ID_1737639022" CREATED="1529149849921" MODIFIED="1529149876717"/>
 </node>
-<node TEXT="Example: Today&apos;s automobiles are composed of literally hundreds of reusable components utilized across multiple models and over many years." ID="ID_1935934213" CREATED="1529148167853" MODIFIED="1529148366327">
+<node TEXT="Example: Today&apos;s automobiles are composed of literally hundreds of reusable components utilized across multiple models and over many years." FOLDED="true" ID="ID_1935934213" CREATED="1529148167853" MODIFIED="1529148366327">
 <node TEXT=" Consider a pile of car parts." ID="ID_586829021" CREATED="1529148187317" MODIFIED="1529148191320"/>
-<node TEXT=" The spring is the atom. It&apos;s the smallest unit. You can&apos;t break the spring down any further, but the spring combined with the top hat and mount creates a full shock absorber." ID="ID_790347058" CREATED="1529148218101" MODIFIED="1529148222096">
+<node TEXT=" The spring is the atom. It&apos;s the smallest unit. You can&apos;t break the spring down any further, but the spring combined with the top hat and mount creates a full shock absorber." FOLDED="true" ID="ID_790347058" CREATED="1529148218101" MODIFIED="1529148222096">
 <node TEXT="In atomic design terminology you could call this assembly a molecule. It&apos;s a higher level component." ID="ID_1291622639" CREATED="1529148258197" MODIFIED="1529148258197"/>
 </node>
-<node TEXT="In atomic design terminology you could call this assembly a molecule. It&apos;s a higher level component." ID="ID_1318063998" CREATED="1529148256645" MODIFIED="1529148263176">
+<node TEXT="In atomic design terminology you could call this assembly a molecule. It&apos;s a higher level component." FOLDED="true" ID="ID_1318063998" CREATED="1529148256645" MODIFIED="1529148263176">
 <node TEXT="Connect the shock absorber with a trailing arm and hub and you have a basic steering assembly." ID="ID_1824456691" CREATED="1529148310811" MODIFIED="1529148310811"/>
 </node>
 <node TEXT="Connect the shock absorber with a trailing arm and hub and you have a basic steering assembly." ID="ID_956245306" CREATED="1529148309300" MODIFIED="1529148315664"/>
@@ -4674,8 +4686,8 @@
 </node>
 <node TEXT="Components allow us to stand on the shoulders of giants. See, not long ago we used to think of the entire page as a concern. With server-side development each page would require a full page load, as you navigated from page to page." ID="ID_643057515" CREATED="1529148513443" MODIFIED="1529148580870"/>
 <node TEXT="This caused us to embrace page oriented patterns, like Model, View, Controller." ID="ID_1880926493" CREATED="1529149991648" MODIFIED="1529149997308"/>
-<node TEXT="Atomic Design vs. MVC" ID="ID_1506701553" CREATED="1529149903769" MODIFIED="1529149958452">
-<node TEXT="With the popular MVC pattern we&apos;d declare three separate files." ID="ID_448415538" CREATED="1529148655202" MODIFIED="1529148659725">
+<node TEXT="Atomic Design vs. MVC" FOLDED="true" ID="ID_1506701553" CREATED="1529149903769" MODIFIED="1529149958452">
+<node TEXT="With the popular MVC pattern we&apos;d declare three separate files." FOLDED="true" ID="ID_448415538" CREATED="1529148655202" MODIFIED="1529148659725">
 <node TEXT="The Model would declare the data for the View," ID="ID_988133124" CREATED="1529148676058" MODIFIED="1529148690781"/>
 <node TEXT="The View would declare the markup for our View and the HTML, in the case of the web page" ID="ID_376175601" CREATED="1529148717473" MODIFIED="1529148728525"/>
 <node TEXT="The Controller would contain the logic that ties all this together and responds to events." ID="ID_1276084817" CREATED="1529148761129" MODIFIED="1529148778252"/>
@@ -4685,12 +4697,12 @@
 <node TEXT=" With React we&apos;ve learned to think of the page as a set of nested components." ID="ID_818865405" CREATED="1529148860792" MODIFIED="1529148864148"/>
 <node TEXT="So atomic design encourages you to think about your UI as a hierarchy of components. Atoms are the building blocks, molecules are a group of atoms, and organisms are a group of molecules." ID="ID_376350959" CREATED="1529149132390" MODIFIED="1529149135914"/>
 <node TEXT="As you move higher up, obviously difficulty goes up and reuse goes down. It&apos;s easier to make a reusable atom than it is to make a reusable organism. Why? Because the surface area is so much greater on an organism." ID="ID_107141990" CREATED="1529149320045" MODIFIED="1529149346568"/>
-<node TEXT="Atomic Design = modular Design" ID="ID_1491183905" CREATED="1529150023864" MODIFIED="1529150047779">
+<node TEXT="Atomic Design = modular Design" FOLDED="true" ID="ID_1491183905" CREATED="1529150023864" MODIFIED="1529150047779">
 <node TEXT="You might look at this and think, hey, this is simply modular design, and yeah, that&apos;s a popular way to describe this pattern too" ID="ID_406347599" CREATED="1529149493572" MODIFIED="1529149498351"/>
 <node TEXT=" Atomic design simply uses chemistry terms to avoid inventing new jargon for the levels and to make the hierarchy obvious, but the term modular design is popular in other industries, and generally conveys the same philosophy" ID="ID_874679134" CREATED="1529149565595" MODIFIED="1529149570471"/>
 </node>
 </node>
-<node TEXT="Why Atomic Design?" ID="ID_196776295" CREATED="1529147852919" MODIFIED="1529147868891">
+<node TEXT="Why Atomic Design?" FOLDED="true" ID="ID_196776295" CREATED="1529147852919" MODIFIED="1529147868891">
 <node TEXT="Atomic design is helpful because you consider the project at multiple levels of granularity." ID="ID_689462436" CREATED="1529150190711" MODIFIED="1529150193450"/>
 <node TEXT=" You can dig down deep and focus on a single atom or you can step back and view it at a high level to see how all the atoms, molecules, and organisms come together to form a useful whole." ID="ID_1100407947" CREATED="1529150232783" MODIFIED="1529150235714"/>
 <node TEXT=" Atomic design encourages you to design a component library that contains multiple layers." ID="ID_19930687" CREATED="1529150270662" MODIFIED="1529150274506"/>
@@ -4701,8 +4713,194 @@
 </node>
 </node>
 <node TEXT="There are five distinct levels in atomic design" ID="ID_221760775" CREATED="1529147791664" MODIFIED="1529147795947">
-<node TEXT="Atoms" ID="ID_51777376" CREATED="1529141186958" MODIFIED="1529141194418">
+<node TEXT="Atomic-design-overview.png" ID="ID_1991803539" CREATED="1529174569323" MODIFIED="1529174569323">
+<hook URI="webdevelopment2_files/Atomic-design-overview.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="Atoms" FOLDED="true" ID="ID_51777376" CREATED="1529141186958" MODIFIED="1529141194418">
+<node TEXT="Introduction" FOLDED="true" ID="ID_132987721" CREATED="1529174323061" MODIFIED="1529174331697">
 <node TEXT="Atoms are the smallest, simplest components. They provide the basic building blocks for larger components." ID="ID_1129444034" CREATED="1529147982214" MODIFIED="1529147983930"/>
+<node TEXT="Atoms are useful when they&apos;re composed together to create bigger, richer, more significant components." ID="ID_1649919308" CREATED="1529174213902" MODIFIED="1529174222546"/>
+<node TEXT="You can&apos;t break an atom down any farther. It&apos;s the basic building block for creating larger components, and since they&apos;re foundational atoms often demonstrate and encapsulate your application&apos;s basic styles." ID="ID_167558539" CREATED="1529174285750" MODIFIED="1529174290465"/>
+<node TEXT="The HTML specification includes many atoms like the button that you see here, but as you&apos;ll see, you&apos;re free to wrap HTML elements and enhance their behavior." ID="ID_1814296734" CREATED="1529174304102" MODIFIED="1529174315081"/>
+</node>
+<node TEXT="Key Decisions when designing Atoms" FOLDED="true" ID="ID_82895992" CREATED="1529174358589" MODIFIED="1529174848549">
+<node TEXT="Wrap HTML Primitives?" FOLDED="true" ID="ID_483813521" CREATED="1529174862234" MODIFIED="1529174866301">
+<node TEXT="When you begin creating atoms you need to decide how low level to go." ID="ID_949083710" CREATED="1529174903097" MODIFIED="1529174905741"/>
+<node TEXT="Does it make sense to wrap HTML primitives as your atoms?" ID="ID_1311359349" CREATED="1529174951073" MODIFIED="1529174990103"/>
+<node TEXT=" Yes it is, and here&apos;s why." FOLDED="true" ID="ID_1687170817" CREATED="1529174991257" MODIFIED="1529175208586">
+<node TEXT="HTML primitives lack a number of built-in options that you&apos;re likely to have in a real application." ID="ID_791659484" CREATED="1529175016189" MODIFIED="1529175016189"/>
+<node TEXT="Potential HTML Primitive Enhancements" FOLDED="true" ID="ID_149811055" CREATED="1529175025056" MODIFIED="1529175048804">
+<node TEXT="Integrated label" FOLDED="true" ID="ID_500603852" CREATED="1529175060136" MODIFIED="1529175068468">
+<node TEXT="You can integrate a label that properly applies the necessary classes and sets a for attribute on the element that corresponds to the inputs ID element." ID="ID_521899031" CREATED="1529175282215" MODIFIED="1529175287458"/>
+</node>
+<node TEXT="Unique element ID" FOLDED="true" ID="ID_1454604035" CREATED="1529175069656" MODIFIED="1529175082092">
+<node TEXT="You can generate a globally unique ID for the input by creating a centralized function that just increments a number when called, and then map that label and input together using the htmlFor attribute." ID="ID_1157759473" CREATED="1529175365774" MODIFIED="1529175369730"/>
+</node>
+<node TEXT="Required field marker" FOLDED="true" ID="ID_1876298197" CREATED="1529175082920" MODIFIED="1529175099187">
+<node TEXT="You can enforce a consistent visual indicator for a required field, such as a red asterisk to the right of the label." ID="ID_146030875" CREATED="1529175399974" MODIFIED="1529175404881"/>
+</node>
+<node TEXT="Default value / placeholder" FOLDED="true" ID="ID_1387323022" CREATED="1529175100896" MODIFIED="1529175115619">
+<node TEXT="You can set a placeholder value by convention using the label value, and you can also set a default value consistently on dropdowns." ID="ID_1240427359" CREATED="1529175435342" MODIFIED="1529175440385"/>
+</node>
+<node TEXT="Horizontal and vertical layout" FOLDED="true" ID="ID_525982208" CREATED="1529175117416" MODIFIED="1529175157603">
+<node TEXT=" You can enforce either horizontal or vertical layout for each field or make selecting either as simple as setting a prop." ID="ID_631095127" CREATED="1529175466621" MODIFIED="1529175473081"/>
+</node>
+<node TEXT="Error messaging" FOLDED="true" ID="ID_189689762" CREATED="1529175158592" MODIFIED="1529175168619">
+<node TEXT="You can integrate error messaging below or beside the component, depending on the selected layout." ID="ID_1227543026" CREATED="1529175501733" MODIFIED="1529175501733"/>
+</node>
+<node TEXT="Touched, dirty meta data" FOLDED="true" ID="ID_840963255" CREATED="1529175169647" MODIFIED="1529175183099">
+<node TEXT=" You can build in metadata about whether it&apos;s been touched or is dirty, so that parent components can check for any dirty child components." ID="ID_1156514232" CREATED="1529175535693" MODIFIED="1529175539736"/>
+</node>
+<node TEXT="Polyfill older browsers" FOLDED="true" ID="ID_1538504741" CREATED="1529175551461" MODIFIED="1529175566368">
+<node TEXT="You can even include polyfills for older browsers that lack support for native features like input types of number." ID="ID_269750874" CREATED="1529175612413" MODIFIED="1529175612413"/>
+</node>
+<node TEXT="All these items are manual, redundant, and error-prone actions without reusable components, so it&apos;s worth taking the time to create these abstractions to codify standards." ID="ID_35277833" CREATED="1529175685188" MODIFIED="1529175690271"/>
+</node>
+<node TEXT="Every opinion that you encapsulate in a component is one less decision that your team has to make, and one more feature that you can manage in a single spot." ID="ID_283094345" CREATED="1529175755779" MODIFIED="1529175760015"/>
+<node TEXT="HTML&apos;s basic elements aren&apos;t even named well, so you can consider abstracting them with more useful names." FOLDED="true" ID="ID_61483985" CREATED="1529175820403" MODIFIED="1529175825070">
+<node TEXT="You could wrap input with a type of text and call it TextInput. You could do the same with a checkbox and call it Checkbox." ID="ID_1263210623" CREATED="1529175847645" MODIFIED="1529175847645"/>
+<node TEXT="You could wrap a select and call it what it is, a Dropdown." ID="ID_1783695500" CREATED="1529175858299" MODIFIED="1529175864511"/>
+<node TEXT="You could even wrap a set of radio buttons into a radio button list or you could go even farther and create a single component that handles both radio button lists and dropdowns called PickOneFromList." ID="ID_112405314" CREATED="1529175935482" MODIFIED="1529175939854"/>
+</node>
+</node>
+</node>
+<node TEXT="Folder Structure" FOLDED="true" ID="ID_535375462" CREATED="1529176005354" MODIFIED="1529176009445">
+<node TEXT="What Belongs in the components folder ?" FOLDED="true" ID="ID_1751222903" CREATED="1529177069634" MODIFIED="1529177199461">
+<node TEXT="Every Component in an extra folder?" ID="ID_158051952" CREATED="1529178281858" MODIFIED="1529178301749"/>
+<node TEXT="Styles?" ID="ID_1707106026" CREATED="1529178307449" MODIFIED="1529178319117"/>
+<node TEXT="Tests?" ID="ID_1448692724" CREATED="1529178320561" MODIFIED="1529178328733"/>
+<node TEXT="index.js for shorter imports and default themes ?" ID="ID_1512433942" CREATED="1529178329889" MODIFIED="1529178379956"/>
+<node TEXT="Docs" ID="ID_1961235194" CREATED="1529178398201" MODIFIED="1529178406316"/>
+</node>
+<node TEXT=" Let&apos;s review the folder structures for the five most popular React component libraries." FOLDED="true" ID="ID_725915684" CREATED="1529177332840" MODIFIED="1529177336787">
+<node TEXT="React Bootstrap" FOLDED="true" ID="ID_151401202" CREATED="1529177436288" MODIFIED="1529177445515">
+<node TEXT="Has the simplest setup." ID="ID_1422281981" CREATED="1529177559327" MODIFIED="1529177597250"/>
+<node ID="ID_699545330" CREATED="1529177606104" MODIFIED="1529177606104"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      All components are placed together in a single folder, and other concerns are handled elsewhere.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="overview" FOLDED="true" ID="ID_1424621571" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components:" ID="ID_636007970" CREATED="1529178584991" MODIFIED="1529178669594"/>
+<node TEXT="Style: NO" ID="ID_1853533149" CREATED="1529178602935" MODIFIED="1529178805369"/>
+<node TEXT="Tests: NO" ID="ID_1406530680" CREATED="1529178625359" MODIFIED="1529178811705"/>
+<node TEXT="Theme: NO" ID="ID_1046190546" CREATED="1529178634519" MODIFIED="1529178819682"/>
+<node TEXT="Docs: NO" ID="ID_1516502216" CREATED="1529178641183" MODIFIED="1529178831833"/>
+<node TEXT="Demo: NO" ID="ID_1946350376" CREATED="1529178647111" MODIFIED="1529178839281"/>
+<node TEXT="index.js: NO" ID="ID_876336249" CREATED="1529178653191" MODIFIED="1529178845713"/>
+</node>
+</node>
+<node TEXT="Blueprint" FOLDED="true" ID="ID_357343307" CREATED="1529177455463" MODIFIED="1529177462988">
+<node TEXT="Blueprint places styles that are written in SASS alongside the component." ID="ID_216188936" CREATED="1529177695748" MODIFIED="1529177695748"/>
+<node TEXT="overview" FOLDED="true" ID="ID_36595395" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components: YES" ID="ID_413951957" CREATED="1529178584991" MODIFIED="1529178873537"/>
+<node TEXT="Style: YES" ID="ID_1533651997" CREATED="1529178602935" MODIFIED="1529178882593"/>
+<node TEXT="Tests: NO" ID="ID_1789282162" CREATED="1529178625359" MODIFIED="1529178890577"/>
+<node TEXT="Theme: NO" ID="ID_1019676952" CREATED="1529178634519" MODIFIED="1529178895561"/>
+<node TEXT="Docs: NO" ID="ID_214984670" CREATED="1529178641183" MODIFIED="1529178904993"/>
+<node TEXT="Demo: NO" ID="ID_110719293" CREATED="1529178647111" MODIFIED="1529178911191"/>
+<node TEXT="index.js: NO" ID="ID_1639833554" CREATED="1529178653191" MODIFIED="1529178923137"/>
+</node>
+</node>
+<node TEXT="Material-UI" FOLDED="true" ID="ID_1311385564" CREATED="1529177463943" MODIFIED="1529177479443">
+<node TEXT=" Material-UI uses inline style, so there&apos;s no separate style file, but Material-UI does place the components tests in the same folder as the component." ID="ID_195761538" CREATED="1529177727581" MODIFIED="1529177730073"/>
+<node TEXT="Material-UI also provides an index.js file to keep component import short." ID="ID_848874166" CREATED="1529177778892" MODIFIED="1529177778892"/>
+<node TEXT="overview" FOLDED="true" ID="ID_990453234" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components: YES" ID="ID_1330704445" CREATED="1529178584991" MODIFIED="1529178953993"/>
+<node TEXT="Style: Inline" ID="ID_823833814" CREATED="1529178602935" MODIFIED="1529178994648"/>
+<node TEXT="Tests: YES" ID="ID_617989748" CREATED="1529178625359" MODIFIED="1529179004256"/>
+<node TEXT="Theme: NO" ID="ID_1719416019" CREATED="1529178634519" MODIFIED="1529179012056"/>
+<node TEXT="Docs: NO" ID="ID_1501905224" CREATED="1529178641183" MODIFIED="1529179023264"/>
+<node TEXT="Demo: NO" ID="ID_735959570" CREATED="1529178647111" MODIFIED="1529179029120"/>
+<node TEXT="index.js: YES" ID="ID_47233438" CREATED="1529178653191" MODIFIED="1529179039800"/>
+</node>
+</node>
+<node TEXT="React Toolbox" FOLDED="true" ID="ID_865205935" CREATED="1529177480599" MODIFIED="1529177488859">
+<node TEXT="React Toolbox also declares an index.ts file, which provides enhanced autocompletion support for editors." ID="ID_1539047867" CREATED="1529177817600" MODIFIED="1529177817600"/>
+<node TEXT="This is a handy convention to consider, and you don&apos;t have to write your component in TypeScript for your users to enjoy this benefit." ID="ID_1556485614" CREATED="1529177873217" MODIFIED="1529177873217"/>
+<node TEXT="React Toolbox also places docs alongside this component, as well as a default theme that can be overridden." ID="ID_37891646" CREATED="1529177900639" MODIFIED="1529177900639"/>
+<node TEXT="overview" FOLDED="true" ID="ID_37045489" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components: YES" ID="ID_205191253" CREATED="1529178584991" MODIFIED="1529179057800"/>
+<node TEXT="Style: YES" ID="ID_1076104286" CREATED="1529178602935" MODIFIED="1529179067823"/>
+<node TEXT="Tests: NO" ID="ID_1653498925" CREATED="1529178625359" MODIFIED="1529179076631"/>
+<node TEXT="Theme: YES" ID="ID_923219091" CREATED="1529178634519" MODIFIED="1529179092743"/>
+<node TEXT="Docs: YES" ID="ID_682526275" CREATED="1529178641183" MODIFIED="1529179104103"/>
+<node TEXT="Demo: NO" ID="ID_94917855" CREATED="1529178647111" MODIFIED="1529179117599"/>
+<node TEXT="index.js: YES" ID="ID_372409619" CREATED="1529178653191" MODIFIED="1529179137031"/>
+</node>
+</node>
+<node TEXT="Ant Design" FOLDED="true" ID="ID_1199932647" CREATED="1529177491567" MODIFIED="1529177499122">
+<node TEXT="Ant Design is the one library on this list that uses TypeScript instead of plan JavaScript" ID="ID_1175662891" CREATED="1529177933874" MODIFIED="1529177933874"/>
+<node TEXT="The Ant Design team places tests and demos in a subfolder for each component." ID="ID_991550556" CREATED="1529177953816" MODIFIED="1529177953816"/>
+<node TEXT="They also keep docs and markdown format within a markdown folder. It&apos;s easier to see the commonalities and differences in a table." ID="ID_414927005" CREATED="1529178013395" MODIFIED="1529178013395"/>
+<node TEXT="overview" FOLDED="true" ID="ID_1813732394" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components: YES" ID="ID_781855625" CREATED="1529178584991" MODIFIED="1529179156175"/>
+<node TEXT="Style: YES" ID="ID_779917905" CREATED="1529178602935" MODIFIED="1529179163895"/>
+<node TEXT="Tests: YES" ID="ID_188173725" CREATED="1529178625359" MODIFIED="1529179212270"/>
+<node TEXT="Theme: NO" ID="ID_97856606" CREATED="1529178634519" MODIFIED="1529179150487"/>
+<node TEXT="Docs: YES" ID="ID_1498093040" CREATED="1529178641183" MODIFIED="1529179216807"/>
+<node TEXT="Demo: YES" ID="ID_14490089" CREATED="1529178647111" MODIFIED="1529179224294"/>
+<node TEXT="index.js: YES" ID="ID_1055413848" CREATED="1529178653191" MODIFIED="1529179233654"/>
+</node>
+</node>
+</node>
+<node TEXT="Verdict" FOLDED="true" ID="ID_1777940915" CREATED="1529178029083" MODIFIED="1529178034807">
+<node TEXT="Four of the top five most popular React component libraries place each component in their own folder." ID="ID_1887660003" CREATED="1529178053005" MODIFIED="1529178053005"/>
+<node TEXT="Most projects also place the component styles in the components folder" ID="ID_1662827555" CREATED="1529178085611" MODIFIED="1529178085611"/>
+<node TEXT=" Ant and Material-UI place tests alongside the component." ID="ID_348239516" CREATED="1529178108467" MODIFIED="1529178112550"/>
+<node TEXT="Only React Toolbox declares a separate default theme in a dedicated file." ID="ID_1869074181" CREATED="1529178152575" MODIFIED="1529181184880">
+<font ITALIC="false"/>
+</node>
+<node TEXT="React Toolbox and Ant Design both place documentation in the component folder." ID="ID_468666355" CREATED="1529178168440" MODIFIED="1529178168440"/>
+</node>
+</node>
+</node>
+<node TEXT="Design Tips" FOLDED="true" ID="ID_983821651" CREATED="1529174381890" MODIFIED="1529174392344">
+<node TEXT="1: Honor the Native API" FOLDED="true" ID="ID_397414011" CREATED="1529176164392" MODIFIED="1529176169100">
+<node TEXT="When you&apos;re augmenting a DOM element with some extra behavior it&apos;s important to honor the DOM API for the element that you&apos;re wrapping." ID="ID_392377970" CREATED="1529179758874" MODIFIED="1529179758874"/>
+<node TEXT="Input elements have a value attribute. They have an onChange handler, they accept maxLength." ID="ID_487604852" CREATED="1529179799430" MODIFIED="1529179799430"/>
+<node TEXT="When you&apos;re wrapping an element strive to use the same prop names as the underlying element." ID="ID_370399707" CREATED="1529179853946" MODIFIED="1529179853946"/>
+<node TEXT="This makes your component feel instantly familiar, so our wrapper should honor the same API," ID="ID_265104446" CREATED="1529179899907" MODIFIED="1529179899907"/>
+<node TEXT="const passwordInput({value, maxLength}) =&gt; {&#xa;   &lt;input&#xa;      type=&quot;password&quot;&#xa;      value={value}&#xa;      maxLength={maxLength} /&gt;&#xa;}" ID="ID_342953689" CREATED="1529179991334" MODIFIED="1529180120624">
+<font ITALIC="true"/>
+</node>
+<node TEXT="and as a quick side note, for array props we should avoid needless suffixes like list. Instead, use plurals. Plurals are concise, but they clearly convey that you&apos;re working with an array." ID="ID_1788043404" CREATED="1529179961591" MODIFIED="1529179961591"/>
+</node>
+<node TEXT="2: Pass Props via Spread" FOLDED="true" ID="ID_1884154553" CREATED="1529180186257" MODIFIED="1529180186257">
+<node TEXT="allow passing additional props down via the spread operator." ID="ID_872387079" CREATED="1529180208252" MODIFIED="1529180208252"/>
+<node TEXT="The spread operator was introduced in ES6, and consists of three dots that proceed the object whose properties you&apos;d like to spread." ID="ID_525211064" CREATED="1529180368219" MODIFIED="1529180373534"/>
+<node TEXT="When declaring reusable components that wrap HTML primitives, such as inputs, it&apos;s often helpful to pass any other props specified down to the primitive." ID="ID_549884997" CREATED="1529180238103" MODIFIED="1529180238103"/>
+<node TEXT="return (&#xa;   &lt;div&gt;&#xa;      &lt;input type=&quot;password&quot; {...this.props}&gt;&lt;/input&gt;&#xa;)" ID="ID_635391403" CREATED="1529180385419" MODIFIED="1529180456797">
+<font ITALIC="true"/>
+</node>
+<node TEXT="WATCH OUT. React makes sure that the props being attached are valid for the HTML element, so if you blindly spread all props passed in to a child component you may receive a warning about attaching invalid props." ID="ID_1316922216" CREATED="1529180522266" MODIFIED="1529180537661"/>
+</node>
+<node TEXT="3: Use Spread with Destructuring" FOLDED="true" ID="ID_1967235658" CREATED="1529180632210" MODIFIED="1529180632210">
+<node TEXT="You can combine the rest operator with destructuring to easily create an object that contains a subset of all the props that were passed in." ID="ID_1994065379" CREATED="1529180672380" MODIFIED="1529180672380"/>
+<node TEXT="This is useful when you only want to pass a few props down to a child component." ID="ID_382489252" CREATED="1529180696730" MODIFIED="1529180696730"/>
+<node TEXT="it&apos;s important to avoid forwarding non-DOM props to composed components." ID="ID_1904332566" CREATED="1529180859853" MODIFIED="1529180859853"/>
+<node TEXT="Destructuring makes this very easy because you can create a new props object that omits specific props, so in this example the rest variable will not contain the name prop because the name prop was destructured separately." ID="ID_1198492698" CREATED="1529180902844" MODIFIED="1529180902844"/>
+<node TEXT="const Hello = ({name, ...rest}) =&gt; {&#xa;   &lt;div {...rest}&gt;Hi {name}! &lt;/div&gt;&#xa;}&#xa;&#xa;//So ...rest won&apos;t have a name property since it was&#xa;//destructured on the line above" ID="ID_1073043145" CREATED="1529180993335" MODIFIED="1529181188416">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="4: Create Formatting Components" FOLDED="true" ID="ID_1584420986" CREATED="1529183353126" MODIFIED="1529183353126">
+<node TEXT="People typically think of React components as little reusable pieces of HTML, but keep in mind that you can also create atoms that are solely oriented to formatting." ID="ID_1571203499" CREATED="1529183379391" MODIFIED="1529183379391"/>
+<node TEXT="For example, you could create a cash component that formats whatever is inside with a leading currency sign, a decimal, and two trailing 0&apos;s if none are provided." ID="ID_1596735686" CREATED="1529183406864" MODIFIED="1529183406864"/>
+<node TEXT="You could add props for handling different scenarios, like whether to show the decimal, whether to round up to the nearest dollar, the currency type, and so on" ID="ID_1764989613" CREATED="1529183514864" MODIFIED="1529183514864"/>
+<node TEXT="Some people would prefer to create a utility function to handle such a thing, but this declarative style reads well, and just like a utility function, it encapsulates and centralizes the relevant logic and styles for reuse, and like any other React component, it&apos;s composable." ID="ID_1608471208" CREATED="1529183559053" MODIFIED="1529183559053"/>
+</node>
+</node>
 </node>
 <node TEXT="Molecules" ID="ID_1134286962" CREATED="1529141214726" MODIFIED="1529141223018"/>
 <node TEXT="Organisms" ID="ID_806259813" CREATED="1529141223590" MODIFIED="1529141242122"/>
@@ -6172,8 +6370,10 @@
 <node TEXT="Security" ID="ID_186255367" CREATED="1520844171048" MODIFIED="1520844184253">
 <node TEXT="https://haveibeenpwned.com/" ID="ID_633001591" CREATED="1520844188943" MODIFIED="1520844188943" LINK="https://haveibeenpwned.com/"/>
 </node>
-<node TEXT="specifications" ID="ID_1968463408" CREATED="1522752109569" MODIFIED="1522752118515">
+<node TEXT="specifications" ID="ID_1968463408" CREATED="1522752109569" MODIFIED="1529182742133">
+<font ITALIC="false"/>
 <node TEXT="https://www.w3.org/TR/" ID="ID_1976453487" CREATED="1522752122571" MODIFIED="1522752122571" LINK="https://www.w3.org/TR/"/>
+<node TEXT="http://kangax.github.io/compat-table/es6/" ID="ID_1331532620" CREATED="1529181836991" MODIFIED="1529181836991" LINK="http://kangax.github.io/compat-table/es6/"/>
 </node>
 <node TEXT="little helper" ID="ID_371759216" CREATED="1520937175504" MODIFIED="1520937219195">
 <node TEXT="http://keycode.info/" ID="ID_1157481173" CREATED="1520937224500" MODIFIED="1520937224500" LINK="http://keycode.info/"/>
