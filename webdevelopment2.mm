@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -4787,7 +4787,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node TEXT="overview" FOLDED="true" ID="ID_1424621571" CREATED="1529178695991" MODIFIED="1529178702106">
@@ -4902,7 +4901,21 @@
 </node>
 </node>
 </node>
-<node TEXT="Molecules" ID="ID_1134286962" CREATED="1529141214726" MODIFIED="1529141223018"/>
+<node TEXT="Molecules" ID="ID_1134286962" CREATED="1529141214726" MODIFIED="1529141223018">
+<node TEXT="What&apos;s a Molecule?" ID="ID_66760989" CREATED="1529252491364" MODIFIED="1529252491364">
+<node TEXT="In atomic design terms molecules are multiple atomic components composed together to serve a higher purpose." ID="ID_915445508" CREATED="1529252337781" MODIFIED="1529252337781"/>
+<node TEXT="They&apos;re still relatively simple, but molecules compose atoms into a single component." ID="ID_1997663572" CREATED="1529252367102" MODIFIED="1529252367102"/>
+<node TEXT="Gluing atoms together creates a simple, functional, and reusable component." ID="ID_718329299" CREATED="1529252387105" MODIFIED="1529252387105"/>
+<node TEXT="Molecules should also have a single (but higher level) responsibility" ID="ID_1609372058" CREATED="1529253148479" MODIFIED="1529253182642"/>
+</node>
+<node TEXT="Single responsibility principle" ID="ID_988205071" CREATED="1529252507556" MODIFIED="1529252544204">
+<node TEXT="single responsibility principle of atoms applies to molecules as well." ID="ID_1358845076" CREATED="1529252589613" MODIFIED="1529252824248"/>
+<node TEXT="The difference is since a molecule is a higher level abstraction the single responsibility is a higher level responsibility, but a well-designed molecule should still strive to do one thing well." ID="ID_97201125" CREATED="1529252624750" MODIFIED="1529252624750"/>
+<node TEXT="Although a molecule is composed of multiple atoms, they should be composed together strategically to handle a clear, distinct responsibility." ID="ID_1006721455" CREATED="1529252665508" MODIFIED="1529252665508"/>
+<node TEXT="This helps assure that the molecule is easy to understand, consume, and compose with other molecules into higher level organisms." ID="ID_495907923" CREATED="1529252790311" MODIFIED="1529252790311"/>
+<node TEXT="The point is, two molecules can look and behave quite differently, even though they&apos;re composed of many of the same components, but keep in mind when atoms are combined they take on a specific purpose." ID="ID_274183721" CREATED="1529252884570" MODIFIED="1529252884570"/>
+</node>
+</node>
 <node TEXT="Organisms" ID="ID_806259813" CREATED="1529141223590" MODIFIED="1529141242122"/>
 <node TEXT="Templates" ID="ID_140867606" CREATED="1529141242990" MODIFIED="1529141249378"/>
 <node TEXT="Pages" ID="ID_243608908" CREATED="1529141250510" MODIFIED="1529141259185"/>
