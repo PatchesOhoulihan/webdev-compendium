@@ -4916,7 +4916,76 @@
 <node TEXT="The point is, two molecules can look and behave quite differently, even though they&apos;re composed of many of the same components, but keep in mind when atoms are combined they take on a specific purpose." ID="ID_274183721" CREATED="1529252884570" MODIFIED="1529252884570"/>
 </node>
 </node>
-<node TEXT="Organisms" ID="ID_806259813" CREATED="1529141223590" MODIFIED="1529141242122"/>
+<node TEXT="Organisms" ID="ID_806259813" CREATED="1529141223590" MODIFIED="1529141242122">
+<node TEXT="What&apos;s an Organism?&apos;" ID="ID_132999812" CREATED="1529259894025" MODIFIED="1529259894025">
+<node TEXT="Just like molecules are composed of atoms, organisms are composed of molecules." ID="ID_1441912341" CREATED="1529259932090" MODIFIED="1529259932090"/>
+<node TEXT="An organism is more complex than a molecule because it composes molecules and other atoms together into a higher level abstraction." ID="ID_1776958429" CREATED="1529259947764" MODIFIED="1529259947764"/>
+<node TEXT="This typically results in a UI component that handles a section of the screen." ID="ID_1294837535" CREATED="1529260083823" MODIFIED="1529260083823"/>
+<node TEXT="Sometimes an organism or molecule can implement the fa&#xe7;ade pattern." ID="ID_1753763694" CREATED="1529260174821" MODIFIED="1529260174821">
+<node TEXT="The fa&#xe7;ade pattern abstracts away a more complex API by providing a simpler, more course grained API" ID="ID_35341147" CREATED="1529260194623" MODIFIED="1529260194623"/>
+<node TEXT="For example, an atom might accept a dozen props to support a wide variety of use cases. You can consider creating a molecule or organism that hard codes in many of these settings, and thus provides a clear, reusable component that serves a specific use case." ID="ID_136125668" CREATED="1529260223184" MODIFIED="1529260231872"/>
+</node>
+</node>
+<node TEXT="Design Tips" ID="ID_225922810" CREATED="1529259976294" MODIFIED="1529260056393">
+<node TEXT="1: Strong Opinions Are a Feature" ID="ID_1139903121" CREATED="1529260264486" MODIFIED="1529260264486">
+<node TEXT="Organisms, by their very nature, abstract away the underlying components, so when you create reusable organisms you have to decide what props you&apos;d like to expose from your underlying components." ID="ID_1597828983" CREATED="1529260467750" MODIFIED="1529260467750"/>
+<node TEXT="Take a Passwordmolecule for example, It offers a long list of props to make it configurable, including the label, the onChange handler, the maxLength, and the minLength, the input placeholder, and toggles for it&apos;s advanced features like the VisibilityToggle and the quality indicator." ID="ID_356651358" CREATED="1529260525605" MODIFIED="1529260572637"/>
+<node TEXT="Imagine that I&apos;m going to create a registration form organism and use the PasswordInput component inside. I need to decide which of these configurations I want to expose, and there&apos;s no right answer here." ID="ID_407276942" CREATED="1529260625375" MODIFIED="1529260635133"/>
+<node TEXT="Context matters, but keep in mind that organisms often contain many components below, so if you choose to expose all of the child components props your organisms API will become very complex, so strive to limit the props that you expose from your underlying components." ID="ID_1700052517" CREATED="1529260689627" MODIFIED="1529260689627"/>
+<node TEXT="So why limit props?" ID="ID_1790714331" CREATED="1529260718693" MODIFIED="1529260718693">
+<node TEXT="Because strong opinions are a feature, not a bug." ID="ID_1592440960" CREATED="1529260736851" MODIFIED="1529260736851"/>
+<node TEXT="1. Strong opinions enforce consistency." ID="ID_1981568572" CREATED="1529260747917" MODIFIED="1529261032289"/>
+<node TEXT="2. They lead to a smaller API for your component." ID="ID_610755681" CREATED="1529260768814" MODIFIED="1529261051565"/>
+<node TEXT="3. This makes the organism easier to understand, and few props help assure that the organism has a single, clear purpose." ID="ID_484173434" CREATED="1529260791558" MODIFIED="1529261059641"/>
+<node TEXT="4. A component with too many props can become so flexible that it&apos;s difficult to understand its core purpose or use case." ID="ID_1453833237" CREATED="1529260821990" MODIFIED="1529261074289"/>
+<node TEXT="5. Fewer props also reduce the surface area that you need to test" ID="ID_113711270" CREATED="1529260838087" MODIFIED="1529261092577"/>
+<node TEXT="A component that accepts dozens of props requires a great deal of testing to cover all of the potential permutations." ID="ID_95060829" CREATED="1529260874655" MODIFIED="1529260874655"/>
+</node>
+<node TEXT="When it comes to organisms, strong opinions are a feature. You don&apos;t need to expose all the props of your atoms and molecules. Much like any feature, it&apos;s easy to add a prop later, but it&apos;s hard to remove a prop later because it will create a breaking change, and potentially upset your users." ID="ID_1642291482" CREATED="1529260925178" MODIFIED="1529261024901"/>
+</node>
+<node TEXT="2: Keep Organisms Dumb" ID="ID_413302978" CREATED="1529260296553" MODIFIED="1529260296553">
+<node TEXT="Do not turn your organisms into mini applications." ID="ID_1401290648" CREATED="1529261177471" MODIFIED="1529261177471"/>
+<node TEXT="Try to create dumb organisms. Just like your atoms and molecules, organisms should typically be simple functions that take props, and output HTML. Avoid creating autonomous mini applications." ID="ID_1434778507" CREATED="1529261212130" MODIFIED="1529261212130"/>
+<node TEXT="However, it can be useful to create container components to save people time." ID="ID_493399290" CREATED="1529261242972" MODIFIED="1529261242972">
+<node TEXT="Container components handle state and logic and typically contain very little markup." ID="ID_1868570707" CREATED="1529261258815" MODIFIED="1529261258815"/>
+<node TEXT="They delegate markup handling to dumb child components." ID="ID_1629281950" CREATED="1529261275326" MODIFIED="1529261275326"/>
+<node TEXT="This helps separate concerns, and assures that your dumb components are easily testable in isolation because they&apos;re simple, pure components that accept input and return HTML" ID="ID_1206657857" CREATED="1529261308077" MODIFIED="1529261308077"/>
+</node>
+<node TEXT="Example" ID="ID_1502952311" CREATED="1529261756848" MODIFIED="1529261766699">
+<node TEXT="Imagine that I tried to build YouTube using the atomic design philosophy." ID="ID_1077065582" CREATED="1529261844505" MODIFIED="1529261844505"/>
+<node TEXT="Imagine that the header is an organism, and the comments section is its own organism." ID="ID_1761836029" CREATED="1529261866489" MODIFIED="1529261866489"/>
+<node TEXT="Notice how the headshot is displayed in both the header and the comments section because I&apos;m logged in." ID="ID_1322920216" CREATED="1529261892328" MODIFIED="1529261905258"/>
+<node TEXT="Each of these organisms should be dumb, so for example, they shouldn&apos;t have any API calls baked in." ID="ID_1280696159" CREATED="1529261954194" MODIFIED="1529261954194"/>
+<node TEXT="Instead, they should be treated like any other reusable function. They should be passed the data that they need." ID="ID_1018349188" CREATED="1529261984707" MODIFIED="1529261993849"/>
+<node TEXT="This avoids making redundant API calls to get the same data." ID="ID_1863997382" CREATED="1529262013548" MODIFIED="1529262013548"/>
+<node TEXT="f each organism only cares about itself, then there would be two API calls to retrieve the URL from my photo. Not good." ID="ID_167302732" CREATED="1529262050154" MODIFIED="1529262050154"/>
+<node TEXT="There are other issues as well. If I change the photo, then both of these organisms would need to reflect the change, but if each component only cares about itself how do I assure that both organisms are updated when I change the picture?" ID="ID_90969138" CREATED="1529262084897" MODIFIED="1529262115337"/>
+<node TEXT="And if each organism bakes in knowledge about how to make API calls I&apos;m also at risk for sending down duplicate logic in two different JavaScript files, which wastes bandwidth, slows page load, and increases memory pressure." ID="ID_19421193" CREATED="1529264899039" MODIFIED="1529264899039"/>
+</node>
+<node TEXT="Let&apos;s review the issues I just discussed about creating smart organisms." ID="ID_475412109" CREATED="1529264985275" MODIFIED="1529264985275">
+<node TEXT="When creating reusable components it can be tempting to create smart reusable components that know how to handle authentication, API calls, authorization, and so on." ID="ID_925652900" CREATED="1529265002250" MODIFIED="1529265002250"/>
+<node TEXT="Some people call the pattern mini apps." ID="ID_1869776247" CREATED="1529265019167" MODIFIED="1529265019167"/>
+<node TEXT="If you create a few rich organisms that are smart enough to completely handle two separate portions of the same page, what happens when the same data is displayed in two places?" ID="ID_1465414332" CREATED="1529265121614" MODIFIED="1529265121614"/>
+<node TEXT="If each component merely cares about itself, then how do these two stay in sync?" ID="ID_792598967" CREATED="1529265164368" MODIFIED="1529265164368"/>
+<node TEXT="That&apos;s the applications job, so don&apos;t let an overly opinionated and complex organism compromise your applications architecture." ID="ID_434588366" CREATED="1529265185516" MODIFIED="1529265185516"/>
+<node TEXT="Smart organisms often lead to over fetching." ID="ID_1590851398" CREATED="1529265202236" MODIFIED="1529265202236">
+<node TEXT="When each component is only worried about itself you&apos;re likely to request the same data in multiple places" ID="ID_1625358361" CREATED="1529265235622" MODIFIED="1529265235622"/>
+<node TEXT="That&apos;s the fundamental problem with creating smart, organism style components." ID="ID_239341687" CREATED="1529265258059" MODIFIED="1529265258059"/>
+</node>
+<node TEXT="An application needs to be designed holistically, but the smart organism mindset leads to composing a number of self-centered components together, which leads to poor performance and wasteful design." ID="ID_444526844" CREATED="1529265302850" MODIFIED="1529265302850"/>
+<node TEXT="Smart organisms may embed API, authentication, and other cross cutting concerns inside." ID="ID_764961661" CREATED="1529265372278" MODIFIED="1529265372278">
+<node TEXT="This could lead to your users downloading the same code in multiple JavaScript bundles, which will slow page loads and waste bandwidth." ID="ID_209521464" CREATED="1529265400466" MODIFIED="1529265400466"/>
+</node>
+<node TEXT="Ironically, smart organisms often lead to tight coupling, since you need organisms to operate as a cohesive whole in a real application, you may have to tightly integrate two separate components to get them to act as a single unit." ID="ID_741690837" CREATED="1529265438958" MODIFIED="1529265438958"/>
+<node TEXT="This integration is brittle, and it makes it difficult to change the organism later." ID="ID_759074204" CREATED="1529265488591" MODIFIED="1529265488591"/>
+</node>
+<node TEXT="So think of atoms, molecules, and organisms in the same way." ID="ID_689066640" CREATED="1529265508139" MODIFIED="1529265508139"/>
+<node TEXT="They&apos;re generally dumb, reusable components that take some parameters and return HTML." ID="ID_792743131" CREATED="1529265549787" MODIFIED="1529265549787"/>
+<node TEXT="Keep them simple. Think of them as reusable UI, and avoid turning organisms into miniature applications. Organisms are fundamentally the same thing as an atom." ID="ID_1046708784" CREATED="1529265597527" MODIFIED="1529265597527"/>
+<node TEXT="The difference is that organisms return larger chunks of HTML by composing many child components together in an opinionated and useful way." ID="ID_220540754" CREATED="1529265614578" MODIFIED="1529265614578"/>
+</node>
+</node>
+</node>
 <node TEXT="Templates" ID="ID_140867606" CREATED="1529141242990" MODIFIED="1529141249378"/>
 <node TEXT="Pages" ID="ID_243608908" CREATED="1529141250510" MODIFIED="1529141259185"/>
 </node>
