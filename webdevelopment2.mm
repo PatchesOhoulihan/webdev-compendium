@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -5913,6 +5913,7 @@
 <node TEXT="http://www.marcusoft.net/2015/08/npm-scripting-configs-and-arguments.html" ID="ID_1913976050" CREATED="1527380091243" MODIFIED="1527380091243" LINK="http://www.marcusoft.net/2015/08/npm-scripting-configs-and-arguments.html"/>
 <node TEXT="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b" ID="ID_1529981111" CREATED="1527381482773" MODIFIED="1527381482773" LINK="https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b"/>
 <node TEXT="https://www.nearform.com/blog/react-living-style-guides/" ID="ID_52625680" CREATED="1528543844792" MODIFIED="1528543844792" LINK="https://www.nearform.com/blog/react-living-style-guides/"/>
+<node TEXT="https://kalinchernev.github.io/learn-gatsbyjs/" ID="ID_610656421" CREATED="1529338583753" MODIFIED="1529338583753" LINK="https://kalinchernev.github.io/learn-gatsbyjs/"/>
 </node>
 <node TEXT="Operating System" FOLDED="true" POSITION="right" ID="ID_509840976" CREATED="1517301631774" MODIFIED="1519810492710" HGAP_QUANTITY="61.24999859184031 pt" VSHIFT_QUANTITY="16.499999508261688 pt">
 <edge COLOR="#808080"/>
