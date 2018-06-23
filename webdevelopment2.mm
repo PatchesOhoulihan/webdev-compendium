@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -3752,7 +3752,7 @@
 <node TEXT="Third Party Cookies lassen sich technisch einfacher implementieren als First Party Cookies. Auf der Website, auf der die Cookies eingebunden werden sollen, muss kein Code hinterlegt werden. Es reicht die Werbeanzeige (Ad) vom AdServer des Drittanbieters." ID="ID_1924401888" CREATED="1515602101129" MODIFIED="1515602101129"/>
 </node>
 </node>
-<node TEXT="Critical Rendering Path" ID="ID_518386952" CREATED="1516872631933" MODIFIED="1516872631933">
+<node TEXT="Critical Rendering Path" FOLDED="true" ID="ID_518386952" CREATED="1516872631933" MODIFIED="1516872631933">
 <node TEXT="When a browser receives the HTML response for a page from the server, there are a lot of steps to be taken before pixels are drawn on the screen. This sequence the browsers needs to run through for the initial paint of the page is called the &quot;Critical Rendering Path&quot;. this includes 6 steps" ID="ID_1112849103" CREATED="1516872683995" MODIFIED="1516872977686"/>
 <node TEXT="Constructing the DOM Tree" FOLDED="true" ID="ID_771777683" CREATED="1516872728612" MODIFIED="1516872835497">
 <node TEXT="The DOM (Document Object Model) Tree is an Object representation of the fully parsed HTML page. Starting with the root element, &lt;html&gt;, nodes are created for each element/text on the page. Elements nested within other elements are represented as child nodes and each node contains the full attributes for that element. For example, an &lt;a&gt; element will have the href attribute associated with it&#x2019;s node." ID="ID_728957923" CREATED="1516887642664" MODIFIED="1516887642664"/>
@@ -3790,8 +3790,8 @@
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
 <node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
 <node TEXT="Component Frameworks" ID="ID_594677038" CREATED="1529146207371" MODIFIED="1529146217862">
-<node TEXT="React" FOLDED="true" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
-<node TEXT="core" FOLDED="true" ID="ID_1471975184" CREATED="1526846655943" MODIFIED="1526846661475">
+<node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
+<node TEXT="core" ID="ID_1471975184" CREATED="1526846655943" MODIFIED="1526846661475">
 <node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
 <node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
 <node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1409151973" CREATED="1515278541958" MODIFIED="1515278541958"/>
@@ -4253,9 +4253,125 @@
 </node>
 <node TEXT="You should always aim for pure functions in your project" ID="ID_886201790" CREATED="1523134110789" MODIFIED="1523134140606"/>
 </node>
+<node TEXT="Data Injection / server-side Rendering" FOLDED="true" ID="ID_1699467068" CREATED="1529781392788" MODIFIED="1529783227338">
+<node TEXT="What is the difference between these two techniques of server rendering?" ID="ID_444117318" CREATED="1529783788723" MODIFIED="1529783788723"/>
+<node TEXT="Data Injection" FOLDED="true" ID="ID_1793863298" CREATED="1529783816180" MODIFIED="1529783820459">
+<node TEXT="1. Data is prepared by server" FOLDED="true" ID="ID_1262616776" CREATED="1529786305563" MODIFIED="1529786331604">
+<node TEXT="a process where probably Express does a few HTTP requests or queries the database to get the state of the application." ID="ID_1341670022" CREATED="1529783903812" MODIFIED="1529783912235"/>
 </node>
-<node TEXT="extentions" FOLDED="true" ID="ID_582425876" CREATED="1526846664247" MODIFIED="1526846672602">
-<node TEXT="React-Router" FOLDED="true" ID="ID_616574208" CREATED="1526846697967" MODIFIED="1526846712586">
+<node TEXT="2. Data is converted to JSON and injected into Index (Which results in a longer intial load)" FOLDED="true" ID="ID_1306661003" CREATED="1529786333755" MODIFIED="1529786378098">
+<node TEXT="Once it gets this data, it takes it and converts it into a long JSON object, a raw form of all the data the application needs to render its state, but not the actual HTML that is rendered." ID="ID_170229085" CREATED="1529783933787" MODIFIED="1529783937267"/>
+<node TEXT="Then when the client application loads, as in when the JavaScript is ready, it gets this data right away simply by looking at the state of the local window." ID="ID_1035163999" CREATED="1529784050234" MODIFIED="1529784068386"/>
+</node>
+<node TEXT="3. Client application has data immediately (No round trips)" FOLDED="true" ID="ID_924624086" CREATED="1529786380042" MODIFIED="1529786463905">
+<node TEXT="This results in what is essentially an isomorphic-feeling experience for the user, but it results in a longer load time." ID="ID_1134699610" CREATED="1529784121226" MODIFIED="1529784124497"/>
+<node TEXT="Application state can be very large, but, more importantly, the JavaScript actually has to run on the page before we see what happens." ID="ID_822252362" CREATED="1529784142730" MODIFIED="1529784146165"/>
+<node TEXT="On our desktops it&apos;s no problem, but as we know, on our mobile phones, our phones are already usually strained to the breaking point at all times without needing to run, say," ID="ID_1413637989" CREATED="1529786511618" MODIFIED="1529786514857"/>
+</node>
+</node>
+<node TEXT="Server-side Rendering" FOLDED="true" ID="ID_1681518702" CREATED="1529783827388" MODIFIED="1529783830667">
+<node TEXT="1. Data is prepared by Server" ID="ID_964975895" CREATED="1529786947407" MODIFIED="1529786962926"/>
+<node TEXT="2. HTML for App is rendered on server by passing data to app (This still results in a longer inital load, though it can be faster than data injection)" FOLDED="true" ID="ID_832041032" CREATED="1529786964006" MODIFIED="1529787035446">
+<node TEXT="Then it uses an instance of whatever the renderer would be for the application," ID="ID_948211984" CREATED="1529787300365" MODIFIED="1529787317060"/>
+<node TEXT="And it asks that renderer what is the final HTML going to be given the state that the server just got?" ID="ID_366510608" CREATED="1529787363050" MODIFIED="1529787363050"/>
+<node TEXT=" The server still has to call the render function and it has to run it and see what the output is." ID="ID_514517400" CREATED="1529787397588" MODIFIED="1529787400819"/>
+<node TEXT="But it&apos;s usually a lot faster than data injection because the computation still has to be run somewhere, in the other case on the client, and the output HTML is usually a lot smaller than the whole shape of the state of the application." ID="ID_1351812243" CREATED="1529787428979" MODIFIED="1529787432229"/>
+</node>
+<node TEXT="3. Client application sees rendered view even though data is not yet fetched" FOLDED="true" ID="ID_682142839" CREATED="1529787036750" MODIFIED="1529787071982">
+<node TEXT="The JavaScript behind the scenes is pretty done at that point. It has no idea what the shape of the application is." ID="ID_1129813615" CREATED="1529787480939" MODIFIED="1529787484379"/>
+<node TEXT="It&apos;s just showing the user the HTML and they think there&apos;s an application running even though it hasn&apos;t yet booted until React runs." ID="ID_1454278759" CREATED="1529787505243" MODIFIED="1529787508570"/>
+</node>
+</node>
+<node TEXT="Data Injection VS Server Rendering" FOLDED="true" ID="ID_228661992" CREATED="1529787623466" MODIFIED="1529787639713">
+<node TEXT="Data Injection" FOLDED="true" ID="ID_1469716991" CREATED="1529787879192" MODIFIED="1529787891240">
+<node TEXT="Server must be capable of handling data fetching" ID="ID_12440934" CREATED="1529787919360" MODIFIED="1529787926264"/>
+<node TEXT="Can result in fastest load time, if the data is simple and the app is complex" FOLDED="true" ID="ID_1887406332" CREATED="1529787936016" MODIFIED="1529787944863">
+<node TEXT="Data injection can sometimes result in the fastest load time if the injected bundle is very small, but the app turns into a lot of complicated HTML." ID="ID_1124436744" CREATED="1529788314168" MODIFIED="1529788314168"/>
+<node TEXT="This is not the usual case" ID="ID_718059033" CREATED="1529788339000" MODIFIED="1529788339000"/>
+</node>
+<node TEXT="Doesn&#x2019;t work on devices with no JavaScript" ID="ID_1545781000" CREATED="1529787954600" MODIFIED="1529787960759"/>
+<node TEXT="Complex render can cause performance issues on initial load (especially mobile)" FOLDED="true" ID="ID_58605584" CREATED="1529787967752" MODIFIED="1529787975055">
+<node TEXT="During data injection, there&apos;s still a step where the device, let&apos;s say a mobile device, has just downloaded the library and has the whole state and now it&apos;s using the library to parse what might be a very big state into a whole HTML tree and update the DOM all in one step." ID="ID_1377060796" CREATED="1529788461882" MODIFIED="1529788488068"/>
+<node ID="ID_1341655208" CREATED="1529788490797" MODIFIED="1529788490797"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      This is pretty slow and it usually results in the phone kind of freezing up for a little while for our end user.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="Can skip first AJAX request to fetch data" ID="ID_93635350" CREATED="1529787988488" MODIFIED="1529787994343"/>
+</node>
+<node TEXT="Server Rendering" FOLDED="true" ID="ID_30146648" CREATED="1529787880785" MODIFIED="1529787903559">
+<node TEXT="Server must be capable of rendering the application and fetching data" FOLDED="true" ID="ID_1642279568" CREATED="1529788007079" MODIFIED="1529788012671">
+<node TEXT="This is only simple if both the server and the renderer, i.e. Node and React, are both written in the same language. It&apos;s not easy to do if your back-end is in something like PHP or C#." ID="ID_188679663" CREATED="1529788200567" MODIFIED="1529788200567"/>
+</node>
+<node TEXT="Can result in fastest load time, if the data is complex and the app is simple" FOLDED="true" ID="ID_599037189" CREATED="1529788032727" MODIFIED="1529788040126">
+<node TEXT="server rendering is usually faster, and it&apos;s fastest especially if the data is complex, but the app takes it and turns it into a simple kind of view." ID="ID_1766806390" CREATED="1529788287788" MODIFIED="1529788287788"/>
+</node>
+<node TEXT="Works great on devices with no JavaScript" FOLDED="true" ID="ID_757504483" CREATED="1529788048695" MODIFIED="1529788055582">
+<node TEXT="Server rendering has great synergy with devices that have no JavaScript because, unlike a regular React app, it will actually work. It and an application that&apos;s just HTML are the only two classes of applications that are actually going to work on this device, which is huge." ID="ID_1549016199" CREATED="1529788385384" MODIFIED="1529788385384"/>
+</node>
+<node TEXT="In-client rendering may still be slow, but end-user sees final app right away, and so perceives it as fast" ID="ID_967366904" CREATED="1529788064455" MODIFIED="1529788074759"/>
+<node TEXT="Still needs to fetch data after initial load" ID="ID_98270351" CREATED="1529788091367" MODIFIED="1529788095638"/>
+</node>
+</node>
+</node>
+<node TEXT="React DOM Server" ID="ID_683480484" CREATED="1529788711947" MODIFIED="1529788715026">
+<node TEXT="Introduction" ID="ID_1998664652" CREATED="1529788753162" MODIFIED="1529788870258">
+<node TEXT="React DOM server is a seemingly magical part of our stack that basically allows us to do the following." ID="ID_34428570" CREATED="1529788780498" MODIFIED="1529788784339"/>
+<node TEXT="We take our initial state and we load the top-level component into Express or whatever is serving our application and it outputs static HTML." ID="ID_1962228031" CREATED="1529788807738" MODIFIED="1529788870257"/>
+<node TEXT=" It doesn&apos;t need the actual DOM to do it, that&apos;s why it&apos;s the server version of React DOM" ID="ID_1249881284" CREATED="1529788832346" MODIFIED="1529788836641"/>
+</node>
+<node TEXT="So, given a state and a parent component, it generates static markup." ID="ID_1921101423" CREATED="1529788890177" MODIFIED="1529788893641"/>
+<node TEXT=" It does this easily because React already has a virtual DOM it uses for optimizations, but this can also be used to render an application&apos;s final HTML with no actual DOM or browser running." ID="ID_824788027" CREATED="1529788916617" MODIFIED="1529788920224"/>
+<node TEXT="It doesn&apos;t have any dependencies on the window or other features that only exist in the browser, so we can happily use it in our Express file." ID="ID_1424849723" CREATED="1529788952129" MODIFIED="1529788956313"/>
+<node TEXT="React DOM server has two different methods for taking a state and a top-level component and making HTML out of it:" ID="ID_1161286368" CREATED="1529788992679" MODIFIED="1529788992679">
+<node TEXT="renderToString()" ID="ID_997670181" CREATED="1529789010920" MODIFIED="1529789889131">
+<node TEXT="generates HTML with special tags that React can read" ID="ID_1867019119" CREATED="1529789071532" MODIFIED="1529789071532"/>
+<node TEXT="the client application, once React is running on that side, recognizes these special tags and binds itself to the HTML, but doesn&apos;t render it all over again because it realizes that it&apos;s already been rendered by React." ID="ID_877846919" CREATED="1529789159960" MODIFIED="1529790078457"/>
+<node TEXT="So for a rich application, that&apos;s going to have a lot of interactivity and to which React is going to bind once it&apos;s loaded, you want to use renderToString." ID="ID_1326964571" CREATED="1529790089617" MODIFIED="1529790205407"/>
+</node>
+<node TEXT="renderToStaticMarkup()" ID="ID_161606568" CREATED="1529789024742" MODIFIED="1529789897378">
+<node TEXT="just makes HTML." ID="ID_1882354740" CREATED="1529789085904" MODIFIED="1529789085904"/>
+<node TEXT="This results in a slightly smaller package." ID="ID_1031649105" CREATED="1529790058281" MODIFIED="1529790062609"/>
+<node TEXT="Client application does not recognize HTML as something that can be hydrated" ID="ID_770234366" CREATED="1529790121401" MODIFIED="1529790156576"/>
+<node TEXT="with StaticMarkup, when React runs on the client it just doesn&apos;t know that this is something that can be rehydrated. It assumes it has to all be rendered again." ID="ID_81093444" CREATED="1529789223708" MODIFIED="1529789223708"/>
+<node TEXT="If there&apos;s no interactivity except maybe an HTML hyperlink or such then you can use renderToStaticMarkup." ID="ID_921896604" CREATED="1529790217048" MODIFIED="1529790235560"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="extentions" ID="ID_582425876" CREATED="1526846664247" MODIFIED="1526846672602">
+<node TEXT="React-Router" ID="ID_616574208" CREATED="1526846697967" MODIFIED="1526846712586">
+<node TEXT="Introduction" ID="ID_697295009" CREATED="1529790340575" MODIFIED="1529790346959">
+<node TEXT="What does React Router do?" ID="ID_1896514983" CREATED="1529790524570" MODIFIED="1529790532532"/>
+<node TEXT="Renders components based on path" ID="ID_400603771" CREATED="1529790553454" MODIFIED="1529790569077">
+<node TEXT="It renders components or doesn&apos;t render them, but the criteria it uses to determine this is what the path is or what page your client is trying to load." ID="ID_1099443527" CREATED="1529790950957" MODIFIED="1529790950957"/>
+</node>
+<node TEXT="Integrates with Redux using ConnectedRouter" ID="ID_164759315" CREATED="1529790570166" MODIFIED="1529790591797">
+<node TEXT="React Router has lots of different kinds of routers, but just remember if you&apos;re using Redux you probably want the connected one." ID="ID_826624062" CREATED="1529790927662" MODIFIED="1529790927662"/>
+</node>
+<node TEXT="Uses history module to inject custom path" ID="ID_605179300" CREATED="1529790592830" MODIFIED="1529790613061">
+<node TEXT="React Router figures out what the path is by using the history module, but we can manipulate the history module to show whatever path we want, the path that&apos;s loaded or the path that we know is going to come up, while we&apos;re doing it on the server." ID="ID_1719957006" CREATED="1529790996037" MODIFIED="1529790996037"/>
+</node>
+<node TEXT="Works in client AND on the server" ID="ID_1260632385" CREATED="1529790615166" MODIFIED="1529790630077"/>
+</node>
+<node TEXT="React Router Server Rendering" ID="ID_506955582" CREATED="1529790841772" MODIFIED="1529791164153">
+<node TEXT="1. Server receives request and notes path e.g. /users/123" ID="ID_642508190" CREATED="1529791041883" MODIFIED="1529791069074"/>
+<node TEXT="2. Server creates history component and injects path" ID="ID_1984394747" CREATED="1529791044331" MODIFIED="1529791091450"/>
+<node TEXT="3. Application is wrapped in history component and rendered on server" ID="ID_1264153829" CREATED="1529791046891" MODIFIED="1529791122178"/>
+<node TEXT="4. React Router reads path from history; renders the appropriate views" ID="ID_88892479" CREATED="1529791047683" MODIFIED="1529791165921"/>
+<node TEXT="5. Pre-rendered HTML is sent directly to user" ID="ID_1286338805" CREATED="1529791048715" MODIFIED="1529791186227"/>
+<node TEXT="6. Subsequent route changes are handled in client" ID="ID_759126331" CREATED="1529791049523" MODIFIED="1529791201321"/>
+</node>
 <node TEXT="setup" FOLDED="true" ID="ID_100179145" CREATED="1526846721190" MODIFIED="1526846728594">
 <node ID="ID_1256991731" CREATED="1526846753422" MODIFIED="1526846869174"><richcontent TYPE="NODE">
 
@@ -4326,8 +4442,8 @@
 <node TEXT="Blueprint" FOLDED="true" ID="ID_1620450717" CREATED="1528539724171" MODIFIED="1528539734165">
 <node TEXT="A React UI toolkit for the web" ID="ID_266446588" CREATED="1528539736962" MODIFIED="1528539751269"/>
 </node>
-<node TEXT="React DnD" FOLDED="true" ID="ID_1158298702" CREATED="1528539805466" MODIFIED="1528539814325">
-<node TEXT="Drag and Drop for React" ID="ID_579471604" CREATED="1528539815858" MODIFIED="1528539835108"/>
+<node TEXT="React DnD" FOLDED="true" ID="ID_1158298702" CREATED="1528539805466" MODIFIED="1529781300598">
+<node TEXT="Drag and Drop for React" ID="ID_579471604" CREATED="1528539815858" MODIFIED="1529781300598"/>
 </node>
 </node>
 </node>
@@ -4575,7 +4691,7 @@
 </node>
 </node>
 <node TEXT="Mobx" ID="ID_1204779131" CREATED="1522617485512" MODIFIED="1522617497325"/>
-<node TEXT="Reusable Components Design" ID="ID_1773787353" CREATED="1529147627097" MODIFIED="1529147650260">
+<node TEXT="Reusable Components Design" FOLDED="true" ID="ID_1773787353" CREATED="1529147627097" MODIFIED="1529147650260">
 <node TEXT="Design Tips" FOLDED="true" ID="ID_189614175" CREATED="1529141795986" MODIFIED="1529141829173">
 <node TEXT="1. Avoid Weak wrapper elements" FOLDED="true" ID="ID_1751468020" CREATED="1529141891881" MODIFIED="1529144215389">
 <node TEXT="You can&apos;t put a &lt;div&gt; in a p, because it&apos;s invalid html" ID="ID_1467284195" CREATED="1529141927809" MODIFIED="1529141989972"/>
@@ -4662,7 +4778,7 @@
 <node TEXT=" Remember that you can always compose components together to achieve powerful reuse scenarios. A single component doesn&apos;t need to be a hero." ID="ID_885319665" CREATED="1529147263468" MODIFIED="1529147267079"/>
 </node>
 </node>
-<node TEXT="Atomic Design" ID="ID_535826344" CREATED="1529140580150" MODIFIED="1529140596009">
+<node TEXT="Atomic Design" FOLDED="true" ID="ID_535826344" CREATED="1529140580150" MODIFIED="1529140596009">
 <node TEXT="Atomic design is an approach to component design that was popularized by Brad Frost. Describes components with scientific terms." ID="ID_1175621170" CREATED="1529149373733" MODIFIED="1529150637255"/>
 <node TEXT="introduction" FOLDED="true" ID="ID_1481591635" CREATED="1529147550306" MODIFIED="1529147560373">
 <node TEXT="What is Atomic Design?" FOLDED="true" ID="ID_1254152651" CREATED="1529147821960" MODIFIED="1529147851651">
@@ -4712,7 +4828,7 @@
 <node TEXT="Atomic design is a language that conveys a hierarchy of reuse. Your low level components form the foundation for ever higher levels of abstraction." ID="ID_812803841" CREATED="1529150536477" MODIFIED="1529150540176"/>
 </node>
 </node>
-<node TEXT="There are five distinct levels in atomic design" ID="ID_221760775" CREATED="1529147791664" MODIFIED="1529147795947">
+<node TEXT="There are five distinct levels in atomic design" FOLDED="true" ID="ID_221760775" CREATED="1529147791664" MODIFIED="1529147795947">
 <node TEXT="Atomic-design-overview.png" ID="ID_1991803539" CREATED="1529174569323" MODIFIED="1529174569323">
 <hook URI="webdevelopment2_files/Atomic-design-overview.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
@@ -4901,14 +5017,14 @@
 </node>
 </node>
 </node>
-<node TEXT="Molecules" ID="ID_1134286962" CREATED="1529141214726" MODIFIED="1529141223018">
-<node TEXT="What&apos;s a Molecule?" ID="ID_66760989" CREATED="1529252491364" MODIFIED="1529252491364">
+<node TEXT="Molecules" FOLDED="true" ID="ID_1134286962" CREATED="1529141214726" MODIFIED="1529141223018">
+<node TEXT="What&apos;s a Molecule?" FOLDED="true" ID="ID_66760989" CREATED="1529252491364" MODIFIED="1529252491364">
 <node TEXT="In atomic design terms molecules are multiple atomic components composed together to serve a higher purpose." ID="ID_915445508" CREATED="1529252337781" MODIFIED="1529252337781"/>
 <node TEXT="They&apos;re still relatively simple, but molecules compose atoms into a single component." ID="ID_1997663572" CREATED="1529252367102" MODIFIED="1529252367102"/>
 <node TEXT="Gluing atoms together creates a simple, functional, and reusable component." ID="ID_718329299" CREATED="1529252387105" MODIFIED="1529252387105"/>
 <node TEXT="Molecules should also have a single (but higher level) responsibility" ID="ID_1609372058" CREATED="1529253148479" MODIFIED="1529253182642"/>
 </node>
-<node TEXT="Single responsibility principle" ID="ID_988205071" CREATED="1529252507556" MODIFIED="1529252544204">
+<node TEXT="Single responsibility principle" FOLDED="true" ID="ID_988205071" CREATED="1529252507556" MODIFIED="1529252544204">
 <node TEXT="single responsibility principle of atoms applies to molecules as well." ID="ID_1358845076" CREATED="1529252589613" MODIFIED="1529252824248"/>
 <node TEXT="The difference is since a molecule is a higher level abstraction the single responsibility is a higher level responsibility, but a well-designed molecule should still strive to do one thing well." ID="ID_97201125" CREATED="1529252624750" MODIFIED="1529252624750"/>
 <node TEXT="Although a molecule is composed of multiple atoms, they should be composed together strategically to handle a clear, distinct responsibility." ID="ID_1006721455" CREATED="1529252665508" MODIFIED="1529252665508"/>
@@ -4916,23 +5032,23 @@
 <node TEXT="The point is, two molecules can look and behave quite differently, even though they&apos;re composed of many of the same components, but keep in mind when atoms are combined they take on a specific purpose." ID="ID_274183721" CREATED="1529252884570" MODIFIED="1529252884570"/>
 </node>
 </node>
-<node TEXT="Organisms" ID="ID_806259813" CREATED="1529141223590" MODIFIED="1529141242122">
-<node TEXT="What&apos;s an Organism?&apos;" ID="ID_132999812" CREATED="1529259894025" MODIFIED="1529259894025">
+<node TEXT="Organisms" FOLDED="true" ID="ID_806259813" CREATED="1529141223590" MODIFIED="1529141242122">
+<node TEXT="What&apos;s an Organism?&apos;" FOLDED="true" ID="ID_132999812" CREATED="1529259894025" MODIFIED="1529259894025">
 <node TEXT="Just like molecules are composed of atoms, organisms are composed of molecules." ID="ID_1441912341" CREATED="1529259932090" MODIFIED="1529259932090"/>
 <node TEXT="An organism is more complex than a molecule because it composes molecules and other atoms together into a higher level abstraction." ID="ID_1776958429" CREATED="1529259947764" MODIFIED="1529259947764"/>
 <node TEXT="This typically results in a UI component that handles a section of the screen." ID="ID_1294837535" CREATED="1529260083823" MODIFIED="1529260083823"/>
-<node TEXT="Sometimes an organism or molecule can implement the fa&#xe7;ade pattern." ID="ID_1753763694" CREATED="1529260174821" MODIFIED="1529260174821">
+<node TEXT="Sometimes an organism or molecule can implement the fa&#xe7;ade pattern." FOLDED="true" ID="ID_1753763694" CREATED="1529260174821" MODIFIED="1529260174821">
 <node TEXT="The fa&#xe7;ade pattern abstracts away a more complex API by providing a simpler, more course grained API" ID="ID_35341147" CREATED="1529260194623" MODIFIED="1529260194623"/>
 <node TEXT="For example, an atom might accept a dozen props to support a wide variety of use cases. You can consider creating a molecule or organism that hard codes in many of these settings, and thus provides a clear, reusable component that serves a specific use case." ID="ID_136125668" CREATED="1529260223184" MODIFIED="1529260231872"/>
 </node>
 </node>
-<node TEXT="Design Tips" ID="ID_225922810" CREATED="1529259976294" MODIFIED="1529260056393">
-<node TEXT="1: Strong Opinions Are a Feature" ID="ID_1139903121" CREATED="1529260264486" MODIFIED="1529260264486">
+<node TEXT="Design Tips" FOLDED="true" ID="ID_225922810" CREATED="1529259976294" MODIFIED="1529260056393">
+<node TEXT="1: Strong Opinions Are a Feature" FOLDED="true" ID="ID_1139903121" CREATED="1529260264486" MODIFIED="1529260264486">
 <node TEXT="Organisms, by their very nature, abstract away the underlying components, so when you create reusable organisms you have to decide what props you&apos;d like to expose from your underlying components." ID="ID_1597828983" CREATED="1529260467750" MODIFIED="1529260467750"/>
 <node TEXT="Take a Passwordmolecule for example, It offers a long list of props to make it configurable, including the label, the onChange handler, the maxLength, and the minLength, the input placeholder, and toggles for it&apos;s advanced features like the VisibilityToggle and the quality indicator." ID="ID_356651358" CREATED="1529260525605" MODIFIED="1529260572637"/>
 <node TEXT="Imagine that I&apos;m going to create a registration form organism and use the PasswordInput component inside. I need to decide which of these configurations I want to expose, and there&apos;s no right answer here." ID="ID_407276942" CREATED="1529260625375" MODIFIED="1529260635133"/>
 <node TEXT="Context matters, but keep in mind that organisms often contain many components below, so if you choose to expose all of the child components props your organisms API will become very complex, so strive to limit the props that you expose from your underlying components." ID="ID_1700052517" CREATED="1529260689627" MODIFIED="1529260689627"/>
-<node TEXT="So why limit props?" ID="ID_1790714331" CREATED="1529260718693" MODIFIED="1529260718693">
+<node TEXT="So why limit props?" FOLDED="true" ID="ID_1790714331" CREATED="1529260718693" MODIFIED="1529260718693">
 <node TEXT="Because strong opinions are a feature, not a bug." ID="ID_1592440960" CREATED="1529260736851" MODIFIED="1529260736851"/>
 <node TEXT="1. Strong opinions enforce consistency." ID="ID_1981568572" CREATED="1529260747917" MODIFIED="1529261032289"/>
 <node TEXT="2. They lead to a smaller API for your component." ID="ID_610755681" CREATED="1529260768814" MODIFIED="1529261051565"/>
@@ -4943,15 +5059,15 @@
 </node>
 <node TEXT="When it comes to organisms, strong opinions are a feature. You don&apos;t need to expose all the props of your atoms and molecules. Much like any feature, it&apos;s easy to add a prop later, but it&apos;s hard to remove a prop later because it will create a breaking change, and potentially upset your users." ID="ID_1642291482" CREATED="1529260925178" MODIFIED="1529261024901"/>
 </node>
-<node TEXT="2: Keep Organisms Dumb" ID="ID_413302978" CREATED="1529260296553" MODIFIED="1529260296553">
+<node TEXT="2: Keep Organisms Dumb" FOLDED="true" ID="ID_413302978" CREATED="1529260296553" MODIFIED="1529260296553">
 <node TEXT="Do not turn your organisms into mini applications." ID="ID_1401290648" CREATED="1529261177471" MODIFIED="1529261177471"/>
 <node TEXT="Try to create dumb organisms. Just like your atoms and molecules, organisms should typically be simple functions that take props, and output HTML. Avoid creating autonomous mini applications." ID="ID_1434778507" CREATED="1529261212130" MODIFIED="1529261212130"/>
-<node TEXT="However, it can be useful to create container components to save people time." ID="ID_493399290" CREATED="1529261242972" MODIFIED="1529261242972">
+<node TEXT="However, it can be useful to create container components to save people time." FOLDED="true" ID="ID_493399290" CREATED="1529261242972" MODIFIED="1529261242972">
 <node TEXT="Container components handle state and logic and typically contain very little markup." ID="ID_1868570707" CREATED="1529261258815" MODIFIED="1529261258815"/>
 <node TEXT="They delegate markup handling to dumb child components." ID="ID_1629281950" CREATED="1529261275326" MODIFIED="1529261275326"/>
 <node TEXT="This helps separate concerns, and assures that your dumb components are easily testable in isolation because they&apos;re simple, pure components that accept input and return HTML" ID="ID_1206657857" CREATED="1529261308077" MODIFIED="1529261308077"/>
 </node>
-<node TEXT="Example" ID="ID_1502952311" CREATED="1529261756848" MODIFIED="1529261766699">
+<node TEXT="Example" FOLDED="true" ID="ID_1502952311" CREATED="1529261756848" MODIFIED="1529261766699">
 <node TEXT="Imagine that I tried to build YouTube using the atomic design philosophy." ID="ID_1077065582" CREATED="1529261844505" MODIFIED="1529261844505"/>
 <node TEXT="Imagine that the header is an organism, and the comments section is its own organism." ID="ID_1761836029" CREATED="1529261866489" MODIFIED="1529261866489"/>
 <node TEXT="Notice how the headshot is displayed in both the header and the comments section because I&apos;m logged in." ID="ID_1322920216" CREATED="1529261892328" MODIFIED="1529261905258"/>
@@ -4962,18 +5078,18 @@
 <node TEXT="There are other issues as well. If I change the photo, then both of these organisms would need to reflect the change, but if each component only cares about itself how do I assure that both organisms are updated when I change the picture?" ID="ID_90969138" CREATED="1529262084897" MODIFIED="1529262115337"/>
 <node TEXT="And if each organism bakes in knowledge about how to make API calls I&apos;m also at risk for sending down duplicate logic in two different JavaScript files, which wastes bandwidth, slows page load, and increases memory pressure." ID="ID_19421193" CREATED="1529264899039" MODIFIED="1529264899039"/>
 </node>
-<node TEXT="Let&apos;s review the issues I just discussed about creating smart organisms." ID="ID_475412109" CREATED="1529264985275" MODIFIED="1529264985275">
+<node TEXT="Let&apos;s review the issues I just discussed about creating smart organisms." FOLDED="true" ID="ID_475412109" CREATED="1529264985275" MODIFIED="1529264985275">
 <node TEXT="When creating reusable components it can be tempting to create smart reusable components that know how to handle authentication, API calls, authorization, and so on." ID="ID_925652900" CREATED="1529265002250" MODIFIED="1529265002250"/>
 <node TEXT="Some people call the pattern mini apps." ID="ID_1869776247" CREATED="1529265019167" MODIFIED="1529265019167"/>
 <node TEXT="If you create a few rich organisms that are smart enough to completely handle two separate portions of the same page, what happens when the same data is displayed in two places?" ID="ID_1465414332" CREATED="1529265121614" MODIFIED="1529265121614"/>
 <node TEXT="If each component merely cares about itself, then how do these two stay in sync?" ID="ID_792598967" CREATED="1529265164368" MODIFIED="1529265164368"/>
 <node TEXT="That&apos;s the applications job, so don&apos;t let an overly opinionated and complex organism compromise your applications architecture." ID="ID_434588366" CREATED="1529265185516" MODIFIED="1529265185516"/>
-<node TEXT="Smart organisms often lead to over fetching." ID="ID_1590851398" CREATED="1529265202236" MODIFIED="1529265202236">
+<node TEXT="Smart organisms often lead to over fetching." FOLDED="true" ID="ID_1590851398" CREATED="1529265202236" MODIFIED="1529265202236">
 <node TEXT="When each component is only worried about itself you&apos;re likely to request the same data in multiple places" ID="ID_1625358361" CREATED="1529265235622" MODIFIED="1529265235622"/>
 <node TEXT="That&apos;s the fundamental problem with creating smart, organism style components." ID="ID_239341687" CREATED="1529265258059" MODIFIED="1529265258059"/>
 </node>
 <node TEXT="An application needs to be designed holistically, but the smart organism mindset leads to composing a number of self-centered components together, which leads to poor performance and wasteful design." ID="ID_444526844" CREATED="1529265302850" MODIFIED="1529265302850"/>
-<node TEXT="Smart organisms may embed API, authentication, and other cross cutting concerns inside." ID="ID_764961661" CREATED="1529265372278" MODIFIED="1529265372278">
+<node TEXT="Smart organisms may embed API, authentication, and other cross cutting concerns inside." FOLDED="true" ID="ID_764961661" CREATED="1529265372278" MODIFIED="1529265372278">
 <node TEXT="This could lead to your users downloading the same code in multiple JavaScript bundles, which will slow page loads and waste bandwidth." ID="ID_209521464" CREATED="1529265400466" MODIFIED="1529265400466"/>
 </node>
 <node TEXT="Ironically, smart organisms often lead to tight coupling, since you need organisms to operate as a cohesive whole in a real application, you may have to tightly integrate two separate components to get them to act as a single unit." ID="ID_741690837" CREATED="1529265438958" MODIFIED="1529265438958"/>
@@ -4991,6 +5107,237 @@
 </node>
 </node>
 <node TEXT="Webcomponents" ID="ID_723095946" CREATED="1529147716512" MODIFIED="1529147729612"/>
+</node>
+<node TEXT="Isomorphic/Universal Apps" ID="ID_1841706943" CREATED="1529768931169" MODIFIED="1529769728285">
+<node TEXT="What is Isomorphism?" FOLDED="true" ID="ID_841759919" CREATED="1529768986857" MODIFIED="1529769003905">
+<node TEXT=" The word isomorphic is made up of two sounds: iso and morph." FOLDED="true" ID="ID_1573807126" CREATED="1529769209536" MODIFIED="1529769212832">
+<node TEXT="Iso means similar or equal, something that&apos;s congruent with another thing, like the two sides of an isosceles triangle are equal." ID="ID_1161257236" CREATED="1529769244016" MODIFIED="1529769247399"/>
+<node TEXT="Morph, which means shape or form, as in the word metamorphosis." ID="ID_1591253054" CREATED="1529769276415" MODIFIED="1529769292023"/>
+</node>
+<node TEXT="Something which is isomorphic has a similar shape in multiple places." ID="ID_233434363" CREATED="1529769315559" MODIFIED="1529769329806"/>
+<node TEXT="An isomorphic application, which can also be called a universal application, is defined as follows:" FOLDED="true" ID="ID_1716750282" CREATED="1529769383227" MODIFIED="1529769386782">
+<node TEXT="An application where the server and the client are written in the same language" ID="ID_153933362" CREATED="1529769409414" MODIFIED="1529769420959"/>
+<node TEXT="Where the server renders the first request and the client renders all subsequent ones" ID="ID_1765833088" CREATED="1529769461542" MODIFIED="1529769485526"/>
+<node TEXT="It&apos;s pretty specific sounding, but it applies to a wide variety of different web applications." ID="ID_1075315950" CREATED="1529769541885" MODIFIED="1529769544893"/>
+</node>
+<node TEXT="Ultimately, the server rendering first and the client rendering after is all part of fast performance, especially on mobile devices." ID="ID_436202359" CREATED="1529769565253" MODIFIED="1529769568573"/>
+<node TEXT="The term isomorphism is often used as a blanket term for various different features." ID="ID_273388038" CREATED="1529769641397" MODIFIED="1529769688861"/>
+<node TEXT=" If you do a good job of making an application isomorphic, the end result is as follows: faster development time for you and faster rendering of the application for the user." ID="ID_1371340115" CREATED="1529769832028" MODIFIED="1529769869771"/>
+</node>
+<node TEXT="Isomorphic Process" FOLDED="true" ID="ID_1523642174" CREATED="1529770703949" MODIFIED="1529770708013">
+<node TEXT="So, what takes place in an isomorphic application that makes the end experience so fast for the user?" ID="ID_864661384" CREATED="1529770728213" MODIFIED="1529770730837"/>
+<node TEXT="It breaks down into a series of steps." FOLDED="true" ID="ID_160979427" CREATED="1529770773445" MODIFIED="1529770788732">
+<node TEXT="1. User requests web page" FOLDED="true" ID="ID_881675230" CREATED="1529770830237" MODIFIED="1529770909118">
+<node TEXT="They either do this by opening it in their browser or their mobile device or a screen reader or any device." ID="ID_713433161" CREATED="1529771161572" MODIFIED="1529771161572"/>
+</node>
+<node TEXT="2. Server queries database and APIs" FOLDED="true" ID="ID_1189038333" CREATED="1529770833261" MODIFIED="1529770931388">
+<node TEXT="stuff like your user info or a list of your contacts, etc." ID="ID_1477103000" CREATED="1529771243618" MODIFIED="1529771246089"/>
+</node>
+<node TEXT="3. Server asks app for the HTML it would render given the information it has" ID="ID_1714025471" CREATED="1529770836157" MODIFIED="1529770959779"/>
+<node TEXT="4. Server sends client rendered HTML" FOLDED="true" ID="ID_743974898" CREATED="1529770837316" MODIFIED="1529770982221">
+<node TEXT="The actual JavaScript code isn&apos;t there, it&apos;s just looking at what would have happened if the JavaScript code would have run." ID="ID_753548108" CREATED="1529771401113" MODIFIED="1529771401113"/>
+<node TEXT="The client gets the HTML onto their device and the application renders, not the interactivity, but just what the user would see." ID="ID_1345883597" CREATED="1529771440328" MODIFIED="1529771443630"/>
+</node>
+<node TEXT="5. Application renders on client&#x2019;s device (after just one HTTP request)" ID="ID_290146969" CREATED="1529770838524" MODIFIED="1529771004347"/>
+<node TEXT="6. User begins enjoying  :-)" ID="ID_135164959" CREATED="1529770839469" MODIFIED="1529771027693"/>
+<node TEXT="7. Client requests JavaScript from server and boots application" FOLDED="true" ID="ID_1708010620" CREATED="1529770840269" MODIFIED="1529771055220">
+<node TEXT="our client then requests the JavaScript, that makes the application actually live, from the server and it starts the application up on the client." ID="ID_21907121" CREATED="1529771667319" MODIFIED="1529771671510"/>
+</node>
+<node TEXT="8. Client application recognizes pre-rendered HTML and binds to it" FOLDED="true" ID="ID_27954314" CREATED="1529770841092" MODIFIED="1529771082796">
+<node TEXT="Now the cool part is that when the client runs the JavaScript, if it was the same JavaScript used to render the HTML that made up your application, the code will actually be able to recognize that, and it will kind of graft the application logic to the existing HTML without re-rendering it." ID="ID_474021835" CREATED="1529771763206" MODIFIED="1529771768240"/>
+</node>
+<node TEXT="9. Application finishes loading several seconds after user got their initial content" ID="ID_186326629" CREATED="1529770841844" MODIFIED="1529771111166"/>
+</node>
+</node>
+<node TEXT="Advantages of Isomorphism" FOLDED="true" ID="ID_238285734" CREATED="1529771823966" MODIFIED="1529771828397">
+<node TEXT=" The terms functional and technical isomorphism, as described by Gert Hengeveld in an article on medium, describe the two parts of an isomorphic application&apos;s advantages." ID="ID_137024811" CREATED="1529772277467" MODIFIED="1529772280786"/>
+<node TEXT="functional isomorphism" FOLDED="true" ID="ID_709149502" CREATED="1529772313299" MODIFIED="1529772517321">
+<node TEXT="It describes the property of the server rendering the HTML on the initial load." ID="ID_1191914694" CREATED="1529772335388" MODIFIED="1529772335388"/>
+<node TEXT=" It&apos;s the actual advantages for your users. In other words, functional isomorphism is faster loading." ID="ID_1664105787" CREATED="1529772366322" MODIFIED="1529772369521"/>
+</node>
+<node TEXT="technical isomorphism" FOLDED="true" ID="ID_675211143" CREATED="1529772391386" MODIFIED="1529772501041">
+<node TEXT="which is the code that&apos;s shared between the front- and back-end of the application." ID="ID_130834011" CREATED="1529772427202" MODIFIED="1529772430137"/>
+<node TEXT=" Shared code means less code, so technical isomorphism basically means faster and more maintainable coding." ID="ID_1143619810" CREATED="1529772451642" MODIFIED="1529772454849"/>
+</node>
+<node TEXT="the advantages of technical isomorphism" FOLDED="true" ID="ID_571688190" CREATED="1529772563817" MODIFIED="1529772568032">
+<node TEXT="Less code to write and maintain" FOLDED="true" ID="ID_425375152" CREATED="1529773261644" MODIFIED="1529773291491">
+<node TEXT="So if you write less code, your maintenance will be exponentially less." ID="ID_404939293" CREATED="1529772645488" MODIFIED="1529772648199"/>
+<node TEXT="Not only is code a headache to maintain, but the more you have of it, the faster the maintenance work expands." ID="ID_1829568097" CREATED="1529773481235" MODIFIED="1529773485122"/>
+</node>
+<node TEXT="Fewer languages to learn" FOLDED="true" ID="ID_611805266" CREATED="1529773273276" MODIFIED="1529773304819">
+<node TEXT=" Everybody likes to learn a new coding language now and then, but when you&apos;re already in the process of building a major application it&apos;s great if people you bring on who just understand JavaScript can participate in both the front- and back-end of your coding." ID="ID_1232398205" CREATED="1529772671048" MODIFIED="1529773431939"/>
+</node>
+<node TEXT="Congruent data formats" FOLDED="true" ID="ID_1578548857" CREATED="1529773274948" MODIFIED="1529773320820">
+<node TEXT="Usually the back-end and the front-end will share a data format. JSON is a popular one for JavaScript applications and the one we&apos;ll be using. If you already understand JSON then you don&apos;t need to learn any additional languages to work with the data that our server&apos;s going to be producing." ID="ID_1951978980" CREATED="1529772724816" MODIFIED="1529772728655"/>
+</node>
+<node TEXT="library can integrate with self" FOLDED="true" ID="ID_1078556887" CREATED="1529773276580" MODIFIED="1529773336059">
+<node TEXT="The best example is React, which generates code on the server-side then, when it runs on the client, it recognizes its own code and can bind to the generated HTML with an overall faster experience for the user." ID="ID_458375102" CREATED="1529772777903" MODIFIED="1529773469466"/>
+</node>
+</node>
+<node TEXT="the advantages functional isomorphism" FOLDED="true" ID="ID_1764362538" CREATED="1529772806983" MODIFIED="1529772831606">
+<node TEXT="It has faster load times." FOLDED="true" ID="ID_21577431" CREATED="1529772854535" MODIFIED="1529773562617">
+<node ID="ID_1120249361" CREATED="1529773566008" MODIFIED="1529773566008"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;especially for mobile which takes a long time to load and parse big JavaScript programs.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="It&apos;s easier for many search engines to index." FOLDED="true" ID="ID_919626925" CREATED="1529772890054" MODIFIED="1529773582777">
+<node ID="ID_761363660" CREATED="1529773585891" MODIFIED="1529773585891"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Now, search engines have been better at indexing static applications like React ones or Angular, but they're not all equally good and they still have some work to do.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node TEXT="When you send your HTML directly, it makes it easier for search engines to index and figure out what&apos;s going on on your page." ID="ID_527145104" CREATED="1529772940982" MODIFIED="1529772944581"/>
+</node>
+<node TEXT="Automatic supports for legacy browsers" FOLDED="true" ID="ID_746731024" CREATED="1529773617610" MODIFIED="1529773637665">
+<node ID="ID_943263781" CREATED="1529773655946" MODIFIED="1529773655946"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      if your user is using a very old browser or a browser that doesn't support JavaScript, and this does happen from time to time, congratulations, you automatically support those browsers by using isomorphic code.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_576888568" CREATED="1529773670243" MODIFIED="1529773670243"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Even if the user isn't running JavaScript, they're still going to see their application and, with a little clever programming, they can even still click links and interact.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Pitfalls and Challenges of Isomorphism" FOLDED="true" ID="ID_1562019281" CREATED="1529773041526" MODIFIED="1529773045413">
+<node TEXT=" When you&apos;re combining your front-end and back-end code in one place, one concept, you risk running into bugs from both ends of that code." ID="ID_847639908" CREATED="1529773879840" MODIFIED="1529773885359"/>
+<node TEXT="More complex architecture" FOLDED="true" ID="ID_1375206245" CREATED="1529773708713" MODIFIED="1529773722360">
+<node TEXT="Special build phases and special logic in your server, this is all additional code that needs to be written." ID="ID_1779586001" CREATED="1529773941757" MODIFIED="1529773941757"/>
+<node TEXT="So, while this architecture ultimately can save you time by reducing maintenance, if you didn&apos;t have an isomorphic application your back-end would just be simpler." ID="ID_1112306256" CREATED="1529773964813" MODIFIED="1529773964813"/>
+</node>
+<node TEXT="Challenging to troubleshoot" FOLDED="true" ID="ID_1260518750" CREATED="1529773724969" MODIFIED="1529773739688">
+<node TEXT="it&apos;s challenging to troubleshoot. Isomorphic applications aren&apos;t perfect and errors can occur on the server that don&apos;t occur on the client and vice-versa." ID="ID_407285680" CREATED="1529773994577" MODIFIED="1529773994577"/>
+<node TEXT="You might think your application is perfectly functional because you&apos;ve only been testing it on the client-side, just to find out that when you try to do a particular thing on the server it doesn&apos;t work, and it&apos;s hard to figure out what." ID="ID_650708078" CREATED="1529774040703" MODIFIED="1529774043782"/>
+</node>
+<node TEXT="Sensitive data on server prone to exposure" FOLDED="true" ID="ID_238844023" CREATED="1529773740449" MODIFIED="1529773761608">
+<node TEXT="In addition, unlike a one-sided application, the private data in your server files can sometimes get scooped up by your build system and sent over to your client who can then analyze this sensitive or secret data." ID="ID_1933062838" CREATED="1529774079108" MODIFIED="1529774079108"/>
+<node TEXT="So how exactly does sensitive data get exposed in an isomorphic application?" FOLDED="true" ID="ID_233462167" CREATED="1529774176373" MODIFIED="1529774176373">
+<node TEXT="So, you the developer write yourself a module for the client to enjoy. Now, you&apos;re not requiring the secret data directly in that module, but that module might require your config file, which might require your secrets file." ID="ID_1933163681" CREATED="1529774221134" MODIFIED="1529774221134"/>
+<node TEXT="Now, when your application is bundled, there&apos;s no guarantee that your bundler is going to take those secrets that shouldn&apos;t be sent to the client and get rid of them." ID="ID_483322744" CREATED="1529774254665" MODIFIED="1529774254665"/>
+<node TEXT="Maybe it will if it&apos;s smart enough to remove any unused variables, but if they&apos;re not removed then an attacker can simply search the source code of the page right in Chrome and access private data." ID="ID_662343270" CREATED="1529774286996" MODIFIED="1529774286996"/>
+</node>
+</node>
+<node TEXT="More points of possible failure" FOLDED="true" ID="ID_137844188" CREATED="1529773765049" MODIFIED="1529773778801">
+<node TEXT="For each view of your website, there&apos;s now what happens if the client navigates that view from any given page?" ID="ID_1547325933" CREATED="1529774124681" MODIFIED="1529774124681"/>
+<node TEXT="Or what happens if the client loads it directly from the server and what state that client&apos;s session and user account are in?" ID="ID_367396687" CREATED="1529774149131" MODIFIED="1529774149131"/>
+</node>
+</node>
+<node TEXT="Priorities of Isomorphic Applications" FOLDED="true" ID="ID_748031869" CREATED="1529774930326" MODIFIED="1529774930326">
+<node TEXT="As with any application, your priorities may be different depending on if you&apos;re developing it at the time or if the user is viewing it." ID="ID_691320090" CREATED="1529774951906" MODIFIED="1529774951906"/>
+<node TEXT="However, in an isomorphic application, we take such a hands-on approach to the assembling and sending of the application that we need to be very clear before we get started what those priorities are." ID="ID_786336128" CREATED="1529775001556" MODIFIED="1529775001556"/>
+<node TEXT="Development" FOLDED="true" ID="ID_944697724" CREATED="1529775030112" MODIFIED="1529775036375">
+<node TEXT="Application updates quickly after source code is updated" ID="ID_876793070" CREATED="1529775058192" MODIFIED="1529775085767"/>
+<node TEXT="Additional round trips to fetch data are of no consequence" ID="ID_1749681663" CREATED="1529775098296" MODIFIED="1529775106911"/>
+<node TEXT="Code needs to be organized, clear and highly traceable" ID="ID_25586474" CREATED="1529775115351" MODIFIED="1529775121943"/>
+<node TEXT="Tooling is needed to allow developers to see app&#x2019;s internal state" ID="ID_1788119576" CREATED="1529775130631" MODIFIED="1529775139407"/>
+</node>
+<node TEXT="Production" FOLDED="true" ID="ID_1458602300" CREATED="1529775046928" MODIFIED="1529775052119">
+<node TEXT="Application is not concerned with updates to source code" ID="ID_336519169" CREATED="1529775158743" MODIFIED="1529775164942"/>
+<node TEXT="Additional round trips significantly slow application on mobile and greatly increase the odds of user closing the application before it even loads" ID="ID_1542991178" CREATED="1529775174823" MODIFIED="1529775194430"/>
+<node TEXT="Code should be obfuscated, compact, and not expose sensitive data" ID="ID_711748387" CREATED="1529775206847" MODIFIED="1529775216046"/>
+<node TEXT="Tooling is needed to track user&#x2019;s activity and expose bugs" ID="ID_1140774152" CREATED="1529775225142" MODIFIED="1529780429323"/>
+</node>
+</node>
+<node TEXT="In a Nutshell" ID="ID_138474306" CREATED="1529780891232" MODIFIED="1529780909975">
+<node TEXT="Universal app or an isomorphic app both mean the same thing." ID="ID_1651221000" CREATED="1529780937770" MODIFIED="1529780943719"/>
+<node TEXT="They basically mean an application where code is shared between the front- and the back-end, technical isomorphism" ID="ID_1877160567" CREATED="1529780974336" MODIFIED="1529780990503"/>
+<node TEXT="And an application where functionality and performance are improved, a functional isomorphic application." ID="ID_1855317637" CREATED="1529781045047" MODIFIED="1529781061223"/>
+<node TEXT="The advantages of such an application include better developer productivity and improved experience on mobile, but the disadvantages include more complexity and vulnerabilities." ID="ID_1375788286" CREATED="1529781083367" MODIFIED="1529781086814"/>
+</node>
+<node TEXT="Code Sharing Isomorphic Application VS Lamp Application" ID="ID_32430933" CREATED="1529781631331" MODIFIED="1529781748224">
+<node TEXT="So, code sharing is one of the big reasons that we&apos;re going with isomorphic architecture to begin with. In our application, some of the same code is used on the client as on the server. This allows us, in some cases, to write half as much code and is largely only possible because our back-end is also written in JavaScript." ID="ID_942367252" CREATED="1529781881202" MODIFIED="1529781881202"/>
+<node TEXT=" In addition, and this is where code sharing really gets cool, the same libraries that we&apos;re using on our back-end to do back-end things, like prerender the application, these are the libraries that are being used on the client as well." ID="ID_1842147251" CREATED="1529781908825" MODIFIED="1529781912496"/>
+<node TEXT="That means they can be programmed by their original creators to have some way of integrating, like bootstrapping to the prerendered HTML and making it a live application without reloading in the case of React." ID="ID_1640825508" CREATED="1529781965737" MODIFIED="1529781991673"/>
+</node>
+<node TEXT="Who does what" ID="ID_124618130" CREATED="1529782641316" MODIFIED="1529782664108">
+<node TEXT="React&apos;s Role in Isomorphic Application" ID="ID_1906352257" CREATED="1529782686740" MODIFIED="1529782704971">
+<node TEXT="Renders the application on the server" ID="ID_1370705927" CREATED="1529782711540" MODIFIED="1529782726987"/>
+<node TEXT="Powers the application on the client (and renders it)" ID="ID_1889742030" CREATED="1529782729043" MODIFIED="1529782754883"/>
+<node TEXT="Handles serving content based on routes (via React-Router &amp; Express)" ID="ID_255610523" CREATED="1529782757675" MODIFIED="1529782787346"/>
+</node>
+<node TEXT="Express&apos;s Role in Isomorphic Application" ID="ID_1125497422" CREATED="1529782815835" MODIFIED="1529782847554">
+<node TEXT="Responsible for fetching data to create initial state" ID="ID_1769951022" CREATED="1529782867274" MODIFIED="1529782888618"/>
+<node TEXT="Uses React to render application on server" ID="ID_1491506036" CREATED="1529782923146" MODIFIED="1529782942578"/>
+<node TEXT="Runs Webpack instance in development to serve app bundle" ID="ID_1283365247" CREATED="1529782973858" MODIFIED="1529782997441"/>
+<node TEXT="Loads template and serves static files" ID="ID_56598781" CREATED="1529783056937" MODIFIED="1529783072681"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Hot Module Replacement" ID="ID_680325536" CREATED="1529791615887" MODIFIED="1529791632342">
+<node TEXT="introduction" ID="ID_155785277" CREATED="1529791646847" MODIFIED="1529791654221">
+<node TEXT="Updates application without refreshing browser" ID="ID_312455324" CREATED="1529791657655" MODIFIED="1529791678606"/>
+<node TEXT="Follows &quot;opt-in&quot; system where each module decides if it can replace its own child modules" ID="ID_900101002" CREATED="1529791680606" MODIFIED="1529791722295">
+<node TEXT="This basically says that when you update a module, any modules for which that is a dependency, one of the parent modules, can say listen when this has updated don&apos;t refresh the page just inform this module in the code." ID="ID_134823839" CREATED="1529792181810" MODIFIED="1529792181810"/>
+<node TEXT=" It knows how to load the module again and update itself without refreshing the whole page." ID="ID_692492340" CREATED="1529792252594" MODIFIED="1529792263826"/>
+</node>
+<node TEXT="Easy to do when application has no loacl state (ie, Redux application)" ID="ID_1243013165" CREATED="1529791731086" MODIFIED="1529791769677">
+<node TEXT="Now when you write applications in React, try to always use the stateless kind of components in Redux." ID="ID_166635529" CREATED="1529792311059" MODIFIED="1529792336434"/>
+<node TEXT="To get this hot module replacement benefit with almost no additional work." ID="ID_748544306" CREATED="1529792346962" MODIFIED="1529792367865"/>
+</node>
+</node>
+<node TEXT="Live Reload Process" ID="ID_307698751" CREATED="1529791728734" MODIFIED="1529791791997">
+<node TEXT="Client has application open" ID="ID_253426446" CREATED="1529791825501" MODIFIED="1529791845765"/>
+<node TEXT="Source module is updated" ID="ID_278016598" CREATED="1529791846845" MODIFIED="1529791856804"/>
+<node TEXT="Bundle is recompiled and the page refreshes" ID="ID_169487635" CREATED="1529791857893" MODIFIED="1529791874540"/>
+</node>
+<node TEXT="HMR Process" ID="ID_1018437764" CREATED="1529791793854" MODIFIED="1529791812541">
+<node TEXT="Client has application open" ID="ID_20591897" CREATED="1529791905277" MODIFIED="1529791914756"/>
+<node TEXT="Source module &#x201c;child&#x201d; is updated" ID="ID_967701104" CREATED="1529791916965" MODIFIED="1529791932940"/>
+<node TEXT="Server notifies client that updated module is ready" ID="ID_1968729270" CREATED="1529791939540" MODIFIED="1529791956716"/>
+<node TEXT="Client checks if any modules will &#x201c;accept&#x201d; new code" ID="ID_175233258" CREATED="1529791958164" MODIFIED="1529791976972"/>
+<node TEXT="Source module &#x201c;parent&#x201d; accepts reload, loads new module and replaces old one" ID="ID_936683487" CREATED="1529791978332" MODIFIED="1529792000710"/>
+<node TEXT="Client sees application update without refreshing" ID="ID_1168552152" CREATED="1529792009204" MODIFIED="1529792021965"/>
+</node>
+<node TEXT="HMR... In Production?" ID="ID_126967712" CREATED="1529792038260" MODIFIED="1529792042611">
+<node TEXT="Push updates to your application while your end user is using it" ID="ID_1231975745" CREATED="1529792050988" MODIFIED="1529792050988"/>
+<node TEXT="Puts more strain on server as it struggles to keep thousands of client instances up-to-date" ID="ID_1899007298" CREATED="1529792068364" MODIFIED="1529792076067"/>
+<node TEXT="Totally untested &#x2013; security vulnerabilities are a serious concern, but the advantages are tempting" ID="ID_26300616" CREATED="1529792082004" MODIFIED="1529792088375"/>
 </node>
 </node>
 </node>
@@ -5550,13 +5897,13 @@
 <node TEXT="markdown" ID="ID_1365285825" CREATED="1520848003140" MODIFIED="1520848010118"/>
 </node>
 </node>
-<node TEXT="extentions" ID="ID_678830602" CREATED="1522617731590" MODIFIED="1522617738587">
+<node TEXT="extentions" FOLDED="true" ID="ID_678830602" CREATED="1522617731590" MODIFIED="1522617738587">
 <node TEXT="Static type Checkers" ID="ID_710206642" CREATED="1522617746934" MODIFIED="1522617769995">
 <node TEXT="TypeScript" ID="ID_1405762228" CREATED="1522617771429" MODIFIED="1522617786019"/>
 <node TEXT="Flow" ID="ID_86774713" CREATED="1522617787365" MODIFIED="1522617792187"/>
 </node>
 </node>
-<node TEXT="Build tools" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
+<node TEXT="Build tools" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
 <node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
 <node TEXT="NPM Scripts" ID="ID_1468674140" CREATED="1522616474887" MODIFIED="1522616485445"/>
 <node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
@@ -5685,7 +6032,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Testing" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
+<node TEXT="Testing" FOLDED="true" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
 <node TEXT="Karma" FOLDED="true" ID="ID_1308980703" CREATED="1516004806956" MODIFIED="1516004819297">
 <node TEXT="deprecated" FOLDED="true" ID="ID_603925992" CREATED="1523878739354" MODIFIED="1523878749273">
 <node TEXT="How It Works" ID="ID_689036405" CREATED="1516004868654" MODIFIED="1516004868654">
