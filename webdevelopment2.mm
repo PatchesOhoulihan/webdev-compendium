@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -2598,12 +2598,12 @@
 </node>
 </node>
 <node TEXT="language-core" FOLDED="true" ID="ID_146057768" CREATED="1515282069557" MODIFIED="1517909250306">
-<node TEXT="datatypes" ID="ID_1729515640" CREATED="1521128790175" MODIFIED="1521128803370">
-<node TEXT="Dynamic typing" ID="ID_1054094230" CREATED="1521128837021" MODIFIED="1521128840773">
+<node TEXT="datatypes" FOLDED="true" ID="ID_1729515640" CREATED="1521128790175" MODIFIED="1521128803370">
+<node TEXT="Dynamic typing" FOLDED="true" ID="ID_1054094230" CREATED="1521128837021" MODIFIED="1521128840773">
 <node TEXT="JavaScript is a loosely typed or a dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types" ID="ID_885926804" CREATED="1521128878013" MODIFIED="1521128896423"/>
 </node>
-<node TEXT="The latest ECMAScript standard defines seven data types" ID="ID_428773070" CREATED="1521128973800" MODIFIED="1521128977529">
-<node TEXT="Six data types that are primitives(immutable):" ID="ID_1760285723" CREATED="1521129104632" MODIFIED="1523789849679">
+<node TEXT="The latest ECMAScript standard defines seven data types" FOLDED="true" ID="ID_428773070" CREATED="1521128973800" MODIFIED="1521128977529">
+<node TEXT="Six data types that are primitives(immutable):" FOLDED="true" ID="ID_1760285723" CREATED="1521129104632" MODIFIED="1523789849679">
 <node TEXT="Boolean" ID="ID_1681372778" CREATED="1521129014641" MODIFIED="1521129017847"/>
 <node TEXT="Null" ID="ID_1794636900" CREATED="1521129041251" MODIFIED="1521129044186"/>
 <node TEXT="Undefined" ID="ID_1574590799" CREATED="1521129068013" MODIFIED="1521129071202"/>
@@ -2615,9 +2615,9 @@
 <node TEXT="All types except objects define immutable values (values, which are incapable of being changed). For example and unlike to C, Strings are immutable." ID="ID_124632379" CREATED="1521129364959" MODIFIED="1521129368619"/>
 </node>
 </node>
-<node TEXT="statements &amp; declarations" ID="ID_801689764" CREATED="1522760256889" MODIFIED="1522760283001">
+<node TEXT="statements &amp; declarations" FOLDED="true" ID="ID_801689764" CREATED="1522760256889" MODIFIED="1522760283001">
 <node TEXT="JavaScript applications consist of statements with an appropriate syntax. A single statement may span multiple lines. Multiple statements may occur on a single line if each statement is separated by a semicolon. This isn&apos;t a keyword, but a group of keywords." ID="ID_836725055" CREATED="1522760855755" MODIFIED="1522760860781"/>
-<node TEXT="Control flow" ID="ID_836041389" CREATED="1522760895451" MODIFIED="1522760902629">
+<node TEXT="Control flow" FOLDED="true" ID="ID_836041389" CREATED="1522760895451" MODIFIED="1522760902629">
 <node TEXT="Block" ID="ID_951385461" CREATED="1522761455695" MODIFIED="1522761459953"/>
 <node TEXT="break statement" FOLDED="true" ID="ID_1346248177" CREATED="1522708346004" MODIFIED="1522708356846">
 <node TEXT="Use the break statement to terminate a loop, switch, or in conjunction with a labeled statement." FOLDED="true" ID="ID_672875339" CREATED="1522757702954" MODIFIED="1522757707708">
@@ -2662,19 +2662,19 @@
 <node TEXT="throw" ID="ID_1048711168" CREATED="1522761609163" MODIFIED="1522761613072"/>
 <node TEXT="try...catch" ID="ID_1618452968" CREATED="1522761621727" MODIFIED="1522761627640"/>
 </node>
-<node TEXT="Declarations" ID="ID_372406117" CREATED="1522760914979" MODIFIED="1522760927882">
+<node TEXT="Declarations" FOLDED="true" ID="ID_372406117" CREATED="1522760914979" MODIFIED="1522760927882">
 <node TEXT="var" ID="ID_475260299" CREATED="1522761389869" MODIFIED="1522761394250"/>
 <node TEXT="let" ID="ID_39908922" CREATED="1522761404122" MODIFIED="1522761408034"/>
 <node TEXT="const" ID="ID_1386171736" CREATED="1522761415668" MODIFIED="1522761420361"/>
 </node>
-<node TEXT="Functions and classes" ID="ID_1163149064" CREATED="1522760929111" MODIFIED="1522760933381">
+<node TEXT="Functions and classes" FOLDED="true" ID="ID_1163149064" CREATED="1522760929111" MODIFIED="1522760933381">
 <node TEXT="function" ID="ID_1555976517" CREATED="1522761191576" MODIFIED="1522761288427"/>
 <node TEXT="function*" ID="ID_1985654286" CREATED="1522761301504" MODIFIED="1522761306075"/>
 <node TEXT="async function" ID="ID_735121281" CREATED="1522761316077" MODIFIED="1522761319882"/>
 <node TEXT="return" ID="ID_1495254441" CREATED="1522761330997" MODIFIED="1522761334978"/>
 <node TEXT="class" ID="ID_353224782" CREATED="1522761372382" MODIFIED="1522761376706"/>
 </node>
-<node TEXT="Iterations" ID="ID_921640303" CREATED="1522760970321" MODIFIED="1522760974668">
+<node TEXT="Iterations" FOLDED="true" ID="ID_921640303" CREATED="1522760970321" MODIFIED="1522760974668">
 <node TEXT="for statement" FOLDED="true" ID="ID_667345979" CREATED="1522708285849" MODIFIED="1522708288430">
 <node TEXT="A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop. A for statement looks as follows:" ID="ID_902639572" CREATED="1522756947134" MODIFIED="1522756951777"/>
 <node TEXT="example" FOLDED="true" ID="ID_1362468226" CREATED="1522756973931" MODIFIED="1522756979609">
@@ -2714,11 +2714,11 @@
 </node>
 </node>
 </node>
-<node TEXT="Others" ID="ID_1576809427" CREATED="1522760990545" MODIFIED="1522760995564">
+<node TEXT="Others" FOLDED="true" ID="ID_1576809427" CREATED="1522760990545" MODIFIED="1522760995564">
 <node TEXT="debugger" ID="ID_689081424" CREATED="1522761056510" MODIFIED="1522761062684"/>
 <node TEXT="export" ID="ID_1852910848" CREATED="1522761075361" MODIFIED="1522761079460"/>
 <node TEXT="import" ID="ID_1538199338" CREATED="1522761085739" MODIFIED="1522761089564"/>
-<node TEXT="label" ID="ID_1886103407" CREATED="1522761106604" MODIFIED="1522761110852">
+<node TEXT="label" FOLDED="true" ID="ID_1886103407" CREATED="1522761106604" MODIFIED="1522761110852">
 <node TEXT="A label provides a statement with an identifier that lets you refer to it elsewhere in your program." ID="ID_714373010" CREATED="1522757465526" MODIFIED="1522757470501"/>
 <node TEXT="For example, you can use a label to identify a loop, and then use the break or continue statements to indicate whether a program should interrupt the loop or continue its execution." ID="ID_654929764" CREATED="1522757491152" MODIFIED="1522757496525"/>
 <node TEXT="label :&#xa;   statement" ID="ID_1962502862" CREATED="1522757521109" MODIFIED="1522757525381"/>
@@ -2729,52 +2729,52 @@
 </node>
 </node>
 </node>
-<node TEXT="operators &amp; expressions" ID="ID_1987984397" CREATED="1521469292211" MODIFIED="1522760254522">
+<node TEXT="operators &amp; expressions" FOLDED="true" ID="ID_1987984397" CREATED="1521469292211" MODIFIED="1522760254522">
 <node TEXT="JavaScript operators are used to assign values, compare values, perform arithmetic operations, and more." ID="ID_838826627" CREATED="1522706662141" MODIFIED="1522706668241"/>
-<node TEXT="Arithmetic" ID="ID_227014426" CREATED="1522706640108" MODIFIED="1522706719769">
+<node TEXT="Arithmetic" FOLDED="true" ID="ID_227014426" CREATED="1522706640108" MODIFIED="1522706719769">
 <node TEXT="used to perform arithmetic between variables and/or values." ID="ID_325196230" CREATED="1522706683529" MODIFIED="1522707518514"/>
 </node>
-<node TEXT="Assignment" ID="ID_1811171680" CREATED="1522706701231" MODIFIED="1522706714960">
+<node TEXT="Assignment" FOLDED="true" ID="ID_1811171680" CREATED="1522706701231" MODIFIED="1522706714960">
 <node TEXT="used to assign values to JavaScript variables." ID="ID_59022151" CREATED="1522706800746" MODIFIED="1522707549296"/>
 </node>
-<node TEXT="String" ID="ID_677603901" CREATED="1522706792028" MODIFIED="1522706796757">
+<node TEXT="String" FOLDED="true" ID="ID_677603901" CREATED="1522706792028" MODIFIED="1522706796757">
 <node TEXT="used to concatenate (add) strings." ID="ID_566056665" CREATED="1522707243506" MODIFIED="1522707501634"/>
 </node>
-<node TEXT="Comparison" ID="ID_921168356" CREATED="1522706818924" MODIFIED="1522706823001">
+<node TEXT="Comparison" FOLDED="true" ID="ID_921168356" CREATED="1522706818924" MODIFIED="1522706823001">
 <node TEXT="used in logical statements to determine equality or difference between variables or values." ID="ID_1931758164" CREATED="1522707220194" MODIFIED="1522707506348"/>
 </node>
-<node TEXT="Conditional (Ternary)" ID="ID_1892924625" CREATED="1522706834782" MODIFIED="1522706840448">
+<node TEXT="Conditional (Ternary)" FOLDED="true" ID="ID_1892924625" CREATED="1522706834782" MODIFIED="1522706840448">
 <node TEXT="assigns a value to a variable based on a condition." ID="ID_1549890852" CREATED="1522707197403" MODIFIED="1522707557459"/>
 </node>
-<node TEXT="Logical" ID="ID_1072007229" CREATED="1522706869484" MODIFIED="1522706874280">
+<node TEXT="Logical" FOLDED="true" ID="ID_1072007229" CREATED="1522706869484" MODIFIED="1522706874280">
 <node TEXT="used to determine the logic between variables or values." ID="ID_686863670" CREATED="1522707183536" MODIFIED="1522707566779"/>
 </node>
-<node TEXT="Bitwise" ID="ID_1863631860" CREATED="1522706887758" MODIFIED="1522707150313">
+<node TEXT="Bitwise" FOLDED="true" ID="ID_1863631860" CREATED="1522706887758" MODIFIED="1522707150313">
 <node TEXT="Bit operators work on 32 bits numbers. Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number." ID="ID_974610643" CREATED="1522707149249" MODIFIED="1522707157366"/>
 </node>
-<node TEXT="typeof" ID="ID_51606624" CREATED="1522706906352" MODIFIED="1522706910864">
+<node TEXT="typeof" FOLDED="true" ID="ID_51606624" CREATED="1522706906352" MODIFIED="1522706910864">
 <node TEXT="The typeof operator returns the type of a variable, object, function or expression:" ID="ID_1730479583" CREATED="1522707117540" MODIFIED="1522707122286"/>
 </node>
-<node TEXT="delete" ID="ID_833691886" CREATED="1522706929253" MODIFIED="1522706933064">
+<node TEXT="delete" FOLDED="true" ID="ID_833691886" CREATED="1522706929253" MODIFIED="1522706933064">
 <node TEXT="The delete operator deletes a property from an object:" ID="ID_1572849473" CREATED="1522707099733" MODIFIED="1522707104439"/>
 </node>
-<node TEXT="in" ID="ID_487269675" CREATED="1522706940989" MODIFIED="1522706953528">
+<node TEXT="in" FOLDED="true" ID="ID_487269675" CREATED="1522706940989" MODIFIED="1522706953528">
 <node TEXT="The in operator returns true if the specified property is in the specified object, otherwise false:" ID="ID_133628607" CREATED="1522707069943" MODIFIED="1522707074711"/>
 </node>
-<node TEXT="instanceof" ID="ID_1278472205" CREATED="1522706954847" MODIFIED="1522706959127">
+<node TEXT="instanceof" FOLDED="true" ID="ID_1278472205" CREATED="1522706954847" MODIFIED="1522706959127">
 <node TEXT="The instanceof operator returns true if the specified object is an instance of the specified object:" ID="ID_1714674602" CREATED="1522707054232" MODIFIED="1522707056743"/>
 </node>
-<node TEXT="void" ID="ID_1933274781" CREATED="1522706970899" MODIFIED="1522706984511">
+<node TEXT="void" FOLDED="true" ID="ID_1933274781" CREATED="1522706970899" MODIFIED="1522706984511">
 <node TEXT="The void operator evaluates an expression and returns undefined. This operator is often used to obtain the undefined primitive value, using &quot;void(0)&quot; (useful when evaluating an expression without using the return value)." ID="ID_1185626633" CREATED="1522707031721" MODIFIED="1522707036895"/>
 </node>
-<node TEXT="spreadoperator" ID="ID_1513748660" CREATED="1522713970661" MODIFIED="1522713979728">
+<node TEXT="spreadoperator" FOLDED="true" ID="ID_1513748660" CREATED="1522713970661" MODIFIED="1522713979728">
 <node TEXT="    const obj = { counter: 1};&#xa;    const newObj = {...obj, counter: 2};&#xa;&#xa;    console.log(obj);&#xa;    console.log(newObj);&#xa;&#xa;    const arr = [0,1,2];&#xa;    const newArr = [...arr, 3];&#xa;&#xa;    console.log(arr);&#xa;    console.log(newArr);" ID="ID_1285643230" CREATED="1523750309031" MODIFIED="1523750313691"/>
 </node>
 </node>
 <node TEXT="Control flow" ID="ID_265187798" CREATED="1522708180202" MODIFIED="1522708200343"/>
 <node TEXT="Loops and iteration" ID="ID_570677385" CREATED="1521190199207" MODIFIED="1522708158383"/>
 <node TEXT="error handling" ID="ID_836948526" CREATED="1522708182779" MODIFIED="1522708212543"/>
-<node TEXT="Standard built-in objects" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
+<node TEXT="Standard built-in objects" FOLDED="true" ID="ID_1217332358" CREATED="1521190474877" MODIFIED="1521190481213">
 <node TEXT="The term &quot;global objects&quot; (or standard built-in objects) here is not to be confused with the global object. Here, global objects refer to objects in the global scope." ID="ID_276062820" CREATED="1521190358395" MODIFIED="1521190363389"/>
 <node TEXT="The global object itself can be accessed using the this operator in the global scope (but only if ECMAScript 5 strict mode is not used; in that case it returns undefined)." ID="ID_376537155" CREATED="1521190401587" MODIFIED="1521190411781"/>
 <node TEXT=" In fact, the global scope consists of the properties of the global object, including inherited properties, if any." ID="ID_867838805" CREATED="1521190580052" MODIFIED="1521190583581"/>
@@ -3145,12 +3145,12 @@
 <node TEXT="String" ID="ID_1843826343" CREATED="1521312212204" MODIFIED="1527986344015"/>
 <node TEXT="RegExp" ID="ID_86727286" CREATED="1521312248996" MODIFIED="1521312252781"/>
 </node>
-<node TEXT="collections" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
-<node TEXT="Indexed collections" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
+<node TEXT="collections" FOLDED="true" ID="ID_738351834" CREATED="1521191066316" MODIFIED="1521191072869">
+<node TEXT="Indexed collections" FOLDED="true" ID="ID_625615052" CREATED="1521191044708" MODIFIED="1521191052701">
 <node TEXT="These objects represent collections of data which are ordered by an index value. This includes (typed) arrays and array-like constructs." ID="ID_44580959" CREATED="1521312539650" MODIFIED="1521312544995"/>
-<node TEXT="Array" ID="ID_18798492" CREATED="1521312271147" MODIFIED="1521312274669">
+<node TEXT="Array" FOLDED="true" ID="ID_18798492" CREATED="1521312271147" MODIFIED="1521312274669">
 <node TEXT="The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects." ID="ID_1352549303" CREATED="1522140991855" MODIFIED="1522140994601"/>
-<node TEXT="Methodes" ID="ID_535543086" CREATED="1527986361314" MODIFIED="1527986375471">
+<node TEXT="Methodes" FOLDED="true" ID="ID_535543086" CREATED="1527986361314" MODIFIED="1527986375471">
 <node TEXT="reduce" ID="ID_40662733" CREATED="1527986379848" MODIFIED="1527986434358"/>
 </node>
 </node>
@@ -3253,7 +3253,7 @@
 </node>
 <node TEXT="Destructuring" FOLDED="true" ID="ID_1585139697" CREATED="1515401605280" MODIFIED="1515413000271">
 <node TEXT="It&#x2019;s a JavaScript expression that allows us to extract data from arrays, objects, maps and sets" ID="ID_546247236" CREATED="1515401730724" MODIFIED="1515401730724"/>
-<node TEXT="const person = {" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
+<node TEXT="const person = {" FOLDED="true" ID="ID_1046572413" CREATED="1515401828816" MODIFIED="1515401828816">
 <node TEXT="first: &apos;Wes&apos;," ID="ID_1169293402" CREATED="1515401828817" MODIFIED="1515401828817"/>
 <node TEXT="last: &apos;Bos&apos;," ID="ID_774612394" CREATED="1515401828818" MODIFIED="1515401828818"/>
 <node TEXT="country: &apos;Canada&apos;," ID="ID_1241739199" CREATED="1515401828818" MODIFIED="1515401828818"/>
@@ -3265,7 +3265,7 @@
 <node TEXT="var [one, two, three] = foo; &apos;(Array-Destrukturierung)&apos;" ID="ID_778337520" CREATED="1515412678158" MODIFIED="1515412769159"/>
 <node TEXT="The above code says, give me a variable called first, a variable called last, and take it from the person object. We&#x2019;re taking the first property and the last property and putting them into two new variables that will be scoped to the parent block (or window!)." ID="ID_592499181" CREATED="1515412133129" MODIFIED="1515412133129"/>
 </node>
-<node TEXT="Klassenmethoden" ID="ID_57798391" CREATED="1517408950485" MODIFIED="1521326471599">
+<node TEXT="Klassenmethoden" FOLDED="true" ID="ID_57798391" CREATED="1517408950485" MODIFIED="1521326471599">
 <node TEXT="Object" FOLDED="true" ID="ID_1553072748" CREATED="1517415218931" MODIFIED="1517415224807">
 <node TEXT="Klonen eines Objekts" FOLDED="true" ID="ID_523661076" CREATED="1517408977642" MODIFIED="1517408977642">
 <node TEXT="Eigenschaften in dem Zielobjekt werden von Eigenschaften aus dem Quellobjekt &#xfc;berschrieben, wenn sie den gleichen Schl&#xfc;ssel haben." ID="ID_516171712" CREATED="1517415105072" MODIFIED="1517415105072"/>
@@ -3740,6 +3740,7 @@
 </node>
 <node TEXT="Element" ID="ID_1908750259" CREATED="1519823601852" MODIFIED="1519823612525"/>
 </node>
+<node TEXT="Webcomponents" ID="ID_723095946" CREATED="1529147716512" MODIFIED="1529147729612"/>
 </node>
 <node TEXT="cookies" FOLDED="true" ID="ID_194660626" CREATED="1515602020518" MODIFIED="1515602026494">
 <node TEXT="Was sind Third Party Cookies?" FOLDED="true" ID="ID_657863754" CREATED="1515602043953" MODIFIED="1515663572516">
@@ -3789,7 +3790,7 @@
 </node>
 <node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
 <node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
-<node TEXT="Component Frameworks" ID="ID_594677038" CREATED="1529146207371" MODIFIED="1529146217862">
+<node TEXT="Single Page Application Frameworks" ID="ID_594677038" CREATED="1529146207371" MODIFIED="1530387083768">
 <node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
 <node TEXT="core" ID="ID_1471975184" CREATED="1526846655943" MODIFIED="1526846661475">
 <node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
@@ -3811,11 +3812,11 @@
 </node>
 </node>
 </node>
-<node TEXT="setup" FOLDED="true" ID="ID_508007486" CREATED="1522621514634" MODIFIED="1522621521639">
+<node TEXT="setup" FOLDED="true" ID="ID_508007486" CREATED="1522621514634" MODIFIED="1530373447799">
 <node TEXT="Quick Setup" FOLDED="true" ID="ID_1666734176" CREATED="1515277487524" MODIFIED="1515323490525">
 <node TEXT="&lt;!DOCTYPE html&gt;&#xa;&lt;html&gt;&#xa;&#xa;  &lt;head&gt;&#xa;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#xa;   &#xa;    &lt;!--Base Package --&gt;&#xa;    &lt;script crossorigin src=&quot;https://unpkg.com/react@latest/umd/react.production.min.js&quot;&gt;&lt;/script&gt;&#xa;    &#xa;    &lt;!--Everything dom related --&gt;&#xa;    &lt;script crossorigin src=&quot;https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js&quot;&gt;&lt;/script&gt;&#xa;&#xa;    &lt;!-- Transpiles javascript --&gt;&#xa;    &lt;script src=&quot;https://unpkg.com/babel-standalone@6.15.0/babel.min.js&quot;&gt;&lt;/script&gt;&#xa;  &lt;/head&gt;&#xa;&#xa;    &lt;script type=&quot;text/babel&quot;&gt;&#xa;&#xa;      ReactDOM.render(&#xa;          &lt;div&gt;Hello World dies das&lt;/div&gt;,&#xa;          document.getElementById(&quot;root&quot;)&#xa;      );&#xa;&#xa;    &lt;/script&gt;&#xa;&#xa;  &lt;body&gt;&#xa;     &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;&#xa;  &lt;/body&gt;&#xa;&#xa;&lt;/html&gt;" ID="ID_1695577798" CREATED="1523132136962" MODIFIED="1523132259567"/>
 </node>
-<node TEXT="npm react cli" FOLDED="true" ID="ID_1146136474" CREATED="1522621535170" MODIFIED="1522621546335">
+<node TEXT="npm react cli" FOLDED="true" ID="ID_1146136474" CREATED="1522621535170" MODIFIED="1530373447798">
 <node TEXT="installation" FOLDED="true" ID="ID_949675496" CREATED="1522621609681" MODIFIED="1522621619534">
 <node TEXT="npm i -g create-react-app" ID="ID_1741156289" CREATED="1522621565649" MODIFIED="1522621578846"/>
 </node>
@@ -3824,116 +3825,10 @@
 </node>
 </node>
 </node>
-<node TEXT="Rendering Elements/React Nodes" FOLDED="true" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
-<node TEXT="introduction" FOLDED="true" ID="ID_1038299905" CREATED="1515279516927" MODIFIED="1523207408442">
-<node TEXT="React elements are the building blocks of react JS applications." ID="ID_1181057969" CREATED="1523207441351" MODIFIED="1523207447491"/>
-<node TEXT="React Elements are objects that represent a DOM node." ID="ID_1029148896" CREATED="1523207485103" MODIFIED="1523207489586"/>
-<node TEXT="They are written using a syntax extension named JSX which allows us to write HTML tags in our JavaScript code and asign that to a variable." ID="ID_989987460" CREATED="1515279546743" MODIFIED="1523207514090"/>
-<node TEXT="React Elements are different than React Components." ID="ID_1013715188" CREATED="1523207518831" MODIFIED="1523207522514"/>
-<node TEXT="A React node is defined as: a light, stateless, immutable, virtual representation of a DOM node." ID="ID_892902770" CREATED="1515426225352" MODIFIED="1515426225352"/>
-</node>
-<node TEXT="Creating React Nodes" FOLDED="true" ID="ID_1231851973" CREATED="1515426352525" MODIFIED="1515426377605">
-<node TEXT="In most cases developers using React will favor JSX and use it to create React nodes. React nodes can be created without JSX, using only JavaScript. " ID="ID_1481251238" CREATED="1515426481126" MODIFIED="1515426511324"/>
-<node TEXT="Creating React nodes using JavaScript is as simple as calling the " ID="ID_517572412" CREATED="1515426572662" MODIFIED="1515426585874"/>
-<node TEXT="React.createElement(type,props,children)" ID="ID_934773581" CREATED="1515426594435" MODIFIED="1515426594435"/>
-<node TEXT="The React.createElement() arguments explained" FOLDED="true" ID="ID_970266944" CREATED="1515426649144" MODIFIED="1515426808788">
-<node TEXT="type (string | React.createClass()):" ID="ID_947152123" CREATED="1515426649145" MODIFIED="1515426649145"/>
-<node TEXT="Can be a string which represents an HTML element (or custom HTML element) or React component instance (i.e., an instance of React.createClass())" ID="ID_1847243533" CREATED="1515426649146" MODIFIED="1515426649146"/>
-<node TEXT="props (null | object):" ID="ID_370258365" CREATED="1515426649148" MODIFIED="1515426649148"/>
-<node TEXT="Can be null or an object containing attributes/props and values" ID="ID_863377617" CREATED="1515426649149" MODIFIED="1515426649149"/>
-<node TEXT="children (null | string | React.createClass() | React.createElement()):" ID="ID_1972419346" CREATED="1515426649149" MODIFIED="1515426649149"/>
-<node TEXT="Children can be null, a string that gets turned into a text node, an instance of React.createClass() or React.createElement()" ID="ID_1629601961" CREATED="1515426649150" MODIFIED="1515426649150"/>
-</node>
-</node>
-<node TEXT="ReactDOM.render()" FOLDED="true" ID="ID_63685709" CREATED="1515279598314" MODIFIED="1515574518520">
-<node TEXT="The ReactDOM.render() method is used to render a React Element into a specified part of the HTML DOM. In most React applications, there is usually a single root node where everything gets rendered into, but you may use as many root nodes as you desire." ID="ID_1086408521" CREATED="1515279623147" MODIFIED="1515279623147"/>
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1154622966" CREATED="1515279739348" MODIFIED="1515323837002">
-<node TEXT="&lt;h1&gt;Hello World!&lt;/h1&gt;," ID="ID_824682517" CREATED="1515279739349" MODIFIED="1515279739349"/>
-<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1622863497" CREATED="1515279739349" MODIFIED="1515279739349"/>
-</node>
-<node TEXT=")" ID="ID_1082349223" CREATED="1515279739349" MODIFIED="1515279739349"/>
-<node TEXT="The ReactDom.render method takes in two arguments. The first being the element that we&apos;re trying to render, and the second being the target." ID="ID_912652637" CREATED="1515281808591" MODIFIED="1515281813647"/>
-<node TEXT="In this case, the &lt;h1&gt;Hello World!&lt;/h1&gt; React Element is rendered into the DOM element with the id of &quot;root&quot;." ID="ID_215091933" CREATED="1515279655161" MODIFIED="1515279655161"/>
-</node>
-<node TEXT="ReactDOM.hydrate(element, container[, callback])" FOLDED="true" ID="ID_1117354309" CREATED="1515574601384" MODIFIED="1515574638653">
-<node TEXT="Same as render(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer. React will attempt to attach event listeners to the existing markup." ID="ID_249940115" CREATED="1515574659766" MODIFIED="1515574659766"/>
-<node TEXT="React expects that the rendered content is identical between the server and the client. It can patch up differences in text content, but you should treat mismatches as bugs and fix them. In development mode, React warns about mismatches during hydration. There are no guarantees that attribute differences will be patched up in case of mismatches. This is important for performance reasons because in most apps, mismatches are rare, and so validating all markup would be prohibitively expensive." ID="ID_1946163722" CREATED="1515574696893" MODIFIED="1515574696893"/>
-</node>
-<node TEXT="Rerendering the DOM using additional render() calls" FOLDED="true" ID="ID_352350568" CREATED="1515279779165" MODIFIED="1515324110192">
-<node TEXT="The following example uses additional render() calls to update the displayed number:" ID="ID_555321991" CREATED="1515279899278" MODIFIED="1515279899278"/>
-<node TEXT="var num = 0;" ID="ID_1623345411" CREATED="1515279916734" MODIFIED="1515279916734"/>
-<node TEXT="function updateNum(){" FOLDED="true" ID="ID_270409922" CREATED="1515279916735" MODIFIED="1515323843874">
-<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1569473042" CREATED="1515279916735" MODIFIED="1515323842938">
-<node TEXT="&lt;div&gt;{num++}&lt;/div&gt;," ID="ID_614846720" CREATED="1515279916735" MODIFIED="1515279916735"/>
-<node TEXT="document.getElementById(&quot;root&quot;))" ID="ID_1819243240" CREATED="1515279916736" MODIFIED="1515279958619"/>
-</node>
-</node>
-<node TEXT="}" ID="ID_1297237349" CREATED="1515279916736" MODIFIED="1515279916736"/>
-<node TEXT="setInterval(updateNum,100)" ID="ID_1447679119" CREATED="1515279916737" MODIFIED="1515279916737"/>
-<node TEXT="So once a DOM is rendered it will remain the same" ID="ID_1162081155" CREATED="1515281936791" MODIFIED="1515281936791"/>
-<node TEXT="until another ReactDOM.render method is called." ID="ID_301245827" CREATED="1515281936792" MODIFIED="1515281936792"/>
-</node>
-</node>
-<node TEXT="JSX" FOLDED="true" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
-<node TEXT="What is JSX?" FOLDED="true" ID="ID_561960569" CREATED="1515282290585" MODIFIED="1515329962957">
-<node TEXT="JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags." ID="ID_1071991068" CREATED="1515282302327" MODIFIED="1515282302327"/>
-<node TEXT="Using JSX, we can create React Elements easily with HTML Tags:" ID="ID_630607591" CREATED="1515282323768" MODIFIED="1515282323768"/>
-<node TEXT="var element = &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_883849702" CREATED="1515282335884" MODIFIED="1515282335884"/>
-<node TEXT="Without JSX, the process is much slower and more verbose:" ID="ID_728222510" CREATED="1515282354731" MODIFIED="1515282354731"/>
-<node TEXT="var element = React.createElement(&apos;h1&apos;,null,&apos;Hello World!&apos;)" ID="ID_1786494567" CREATED="1515282390081" MODIFIED="1515282390081"/>
-<node TEXT="Fundamentally, JSX just provides syntactic sugar for the React.createElement(component, props, ...children) function." FOLDED="true" ID="ID_1402784288" CREATED="1523132745878" MODIFIED="1523208167829">
-<node TEXT="&lt;MyButton color=&quot;blue&quot; shadowSize={2}&gt;&#xa;  Click Me&#xa;&lt;/MyButton&gt;" ID="ID_1474013062" CREATED="1523208184490" MODIFIED="1523208188445"/>
-<node TEXT="compiles into:" ID="ID_1072177123" CREATED="1523208207962" MODIFIED="1523208211205"/>
-<node TEXT="React.createElement(&#xa;  MyButton,&#xa;  {color: &apos;blue&apos;, shadowSize: 2},&#xa;  &apos;Click Me&apos;&#xa;)" ID="ID_433692238" CREATED="1523208223554" MODIFIED="1523208227693"/>
-</node>
-</node>
-<node TEXT="Using JSX with JavaScript Expressions" FOLDED="true" ID="ID_793645520" CREATED="1515282432125" MODIFIED="1515324194368">
-<node TEXT="Curly braces can be used to embed JavaScript expressions into JSX." ID="ID_1050283814" CREATED="1515282443789" MODIFIED="1515282443789"/>
-<node TEXT="The following are all examples of valid JavaScript expressions in JSX:" FOLDED="true" ID="ID_903535947" CREATED="1515282452938" MODIFIED="1515282452938">
-<node TEXT="var str = &quot;World!&quot;&#xa;var element = &lt;h1&gt; Hello {str}&lt;/h1&gt;" ID="ID_928347733" CREATED="1523207644774" MODIFIED="1523207670713"/>
-<node TEXT="var item = {name: &quot;Cheese&quot;,price: 5}&#xa;var element = &lt;p&gt;{item.name} : ${item.price} &lt;/p&gt;" ID="ID_786921625" CREATED="1523207749981" MODIFIED="1523207773992"/>
-<node TEXT="var length = 20&#xa;var width = 10&#xa;&#xa;function calculateArea(x,y){&#xa;    return x * y&#xa;}&#xa;&#xa;var element = &lt;div&gt;The Area is: {calculateArea(length,width)}&lt;/div&gt;" ID="ID_1670980068" CREATED="1523207836117" MODIFIED="1523207895968"/>
-</node>
-</node>
-<node TEXT="Using JSX with Attributes" FOLDED="true" ID="ID_442182466" CREATED="1515282811921" MODIFIED="1515324311151">
-<node TEXT="You can supply attribute values using a string literal surrounded by quotes:" ID="ID_1299864710" CREATED="1515282842249" MODIFIED="1515282842249"/>
-<node TEXT="var element = &lt;button className =&quot;deleteButton&quot;&gt; Delete &lt;/button&gt;" ID="ID_77291909" CREATED="1515282865539" MODIFIED="1515282865539"/>
-<node TEXT="You can also supply attributes values by embedding a JavaScript expression using curly braces:" FOLDED="true" ID="ID_697166385" CREATED="1515282894820" MODIFIED="1515282894820">
-<node TEXT="var element = &lt;img src ={product.imageURL}&gt;&lt;/img&gt;" ID="ID_1863840614" CREATED="1515282919441" MODIFIED="1515282919441"/>
-</node>
-<node TEXT="Do not surround curly braces with quotes. This will cause your expression to be treated as a string literal:" FOLDED="true" ID="ID_1129616869" CREATED="1515282943940" MODIFIED="1515282943940">
-<node TEXT="var element = &lt;img src =&quot;{product.imageURL}&quot;&gt;&lt;/img&gt;" ID="ID_855540507" CREATED="1515282954514" MODIFIED="1515282954514"/>
-</node>
-<node TEXT="Some common HTML attributes are named differently in JSX." ID="ID_1381293665" CREATED="1515282995210" MODIFIED="1523208042622"/>
-<node TEXT="For example &quot;class&quot; becomes &quot;className&quot; because &quot;class&quot; is a reserved keyword in JavaScript." ID="ID_1355406510" CREATED="1523208018044" MODIFIED="1523208023606"/>
-<node TEXT="Furthermore, attribute names in JSX follow the camelCase naming convention so an HTML attribute such as fontsize would become fontSize in JSX." ID="ID_1421622675" CREATED="1523208047707" MODIFIED="1523208051254"/>
-</node>
-<node TEXT="Using JSX with Empty Tags" FOLDED="true" ID="ID_1712000031" CREATED="1515283022704" MODIFIED="1515323861706">
-<node TEXT="If a HTML tag is empty, you can close it with a &apos;/&gt;&apos; instead of using a closing tag." ID="ID_171196410" CREATED="1515283043246" MODIFIED="1515283043246"/>
-<node TEXT="var element = &lt;input className =&quot;nameInput&quot;/&gt;" ID="ID_55019796" CREATED="1515283054508" MODIFIED="1515283054508"/>
-</node>
-<node TEXT="Using JSX with a Style Object" FOLDED="true" ID="ID_148088820" CREATED="1515283038318" MODIFIED="1523208344989">
-<node TEXT="The style attribute can be populated with a style object instead of a string literal" ID="ID_1948763072" CREATED="1515283276363" MODIFIED="1515283276363"/>
-<node TEXT="var styleObject = {&#xa;    backgroundColor: &apos;red&apos;,&#xa;    color:&apos;blue&apos;,&#xa;    fontSize: 25,&#xa;    width: 100&#xa;}&#xa;&#xa;var element = &lt;input style = {styleObject}/&gt;" ID="ID_500140108" CREATED="1515283291989" MODIFIED="1523208578315"/>
-<node TEXT="In this next example, the first set of curly braces is for the JSX expression while the second set of curly braces is for the style object:" ID="ID_170237697" CREATED="1515283371090" MODIFIED="1515283371090"/>
-<node TEXT="var element = &lt;input style = {{width:200,height:100}}/&gt;" ID="ID_1767842847" CREATED="1515283391052" MODIFIED="1515283391052"/>
-</node>
-<node TEXT="Using JSX with Nested Elements" FOLDED="true" ID="ID_418999237" CREATED="1515283421602" MODIFIED="1515327825780">
-<node TEXT="React Elements can be nested within other React Elements as long as the whole thing is wrapped by in a single element." ID="ID_642461190" CREATED="1515283465935" MODIFIED="1515283465935"/>
-<node TEXT="var element = (&#xa;    &lt;div&gt;&#xa;        &lt;div&gt;Hello World&lt;/div&gt;&#xa;        &lt;div&gt;Hello World&lt;/div&gt;&#xa;    &lt;/div&gt;&#xa;)" ID="ID_325948283" CREATED="1515283476898" MODIFIED="1523208648570"/>
-<node TEXT="This example is not surrounded with a single wrapping element and will throw an error:" ID="ID_1712866857" CREATED="1515283504758" MODIFIED="1515283504758"/>
-<node TEXT="var element = (&#xa;    &lt;div&gt;Hello World&lt;/div&gt;&#xa;    &lt;div&gt;Hello World&lt;/div&gt;&#xa;)" ID="ID_762800295" CREATED="1515283516216" MODIFIED="1523208699905"/>
-<node TEXT="It is recommended to surround nested elements with paranthesis to avoid the problems that occur with automatic semicolon insertion." ID="ID_637831599" CREATED="1515283537736" MODIFIED="1515283537736"/>
-</node>
-<node TEXT="Using JSX Objects" FOLDED="true" ID="ID_9310455" CREATED="1515283565806" MODIFIED="1515327826860">
-<node TEXT="Objects created with JSX can be manipulated just like normal JavaScript objects. They can be passed in arrays, used as arguments or return statements to functions and used inside if statements or for loops." ID="ID_1631462099" CREATED="1515283585770" MODIFIED="1515283585770"/>
-<node TEXT="An example using JSX objects within an If Else statement:" ID="ID_1254079393" CREATED="1515283596769" MODIFIED="1515283596769"/>
-<node TEXT="var product = {name:&quot;apple&quot;,stock:0}&#xa;&#xa;if(product.stock &lt; 0){&#xa;    var element = &lt;h1&gt;The product named {product.name} is not in stock&lt;/h1&gt;&#xa;&#xa;} else{&#xa;    var element = &lt;h1&gt;The product named {product.name} and has {product.stock} units in stock&lt;/h1&gt;&#xa;&#xa;}&#xa;&#xa;ReactDOM.render( element, document.getElementById(&quot;root&quot;) )" ID="ID_912041482" CREATED="1523208818062" MODIFIED="1523208949153"/>
-</node>
-</node>
-<node TEXT="React Components" FOLDED="true" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1515324690463">
+<node TEXT="Basics" FOLDED="true" ID="ID_1446319635" CREATED="1530373491209" MODIFIED="1530373498380">
+<node TEXT="React Components" FOLDED="true" ID="ID_1417189712" CREATED="1515324637018" MODIFIED="1530373568580">
 <node TEXT="A React Component is an independent reusable component that returns an React Element based on its properties and state." ID="ID_694180055" CREATED="1515324663282" MODIFIED="1515327169097"/>
-<node TEXT="There are two types of React Components:" FOLDED="true" ID="ID_991084746" CREATED="1515324678253" MODIFIED="1515324678253">
+<node TEXT="There are two types of React Components:" FOLDED="true" ID="ID_991084746" CREATED="1515324678253" MODIFIED="1530373568580">
 <node TEXT="Functional Components" FOLDED="true" ID="ID_735915423" CREATED="1515324693268" MODIFIED="1515327712565">
 <node TEXT="Functional Components are just functions that output React Elements. By convention, the first letter of the function name should be capitalized." ID="ID_1812711183" CREATED="1515324830742" MODIFIED="1515324830742"/>
 <node TEXT="example:" FOLDED="true" ID="ID_135996708" CREATED="1515324865072" MODIFIED="1523212705310">
@@ -4189,6 +4084,113 @@
 <node TEXT="Both types of React Components can be used by writing their name within an HTML tag:" ID="ID_1541763525" CREATED="1523213121785" MODIFIED="1523213126123"/>
 <node TEXT="var element = &lt;Welcome/&gt;" ID="ID_255656453" CREATED="1523213141929" MODIFIED="1523213144819"/>
 </node>
+<node TEXT="Rendering Elements/React Nodes" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
+<node TEXT="introduction" FOLDED="true" ID="ID_1038299905" CREATED="1515279516927" MODIFIED="1523207408442">
+<node TEXT="React elements are the building blocks of react JS applications." ID="ID_1181057969" CREATED="1523207441351" MODIFIED="1523207447491"/>
+<node TEXT="React Elements are objects that represent a DOM node." ID="ID_1029148896" CREATED="1523207485103" MODIFIED="1523207489586"/>
+<node TEXT="They are written using a syntax extension named JSX which allows us to write HTML tags in our JavaScript code and asign that to a variable." ID="ID_989987460" CREATED="1515279546743" MODIFIED="1523207514090"/>
+<node TEXT="React Elements are different than React Components." ID="ID_1013715188" CREATED="1523207518831" MODIFIED="1523207522514"/>
+<node TEXT="A React node is defined as: a light, stateless, immutable, virtual representation of a DOM node." ID="ID_892902770" CREATED="1515426225352" MODIFIED="1515426225352"/>
+</node>
+<node TEXT="Creating React Nodes" FOLDED="true" ID="ID_1231851973" CREATED="1515426352525" MODIFIED="1515426377605">
+<node TEXT="In most cases developers using React will favor JSX and use it to create React nodes. React nodes can be created without JSX, using only JavaScript. " ID="ID_1481251238" CREATED="1515426481126" MODIFIED="1515426511324"/>
+<node TEXT="Creating React nodes using JavaScript is as simple as calling the " ID="ID_517572412" CREATED="1515426572662" MODIFIED="1515426585874"/>
+<node TEXT="React.createElement(type,props,children)" ID="ID_934773581" CREATED="1515426594435" MODIFIED="1515426594435"/>
+<node TEXT="The React.createElement() arguments explained" FOLDED="true" ID="ID_970266944" CREATED="1515426649144" MODIFIED="1515426808788">
+<node TEXT="type (string | React.createClass()):" ID="ID_947152123" CREATED="1515426649145" MODIFIED="1515426649145"/>
+<node TEXT="Can be a string which represents an HTML element (or custom HTML element) or React component instance (i.e., an instance of React.createClass())" ID="ID_1847243533" CREATED="1515426649146" MODIFIED="1515426649146"/>
+<node TEXT="props (null | object):" ID="ID_370258365" CREATED="1515426649148" MODIFIED="1515426649148"/>
+<node TEXT="Can be null or an object containing attributes/props and values" ID="ID_863377617" CREATED="1515426649149" MODIFIED="1515426649149"/>
+<node TEXT="children (null | string | React.createClass() | React.createElement()):" ID="ID_1972419346" CREATED="1515426649149" MODIFIED="1515426649149"/>
+<node TEXT="Children can be null, a string that gets turned into a text node, an instance of React.createClass() or React.createElement()" ID="ID_1629601961" CREATED="1515426649150" MODIFIED="1515426649150"/>
+</node>
+</node>
+<node TEXT="ReactDOM.render()" FOLDED="true" ID="ID_63685709" CREATED="1515279598314" MODIFIED="1515574518520">
+<node TEXT="The ReactDOM.render() method is used to render a React Element into a specified part of the HTML DOM. In most React applications, there is usually a single root node where everything gets rendered into, but you may use as many root nodes as you desire." ID="ID_1086408521" CREATED="1515279623147" MODIFIED="1515279623147"/>
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1154622966" CREATED="1515279739348" MODIFIED="1515323837002">
+<node TEXT="&lt;h1&gt;Hello World!&lt;/h1&gt;," ID="ID_824682517" CREATED="1515279739349" MODIFIED="1515279739349"/>
+<node TEXT="document.getElementById(&quot;root&quot;)" ID="ID_1622863497" CREATED="1515279739349" MODIFIED="1515279739349"/>
+</node>
+<node TEXT=")" ID="ID_1082349223" CREATED="1515279739349" MODIFIED="1515279739349"/>
+<node TEXT="The ReactDom.render method takes in two arguments. The first being the element that we&apos;re trying to render, and the second being the target." ID="ID_912652637" CREATED="1515281808591" MODIFIED="1515281813647"/>
+<node TEXT="In this case, the &lt;h1&gt;Hello World!&lt;/h1&gt; React Element is rendered into the DOM element with the id of &quot;root&quot;." ID="ID_215091933" CREATED="1515279655161" MODIFIED="1515279655161"/>
+</node>
+<node TEXT="ReactDOM.hydrate(element, container[, callback])" FOLDED="true" ID="ID_1117354309" CREATED="1515574601384" MODIFIED="1515574638653">
+<node TEXT="Same as render(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer. React will attempt to attach event listeners to the existing markup." ID="ID_249940115" CREATED="1515574659766" MODIFIED="1515574659766"/>
+<node TEXT="React expects that the rendered content is identical between the server and the client. It can patch up differences in text content, but you should treat mismatches as bugs and fix them. In development mode, React warns about mismatches during hydration. There are no guarantees that attribute differences will be patched up in case of mismatches. This is important for performance reasons because in most apps, mismatches are rare, and so validating all markup would be prohibitively expensive." ID="ID_1946163722" CREATED="1515574696893" MODIFIED="1515574696893"/>
+</node>
+<node TEXT="Rerendering the DOM using additional render() calls" FOLDED="true" ID="ID_352350568" CREATED="1515279779165" MODIFIED="1515324110192">
+<node TEXT="The following example uses additional render() calls to update the displayed number:" ID="ID_555321991" CREATED="1515279899278" MODIFIED="1515279899278"/>
+<node TEXT="var num = 0;" ID="ID_1623345411" CREATED="1515279916734" MODIFIED="1515279916734"/>
+<node TEXT="function updateNum(){" FOLDED="true" ID="ID_270409922" CREATED="1515279916735" MODIFIED="1515323843874">
+<node TEXT="ReactDOM.render(" FOLDED="true" ID="ID_1569473042" CREATED="1515279916735" MODIFIED="1515323842938">
+<node TEXT="&lt;div&gt;{num++}&lt;/div&gt;," ID="ID_614846720" CREATED="1515279916735" MODIFIED="1515279916735"/>
+<node TEXT="document.getElementById(&quot;root&quot;))" ID="ID_1819243240" CREATED="1515279916736" MODIFIED="1515279958619"/>
+</node>
+</node>
+<node TEXT="}" ID="ID_1297237349" CREATED="1515279916736" MODIFIED="1515279916736"/>
+<node TEXT="setInterval(updateNum,100)" ID="ID_1447679119" CREATED="1515279916737" MODIFIED="1515279916737"/>
+<node TEXT="So once a DOM is rendered it will remain the same" ID="ID_1162081155" CREATED="1515281936791" MODIFIED="1515281936791"/>
+<node TEXT="until another ReactDOM.render method is called." ID="ID_301245827" CREATED="1515281936792" MODIFIED="1515281936792"/>
+</node>
+</node>
+<node TEXT="JSX" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
+<node TEXT="What is JSX?" FOLDED="true" ID="ID_561960569" CREATED="1515282290585" MODIFIED="1515329962957">
+<node TEXT="JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags." ID="ID_1071991068" CREATED="1515282302327" MODIFIED="1515282302327"/>
+<node TEXT="Using JSX, we can create React Elements easily with HTML Tags:" ID="ID_630607591" CREATED="1515282323768" MODIFIED="1515282323768"/>
+<node TEXT="var element = &lt;h1&gt;Hello World!&lt;/h1&gt;" ID="ID_883849702" CREATED="1515282335884" MODIFIED="1515282335884"/>
+<node TEXT="Without JSX, the process is much slower and more verbose:" ID="ID_728222510" CREATED="1515282354731" MODIFIED="1515282354731"/>
+<node TEXT="var element = React.createElement(&apos;h1&apos;,null,&apos;Hello World!&apos;)" ID="ID_1786494567" CREATED="1515282390081" MODIFIED="1515282390081"/>
+<node TEXT="Fundamentally, JSX just provides syntactic sugar for the React.createElement(component, props, ...children) function." FOLDED="true" ID="ID_1402784288" CREATED="1523132745878" MODIFIED="1523208167829">
+<node TEXT="&lt;MyButton color=&quot;blue&quot; shadowSize={2}&gt;&#xa;  Click Me&#xa;&lt;/MyButton&gt;" ID="ID_1474013062" CREATED="1523208184490" MODIFIED="1523208188445"/>
+<node TEXT="compiles into:" ID="ID_1072177123" CREATED="1523208207962" MODIFIED="1523208211205"/>
+<node TEXT="React.createElement(&#xa;  MyButton,&#xa;  {color: &apos;blue&apos;, shadowSize: 2},&#xa;  &apos;Click Me&apos;&#xa;)" ID="ID_433692238" CREATED="1523208223554" MODIFIED="1523208227693"/>
+</node>
+</node>
+<node TEXT="Using JSX with JavaScript Expressions" FOLDED="true" ID="ID_793645520" CREATED="1515282432125" MODIFIED="1515324194368">
+<node TEXT="Curly braces can be used to embed JavaScript expressions into JSX." ID="ID_1050283814" CREATED="1515282443789" MODIFIED="1515282443789"/>
+<node TEXT="The following are all examples of valid JavaScript expressions in JSX:" FOLDED="true" ID="ID_903535947" CREATED="1515282452938" MODIFIED="1515282452938">
+<node TEXT="var str = &quot;World!&quot;&#xa;var element = &lt;h1&gt; Hello {str}&lt;/h1&gt;" ID="ID_928347733" CREATED="1523207644774" MODIFIED="1523207670713"/>
+<node TEXT="var item = {name: &quot;Cheese&quot;,price: 5}&#xa;var element = &lt;p&gt;{item.name} : ${item.price} &lt;/p&gt;" ID="ID_786921625" CREATED="1523207749981" MODIFIED="1523207773992"/>
+<node TEXT="var length = 20&#xa;var width = 10&#xa;&#xa;function calculateArea(x,y){&#xa;    return x * y&#xa;}&#xa;&#xa;var element = &lt;div&gt;The Area is: {calculateArea(length,width)}&lt;/div&gt;" ID="ID_1670980068" CREATED="1523207836117" MODIFIED="1523207895968"/>
+</node>
+</node>
+<node TEXT="Using JSX with Attributes" FOLDED="true" ID="ID_442182466" CREATED="1515282811921" MODIFIED="1515324311151">
+<node TEXT="You can supply attribute values using a string literal surrounded by quotes:" ID="ID_1299864710" CREATED="1515282842249" MODIFIED="1515282842249"/>
+<node TEXT="var element = &lt;button className =&quot;deleteButton&quot;&gt; Delete &lt;/button&gt;" ID="ID_77291909" CREATED="1515282865539" MODIFIED="1515282865539"/>
+<node TEXT="You can also supply attributes values by embedding a JavaScript expression using curly braces:" FOLDED="true" ID="ID_697166385" CREATED="1515282894820" MODIFIED="1515282894820">
+<node TEXT="var element = &lt;img src ={product.imageURL}&gt;&lt;/img&gt;" ID="ID_1863840614" CREATED="1515282919441" MODIFIED="1515282919441"/>
+</node>
+<node TEXT="Do not surround curly braces with quotes. This will cause your expression to be treated as a string literal:" FOLDED="true" ID="ID_1129616869" CREATED="1515282943940" MODIFIED="1515282943940">
+<node TEXT="var element = &lt;img src =&quot;{product.imageURL}&quot;&gt;&lt;/img&gt;" ID="ID_855540507" CREATED="1515282954514" MODIFIED="1515282954514"/>
+</node>
+<node TEXT="Some common HTML attributes are named differently in JSX." ID="ID_1381293665" CREATED="1515282995210" MODIFIED="1523208042622"/>
+<node TEXT="For example &quot;class&quot; becomes &quot;className&quot; because &quot;class&quot; is a reserved keyword in JavaScript." ID="ID_1355406510" CREATED="1523208018044" MODIFIED="1523208023606"/>
+<node TEXT="Furthermore, attribute names in JSX follow the camelCase naming convention so an HTML attribute such as fontsize would become fontSize in JSX." ID="ID_1421622675" CREATED="1523208047707" MODIFIED="1523208051254"/>
+</node>
+<node TEXT="Using JSX with Empty Tags" FOLDED="true" ID="ID_1712000031" CREATED="1515283022704" MODIFIED="1515323861706">
+<node TEXT="If a HTML tag is empty, you can close it with a &apos;/&gt;&apos; instead of using a closing tag." ID="ID_171196410" CREATED="1515283043246" MODIFIED="1515283043246"/>
+<node TEXT="var element = &lt;input className =&quot;nameInput&quot;/&gt;" ID="ID_55019796" CREATED="1515283054508" MODIFIED="1515283054508"/>
+</node>
+<node TEXT="Using JSX with a Style Object" FOLDED="true" ID="ID_148088820" CREATED="1515283038318" MODIFIED="1523208344989">
+<node TEXT="The style attribute can be populated with a style object instead of a string literal" ID="ID_1948763072" CREATED="1515283276363" MODIFIED="1515283276363"/>
+<node TEXT="var styleObject = {&#xa;    backgroundColor: &apos;red&apos;,&#xa;    color:&apos;blue&apos;,&#xa;    fontSize: 25,&#xa;    width: 100&#xa;}&#xa;&#xa;var element = &lt;input style = {styleObject}/&gt;" ID="ID_500140108" CREATED="1515283291989" MODIFIED="1523208578315"/>
+<node TEXT="In this next example, the first set of curly braces is for the JSX expression while the second set of curly braces is for the style object:" ID="ID_170237697" CREATED="1515283371090" MODIFIED="1515283371090"/>
+<node TEXT="var element = &lt;input style = {{width:200,height:100}}/&gt;" ID="ID_1767842847" CREATED="1515283391052" MODIFIED="1515283391052"/>
+</node>
+<node TEXT="Using JSX with Nested Elements" FOLDED="true" ID="ID_418999237" CREATED="1515283421602" MODIFIED="1515327825780">
+<node TEXT="React Elements can be nested within other React Elements as long as the whole thing is wrapped by in a single element." ID="ID_642461190" CREATED="1515283465935" MODIFIED="1515283465935"/>
+<node TEXT="var element = (&#xa;    &lt;div&gt;&#xa;        &lt;div&gt;Hello World&lt;/div&gt;&#xa;        &lt;div&gt;Hello World&lt;/div&gt;&#xa;    &lt;/div&gt;&#xa;)" ID="ID_325948283" CREATED="1515283476898" MODIFIED="1523208648570"/>
+<node TEXT="This example is not surrounded with a single wrapping element and will throw an error:" ID="ID_1712866857" CREATED="1515283504758" MODIFIED="1515283504758"/>
+<node TEXT="var element = (&#xa;    &lt;div&gt;Hello World&lt;/div&gt;&#xa;    &lt;div&gt;Hello World&lt;/div&gt;&#xa;)" ID="ID_762800295" CREATED="1515283516216" MODIFIED="1523208699905"/>
+<node TEXT="It is recommended to surround nested elements with paranthesis to avoid the problems that occur with automatic semicolon insertion." ID="ID_637831599" CREATED="1515283537736" MODIFIED="1515283537736"/>
+</node>
+<node TEXT="Using JSX Objects" FOLDED="true" ID="ID_9310455" CREATED="1515283565806" MODIFIED="1515327826860">
+<node TEXT="Objects created with JSX can be manipulated just like normal JavaScript objects. They can be passed in arrays, used as arguments or return statements to functions and used inside if statements or for loops." ID="ID_1631462099" CREATED="1515283585770" MODIFIED="1515283585770"/>
+<node TEXT="An example using JSX objects within an If Else statement:" ID="ID_1254079393" CREATED="1515283596769" MODIFIED="1515283596769"/>
+<node TEXT="var product = {name:&quot;apple&quot;,stock:0}&#xa;&#xa;if(product.stock &lt; 0){&#xa;    var element = &lt;h1&gt;The product named {product.name} is not in stock&lt;/h1&gt;&#xa;&#xa;} else{&#xa;    var element = &lt;h1&gt;The product named {product.name} and has {product.stock} units in stock&lt;/h1&gt;&#xa;&#xa;}&#xa;&#xa;ReactDOM.render( element, document.getElementById(&quot;root&quot;) )" ID="ID_912041482" CREATED="1523208818062" MODIFIED="1523208949153"/>
+</node>
+</node>
 <node TEXT="Composition" FOLDED="true" ID="ID_1431135044" CREATED="1515327763909" MODIFIED="1515327763909">
 <node TEXT="Composing Components" ID="ID_399784243" CREATED="1515327782693" MODIFIED="1515327785555"/>
 <node TEXT="Functional Components can include other Functional Components in their output. This lets us keep our components organized and readible." ID="ID_999825283" CREATED="1515327806233" MODIFIED="1515327806233"/>
@@ -4237,22 +4239,75 @@
 <node TEXT="}" ID="ID_155316071" CREATED="1515332319666" MODIFIED="1515332319666"/>
 <node TEXT="With the &amp;&amp; operator, true and expression will always evaluate to expression. On the other hand, false and expression will always evaluate to false which won&apos;t render." ID="ID_1534112129" CREATED="1515332339757" MODIFIED="1515332339757"/>
 </node>
-<node TEXT="Pure Functions" FOLDED="true" ID="ID_382616966" CREATED="1523133219531" MODIFIED="1523133231116">
-<node TEXT="Call with the same parameter always return the same value (Idempotenz)" ID="ID_184085460" CREATED="1523133234267" MODIFIED="1523133684808"/>
-<node TEXT="no Sideeffects" ID="ID_1586927655" CREATED="1523133274235" MODIFIED="1523133497050"/>
-<node TEXT="indiependent from external state changes" ID="ID_115525350" CREATED="1523133290747" MODIFIED="1523133334737"/>
-<node TEXT="Impure Functions does not apply all the all of the above mentioned properties" ID="ID_1402638177" CREATED="1523133374554" MODIFIED="1523133475091"/>
-<node TEXT="OR Generates only from the given props its new state." ID="ID_1575939305" CREATED="1523133738127" MODIFIED="1523133765025"/>
-<node TEXT="examples" FOLDED="true" ID="ID_1882693201" CREATED="1523133544273" MODIFIED="1523133552570">
-<node TEXT="pure" FOLDED="true" ID="ID_757132856" CREATED="1523133556601" MODIFIED="1523133559172">
-<node TEXT="function pure(props){&#xa;    return props.x + props.y;&#xa;}" ID="ID_911012678" CREATED="1523133570608" MODIFIED="1523133619434"/>
 </node>
-<node TEXT="impure" FOLDED="true" ID="ID_1044527417" CREATED="1523133560225" MODIFIED="1523133630985">
-<node TEXT="let z = 0;&#xa;&#xa;function impure(props) {&#xa;    z++;&#xa;    props.y = 42;&#xa;    window.foo = &apos;bar&apos;;&#xa;    return props.x + props.y + z;&#xa;}" ID="ID_779972198" CREATED="1523133629544" MODIFIED="1523133953409"/>
+<node TEXT="Component design pattern" ID="ID_1692491919" CREATED="1530373612656" MODIFIED="1530373625756">
+<node TEXT="Pure Functions" FOLDED="true" ID="ID_382616966" CREATED="1523133219531" MODIFIED="1523133231116">
+<node TEXT="Pure functions are an idea that come from functional programming." ID="ID_254904309" CREATED="1530372549791" MODIFIED="1530372555139"/>
+<node TEXT="Pure functions are a really big thing in the React ecosystem. There&apos;s a focus on having pure React components wherever possible." ID="ID_993399510" CREATED="1530373320698" MODIFIED="1530373324582"/>
+<node TEXT="The real power with pure functions is that this gives you some guarantees and will make the code more predictable and more reliable, which is really important when you&apos;re trying to avoid bugs." ID="ID_589118372" CREATED="1530372951268" MODIFIED="1530372953872"/>
+<node TEXT="Pure functions have three primary characteristics." ID="ID_273141623" CREATED="1530372654526" MODIFIED="1530372672193">
+<node TEXT="They don&apos;t access any variables that are outside of the scope of the function" ID="ID_822429147" CREATED="1530372686155" MODIFIED="1530372696282"/>
+<node TEXT="They have no side effects." ID="ID_638057500" CREATED="1530372726303" MODIFIED="1530372754385">
+<node TEXT="What that really means is that pure functions do not reach outside of themselves and mutate or change any variables that are not inside of the function." ID="ID_1429158606" CREATED="1530372789999" MODIFIED="1530372789999"/>
+</node>
+<node TEXT="Call with the same parameter always return the same value (Idempotenz)" ID="ID_184085460" CREATED="1523133234267" MODIFIED="1523133684808"/>
+<node TEXT="OR Generates only from the given props its new state." ID="ID_955974165" CREATED="1530373022164" MODIFIED="1530373027856"/>
+</node>
+<node TEXT="Impure Functions does not apply all the all of the above mentioned properties" ID="ID_1402638177" CREATED="1523133374554" MODIFIED="1523133475091"/>
+<node TEXT="examples" ID="ID_1882693201" CREATED="1523133544273" MODIFIED="1523133552570">
+<node TEXT="pure" ID="ID_757132856" CREATED="1523133556601" MODIFIED="1523133559172">
+<node TEXT="var conversionRate = 1.5;&#xa;&#xa;function convertAmount(amount, rate) {&#xa;   return amount * rate;&#xa;}&#xa;&#xa;convertAmount(30, conversionRate);" ID="ID_911012678" CREATED="1523133570608" MODIFIED="1530355298552"/>
+</node>
+<node TEXT="impure" ID="ID_1044527417" CREATED="1523133560225" MODIFIED="1523133630985">
+<node TEXT="var conversionRate = 1.5;&#xa;&#xa;function convertAmount(amount) {&#xa;   return amount * rate;&#xa;}&#xa;&#xa;convertAmount(30, conversionRate);" ID="ID_779972198" CREATED="1523133629544" MODIFIED="1530355361351"/>
 </node>
 </node>
 <node TEXT="You should always aim for pure functions in your project" ID="ID_886201790" CREATED="1523134110789" MODIFIED="1523134140606"/>
 </node>
+<node TEXT="Immutability" ID="ID_1594150513" CREATED="1530373675008" MODIFIED="1530375717535">
+<node TEXT="Immutability is another idea that comes from functional programming" ID="ID_209762714" CREATED="1530373821756" MODIFIED="1530373821756"/>
+<node TEXT="immutability means that you don&apos;t just mutate your object, but if you want to change it you make a copy first, and then make modifications on that copy and you hold onto the original." ID="ID_277249283" CREATED="1530375514228" MODIFIED="1530375955949"/>
+<node TEXT="Immutability is one of the key components of how Redux works, and how it manages to track changes and stay performant." ID="ID_1634608441" CREATED="1530375957857" MODIFIED="1530375962813"/>
+<node TEXT="Example" ID="ID_1733538475" CREATED="1530374150845" MODIFIED="1530374169728">
+<node TEXT="Let&apos;s say we have a simple game where the state consists of a single JavaScript object." ID="ID_711538781" CREATED="1530374190703" MODIFIED="1530374190703"/>
+<node TEXT="let state = {color: &apos;red&apos;, name: &apos;Adam&apos;, points: 5}" ID="ID_1705883018" CREATED="1530374199813" MODIFIED="1530374787549">
+<font ITALIC="true"/>
+</node>
+<node TEXT="In a traditional single-page web application, if you wanted to change the amount of points, you just mutate this object." ID="ID_1514621430" CREATED="1530374272650" MODIFIED="1530374272650"/>
+<node TEXT="state.points = 25;&#xa;{color: &apos;red&apos;, name: &apos;Adam&apos;, points: 25}" ID="ID_316579362" CREATED="1530374279476" MODIFIED="1530374791340">
+<font ITALIC="true"/>
+</node>
+<node TEXT="The problem with this approach is we have now lost the prior history entirely. This mutation overwrites what previously existed in memory." ID="ID_235610981" CREATED="1530374336068" MODIFIED="1530374339983"/>
+<node TEXT="This makes tracking down changes, or tracking down mutations, or tracking down problems, really difficult, because we may not even be able to know if the state has changed, or what state has changed, because we just have the new state that we&apos;re looking at." ID="ID_972560900" CREATED="1530374402955" MODIFIED="1530374407255"/>
+<node TEXT="By allowing our state to be mutable, we lose all that previous history, and we make it much harder to track down problems and to troubleshoot our application." ID="ID_1740412910" CREATED="1530374445334" MODIFIED="1530374445334"/>
+<node TEXT="The solution to this problem is to make our state immutable, which essentially means that we create a copy or we clone it before we modify it. In JavaScript, starting with ES6, we can use the Object.assign method," ID="ID_1127385554" CREATED="1530374479251" MODIFIED="1530374479251"/>
+<node TEXT="let state2 = Object.assign({}, state, {points: 50});" ID="ID_755604674" CREATED="1530374818873" MODIFIED="1530375082074">
+<font ITALIC="true"/>
+</node>
+<node TEXT="So now we have state, which is still 25 points, and we have state2, which is now 50 points. We now have two snapshots in time of the state of our application. If we wanted to, we could create a history array and save these." ID="ID_609350941" CREATED="1530374908568" MODIFIED="1530374912964"/>
+<node TEXT="let history = []&#xa;history.push(state, state2)" ID="ID_1369172122" CREATED="1530375017815" MODIFIED="1530375075402">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Managing mutation and state changes is one of the major pain points in making a single-page application." ID="ID_602048784" CREATED="1530375134369" MODIFIED="1530375134369"/>
+<node TEXT="Having immutable data and keeping track of this history makes it much easier to manage your state and to track what has changed and when it has changed." ID="ID_1667903835" CREATED="1530375156585" MODIFIED="1530375156585"/>
+</node>
+<node TEXT="Advantages" ID="ID_341801320" CREATED="1530375733291" MODIFIED="1530375741206">
+<node TEXT="State snapshots" ID="ID_1682629329" CREATED="1530375771923" MODIFIED="1530375781214">
+<node TEXT="When you&apos;re forced to create a new copy before you modify it, you&apos;re creating another snapshot in time, so you can now compare the old state versus the new state." ID="ID_1299526515" CREATED="1530375177642" MODIFIED="1530375177642"/>
+</node>
+<node TEXT="Undo" ID="ID_425582376" CREATED="1530375782491" MODIFIED="1530375787062">
+<node TEXT="Some really neat things that holding on to the history allows is we can now take snapshots of our state. We can do things like undo, where if the application goes wrong you just push an undo button and it goes back to the previous state." ID="ID_1820714777" CREATED="1530375270310" MODIFIED="1530375273161"/>
+</node>
+<node TEXT="Reload from URL" ID="ID_458577742" CREATED="1530375789802" MODIFIED="1530375799582">
+<node TEXT="We can recreate state from URL, which allows much easier refreshing, which is a major pain point in many single-page applications, because you refresh, and everything is gone, which can be extremely frustrating." ID="ID_1035377416" CREATED="1530375347527" MODIFIED="1530375347527"/>
+</node>
+<node TEXT="Time travel" ID="ID_1416747724" CREATED="1530375801675" MODIFIED="1530375813152">
+<node TEXT="Another neat possibility is time travel, which allows you to go back, say, 5 steps or 10 steps in your app without having to do a lot of complicated service head work." ID="ID_1931090992" CREATED="1530375457931" MODIFIED="1530375457931"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Serverside Rendering" FOLDED="true" ID="ID_1655426220" CREATED="1530373722247" MODIFIED="1530373736427">
 <node TEXT="Data Injection / server-side Rendering" FOLDED="true" ID="ID_1699467068" CREATED="1529781392788" MODIFIED="1529783227338">
 <node TEXT="What is the difference between these two techniques of server rendering?" ID="ID_444117318" CREATED="1529783788723" MODIFIED="1529783788723"/>
 <node TEXT="Data Injection" FOLDED="true" ID="ID_1793863298" CREATED="1529783816180" MODIFIED="1529783820459">
@@ -4324,7 +4379,7 @@
 </node>
 </node>
 </node>
-<node TEXT="React DOM Server" ID="ID_683480484" CREATED="1529788711947" MODIFIED="1529788715026">
+<node TEXT="React DOM Server" FOLDED="true" ID="ID_683480484" CREATED="1529788711947" MODIFIED="1529788715026">
 <node TEXT="Introduction" ID="ID_1998664652" CREATED="1529788753162" MODIFIED="1529788870258">
 <node TEXT="React DOM server is a seemingly magical part of our stack that basically allows us to do the following." ID="ID_34428570" CREATED="1529788780498" MODIFIED="1529788784339"/>
 <node TEXT="We take our initial state and we load the top-level component into Express or whatever is serving our application and it outputs static HTML." ID="ID_1962228031" CREATED="1529788807738" MODIFIED="1529788870257"/>
@@ -4349,8 +4404,9 @@
 </node>
 </node>
 </node>
-<node TEXT="extentions" ID="ID_582425876" CREATED="1526846664247" MODIFIED="1526846672602">
-<node TEXT="React-Router" ID="ID_616574208" CREATED="1526846697967" MODIFIED="1526846712586">
+</node>
+<node TEXT="extentions" FOLDED="true" ID="ID_582425876" CREATED="1526846664247" MODIFIED="1526846672602">
+<node TEXT="React-Router" FOLDED="true" ID="ID_616574208" CREATED="1526846697967" MODIFIED="1526846712586">
 <node TEXT="Introduction" ID="ID_697295009" CREATED="1529790340575" MODIFIED="1529790346959">
 <node TEXT="What does React Router do?" ID="ID_1896514983" CREATED="1529790524570" MODIFIED="1529790532532"/>
 <node TEXT="Renders components based on path" ID="ID_400603771" CREATED="1529790553454" MODIFIED="1529790569077">
@@ -4448,868 +4504,22 @@
 </node>
 </node>
 <node TEXT="angular" ID="ID_1778518175" CREATED="1521314662594" MODIFIED="1521314667721"/>
+<node TEXT="Vue.js" ID="ID_125008286" CREATED="1530387101764" MODIFIED="1530387108816"/>
+<node TEXT="Meteor.js" ID="ID_70080539" CREATED="1530387110652" MODIFIED="1530387119704"/>
+<node TEXT="Ember.js" ID="ID_1159395300" CREATED="1530387127468" MODIFIED="1530387134072"/>
+<node TEXT="ExtJS" ID="ID_1745577836" CREATED="1530387136524" MODIFIED="1530387143344"/>
+<node TEXT="Knockout.js" ID="ID_1982896671" CREATED="1530387150012" MODIFIED="1530387156055"/>
 </node>
 <node TEXT="Static Site generators" ID="ID_869348301" CREATED="1529146169195" MODIFIED="1529146193550">
 <node TEXT="Gatsby" ID="ID_808987085" CREATED="1529146232931" MODIFIED="1529146239454"/>
 <node TEXT="Phenomic" ID="ID_236290860" CREATED="1529146242779" MODIFIED="1529146254038"/>
 </node>
 </node>
-<node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313"/>
+<node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313">
+<node TEXT="jQuery" ID="ID_1118040403" CREATED="1530391822799" MODIFIED="1530391828923"/>
 </node>
-<node TEXT="Architecture" ID="ID_1222369571" CREATED="1522617086899" MODIFIED="1522617102043">
-<node TEXT="Redux" FOLDED="true" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432">
-<node TEXT="introduction" FOLDED="true" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
-<node TEXT="Redux is a predictable state container for JavaScript apps. It helps developers write applications that behave consistently, run in different environments (client, server, and native), and are easy to test." ID="ID_1211224515" CREATED="1522618885749" MODIFIED="1522618906011"/>
-<node TEXT="Additionally, it provides improvements to the developer experience, like live code editing combined with a time traveling debugger." ID="ID_1994213069" CREATED="1522618909533" MODIFIED="1522618931394"/>
-<node TEXT="Redux can be used together with React, or with other view libraries. The Redux file size is small, 2kB, including dependencies." ID="ID_1457393343" CREATED="1522618950389" MODIFIED="1522618954306"/>
-<node TEXT="3 Redux core principles" FOLDED="true" ID="ID_1980494364" CREATED="1525626797508" MODIFIED="1525626816881">
-<node TEXT="One immutable store" ID="ID_479559491" CREATED="1525627045631" MODIFIED="1525627058321"/>
-<node TEXT="Only Actions trigger changes" ID="ID_426955571" CREATED="1525627099879" MODIFIED="1525627112536"/>
-<node TEXT="Reducers returns update state" ID="ID_1663061832" CREATED="1525627114559" MODIFIED="1525631711393"/>
 </node>
-<node TEXT="Two Component Types" FOLDED="true" ID="ID_968366060" CREATED="1525724043534" MODIFIED="1525724069701">
-<node TEXT="Container" FOLDED="true" ID="ID_1630340127" CREATED="1525724065589" MODIFIED="1525724085075">
-<node TEXT="Focus on how things work" ID="ID_1684830827" CREATED="1525724103780" MODIFIED="1525724116130"/>
-<node TEXT="Aware of Redux" ID="ID_867059018" CREATED="1525724116534" MODIFIED="1525724124826"/>
-<node TEXT="Subscribe to Redux State" ID="ID_1966278354" CREATED="1525724125101" MODIFIED="1525724137186"/>
-<node TEXT="Dispatch Redux actions" ID="ID_261098123" CREATED="1525724137555" MODIFIED="1525724150978"/>
-<node TEXT="Generated by react-redux" ID="ID_851409441" CREATED="1525724151728" MODIFIED="1525724165482"/>
-</node>
-<node TEXT="Presentational" FOLDED="true" ID="ID_987643333" CREATED="1525724088970" MODIFIED="1525724101531">
-<node TEXT="Focus on how things look" ID="ID_29409442" CREATED="1525724169705" MODIFIED="1525724191386"/>
-<node TEXT="Unaware of Redux" ID="ID_1712606127" CREATED="1525724193389" MODIFIED="1525724202745"/>
-<node TEXT="Read data from props" ID="ID_732721547" CREATED="1525724213472" MODIFIED="1525724226289"/>
-<node TEXT="Invoke callbacks on props" ID="ID_1524850734" CREATED="1525724226852" MODIFIED="1525724241721"/>
-<node TEXT="Written by hand" ID="ID_1598016922" CREATED="1525724245372" MODIFIED="1525724253673"/>
-</node>
-</node>
-<node TEXT="A Chat with Redux" FOLDED="true" ID="ID_157797263" CREATED="1525725218376" MODIFIED="1525725232218">
-<node TEXT="REACT: Hey CourseAction, someone clicked this &quot;Save Course&quot; button" ID="ID_1194131840" CREATED="1525725239773" MODIFIED="1525725271906"/>
-<node TEXT="ACTION: Thanks React! I will dispatch an action so reducers that care can update state" ID="ID_941621879" CREATED="1525725273688" MODIFIED="1525725323554"/>
-<node TEXT="REDUCER: Ah, thanks action. I see you passed me the current state and the action to perform. I&apos;ll make a new copy of the state and return it." ID="ID_1638836202" CREATED="1525725326484" MODIFIED="1525725406017"/>
-<node TEXT="STORE: Thanks for updating the state reducer. I&apos;ll make sure that all connected components are aware" ID="ID_1538655373" CREATED="1525725410673" MODIFIED="1525725458457"/>
-<node TEXT="REACT-REDUX: Woah, thanks for the new data Mr. Store. I&apos;ll now intelligently determine if I should tell React about this change so that it only has to bother with updating the UI when necessary." ID="ID_1390575432" CREATED="1525725460827" MODIFIED="1525725551352"/>
-<node TEXT="Ooo! Shiny new data has been passed down via props from the store! I&apos;ll update the UI to reflect this!" ID="ID_948301864" CREATED="1525725554577" MODIFIED="1525725603535"/>
-</node>
-</node>
-<node TEXT="terminology" FOLDED="true" ID="ID_1767781134" CREATED="1522619005804" MODIFIED="1522619062345">
-<node TEXT="state" FOLDED="true" ID="ID_976637588" CREATED="1522619102028" MODIFIED="1522619107905">
-<node TEXT="State (also called the state tree) is a broad term, but in the Redux API it usually refers to the single state value that is managed by the store and returned by getState()" ID="ID_109853515" CREATED="1522619450561" MODIFIED="1522619453888"/>
-<node ID="ID_919135901" CREATED="1522619467809" MODIFIED="1522619487527"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>It represents the entire state of a Redux application</b>, which is often a deeply nested object.
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="By convention, the top-level state is an object or some other key-value collection like a Map, but technically it can be any type." ID="ID_351463405" CREATED="1522619547112" MODIFIED="1522619551094"/>
-<node TEXT="Still, you should do your best to keep the state serializable. Don&apos;t put anything inside it that you can&apos;t easily turn into JSON." ID="ID_757080883" CREATED="1522619569408" MODIFIED="1522619573334"/>
-</node>
-<node TEXT="action" FOLDED="true" ID="ID_1391084089" CREATED="1522619111995" MODIFIED="1522619120265">
-<node TEXT="An action is a plain object that represents an intention to change the state." ID="ID_1265939815" CREATED="1522619203755" MODIFIED="1522619207536"/>
-<node TEXT="Actions are the only way to get data into the store." ID="ID_565796530" CREATED="1522619234003" MODIFIED="1522619237584"/>
-<node TEXT="Any data, whether from UI events, network callbacks, or other sources such as WebSockets needs to eventually be dispatched as actions." ID="ID_517106" CREATED="1522619255563" MODIFIED="1522619259440"/>
-<node ID="ID_1237680772" CREATED="1522619296722" MODIFIED="1522619326585"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Actions must have a type field</b>&#160;that indicates the type of action being performed.
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Types can be defined as constants and imported from another module. It&apos;s better to use strings for type than Symbols because strings are serializable." ID="ID_722895341" CREATED="1522619388298" MODIFIED="1522619393391"/>
-<node TEXT="Other than type, the structure of an action object is really up to you." ID="ID_1441813673" CREATED="1522619416889" MODIFIED="1522619420303"/>
-</node>
-<node TEXT="reducer" FOLDED="true" ID="ID_1033220480" CREATED="1522619128411" MODIFIED="1522619137249">
-<node TEXT="A reducer (also called a reducing function) is a function that accepts an accumulation and a value and returns a new accumulation. They are used to reduce a collection of values down to a single value." ID="ID_1483962171" CREATED="1522619617216" MODIFIED="1522619620965"/>
-<node TEXT="Reducers are not unique to Redux&#x2014;they are a fundamental concept in functional programming." FOLDED="true" ID="ID_1175675688" CREATED="1522619649784" MODIFIED="1522619653829">
-<node TEXT="Even most non-functional languages, like JavaScript, have a built-in API for reducing. In JavaScript, it&apos;s Array.prototype.reduce()." ID="ID_1678806158" CREATED="1522619710023" MODIFIED="1522619714917"/>
-</node>
-<node ID="ID_668913811" CREATED="1522619739503" MODIFIED="1522619761581"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>In Redux, the accumulated value is the state object, and the values being accumulated are actions.</b>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Reducers calculate a new state given the previous state and an action." ID="ID_786608455" CREATED="1522619793638" MODIFIED="1522619797340"/>
-<node TEXT="They must be pure functions&#x2014;functions that return the exact same output for given inputs. They should also be free of side-effects. This is what enables exciting features like hot reloading and time travel." ID="ID_828958310" CREATED="1522619816814" MODIFIED="1522619827348"/>
-<node ID="ID_784590371" CREATED="1522619843030" MODIFIED="1522619856036"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Reducers are the most important concept in Redux.</b>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-<node TEXT="Dispatching Function" FOLDED="true" ID="ID_486699287" CREATED="1522619924958" MODIFIED="1525633418570">
-<node TEXT="A dispatching function (or simply dispatch function) is a function that accepts an action or an async action; it then may or may not dispatch one or more actions to the store." ID="ID_533816032" CREATED="1522619945789" MODIFIED="1522619949355"/>
-<node TEXT="We must distinguish between dispatching functions in general and the base dispatch function provided by the store instance without any middleware." ID="ID_1584110292" CREATED="1522620018917" MODIFIED="1522620023082"/>
-<node TEXT="The base dispatch function always synchronously sends an action to the store&apos;s reducer, along with the previous state returned by the store, to calculate a new state. It expects actions to be plain objects ready to be consumed by the reducer." ID="ID_293986832" CREATED="1522620047445" MODIFIED="1525633418567"/>
-<node TEXT="&#x200a;Middleware wraps the base dispatch function. It allows the dispatch function to handle async actions in addition to actions. Middleware may transform, delay, ignore, or otherwise interpret actions or async actions before passing them to the next middleware. See below for more information." ID="ID_1338902460" CREATED="1522620084716" MODIFIED="1522620088386"/>
-</node>
-<node TEXT="action creator" FOLDED="true" ID="ID_1917752922" CREATED="1522620141676" MODIFIED="1522620151337">
-<node ID="ID_1552571801" CREATED="1522620180732" MODIFIED="1522620202266"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      An action creator is, quite simply, a function that creates an action. Do not confuse the two terms&#8212;again, <b>an action is a payload of information, and an action creator is a factory that creates an action.</b>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Calling an action creator only produces an action, but does not dispatch it." FOLDED="true" ID="ID_419348309" CREATED="1522620232491" MODIFIED="1522620236025">
-<node TEXT="You need to call the store&apos;s dispatch function to actually cause the mutation." ID="ID_87944580" CREATED="1522620261739" MODIFIED="1522620270456"/>
-<node TEXT="Sometimes we say bound action creators to mean functions that call an action creator and immediately dispatch its result to a specific store instance." ID="ID_425912857" CREATED="1522620291907" MODIFIED="1522620300192"/>
-</node>
-<node TEXT="If an action creator needs to read the current state, perform an API call, or cause a side effect, like a routing transition, it should return an async action instead of an action." ID="ID_160417724" CREATED="1522620333810" MODIFIED="1522620337632"/>
-</node>
-<node TEXT="async action" FOLDED="true" ID="ID_489458546" CREATED="1522620418226" MODIFIED="1522620433415">
-<node TEXT="An async action is a value that is sent to a dispatching function, but is not yet ready for consumption by the reducer." ID="ID_613018791" CREATED="1522620450962" MODIFIED="1522620454735"/>
-<node TEXT="It will be transformed by middleware into an action (or a series of actions) before being sent to the base dispatch() function." ID="ID_342307227" CREATED="1522620468377" MODIFIED="1522620470431"/>
-<node TEXT="Async actions may have different types, depending on the middleware you use." FOLDED="true" ID="ID_1241688918" CREATED="1522620510233" MODIFIED="1522620515414">
-<node TEXT="They are often asynchronous primitives, like a Promise or a thunk, which are not passed to the reducer immediately, but trigger action dispatches once an operation has completed." ID="ID_289206944" CREATED="1522620530681" MODIFIED="1522620535782"/>
-</node>
-</node>
-<node TEXT="middleware" FOLDED="true" ID="ID_1666993751" CREATED="1522620545417" MODIFIED="1522620556830">
-<node TEXT="A middleware is a higher-order function that composes a dispatch function to return a new dispatch function. It often turns async actions into actions." ID="ID_1934890055" CREATED="1522620580233" MODIFIED="1522620587654"/>
-<node TEXT="Middleware is composable using function composition. It is useful for logging actions, performing side effects like routing, or turning an asynchronous API call into a series of synchronous actions." ID="ID_639636260" CREATED="1522620605208" MODIFIED="1522620609358"/>
-</node>
-<node TEXT="store" FOLDED="true" ID="ID_1375579091" CREATED="1522620629224" MODIFIED="1522620635638">
-<node TEXT="A store is an object that holds the application&apos;s state tree." ID="ID_1394617328" CREATED="1522620657112" MODIFIED="1522620659253"/>
-<node TEXT="There should only be a single store in a Redux app, as the composition happens on the reducer level." ID="ID_834992405" CREATED="1522620674960" MODIFIED="1522620679413"/>
-<node TEXT="methods" FOLDED="true" ID="ID_391715616" CREATED="1522620729103" MODIFIED="1522620735533">
-<node ID="ID_295822283" CREATED="1522620757039" MODIFIED="1522620810805"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>dispatch(action) </b>is the base dispatch function described above.
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_410061313" CREATED="1522620770079" MODIFIED="1522620823813"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>&#8202;getState()</b>&#160;returns the current state of the store.
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_289026830" CREATED="1522620784295" MODIFIED="1522620833196"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>subscribe(listener)</b>&#160;registers a function to be called on state changes.
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_220837" CREATED="1522620798119" MODIFIED="1522620843981"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>replaceReducer(nextReducer)</b>&#160;can be used to implement hot reloading and code splitting. Most likely you won't use it.
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-<node TEXT="store creator" FOLDED="true" ID="ID_1759618484" CREATED="1522620867623" MODIFIED="1522620877316">
-<node TEXT="A store creator is a function that creates a Redux store." ID="ID_206446507" CREATED="1522620896998" MODIFIED="1522620901068"/>
-<node TEXT="Like with dispatching function, we must distinguish the base store creator, createStore(reducer, preloadedState) exported from the Redux package, from store creators that are returned from the store enhancers." ID="ID_159298036" CREATED="1522620924638" MODIFIED="1522620928627"/>
-</node>
-<node TEXT="store enhancer" FOLDED="true" ID="ID_983418670" CREATED="1522620880998" MODIFIED="1522620888308">
-<node TEXT="A store enhancer is a higher-order function that composes a store creator to return a new, enhanced store creator." ID="ID_1505326299" CREATED="1522620954862" MODIFIED="1522620961019"/>
-<node TEXT="This is similar to middleware in that it allows you to alter the store interface in a composable way." ID="ID_1996836697" CREATED="1522620973870" MODIFIED="1522620978339"/>
-<node TEXT="Store enhancers are much the same concept as higher-order components in React, which are also occasionally called &#x201c;component enhancers&#x201d;." ID="ID_711336039" CREATED="1522621005653" MODIFIED="1522621008203"/>
-<node TEXT="Because a store is not an instance, but rather a plain-object collection of functions, copies can be easily created and modified without mutating the original store." ID="ID_946320417" CREATED="1522621036829" MODIFIED="1522621040722"/>
-<node TEXT="Most likely you&apos;ll never write a store enhancer, but you may use the one provided by the developer tools. It is what makes time travel possible without the app being aware it is happening. Amusingly, the Redux middleware implementation is itself a store enhancer." ID="ID_1077282299" CREATED="1522621067973" MODIFIED="1522621073546"/>
-</node>
-</node>
-</node>
-<node TEXT="data flow" FOLDED="true" ID="ID_771678683" CREATED="1522621091693" MODIFIED="1522621101490">
-<node TEXT="redux-data-flow.png" ID="ID_141702417" CREATED="1522621130796" MODIFIED="1522621130796">
-<hook URI="webdevelopment2_files/redux-data-flow.png" SIZE="0.94043887" NAME="ExternalObject"/>
-</node>
-</node>
-<node TEXT="resources" FOLDED="true" ID="ID_1596190764" CREATED="1522713315330" MODIFIED="1522713324301">
-<node TEXT="https://github.com/reactjs/redux/tree/master/docs" ID="ID_1366589383" CREATED="1522713333693" MODIFIED="1522713333693" LINK="https://github.com/reactjs/redux/tree/master/docs"/>
-</node>
-</node>
-<node TEXT="Mobx" ID="ID_1204779131" CREATED="1522617485512" MODIFIED="1522617497325"/>
-<node TEXT="Reusable Components Design" FOLDED="true" ID="ID_1773787353" CREATED="1529147627097" MODIFIED="1529147650260">
-<node TEXT="Design Tips" FOLDED="true" ID="ID_189614175" CREATED="1529141795986" MODIFIED="1529141829173">
-<node TEXT="1. Avoid Weak wrapper elements" FOLDED="true" ID="ID_1751468020" CREATED="1529141891881" MODIFIED="1529144215389">
-<node TEXT="You can&apos;t put a &lt;div&gt; in a p, because it&apos;s invalid html" ID="ID_1467284195" CREATED="1529141927809" MODIFIED="1529141989972"/>
-<node TEXT="//Avoid&#xa;&#xa;&lt;p&gt;&#xa;    {children}&#xa;&lt;/p&gt;" ID="ID_921155151" CREATED="1529141999056" MODIFIED="1529142174356">
-<font ITALIC="true"/>
-</node>
-<node TEXT="Use more flexible Containers like a &lt;div&gt;" ID="ID_129453582" CREATED="1529142045768" MODIFIED="1529142086756"/>
-<node TEXT="// prefer&#xa;&#xa;&lt;div&gt;&#xa;    {children}&#xa;&lt;/div&gt;" ID="ID_789792209" CREATED="1529142109520" MODIFIED="1529143980582">
-<font ITALIC="false"/>
-</node>
-</node>
-<node TEXT="2. Specify PropTypes" FOLDED="true" ID="ID_925205942" CREATED="1529142212495" MODIFIED="1529144221597">
-<node TEXT="PropTypes are especially useful for reusable components, so make sure you consistently define PropTypes for all of your components" ID="ID_836185227" CREATED="1529142554573" MODIFIED="1529142557952"/>
-<node TEXT="It&apos;s recommend enforcing this via linting" ID="ID_1758890710" CREATED="1529142607700" MODIFIED="1529142624840"/>
-<node TEXT="PropTypes clarify your component&apos;s API." ID="ID_208181681" CREATED="1529142645084" MODIFIED="1529142649608"/>
-<node TEXT="They make your expectations for props, including data types and required fields explicit, and when invalid or missing prop types occur React will generate a runtime warning" ID="ID_1849123065" CREATED="1529142743611" MODIFIED="1529142748103"/>
-<node TEXT="YourMom.propTypes = {&#xa;&#xa;   /** Importance, on a 1 - 10 scale */&#xa;   importance:PropTypes.number.isRequired,&#xa;&#xa;   /** Importance, on a 1 - 10 scale */&#xa;   cookies: PropTypes.number.isRequired&#xa;&#xa;  &#xa;   // Declare user object shape via propTypes&#xa;   user: PropTypes.shape({&#xa;      name: PropTypes.string,&#xa;      age: PropTypes.number,&#xa;   }),&#xa;}" ID="ID_1843537055" CREATED="1529142794323" MODIFIED="1529143141958">
-<font ITALIC="true"/>
-</node>
-<node TEXT="Alternate for propTypes is Flow" ID="ID_844003538" CREATED="1529143196752" MODIFIED="1529143218068"/>
-</node>
-<node TEXT="3. Don&apos;t hard code HTML IDs" FOLDED="true" ID="ID_898962557" CREATED="1529142736531" MODIFIED="1529144227612">
-<node TEXT="Your components will be used in multiple places, often multiple times on the same page, so it&apos;s important to make sure that you don&apos;t hard code HTML IDs in the markup" ID="ID_1983433792" CREATED="1529143343255" MODIFIED="1529143346979"/>
-<node TEXT="So, instead of hard coding an HTML ID in a reusable component, It&apos;s recommend to accept an ID via a prop instead." ID="ID_843232535" CREATED="1529143444742" MODIFIED="1529143472579"/>
-<node TEXT="MyComponent.propTypes = {&#xa;   htmlId: React.PropTypes.string.isRequired&#xa;}" ID="ID_1108700828" CREATED="1529143495286" MODIFIED="1529143545433">
-<font ITALIC="true"/>
-</node>
-</node>
-<node TEXT="4. Set Logical Defaults" FOLDED="true" ID="ID_1514492013" CREATED="1529143639573" MODIFIED="1529144233780">
-<node TEXT="Set Logical Defaults. Thoughtful defaults make your component more approachable and reduce the amount of work to get set up, so think carefully about the logical defaults that you can declare" ID="ID_1069287018" CREATED="1529143755908" MODIFIED="1529145078686">
-<font ITALIC="true"/>
-</node>
-<node TEXT="Good defaults save your consumers typing because they don&apos;t have to explicitly populate as many props." ID="ID_907112619" CREATED="1529143775204" MODIFIED="1529143779832"/>
-<node TEXT=" default props help convey how the component works by showing a common use case that&apos;s populated with realistic data." ID="ID_24986729" CREATED="1529143869859" MODIFIED="1529143874135"/>
-<node TEXT="// Below MyCounter class&#xa;MyCounter.defaultProps = { initialCount: 0};&#xa;&#xa;OR&#xa;&#xa;// Using static property&#xa;class MyCounter extends React.Component {&#xa;   static defaultProps = {initialCount: 0};&#xa;&#xa;OR&#xa;&#xa;//For Stateless components&#xa;const myCounter = ({initialCount = 0}) =&gt; {" ID="ID_1374245400" CREATED="1529143918107" MODIFIED="1529144208926">
-<font ITALIC="true"/>
-</node>
-</node>
-<node TEXT="5. Accessibility Matters" FOLDED="true" ID="ID_162505135" CREATED="1529144237841" MODIFIED="1529144254364">
-<node TEXT="reusable components offer a powerful spot to help bake accessibility into your application." ID="ID_938710259" CREATED="1529144400504" MODIFIED="1529144403675"/>
-<node TEXT="Remember, people may not click on your inputs. They may interact solely via the keyboard, so it&apos;s important to respond to common keyboard inputs like arrow keys, and to set focus via Tab." ID="ID_1252837180" CREATED="1529144439479" MODIFIED="1529144449747"/>
-<node TEXT="Keyboard users often use Tab to move through input, so assure the Tab indexes are honored and set in a logical order. Remember that the default tabbing order is based on the DOM position, but due to styling, DOM position may be completely different than the visual layout." ID="ID_1833775417" CREATED="1529144542047" MODIFIED="1529144546410"/>
-<node TEXT="Strive to use proper semantic markup within your components. For example, avoid using a div or a span as a button. Instead, use a button, since it has proper behavior for event handling, focus, and keyboard inputs all built-in." ID="ID_1075517602" CREATED="1529144635998" MODIFIED="1529144639602"/>
-<node TEXT="Avoid the temptation to reinvent the wheel, which can lead to accessibility issues." ID="ID_1260543581" CREATED="1529144658134" MODIFIED="1529144661513"/>
-<node TEXT="Provide labels for inputs, so the label is programmatically tied to the input. This assures that screen readers are clear about what each field is for" ID="ID_763349112" CREATED="1529144689598" MODIFIED="1529144693089"/>
-<node TEXT=" Finally, investigate ARIA and Role attributes to enhance your components accessibility. ARIA stands for Accessible Rich Internet Applications. ARIA defines a way to make web content and web applications more accessible to people with disabilities." ID="ID_907587370" CREATED="1529144773373" MODIFIED="1529144778577"/>
-</node>
-<node TEXT="6. Consider Configuration Objects" FOLDED="true" ID="ID_1747184540" CREATED="1529144797989" MODIFIED="1529144807200">
-<node TEXT="If you&apos;re designing a component that will have a large number of props or is likely to have a number of props added in the future, then consider accepting a configuration object on props." ID="ID_1954637243" CREATED="1529144873444" MODIFIED="1529144877152"/>
-<node TEXT="Imagine I have a component that displays a customers details called CustomerDetail. It may start off with just a few props, but I expect down the road that it&apos;s going to end up requiring dozens of props because we store and display a lot of data for our customers." ID="ID_1520962398" CREATED="1529144900868" MODIFIED="1529144904704"/>
-<node TEXT="&lt;CustomerDetail&#xa;   firstName=&quot;Diggi&quot;&#xa;   lastName=&quot;Diggla&quot;&#xa;   title=&quot;Developer&quot;&#xa;   office=&quot;Home&quot;&#xa;/&gt;" ID="ID_1884194485" CREATED="1529144957868" MODIFIED="1529145083190">
-<font ITALIC="true"/>
-</node>
-<node TEXT="In this case, it&apos;s typically preferable to accept an object instead of a long list of separate props." ID="ID_1790860067" CREATED="1529145146082" MODIFIED="1529145151990"/>
-<node TEXT="&lt;CustomerDetail customer={{&#xa;   firstName: &apos;Diggi&apos;,&#xa;   lastName: &apos;Diggla&apos;,&#xa;   title: &apos;Developer&apos;,&#xa;   office: &apos;Home&apos;&#xa;}}/&gt;" ID="ID_1074245603" CREATED="1529145154178" MODIFIED="1529145293308">
-<font ITALIC="true"/>
-</node>
-<node TEXT=" So why is a config object so useful?" FOLDED="true" ID="ID_1271755283" CREATED="1529145364745" MODIFIED="1529145370165">
-<node TEXT="The biggest benefit is the component&apos;s API doesn&apos;t change over time as you add new properties. It continues to accept an object." ID="ID_276841967" CREATED="1529145437184" MODIFIED="1529145455620"/>
-<node TEXT="A configuration object also saves people typing. If you already have a customer object returned from an API call that has the same shape, then you can easily pass it in without having to manually wire up a long list of separate props." ID="ID_305878118" CREATED="1529145534112" MODIFIED="1529145537771"/>
-<node TEXT="This makes it less error prone as well. You don&apos;t have to worry about accidentally typing the wrong value for the wrong prop. If the object&apos;s shape is correct, then the component should work as expected." ID="ID_1919826076" CREATED="1529145583607" MODIFIED="1529145587275"/>
-</node>
-<node TEXT="Avoid passing in a config object if your component has less than three or four props, since separate props tend to read more explicitly, but if your component is likely to accept many more props in the future, then consider passing an object instead." ID="ID_1837259123" CREATED="1529145683655" MODIFIED="1529145688706"/>
-</node>
-<node TEXT="7. Consider Server-side Rendering" FOLDED="true" ID="ID_1572161835" CREATED="1529145712046" MODIFIED="1529145726034">
-<node TEXT="React supports server rendering, so if you&apos;re going to publish reusable components it&apos;s important to decide if you want to support server rendering with your components" ID="ID_1542634965" CREATED="1529145834062" MODIFIED="1529145837713"/>
-<node TEXT="There&apos;s a few common reasons that your users might want to do server rendering." FOLDED="true" ID="ID_1012868233" CREATED="1529145967917" MODIFIED="1529145972632">
-<node TEXT="The most common reason is Search Engine Optimization. Now even though Google supports parsing JavaScript, there are other search engines to consider, and search engines aren&apos;t very transparent about the precise implications of serving a client-side rendered app, so many prefer doing server rendering just to be on the safe side, and remember," ID="ID_1809315495" CREATED="1529146049180" MODIFIED="1529146054544"/>
-<node TEXT="React isn&apos;t just for web applications anymore. People are building static websites with React now as well. If you think anyone will want to generate static sites using your components, then server rendering is necessary. Popular tools for this include Gatsby and Phenomic." ID="ID_1845297090" CREATED="1529146093756" MODIFIED="1529146098671"/>
-<node TEXT="Rendering initially on the server can also improve performance by reducing time to first paint. By rendering on the server users don&apos;t have to wait for the JavaScript to parse before seeing something on the screen" ID="ID_848822930" CREATED="1529146318354" MODIFIED="1529146329030"/>
-<node TEXT="finally, if you&apos;re going to publish components publicly, supporting server rendering is obviously important, since you have no idea how people will choose to use your components." ID="ID_88422670" CREATED="1529146369954" MODIFIED="1529146376982"/>
-</node>
-<node TEXT="Thankfully, supporting server rendering is pretty straightforward. The biggest rule is you need to stop assuming that your React components are being run in the browser, so you need to avoid doing any document or window calls, and you should avoid using setTimeout as well." ID="ID_1891593203" CREATED="1529146045180" MODIFIED="1529146520180"/>
-<node TEXT=" Basically, to support server rendering you can&apos;t assume that the component is running within the browsers API." ID="ID_1578994391" CREATED="1529146537856" MODIFIED="1529146541188"/>
-</node>
-<node TEXT="8. Honor the Single Responsibility Principle" FOLDED="true" ID="ID_652132347" CREATED="1529146546625" MODIFIED="1529146569180">
-<node TEXT="Each component should have a clear single responsibility" ID="ID_1968281268" CREATED="1529146605560" MODIFIED="1529146609076"/>
-<node TEXT="it&apos;s easy to find yourself designing a component that becomes so configurable that it&apos;s hard to understand, utilize, and maintain." ID="ID_137369561" CREATED="1529146642880" MODIFIED="1529146646307"/>
-<node TEXT="Props allow you to provide as many configuration points as you&apos;d like, and if you don&apos;t draw the line you can quickly create a component that&apos;s trying to be too many things to too many people." ID="ID_597700806" CREATED="1529146694911" MODIFIED="1529146706699"/>
-<node TEXT="Overly customizable components can lead to tricky debugging scenarios, and can make it hard to support changes later with confidence." ID="ID_1266641562" CREATED="1529146869054" MODIFIED="1529146873050"/>
-<node TEXT="Loosely speaking, as the number of props goes up, so does complexity." ID="ID_200724436" CREATED="1529147054781" MODIFIED="1529147058112"/>
-<node TEXT="For this reason prefer separate and simple components over a single complicated and highly customizable one." ID="ID_1367974000" CREATED="1529147153524" MODIFIED="1529147156944"/>
-<node TEXT=" Simpler components are easier to understand, easier to maintain, and less likely to produce bugs." ID="ID_1840306816" CREATED="1529147174428" MODIFIED="1529147177808"/>
-<node TEXT=" Remember that you can always compose components together to achieve powerful reuse scenarios. A single component doesn&apos;t need to be a hero." ID="ID_885319665" CREATED="1529147263468" MODIFIED="1529147267079"/>
-</node>
-</node>
-<node TEXT="Atomic Design" FOLDED="true" ID="ID_535826344" CREATED="1529140580150" MODIFIED="1529140596009">
-<node TEXT="Atomic design is an approach to component design that was popularized by Brad Frost. Describes components with scientific terms." ID="ID_1175621170" CREATED="1529149373733" MODIFIED="1529150637255"/>
-<node TEXT="introduction" FOLDED="true" ID="ID_1481591635" CREATED="1529147550306" MODIFIED="1529147560373">
-<node TEXT="What is Atomic Design?" FOLDED="true" ID="ID_1254152651" CREATED="1529147821960" MODIFIED="1529147851651">
-<node TEXT="It&apos;s a language for describing components written at multiple layers of abstraction." FOLDED="true" ID="ID_369276396" CREATED="1529147951423" MODIFIED="1529147956970">
-<node TEXT="Atoms are the smallest, simplest components. They provide the basic building blocks for larger components." ID="ID_57070719" CREATED="1529149734554" MODIFIED="1529149756598"/>
-<node TEXT="Molecules group two or more atoms together into a larger unit." ID="ID_229049918" CREATED="1529149775946" MODIFIED="1529149783701"/>
-<node TEXT="Organisms are groups of molecules functioning together." ID="ID_1804006738" CREATED="1529149801010" MODIFIED="1529149809773"/>
-<node TEXT="Templates put the components in a layout." ID="ID_915536360" CREATED="1529149827089" MODIFIED="1529149834061"/>
-<node TEXT=" Pages populate templates with real content." ID="ID_1737639022" CREATED="1529149849921" MODIFIED="1529149876717"/>
-</node>
-<node TEXT="Example: Today&apos;s automobiles are composed of literally hundreds of reusable components utilized across multiple models and over many years." FOLDED="true" ID="ID_1935934213" CREATED="1529148167853" MODIFIED="1529148366327">
-<node TEXT=" Consider a pile of car parts." ID="ID_586829021" CREATED="1529148187317" MODIFIED="1529148191320"/>
-<node TEXT=" The spring is the atom. It&apos;s the smallest unit. You can&apos;t break the spring down any further, but the spring combined with the top hat and mount creates a full shock absorber." FOLDED="true" ID="ID_790347058" CREATED="1529148218101" MODIFIED="1529148222096">
-<node TEXT="In atomic design terminology you could call this assembly a molecule. It&apos;s a higher level component." ID="ID_1291622639" CREATED="1529148258197" MODIFIED="1529148258197"/>
-</node>
-<node TEXT="In atomic design terminology you could call this assembly a molecule. It&apos;s a higher level component." FOLDED="true" ID="ID_1318063998" CREATED="1529148256645" MODIFIED="1529148263176">
-<node TEXT="Connect the shock absorber with a trailing arm and hub and you have a basic steering assembly." ID="ID_1824456691" CREATED="1529148310811" MODIFIED="1529148310811"/>
-</node>
-<node TEXT="Connect the shock absorber with a trailing arm and hub and you have a basic steering assembly." ID="ID_956245306" CREATED="1529148309300" MODIFIED="1529148315664"/>
-<node TEXT="In atomic design terms you could call that higher level abstraction an organism." ID="ID_179664045" CREATED="1529148341244" MODIFIED="1529148343399"/>
-</node>
-<node TEXT="Components allow us to stand on the shoulders of giants. See, not long ago we used to think of the entire page as a concern. With server-side development each page would require a full page load, as you navigated from page to page." ID="ID_643057515" CREATED="1529148513443" MODIFIED="1529148580870"/>
-<node TEXT="This caused us to embrace page oriented patterns, like Model, View, Controller." ID="ID_1880926493" CREATED="1529149991648" MODIFIED="1529149997308"/>
-<node TEXT="Atomic Design vs. MVC" FOLDED="true" ID="ID_1506701553" CREATED="1529149903769" MODIFIED="1529149958452">
-<node TEXT="With the popular MVC pattern we&apos;d declare three separate files." FOLDED="true" ID="ID_448415538" CREATED="1529148655202" MODIFIED="1529148659725">
-<node TEXT="The Model would declare the data for the View," ID="ID_988133124" CREATED="1529148676058" MODIFIED="1529148690781"/>
-<node TEXT="The View would declare the markup for our View and the HTML, in the case of the web page" ID="ID_376175601" CREATED="1529148717473" MODIFIED="1529148728525"/>
-<node TEXT="The Controller would contain the logic that ties all this together and responds to events." ID="ID_1276084817" CREATED="1529148761129" MODIFIED="1529148778252"/>
-</node>
-<node TEXT="Now since MVC is a page oriented pattern, when you decide to create a product page you&apos;d typically just create a new model of View and Controller for that new page, so while MVC is a useful pattern, it&apos;s very different than the component-oriented mindset that React proposes." ID="ID_1148524232" CREATED="1529148811521" MODIFIED="1529148816404"/>
-</node>
-<node TEXT=" With React we&apos;ve learned to think of the page as a set of nested components." ID="ID_818865405" CREATED="1529148860792" MODIFIED="1529148864148"/>
-<node TEXT="So atomic design encourages you to think about your UI as a hierarchy of components. Atoms are the building blocks, molecules are a group of atoms, and organisms are a group of molecules." ID="ID_376350959" CREATED="1529149132390" MODIFIED="1529149135914"/>
-<node TEXT="As you move higher up, obviously difficulty goes up and reuse goes down. It&apos;s easier to make a reusable atom than it is to make a reusable organism. Why? Because the surface area is so much greater on an organism." ID="ID_107141990" CREATED="1529149320045" MODIFIED="1529149346568"/>
-<node TEXT="Atomic Design = modular Design" FOLDED="true" ID="ID_1491183905" CREATED="1529150023864" MODIFIED="1529150047779">
-<node TEXT="You might look at this and think, hey, this is simply modular design, and yeah, that&apos;s a popular way to describe this pattern too" ID="ID_406347599" CREATED="1529149493572" MODIFIED="1529149498351"/>
-<node TEXT=" Atomic design simply uses chemistry terms to avoid inventing new jargon for the levels and to make the hierarchy obvious, but the term modular design is popular in other industries, and generally conveys the same philosophy" ID="ID_874679134" CREATED="1529149565595" MODIFIED="1529149570471"/>
-</node>
-</node>
-<node TEXT="Why Atomic Design?" FOLDED="true" ID="ID_196776295" CREATED="1529147852919" MODIFIED="1529147868891">
-<node TEXT="Atomic design is helpful because you consider the project at multiple levels of granularity." ID="ID_689462436" CREATED="1529150190711" MODIFIED="1529150193450"/>
-<node TEXT=" You can dig down deep and focus on a single atom or you can step back and view it at a high level to see how all the atoms, molecules, and organisms come together to form a useful whole." ID="ID_1100407947" CREATED="1529150232783" MODIFIED="1529150235714"/>
-<node TEXT=" Atomic design encourages you to design a component library that contains multiple layers." ID="ID_19930687" CREATED="1529150270662" MODIFIED="1529150274506"/>
-<node TEXT="This mindset encourages reuse because you look at your components at a lower level, and as building blocks for your higher level components." ID="ID_567249058" CREATED="1529150314446" MODIFIED="1529150325690"/>
-<node TEXT="the terminology helpful for conveying the relationships between components, and it&apos;s also useful for conveying intent, much like other programming pattern languages." ID="ID_1130609540" CREATED="1529150471965" MODIFIED="1529150475520"/>
-<node TEXT="If you&apos;re striving to build an atom, than it&apos;s clear that you&apos;re asking for a simple foundational component that will be composed in a variety of ways. You need to consider the breadth of use cases more carefully than if you&apos;re creating a higher level component, which is typically more tailored to a small set of use cases." ID="ID_1737512006" CREATED="1529150517045" MODIFIED="1529150520592"/>
-<node TEXT="Atomic design is a language that conveys a hierarchy of reuse. Your low level components form the foundation for ever higher levels of abstraction." ID="ID_812803841" CREATED="1529150536477" MODIFIED="1529150540176"/>
-</node>
-</node>
-<node TEXT="There are five distinct levels in atomic design" FOLDED="true" ID="ID_221760775" CREATED="1529147791664" MODIFIED="1529147795947">
-<node TEXT="Atomic-design-overview.png" ID="ID_1991803539" CREATED="1529174569323" MODIFIED="1529174569323">
-<hook URI="webdevelopment2_files/Atomic-design-overview.png" SIZE="1.0" NAME="ExternalObject"/>
-</node>
-<node TEXT="Atoms" FOLDED="true" ID="ID_51777376" CREATED="1529141186958" MODIFIED="1529141194418">
-<node TEXT="Introduction" FOLDED="true" ID="ID_132987721" CREATED="1529174323061" MODIFIED="1529174331697">
-<node TEXT="Atoms are the smallest, simplest components. They provide the basic building blocks for larger components." ID="ID_1129444034" CREATED="1529147982214" MODIFIED="1529147983930"/>
-<node TEXT="Atoms are useful when they&apos;re composed together to create bigger, richer, more significant components." ID="ID_1649919308" CREATED="1529174213902" MODIFIED="1529174222546"/>
-<node TEXT="You can&apos;t break an atom down any farther. It&apos;s the basic building block for creating larger components, and since they&apos;re foundational atoms often demonstrate and encapsulate your application&apos;s basic styles." ID="ID_167558539" CREATED="1529174285750" MODIFIED="1529174290465"/>
-<node TEXT="The HTML specification includes many atoms like the button that you see here, but as you&apos;ll see, you&apos;re free to wrap HTML elements and enhance their behavior." ID="ID_1814296734" CREATED="1529174304102" MODIFIED="1529174315081"/>
-</node>
-<node TEXT="Key Decisions when designing Atoms" FOLDED="true" ID="ID_82895992" CREATED="1529174358589" MODIFIED="1529174848549">
-<node TEXT="Wrap HTML Primitives?" FOLDED="true" ID="ID_483813521" CREATED="1529174862234" MODIFIED="1529174866301">
-<node TEXT="When you begin creating atoms you need to decide how low level to go." ID="ID_949083710" CREATED="1529174903097" MODIFIED="1529174905741"/>
-<node TEXT="Does it make sense to wrap HTML primitives as your atoms?" ID="ID_1311359349" CREATED="1529174951073" MODIFIED="1529174990103"/>
-<node TEXT=" Yes it is, and here&apos;s why." FOLDED="true" ID="ID_1687170817" CREATED="1529174991257" MODIFIED="1529175208586">
-<node TEXT="HTML primitives lack a number of built-in options that you&apos;re likely to have in a real application." ID="ID_791659484" CREATED="1529175016189" MODIFIED="1529175016189"/>
-<node TEXT="Potential HTML Primitive Enhancements" FOLDED="true" ID="ID_149811055" CREATED="1529175025056" MODIFIED="1529175048804">
-<node TEXT="Integrated label" FOLDED="true" ID="ID_500603852" CREATED="1529175060136" MODIFIED="1529175068468">
-<node TEXT="You can integrate a label that properly applies the necessary classes and sets a for attribute on the element that corresponds to the inputs ID element." ID="ID_521899031" CREATED="1529175282215" MODIFIED="1529175287458"/>
-</node>
-<node TEXT="Unique element ID" FOLDED="true" ID="ID_1454604035" CREATED="1529175069656" MODIFIED="1529175082092">
-<node TEXT="You can generate a globally unique ID for the input by creating a centralized function that just increments a number when called, and then map that label and input together using the htmlFor attribute." ID="ID_1157759473" CREATED="1529175365774" MODIFIED="1529175369730"/>
-</node>
-<node TEXT="Required field marker" FOLDED="true" ID="ID_1876298197" CREATED="1529175082920" MODIFIED="1529175099187">
-<node TEXT="You can enforce a consistent visual indicator for a required field, such as a red asterisk to the right of the label." ID="ID_146030875" CREATED="1529175399974" MODIFIED="1529175404881"/>
-</node>
-<node TEXT="Default value / placeholder" FOLDED="true" ID="ID_1387323022" CREATED="1529175100896" MODIFIED="1529175115619">
-<node TEXT="You can set a placeholder value by convention using the label value, and you can also set a default value consistently on dropdowns." ID="ID_1240427359" CREATED="1529175435342" MODIFIED="1529175440385"/>
-</node>
-<node TEXT="Horizontal and vertical layout" FOLDED="true" ID="ID_525982208" CREATED="1529175117416" MODIFIED="1529175157603">
-<node TEXT=" You can enforce either horizontal or vertical layout for each field or make selecting either as simple as setting a prop." ID="ID_631095127" CREATED="1529175466621" MODIFIED="1529175473081"/>
-</node>
-<node TEXT="Error messaging" FOLDED="true" ID="ID_189689762" CREATED="1529175158592" MODIFIED="1529175168619">
-<node TEXT="You can integrate error messaging below or beside the component, depending on the selected layout." ID="ID_1227543026" CREATED="1529175501733" MODIFIED="1529175501733"/>
-</node>
-<node TEXT="Touched, dirty meta data" FOLDED="true" ID="ID_840963255" CREATED="1529175169647" MODIFIED="1529175183099">
-<node TEXT=" You can build in metadata about whether it&apos;s been touched or is dirty, so that parent components can check for any dirty child components." ID="ID_1156514232" CREATED="1529175535693" MODIFIED="1529175539736"/>
-</node>
-<node TEXT="Polyfill older browsers" FOLDED="true" ID="ID_1538504741" CREATED="1529175551461" MODIFIED="1529175566368">
-<node TEXT="You can even include polyfills for older browsers that lack support for native features like input types of number." ID="ID_269750874" CREATED="1529175612413" MODIFIED="1529175612413"/>
-</node>
-<node TEXT="All these items are manual, redundant, and error-prone actions without reusable components, so it&apos;s worth taking the time to create these abstractions to codify standards." ID="ID_35277833" CREATED="1529175685188" MODIFIED="1529175690271"/>
-</node>
-<node TEXT="Every opinion that you encapsulate in a component is one less decision that your team has to make, and one more feature that you can manage in a single spot." ID="ID_283094345" CREATED="1529175755779" MODIFIED="1529175760015"/>
-<node TEXT="HTML&apos;s basic elements aren&apos;t even named well, so you can consider abstracting them with more useful names." FOLDED="true" ID="ID_61483985" CREATED="1529175820403" MODIFIED="1529175825070">
-<node TEXT="You could wrap input with a type of text and call it TextInput. You could do the same with a checkbox and call it Checkbox." ID="ID_1263210623" CREATED="1529175847645" MODIFIED="1529175847645"/>
-<node TEXT="You could wrap a select and call it what it is, a Dropdown." ID="ID_1783695500" CREATED="1529175858299" MODIFIED="1529175864511"/>
-<node TEXT="You could even wrap a set of radio buttons into a radio button list or you could go even farther and create a single component that handles both radio button lists and dropdowns called PickOneFromList." ID="ID_112405314" CREATED="1529175935482" MODIFIED="1529175939854"/>
-</node>
-</node>
-</node>
-<node TEXT="Folder Structure" FOLDED="true" ID="ID_535375462" CREATED="1529176005354" MODIFIED="1529176009445">
-<node TEXT="What Belongs in the components folder ?" FOLDED="true" ID="ID_1751222903" CREATED="1529177069634" MODIFIED="1529177199461">
-<node TEXT="Every Component in an extra folder?" ID="ID_158051952" CREATED="1529178281858" MODIFIED="1529178301749"/>
-<node TEXT="Styles?" ID="ID_1707106026" CREATED="1529178307449" MODIFIED="1529178319117"/>
-<node TEXT="Tests?" ID="ID_1448692724" CREATED="1529178320561" MODIFIED="1529178328733"/>
-<node TEXT="index.js for shorter imports and default themes ?" ID="ID_1512433942" CREATED="1529178329889" MODIFIED="1529178379956"/>
-<node TEXT="Docs" ID="ID_1961235194" CREATED="1529178398201" MODIFIED="1529178406316"/>
-</node>
-<node TEXT=" Let&apos;s review the folder structures for the five most popular React component libraries." FOLDED="true" ID="ID_725915684" CREATED="1529177332840" MODIFIED="1529177336787">
-<node TEXT="React Bootstrap" FOLDED="true" ID="ID_151401202" CREATED="1529177436288" MODIFIED="1529177445515">
-<node TEXT="Has the simplest setup." ID="ID_1422281981" CREATED="1529177559327" MODIFIED="1529177597250"/>
-<node ID="ID_699545330" CREATED="1529177606104" MODIFIED="1529177606104"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      All components are placed together in a single folder, and other concerns are handled elsewhere.
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="overview" FOLDED="true" ID="ID_1424621571" CREATED="1529178695991" MODIFIED="1529178702106">
-<node TEXT="Folder per components:" ID="ID_636007970" CREATED="1529178584991" MODIFIED="1529178669594"/>
-<node TEXT="Style: NO" ID="ID_1853533149" CREATED="1529178602935" MODIFIED="1529178805369"/>
-<node TEXT="Tests: NO" ID="ID_1406530680" CREATED="1529178625359" MODIFIED="1529178811705"/>
-<node TEXT="Theme: NO" ID="ID_1046190546" CREATED="1529178634519" MODIFIED="1529178819682"/>
-<node TEXT="Docs: NO" ID="ID_1516502216" CREATED="1529178641183" MODIFIED="1529178831833"/>
-<node TEXT="Demo: NO" ID="ID_1946350376" CREATED="1529178647111" MODIFIED="1529178839281"/>
-<node TEXT="index.js: NO" ID="ID_876336249" CREATED="1529178653191" MODIFIED="1529178845713"/>
-</node>
-</node>
-<node TEXT="Blueprint" FOLDED="true" ID="ID_357343307" CREATED="1529177455463" MODIFIED="1529177462988">
-<node TEXT="Blueprint places styles that are written in SASS alongside the component." ID="ID_216188936" CREATED="1529177695748" MODIFIED="1529177695748"/>
-<node TEXT="overview" FOLDED="true" ID="ID_36595395" CREATED="1529178695991" MODIFIED="1529178702106">
-<node TEXT="Folder per components: YES" ID="ID_413951957" CREATED="1529178584991" MODIFIED="1529178873537"/>
-<node TEXT="Style: YES" ID="ID_1533651997" CREATED="1529178602935" MODIFIED="1529178882593"/>
-<node TEXT="Tests: NO" ID="ID_1789282162" CREATED="1529178625359" MODIFIED="1529178890577"/>
-<node TEXT="Theme: NO" ID="ID_1019676952" CREATED="1529178634519" MODIFIED="1529178895561"/>
-<node TEXT="Docs: NO" ID="ID_214984670" CREATED="1529178641183" MODIFIED="1529178904993"/>
-<node TEXT="Demo: NO" ID="ID_110719293" CREATED="1529178647111" MODIFIED="1529178911191"/>
-<node TEXT="index.js: NO" ID="ID_1639833554" CREATED="1529178653191" MODIFIED="1529178923137"/>
-</node>
-</node>
-<node TEXT="Material-UI" FOLDED="true" ID="ID_1311385564" CREATED="1529177463943" MODIFIED="1529177479443">
-<node TEXT=" Material-UI uses inline style, so there&apos;s no separate style file, but Material-UI does place the components tests in the same folder as the component." ID="ID_195761538" CREATED="1529177727581" MODIFIED="1529177730073"/>
-<node TEXT="Material-UI also provides an index.js file to keep component import short." ID="ID_848874166" CREATED="1529177778892" MODIFIED="1529177778892"/>
-<node TEXT="overview" FOLDED="true" ID="ID_990453234" CREATED="1529178695991" MODIFIED="1529178702106">
-<node TEXT="Folder per components: YES" ID="ID_1330704445" CREATED="1529178584991" MODIFIED="1529178953993"/>
-<node TEXT="Style: Inline" ID="ID_823833814" CREATED="1529178602935" MODIFIED="1529178994648"/>
-<node TEXT="Tests: YES" ID="ID_617989748" CREATED="1529178625359" MODIFIED="1529179004256"/>
-<node TEXT="Theme: NO" ID="ID_1719416019" CREATED="1529178634519" MODIFIED="1529179012056"/>
-<node TEXT="Docs: NO" ID="ID_1501905224" CREATED="1529178641183" MODIFIED="1529179023264"/>
-<node TEXT="Demo: NO" ID="ID_735959570" CREATED="1529178647111" MODIFIED="1529179029120"/>
-<node TEXT="index.js: YES" ID="ID_47233438" CREATED="1529178653191" MODIFIED="1529179039800"/>
-</node>
-</node>
-<node TEXT="React Toolbox" FOLDED="true" ID="ID_865205935" CREATED="1529177480599" MODIFIED="1529177488859">
-<node TEXT="React Toolbox also declares an index.ts file, which provides enhanced autocompletion support for editors." ID="ID_1539047867" CREATED="1529177817600" MODIFIED="1529177817600"/>
-<node TEXT="This is a handy convention to consider, and you don&apos;t have to write your component in TypeScript for your users to enjoy this benefit." ID="ID_1556485614" CREATED="1529177873217" MODIFIED="1529177873217"/>
-<node TEXT="React Toolbox also places docs alongside this component, as well as a default theme that can be overridden." ID="ID_37891646" CREATED="1529177900639" MODIFIED="1529177900639"/>
-<node TEXT="overview" FOLDED="true" ID="ID_37045489" CREATED="1529178695991" MODIFIED="1529178702106">
-<node TEXT="Folder per components: YES" ID="ID_205191253" CREATED="1529178584991" MODIFIED="1529179057800"/>
-<node TEXT="Style: YES" ID="ID_1076104286" CREATED="1529178602935" MODIFIED="1529179067823"/>
-<node TEXT="Tests: NO" ID="ID_1653498925" CREATED="1529178625359" MODIFIED="1529179076631"/>
-<node TEXT="Theme: YES" ID="ID_923219091" CREATED="1529178634519" MODIFIED="1529179092743"/>
-<node TEXT="Docs: YES" ID="ID_682526275" CREATED="1529178641183" MODIFIED="1529179104103"/>
-<node TEXT="Demo: NO" ID="ID_94917855" CREATED="1529178647111" MODIFIED="1529179117599"/>
-<node TEXT="index.js: YES" ID="ID_372409619" CREATED="1529178653191" MODIFIED="1529179137031"/>
-</node>
-</node>
-<node TEXT="Ant Design" FOLDED="true" ID="ID_1199932647" CREATED="1529177491567" MODIFIED="1529177499122">
-<node TEXT="Ant Design is the one library on this list that uses TypeScript instead of plan JavaScript" ID="ID_1175662891" CREATED="1529177933874" MODIFIED="1529177933874"/>
-<node TEXT="The Ant Design team places tests and demos in a subfolder for each component." ID="ID_991550556" CREATED="1529177953816" MODIFIED="1529177953816"/>
-<node TEXT="They also keep docs and markdown format within a markdown folder. It&apos;s easier to see the commonalities and differences in a table." ID="ID_414927005" CREATED="1529178013395" MODIFIED="1529178013395"/>
-<node TEXT="overview" FOLDED="true" ID="ID_1813732394" CREATED="1529178695991" MODIFIED="1529178702106">
-<node TEXT="Folder per components: YES" ID="ID_781855625" CREATED="1529178584991" MODIFIED="1529179156175"/>
-<node TEXT="Style: YES" ID="ID_779917905" CREATED="1529178602935" MODIFIED="1529179163895"/>
-<node TEXT="Tests: YES" ID="ID_188173725" CREATED="1529178625359" MODIFIED="1529179212270"/>
-<node TEXT="Theme: NO" ID="ID_97856606" CREATED="1529178634519" MODIFIED="1529179150487"/>
-<node TEXT="Docs: YES" ID="ID_1498093040" CREATED="1529178641183" MODIFIED="1529179216807"/>
-<node TEXT="Demo: YES" ID="ID_14490089" CREATED="1529178647111" MODIFIED="1529179224294"/>
-<node TEXT="index.js: YES" ID="ID_1055413848" CREATED="1529178653191" MODIFIED="1529179233654"/>
-</node>
-</node>
-</node>
-<node TEXT="Verdict" FOLDED="true" ID="ID_1777940915" CREATED="1529178029083" MODIFIED="1529178034807">
-<node TEXT="Four of the top five most popular React component libraries place each component in their own folder." ID="ID_1887660003" CREATED="1529178053005" MODIFIED="1529178053005"/>
-<node TEXT="Most projects also place the component styles in the components folder" ID="ID_1662827555" CREATED="1529178085611" MODIFIED="1529178085611"/>
-<node TEXT=" Ant and Material-UI place tests alongside the component." ID="ID_348239516" CREATED="1529178108467" MODIFIED="1529178112550"/>
-<node TEXT="Only React Toolbox declares a separate default theme in a dedicated file." ID="ID_1869074181" CREATED="1529178152575" MODIFIED="1529181184880">
-<font ITALIC="false"/>
-</node>
-<node TEXT="React Toolbox and Ant Design both place documentation in the component folder." ID="ID_468666355" CREATED="1529178168440" MODIFIED="1529178168440"/>
-</node>
-</node>
-</node>
-<node TEXT="Design Tips" FOLDED="true" ID="ID_983821651" CREATED="1529174381890" MODIFIED="1529174392344">
-<node TEXT="1: Honor the Native API" FOLDED="true" ID="ID_397414011" CREATED="1529176164392" MODIFIED="1529176169100">
-<node TEXT="When you&apos;re augmenting a DOM element with some extra behavior it&apos;s important to honor the DOM API for the element that you&apos;re wrapping." ID="ID_392377970" CREATED="1529179758874" MODIFIED="1529179758874"/>
-<node TEXT="Input elements have a value attribute. They have an onChange handler, they accept maxLength." ID="ID_487604852" CREATED="1529179799430" MODIFIED="1529179799430"/>
-<node TEXT="When you&apos;re wrapping an element strive to use the same prop names as the underlying element." ID="ID_370399707" CREATED="1529179853946" MODIFIED="1529179853946"/>
-<node TEXT="This makes your component feel instantly familiar, so our wrapper should honor the same API," ID="ID_265104446" CREATED="1529179899907" MODIFIED="1529179899907"/>
-<node TEXT="const passwordInput({value, maxLength}) =&gt; {&#xa;   &lt;input&#xa;      type=&quot;password&quot;&#xa;      value={value}&#xa;      maxLength={maxLength} /&gt;&#xa;}" ID="ID_342953689" CREATED="1529179991334" MODIFIED="1529180120624">
-<font ITALIC="true"/>
-</node>
-<node TEXT="and as a quick side note, for array props we should avoid needless suffixes like list. Instead, use plurals. Plurals are concise, but they clearly convey that you&apos;re working with an array." ID="ID_1788043404" CREATED="1529179961591" MODIFIED="1529179961591"/>
-</node>
-<node TEXT="2: Pass Props via Spread" FOLDED="true" ID="ID_1884154553" CREATED="1529180186257" MODIFIED="1529180186257">
-<node TEXT="allow passing additional props down via the spread operator." ID="ID_872387079" CREATED="1529180208252" MODIFIED="1529180208252"/>
-<node TEXT="The spread operator was introduced in ES6, and consists of three dots that proceed the object whose properties you&apos;d like to spread." ID="ID_525211064" CREATED="1529180368219" MODIFIED="1529180373534"/>
-<node TEXT="When declaring reusable components that wrap HTML primitives, such as inputs, it&apos;s often helpful to pass any other props specified down to the primitive." ID="ID_549884997" CREATED="1529180238103" MODIFIED="1529180238103"/>
-<node TEXT="return (&#xa;   &lt;div&gt;&#xa;      &lt;input type=&quot;password&quot; {...this.props}&gt;&lt;/input&gt;&#xa;)" ID="ID_635391403" CREATED="1529180385419" MODIFIED="1529180456797">
-<font ITALIC="true"/>
-</node>
-<node TEXT="WATCH OUT. React makes sure that the props being attached are valid for the HTML element, so if you blindly spread all props passed in to a child component you may receive a warning about attaching invalid props." ID="ID_1316922216" CREATED="1529180522266" MODIFIED="1529180537661"/>
-</node>
-<node TEXT="3: Use Spread with Destructuring" FOLDED="true" ID="ID_1967235658" CREATED="1529180632210" MODIFIED="1529180632210">
-<node TEXT="You can combine the rest operator with destructuring to easily create an object that contains a subset of all the props that were passed in." ID="ID_1994065379" CREATED="1529180672380" MODIFIED="1529180672380"/>
-<node TEXT="This is useful when you only want to pass a few props down to a child component." ID="ID_382489252" CREATED="1529180696730" MODIFIED="1529180696730"/>
-<node TEXT="it&apos;s important to avoid forwarding non-DOM props to composed components." ID="ID_1904332566" CREATED="1529180859853" MODIFIED="1529180859853"/>
-<node TEXT="Destructuring makes this very easy because you can create a new props object that omits specific props, so in this example the rest variable will not contain the name prop because the name prop was destructured separately." ID="ID_1198492698" CREATED="1529180902844" MODIFIED="1529180902844"/>
-<node TEXT="const Hello = ({name, ...rest}) =&gt; {&#xa;   &lt;div {...rest}&gt;Hi {name}! &lt;/div&gt;&#xa;}&#xa;&#xa;//So ...rest won&apos;t have a name property since it was&#xa;//destructured on the line above" ID="ID_1073043145" CREATED="1529180993335" MODIFIED="1529181188416">
-<font ITALIC="true"/>
-</node>
-</node>
-<node TEXT="4: Create Formatting Components" FOLDED="true" ID="ID_1584420986" CREATED="1529183353126" MODIFIED="1529183353126">
-<node TEXT="People typically think of React components as little reusable pieces of HTML, but keep in mind that you can also create atoms that are solely oriented to formatting." ID="ID_1571203499" CREATED="1529183379391" MODIFIED="1529183379391"/>
-<node TEXT="For example, you could create a cash component that formats whatever is inside with a leading currency sign, a decimal, and two trailing 0&apos;s if none are provided." ID="ID_1596735686" CREATED="1529183406864" MODIFIED="1529183406864"/>
-<node TEXT="You could add props for handling different scenarios, like whether to show the decimal, whether to round up to the nearest dollar, the currency type, and so on" ID="ID_1764989613" CREATED="1529183514864" MODIFIED="1529183514864"/>
-<node TEXT="Some people would prefer to create a utility function to handle such a thing, but this declarative style reads well, and just like a utility function, it encapsulates and centralizes the relevant logic and styles for reuse, and like any other React component, it&apos;s composable." ID="ID_1608471208" CREATED="1529183559053" MODIFIED="1529183559053"/>
-</node>
-</node>
-</node>
-<node TEXT="Molecules" FOLDED="true" ID="ID_1134286962" CREATED="1529141214726" MODIFIED="1529141223018">
-<node TEXT="What&apos;s a Molecule?" FOLDED="true" ID="ID_66760989" CREATED="1529252491364" MODIFIED="1529252491364">
-<node TEXT="In atomic design terms molecules are multiple atomic components composed together to serve a higher purpose." ID="ID_915445508" CREATED="1529252337781" MODIFIED="1529252337781"/>
-<node TEXT="They&apos;re still relatively simple, but molecules compose atoms into a single component." ID="ID_1997663572" CREATED="1529252367102" MODIFIED="1529252367102"/>
-<node TEXT="Gluing atoms together creates a simple, functional, and reusable component." ID="ID_718329299" CREATED="1529252387105" MODIFIED="1529252387105"/>
-<node TEXT="Molecules should also have a single (but higher level) responsibility" ID="ID_1609372058" CREATED="1529253148479" MODIFIED="1529253182642"/>
-</node>
-<node TEXT="Single responsibility principle" FOLDED="true" ID="ID_988205071" CREATED="1529252507556" MODIFIED="1529252544204">
-<node TEXT="single responsibility principle of atoms applies to molecules as well." ID="ID_1358845076" CREATED="1529252589613" MODIFIED="1529252824248"/>
-<node TEXT="The difference is since a molecule is a higher level abstraction the single responsibility is a higher level responsibility, but a well-designed molecule should still strive to do one thing well." ID="ID_97201125" CREATED="1529252624750" MODIFIED="1529252624750"/>
-<node TEXT="Although a molecule is composed of multiple atoms, they should be composed together strategically to handle a clear, distinct responsibility." ID="ID_1006721455" CREATED="1529252665508" MODIFIED="1529252665508"/>
-<node TEXT="This helps assure that the molecule is easy to understand, consume, and compose with other molecules into higher level organisms." ID="ID_495907923" CREATED="1529252790311" MODIFIED="1529252790311"/>
-<node TEXT="The point is, two molecules can look and behave quite differently, even though they&apos;re composed of many of the same components, but keep in mind when atoms are combined they take on a specific purpose." ID="ID_274183721" CREATED="1529252884570" MODIFIED="1529252884570"/>
-</node>
-</node>
-<node TEXT="Organisms" FOLDED="true" ID="ID_806259813" CREATED="1529141223590" MODIFIED="1529141242122">
-<node TEXT="What&apos;s an Organism?&apos;" FOLDED="true" ID="ID_132999812" CREATED="1529259894025" MODIFIED="1529259894025">
-<node TEXT="Just like molecules are composed of atoms, organisms are composed of molecules." ID="ID_1441912341" CREATED="1529259932090" MODIFIED="1529259932090"/>
-<node TEXT="An organism is more complex than a molecule because it composes molecules and other atoms together into a higher level abstraction." ID="ID_1776958429" CREATED="1529259947764" MODIFIED="1529259947764"/>
-<node TEXT="This typically results in a UI component that handles a section of the screen." ID="ID_1294837535" CREATED="1529260083823" MODIFIED="1529260083823"/>
-<node TEXT="Sometimes an organism or molecule can implement the fa&#xe7;ade pattern." FOLDED="true" ID="ID_1753763694" CREATED="1529260174821" MODIFIED="1529260174821">
-<node TEXT="The fa&#xe7;ade pattern abstracts away a more complex API by providing a simpler, more course grained API" ID="ID_35341147" CREATED="1529260194623" MODIFIED="1529260194623"/>
-<node TEXT="For example, an atom might accept a dozen props to support a wide variety of use cases. You can consider creating a molecule or organism that hard codes in many of these settings, and thus provides a clear, reusable component that serves a specific use case." ID="ID_136125668" CREATED="1529260223184" MODIFIED="1529260231872"/>
-</node>
-</node>
-<node TEXT="Design Tips" FOLDED="true" ID="ID_225922810" CREATED="1529259976294" MODIFIED="1529260056393">
-<node TEXT="1: Strong Opinions Are a Feature" FOLDED="true" ID="ID_1139903121" CREATED="1529260264486" MODIFIED="1529260264486">
-<node TEXT="Organisms, by their very nature, abstract away the underlying components, so when you create reusable organisms you have to decide what props you&apos;d like to expose from your underlying components." ID="ID_1597828983" CREATED="1529260467750" MODIFIED="1529260467750"/>
-<node TEXT="Take a Passwordmolecule for example, It offers a long list of props to make it configurable, including the label, the onChange handler, the maxLength, and the minLength, the input placeholder, and toggles for it&apos;s advanced features like the VisibilityToggle and the quality indicator." ID="ID_356651358" CREATED="1529260525605" MODIFIED="1529260572637"/>
-<node TEXT="Imagine that I&apos;m going to create a registration form organism and use the PasswordInput component inside. I need to decide which of these configurations I want to expose, and there&apos;s no right answer here." ID="ID_407276942" CREATED="1529260625375" MODIFIED="1529260635133"/>
-<node TEXT="Context matters, but keep in mind that organisms often contain many components below, so if you choose to expose all of the child components props your organisms API will become very complex, so strive to limit the props that you expose from your underlying components." ID="ID_1700052517" CREATED="1529260689627" MODIFIED="1529260689627"/>
-<node TEXT="So why limit props?" FOLDED="true" ID="ID_1790714331" CREATED="1529260718693" MODIFIED="1529260718693">
-<node TEXT="Because strong opinions are a feature, not a bug." ID="ID_1592440960" CREATED="1529260736851" MODIFIED="1529260736851"/>
-<node TEXT="1. Strong opinions enforce consistency." ID="ID_1981568572" CREATED="1529260747917" MODIFIED="1529261032289"/>
-<node TEXT="2. They lead to a smaller API for your component." ID="ID_610755681" CREATED="1529260768814" MODIFIED="1529261051565"/>
-<node TEXT="3. This makes the organism easier to understand, and few props help assure that the organism has a single, clear purpose." ID="ID_484173434" CREATED="1529260791558" MODIFIED="1529261059641"/>
-<node TEXT="4. A component with too many props can become so flexible that it&apos;s difficult to understand its core purpose or use case." ID="ID_1453833237" CREATED="1529260821990" MODIFIED="1529261074289"/>
-<node TEXT="5. Fewer props also reduce the surface area that you need to test" ID="ID_113711270" CREATED="1529260838087" MODIFIED="1529261092577"/>
-<node TEXT="A component that accepts dozens of props requires a great deal of testing to cover all of the potential permutations." ID="ID_95060829" CREATED="1529260874655" MODIFIED="1529260874655"/>
-</node>
-<node TEXT="When it comes to organisms, strong opinions are a feature. You don&apos;t need to expose all the props of your atoms and molecules. Much like any feature, it&apos;s easy to add a prop later, but it&apos;s hard to remove a prop later because it will create a breaking change, and potentially upset your users." ID="ID_1642291482" CREATED="1529260925178" MODIFIED="1529261024901"/>
-</node>
-<node TEXT="2: Keep Organisms Dumb" FOLDED="true" ID="ID_413302978" CREATED="1529260296553" MODIFIED="1529260296553">
-<node TEXT="Do not turn your organisms into mini applications." ID="ID_1401290648" CREATED="1529261177471" MODIFIED="1529261177471"/>
-<node TEXT="Try to create dumb organisms. Just like your atoms and molecules, organisms should typically be simple functions that take props, and output HTML. Avoid creating autonomous mini applications." ID="ID_1434778507" CREATED="1529261212130" MODIFIED="1529261212130"/>
-<node TEXT="However, it can be useful to create container components to save people time." FOLDED="true" ID="ID_493399290" CREATED="1529261242972" MODIFIED="1529261242972">
-<node TEXT="Container components handle state and logic and typically contain very little markup." ID="ID_1868570707" CREATED="1529261258815" MODIFIED="1529261258815"/>
-<node TEXT="They delegate markup handling to dumb child components." ID="ID_1629281950" CREATED="1529261275326" MODIFIED="1529261275326"/>
-<node TEXT="This helps separate concerns, and assures that your dumb components are easily testable in isolation because they&apos;re simple, pure components that accept input and return HTML" ID="ID_1206657857" CREATED="1529261308077" MODIFIED="1529261308077"/>
-</node>
-<node TEXT="Example" FOLDED="true" ID="ID_1502952311" CREATED="1529261756848" MODIFIED="1529261766699">
-<node TEXT="Imagine that I tried to build YouTube using the atomic design philosophy." ID="ID_1077065582" CREATED="1529261844505" MODIFIED="1529261844505"/>
-<node TEXT="Imagine that the header is an organism, and the comments section is its own organism." ID="ID_1761836029" CREATED="1529261866489" MODIFIED="1529261866489"/>
-<node TEXT="Notice how the headshot is displayed in both the header and the comments section because I&apos;m logged in." ID="ID_1322920216" CREATED="1529261892328" MODIFIED="1529261905258"/>
-<node TEXT="Each of these organisms should be dumb, so for example, they shouldn&apos;t have any API calls baked in." ID="ID_1280696159" CREATED="1529261954194" MODIFIED="1529261954194"/>
-<node TEXT="Instead, they should be treated like any other reusable function. They should be passed the data that they need." ID="ID_1018349188" CREATED="1529261984707" MODIFIED="1529261993849"/>
-<node TEXT="This avoids making redundant API calls to get the same data." ID="ID_1863997382" CREATED="1529262013548" MODIFIED="1529262013548"/>
-<node TEXT="f each organism only cares about itself, then there would be two API calls to retrieve the URL from my photo. Not good." ID="ID_167302732" CREATED="1529262050154" MODIFIED="1529262050154"/>
-<node TEXT="There are other issues as well. If I change the photo, then both of these organisms would need to reflect the change, but if each component only cares about itself how do I assure that both organisms are updated when I change the picture?" ID="ID_90969138" CREATED="1529262084897" MODIFIED="1529262115337"/>
-<node TEXT="And if each organism bakes in knowledge about how to make API calls I&apos;m also at risk for sending down duplicate logic in two different JavaScript files, which wastes bandwidth, slows page load, and increases memory pressure." ID="ID_19421193" CREATED="1529264899039" MODIFIED="1529264899039"/>
-</node>
-<node TEXT="Let&apos;s review the issues I just discussed about creating smart organisms." FOLDED="true" ID="ID_475412109" CREATED="1529264985275" MODIFIED="1529264985275">
-<node TEXT="When creating reusable components it can be tempting to create smart reusable components that know how to handle authentication, API calls, authorization, and so on." ID="ID_925652900" CREATED="1529265002250" MODIFIED="1529265002250"/>
-<node TEXT="Some people call the pattern mini apps." ID="ID_1869776247" CREATED="1529265019167" MODIFIED="1529265019167"/>
-<node TEXT="If you create a few rich organisms that are smart enough to completely handle two separate portions of the same page, what happens when the same data is displayed in two places?" ID="ID_1465414332" CREATED="1529265121614" MODIFIED="1529265121614"/>
-<node TEXT="If each component merely cares about itself, then how do these two stay in sync?" ID="ID_792598967" CREATED="1529265164368" MODIFIED="1529265164368"/>
-<node TEXT="That&apos;s the applications job, so don&apos;t let an overly opinionated and complex organism compromise your applications architecture." ID="ID_434588366" CREATED="1529265185516" MODIFIED="1529265185516"/>
-<node TEXT="Smart organisms often lead to over fetching." FOLDED="true" ID="ID_1590851398" CREATED="1529265202236" MODIFIED="1529265202236">
-<node TEXT="When each component is only worried about itself you&apos;re likely to request the same data in multiple places" ID="ID_1625358361" CREATED="1529265235622" MODIFIED="1529265235622"/>
-<node TEXT="That&apos;s the fundamental problem with creating smart, organism style components." ID="ID_239341687" CREATED="1529265258059" MODIFIED="1529265258059"/>
-</node>
-<node TEXT="An application needs to be designed holistically, but the smart organism mindset leads to composing a number of self-centered components together, which leads to poor performance and wasteful design." ID="ID_444526844" CREATED="1529265302850" MODIFIED="1529265302850"/>
-<node TEXT="Smart organisms may embed API, authentication, and other cross cutting concerns inside." FOLDED="true" ID="ID_764961661" CREATED="1529265372278" MODIFIED="1529265372278">
-<node TEXT="This could lead to your users downloading the same code in multiple JavaScript bundles, which will slow page loads and waste bandwidth." ID="ID_209521464" CREATED="1529265400466" MODIFIED="1529265400466"/>
-</node>
-<node TEXT="Ironically, smart organisms often lead to tight coupling, since you need organisms to operate as a cohesive whole in a real application, you may have to tightly integrate two separate components to get them to act as a single unit." ID="ID_741690837" CREATED="1529265438958" MODIFIED="1529265438958"/>
-<node TEXT="This integration is brittle, and it makes it difficult to change the organism later." ID="ID_759074204" CREATED="1529265488591" MODIFIED="1529265488591"/>
-</node>
-<node TEXT="So think of atoms, molecules, and organisms in the same way." ID="ID_689066640" CREATED="1529265508139" MODIFIED="1529265508139"/>
-<node TEXT="They&apos;re generally dumb, reusable components that take some parameters and return HTML." ID="ID_792743131" CREATED="1529265549787" MODIFIED="1529265549787"/>
-<node TEXT="Keep them simple. Think of them as reusable UI, and avoid turning organisms into miniature applications. Organisms are fundamentally the same thing as an atom." ID="ID_1046708784" CREATED="1529265597527" MODIFIED="1529265597527"/>
-<node TEXT="The difference is that organisms return larger chunks of HTML by composing many child components together in an opinionated and useful way." ID="ID_220540754" CREATED="1529265614578" MODIFIED="1529265614578"/>
-</node>
-</node>
-</node>
-<node TEXT="Templates" ID="ID_140867606" CREATED="1529141242990" MODIFIED="1529141249378"/>
-<node TEXT="Pages" ID="ID_243608908" CREATED="1529141250510" MODIFIED="1529141259185"/>
-</node>
-</node>
-<node TEXT="Webcomponents" ID="ID_723095946" CREATED="1529147716512" MODIFIED="1529147729612"/>
-</node>
-<node TEXT="Isomorphic/Universal Apps" ID="ID_1841706943" CREATED="1529768931169" MODIFIED="1529769728285">
-<node TEXT="What is Isomorphism?" FOLDED="true" ID="ID_841759919" CREATED="1529768986857" MODIFIED="1529769003905">
-<node TEXT=" The word isomorphic is made up of two sounds: iso and morph." FOLDED="true" ID="ID_1573807126" CREATED="1529769209536" MODIFIED="1529769212832">
-<node TEXT="Iso means similar or equal, something that&apos;s congruent with another thing, like the two sides of an isosceles triangle are equal." ID="ID_1161257236" CREATED="1529769244016" MODIFIED="1529769247399"/>
-<node TEXT="Morph, which means shape or form, as in the word metamorphosis." ID="ID_1591253054" CREATED="1529769276415" MODIFIED="1529769292023"/>
-</node>
-<node TEXT="Something which is isomorphic has a similar shape in multiple places." ID="ID_233434363" CREATED="1529769315559" MODIFIED="1529769329806"/>
-<node TEXT="An isomorphic application, which can also be called a universal application, is defined as follows:" FOLDED="true" ID="ID_1716750282" CREATED="1529769383227" MODIFIED="1529769386782">
-<node TEXT="An application where the server and the client are written in the same language" ID="ID_153933362" CREATED="1529769409414" MODIFIED="1529769420959"/>
-<node TEXT="Where the server renders the first request and the client renders all subsequent ones" ID="ID_1765833088" CREATED="1529769461542" MODIFIED="1529769485526"/>
-<node TEXT="It&apos;s pretty specific sounding, but it applies to a wide variety of different web applications." ID="ID_1075315950" CREATED="1529769541885" MODIFIED="1529769544893"/>
-</node>
-<node TEXT="Ultimately, the server rendering first and the client rendering after is all part of fast performance, especially on mobile devices." ID="ID_436202359" CREATED="1529769565253" MODIFIED="1529769568573"/>
-<node TEXT="The term isomorphism is often used as a blanket term for various different features." ID="ID_273388038" CREATED="1529769641397" MODIFIED="1529769688861"/>
-<node TEXT=" If you do a good job of making an application isomorphic, the end result is as follows: faster development time for you and faster rendering of the application for the user." ID="ID_1371340115" CREATED="1529769832028" MODIFIED="1529769869771"/>
-</node>
-<node TEXT="Isomorphic Process" FOLDED="true" ID="ID_1523642174" CREATED="1529770703949" MODIFIED="1529770708013">
-<node TEXT="So, what takes place in an isomorphic application that makes the end experience so fast for the user?" ID="ID_864661384" CREATED="1529770728213" MODIFIED="1529770730837"/>
-<node TEXT="It breaks down into a series of steps." FOLDED="true" ID="ID_160979427" CREATED="1529770773445" MODIFIED="1529770788732">
-<node TEXT="1. User requests web page" FOLDED="true" ID="ID_881675230" CREATED="1529770830237" MODIFIED="1529770909118">
-<node TEXT="They either do this by opening it in their browser or their mobile device or a screen reader or any device." ID="ID_713433161" CREATED="1529771161572" MODIFIED="1529771161572"/>
-</node>
-<node TEXT="2. Server queries database and APIs" FOLDED="true" ID="ID_1189038333" CREATED="1529770833261" MODIFIED="1529770931388">
-<node TEXT="stuff like your user info or a list of your contacts, etc." ID="ID_1477103000" CREATED="1529771243618" MODIFIED="1529771246089"/>
-</node>
-<node TEXT="3. Server asks app for the HTML it would render given the information it has" ID="ID_1714025471" CREATED="1529770836157" MODIFIED="1529770959779"/>
-<node TEXT="4. Server sends client rendered HTML" FOLDED="true" ID="ID_743974898" CREATED="1529770837316" MODIFIED="1529770982221">
-<node TEXT="The actual JavaScript code isn&apos;t there, it&apos;s just looking at what would have happened if the JavaScript code would have run." ID="ID_753548108" CREATED="1529771401113" MODIFIED="1529771401113"/>
-<node TEXT="The client gets the HTML onto their device and the application renders, not the interactivity, but just what the user would see." ID="ID_1345883597" CREATED="1529771440328" MODIFIED="1529771443630"/>
-</node>
-<node TEXT="5. Application renders on client&#x2019;s device (after just one HTTP request)" ID="ID_290146969" CREATED="1529770838524" MODIFIED="1529771004347"/>
-<node TEXT="6. User begins enjoying  :-)" ID="ID_135164959" CREATED="1529770839469" MODIFIED="1529771027693"/>
-<node TEXT="7. Client requests JavaScript from server and boots application" FOLDED="true" ID="ID_1708010620" CREATED="1529770840269" MODIFIED="1529771055220">
-<node TEXT="our client then requests the JavaScript, that makes the application actually live, from the server and it starts the application up on the client." ID="ID_21907121" CREATED="1529771667319" MODIFIED="1529771671510"/>
-</node>
-<node TEXT="8. Client application recognizes pre-rendered HTML and binds to it" FOLDED="true" ID="ID_27954314" CREATED="1529770841092" MODIFIED="1529771082796">
-<node TEXT="Now the cool part is that when the client runs the JavaScript, if it was the same JavaScript used to render the HTML that made up your application, the code will actually be able to recognize that, and it will kind of graft the application logic to the existing HTML without re-rendering it." ID="ID_474021835" CREATED="1529771763206" MODIFIED="1529771768240"/>
-</node>
-<node TEXT="9. Application finishes loading several seconds after user got their initial content" ID="ID_186326629" CREATED="1529770841844" MODIFIED="1529771111166"/>
-</node>
-</node>
-<node TEXT="Advantages of Isomorphism" FOLDED="true" ID="ID_238285734" CREATED="1529771823966" MODIFIED="1529771828397">
-<node TEXT=" The terms functional and technical isomorphism, as described by Gert Hengeveld in an article on medium, describe the two parts of an isomorphic application&apos;s advantages." ID="ID_137024811" CREATED="1529772277467" MODIFIED="1529772280786"/>
-<node TEXT="functional isomorphism" FOLDED="true" ID="ID_709149502" CREATED="1529772313299" MODIFIED="1529772517321">
-<node TEXT="It describes the property of the server rendering the HTML on the initial load." ID="ID_1191914694" CREATED="1529772335388" MODIFIED="1529772335388"/>
-<node TEXT=" It&apos;s the actual advantages for your users. In other words, functional isomorphism is faster loading." ID="ID_1664105787" CREATED="1529772366322" MODIFIED="1529772369521"/>
-</node>
-<node TEXT="technical isomorphism" FOLDED="true" ID="ID_675211143" CREATED="1529772391386" MODIFIED="1529772501041">
-<node TEXT="which is the code that&apos;s shared between the front- and back-end of the application." ID="ID_130834011" CREATED="1529772427202" MODIFIED="1529772430137"/>
-<node TEXT=" Shared code means less code, so technical isomorphism basically means faster and more maintainable coding." ID="ID_1143619810" CREATED="1529772451642" MODIFIED="1529772454849"/>
-</node>
-<node TEXT="the advantages of technical isomorphism" FOLDED="true" ID="ID_571688190" CREATED="1529772563817" MODIFIED="1529772568032">
-<node TEXT="Less code to write and maintain" FOLDED="true" ID="ID_425375152" CREATED="1529773261644" MODIFIED="1529773291491">
-<node TEXT="So if you write less code, your maintenance will be exponentially less." ID="ID_404939293" CREATED="1529772645488" MODIFIED="1529772648199"/>
-<node TEXT="Not only is code a headache to maintain, but the more you have of it, the faster the maintenance work expands." ID="ID_1829568097" CREATED="1529773481235" MODIFIED="1529773485122"/>
-</node>
-<node TEXT="Fewer languages to learn" FOLDED="true" ID="ID_611805266" CREATED="1529773273276" MODIFIED="1529773304819">
-<node TEXT=" Everybody likes to learn a new coding language now and then, but when you&apos;re already in the process of building a major application it&apos;s great if people you bring on who just understand JavaScript can participate in both the front- and back-end of your coding." ID="ID_1232398205" CREATED="1529772671048" MODIFIED="1529773431939"/>
-</node>
-<node TEXT="Congruent data formats" FOLDED="true" ID="ID_1578548857" CREATED="1529773274948" MODIFIED="1529773320820">
-<node TEXT="Usually the back-end and the front-end will share a data format. JSON is a popular one for JavaScript applications and the one we&apos;ll be using. If you already understand JSON then you don&apos;t need to learn any additional languages to work with the data that our server&apos;s going to be producing." ID="ID_1951978980" CREATED="1529772724816" MODIFIED="1529772728655"/>
-</node>
-<node TEXT="library can integrate with self" FOLDED="true" ID="ID_1078556887" CREATED="1529773276580" MODIFIED="1529773336059">
-<node TEXT="The best example is React, which generates code on the server-side then, when it runs on the client, it recognizes its own code and can bind to the generated HTML with an overall faster experience for the user." ID="ID_458375102" CREATED="1529772777903" MODIFIED="1529773469466"/>
-</node>
-</node>
-<node TEXT="the advantages functional isomorphism" FOLDED="true" ID="ID_1764362538" CREATED="1529772806983" MODIFIED="1529772831606">
-<node TEXT="It has faster load times." FOLDED="true" ID="ID_21577431" CREATED="1529772854535" MODIFIED="1529773562617">
-<node ID="ID_1120249361" CREATED="1529773566008" MODIFIED="1529773566008"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &#160;especially for mobile which takes a long time to load and parse big JavaScript programs.
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-<node TEXT="It&apos;s easier for many search engines to index." FOLDED="true" ID="ID_919626925" CREATED="1529772890054" MODIFIED="1529773582777">
-<node ID="ID_761363660" CREATED="1529773585891" MODIFIED="1529773585891"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Now, search engines have been better at indexing static applications like React ones or Angular, but they're not all equally good and they still have some work to do.
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-<node TEXT="When you send your HTML directly, it makes it easier for search engines to index and figure out what&apos;s going on on your page." ID="ID_527145104" CREATED="1529772940982" MODIFIED="1529772944581"/>
-</node>
-<node TEXT="Automatic supports for legacy browsers" FOLDED="true" ID="ID_746731024" CREATED="1529773617610" MODIFIED="1529773637665">
-<node ID="ID_943263781" CREATED="1529773655946" MODIFIED="1529773655946"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      if your user is using a very old browser or a browser that doesn't support JavaScript, and this does happen from time to time, congratulations, you automatically support those browsers by using isomorphic code.
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-<node ID="ID_576888568" CREATED="1529773670243" MODIFIED="1529773670243"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Even if the user isn't running JavaScript, they're still going to see their application and, with a little clever programming, they can even still click links and interact.
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Pitfalls and Challenges of Isomorphism" FOLDED="true" ID="ID_1562019281" CREATED="1529773041526" MODIFIED="1529773045413">
-<node TEXT=" When you&apos;re combining your front-end and back-end code in one place, one concept, you risk running into bugs from both ends of that code." ID="ID_847639908" CREATED="1529773879840" MODIFIED="1529773885359"/>
-<node TEXT="More complex architecture" FOLDED="true" ID="ID_1375206245" CREATED="1529773708713" MODIFIED="1529773722360">
-<node TEXT="Special build phases and special logic in your server, this is all additional code that needs to be written." ID="ID_1779586001" CREATED="1529773941757" MODIFIED="1529773941757"/>
-<node TEXT="So, while this architecture ultimately can save you time by reducing maintenance, if you didn&apos;t have an isomorphic application your back-end would just be simpler." ID="ID_1112306256" CREATED="1529773964813" MODIFIED="1529773964813"/>
-</node>
-<node TEXT="Challenging to troubleshoot" FOLDED="true" ID="ID_1260518750" CREATED="1529773724969" MODIFIED="1529773739688">
-<node TEXT="it&apos;s challenging to troubleshoot. Isomorphic applications aren&apos;t perfect and errors can occur on the server that don&apos;t occur on the client and vice-versa." ID="ID_407285680" CREATED="1529773994577" MODIFIED="1529773994577"/>
-<node TEXT="You might think your application is perfectly functional because you&apos;ve only been testing it on the client-side, just to find out that when you try to do a particular thing on the server it doesn&apos;t work, and it&apos;s hard to figure out what." ID="ID_650708078" CREATED="1529774040703" MODIFIED="1529774043782"/>
-</node>
-<node TEXT="Sensitive data on server prone to exposure" FOLDED="true" ID="ID_238844023" CREATED="1529773740449" MODIFIED="1529773761608">
-<node TEXT="In addition, unlike a one-sided application, the private data in your server files can sometimes get scooped up by your build system and sent over to your client who can then analyze this sensitive or secret data." ID="ID_1933062838" CREATED="1529774079108" MODIFIED="1529774079108"/>
-<node TEXT="So how exactly does sensitive data get exposed in an isomorphic application?" FOLDED="true" ID="ID_233462167" CREATED="1529774176373" MODIFIED="1529774176373">
-<node TEXT="So, you the developer write yourself a module for the client to enjoy. Now, you&apos;re not requiring the secret data directly in that module, but that module might require your config file, which might require your secrets file." ID="ID_1933163681" CREATED="1529774221134" MODIFIED="1529774221134"/>
-<node TEXT="Now, when your application is bundled, there&apos;s no guarantee that your bundler is going to take those secrets that shouldn&apos;t be sent to the client and get rid of them." ID="ID_483322744" CREATED="1529774254665" MODIFIED="1529774254665"/>
-<node TEXT="Maybe it will if it&apos;s smart enough to remove any unused variables, but if they&apos;re not removed then an attacker can simply search the source code of the page right in Chrome and access private data." ID="ID_662343270" CREATED="1529774286996" MODIFIED="1529774286996"/>
-</node>
-</node>
-<node TEXT="More points of possible failure" FOLDED="true" ID="ID_137844188" CREATED="1529773765049" MODIFIED="1529773778801">
-<node TEXT="For each view of your website, there&apos;s now what happens if the client navigates that view from any given page?" ID="ID_1547325933" CREATED="1529774124681" MODIFIED="1529774124681"/>
-<node TEXT="Or what happens if the client loads it directly from the server and what state that client&apos;s session and user account are in?" ID="ID_367396687" CREATED="1529774149131" MODIFIED="1529774149131"/>
-</node>
-</node>
-<node TEXT="Priorities of Isomorphic Applications" FOLDED="true" ID="ID_748031869" CREATED="1529774930326" MODIFIED="1529774930326">
-<node TEXT="As with any application, your priorities may be different depending on if you&apos;re developing it at the time or if the user is viewing it." ID="ID_691320090" CREATED="1529774951906" MODIFIED="1529774951906"/>
-<node TEXT="However, in an isomorphic application, we take such a hands-on approach to the assembling and sending of the application that we need to be very clear before we get started what those priorities are." ID="ID_786336128" CREATED="1529775001556" MODIFIED="1529775001556"/>
-<node TEXT="Development" FOLDED="true" ID="ID_944697724" CREATED="1529775030112" MODIFIED="1529775036375">
-<node TEXT="Application updates quickly after source code is updated" ID="ID_876793070" CREATED="1529775058192" MODIFIED="1529775085767"/>
-<node TEXT="Additional round trips to fetch data are of no consequence" ID="ID_1749681663" CREATED="1529775098296" MODIFIED="1529775106911"/>
-<node TEXT="Code needs to be organized, clear and highly traceable" ID="ID_25586474" CREATED="1529775115351" MODIFIED="1529775121943"/>
-<node TEXT="Tooling is needed to allow developers to see app&#x2019;s internal state" ID="ID_1788119576" CREATED="1529775130631" MODIFIED="1529775139407"/>
-</node>
-<node TEXT="Production" FOLDED="true" ID="ID_1458602300" CREATED="1529775046928" MODIFIED="1529775052119">
-<node TEXT="Application is not concerned with updates to source code" ID="ID_336519169" CREATED="1529775158743" MODIFIED="1529775164942"/>
-<node TEXT="Additional round trips significantly slow application on mobile and greatly increase the odds of user closing the application before it even loads" ID="ID_1542991178" CREATED="1529775174823" MODIFIED="1529775194430"/>
-<node TEXT="Code should be obfuscated, compact, and not expose sensitive data" ID="ID_711748387" CREATED="1529775206847" MODIFIED="1529775216046"/>
-<node TEXT="Tooling is needed to track user&#x2019;s activity and expose bugs" ID="ID_1140774152" CREATED="1529775225142" MODIFIED="1529780429323"/>
-</node>
-</node>
-<node TEXT="In a Nutshell" ID="ID_138474306" CREATED="1529780891232" MODIFIED="1529780909975">
-<node TEXT="Universal app or an isomorphic app both mean the same thing." ID="ID_1651221000" CREATED="1529780937770" MODIFIED="1529780943719"/>
-<node TEXT="They basically mean an application where code is shared between the front- and the back-end, technical isomorphism" ID="ID_1877160567" CREATED="1529780974336" MODIFIED="1529780990503"/>
-<node TEXT="And an application where functionality and performance are improved, a functional isomorphic application." ID="ID_1855317637" CREATED="1529781045047" MODIFIED="1529781061223"/>
-<node TEXT="The advantages of such an application include better developer productivity and improved experience on mobile, but the disadvantages include more complexity and vulnerabilities." ID="ID_1375788286" CREATED="1529781083367" MODIFIED="1529781086814"/>
-</node>
-<node TEXT="Code Sharing Isomorphic Application VS Lamp Application" ID="ID_32430933" CREATED="1529781631331" MODIFIED="1529781748224">
-<node TEXT="So, code sharing is one of the big reasons that we&apos;re going with isomorphic architecture to begin with. In our application, some of the same code is used on the client as on the server. This allows us, in some cases, to write half as much code and is largely only possible because our back-end is also written in JavaScript." ID="ID_942367252" CREATED="1529781881202" MODIFIED="1529781881202"/>
-<node TEXT=" In addition, and this is where code sharing really gets cool, the same libraries that we&apos;re using on our back-end to do back-end things, like prerender the application, these are the libraries that are being used on the client as well." ID="ID_1842147251" CREATED="1529781908825" MODIFIED="1529781912496"/>
-<node TEXT="That means they can be programmed by their original creators to have some way of integrating, like bootstrapping to the prerendered HTML and making it a live application without reloading in the case of React." ID="ID_1640825508" CREATED="1529781965737" MODIFIED="1529781991673"/>
-</node>
-<node TEXT="Who does what" ID="ID_124618130" CREATED="1529782641316" MODIFIED="1529782664108">
-<node TEXT="React&apos;s Role in Isomorphic Application" ID="ID_1906352257" CREATED="1529782686740" MODIFIED="1529782704971">
-<node TEXT="Renders the application on the server" ID="ID_1370705927" CREATED="1529782711540" MODIFIED="1529782726987"/>
-<node TEXT="Powers the application on the client (and renders it)" ID="ID_1889742030" CREATED="1529782729043" MODIFIED="1529782754883"/>
-<node TEXT="Handles serving content based on routes (via React-Router &amp; Express)" ID="ID_255610523" CREATED="1529782757675" MODIFIED="1529782787346"/>
-</node>
-<node TEXT="Express&apos;s Role in Isomorphic Application" ID="ID_1125497422" CREATED="1529782815835" MODIFIED="1529782847554">
-<node TEXT="Responsible for fetching data to create initial state" ID="ID_1769951022" CREATED="1529782867274" MODIFIED="1529782888618"/>
-<node TEXT="Uses React to render application on server" ID="ID_1491506036" CREATED="1529782923146" MODIFIED="1529782942578"/>
-<node TEXT="Runs Webpack instance in development to serve app bundle" ID="ID_1283365247" CREATED="1529782973858" MODIFIED="1529782997441"/>
-<node TEXT="Loads template and serves static files" ID="ID_56598781" CREATED="1529783056937" MODIFIED="1529783072681"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Hot Module Replacement" ID="ID_680325536" CREATED="1529791615887" MODIFIED="1529791632342">
+<node TEXT="Hot Module Replacement" FOLDED="true" ID="ID_680325536" CREATED="1529791615887" MODIFIED="1529791632342">
 <node TEXT="introduction" ID="ID_155785277" CREATED="1529791646847" MODIFIED="1529791654221">
 <node TEXT="Updates application without refreshing browser" ID="ID_312455324" CREATED="1529791657655" MODIFIED="1529791678606"/>
 <node TEXT="Follows &quot;opt-in&quot; system where each module decides if it can replace its own child modules" ID="ID_900101002" CREATED="1529791680606" MODIFIED="1529791722295">
@@ -5897,11 +5107,12 @@
 <node TEXT="markdown" ID="ID_1365285825" CREATED="1520848003140" MODIFIED="1520848010118"/>
 </node>
 </node>
-<node TEXT="extentions" FOLDED="true" ID="ID_678830602" CREATED="1522617731590" MODIFIED="1522617738587">
-<node TEXT="Static type Checkers" ID="ID_710206642" CREATED="1522617746934" MODIFIED="1522617769995">
+<node TEXT="extentions" FOLDED="true" ID="ID_678830602" CREATED="1522617731590" MODIFIED="1530391649539">
+<node TEXT="Static type Checkers" ID="ID_710206642" CREATED="1522617746934" MODIFIED="1530391649539">
 <node TEXT="TypeScript" ID="ID_1405762228" CREATED="1522617771429" MODIFIED="1522617786019"/>
 <node TEXT="Flow" ID="ID_86774713" CREATED="1522617787365" MODIFIED="1522617792187"/>
 </node>
+<node TEXT="Babel" ID="ID_1157656807" CREATED="1530391707792" MODIFIED="1530391713243"/>
 </node>
 <node TEXT="Build tools" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
 <node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
@@ -5909,7 +5120,7 @@
 <node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
 <node TEXT="grunt" ID="ID_1183811378" CREATED="1522616448127" MODIFIED="1522616453605"/>
 </node>
-<node TEXT="Building/Bundling" FOLDED="true" ID="ID_1833698167" CREATED="1522616261001" MODIFIED="1526835518055">
+<node TEXT="Building/Bundling" ID="ID_1833698167" CREATED="1522616261001" MODIFIED="1526835518055">
 <node TEXT="webpack" FOLDED="true" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
 <node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
 <node TEXT="Concepts" FOLDED="true" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
@@ -6339,7 +5550,7 @@
 </node>
 <node TEXT="Tooling" FOLDED="true" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1519810482190" HGAP_QUANTITY="43.99999910593036 pt" VSHIFT_QUANTITY="11.249999664723884 pt">
 <edge COLOR="#808080"/>
-<node TEXT="Browser tools" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
+<node TEXT="Browser tools" FOLDED="true" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
 <node TEXT="Chrome" ID="ID_1143598703" CREATED="1520848695721" MODIFIED="1520848704139">
 <node TEXT="Chrome dev tools" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
 <node TEXT="delete all cookies" FOLDED="true" ID="ID_1406357828" CREATED="1515600581931" MODIFIED="1515600590818">
@@ -6465,9 +5676,9 @@
 <node TEXT="extentions" ID="ID_61863371" CREATED="1520848772370" MODIFIED="1520848786683"/>
 </node>
 </node>
-<node TEXT="Version Control" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
-<node TEXT="Git" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
-<node TEXT="commands" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
+<node TEXT="Version Control" FOLDED="true" ID="ID_1735058141" CREATED="1517909008009" MODIFIED="1517909016103">
+<node TEXT="Git" FOLDED="true" ID="ID_1802213564" CREATED="1515329595139" MODIFIED="1517909089875">
+<node TEXT="commands" FOLDED="true" ID="ID_693362114" CREATED="1517820512231" MODIFIED="1517909089874">
 <node TEXT="git cherry-pick" FOLDED="true" ID="ID_931768391" CREATED="1517820565432" MODIFIED="1517820582422">
 <node TEXT="Here&apos;s the scenario: You&apos;re working in a feature branch that isn&apos;t quite ready for a full merge but you do have a few commits in there that you want to push to master (for a release or whatever reason). This is just one of possibly many situations where making use of Git&apos;s cherry-pick command might prove useful." ID="ID_672906785" CREATED="1517820603735" MODIFIED="1517820603735"/>
 <node TEXT="First, from within your feature branch, copy the first six or seven characters of the ID of the commit that you want to bring in: (use git log)" ID="ID_558811321" CREATED="1517820728494" MODIFIED="1517820788071"/>
@@ -6479,9 +5690,9 @@
 <node TEXT="Be wary of cherry-picking a lot of commits out of order, the Git log will reflect the order in which you cherry-picked, not the chronological order of the original commits (The original commit date is preserved, however)." ID="ID_989095425" CREATED="1517820997061" MODIFIED="1517820997061"/>
 </node>
 </node>
-<node TEXT="config" ID="ID_1128402828" CREATED="1525031360523" MODIFIED="1525031367040">
-<node TEXT="username" ID="ID_1738305618" CREATED="1525031824808" MODIFIED="1525031829821">
-<node TEXT="Setting your Git username for every repository on your computer" ID="ID_689129103" CREATED="1525031403499" MODIFIED="1525031408440">
+<node TEXT="config" FOLDED="true" ID="ID_1128402828" CREATED="1525031360523" MODIFIED="1525031367040">
+<node TEXT="username" FOLDED="true" ID="ID_1738305618" CREATED="1525031824808" MODIFIED="1525031829821">
+<node TEXT="Setting your Git username for every repository on your computer" FOLDED="true" ID="ID_689129103" CREATED="1525031403499" MODIFIED="1525031408440">
 <node TEXT="Set a Git username:" ID="ID_275165501" CREATED="1525031486451" MODIFIED="1525031486451"/>
 <node TEXT="git config --global user.name &quot;Mona Lisa&quot;" ID="ID_1131528620" CREATED="1525031505378" MODIFIED="1525031577990">
 <font ITALIC="true"/>
@@ -6491,7 +5702,7 @@
 <font ITALIC="true"/>
 </node>
 </node>
-<node TEXT="Setting your Git username for a single repository" ID="ID_634843297" CREATED="1525031593177" MODIFIED="1525031597719">
+<node TEXT="Setting your Git username for a single repository" FOLDED="true" ID="ID_634843297" CREATED="1525031593177" MODIFIED="1525031597719">
 <node TEXT="Change the current working directory to the local repository where you want to configure the name that is associated with your Git commits." ID="ID_1028865038" CREATED="1525031610841" MODIFIED="1525031613599"/>
 <node TEXT="Set a Git username:" ID="ID_294937001" CREATED="1525031619785" MODIFIED="1525031624318"/>
 <node TEXT="git config user.name &quot;Mona Lisa&quot;" ID="ID_563637172" CREATED="1525031652625" MODIFIED="1525031657974">
@@ -6503,8 +5714,8 @@
 </node>
 </node>
 </node>
-<node TEXT="email" ID="ID_1408398685" CREATED="1525031848895" MODIFIED="1525031873998">
-<node TEXT="Setting your email address for every repository on your computer" ID="ID_1039267182" CREATED="1525031876467" MODIFIED="1525031876467">
+<node TEXT="email" FOLDED="true" ID="ID_1408398685" CREATED="1525031848895" MODIFIED="1525031873998">
+<node TEXT="Setting your email address for every repository on your computer" FOLDED="true" ID="ID_1039267182" CREATED="1525031876467" MODIFIED="1525031876467">
 <node TEXT="Set an email address in Git. You can use your GitHub-provided no-reply email address or any email address." ID="ID_1518728817" CREATED="1525031916655" MODIFIED="1525031919420"/>
 <node TEXT="git config --global user.email &quot;email@example.com&quot;" ID="ID_663373801" CREATED="1525031926663" MODIFIED="1525031930740">
 <font ITALIC="true"/>
@@ -6515,7 +5726,7 @@
 </node>
 <node TEXT="Add the email address to your GitHub account by setting your commit email address on GitHub, so that your commits are attributed to you and appear in your contributions graph." ID="ID_1059756535" CREATED="1525032022622" MODIFIED="1525032026828"/>
 </node>
-<node TEXT="Setting your email address for a single repository" ID="ID_1846962" CREATED="1525031898159" MODIFIED="1525031903140">
+<node TEXT="Setting your email address for a single repository" FOLDED="true" ID="ID_1846962" CREATED="1525031898159" MODIFIED="1525031903140">
 <node TEXT="Change the current working directory to the local repository where you want to configure the email address that you associate with your Git commits." ID="ID_389926756" CREATED="1525032200461" MODIFIED="1525032314361">
 <font ITALIC="false"/>
 </node>
@@ -6532,14 +5743,14 @@
 <node TEXT="Add the email address to your GitHub account by setting your commit email address on GitHub, so that your commits are attributed to you and appear in your contributions graph." ID="ID_1353489902" CREATED="1525032347044" MODIFIED="1525032350577"/>
 </node>
 </node>
-<node TEXT="Get the config used by the repo or global" ID="ID_177159469" CREATED="1525031895279" MODIFIED="1525032450680">
+<node TEXT="Get the config used by the repo or global" FOLDED="true" ID="ID_177159469" CREATED="1525031895279" MODIFIED="1525032450680">
 <node TEXT="git config --list" ID="ID_1951854395" CREATED="1519290295943" MODIFIED="1519290309698"/>
 </node>
 </node>
 </node>
 <node TEXT="svn" ID="ID_452984544" CREATED="1520729407081" MODIFIED="1520729413301"/>
 </node>
-<node TEXT="Ide" ID="ID_1795387417" CREATED="1517909035463" MODIFIED="1517909052048">
+<node TEXT="Ide" FOLDED="true" ID="ID_1795387417" CREATED="1517909035463" MODIFIED="1517909052048">
 <node TEXT="phpstorm" FOLDED="true" ID="ID_1915688729" CREATED="1516351424887" MODIFIED="1517301554346">
 <node TEXT="Search everywhere" FOLDED="true" ID="ID_95241345" CREATED="1516351443986" MODIFIED="1516351459357">
 <node TEXT="As the name suggests, the Search everywhere popup allows you to search for anything in your project, as well as in the IDE itself. You can search for files, symbols, functions, variables, classes or components in your code and quickly navigate to them:" ID="ID_1998284517" CREATED="1516351621877" MODIFIED="1516351642854"/>
@@ -6570,7 +5781,7 @@
 <node TEXT="right-click on the file" ID="ID_1881798060" CREATED="1517578822887" MODIFIED="1517578848609"/>
 </node>
 </node>
-<node TEXT="Visual studio code" ID="ID_1063730680" CREATED="1515278180287" MODIFIED="1515323893338">
+<node TEXT="Visual studio code" FOLDED="true" ID="ID_1063730680" CREATED="1515278180287" MODIFIED="1515323893338">
 <node TEXT="shortcuts" FOLDED="true" ID="ID_66373857" CREATED="1515278203231" MODIFIED="1515323892490">
 <node TEXT="Format code" FOLDED="true" ID="ID_1401227338" CREATED="1515278212215" MODIFIED="1515323891762">
 <node TEXT="ctrl + shift + i" ID="ID_1443742418" CREATED="1515278221447" MODIFIED="1515278243308"/>
@@ -6593,7 +5804,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Buildprocess" ID="ID_884984155" CREATED="1516874696613" MODIFIED="1517301554349">
+<node TEXT="Buildprocess" FOLDED="true" ID="ID_884984155" CREATED="1516874696613" MODIFIED="1517301554349">
 <node TEXT="Docker" FOLDED="true" ID="ID_908985180" CREATED="1516874721215" MODIFIED="1516874726017">
 <node TEXT="Docker is an open source project supported by a commercial entity of the same name that makes it super-easy to run an application process inside a relatively isolated environment called a container. Unlike a virtual machine (VM), which has its own kernel, a container is dependent on the host operating system&#x2019;s kernel." ID="ID_791082804" CREATED="1516874840928" MODIFIED="1516874840928"/>
 </node>
@@ -6844,13 +6055,890 @@
 <node TEXT="4xx Client errors" ID="ID_477164657" CREATED="1523462053126" MODIFIED="1523462065175"/>
 <node TEXT="5xx Server errors" ID="ID_1062592407" CREATED="1523462075454" MODIFIED="1523462080592"/>
 </node>
-<node TEXT="" ID="ID_1672172281" CREATED="1528542894785" MODIFIED="1528542894785"/>
 </node>
 <node TEXT="Architecture" POSITION="right" ID="ID_1929613929" CREATED="1528542897593" MODIFIED="1528542929412">
 <edge COLOR="#808080"/>
 <node TEXT="MVC" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1522617059504"/>
-<node TEXT="single page application" ID="ID_1754289522" CREATED="1523128034273" MODIFIED="1523128051635"/>
-<node TEXT="Atomic Design" ID="ID_756021244" CREATED="1528542693539" MODIFIED="1528542709669"/>
+<node TEXT="single page application" ID="ID_1754289522" CREATED="1523128034273" MODIFIED="1523128051635">
+<node TEXT="Introduction" FOLDED="true" ID="ID_1598924604" CREATED="1530387321395" MODIFIED="1530387338248">
+<node TEXT="A single-page application (SPA) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server." ID="ID_1161427925" CREATED="1530387346211" MODIFIED="1530387350470"/>
+<node TEXT="This approach avoids interruption of the user experience between successive pages, making the application behave more like a desktop application." ID="ID_740990680" CREATED="1530387369419" MODIFIED="1530387374902"/>
+<node TEXT="In an SPA, either all necessary code &#x2013; HTML, JavaScript, and CSS &#x2013; is retrieved with a single page load, or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions." ID="ID_1860846463" CREATED="1530387398354" MODIFIED="1530387440270"/>
+<node TEXT="The page does not reload at any point in the process, nor does control transfer to another page, although the location hash or the HTML5 History API can be used to provide the perception and navigability of separate logical pages in the application" ID="ID_1650560895" CREATED="1530387443298" MODIFIED="1530387449086"/>
+<node TEXT="Interaction with the single page application often involves dynamic communication with the web server behind the scenes." ID="ID_1424101219" CREATED="1530387470730" MODIFIED="1530387475421"/>
+</node>
+<node TEXT="Isomorphic/Universal Apps" FOLDED="true" ID="ID_1841706943" CREATED="1529768931169" MODIFIED="1529769728285">
+<node TEXT="What is Isomorphism?" FOLDED="true" ID="ID_841759919" CREATED="1529768986857" MODIFIED="1529769003905">
+<node TEXT=" The word isomorphic is made up of two sounds: iso and morph." FOLDED="true" ID="ID_1573807126" CREATED="1529769209536" MODIFIED="1529769212832">
+<node TEXT="Iso means similar or equal, something that&apos;s congruent with another thing, like the two sides of an isosceles triangle are equal." ID="ID_1161257236" CREATED="1529769244016" MODIFIED="1529769247399"/>
+<node TEXT="Morph, which means shape or form, as in the word metamorphosis." ID="ID_1591253054" CREATED="1529769276415" MODIFIED="1529769292023"/>
+</node>
+<node TEXT="Something which is isomorphic has a similar shape in multiple places." ID="ID_233434363" CREATED="1529769315559" MODIFIED="1529769329806"/>
+<node TEXT="An isomorphic application, which can also be called a universal application, is defined as follows:" FOLDED="true" ID="ID_1716750282" CREATED="1529769383227" MODIFIED="1529769386782">
+<node TEXT="An application where the server and the client are written in the same language" ID="ID_153933362" CREATED="1529769409414" MODIFIED="1529769420959"/>
+<node TEXT="Where the server renders the first request and the client renders all subsequent ones" ID="ID_1765833088" CREATED="1529769461542" MODIFIED="1529769485526"/>
+<node TEXT="It&apos;s pretty specific sounding, but it applies to a wide variety of different web applications." ID="ID_1075315950" CREATED="1529769541885" MODIFIED="1529769544893"/>
+</node>
+<node TEXT="Ultimately, the server rendering first and the client rendering after is all part of fast performance, especially on mobile devices." ID="ID_436202359" CREATED="1529769565253" MODIFIED="1529769568573"/>
+<node TEXT="The term isomorphism is often used as a blanket term for various different features." ID="ID_273388038" CREATED="1529769641397" MODIFIED="1529769688861"/>
+<node TEXT=" If you do a good job of making an application isomorphic, the end result is as follows: faster development time for you and faster rendering of the application for the user." ID="ID_1371340115" CREATED="1529769832028" MODIFIED="1529769869771"/>
+</node>
+<node TEXT="Isomorphic Process" FOLDED="true" ID="ID_1523642174" CREATED="1529770703949" MODIFIED="1529770708013">
+<node TEXT="So, what takes place in an isomorphic application that makes the end experience so fast for the user?" ID="ID_864661384" CREATED="1529770728213" MODIFIED="1529770730837"/>
+<node TEXT="It breaks down into a series of steps." FOLDED="true" ID="ID_160979427" CREATED="1529770773445" MODIFIED="1529770788732">
+<node TEXT="1. User requests web page" FOLDED="true" ID="ID_881675230" CREATED="1529770830237" MODIFIED="1529770909118">
+<node TEXT="They either do this by opening it in their browser or their mobile device or a screen reader or any device." ID="ID_713433161" CREATED="1529771161572" MODIFIED="1529771161572"/>
+</node>
+<node TEXT="2. Server queries database and APIs" FOLDED="true" ID="ID_1189038333" CREATED="1529770833261" MODIFIED="1529770931388">
+<node TEXT="stuff like your user info or a list of your contacts, etc." ID="ID_1477103000" CREATED="1529771243618" MODIFIED="1529771246089"/>
+</node>
+<node TEXT="3. Server asks app for the HTML it would render given the information it has" ID="ID_1714025471" CREATED="1529770836157" MODIFIED="1529770959779"/>
+<node TEXT="4. Server sends client rendered HTML" FOLDED="true" ID="ID_743974898" CREATED="1529770837316" MODIFIED="1529770982221">
+<node TEXT="The actual JavaScript code isn&apos;t there, it&apos;s just looking at what would have happened if the JavaScript code would have run." ID="ID_753548108" CREATED="1529771401113" MODIFIED="1529771401113"/>
+<node TEXT="The client gets the HTML onto their device and the application renders, not the interactivity, but just what the user would see." ID="ID_1345883597" CREATED="1529771440328" MODIFIED="1529771443630"/>
+</node>
+<node TEXT="5. Application renders on client&#x2019;s device (after just one HTTP request)" ID="ID_290146969" CREATED="1529770838524" MODIFIED="1529771004347"/>
+<node TEXT="6. User begins enjoying  :-)" ID="ID_135164959" CREATED="1529770839469" MODIFIED="1529771027693"/>
+<node TEXT="7. Client requests JavaScript from server and boots application" FOLDED="true" ID="ID_1708010620" CREATED="1529770840269" MODIFIED="1529771055220">
+<node TEXT="our client then requests the JavaScript, that makes the application actually live, from the server and it starts the application up on the client." ID="ID_21907121" CREATED="1529771667319" MODIFIED="1529771671510"/>
+</node>
+<node TEXT="8. Client application recognizes pre-rendered HTML and binds to it" FOLDED="true" ID="ID_27954314" CREATED="1529770841092" MODIFIED="1529771082796">
+<node TEXT="Now the cool part is that when the client runs the JavaScript, if it was the same JavaScript used to render the HTML that made up your application, the code will actually be able to recognize that, and it will kind of graft the application logic to the existing HTML without re-rendering it." ID="ID_474021835" CREATED="1529771763206" MODIFIED="1529771768240"/>
+</node>
+<node TEXT="9. Application finishes loading several seconds after user got their initial content" ID="ID_186326629" CREATED="1529770841844" MODIFIED="1529771111166"/>
+</node>
+</node>
+<node TEXT="Advantages of Isomorphism" FOLDED="true" ID="ID_238285734" CREATED="1529771823966" MODIFIED="1529771828397">
+<node TEXT=" The terms functional and technical isomorphism, as described by Gert Hengeveld in an article on medium, describe the two parts of an isomorphic application&apos;s advantages." ID="ID_137024811" CREATED="1529772277467" MODIFIED="1529772280786"/>
+<node TEXT="functional isomorphism" FOLDED="true" ID="ID_709149502" CREATED="1529772313299" MODIFIED="1529772517321">
+<node TEXT="It describes the property of the server rendering the HTML on the initial load." ID="ID_1191914694" CREATED="1529772335388" MODIFIED="1529772335388"/>
+<node TEXT=" It&apos;s the actual advantages for your users. In other words, functional isomorphism is faster loading." ID="ID_1664105787" CREATED="1529772366322" MODIFIED="1529772369521"/>
+</node>
+<node TEXT="technical isomorphism" FOLDED="true" ID="ID_675211143" CREATED="1529772391386" MODIFIED="1529772501041">
+<node TEXT="which is the code that&apos;s shared between the front- and back-end of the application." ID="ID_130834011" CREATED="1529772427202" MODIFIED="1529772430137"/>
+<node TEXT=" Shared code means less code, so technical isomorphism basically means faster and more maintainable coding." ID="ID_1143619810" CREATED="1529772451642" MODIFIED="1529772454849"/>
+</node>
+<node TEXT="the advantages of technical isomorphism" FOLDED="true" ID="ID_571688190" CREATED="1529772563817" MODIFIED="1529772568032">
+<node TEXT="Less code to write and maintain" FOLDED="true" ID="ID_425375152" CREATED="1529773261644" MODIFIED="1529773291491">
+<node TEXT="So if you write less code, your maintenance will be exponentially less." ID="ID_404939293" CREATED="1529772645488" MODIFIED="1529772648199"/>
+<node TEXT="Not only is code a headache to maintain, but the more you have of it, the faster the maintenance work expands." ID="ID_1829568097" CREATED="1529773481235" MODIFIED="1529773485122"/>
+</node>
+<node TEXT="Fewer languages to learn" FOLDED="true" ID="ID_611805266" CREATED="1529773273276" MODIFIED="1529773304819">
+<node TEXT=" Everybody likes to learn a new coding language now and then, but when you&apos;re already in the process of building a major application it&apos;s great if people you bring on who just understand JavaScript can participate in both the front- and back-end of your coding." ID="ID_1232398205" CREATED="1529772671048" MODIFIED="1529773431939"/>
+</node>
+<node TEXT="Congruent data formats" FOLDED="true" ID="ID_1578548857" CREATED="1529773274948" MODIFIED="1529773320820">
+<node TEXT="Usually the back-end and the front-end will share a data format. JSON is a popular one for JavaScript applications and the one we&apos;ll be using. If you already understand JSON then you don&apos;t need to learn any additional languages to work with the data that our server&apos;s going to be producing." ID="ID_1951978980" CREATED="1529772724816" MODIFIED="1529772728655"/>
+</node>
+<node TEXT="library can integrate with self" FOLDED="true" ID="ID_1078556887" CREATED="1529773276580" MODIFIED="1529773336059">
+<node TEXT="The best example is React, which generates code on the server-side then, when it runs on the client, it recognizes its own code and can bind to the generated HTML with an overall faster experience for the user." ID="ID_458375102" CREATED="1529772777903" MODIFIED="1529773469466"/>
+</node>
+</node>
+<node TEXT="the advantages functional isomorphism" FOLDED="true" ID="ID_1764362538" CREATED="1529772806983" MODIFIED="1529772831606">
+<node TEXT="It has faster load times." FOLDED="true" ID="ID_21577431" CREATED="1529772854535" MODIFIED="1529773562617">
+<node ID="ID_1120249361" CREATED="1529773566008" MODIFIED="1529773566008"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &#160;especially for mobile which takes a long time to load and parse big JavaScript programs.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="It&apos;s easier for many search engines to index." FOLDED="true" ID="ID_919626925" CREATED="1529772890054" MODIFIED="1529773582777">
+<node ID="ID_761363660" CREATED="1529773585891" MODIFIED="1529773585891"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Now, search engines have been better at indexing static applications like React ones or Angular, but they're not all equally good and they still have some work to do.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="When you send your HTML directly, it makes it easier for search engines to index and figure out what&apos;s going on on your page." ID="ID_527145104" CREATED="1529772940982" MODIFIED="1529772944581"/>
+</node>
+<node TEXT="Automatic supports for legacy browsers" FOLDED="true" ID="ID_746731024" CREATED="1529773617610" MODIFIED="1529773637665">
+<node ID="ID_943263781" CREATED="1529773655946" MODIFIED="1529773655946"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      if your user is using a very old browser or a browser that doesn't support JavaScript, and this does happen from time to time, congratulations, you automatically support those browsers by using isomorphic code.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_576888568" CREATED="1529773670243" MODIFIED="1529773670243"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Even if the user isn't running JavaScript, they're still going to see their application and, with a little clever programming, they can even still click links and interact.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Pitfalls and Challenges of Isomorphism" FOLDED="true" ID="ID_1562019281" CREATED="1529773041526" MODIFIED="1529773045413">
+<node TEXT=" When you&apos;re combining your front-end and back-end code in one place, one concept, you risk running into bugs from both ends of that code." ID="ID_847639908" CREATED="1529773879840" MODIFIED="1529773885359"/>
+<node TEXT="More complex architecture" FOLDED="true" ID="ID_1375206245" CREATED="1529773708713" MODIFIED="1529773722360">
+<node TEXT="Special build phases and special logic in your server, this is all additional code that needs to be written." ID="ID_1779586001" CREATED="1529773941757" MODIFIED="1529773941757"/>
+<node TEXT="So, while this architecture ultimately can save you time by reducing maintenance, if you didn&apos;t have an isomorphic application your back-end would just be simpler." ID="ID_1112306256" CREATED="1529773964813" MODIFIED="1529773964813"/>
+</node>
+<node TEXT="Challenging to troubleshoot" FOLDED="true" ID="ID_1260518750" CREATED="1529773724969" MODIFIED="1529773739688">
+<node TEXT="it&apos;s challenging to troubleshoot. Isomorphic applications aren&apos;t perfect and errors can occur on the server that don&apos;t occur on the client and vice-versa." ID="ID_407285680" CREATED="1529773994577" MODIFIED="1529773994577"/>
+<node TEXT="You might think your application is perfectly functional because you&apos;ve only been testing it on the client-side, just to find out that when you try to do a particular thing on the server it doesn&apos;t work, and it&apos;s hard to figure out what." ID="ID_650708078" CREATED="1529774040703" MODIFIED="1529774043782"/>
+</node>
+<node TEXT="Sensitive data on server prone to exposure" FOLDED="true" ID="ID_238844023" CREATED="1529773740449" MODIFIED="1529773761608">
+<node TEXT="In addition, unlike a one-sided application, the private data in your server files can sometimes get scooped up by your build system and sent over to your client who can then analyze this sensitive or secret data." ID="ID_1933062838" CREATED="1529774079108" MODIFIED="1529774079108"/>
+<node TEXT="So how exactly does sensitive data get exposed in an isomorphic application?" FOLDED="true" ID="ID_233462167" CREATED="1529774176373" MODIFIED="1529774176373">
+<node TEXT="So, you the developer write yourself a module for the client to enjoy. Now, you&apos;re not requiring the secret data directly in that module, but that module might require your config file, which might require your secrets file." ID="ID_1933163681" CREATED="1529774221134" MODIFIED="1529774221134"/>
+<node TEXT="Now, when your application is bundled, there&apos;s no guarantee that your bundler is going to take those secrets that shouldn&apos;t be sent to the client and get rid of them." ID="ID_483322744" CREATED="1529774254665" MODIFIED="1529774254665"/>
+<node TEXT="Maybe it will if it&apos;s smart enough to remove any unused variables, but if they&apos;re not removed then an attacker can simply search the source code of the page right in Chrome and access private data." ID="ID_662343270" CREATED="1529774286996" MODIFIED="1529774286996"/>
+</node>
+</node>
+<node TEXT="More points of possible failure" FOLDED="true" ID="ID_137844188" CREATED="1529773765049" MODIFIED="1529773778801">
+<node TEXT="For each view of your website, there&apos;s now what happens if the client navigates that view from any given page?" ID="ID_1547325933" CREATED="1529774124681" MODIFIED="1529774124681"/>
+<node TEXT="Or what happens if the client loads it directly from the server and what state that client&apos;s session and user account are in?" ID="ID_367396687" CREATED="1529774149131" MODIFIED="1529774149131"/>
+</node>
+</node>
+<node TEXT="Priorities of Isomorphic Applications" FOLDED="true" ID="ID_748031869" CREATED="1529774930326" MODIFIED="1529774930326">
+<node TEXT="As with any application, your priorities may be different depending on if you&apos;re developing it at the time or if the user is viewing it." ID="ID_691320090" CREATED="1529774951906" MODIFIED="1529774951906"/>
+<node TEXT="However, in an isomorphic application, we take such a hands-on approach to the assembling and sending of the application that we need to be very clear before we get started what those priorities are." ID="ID_786336128" CREATED="1529775001556" MODIFIED="1529775001556"/>
+<node TEXT="Development" FOLDED="true" ID="ID_944697724" CREATED="1529775030112" MODIFIED="1529775036375">
+<node TEXT="Application updates quickly after source code is updated" ID="ID_876793070" CREATED="1529775058192" MODIFIED="1529775085767"/>
+<node TEXT="Additional round trips to fetch data are of no consequence" ID="ID_1749681663" CREATED="1529775098296" MODIFIED="1529775106911"/>
+<node TEXT="Code needs to be organized, clear and highly traceable" ID="ID_25586474" CREATED="1529775115351" MODIFIED="1529775121943"/>
+<node TEXT="Tooling is needed to allow developers to see app&#x2019;s internal state" ID="ID_1788119576" CREATED="1529775130631" MODIFIED="1529775139407"/>
+</node>
+<node TEXT="Production" FOLDED="true" ID="ID_1458602300" CREATED="1529775046928" MODIFIED="1529775052119">
+<node TEXT="Application is not concerned with updates to source code" ID="ID_336519169" CREATED="1529775158743" MODIFIED="1529775164942"/>
+<node TEXT="Additional round trips significantly slow application on mobile and greatly increase the odds of user closing the application before it even loads" ID="ID_1542991178" CREATED="1529775174823" MODIFIED="1529775194430"/>
+<node TEXT="Code should be obfuscated, compact, and not expose sensitive data" ID="ID_711748387" CREATED="1529775206847" MODIFIED="1529775216046"/>
+<node TEXT="Tooling is needed to track user&#x2019;s activity and expose bugs" ID="ID_1140774152" CREATED="1529775225142" MODIFIED="1529780429323"/>
+</node>
+</node>
+<node TEXT="In a Nutshell" FOLDED="true" ID="ID_138474306" CREATED="1529780891232" MODIFIED="1529780909975">
+<node TEXT="Universal app or an isomorphic app both mean the same thing." ID="ID_1651221000" CREATED="1529780937770" MODIFIED="1529780943719"/>
+<node TEXT="They basically mean an application where code is shared between the front- and the back-end, technical isomorphism" ID="ID_1877160567" CREATED="1529780974336" MODIFIED="1529780990503"/>
+<node TEXT="And an application where functionality and performance are improved, a functional isomorphic application." ID="ID_1855317637" CREATED="1529781045047" MODIFIED="1529781061223"/>
+<node TEXT="The advantages of such an application include better developer productivity and improved experience on mobile, but the disadvantages include more complexity and vulnerabilities." ID="ID_1375788286" CREATED="1529781083367" MODIFIED="1529781086814"/>
+</node>
+<node TEXT="Code Sharing Isomorphic Application VS Lamp Application" FOLDED="true" ID="ID_32430933" CREATED="1529781631331" MODIFIED="1529781748224">
+<node TEXT="So, code sharing is one of the big reasons that we&apos;re going with isomorphic architecture to begin with. In our application, some of the same code is used on the client as on the server. This allows us, in some cases, to write half as much code and is largely only possible because our back-end is also written in JavaScript." ID="ID_942367252" CREATED="1529781881202" MODIFIED="1529781881202"/>
+<node TEXT=" In addition, and this is where code sharing really gets cool, the same libraries that we&apos;re using on our back-end to do back-end things, like prerender the application, these are the libraries that are being used on the client as well." ID="ID_1842147251" CREATED="1529781908825" MODIFIED="1529781912496"/>
+<node TEXT="That means they can be programmed by their original creators to have some way of integrating, like bootstrapping to the prerendered HTML and making it a live application without reloading in the case of React." ID="ID_1640825508" CREATED="1529781965737" MODIFIED="1529781991673"/>
+</node>
+<node TEXT="Who does what" FOLDED="true" ID="ID_124618130" CREATED="1529782641316" MODIFIED="1529782664108">
+<node TEXT="React&apos;s Role in Isomorphic Application" FOLDED="true" ID="ID_1906352257" CREATED="1529782686740" MODIFIED="1529782704971">
+<node TEXT="Renders the application on the server" ID="ID_1370705927" CREATED="1529782711540" MODIFIED="1529782726987"/>
+<node TEXT="Powers the application on the client (and renders it)" ID="ID_1889742030" CREATED="1529782729043" MODIFIED="1529782754883"/>
+<node TEXT="Handles serving content based on routes (via React-Router &amp; Express)" ID="ID_255610523" CREATED="1529782757675" MODIFIED="1529782787346"/>
+</node>
+<node TEXT="Express&apos;s Role in Isomorphic Application" FOLDED="true" ID="ID_1125497422" CREATED="1529782815835" MODIFIED="1529782847554">
+<node TEXT="Responsible for fetching data to create initial state" ID="ID_1769951022" CREATED="1529782867274" MODIFIED="1529782888618"/>
+<node TEXT="Uses React to render application on server" ID="ID_1491506036" CREATED="1529782923146" MODIFIED="1529782942578"/>
+<node TEXT="Runs Webpack instance in development to serve app bundle" ID="ID_1283365247" CREATED="1529782973858" MODIFIED="1529782997441"/>
+<node TEXT="Loads template and serves static files" ID="ID_56598781" CREATED="1529783056937" MODIFIED="1529783072681"/>
+</node>
+</node>
+</node>
+<node TEXT="state management" ID="ID_1423779023" CREATED="1530386467640" MODIFIED="1530386482612">
+<node TEXT="The Problem with state" ID="ID_1385498926" CREATED="1530386540584" MODIFIED="1530386555315"/>
+<node TEXT="Redux" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432">
+<node TEXT="introduction" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
+<node TEXT="Why redux?" ID="ID_1744700165" CREATED="1530354924244" MODIFIED="1530354938037">
+<node TEXT="Without Redux" ID="ID_1343260396" CREATED="1530392116701" MODIFIED="1530392126800">
+<node TEXT="Lots of state communication" ID="ID_1515198504" CREATED="1530392134762" MODIFIED="1530392134762"/>
+<node TEXT="Complex error states and scenarios" ID="ID_1210245012" CREATED="1530392144336" MODIFIED="1530392144336"/>
+<node TEXT="Lots of Ajax calls" ID="ID_16591247" CREATED="1530392150958" MODIFIED="1530392150958"/>
+<node TEXT="Very confusing" ID="ID_1709105389" CREATED="1530392161588" MODIFIED="1530392161588"/>
+</node>
+<node TEXT="With Redux" ID="ID_1471026805" CREATED="1530392177357" MODIFIED="1530392187912">
+<node TEXT="Clarifies data flow" ID="ID_436108009" CREATED="1530392195507" MODIFIED="1530392195507"/>
+<node TEXT="State is predictable" ID="ID_1721652639" CREATED="1530392201628" MODIFIED="1530392201628"/>
+</node>
+</node>
+<node TEXT="Redux is a predictable state container for JavaScript apps. It helps developers write applications that behave consistently, run in different environments (client, server, and native), and are easy to test." ID="ID_1211224515" CREATED="1522618885749" MODIFIED="1522618906011"/>
+<node TEXT="Additionally, it provides improvements to the developer experience, like live code editing combined with a time traveling debugger." ID="ID_1994213069" CREATED="1522618909533" MODIFIED="1522618931394"/>
+<node TEXT="Redux can be used together with React, or with other view libraries. The Redux file size is small, 2kB, including dependencies." ID="ID_1457393343" CREATED="1522618950389" MODIFIED="1522618954306"/>
+<node TEXT="3 Redux core principles" FOLDED="true" ID="ID_1980494364" CREATED="1525626797508" MODIFIED="1525626816881">
+<node TEXT="One immutable store" ID="ID_479559491" CREATED="1525627045631" MODIFIED="1525627058321"/>
+<node TEXT="Only Actions trigger changes" ID="ID_426955571" CREATED="1525627099879" MODIFIED="1525627112536"/>
+<node TEXT="Reducers returns update state" ID="ID_1663061832" CREATED="1525627114559" MODIFIED="1525631711393"/>
+</node>
+<node TEXT="Two Component Types" FOLDED="true" ID="ID_968366060" CREATED="1525724043534" MODIFIED="1525724069701">
+<node TEXT="Container" FOLDED="true" ID="ID_1630340127" CREATED="1525724065589" MODIFIED="1525724085075">
+<node TEXT="Focus on how things work" ID="ID_1684830827" CREATED="1525724103780" MODIFIED="1525724116130"/>
+<node TEXT="Aware of Redux" ID="ID_867059018" CREATED="1525724116534" MODIFIED="1525724124826"/>
+<node TEXT="Subscribe to Redux State" ID="ID_1966278354" CREATED="1525724125101" MODIFIED="1525724137186"/>
+<node TEXT="Dispatch Redux actions" ID="ID_261098123" CREATED="1525724137555" MODIFIED="1525724150978"/>
+<node TEXT="Generated by react-redux" ID="ID_851409441" CREATED="1525724151728" MODIFIED="1525724165482"/>
+</node>
+<node TEXT="Presentational" FOLDED="true" ID="ID_987643333" CREATED="1525724088970" MODIFIED="1525724101531">
+<node TEXT="Focus on how things look" ID="ID_29409442" CREATED="1525724169705" MODIFIED="1525724191386"/>
+<node TEXT="Unaware of Redux" ID="ID_1712606127" CREATED="1525724193389" MODIFIED="1525724202745"/>
+<node TEXT="Read data from props" ID="ID_732721547" CREATED="1525724213472" MODIFIED="1525724226289"/>
+<node TEXT="Invoke callbacks on props" ID="ID_1524850734" CREATED="1525724226852" MODIFIED="1525724241721"/>
+<node TEXT="Written by hand" ID="ID_1598016922" CREATED="1525724245372" MODIFIED="1525724253673"/>
+</node>
+</node>
+<node TEXT="A Chat with Redux" FOLDED="true" ID="ID_157797263" CREATED="1525725218376" MODIFIED="1525725232218">
+<node TEXT="REACT: Hey CourseAction, someone clicked this &quot;Save Course&quot; button" ID="ID_1194131840" CREATED="1525725239773" MODIFIED="1525725271906"/>
+<node TEXT="ACTION: Thanks React! I will dispatch an action so reducers that care can update state" ID="ID_941621879" CREATED="1525725273688" MODIFIED="1525725323554"/>
+<node TEXT="REDUCER: Ah, thanks action. I see you passed me the current state and the action to perform. I&apos;ll make a new copy of the state and return it." ID="ID_1638836202" CREATED="1525725326484" MODIFIED="1525725406017"/>
+<node TEXT="STORE: Thanks for updating the state reducer. I&apos;ll make sure that all connected components are aware" ID="ID_1538655373" CREATED="1525725410673" MODIFIED="1525725458457"/>
+<node TEXT="REACT-REDUX: Woah, thanks for the new data Mr. Store. I&apos;ll now intelligently determine if I should tell React about this change so that it only has to bother with updating the UI when necessary." ID="ID_1390575432" CREATED="1525725460827" MODIFIED="1525725551352"/>
+<node TEXT="Ooo! Shiny new data has been passed down via props from the store! I&apos;ll update the UI to reflect this!" ID="ID_948301864" CREATED="1525725554577" MODIFIED="1525725603535"/>
+</node>
+</node>
+<node TEXT="terminology" FOLDED="true" ID="ID_1767781134" CREATED="1522619005804" MODIFIED="1522619062345">
+<node TEXT="state" FOLDED="true" ID="ID_976637588" CREATED="1522619102028" MODIFIED="1522619107905">
+<node TEXT="State (also called the state tree) is a broad term, but in the Redux API it usually refers to the single state value that is managed by the store and returned by getState()" ID="ID_109853515" CREATED="1522619450561" MODIFIED="1522619453888"/>
+<node ID="ID_919135901" CREATED="1522619467809" MODIFIED="1522619487527"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>It represents the entire state of a Redux application</b>, which is often a deeply nested object.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="By convention, the top-level state is an object or some other key-value collection like a Map, but technically it can be any type." ID="ID_351463405" CREATED="1522619547112" MODIFIED="1522619551094"/>
+<node TEXT="Still, you should do your best to keep the state serializable. Don&apos;t put anything inside it that you can&apos;t easily turn into JSON." ID="ID_757080883" CREATED="1522619569408" MODIFIED="1522619573334"/>
+</node>
+<node TEXT="action" FOLDED="true" ID="ID_1391084089" CREATED="1522619111995" MODIFIED="1522619120265">
+<node TEXT="An action is a plain object that represents an intention to change the state." ID="ID_1265939815" CREATED="1522619203755" MODIFIED="1522619207536"/>
+<node TEXT="Actions are the only way to get data into the store." ID="ID_565796530" CREATED="1522619234003" MODIFIED="1522619237584"/>
+<node TEXT="Any data, whether from UI events, network callbacks, or other sources such as WebSockets needs to eventually be dispatched as actions." ID="ID_517106" CREATED="1522619255563" MODIFIED="1522619259440"/>
+<node ID="ID_1237680772" CREATED="1522619296722" MODIFIED="1522619326585"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Actions must have a type field</b>&#160;that indicates the type of action being performed.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Types can be defined as constants and imported from another module. It&apos;s better to use strings for type than Symbols because strings are serializable." ID="ID_722895341" CREATED="1522619388298" MODIFIED="1522619393391"/>
+<node TEXT="Other than type, the structure of an action object is really up to you." ID="ID_1441813673" CREATED="1522619416889" MODIFIED="1522619420303"/>
+</node>
+<node TEXT="reducer" FOLDED="true" ID="ID_1033220480" CREATED="1522619128411" MODIFIED="1522619137249">
+<node TEXT="A reducer (also called a reducing function) is a function that accepts an accumulation and a value and returns a new accumulation. They are used to reduce a collection of values down to a single value." ID="ID_1483962171" CREATED="1522619617216" MODIFIED="1522619620965"/>
+<node TEXT="Reducers are not unique to Redux&#x2014;they are a fundamental concept in functional programming." FOLDED="true" ID="ID_1175675688" CREATED="1522619649784" MODIFIED="1522619653829">
+<node TEXT="Even most non-functional languages, like JavaScript, have a built-in API for reducing. In JavaScript, it&apos;s Array.prototype.reduce()." ID="ID_1678806158" CREATED="1522619710023" MODIFIED="1522619714917"/>
+</node>
+<node ID="ID_668913811" CREATED="1522619739503" MODIFIED="1522619761581"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>In Redux, the accumulated value is the state object, and the values being accumulated are actions.</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Reducers calculate a new state given the previous state and an action." ID="ID_786608455" CREATED="1522619793638" MODIFIED="1522619797340"/>
+<node TEXT="They must be pure functions&#x2014;functions that return the exact same output for given inputs. They should also be free of side-effects. This is what enables exciting features like hot reloading and time travel." ID="ID_828958310" CREATED="1522619816814" MODIFIED="1522619827348"/>
+<node ID="ID_784590371" CREATED="1522619843030" MODIFIED="1522619856036"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Reducers are the most important concept in Redux.</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="Dispatching Function" FOLDED="true" ID="ID_486699287" CREATED="1522619924958" MODIFIED="1525633418570">
+<node TEXT="A dispatching function (or simply dispatch function) is a function that accepts an action or an async action; it then may or may not dispatch one or more actions to the store." ID="ID_533816032" CREATED="1522619945789" MODIFIED="1522619949355"/>
+<node TEXT="We must distinguish between dispatching functions in general and the base dispatch function provided by the store instance without any middleware." ID="ID_1584110292" CREATED="1522620018917" MODIFIED="1522620023082"/>
+<node TEXT="The base dispatch function always synchronously sends an action to the store&apos;s reducer, along with the previous state returned by the store, to calculate a new state. It expects actions to be plain objects ready to be consumed by the reducer." ID="ID_293986832" CREATED="1522620047445" MODIFIED="1525633418567"/>
+<node TEXT="&#x200a;Middleware wraps the base dispatch function. It allows the dispatch function to handle async actions in addition to actions. Middleware may transform, delay, ignore, or otherwise interpret actions or async actions before passing them to the next middleware. See below for more information." ID="ID_1338902460" CREATED="1522620084716" MODIFIED="1522620088386"/>
+</node>
+<node TEXT="action creator" FOLDED="true" ID="ID_1917752922" CREATED="1522620141676" MODIFIED="1522620151337">
+<node ID="ID_1552571801" CREATED="1522620180732" MODIFIED="1522620202266"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      An action creator is, quite simply, a function that creates an action. Do not confuse the two terms&#8212;again, <b>an action is a payload of information, and an action creator is a factory that creates an action.</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Calling an action creator only produces an action, but does not dispatch it." FOLDED="true" ID="ID_419348309" CREATED="1522620232491" MODIFIED="1522620236025">
+<node TEXT="You need to call the store&apos;s dispatch function to actually cause the mutation." ID="ID_87944580" CREATED="1522620261739" MODIFIED="1522620270456"/>
+<node TEXT="Sometimes we say bound action creators to mean functions that call an action creator and immediately dispatch its result to a specific store instance." ID="ID_425912857" CREATED="1522620291907" MODIFIED="1522620300192"/>
+</node>
+<node TEXT="If an action creator needs to read the current state, perform an API call, or cause a side effect, like a routing transition, it should return an async action instead of an action." ID="ID_160417724" CREATED="1522620333810" MODIFIED="1522620337632"/>
+</node>
+<node TEXT="async action" FOLDED="true" ID="ID_489458546" CREATED="1522620418226" MODIFIED="1522620433415">
+<node TEXT="An async action is a value that is sent to a dispatching function, but is not yet ready for consumption by the reducer." ID="ID_613018791" CREATED="1522620450962" MODIFIED="1522620454735"/>
+<node TEXT="It will be transformed by middleware into an action (or a series of actions) before being sent to the base dispatch() function." ID="ID_342307227" CREATED="1522620468377" MODIFIED="1522620470431"/>
+<node TEXT="Async actions may have different types, depending on the middleware you use." FOLDED="true" ID="ID_1241688918" CREATED="1522620510233" MODIFIED="1522620515414">
+<node TEXT="They are often asynchronous primitives, like a Promise or a thunk, which are not passed to the reducer immediately, but trigger action dispatches once an operation has completed." ID="ID_289206944" CREATED="1522620530681" MODIFIED="1522620535782"/>
+</node>
+</node>
+<node TEXT="middleware" FOLDED="true" ID="ID_1666993751" CREATED="1522620545417" MODIFIED="1522620556830">
+<node TEXT="A middleware is a higher-order function that composes a dispatch function to return a new dispatch function. It often turns async actions into actions." ID="ID_1934890055" CREATED="1522620580233" MODIFIED="1522620587654"/>
+<node TEXT="Middleware is composable using function composition. It is useful for logging actions, performing side effects like routing, or turning an asynchronous API call into a series of synchronous actions." ID="ID_639636260" CREATED="1522620605208" MODIFIED="1522620609358"/>
+</node>
+<node TEXT="store" FOLDED="true" ID="ID_1375579091" CREATED="1522620629224" MODIFIED="1522620635638">
+<node TEXT="A store is an object that holds the application&apos;s state tree." ID="ID_1394617328" CREATED="1522620657112" MODIFIED="1522620659253"/>
+<node TEXT="There should only be a single store in a Redux app, as the composition happens on the reducer level." ID="ID_834992405" CREATED="1522620674960" MODIFIED="1522620679413"/>
+<node TEXT="methods" FOLDED="true" ID="ID_391715616" CREATED="1522620729103" MODIFIED="1522620735533">
+<node ID="ID_295822283" CREATED="1522620757039" MODIFIED="1522620810805"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>dispatch(action) </b>is the base dispatch function described above.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_410061313" CREATED="1522620770079" MODIFIED="1522620823813"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>&#8202;getState()</b>&#160;returns the current state of the store.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_289026830" CREATED="1522620784295" MODIFIED="1522620833196"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>subscribe(listener)</b>&#160;registers a function to be called on state changes.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_220837" CREATED="1522620798119" MODIFIED="1522620843981"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>replaceReducer(nextReducer)</b>&#160;can be used to implement hot reloading and code splitting. Most likely you won't use it.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="store creator" FOLDED="true" ID="ID_1759618484" CREATED="1522620867623" MODIFIED="1522620877316">
+<node TEXT="A store creator is a function that creates a Redux store." ID="ID_206446507" CREATED="1522620896998" MODIFIED="1522620901068"/>
+<node TEXT="Like with dispatching function, we must distinguish the base store creator, createStore(reducer, preloadedState) exported from the Redux package, from store creators that are returned from the store enhancers." ID="ID_159298036" CREATED="1522620924638" MODIFIED="1522620928627"/>
+</node>
+<node TEXT="store enhancer" FOLDED="true" ID="ID_983418670" CREATED="1522620880998" MODIFIED="1522620888308">
+<node TEXT="A store enhancer is a higher-order function that composes a store creator to return a new, enhanced store creator." ID="ID_1505326299" CREATED="1522620954862" MODIFIED="1522620961019"/>
+<node TEXT="This is similar to middleware in that it allows you to alter the store interface in a composable way." ID="ID_1996836697" CREATED="1522620973870" MODIFIED="1522620978339"/>
+<node TEXT="Store enhancers are much the same concept as higher-order components in React, which are also occasionally called &#x201c;component enhancers&#x201d;." ID="ID_711336039" CREATED="1522621005653" MODIFIED="1522621008203"/>
+<node TEXT="Because a store is not an instance, but rather a plain-object collection of functions, copies can be easily created and modified without mutating the original store." ID="ID_946320417" CREATED="1522621036829" MODIFIED="1522621040722"/>
+<node TEXT="Most likely you&apos;ll never write a store enhancer, but you may use the one provided by the developer tools. It is what makes time travel possible without the app being aware it is happening. Amusingly, the Redux middleware implementation is itself a store enhancer." ID="ID_1077282299" CREATED="1522621067973" MODIFIED="1522621073546"/>
+</node>
+</node>
+</node>
+<node TEXT="Redux Basic building blogs" ID="ID_399270527" CREATED="1530394479111" MODIFIED="1530394498554">
+<node TEXT="import { createStore } from &apos;redux&apos;;&#xa;&#xa;// Initial Value Store&#xa;var defaultState = {&#xa;   originAmount: &apos;0.00&apos;&#xa;}&#xa;&#xa;// Reducer&#xa;function amount(state = defaultState, action) {&#xa;  &#xa;   if(action.type === &apos;CHANGE_ORIGIN_AMOUNT&apos;){&#xa;&#xa;       //Redux rule: Don&apos;t mutate Store, so use object spread&#xa;       // for immutebility&#xa;&#xa;       return {&#xa;          ...state,&#xa;          originAmount: action.data&#xa;      }&#xa;     &#xa;      //alternativ use Object.assign({}, state, {originAmount: action.data})&#xa;   }&#xa;  &#xa;    return state;   &#xa;}&#xa;&#xa;var store = createStore( amount );&#xa;&#xa;//Subscribe to the store to be informed about updates&#xa;store.subscribe(function() {&#xa;   console.log(&apos;state&apos;, store.getState());&#xa;})&#xa;&#xa;// Action&#xa;store.dispatch({type: &apos;CHANGE_ORIGIN_AMOUNT&apos;, data:&apos;300.65&apos;});&#xa;store.dispatch({type: &apos;&apos;});&#xa;store.dispatch({type: &apos;&apos;});" ID="ID_411863525" CREATED="1530394513038" MODIFIED="1530396292186"/>
+</node>
+<node TEXT="data flow" FOLDED="true" ID="ID_771678683" CREATED="1522621091693" MODIFIED="1522621101490">
+<node TEXT="redux-data-flow.png" ID="ID_141702417" CREATED="1522621130796" MODIFIED="1522621130796">
+<hook URI="webdevelopment2_files/redux-data-flow.png" SIZE="0.94043887" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="resources" FOLDED="true" ID="ID_1596190764" CREATED="1522713315330" MODIFIED="1522713324301">
+<node TEXT="https://github.com/reactjs/redux/tree/master/docs" ID="ID_1366589383" CREATED="1522713333693" MODIFIED="1522713333693" LINK="https://github.com/reactjs/redux/tree/master/docs"/>
+</node>
+</node>
+<node TEXT="Mobx" ID="ID_1204779131" CREATED="1522617485512" MODIFIED="1522617497325"/>
+<node TEXT="Redux VS Mobx" ID="ID_61277757" CREATED="1530386570104" MODIFIED="1530386581571"/>
+</node>
+</node>
+<node TEXT="Atomic Design" ID="ID_756021244" CREATED="1528542693539" MODIFIED="1528542709669">
+<node TEXT="Atomic design is an approach to component design that was popularized by Brad Frost. Describes components with scientific terms." ID="ID_1175621170" CREATED="1529149373733" MODIFIED="1529150637255"/>
+<node TEXT="introduction" FOLDED="true" ID="ID_1481591635" CREATED="1529147550306" MODIFIED="1529147560373">
+<node TEXT="What is Atomic Design?" FOLDED="true" ID="ID_1254152651" CREATED="1529147821960" MODIFIED="1529147851651">
+<node TEXT="It&apos;s a language for describing components written at multiple layers of abstraction." FOLDED="true" ID="ID_369276396" CREATED="1529147951423" MODIFIED="1529147956970">
+<node TEXT="Atoms are the smallest, simplest components. They provide the basic building blocks for larger components." ID="ID_57070719" CREATED="1529149734554" MODIFIED="1529149756598"/>
+<node TEXT="Molecules group two or more atoms together into a larger unit." ID="ID_229049918" CREATED="1529149775946" MODIFIED="1529149783701"/>
+<node TEXT="Organisms are groups of molecules functioning together." ID="ID_1804006738" CREATED="1529149801010" MODIFIED="1529149809773"/>
+<node TEXT="Templates put the components in a layout." ID="ID_915536360" CREATED="1529149827089" MODIFIED="1529149834061"/>
+<node TEXT=" Pages populate templates with real content." ID="ID_1737639022" CREATED="1529149849921" MODIFIED="1529149876717"/>
+</node>
+<node TEXT="Example: Today&apos;s automobiles are composed of literally hundreds of reusable components utilized across multiple models and over many years." FOLDED="true" ID="ID_1935934213" CREATED="1529148167853" MODIFIED="1529148366327">
+<node TEXT=" Consider a pile of car parts." ID="ID_586829021" CREATED="1529148187317" MODIFIED="1529148191320"/>
+<node TEXT=" The spring is the atom. It&apos;s the smallest unit. You can&apos;t break the spring down any further, but the spring combined with the top hat and mount creates a full shock absorber." FOLDED="true" ID="ID_790347058" CREATED="1529148218101" MODIFIED="1529148222096">
+<node TEXT="In atomic design terminology you could call this assembly a molecule. It&apos;s a higher level component." ID="ID_1291622639" CREATED="1529148258197" MODIFIED="1529148258197"/>
+</node>
+<node TEXT="In atomic design terminology you could call this assembly a molecule. It&apos;s a higher level component." FOLDED="true" ID="ID_1318063998" CREATED="1529148256645" MODIFIED="1529148263176">
+<node TEXT="Connect the shock absorber with a trailing arm and hub and you have a basic steering assembly." ID="ID_1824456691" CREATED="1529148310811" MODIFIED="1529148310811"/>
+</node>
+<node TEXT="Connect the shock absorber with a trailing arm and hub and you have a basic steering assembly." ID="ID_956245306" CREATED="1529148309300" MODIFIED="1529148315664"/>
+<node TEXT="In atomic design terms you could call that higher level abstraction an organism." ID="ID_179664045" CREATED="1529148341244" MODIFIED="1529148343399"/>
+</node>
+<node TEXT="Components allow us to stand on the shoulders of giants. See, not long ago we used to think of the entire page as a concern. With server-side development each page would require a full page load, as you navigated from page to page." ID="ID_643057515" CREATED="1529148513443" MODIFIED="1529148580870"/>
+<node TEXT="This caused us to embrace page oriented patterns, like Model, View, Controller." ID="ID_1880926493" CREATED="1529149991648" MODIFIED="1529149997308"/>
+<node TEXT="Atomic Design vs. MVC" FOLDED="true" ID="ID_1506701553" CREATED="1529149903769" MODIFIED="1529149958452">
+<node TEXT="With the popular MVC pattern we&apos;d declare three separate files." FOLDED="true" ID="ID_448415538" CREATED="1529148655202" MODIFIED="1529148659725">
+<node TEXT="The Model would declare the data for the View," ID="ID_988133124" CREATED="1529148676058" MODIFIED="1529148690781"/>
+<node TEXT="The View would declare the markup for our View and the HTML, in the case of the web page" ID="ID_376175601" CREATED="1529148717473" MODIFIED="1529148728525"/>
+<node TEXT="The Controller would contain the logic that ties all this together and responds to events." ID="ID_1276084817" CREATED="1529148761129" MODIFIED="1529148778252"/>
+</node>
+<node TEXT="Now since MVC is a page oriented pattern, when you decide to create a product page you&apos;d typically just create a new model of View and Controller for that new page, so while MVC is a useful pattern, it&apos;s very different than the component-oriented mindset that React proposes." ID="ID_1148524232" CREATED="1529148811521" MODIFIED="1529148816404"/>
+</node>
+<node TEXT=" With React we&apos;ve learned to think of the page as a set of nested components." ID="ID_818865405" CREATED="1529148860792" MODIFIED="1529148864148"/>
+<node TEXT="So atomic design encourages you to think about your UI as a hierarchy of components. Atoms are the building blocks, molecules are a group of atoms, and organisms are a group of molecules." ID="ID_376350959" CREATED="1529149132390" MODIFIED="1529149135914"/>
+<node TEXT="As you move higher up, obviously difficulty goes up and reuse goes down. It&apos;s easier to make a reusable atom than it is to make a reusable organism. Why? Because the surface area is so much greater on an organism." ID="ID_107141990" CREATED="1529149320045" MODIFIED="1529149346568"/>
+<node TEXT="Atomic Design = modular Design" FOLDED="true" ID="ID_1491183905" CREATED="1529150023864" MODIFIED="1529150047779">
+<node TEXT="You might look at this and think, hey, this is simply modular design, and yeah, that&apos;s a popular way to describe this pattern too" ID="ID_406347599" CREATED="1529149493572" MODIFIED="1529149498351"/>
+<node TEXT=" Atomic design simply uses chemistry terms to avoid inventing new jargon for the levels and to make the hierarchy obvious, but the term modular design is popular in other industries, and generally conveys the same philosophy" ID="ID_874679134" CREATED="1529149565595" MODIFIED="1529149570471"/>
+</node>
+</node>
+<node TEXT="Why Atomic Design?" FOLDED="true" ID="ID_196776295" CREATED="1529147852919" MODIFIED="1529147868891">
+<node TEXT="Atomic design is helpful because you consider the project at multiple levels of granularity." ID="ID_689462436" CREATED="1529150190711" MODIFIED="1529150193450"/>
+<node TEXT=" You can dig down deep and focus on a single atom or you can step back and view it at a high level to see how all the atoms, molecules, and organisms come together to form a useful whole." ID="ID_1100407947" CREATED="1529150232783" MODIFIED="1529150235714"/>
+<node TEXT=" Atomic design encourages you to design a component library that contains multiple layers." ID="ID_19930687" CREATED="1529150270662" MODIFIED="1529150274506"/>
+<node TEXT="This mindset encourages reuse because you look at your components at a lower level, and as building blocks for your higher level components." ID="ID_567249058" CREATED="1529150314446" MODIFIED="1529150325690"/>
+<node TEXT="the terminology helpful for conveying the relationships between components, and it&apos;s also useful for conveying intent, much like other programming pattern languages." ID="ID_1130609540" CREATED="1529150471965" MODIFIED="1529150475520"/>
+<node TEXT="If you&apos;re striving to build an atom, than it&apos;s clear that you&apos;re asking for a simple foundational component that will be composed in a variety of ways. You need to consider the breadth of use cases more carefully than if you&apos;re creating a higher level component, which is typically more tailored to a small set of use cases." ID="ID_1737512006" CREATED="1529150517045" MODIFIED="1529150520592"/>
+<node TEXT="Atomic design is a language that conveys a hierarchy of reuse. Your low level components form the foundation for ever higher levels of abstraction." ID="ID_812803841" CREATED="1529150536477" MODIFIED="1529150540176"/>
+</node>
+</node>
+<node TEXT="There are five distinct levels in atomic design" FOLDED="true" ID="ID_221760775" CREATED="1529147791664" MODIFIED="1529147795947">
+<node TEXT="Atomic-design-overview.png" ID="ID_1991803539" CREATED="1529174569323" MODIFIED="1529174569323">
+<hook URI="webdevelopment2_files/Atomic-design-overview.png" SIZE="1.0" NAME="ExternalObject"/>
+</node>
+<node TEXT="Atoms" FOLDED="true" ID="ID_51777376" CREATED="1529141186958" MODIFIED="1529141194418">
+<node TEXT="Introduction" FOLDED="true" ID="ID_132987721" CREATED="1529174323061" MODIFIED="1529174331697">
+<node TEXT="Atoms are the smallest, simplest components. They provide the basic building blocks for larger components." ID="ID_1129444034" CREATED="1529147982214" MODIFIED="1529147983930"/>
+<node TEXT="Atoms are useful when they&apos;re composed together to create bigger, richer, more significant components." ID="ID_1649919308" CREATED="1529174213902" MODIFIED="1529174222546"/>
+<node TEXT="You can&apos;t break an atom down any farther. It&apos;s the basic building block for creating larger components, and since they&apos;re foundational atoms often demonstrate and encapsulate your application&apos;s basic styles." ID="ID_167558539" CREATED="1529174285750" MODIFIED="1529174290465"/>
+<node TEXT="The HTML specification includes many atoms like the button that you see here, but as you&apos;ll see, you&apos;re free to wrap HTML elements and enhance their behavior." ID="ID_1814296734" CREATED="1529174304102" MODIFIED="1529174315081"/>
+</node>
+<node TEXT="Key Decisions when designing Atoms" FOLDED="true" ID="ID_82895992" CREATED="1529174358589" MODIFIED="1529174848549">
+<node TEXT="Wrap HTML Primitives?" FOLDED="true" ID="ID_483813521" CREATED="1529174862234" MODIFIED="1529174866301">
+<node TEXT="When you begin creating atoms you need to decide how low level to go." ID="ID_949083710" CREATED="1529174903097" MODIFIED="1529174905741"/>
+<node TEXT="Does it make sense to wrap HTML primitives as your atoms?" ID="ID_1311359349" CREATED="1529174951073" MODIFIED="1529174990103"/>
+<node TEXT=" Yes it is, and here&apos;s why." FOLDED="true" ID="ID_1687170817" CREATED="1529174991257" MODIFIED="1529175208586">
+<node TEXT="HTML primitives lack a number of built-in options that you&apos;re likely to have in a real application." ID="ID_791659484" CREATED="1529175016189" MODIFIED="1529175016189"/>
+<node TEXT="Potential HTML Primitive Enhancements" FOLDED="true" ID="ID_149811055" CREATED="1529175025056" MODIFIED="1529175048804">
+<node TEXT="Integrated label" FOLDED="true" ID="ID_500603852" CREATED="1529175060136" MODIFIED="1529175068468">
+<node TEXT="You can integrate a label that properly applies the necessary classes and sets a for attribute on the element that corresponds to the inputs ID element." ID="ID_521899031" CREATED="1529175282215" MODIFIED="1529175287458"/>
+</node>
+<node TEXT="Unique element ID" FOLDED="true" ID="ID_1454604035" CREATED="1529175069656" MODIFIED="1529175082092">
+<node TEXT="You can generate a globally unique ID for the input by creating a centralized function that just increments a number when called, and then map that label and input together using the htmlFor attribute." ID="ID_1157759473" CREATED="1529175365774" MODIFIED="1529175369730"/>
+</node>
+<node TEXT="Required field marker" FOLDED="true" ID="ID_1876298197" CREATED="1529175082920" MODIFIED="1529175099187">
+<node TEXT="You can enforce a consistent visual indicator for a required field, such as a red asterisk to the right of the label." ID="ID_146030875" CREATED="1529175399974" MODIFIED="1529175404881"/>
+</node>
+<node TEXT="Default value / placeholder" FOLDED="true" ID="ID_1387323022" CREATED="1529175100896" MODIFIED="1529175115619">
+<node TEXT="You can set a placeholder value by convention using the label value, and you can also set a default value consistently on dropdowns." ID="ID_1240427359" CREATED="1529175435342" MODIFIED="1529175440385"/>
+</node>
+<node TEXT="Horizontal and vertical layout" FOLDED="true" ID="ID_525982208" CREATED="1529175117416" MODIFIED="1529175157603">
+<node TEXT=" You can enforce either horizontal or vertical layout for each field or make selecting either as simple as setting a prop." ID="ID_631095127" CREATED="1529175466621" MODIFIED="1529175473081"/>
+</node>
+<node TEXT="Error messaging" FOLDED="true" ID="ID_189689762" CREATED="1529175158592" MODIFIED="1529175168619">
+<node TEXT="You can integrate error messaging below or beside the component, depending on the selected layout." ID="ID_1227543026" CREATED="1529175501733" MODIFIED="1529175501733"/>
+</node>
+<node TEXT="Touched, dirty meta data" FOLDED="true" ID="ID_840963255" CREATED="1529175169647" MODIFIED="1529175183099">
+<node TEXT=" You can build in metadata about whether it&apos;s been touched or is dirty, so that parent components can check for any dirty child components." ID="ID_1156514232" CREATED="1529175535693" MODIFIED="1529175539736"/>
+</node>
+<node TEXT="Polyfill older browsers" FOLDED="true" ID="ID_1538504741" CREATED="1529175551461" MODIFIED="1529175566368">
+<node TEXT="You can even include polyfills for older browsers that lack support for native features like input types of number." ID="ID_269750874" CREATED="1529175612413" MODIFIED="1529175612413"/>
+</node>
+<node TEXT="All these items are manual, redundant, and error-prone actions without reusable components, so it&apos;s worth taking the time to create these abstractions to codify standards." ID="ID_35277833" CREATED="1529175685188" MODIFIED="1529175690271"/>
+</node>
+<node TEXT="Every opinion that you encapsulate in a component is one less decision that your team has to make, and one more feature that you can manage in a single spot." ID="ID_283094345" CREATED="1529175755779" MODIFIED="1529175760015"/>
+<node TEXT="HTML&apos;s basic elements aren&apos;t even named well, so you can consider abstracting them with more useful names." FOLDED="true" ID="ID_61483985" CREATED="1529175820403" MODIFIED="1529175825070">
+<node TEXT="You could wrap input with a type of text and call it TextInput. You could do the same with a checkbox and call it Checkbox." ID="ID_1263210623" CREATED="1529175847645" MODIFIED="1529175847645"/>
+<node TEXT="You could wrap a select and call it what it is, a Dropdown." ID="ID_1783695500" CREATED="1529175858299" MODIFIED="1529175864511"/>
+<node TEXT="You could even wrap a set of radio buttons into a radio button list or you could go even farther and create a single component that handles both radio button lists and dropdowns called PickOneFromList." ID="ID_112405314" CREATED="1529175935482" MODIFIED="1529175939854"/>
+</node>
+</node>
+</node>
+<node TEXT="Folder Structure" FOLDED="true" ID="ID_535375462" CREATED="1529176005354" MODIFIED="1529176009445">
+<node TEXT="What Belongs in the components folder ?" FOLDED="true" ID="ID_1751222903" CREATED="1529177069634" MODIFIED="1529177199461">
+<node TEXT="Every Component in an extra folder?" ID="ID_158051952" CREATED="1529178281858" MODIFIED="1529178301749"/>
+<node TEXT="Styles?" ID="ID_1707106026" CREATED="1529178307449" MODIFIED="1529178319117"/>
+<node TEXT="Tests?" ID="ID_1448692724" CREATED="1529178320561" MODIFIED="1529178328733"/>
+<node TEXT="index.js for shorter imports and default themes ?" ID="ID_1512433942" CREATED="1529178329889" MODIFIED="1529178379956"/>
+<node TEXT="Docs" ID="ID_1961235194" CREATED="1529178398201" MODIFIED="1529178406316"/>
+</node>
+<node TEXT=" Let&apos;s review the folder structures for the five most popular React component libraries." FOLDED="true" ID="ID_725915684" CREATED="1529177332840" MODIFIED="1529177336787">
+<node TEXT="React Bootstrap" FOLDED="true" ID="ID_151401202" CREATED="1529177436288" MODIFIED="1529177445515">
+<node TEXT="Has the simplest setup." ID="ID_1422281981" CREATED="1529177559327" MODIFIED="1529177597250"/>
+<node ID="ID_699545330" CREATED="1529177606104" MODIFIED="1529177606104"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      All components are placed together in a single folder, and other concerns are handled elsewhere.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="overview" FOLDED="true" ID="ID_1424621571" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components:" ID="ID_636007970" CREATED="1529178584991" MODIFIED="1529178669594"/>
+<node TEXT="Style: NO" ID="ID_1853533149" CREATED="1529178602935" MODIFIED="1529178805369"/>
+<node TEXT="Tests: NO" ID="ID_1406530680" CREATED="1529178625359" MODIFIED="1529178811705"/>
+<node TEXT="Theme: NO" ID="ID_1046190546" CREATED="1529178634519" MODIFIED="1529178819682"/>
+<node TEXT="Docs: NO" ID="ID_1516502216" CREATED="1529178641183" MODIFIED="1529178831833"/>
+<node TEXT="Demo: NO" ID="ID_1946350376" CREATED="1529178647111" MODIFIED="1529178839281"/>
+<node TEXT="index.js: NO" ID="ID_876336249" CREATED="1529178653191" MODIFIED="1529178845713"/>
+</node>
+</node>
+<node TEXT="Blueprint" FOLDED="true" ID="ID_357343307" CREATED="1529177455463" MODIFIED="1529177462988">
+<node TEXT="Blueprint places styles that are written in SASS alongside the component." ID="ID_216188936" CREATED="1529177695748" MODIFIED="1529177695748"/>
+<node TEXT="overview" FOLDED="true" ID="ID_36595395" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components: YES" ID="ID_413951957" CREATED="1529178584991" MODIFIED="1529178873537"/>
+<node TEXT="Style: YES" ID="ID_1533651997" CREATED="1529178602935" MODIFIED="1529178882593"/>
+<node TEXT="Tests: NO" ID="ID_1789282162" CREATED="1529178625359" MODIFIED="1529178890577"/>
+<node TEXT="Theme: NO" ID="ID_1019676952" CREATED="1529178634519" MODIFIED="1529178895561"/>
+<node TEXT="Docs: NO" ID="ID_214984670" CREATED="1529178641183" MODIFIED="1529178904993"/>
+<node TEXT="Demo: NO" ID="ID_110719293" CREATED="1529178647111" MODIFIED="1529178911191"/>
+<node TEXT="index.js: NO" ID="ID_1639833554" CREATED="1529178653191" MODIFIED="1529178923137"/>
+</node>
+</node>
+<node TEXT="Material-UI" FOLDED="true" ID="ID_1311385564" CREATED="1529177463943" MODIFIED="1529177479443">
+<node TEXT=" Material-UI uses inline style, so there&apos;s no separate style file, but Material-UI does place the components tests in the same folder as the component." ID="ID_195761538" CREATED="1529177727581" MODIFIED="1529177730073"/>
+<node TEXT="Material-UI also provides an index.js file to keep component import short." ID="ID_848874166" CREATED="1529177778892" MODIFIED="1529177778892"/>
+<node TEXT="overview" FOLDED="true" ID="ID_990453234" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components: YES" ID="ID_1330704445" CREATED="1529178584991" MODIFIED="1529178953993"/>
+<node TEXT="Style: Inline" ID="ID_823833814" CREATED="1529178602935" MODIFIED="1529178994648"/>
+<node TEXT="Tests: YES" ID="ID_617989748" CREATED="1529178625359" MODIFIED="1529179004256"/>
+<node TEXT="Theme: NO" ID="ID_1719416019" CREATED="1529178634519" MODIFIED="1529179012056"/>
+<node TEXT="Docs: NO" ID="ID_1501905224" CREATED="1529178641183" MODIFIED="1529179023264"/>
+<node TEXT="Demo: NO" ID="ID_735959570" CREATED="1529178647111" MODIFIED="1529179029120"/>
+<node TEXT="index.js: YES" ID="ID_47233438" CREATED="1529178653191" MODIFIED="1529179039800"/>
+</node>
+</node>
+<node TEXT="React Toolbox" FOLDED="true" ID="ID_865205935" CREATED="1529177480599" MODIFIED="1529177488859">
+<node TEXT="React Toolbox also declares an index.ts file, which provides enhanced autocompletion support for editors." ID="ID_1539047867" CREATED="1529177817600" MODIFIED="1529177817600"/>
+<node TEXT="This is a handy convention to consider, and you don&apos;t have to write your component in TypeScript for your users to enjoy this benefit." ID="ID_1556485614" CREATED="1529177873217" MODIFIED="1529177873217"/>
+<node TEXT="React Toolbox also places docs alongside this component, as well as a default theme that can be overridden." ID="ID_37891646" CREATED="1529177900639" MODIFIED="1529177900639"/>
+<node TEXT="overview" FOLDED="true" ID="ID_37045489" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components: YES" ID="ID_205191253" CREATED="1529178584991" MODIFIED="1529179057800"/>
+<node TEXT="Style: YES" ID="ID_1076104286" CREATED="1529178602935" MODIFIED="1529179067823"/>
+<node TEXT="Tests: NO" ID="ID_1653498925" CREATED="1529178625359" MODIFIED="1529179076631"/>
+<node TEXT="Theme: YES" ID="ID_923219091" CREATED="1529178634519" MODIFIED="1529179092743"/>
+<node TEXT="Docs: YES" ID="ID_682526275" CREATED="1529178641183" MODIFIED="1529179104103"/>
+<node TEXT="Demo: NO" ID="ID_94917855" CREATED="1529178647111" MODIFIED="1529179117599"/>
+<node TEXT="index.js: YES" ID="ID_372409619" CREATED="1529178653191" MODIFIED="1529179137031"/>
+</node>
+</node>
+<node TEXT="Ant Design" FOLDED="true" ID="ID_1199932647" CREATED="1529177491567" MODIFIED="1529177499122">
+<node TEXT="Ant Design is the one library on this list that uses TypeScript instead of plan JavaScript" ID="ID_1175662891" CREATED="1529177933874" MODIFIED="1529177933874"/>
+<node TEXT="The Ant Design team places tests and demos in a subfolder for each component." ID="ID_991550556" CREATED="1529177953816" MODIFIED="1529177953816"/>
+<node TEXT="They also keep docs and markdown format within a markdown folder. It&apos;s easier to see the commonalities and differences in a table." ID="ID_414927005" CREATED="1529178013395" MODIFIED="1529178013395"/>
+<node TEXT="overview" FOLDED="true" ID="ID_1813732394" CREATED="1529178695991" MODIFIED="1529178702106">
+<node TEXT="Folder per components: YES" ID="ID_781855625" CREATED="1529178584991" MODIFIED="1529179156175"/>
+<node TEXT="Style: YES" ID="ID_779917905" CREATED="1529178602935" MODIFIED="1529179163895"/>
+<node TEXT="Tests: YES" ID="ID_188173725" CREATED="1529178625359" MODIFIED="1529179212270"/>
+<node TEXT="Theme: NO" ID="ID_97856606" CREATED="1529178634519" MODIFIED="1529179150487"/>
+<node TEXT="Docs: YES" ID="ID_1498093040" CREATED="1529178641183" MODIFIED="1529179216807"/>
+<node TEXT="Demo: YES" ID="ID_14490089" CREATED="1529178647111" MODIFIED="1529179224294"/>
+<node TEXT="index.js: YES" ID="ID_1055413848" CREATED="1529178653191" MODIFIED="1529179233654"/>
+</node>
+</node>
+</node>
+<node TEXT="Verdict" FOLDED="true" ID="ID_1777940915" CREATED="1529178029083" MODIFIED="1529178034807">
+<node TEXT="Four of the top five most popular React component libraries place each component in their own folder." ID="ID_1887660003" CREATED="1529178053005" MODIFIED="1529178053005"/>
+<node TEXT="Most projects also place the component styles in the components folder" ID="ID_1662827555" CREATED="1529178085611" MODIFIED="1529178085611"/>
+<node TEXT=" Ant and Material-UI place tests alongside the component." ID="ID_348239516" CREATED="1529178108467" MODIFIED="1529178112550"/>
+<node TEXT="Only React Toolbox declares a separate default theme in a dedicated file." ID="ID_1869074181" CREATED="1529178152575" MODIFIED="1529181184880">
+<font ITALIC="false"/>
+</node>
+<node TEXT="React Toolbox and Ant Design both place documentation in the component folder." ID="ID_468666355" CREATED="1529178168440" MODIFIED="1529178168440"/>
+</node>
+</node>
+</node>
+<node TEXT="Design Tips" FOLDED="true" ID="ID_983821651" CREATED="1529174381890" MODIFIED="1529174392344">
+<node TEXT="1: Honor the Native API" FOLDED="true" ID="ID_397414011" CREATED="1529176164392" MODIFIED="1529176169100">
+<node TEXT="When you&apos;re augmenting a DOM element with some extra behavior it&apos;s important to honor the DOM API for the element that you&apos;re wrapping." ID="ID_392377970" CREATED="1529179758874" MODIFIED="1529179758874"/>
+<node TEXT="Input elements have a value attribute. They have an onChange handler, they accept maxLength." ID="ID_487604852" CREATED="1529179799430" MODIFIED="1529179799430"/>
+<node TEXT="When you&apos;re wrapping an element strive to use the same prop names as the underlying element." ID="ID_370399707" CREATED="1529179853946" MODIFIED="1529179853946"/>
+<node TEXT="This makes your component feel instantly familiar, so our wrapper should honor the same API," ID="ID_265104446" CREATED="1529179899907" MODIFIED="1529179899907"/>
+<node TEXT="const passwordInput({value, maxLength}) =&gt; {&#xa;   &lt;input&#xa;      type=&quot;password&quot;&#xa;      value={value}&#xa;      maxLength={maxLength} /&gt;&#xa;}" ID="ID_342953689" CREATED="1529179991334" MODIFIED="1529180120624">
+<font ITALIC="true"/>
+</node>
+<node TEXT="and as a quick side note, for array props we should avoid needless suffixes like list. Instead, use plurals. Plurals are concise, but they clearly convey that you&apos;re working with an array." ID="ID_1788043404" CREATED="1529179961591" MODIFIED="1529179961591"/>
+</node>
+<node TEXT="2: Pass Props via Spread" FOLDED="true" ID="ID_1884154553" CREATED="1529180186257" MODIFIED="1529180186257">
+<node TEXT="allow passing additional props down via the spread operator." ID="ID_872387079" CREATED="1529180208252" MODIFIED="1529180208252"/>
+<node TEXT="The spread operator was introduced in ES6, and consists of three dots that proceed the object whose properties you&apos;d like to spread." ID="ID_525211064" CREATED="1529180368219" MODIFIED="1529180373534"/>
+<node TEXT="When declaring reusable components that wrap HTML primitives, such as inputs, it&apos;s often helpful to pass any other props specified down to the primitive." ID="ID_549884997" CREATED="1529180238103" MODIFIED="1529180238103"/>
+<node TEXT="return (&#xa;   &lt;div&gt;&#xa;      &lt;input type=&quot;password&quot; {...this.props}&gt;&lt;/input&gt;&#xa;)" ID="ID_635391403" CREATED="1529180385419" MODIFIED="1529180456797">
+<font ITALIC="true"/>
+</node>
+<node TEXT="WATCH OUT. React makes sure that the props being attached are valid for the HTML element, so if you blindly spread all props passed in to a child component you may receive a warning about attaching invalid props." ID="ID_1316922216" CREATED="1529180522266" MODIFIED="1529180537661"/>
+</node>
+<node TEXT="3: Use Spread with Destructuring" FOLDED="true" ID="ID_1967235658" CREATED="1529180632210" MODIFIED="1529180632210">
+<node TEXT="You can combine the rest operator with destructuring to easily create an object that contains a subset of all the props that were passed in." ID="ID_1994065379" CREATED="1529180672380" MODIFIED="1529180672380"/>
+<node TEXT="This is useful when you only want to pass a few props down to a child component." ID="ID_382489252" CREATED="1529180696730" MODIFIED="1529180696730"/>
+<node TEXT="it&apos;s important to avoid forwarding non-DOM props to composed components." ID="ID_1904332566" CREATED="1529180859853" MODIFIED="1529180859853"/>
+<node TEXT="Destructuring makes this very easy because you can create a new props object that omits specific props, so in this example the rest variable will not contain the name prop because the name prop was destructured separately." ID="ID_1198492698" CREATED="1529180902844" MODIFIED="1529180902844"/>
+<node TEXT="const Hello = ({name, ...rest}) =&gt; {&#xa;   &lt;div {...rest}&gt;Hi {name}! &lt;/div&gt;&#xa;}&#xa;&#xa;//So ...rest won&apos;t have a name property since it was&#xa;//destructured on the line above" ID="ID_1073043145" CREATED="1529180993335" MODIFIED="1529181188416">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="4: Create Formatting Components" FOLDED="true" ID="ID_1584420986" CREATED="1529183353126" MODIFIED="1529183353126">
+<node TEXT="People typically think of React components as little reusable pieces of HTML, but keep in mind that you can also create atoms that are solely oriented to formatting." ID="ID_1571203499" CREATED="1529183379391" MODIFIED="1529183379391"/>
+<node TEXT="For example, you could create a cash component that formats whatever is inside with a leading currency sign, a decimal, and two trailing 0&apos;s if none are provided." ID="ID_1596735686" CREATED="1529183406864" MODIFIED="1529183406864"/>
+<node TEXT="You could add props for handling different scenarios, like whether to show the decimal, whether to round up to the nearest dollar, the currency type, and so on" ID="ID_1764989613" CREATED="1529183514864" MODIFIED="1529183514864"/>
+<node TEXT="Some people would prefer to create a utility function to handle such a thing, but this declarative style reads well, and just like a utility function, it encapsulates and centralizes the relevant logic and styles for reuse, and like any other React component, it&apos;s composable." ID="ID_1608471208" CREATED="1529183559053" MODIFIED="1529183559053"/>
+</node>
+</node>
+</node>
+<node TEXT="Molecules" FOLDED="true" ID="ID_1134286962" CREATED="1529141214726" MODIFIED="1529141223018">
+<node TEXT="What&apos;s a Molecule?" FOLDED="true" ID="ID_66760989" CREATED="1529252491364" MODIFIED="1529252491364">
+<node TEXT="In atomic design terms molecules are multiple atomic components composed together to serve a higher purpose." ID="ID_915445508" CREATED="1529252337781" MODIFIED="1529252337781"/>
+<node TEXT="They&apos;re still relatively simple, but molecules compose atoms into a single component." ID="ID_1997663572" CREATED="1529252367102" MODIFIED="1529252367102"/>
+<node TEXT="Gluing atoms together creates a simple, functional, and reusable component." ID="ID_718329299" CREATED="1529252387105" MODIFIED="1529252387105"/>
+<node TEXT="Molecules should also have a single (but higher level) responsibility" ID="ID_1609372058" CREATED="1529253148479" MODIFIED="1529253182642"/>
+</node>
+<node TEXT="Single responsibility principle" FOLDED="true" ID="ID_988205071" CREATED="1529252507556" MODIFIED="1529252544204">
+<node TEXT="single responsibility principle of atoms applies to molecules as well." ID="ID_1358845076" CREATED="1529252589613" MODIFIED="1529252824248"/>
+<node TEXT="The difference is since a molecule is a higher level abstraction the single responsibility is a higher level responsibility, but a well-designed molecule should still strive to do one thing well." ID="ID_97201125" CREATED="1529252624750" MODIFIED="1529252624750"/>
+<node TEXT="Although a molecule is composed of multiple atoms, they should be composed together strategically to handle a clear, distinct responsibility." ID="ID_1006721455" CREATED="1529252665508" MODIFIED="1529252665508"/>
+<node TEXT="This helps assure that the molecule is easy to understand, consume, and compose with other molecules into higher level organisms." ID="ID_495907923" CREATED="1529252790311" MODIFIED="1529252790311"/>
+<node TEXT="The point is, two molecules can look and behave quite differently, even though they&apos;re composed of many of the same components, but keep in mind when atoms are combined they take on a specific purpose." ID="ID_274183721" CREATED="1529252884570" MODIFIED="1529252884570"/>
+</node>
+</node>
+<node TEXT="Organisms" FOLDED="true" ID="ID_806259813" CREATED="1529141223590" MODIFIED="1529141242122">
+<node TEXT="What&apos;s an Organism?&apos;" FOLDED="true" ID="ID_132999812" CREATED="1529259894025" MODIFIED="1529259894025">
+<node TEXT="Just like molecules are composed of atoms, organisms are composed of molecules." ID="ID_1441912341" CREATED="1529259932090" MODIFIED="1529259932090"/>
+<node TEXT="An organism is more complex than a molecule because it composes molecules and other atoms together into a higher level abstraction." ID="ID_1776958429" CREATED="1529259947764" MODIFIED="1529259947764"/>
+<node TEXT="This typically results in a UI component that handles a section of the screen." ID="ID_1294837535" CREATED="1529260083823" MODIFIED="1529260083823"/>
+<node TEXT="Sometimes an organism or molecule can implement the fa&#xe7;ade pattern." FOLDED="true" ID="ID_1753763694" CREATED="1529260174821" MODIFIED="1529260174821">
+<node TEXT="The fa&#xe7;ade pattern abstracts away a more complex API by providing a simpler, more course grained API" ID="ID_35341147" CREATED="1529260194623" MODIFIED="1529260194623"/>
+<node TEXT="For example, an atom might accept a dozen props to support a wide variety of use cases. You can consider creating a molecule or organism that hard codes in many of these settings, and thus provides a clear, reusable component that serves a specific use case." ID="ID_136125668" CREATED="1529260223184" MODIFIED="1529260231872"/>
+</node>
+</node>
+<node TEXT="Design Tips" FOLDED="true" ID="ID_225922810" CREATED="1529259976294" MODIFIED="1529260056393">
+<node TEXT="1: Strong Opinions Are a Feature" FOLDED="true" ID="ID_1139903121" CREATED="1529260264486" MODIFIED="1529260264486">
+<node TEXT="Organisms, by their very nature, abstract away the underlying components, so when you create reusable organisms you have to decide what props you&apos;d like to expose from your underlying components." ID="ID_1597828983" CREATED="1529260467750" MODIFIED="1529260467750"/>
+<node TEXT="Take a Passwordmolecule for example, It offers a long list of props to make it configurable, including the label, the onChange handler, the maxLength, and the minLength, the input placeholder, and toggles for it&apos;s advanced features like the VisibilityToggle and the quality indicator." ID="ID_356651358" CREATED="1529260525605" MODIFIED="1529260572637"/>
+<node TEXT="Imagine that I&apos;m going to create a registration form organism and use the PasswordInput component inside. I need to decide which of these configurations I want to expose, and there&apos;s no right answer here." ID="ID_407276942" CREATED="1529260625375" MODIFIED="1529260635133"/>
+<node TEXT="Context matters, but keep in mind that organisms often contain many components below, so if you choose to expose all of the child components props your organisms API will become very complex, so strive to limit the props that you expose from your underlying components." ID="ID_1700052517" CREATED="1529260689627" MODIFIED="1529260689627"/>
+<node TEXT="So why limit props?" FOLDED="true" ID="ID_1790714331" CREATED="1529260718693" MODIFIED="1529260718693">
+<node TEXT="Because strong opinions are a feature, not a bug." ID="ID_1592440960" CREATED="1529260736851" MODIFIED="1529260736851"/>
+<node TEXT="1. Strong opinions enforce consistency." ID="ID_1981568572" CREATED="1529260747917" MODIFIED="1529261032289"/>
+<node TEXT="2. They lead to a smaller API for your component." ID="ID_610755681" CREATED="1529260768814" MODIFIED="1529261051565"/>
+<node TEXT="3. This makes the organism easier to understand, and few props help assure that the organism has a single, clear purpose." ID="ID_484173434" CREATED="1529260791558" MODIFIED="1529261059641"/>
+<node TEXT="4. A component with too many props can become so flexible that it&apos;s difficult to understand its core purpose or use case." ID="ID_1453833237" CREATED="1529260821990" MODIFIED="1529261074289"/>
+<node TEXT="5. Fewer props also reduce the surface area that you need to test" ID="ID_113711270" CREATED="1529260838087" MODIFIED="1529261092577"/>
+<node TEXT="A component that accepts dozens of props requires a great deal of testing to cover all of the potential permutations." ID="ID_95060829" CREATED="1529260874655" MODIFIED="1529260874655"/>
+</node>
+<node TEXT="When it comes to organisms, strong opinions are a feature. You don&apos;t need to expose all the props of your atoms and molecules. Much like any feature, it&apos;s easy to add a prop later, but it&apos;s hard to remove a prop later because it will create a breaking change, and potentially upset your users." ID="ID_1642291482" CREATED="1529260925178" MODIFIED="1529261024901"/>
+</node>
+<node TEXT="2: Keep Organisms Dumb" FOLDED="true" ID="ID_413302978" CREATED="1529260296553" MODIFIED="1529260296553">
+<node TEXT="Do not turn your organisms into mini applications." ID="ID_1401290648" CREATED="1529261177471" MODIFIED="1529261177471"/>
+<node TEXT="Try to create dumb organisms. Just like your atoms and molecules, organisms should typically be simple functions that take props, and output HTML. Avoid creating autonomous mini applications." ID="ID_1434778507" CREATED="1529261212130" MODIFIED="1529261212130"/>
+<node TEXT="However, it can be useful to create container components to save people time." FOLDED="true" ID="ID_493399290" CREATED="1529261242972" MODIFIED="1529261242972">
+<node TEXT="Container components handle state and logic and typically contain very little markup." ID="ID_1868570707" CREATED="1529261258815" MODIFIED="1529261258815"/>
+<node TEXT="They delegate markup handling to dumb child components." ID="ID_1629281950" CREATED="1529261275326" MODIFIED="1529261275326"/>
+<node TEXT="This helps separate concerns, and assures that your dumb components are easily testable in isolation because they&apos;re simple, pure components that accept input and return HTML" ID="ID_1206657857" CREATED="1529261308077" MODIFIED="1529261308077"/>
+</node>
+<node TEXT="Example" FOLDED="true" ID="ID_1502952311" CREATED="1529261756848" MODIFIED="1529261766699">
+<node TEXT="Imagine that I tried to build YouTube using the atomic design philosophy." ID="ID_1077065582" CREATED="1529261844505" MODIFIED="1529261844505"/>
+<node TEXT="Imagine that the header is an organism, and the comments section is its own organism." ID="ID_1761836029" CREATED="1529261866489" MODIFIED="1529261866489"/>
+<node TEXT="Notice how the headshot is displayed in both the header and the comments section because I&apos;m logged in." ID="ID_1322920216" CREATED="1529261892328" MODIFIED="1529261905258"/>
+<node TEXT="Each of these organisms should be dumb, so for example, they shouldn&apos;t have any API calls baked in." ID="ID_1280696159" CREATED="1529261954194" MODIFIED="1529261954194"/>
+<node TEXT="Instead, they should be treated like any other reusable function. They should be passed the data that they need." ID="ID_1018349188" CREATED="1529261984707" MODIFIED="1529261993849"/>
+<node TEXT="This avoids making redundant API calls to get the same data." ID="ID_1863997382" CREATED="1529262013548" MODIFIED="1529262013548"/>
+<node TEXT="f each organism only cares about itself, then there would be two API calls to retrieve the URL from my photo. Not good." ID="ID_167302732" CREATED="1529262050154" MODIFIED="1529262050154"/>
+<node TEXT="There are other issues as well. If I change the photo, then both of these organisms would need to reflect the change, but if each component only cares about itself how do I assure that both organisms are updated when I change the picture?" ID="ID_90969138" CREATED="1529262084897" MODIFIED="1529262115337"/>
+<node TEXT="And if each organism bakes in knowledge about how to make API calls I&apos;m also at risk for sending down duplicate logic in two different JavaScript files, which wastes bandwidth, slows page load, and increases memory pressure." ID="ID_19421193" CREATED="1529264899039" MODIFIED="1529264899039"/>
+</node>
+<node TEXT="Let&apos;s review the issues I just discussed about creating smart organisms." FOLDED="true" ID="ID_475412109" CREATED="1529264985275" MODIFIED="1529264985275">
+<node TEXT="When creating reusable components it can be tempting to create smart reusable components that know how to handle authentication, API calls, authorization, and so on." ID="ID_925652900" CREATED="1529265002250" MODIFIED="1529265002250"/>
+<node TEXT="Some people call the pattern mini apps." ID="ID_1869776247" CREATED="1529265019167" MODIFIED="1529265019167"/>
+<node TEXT="If you create a few rich organisms that are smart enough to completely handle two separate portions of the same page, what happens when the same data is displayed in two places?" ID="ID_1465414332" CREATED="1529265121614" MODIFIED="1529265121614"/>
+<node TEXT="If each component merely cares about itself, then how do these two stay in sync?" ID="ID_792598967" CREATED="1529265164368" MODIFIED="1529265164368"/>
+<node TEXT="That&apos;s the applications job, so don&apos;t let an overly opinionated and complex organism compromise your applications architecture." ID="ID_434588366" CREATED="1529265185516" MODIFIED="1529265185516"/>
+<node TEXT="Smart organisms often lead to over fetching." FOLDED="true" ID="ID_1590851398" CREATED="1529265202236" MODIFIED="1529265202236">
+<node TEXT="When each component is only worried about itself you&apos;re likely to request the same data in multiple places" ID="ID_1625358361" CREATED="1529265235622" MODIFIED="1529265235622"/>
+<node TEXT="That&apos;s the fundamental problem with creating smart, organism style components." ID="ID_239341687" CREATED="1529265258059" MODIFIED="1529265258059"/>
+</node>
+<node TEXT="An application needs to be designed holistically, but the smart organism mindset leads to composing a number of self-centered components together, which leads to poor performance and wasteful design." ID="ID_444526844" CREATED="1529265302850" MODIFIED="1529265302850"/>
+<node TEXT="Smart organisms may embed API, authentication, and other cross cutting concerns inside." FOLDED="true" ID="ID_764961661" CREATED="1529265372278" MODIFIED="1529265372278">
+<node TEXT="This could lead to your users downloading the same code in multiple JavaScript bundles, which will slow page loads and waste bandwidth." ID="ID_209521464" CREATED="1529265400466" MODIFIED="1529265400466"/>
+</node>
+<node TEXT="Ironically, smart organisms often lead to tight coupling, since you need organisms to operate as a cohesive whole in a real application, you may have to tightly integrate two separate components to get them to act as a single unit." ID="ID_741690837" CREATED="1529265438958" MODIFIED="1529265438958"/>
+<node TEXT="This integration is brittle, and it makes it difficult to change the organism later." ID="ID_759074204" CREATED="1529265488591" MODIFIED="1529265488591"/>
+</node>
+<node TEXT="So think of atoms, molecules, and organisms in the same way." ID="ID_689066640" CREATED="1529265508139" MODIFIED="1529265508139"/>
+<node TEXT="They&apos;re generally dumb, reusable components that take some parameters and return HTML." ID="ID_792743131" CREATED="1529265549787" MODIFIED="1529265549787"/>
+<node TEXT="Keep them simple. Think of them as reusable UI, and avoid turning organisms into miniature applications. Organisms are fundamentally the same thing as an atom." ID="ID_1046708784" CREATED="1529265597527" MODIFIED="1529265597527"/>
+<node TEXT="The difference is that organisms return larger chunks of HTML by composing many child components together in an opinionated and useful way." ID="ID_220540754" CREATED="1529265614578" MODIFIED="1529265614578"/>
+</node>
+</node>
+</node>
+<node TEXT="Templates" ID="ID_140867606" CREATED="1529141242990" MODIFIED="1529141249378"/>
+<node TEXT="Pages" ID="ID_243608908" CREATED="1529141250510" MODIFIED="1529141259185"/>
+</node>
+<node TEXT="Design Tips" FOLDED="true" ID="ID_189614175" CREATED="1529141795986" MODIFIED="1529141829173">
+<node TEXT="1. Avoid Weak wrapper elements" FOLDED="true" ID="ID_1751468020" CREATED="1529141891881" MODIFIED="1529144215389">
+<node TEXT="You can&apos;t put a &lt;div&gt; in a p, because it&apos;s invalid html" ID="ID_1467284195" CREATED="1529141927809" MODIFIED="1529141989972"/>
+<node TEXT="//Avoid&#xa;&#xa;&lt;p&gt;&#xa;    {children}&#xa;&lt;/p&gt;" ID="ID_921155151" CREATED="1529141999056" MODIFIED="1529142174356">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Use more flexible Containers like a &lt;div&gt;" ID="ID_129453582" CREATED="1529142045768" MODIFIED="1529142086756"/>
+<node TEXT="// prefer&#xa;&#xa;&lt;div&gt;&#xa;    {children}&#xa;&lt;/div&gt;" ID="ID_789792209" CREATED="1529142109520" MODIFIED="1529143980582">
+<font ITALIC="false"/>
+</node>
+</node>
+<node TEXT="2. Specify PropTypes" FOLDED="true" ID="ID_925205942" CREATED="1529142212495" MODIFIED="1529144221597">
+<node TEXT="PropTypes are especially useful for reusable components, so make sure you consistently define PropTypes for all of your components" ID="ID_836185227" CREATED="1529142554573" MODIFIED="1529142557952"/>
+<node TEXT="It&apos;s recommend enforcing this via linting" ID="ID_1758890710" CREATED="1529142607700" MODIFIED="1529142624840"/>
+<node TEXT="PropTypes clarify your component&apos;s API." ID="ID_208181681" CREATED="1529142645084" MODIFIED="1529142649608"/>
+<node TEXT="They make your expectations for props, including data types and required fields explicit, and when invalid or missing prop types occur React will generate a runtime warning" ID="ID_1849123065" CREATED="1529142743611" MODIFIED="1529142748103"/>
+<node TEXT="YourMom.propTypes = {&#xa;&#xa;   /** Importance, on a 1 - 10 scale */&#xa;   importance:PropTypes.number.isRequired,&#xa;&#xa;   /** Importance, on a 1 - 10 scale */&#xa;   cookies: PropTypes.number.isRequired&#xa;&#xa;  &#xa;   // Declare user object shape via propTypes&#xa;   user: PropTypes.shape({&#xa;      name: PropTypes.string,&#xa;      age: PropTypes.number,&#xa;   }),&#xa;}" ID="ID_1843537055" CREATED="1529142794323" MODIFIED="1529143141958">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Alternate for propTypes is Flow" ID="ID_844003538" CREATED="1529143196752" MODIFIED="1529143218068"/>
+</node>
+<node TEXT="3. Don&apos;t hard code HTML IDs" FOLDED="true" ID="ID_898962557" CREATED="1529142736531" MODIFIED="1529144227612">
+<node TEXT="Your components will be used in multiple places, often multiple times on the same page, so it&apos;s important to make sure that you don&apos;t hard code HTML IDs in the markup" ID="ID_1983433792" CREATED="1529143343255" MODIFIED="1529143346979"/>
+<node TEXT="So, instead of hard coding an HTML ID in a reusable component, It&apos;s recommend to accept an ID via a prop instead." ID="ID_843232535" CREATED="1529143444742" MODIFIED="1529143472579"/>
+<node TEXT="MyComponent.propTypes = {&#xa;   htmlId: React.PropTypes.string.isRequired&#xa;}" ID="ID_1108700828" CREATED="1529143495286" MODIFIED="1529143545433">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="4. Set Logical Defaults" FOLDED="true" ID="ID_1514492013" CREATED="1529143639573" MODIFIED="1529144233780">
+<node TEXT="Set Logical Defaults. Thoughtful defaults make your component more approachable and reduce the amount of work to get set up, so think carefully about the logical defaults that you can declare" ID="ID_1069287018" CREATED="1529143755908" MODIFIED="1529145078686">
+<font ITALIC="true"/>
+</node>
+<node TEXT="Good defaults save your consumers typing because they don&apos;t have to explicitly populate as many props." ID="ID_907112619" CREATED="1529143775204" MODIFIED="1529143779832"/>
+<node TEXT=" default props help convey how the component works by showing a common use case that&apos;s populated with realistic data." ID="ID_24986729" CREATED="1529143869859" MODIFIED="1529143874135"/>
+<node TEXT="// Below MyCounter class&#xa;MyCounter.defaultProps = { initialCount: 0};&#xa;&#xa;OR&#xa;&#xa;// Using static property&#xa;class MyCounter extends React.Component {&#xa;   static defaultProps = {initialCount: 0};&#xa;&#xa;OR&#xa;&#xa;//For Stateless components&#xa;const myCounter = ({initialCount = 0}) =&gt; {" ID="ID_1374245400" CREATED="1529143918107" MODIFIED="1529144208926">
+<font ITALIC="true"/>
+</node>
+</node>
+<node TEXT="5. Accessibility Matters" FOLDED="true" ID="ID_162505135" CREATED="1529144237841" MODIFIED="1529144254364">
+<node TEXT="reusable components offer a powerful spot to help bake accessibility into your application." ID="ID_938710259" CREATED="1529144400504" MODIFIED="1529144403675"/>
+<node TEXT="Remember, people may not click on your inputs. They may interact solely via the keyboard, so it&apos;s important to respond to common keyboard inputs like arrow keys, and to set focus via Tab." ID="ID_1252837180" CREATED="1529144439479" MODIFIED="1529144449747"/>
+<node TEXT="Keyboard users often use Tab to move through input, so assure the Tab indexes are honored and set in a logical order. Remember that the default tabbing order is based on the DOM position, but due to styling, DOM position may be completely different than the visual layout." ID="ID_1833775417" CREATED="1529144542047" MODIFIED="1529144546410"/>
+<node TEXT="Strive to use proper semantic markup within your components. For example, avoid using a div or a span as a button. Instead, use a button, since it has proper behavior for event handling, focus, and keyboard inputs all built-in." ID="ID_1075517602" CREATED="1529144635998" MODIFIED="1529144639602"/>
+<node TEXT="Avoid the temptation to reinvent the wheel, which can lead to accessibility issues." ID="ID_1260543581" CREATED="1529144658134" MODIFIED="1529144661513"/>
+<node TEXT="Provide labels for inputs, so the label is programmatically tied to the input. This assures that screen readers are clear about what each field is for" ID="ID_763349112" CREATED="1529144689598" MODIFIED="1529144693089"/>
+<node TEXT=" Finally, investigate ARIA and Role attributes to enhance your components accessibility. ARIA stands for Accessible Rich Internet Applications. ARIA defines a way to make web content and web applications more accessible to people with disabilities." ID="ID_907587370" CREATED="1529144773373" MODIFIED="1529144778577"/>
+</node>
+<node TEXT="6. Consider Configuration Objects" FOLDED="true" ID="ID_1747184540" CREATED="1529144797989" MODIFIED="1529144807200">
+<node TEXT="If you&apos;re designing a component that will have a large number of props or is likely to have a number of props added in the future, then consider accepting a configuration object on props." ID="ID_1954637243" CREATED="1529144873444" MODIFIED="1529144877152"/>
+<node TEXT="Imagine I have a component that displays a customers details called CustomerDetail. It may start off with just a few props, but I expect down the road that it&apos;s going to end up requiring dozens of props because we store and display a lot of data for our customers." ID="ID_1520962398" CREATED="1529144900868" MODIFIED="1529144904704"/>
+<node TEXT="&lt;CustomerDetail&#xa;   firstName=&quot;Diggi&quot;&#xa;   lastName=&quot;Diggla&quot;&#xa;   title=&quot;Developer&quot;&#xa;   office=&quot;Home&quot;&#xa;/&gt;" ID="ID_1884194485" CREATED="1529144957868" MODIFIED="1529145083190">
+<font ITALIC="true"/>
+</node>
+<node TEXT="In this case, it&apos;s typically preferable to accept an object instead of a long list of separate props." ID="ID_1790860067" CREATED="1529145146082" MODIFIED="1529145151990"/>
+<node TEXT="&lt;CustomerDetail customer={{&#xa;   firstName: &apos;Diggi&apos;,&#xa;   lastName: &apos;Diggla&apos;,&#xa;   title: &apos;Developer&apos;,&#xa;   office: &apos;Home&apos;&#xa;}}/&gt;" ID="ID_1074245603" CREATED="1529145154178" MODIFIED="1529145293308">
+<font ITALIC="true"/>
+</node>
+<node TEXT=" So why is a config object so useful?" FOLDED="true" ID="ID_1271755283" CREATED="1529145364745" MODIFIED="1529145370165">
+<node TEXT="The biggest benefit is the component&apos;s API doesn&apos;t change over time as you add new properties. It continues to accept an object." ID="ID_276841967" CREATED="1529145437184" MODIFIED="1529145455620"/>
+<node TEXT="A configuration object also saves people typing. If you already have a customer object returned from an API call that has the same shape, then you can easily pass it in without having to manually wire up a long list of separate props." ID="ID_305878118" CREATED="1529145534112" MODIFIED="1529145537771"/>
+<node TEXT="This makes it less error prone as well. You don&apos;t have to worry about accidentally typing the wrong value for the wrong prop. If the object&apos;s shape is correct, then the component should work as expected." ID="ID_1919826076" CREATED="1529145583607" MODIFIED="1529145587275"/>
+</node>
+<node TEXT="Avoid passing in a config object if your component has less than three or four props, since separate props tend to read more explicitly, but if your component is likely to accept many more props in the future, then consider passing an object instead." ID="ID_1837259123" CREATED="1529145683655" MODIFIED="1529145688706"/>
+</node>
+<node TEXT="7. Consider Server-side Rendering" FOLDED="true" ID="ID_1572161835" CREATED="1529145712046" MODIFIED="1529145726034">
+<node TEXT="React supports server rendering, so if you&apos;re going to publish reusable components it&apos;s important to decide if you want to support server rendering with your components" ID="ID_1542634965" CREATED="1529145834062" MODIFIED="1529145837713"/>
+<node TEXT="There&apos;s a few common reasons that your users might want to do server rendering." FOLDED="true" ID="ID_1012868233" CREATED="1529145967917" MODIFIED="1529145972632">
+<node TEXT="The most common reason is Search Engine Optimization. Now even though Google supports parsing JavaScript, there are other search engines to consider, and search engines aren&apos;t very transparent about the precise implications of serving a client-side rendered app, so many prefer doing server rendering just to be on the safe side, and remember," ID="ID_1809315495" CREATED="1529146049180" MODIFIED="1529146054544"/>
+<node TEXT="React isn&apos;t just for web applications anymore. People are building static websites with React now as well. If you think anyone will want to generate static sites using your components, then server rendering is necessary. Popular tools for this include Gatsby and Phenomic." ID="ID_1845297090" CREATED="1529146093756" MODIFIED="1529146098671"/>
+<node TEXT="Rendering initially on the server can also improve performance by reducing time to first paint. By rendering on the server users don&apos;t have to wait for the JavaScript to parse before seeing something on the screen" ID="ID_848822930" CREATED="1529146318354" MODIFIED="1529146329030"/>
+<node TEXT="finally, if you&apos;re going to publish components publicly, supporting server rendering is obviously important, since you have no idea how people will choose to use your components." ID="ID_88422670" CREATED="1529146369954" MODIFIED="1529146376982"/>
+</node>
+<node TEXT="Thankfully, supporting server rendering is pretty straightforward. The biggest rule is you need to stop assuming that your React components are being run in the browser, so you need to avoid doing any document or window calls, and you should avoid using setTimeout as well." ID="ID_1891593203" CREATED="1529146045180" MODIFIED="1529146520180"/>
+<node TEXT=" Basically, to support server rendering you can&apos;t assume that the component is running within the browsers API." ID="ID_1578994391" CREATED="1529146537856" MODIFIED="1529146541188"/>
+</node>
+<node TEXT="8. Honor the Single Responsibility Principle" FOLDED="true" ID="ID_652132347" CREATED="1529146546625" MODIFIED="1529146569180">
+<node TEXT="Each component should have a clear single responsibility" ID="ID_1968281268" CREATED="1529146605560" MODIFIED="1529146609076"/>
+<node TEXT="it&apos;s easy to find yourself designing a component that becomes so configurable that it&apos;s hard to understand, utilize, and maintain." ID="ID_137369561" CREATED="1529146642880" MODIFIED="1529146646307"/>
+<node TEXT="Props allow you to provide as many configuration points as you&apos;d like, and if you don&apos;t draw the line you can quickly create a component that&apos;s trying to be too many things to too many people." ID="ID_597700806" CREATED="1529146694911" MODIFIED="1529146706699"/>
+<node TEXT="Overly customizable components can lead to tricky debugging scenarios, and can make it hard to support changes later with confidence." ID="ID_1266641562" CREATED="1529146869054" MODIFIED="1529146873050"/>
+<node TEXT="Loosely speaking, as the number of props goes up, so does complexity." ID="ID_200724436" CREATED="1529147054781" MODIFIED="1529147058112"/>
+<node TEXT="For this reason prefer separate and simple components over a single complicated and highly customizable one." ID="ID_1367974000" CREATED="1529147153524" MODIFIED="1529147156944"/>
+<node TEXT=" Simpler components are easier to understand, easier to maintain, and less likely to produce bugs." ID="ID_1840306816" CREATED="1529147174428" MODIFIED="1529147177808"/>
+<node TEXT=" Remember that you can always compose components together to achieve powerful reuse scenarios. A single component doesn&apos;t need to be a hero." ID="ID_885319665" CREATED="1529147263468" MODIFIED="1529147267079"/>
+</node>
+</node>
+</node>
+<node TEXT="Evaluating New Technology" ID="ID_1595743388" CREATED="1530391918006" MODIFIED="1530392299073">
+<node TEXT="1. Problem" ID="ID_415287551" CREATED="1530392276421" MODIFIED="1530392288816"/>
+<node TEXT="2. Possible Solutions (Framework or individual solution)" ID="ID_1570522653" CREATED="1530392298036" MODIFIED="1530392466423"/>
+<node TEXT="3. Small experiment (test in Site Project)" ID="ID_1848345154" CREATED="1530392305532" MODIFIED="1530392393799"/>
+<node TEXT="4. Bigger experiment (introduce to Mainapi or parts of it)" ID="ID_1347668873" CREATED="1530392323516" MODIFIED="1530392421734"/>
+<node TEXT="5. Evaluate (do everybody like it?)" ID="ID_588460513" CREATED="1530392345964" MODIFIED="1530392441895"/>
+<node TEXT="6. Decide" ID="ID_485784200" CREATED="1530392352996" MODIFIED="1530392370063"/>
+</node>
 </node>
 </node>
 </map>
