@@ -1,16 +1,23 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import { connect } from 'react-redux';
 import axios from 'axios';
 import debounce from 'lodash.debounce';
-import FeesTable from '../components/Feestable';
-import { connect } from 'react-redux';
 
-/** No need to import because of the Provider Component 
- * import store from '../store/configureStore';
-*/
+import FeesTable from '../components/FeesTable';
+
+/**
+ * With ES6 imports, using * as actions means it will import all the exports from that file, 
+ * and group them under the actions object in this file.
+ */
+import * as actions from '../actions/actions';
 
 
 /**
+MINIMAL REDUX EXAMPLE
+
+No need to import store because of the Provider Component 
+import store from '../store/configureStore';
+
 import { createStore } from 'redux';
 
 // Initial Value Store
@@ -47,18 +54,20 @@ store.subscribe(function() {
 // Action
 store.dispatch({type: 'CHANGE_ORIGIN_AMOUNT', data:'300.65'}); 
 store.dispatch({type: ''}); 
-store.dispatch({type: ''}); */
+store.dispatch({type: ''}); 
+*/
 
 
 class Conversion extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            // originAmount: '0.00',
             originCurrency: 'USD',
-            destinationAmount: '0.00',
+            // destinationAmount: '0.00',
             destinationCurrency: 'EUR',
             feeAmount: 0.00,
-            conversionRate: 1.5,
+            // conversionRate: 1.5,
             totalCost: 0.00,
             errorMsg: ''
         }
@@ -118,7 +127,7 @@ class Conversion extends React.Component {
                 this.setState({
                     originAmount: resp.originAmount,
                     // destinationAmount: resp.destAmount,
-                    destinationAmount: this.state.destinationAmount,
+                    destinationAmount: this.props.destinationAmount,
                     conversionRate: resp.xRate
                 });
 
@@ -148,44 +157,25 @@ class Conversion extends React.Component {
         // remove unallowed chars
         newAmount = newAmount.replace(',','')
 
-
         // optimistic field updates
-        /** No need to use it that way anymore because of the provider component. Through
-         * the provider component you're able to use the redux store through properties
-         * 
-         *  store.dispatch({type:"CHANGE_ORIGIN_AMOUNT" ,data:{newAmount: newAmount}})
-         * 
-         */
-        this.props.dispatch({type:"CHANGE_ORIGIN_AMOUNT" ,data:{newAmount: newAmount}})
+        this.props.dispatch(actions.changeOriginAmount(newAmount));
 
-        // get the new dest amount
-        this.makeConversionAjaxCall({
-            currentlyEditing: 'origin',
-            newValue: newAmount
+        var payload = {
+            originAmount: newAmount,
+            originCurrency: this.state.originCurrency,
+            destCurrency: this.state.destinationCurrency,
+            calcOriginAmount: false
+        }
 
-        }, (resp) => {
-            this.clearErrorMessage();
+        this.props.dispatch(actions.fetchConversionRate(payload));
 
-            this.setState({
-                conversionRate: resp.xRate,
-                destinationAmount: resp.destAmount
-            })
-        }, this.handleAjaxFailure);
-
-        // get the new fee & total amount
-        this.makeFeeAjaxCall({
+        var feePayload = {
             originAmount: newAmount,
             originCurrency: this.state.originCurrency,
             destCurrency: this.state.destinationCurrency
+        }
 
-        }, (resp) => {
-            this.setState({
-                feeAmount: resp.feeAmount
-            })
-
-            this.calcNewTotal();
-        });
-
+        this.props.dispatch(actions.fetchFees(feePayload));
 
     }
     handleDestAmountChange(event) {
@@ -193,6 +183,60 @@ class Conversion extends React.Component {
 
         // remove unallowed chars
         newAmount = newAmount.replace(',','')
+
+
+        /** No need to use it that way anymore because of the provider component. Through
+         * the provider component you're able to use the redux store through properties
+         * 
+         * "NO NEED FOR "store.dispatch({type:"CHANGE_ORIGIN_AMOUNT" ,data:{newAmount: newAmount}})
+         * Instead use:
+         * 
+         * this.props.dispatch(...);
+         *
+         * 
+         * Because we added the redux-thunk middleware, we can now pass a function to dispatch. 
+         * When dispatch is called with a function, it executes it 
+         * and then Redux swallows and ignores the function. 
+         * 
+         * So this function by itself doesn't call the reducer, and it doesn't affect the Redux state at all. 
+         * So how is this useful? 
+         * We can use this function to do some async work, and then call dispatch with the result. 
+         * As a convenience, redux-thunk passes dispatch as the first parameter to this function, 
+         * so we'll be using that. 
+         * This is nice because we don't have to worry about how the this keyword is bound.
+         * 
+         * this.props.dispatch(function(dispatch){
+            dispatch({type:"SOME_ACTION", data:"someData"});
+
+            setTimeout(function(){
+                dispatch({type:"CHANGE_ORIGIN_AMOUNT", data:{newAmount: "5000"}})
+            }, 3000);
+
+            this.props.dispatch((dispatch) => {
+
+           var payload = {
+            currentlyEditing: 'origin',
+            newValue: newAmount
+           }
+        
+        dispatch({type: "REQUEST_CONVERSION_RATE", data: payload});
+
+        this.makeConversionAjaxCall(payload, (resp) => {
+            this.clearErrorMessage();
+            
+            dispatch({type:"RECEIVED_CONVERSION_RATE", data: resp});
+
+            this.setState({
+                conversionRate: resp.xRate,
+                destinationAmount: resp.destAmount
+            })
+        }, this.handleAjaxFailure);
+       })
+     
+        }); */
+
+
+
         // optimistic update
         this.setState({destinationAmount: newAmount})
 
@@ -278,13 +322,13 @@ class Conversion extends React.Component {
             <div>
                 {errorMsg}
                 <label>Convert</label>&nbsp;
-                <input className="amount-field" ref={input => this.originAmountInput = input} onChange={this.handleOriginAmountChange} value={this.state.originAmount} />
+                <input className="amount-field" ref={input => this.originAmountInput = input} onChange={this.handleOriginAmountChange} value={this.props.originAmount} />
                 <select value={this.state.originCurrency} onChange={this.handleOriginCurrencyChange}>
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                     <option value="JPY">JPY</option>
                 </select>
-                to <input className="amount-field" onChange={this.handleDestAmountChange} value={this.state.destinationAmount} />&nbsp;
+                to <input className="amount-field" onChange={this.handleDestAmountChange} value={this.props.destinationAmount} />&nbsp;
                 <select value={this.state.destinationCurrency} onChange={this.handleDestCurrencyChange}>
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
@@ -296,9 +340,9 @@ class Conversion extends React.Component {
                 <FeesTable
                     originCurrency={this.state.originCurrency}
                     destinationCurrency={this.state.destinationCurrency}
-                    conversionRate={this.state.conversionRate}
-                    fee={this.state.feeAmount}
-                    total={this.state.totalCost}
+                    conversionRate={this.props.conversionRate}
+                    fee={this.props.feeAmount}
+                    total={this.props.totalCost}
                 />
             </div>
         )
@@ -324,17 +368,20 @@ class Conversion extends React.Component {
  * mapStateToProps needs to return an object, 
  * and this return object is then merged with the this.props object from the conversion component
  */
-
 const mapstateToProps = (state, props) => {
     /*     console.log('connect state', state);
         console.log('connect props', props);
      */
         return {
-            originAmount: state.originAmount
+            originAmount: state.originAmount,
+            destinationAmount: state.destinationAmount,
+            conversionRate: state.conversionRate,
+            feeAmount: state.feeAmount,
+            totalCost: state.totalCost
         }
  }
 
- /**
+  /**
   * The next question you may ask yourself is, now should I connect all of my components? 
   * Well the answer is no. 
   * What the Redux team recommends is that you separate your components between what used to be called smart and dumb components, 
@@ -350,4 +397,4 @@ const mapstateToProps = (state, props) => {
   * and we should consider the FeesTable component a presentational component
   * 
   */
-export default connect(mapstateToProps)(Conversion);
+ export default connect(mapstateToProps)(Conversion);
