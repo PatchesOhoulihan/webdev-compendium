@@ -4510,10 +4510,6 @@
 <node TEXT="ExtJS" ID="ID_1745577836" CREATED="1530387136524" MODIFIED="1530387143344"/>
 <node TEXT="Knockout.js" ID="ID_1982896671" CREATED="1530387150012" MODIFIED="1530387156055"/>
 </node>
-<node TEXT="Static Site generators" ID="ID_869348301" CREATED="1529146169195" MODIFIED="1529146193550">
-<node TEXT="Gatsby" ID="ID_808987085" CREATED="1529146232931" MODIFIED="1529146239454"/>
-<node TEXT="Phenomic" ID="ID_236290860" CREATED="1529146242779" MODIFIED="1529146254038"/>
-</node>
 </node>
 <node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313">
 <node TEXT="jQuery" ID="ID_1118040403" CREATED="1530391822799" MODIFIED="1530391828923"/>
@@ -4551,358 +4547,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Backend" FOLDED="true" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1519600829138">
-<node TEXT="package manager" FOLDED="true" ID="ID_1942439244" CREATED="1520847895013" MODIFIED="1520849522891">
-<node TEXT="npm" FOLDED="true" ID="ID_647511561" CREATED="1516023069009" MODIFIED="1516023111358" LINK="https://www.google.de/url?sa=i&amp;rct=j&amp;q=&amp;esrc=s&amp;source=images&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiPlL-yiNrYAhXIIOwKHRIYDEcQjhwIBQ&amp;url=https%3A%2F%2Fshop.tcgplayer.com%2Fmagic%2Fmirage%2Fcatacomb-dragon&amp;psig=AOvVaw36v1uHftSs-BeO3TpHgJnI&amp;ust=1516109029133545">
-<node TEXT="Intro" FOLDED="true" ID="ID_1875273331" CREATED="1516555844183" MODIFIED="1516555850799">
-<node TEXT="NPM is an acronym for Node.js Package Manager" ID="ID_1420772470" CREATED="1516480940094" MODIFIED="1516480949054"/>
-<node TEXT="NPM is the package manager for Node.js" ID="ID_194845935" CREATED="1516555875523" MODIFIED="1516555875523"/>
-<node TEXT="NPM is a company, a package management standard and a public/private package distribution system" ID="ID_1731497712" CREATED="1516555927889" MODIFIED="1516555927889"/>
-<node TEXT="Projects are NPM packages if they contain a package.json file" ID="ID_673115103" CREATED="1516555998284" MODIFIED="1516555998284"/>
-<node TEXT="Almost all projects should contain a package.json file so that external package dependencies can be tracked" ID="ID_1770137140" CREATED="1516556020063" MODIFIED="1516556020063"/>
-<node TEXT="NPM can be used to manage many aspects of your project setup including replacing the need for Gulp and Grunt" ID="ID_738095211" CREATED="1516556099862" MODIFIED="1516556099862"/>
-<node TEXT="Constructing the DOM" ID="ID_1088018721" CREATED="1516872723387" MODIFIED="1516872723387"/>
-</node>
-<node TEXT="Understanding Packages" FOLDED="true" ID="ID_1420976261" CREATED="1516549275652" MODIFIED="1516549311884">
-<node TEXT="Basics" FOLDED="true" ID="ID_1795151097" CREATED="1516555036229" MODIFIED="1516555044181">
-<node TEXT="Packages can be code libraries, applications or both" ID="ID_821877834" CREATED="1516549322557" MODIFIED="1516549322557"/>
-<node TEXT="Typically, your projects themselves will be packages too" ID="ID_528947912" CREATED="1516549360116" MODIFIED="1516549360116"/>
-<node TEXT="Packages do not have to be distributed via NPM, and do not have to be publicly available &#x2013; but they can be if you want" ID="ID_1288330358" CREATED="1516549402097" MODIFIED="1516553872405"/>
-<node TEXT="A project is a package when it contains a package.json file" ID="ID_123049736" CREATED="1516549419428" MODIFIED="1516549419428"/>
-</node>
-<node TEXT="Global Packages" FOLDED="true" ID="ID_180373668" CREATED="1516554483528" MODIFIED="1516554500424">
-<node TEXT="The vast majority of package installations are local to a project" ID="ID_620544851" CREATED="1516554651433" MODIFIED="1516554651433"/>
-<node ID="ID_1392696720" CREATED="1516554687986" MODIFIED="1516554699977"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Global packages are primarily limited to executable programs &#8211; <b>not code libraries</b>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="The recent trend has been to not install any packages globally, and instead install executable programs local to each project" ID="ID_858358055" CREATED="1516554751061" MODIFIED="1516554751061"/>
-<node TEXT="Exceptions would be generator programs such as yeoman" ID="ID_1646080818" CREATED="1516554835639" MODIFIED="1516554835639"/>
-<node TEXT="Managing Global Packages" FOLDED="true" ID="ID_1444119349" CREATED="1516554868904" MODIFIED="1516554868904">
-<node TEXT="To install packages globally, the &#x2013;g flag must be used when installing the package" ID="ID_1945716557" CREATED="1516554890102" MODIFIED="1516554890102"/>
-<node TEXT="To uninstall packages globall, the &#x2013;g flag must be used when uninstalling the package" ID="ID_1429963942" CREATED="1516554917466" MODIFIED="1516554917466"/>
-<node TEXT="To see outdated global packages, use the &#x2013;g flag when running the outdated command" ID="ID_1091738957" CREATED="1516555121463" MODIFIED="1516555121463"/>
-<node TEXT="To update global packages, use the &#x2013;g flag when running the package update" ID="ID_1427755708" CREATED="1516555147977" MODIFIED="1516555147977"/>
-</node>
-</node>
-<node TEXT="Local vs Global Packages" FOLDED="true" ID="ID_380974793" CREATED="1516481104493" MODIFIED="1516481104493">
-<node TEXT="Packages can be installed locally or globally" ID="ID_146285281" CREATED="1516481119887" MODIFIED="1516481119887"/>
-<node TEXT="Local packages are stored locally in a project, in the node_modules folder" ID="ID_1747562684" CREATED="1516481192040" MODIFIED="1516481192040"/>
-<node TEXT="Global packages are stored globally on system" ID="ID_548808424" CREATED="1516481257788" MODIFIED="1516481257788"/>
-<node TEXT="Typically, local packages are code libraries used by project" ID="ID_625938444" CREATED="1516481297204" MODIFIED="1516481297204"/>
-<node TEXT="Typically, global packages are executables used to perform someoperation on a project such as running tasks" ID="ID_139973856" CREATED="1516481339635" MODIFIED="1516481339635"/>
-<node TEXT="Global Packages on Windows" FOLDED="true" ID="ID_580176388" CREATED="1516481553220" MODIFIED="1516481553220">
-<node TEXT="C:\Users\&lt;username&gt;\AppData\Roaming\npm" ID="ID_1212523306" CREATED="1516481566942" MODIFIED="1516481566942"/>
-</node>
-<node TEXT="Global Packages on Mac and Linux" FOLDED="true" ID="ID_1474559852" CREATED="1516481594692" MODIFIED="1516481594692">
-<node TEXT="/usr/local/lib/node_modules" ID="ID_614259829" CREATED="1516481616005" MODIFIED="1516481616005"/>
-</node>
-</node>
-</node>
-<node TEXT="commands" FOLDED="true" ID="ID_1492845471" CREATED="1516550261213" MODIFIED="1516550269653">
-<node TEXT="init" FOLDED="true" ID="ID_199950356" CREATED="1516023131831" MODIFIED="1516023137272">
-<node TEXT="init no questions" FOLDED="true" ID="ID_1123052726" CREATED="1516023156167" MODIFIED="1516023164376">
-<node TEXT="npm init -y" ID="ID_591563011" CREATED="1516023179088" MODIFIED="1516028492931"/>
-</node>
-</node>
-<node TEXT="install" FOLDED="true" ID="ID_978714246" CREATED="1516095348801" MODIFIED="1516095384179">
-<node TEXT="npm i -s &lt;package&gt;" ID="ID_1010735310" CREATED="1516095378489" MODIFIED="1516095419787"/>
-<node TEXT="npm i -d &lt;package&gt;" ID="ID_1709025496" CREATED="1516095436603" MODIFIED="1516095459333"/>
-<node TEXT="add repo as dependency" FOLDED="true" ID="ID_96475741" CREATED="1518084232930" MODIFIED="1518084248409">
-<node TEXT="&apos;git+ssh://git@github.com/visionmedia/express.git&apos;" ID="ID_915599359" CREATED="1518084764847" MODIFIED="1518084764847" LINK="mailto://git@github.com"/>
-<node TEXT="&apos;git+https://git@github.com/visionmedia/express.git&apos;" ID="ID_1109711176" CREATED="1518084803225" MODIFIED="1518084803225" LINK="https://git@github.com/visionmedia/express.git&apos;"/>
-<node TEXT="if I want a specific branch git+ssh://....repo.git#branch" ID="ID_384526844" CREATED="1518100221328" MODIFIED="1518100395389"/>
-<node TEXT="OR  install git+https://github.com/user/repo.git\#branch" ID="ID_1917885177" CREATED="1518100398996" MODIFIED="1518100406646"/>
-</node>
-<node TEXT="npm ci" FOLDED="true" ID="ID_1973963336" CREATED="1522246351703" MODIFIED="1522246361975">
-<node TEXT="Continouse integration" ID="ID_1307152771" CREATED="1522246367951" MODIFIED="1522246474937"/>
-</node>
-</node>
-<node TEXT="uninstall" FOLDED="true" ID="ID_192937003" CREATED="1516481427274" MODIFIED="1516481441026">
-<node TEXT="Uninstalling packages removes all of its dependencies unless&#xa;those dependencies are used by other packages not being&#xa;uninstalled" ID="ID_1936340337" CREATED="1516550008807" MODIFIED="1516550014863"/>
-<node TEXT="npm uninstall &lt;package&gt;" ID="ID_41286030" CREATED="1516481482914" MODIFIED="1516481505426"/>
-<node TEXT="To remove a saved dependency from the the package.json file when uninstalling packages include the same save flag as used when the package was installed" ID="ID_1683436191" CREATED="1516550107929" MODIFIED="1516550107929"/>
-<node TEXT="npm uninstall -s &lt;package&gt;" ID="ID_1687309143" CREATED="1516095378489" MODIFIED="1516550135799"/>
-<node TEXT="npm uninstall -d &lt;package&gt;" ID="ID_906230857" CREATED="1516095436603" MODIFIED="1516550143182"/>
-</node>
-<node TEXT="list" FOLDED="true" ID="ID_510142718" CREATED="1516096585075" MODIFIED="1516096590165">
-<node TEXT="list global packages" FOLDED="true" ID="ID_1287473160" CREATED="1516096592765" MODIFIED="1516096607067">
-<node TEXT="npm list -g --depth=0" ID="ID_1366468749" CREATED="1516096678164" MODIFIED="1516096678164"/>
-</node>
-</node>
-<node TEXT="Checking Outdated Packages" FOLDED="true" ID="ID_581323007" CREATED="1516550596749" MODIFIED="1516550596749">
-<node ID="ID_1728930816" CREATED="1516552203705" MODIFIED="1516552425223"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      The command <b>npm outdated</b>&#160;will return a list of packages which are outdated, and could be upgraded
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_1108765546" CREATED="1516552246285" MODIFIED="1516553197435"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      To check a specific package, execute<b>&#160;npm outdated &lt;package_name&gt;</b>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Results are:" ID="ID_412644935" CREATED="1516553261985" MODIFIED="1516553278209"/>
-<node ID="ID_1442797475" CREATED="1516552284786" MODIFIED="1516553601951"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Current </b>&#8211; is the current version of package which is installed
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_424096289" CREATED="1516552317312" MODIFIED="1516553630671"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Wanted</b>&#160;&#8211; is the highest version package which satisfies the semver version of the package in the package.json file
-    </p>
-  </body>
-</html>
-</richcontent>
-<font BOLD="false"/>
-</node>
-<node ID="ID_1449510367" CREATED="1516553244123" MODIFIED="1516553642031"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Latest</b>&#160;&#8211; is the package version in the repository in the tagged with latest
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-<node TEXT="Upgrading Packages" FOLDED="true" ID="ID_1948689103" CREATED="1516553337200" MODIFIED="1516553337200">
-<node ID="ID_1202311683" CREATED="1516553384556" MODIFIED="1516553400825"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      The command<b>&#160;npm update</b>&#160;will update all packages with a newer version within the range specified by the semver
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_1383007173" CREATED="1516553588737" MODIFIED="1516553655831"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Updating individual packages&#160;use <b>npm update &lt;package_name&gt;</b>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-<node TEXT="npx" FOLDED="true" ID="ID_255850540" CREATED="1527380370260" MODIFIED="1527380435308">
-<node TEXT="introduction" FOLDED="true" ID="ID_1250719753" CREATED="1527380703953" MODIFIED="1527380711997">
-<node TEXT="an npm package runner" ID="ID_575878268" CREATED="1527381010487" MODIFIED="1527381014979"/>
-<node TEXT="npx is a tool intended to help round out the experience of using packages from the npm registry&#x200a;" ID="ID_974076085" CREATED="1527380437627" MODIFIED="1527380441464"/>
-<node TEXT="the same way npm makes it super easy to install and manage dependencies hosted on the npm registry, npx makes it easy to use CLI tools and other executables hosted on the registry." ID="ID_103103549" CREATED="1527380473483" MODIFIED="1527380563318"/>
-<node TEXT="For the past couple of years, the npm ecosystem has been moving more and more towards installing tools as project-local devDependencies, instead of requiring users to install them globally." ID="ID_480715148" CREATED="1527380589954" MODIFIED="1527380597166"/>
-</node>
-<node TEXT="examples" FOLDED="true" ID="ID_952059230" CREATED="1527381057167" MODIFIED="1527381065867">
-<node TEXT="Using locally-installed tools without npm run-script" FOLDED="true" ID="ID_441098265" CREATED="1527381076695" MODIFIED="1527381081306">
-<node TEXT="npm i -D cowsay" ID="ID_91521984" CREATED="1527381095438" MODIFIED="1527381112858"/>
-<node TEXT="npx cowsay hello" ID="ID_781772789" CREATED="1527381132486" MODIFIED="1527381155314"/>
-</node>
-<node TEXT="Executing one-off commands" FOLDED="true" ID="ID_1439137229" CREATED="1527381197566" MODIFIED="1527381202449">
-<node TEXT="want to try some CLI tool, but it&#x2019;s annoying to have to install a global just to run it once?" ID="ID_14505840" CREATED="1527381222398" MODIFIED="1527381226410"/>
-<node TEXT="Calling npx &lt;command&gt; when &lt;command&gt; isn&#x2019;t already in your $PATH will automatically install a package with that name from the npm registry for you, and invoke it." ID="ID_1391619091" CREATED="1527381243341" MODIFIED="1527381247449"/>
-<node TEXT="When it&#x2019;s done, the installed package won&#x2019;t be anywhere in your globals, so you won&#x2019;t have to worry about pollution in the long-term." ID="ID_1120656982" CREATED="1527381289749" MODIFIED="1527381293314"/>
-<node TEXT="npx create-react-app my-cool-new-app" ID="ID_287760963" CREATED="1527381297613" MODIFIED="1527381334193"/>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="Versioning" FOLDED="true" ID="ID_76464107" CREATED="1516550625595" MODIFIED="1516550625595">
-<node TEXT="Basics" FOLDED="true" ID="ID_1022357353" CREATED="1516550861609" MODIFIED="1516550867305">
-<node TEXT="NPM packages use the semver versioning system" ID="ID_1736386308" CREATED="1516550639463" MODIFIED="1516550639463"/>
-<node TEXT="Following the &quot;spirit&quot; of semver is the responsibility of the developer, and developers are greatly encouraged to do so" ID="ID_380712573" CREATED="1516550761324" MODIFIED="1516550761324"/>
-<node TEXT="The versioning scheme use the following pattern" FOLDED="true" ID="ID_85401613" CREATED="1516550825714" MODIFIED="1516550825714">
-<node TEXT="MAJOR.MINOR.PATCH" ID="ID_619813274" CREATED="1516550915882" MODIFIED="1516550915882"/>
-<node TEXT="So version 1.2.3 would be a major version of &apos;1&apos;, minor version of &apos;2&apos; and a patch version of &apos;3&apos;" ID="ID_1238972954" CREATED="1516550940085" MODIFIED="1516550940085"/>
-</node>
-</node>
-<node TEXT="Best Practices" FOLDED="true" ID="ID_1263089657" CREATED="1516550996166" MODIFIED="1516550996166">
-<node TEXT="Projects to be shared publicly should be initially released with a major version of 1" ID="ID_1789175636" CREATED="1516551018372" MODIFIED="1516551018372"/>
-<node TEXT="Bug fixes and other minor changes should be released as patch version increments" ID="ID_1936210848" CREATED="1516551063722" MODIFIED="1516551063722"/>
-<node TEXT="New features which do not break existing features should be released as minor version increment" ID="ID_152965392" CREATED="1516551143324" MODIFIED="1516551143324"/>
-<node TEXT="Changes which are not backward compatible should be released as a major version increment" ID="ID_989303525" CREATED="1516551262295" MODIFIED="1516551262295"/>
-<node TEXT="More: https://docs.npmjs.com/getting-started/semantic-versioning" ID="ID_815320711" CREATED="1516551310149" MODIFIED="1516551310149" LINK="https://docs.npmjs.com/getting-started/semantic-versioning"/>
-</node>
-<node TEXT="Package Dependency Version Number" FOLDED="true" ID="ID_1021566204" CREATED="1516551354095" MODIFIED="1516551354095">
-<node TEXT="When installing and saving package dependencies, the version of the package is saved in the package.json file" ID="ID_786872170" CREATED="1516551671711" MODIFIED="1516551671711"/>
-<node TEXT="Semver provides various patterns to determine what version of a package will satisfy the dependency requirement" ID="ID_1672580605" CREATED="1516551716323" MODIFIED="1516551716323"/>
-<node TEXT="In the Package json the default version number scheme indicates that all versions up to, but not including, the next major version can be installed to meet the package dependency requirement" ID="ID_1540150174" CREATED="1516551775595" MODIFIED="1516551818499"/>
-<node TEXT="Patch, Minor &amp; Major Increments" FOLDED="true" ID="ID_1283442643" CREATED="1516551850746" MODIFIED="1516551850746">
-<node TEXT="Patch increments up to but not including the next minor version:" FOLDED="true" ID="ID_582844392" CREATED="1516551922701" MODIFIED="1516551922701">
-<node TEXT="1.2 &#x2013; any 1.2 version up to but not including 1.3" ID="ID_23466693" CREATED="1516551937821" MODIFIED="1516551937821"/>
-<node TEXT="1.2.x - any 1.2 version up to but not including 1.3" ID="ID_1423334026" CREATED="1516551959870" MODIFIED="1516551959870"/>
-<node TEXT="1.2.x - any 1.2 version up to but not including 1.3" ID="ID_1641466342" CREATED="1516551971876" MODIFIED="1516551971876"/>
-</node>
-<node TEXT="Minor increments up to but not including the next major version:" FOLDED="true" ID="ID_1765696075" CREATED="1516551991873" MODIFIED="1516551991873">
-<node TEXT="1 &#x2013; any version of 1 up to but not including 2" ID="ID_408883564" CREATED="1516552027014" MODIFIED="1516552027014"/>
-<node TEXT="1.x &#x2013; any version of 1 up to but not including 2" ID="ID_1594265588" CREATED="1516552039891" MODIFIED="1516552039891"/>
-<node TEXT="^1.2.3 - any version equal to or greater than 1.2.3 up to but not including 2" ID="ID_1244815827" CREATED="1516552051226" MODIFIED="1516552051226"/>
-</node>
-<node TEXT="Major increment &quot;*&quot; or &quot;x&quot; &#x2013; up to latest version" ID="ID_426924348" CREATED="1516552066954" MODIFIED="1516552066954"/>
-<node TEXT="Exact version: 1.1.1" ID="ID_1906138814" CREATED="1516552093925" MODIFIED="1516552093925"/>
-</node>
-</node>
-</node>
-<node TEXT="Updating and Configuring NPM" FOLDED="true" ID="ID_866096859" CREATED="1516555216739" MODIFIED="1516555216739">
-<node ID="ID_571923815" CREATED="1516555241436" MODIFIED="1516555279444"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      NPM can update itself using the following command <b>npm update -g npm</b>
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="NPM supports a number of configuration options" ID="ID_1872450433" CREATED="1516555366210" MODIFIED="1516555381410"/>
-<node TEXT="The most important options are for configuring proxy servers for downloading packages through a corporate firewall" FOLDED="true" ID="ID_789057408" CREATED="1516555352232" MODIFIED="1516555352232">
-<node TEXT="npm config set proxy &lt;some_url&gt;" ID="ID_417901227" CREATED="1516555398490" MODIFIED="1516555398490"/>
-<node TEXT="npm config set https-proxy &lt;some_url&gt;" ID="ID_1815970285" CREATED="1516555406902" MODIFIED="1516555406902"/>
-</node>
-<node TEXT="NPM Configuration File" FOLDED="true" ID="ID_1964174419" CREATED="1516555434621" MODIFIED="1516555434621">
-<node TEXT="Setting configuration options will create a .npmrc file in the user&apos;s root folder" ID="ID_691576590" CREATED="1516555458199" MODIFIED="1516555458199"/>
-<node ID="ID_1134547637" CREATED="1516555489171" MODIFIED="1516555507354"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Project level configuration options can be set through an <b>.npmrc</b>&#160; file in the projects root folder
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Global configuration options can be set in the $PREFIX/etc/npmrc file" FOLDED="true" ID="ID_637603968" CREATED="1516555536568" MODIFIED="1516555536568">
-<node TEXT="$PREFIX can be determined by this command: npm config get prefix" ID="ID_1754570213" CREATED="1516555572527" MODIFIED="1516555572527"/>
-</node>
-<node TEXT="NPM Configuration Commands" FOLDED="true" ID="ID_880416383" CREATED="1516555594015" MODIFIED="1516555594015">
-<node ID="ID_253760776" CREATED="1516555620817" MODIFIED="1516555630138"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>npm config set &lt;key&gt; &lt;value&gt; - </b>sets a configuration value for the configuration key
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_78584255" CREATED="1516555650230" MODIFIED="1516555664810"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>npm config get &lt;key&gt;</b>&#160;- gets a configuration value for the configuration key
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_1121152403" CREATED="1516555731762" MODIFIED="1516555746481"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>npm config delete &lt;key&gt;</b>&#160;- delete the configuration key and value
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node ID="ID_832383439" CREATED="1516555761012" MODIFIED="1516555779225"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>npm config list</b>- list the configuration keys and values
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-</node>
-</node>
-</node>
-</node>
-<node TEXT="yarn" ID="ID_1512784151" CREATED="1520849531599" MODIFIED="1520849538049"/>
-</node>
+<node TEXT="Backend" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1519600829138">
 <node TEXT="Node" FOLDED="true" ID="ID_1498818952" CREATED="1516178559275" MODIFIED="1519600829138">
 <node TEXT="Overview of JavaScript Modules" FOLDED="true" ID="ID_943227875" CREATED="1516482047814" MODIFIED="1516482057126">
 <node TEXT="basics" FOLDED="true" ID="ID_1115643175" CREATED="1516484931146" MODIFIED="1516484977466">
@@ -5094,14 +4739,11 @@
 <node TEXT="Supports multiline commands, customize command promptand preconfigured context" ID="ID_788880333" CREATED="1516480781927" MODIFIED="1516480781927"/>
 </node>
 </node>
-<node TEXT="extensions" FOLDED="true" ID="ID_1271338723" CREATED="1520844725160" MODIFIED="1520844738025">
-<node TEXT="framework" FOLDED="true" ID="ID_1751494889" CREATED="1520844747560" MODIFIED="1520844753585">
+<node TEXT="extensions" ID="ID_1271338723" CREATED="1520844725160" MODIFIED="1520844738025">
+<node TEXT="framework" ID="ID_1751494889" CREATED="1520844747560" MODIFIED="1520844753585">
 <node TEXT="express" ID="ID_1675752072" CREATED="1522617941876" MODIFIED="1522617947954"/>
 </node>
 <node TEXT="libraries" ID="ID_1442394379" CREATED="1520844757208" MODIFIED="1520844773322"/>
-</node>
-<node TEXT="Architecture" FOLDED="true" ID="ID_1160805845" CREATED="1522617123442" MODIFIED="1522617164575">
-<node TEXT="Rest" ID="ID_1356735981" CREATED="1522617170266" MODIFIED="1522617177959"/>
 </node>
 <node TEXT="documentation" FOLDED="true" ID="ID_85521033" CREATED="1520847987244" MODIFIED="1520847995326">
 <node TEXT="markdown" ID="ID_1365285825" CREATED="1520848003140" MODIFIED="1520848010118"/>
@@ -5113,6 +4755,408 @@
 <node TEXT="Flow" ID="ID_86774713" CREATED="1522617787365" MODIFIED="1522617792187"/>
 </node>
 <node TEXT="Babel" ID="ID_1157656807" CREATED="1530391707792" MODIFIED="1530391713243"/>
+</node>
+<node TEXT="Package Manager" ID="ID_1603393958" CREATED="1531609774909" MODIFIED="1531609789873">
+<node TEXT="npm" ID="ID_1825265409" CREATED="1531609792421" MODIFIED="1531609801065">
+<node TEXT="Introduction" FOLDED="true" ID="ID_1875273331" CREATED="1516555844183" MODIFIED="1531609836681">
+<node TEXT="NPM is an acronym for Node.js Package Manager" ID="ID_1420772470" CREATED="1516480940094" MODIFIED="1516480949054"/>
+<node TEXT="NPM is the package manager for Node.js" ID="ID_194845935" CREATED="1516555875523" MODIFIED="1516555875523"/>
+<node TEXT="NPM is a company, a package management standard and a public/private package distribution system" ID="ID_1731497712" CREATED="1516555927889" MODIFIED="1516555927889"/>
+<node TEXT="Projects are NPM packages if they contain a package.json file" ID="ID_673115103" CREATED="1516555998284" MODIFIED="1516555998284"/>
+<node TEXT="Almost all projects should contain a package.json file so that external package dependencies can be tracked" ID="ID_1770137140" CREATED="1516556020063" MODIFIED="1516556020063"/>
+<node TEXT="NPM can be used to manage many aspects of your project setup including replacing the need for Gulp and Grunt" ID="ID_738095211" CREATED="1516556099862" MODIFIED="1516556099862"/>
+<node TEXT="Constructing the DOM" ID="ID_1088018721" CREATED="1516872723387" MODIFIED="1516872723387"/>
+</node>
+<node TEXT="Understanding Packages" FOLDED="true" ID="ID_1420976261" CREATED="1516549275652" MODIFIED="1516549311884">
+<node TEXT="Basics" FOLDED="true" ID="ID_1795151097" CREATED="1516555036229" MODIFIED="1516555044181">
+<node TEXT="Packages can be code libraries, applications or both" ID="ID_821877834" CREATED="1516549322557" MODIFIED="1516549322557"/>
+<node TEXT="Typically, your projects themselves will be packages too" ID="ID_528947912" CREATED="1516549360116" MODIFIED="1516549360116"/>
+<node TEXT="Packages do not have to be distributed via NPM, and do not have to be publicly available &#x2013; but they can be if you want" ID="ID_1288330358" CREATED="1516549402097" MODIFIED="1516553872405"/>
+<node TEXT="A project is a package when it contains a package.json file" ID="ID_123049736" CREATED="1516549419428" MODIFIED="1516549419428"/>
+</node>
+<node TEXT="Global Packages" FOLDED="true" ID="ID_180373668" CREATED="1516554483528" MODIFIED="1516554500424">
+<node TEXT="The vast majority of package installations are local to a project" ID="ID_620544851" CREATED="1516554651433" MODIFIED="1516554651433"/>
+<node ID="ID_1392696720" CREATED="1516554687986" MODIFIED="1516554699977"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Global packages are primarily limited to executable programs &#8211; <b>not code libraries</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="The recent trend has been to not install any packages globally, and instead install executable programs local to each project" ID="ID_858358055" CREATED="1516554751061" MODIFIED="1516554751061"/>
+<node TEXT="Exceptions would be generator programs such as yeoman" ID="ID_1646080818" CREATED="1516554835639" MODIFIED="1516554835639"/>
+<node TEXT="Managing Global Packages" FOLDED="true" ID="ID_1444119349" CREATED="1516554868904" MODIFIED="1516554868904">
+<node TEXT="To install packages globally, the &#x2013;g flag must be used when installing the package" ID="ID_1945716557" CREATED="1516554890102" MODIFIED="1516554890102"/>
+<node TEXT="To uninstall packages globall, the &#x2013;g flag must be used when uninstalling the package" ID="ID_1429963942" CREATED="1516554917466" MODIFIED="1516554917466"/>
+<node TEXT="To see outdated global packages, use the &#x2013;g flag when running the outdated command" ID="ID_1091738957" CREATED="1516555121463" MODIFIED="1516555121463"/>
+<node TEXT="To update global packages, use the &#x2013;g flag when running the package update" ID="ID_1427755708" CREATED="1516555147977" MODIFIED="1516555147977"/>
+</node>
+</node>
+<node TEXT="Local vs Global Packages" FOLDED="true" ID="ID_380974793" CREATED="1516481104493" MODIFIED="1516481104493">
+<node TEXT="Packages can be installed locally or globally" ID="ID_146285281" CREATED="1516481119887" MODIFIED="1516481119887"/>
+<node TEXT="Local packages are stored locally in a project, in the node_modules folder" ID="ID_1747562684" CREATED="1516481192040" MODIFIED="1516481192040"/>
+<node TEXT="Global packages are stored globally on system" ID="ID_548808424" CREATED="1516481257788" MODIFIED="1516481257788"/>
+<node TEXT="Typically, local packages are code libraries used by project" ID="ID_625938444" CREATED="1516481297204" MODIFIED="1516481297204"/>
+<node TEXT="Typically, global packages are executables used to perform someoperation on a project such as running tasks" ID="ID_139973856" CREATED="1516481339635" MODIFIED="1516481339635"/>
+<node TEXT="Global Packages on Windows" FOLDED="true" ID="ID_580176388" CREATED="1516481553220" MODIFIED="1516481553220">
+<node TEXT="C:\Users\&lt;username&gt;\AppData\Roaming\npm" ID="ID_1212523306" CREATED="1516481566942" MODIFIED="1516481566942"/>
+</node>
+<node TEXT="Global Packages on Mac and Linux" FOLDED="true" ID="ID_1474559852" CREATED="1516481594692" MODIFIED="1516481594692">
+<node TEXT="/usr/local/lib/node_modules" ID="ID_614259829" CREATED="1516481616005" MODIFIED="1516481616005"/>
+</node>
+</node>
+</node>
+<node TEXT="commands" ID="ID_1492845471" CREATED="1516550261213" MODIFIED="1516550269653">
+<node TEXT="initialize Project" FOLDED="true" ID="ID_199950356" CREATED="1516023131831" MODIFIED="1531609621594">
+<node TEXT="init no questions" FOLDED="true" ID="ID_1123052726" CREATED="1516023156167" MODIFIED="1516023164376">
+<node TEXT="npm init -y" ID="ID_591563011" CREATED="1516023179088" MODIFIED="1516028492931"/>
+</node>
+</node>
+<node TEXT="install Package" FOLDED="true" ID="ID_978714246" CREATED="1516095348801" MODIFIED="1531609679770">
+<node TEXT="npm i -s &lt;package&gt;" ID="ID_1010735310" CREATED="1516095378489" MODIFIED="1516095419787"/>
+<node TEXT="npm i -d &lt;package&gt;" ID="ID_1709025496" CREATED="1516095436603" MODIFIED="1516095459333"/>
+<node TEXT="add repo as dependency" FOLDED="true" ID="ID_96475741" CREATED="1518084232930" MODIFIED="1518084248409">
+<node TEXT="&apos;git+ssh://git@github.com/visionmedia/express.git&apos;" ID="ID_915599359" CREATED="1518084764847" MODIFIED="1518084764847" LINK="mailto://git@github.com"/>
+<node TEXT="&apos;git+https://git@github.com/visionmedia/express.git&apos;" ID="ID_1109711176" CREATED="1518084803225" MODIFIED="1518084803225" LINK="https://git@github.com/visionmedia/express.git&apos;"/>
+<node TEXT="if I want a specific branch git+ssh://....repo.git#branch" ID="ID_384526844" CREATED="1518100221328" MODIFIED="1518100395389"/>
+<node TEXT="OR  install git+https://github.com/user/repo.git\#branch" ID="ID_1917885177" CREATED="1518100398996" MODIFIED="1518100406646"/>
+</node>
+<node TEXT="npm ci" FOLDED="true" ID="ID_1973963336" CREATED="1522246351703" MODIFIED="1522246361975">
+<node TEXT="Continouse integration" ID="ID_1307152771" CREATED="1522246367951" MODIFIED="1522246474937"/>
+</node>
+</node>
+<node TEXT="uninstall Package" FOLDED="true" ID="ID_192937003" CREATED="1516481427274" MODIFIED="1531609689034">
+<node TEXT="Uninstalling packages removes all of its dependencies unless&#xa;those dependencies are used by other packages not being&#xa;uninstalled" ID="ID_1936340337" CREATED="1516550008807" MODIFIED="1516550014863"/>
+<node TEXT="npm uninstall &lt;package&gt;" ID="ID_41286030" CREATED="1516481482914" MODIFIED="1516481505426"/>
+<node TEXT="To remove a saved dependency from the the package.json file when uninstalling packages include the same save flag as used when the package was installed" ID="ID_1683436191" CREATED="1516550107929" MODIFIED="1516550107929"/>
+<node TEXT="npm uninstall -s &lt;package&gt;" ID="ID_1687309143" CREATED="1516095378489" MODIFIED="1516550135799"/>
+<node TEXT="npm uninstall -d &lt;package&gt;" ID="ID_906230857" CREATED="1516095436603" MODIFIED="1516550143182"/>
+</node>
+<node TEXT="list used Packages" FOLDED="true" ID="ID_510142718" CREATED="1516096585075" MODIFIED="1531609754353">
+<node TEXT="list global packages" FOLDED="true" ID="ID_1287473160" CREATED="1516096592765" MODIFIED="1516096607067">
+<node TEXT="npm list -g --depth=0" ID="ID_1366468749" CREATED="1516096678164" MODIFIED="1516096678164"/>
+</node>
+</node>
+<node TEXT="Checking Outdated Packages" FOLDED="true" ID="ID_581323007" CREATED="1516550596749" MODIFIED="1516550596749">
+<node ID="ID_1728930816" CREATED="1516552203705" MODIFIED="1516552425223"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The command <b>npm outdated</b>&#160;will return a list of packages which are outdated, and could be upgraded
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1108765546" CREATED="1516552246285" MODIFIED="1516553197435"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      To check a specific package, execute<b>&#160;npm outdated &lt;package_name&gt;</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Results are:" ID="ID_412644935" CREATED="1516553261985" MODIFIED="1516553278209"/>
+<node ID="ID_1442797475" CREATED="1516552284786" MODIFIED="1516553601951"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Current </b>&#8211; is the current version of package which is installed
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_424096289" CREATED="1516552317312" MODIFIED="1516553630671"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Wanted</b>&#160;&#8211; is the highest version package which satisfies the semver version of the package in the package.json file
+    </p>
+  </body>
+</html>
+</richcontent>
+<font BOLD="false"/>
+</node>
+<node ID="ID_1449510367" CREATED="1516553244123" MODIFIED="1516553642031"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Latest</b>&#160;&#8211; is the package version in the repository in the tagged with latest
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="Upgrading Packages" FOLDED="true" ID="ID_1948689103" CREATED="1516553337200" MODIFIED="1516553337200">
+<node ID="ID_1202311683" CREATED="1516553384556" MODIFIED="1516553400825"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The command<b>&#160;npm update</b>&#160;will update all packages with a newer version within the range specified by the semver
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1383007173" CREATED="1516553588737" MODIFIED="1516553655831"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Updating individual packages&#160;use <b>npm update &lt;package_name&gt;</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="npx" FOLDED="true" ID="ID_255850540" CREATED="1527380370260" MODIFIED="1527380435308">
+<node TEXT="introduction" FOLDED="true" ID="ID_1250719753" CREATED="1527380703953" MODIFIED="1527380711997">
+<node TEXT="an npm package runner" ID="ID_575878268" CREATED="1527381010487" MODIFIED="1527381014979"/>
+<node TEXT="npx is a tool intended to help round out the experience of using packages from the npm registry&#x200a;" ID="ID_974076085" CREATED="1527380437627" MODIFIED="1527380441464"/>
+<node TEXT="the same way npm makes it super easy to install and manage dependencies hosted on the npm registry, npx makes it easy to use CLI tools and other executables hosted on the registry." ID="ID_103103549" CREATED="1527380473483" MODIFIED="1527380563318"/>
+<node TEXT="For the past couple of years, the npm ecosystem has been moving more and more towards installing tools as project-local devDependencies, instead of requiring users to install them globally." ID="ID_480715148" CREATED="1527380589954" MODIFIED="1527380597166"/>
+</node>
+<node TEXT="examples" FOLDED="true" ID="ID_952059230" CREATED="1527381057167" MODIFIED="1527381065867">
+<node TEXT="Using locally-installed tools without npm run-script" FOLDED="true" ID="ID_441098265" CREATED="1527381076695" MODIFIED="1527381081306">
+<node TEXT="npm i -D cowsay" ID="ID_91521984" CREATED="1527381095438" MODIFIED="1527381112858"/>
+<node TEXT="npx cowsay hello" ID="ID_781772789" CREATED="1527381132486" MODIFIED="1527381155314"/>
+</node>
+<node TEXT="Executing one-off commands" FOLDED="true" ID="ID_1439137229" CREATED="1527381197566" MODIFIED="1527381202449">
+<node TEXT="want to try some CLI tool, but it&#x2019;s annoying to have to install a global just to run it once?" ID="ID_14505840" CREATED="1527381222398" MODIFIED="1527381226410"/>
+<node TEXT="Calling npx &lt;command&gt; when &lt;command&gt; isn&#x2019;t already in your $PATH will automatically install a package with that name from the npm registry for you, and invoke it." ID="ID_1391619091" CREATED="1527381243341" MODIFIED="1527381247449"/>
+<node TEXT="When it&#x2019;s done, the installed package won&#x2019;t be anywhere in your globals, so you won&#x2019;t have to worry about pollution in the long-term." ID="ID_1120656982" CREATED="1527381289749" MODIFIED="1527381293314"/>
+<node TEXT="npx create-react-app my-cool-new-app" ID="ID_287760963" CREATED="1527381297613" MODIFIED="1527381334193"/>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Scripting" ID="ID_1885997625" CREATED="1531610154299" MODIFIED="1531610160534"/>
+<node TEXT="Versioning" ID="ID_76464107" CREATED="1516550625595" MODIFIED="1516550625595">
+<node TEXT="Basics" FOLDED="true" ID="ID_1022357353" CREATED="1516550861609" MODIFIED="1531609497415">
+<node TEXT="NPM packages use the semver versioning system" ID="ID_1736386308" CREATED="1516550639463" MODIFIED="1516550639463"/>
+<node TEXT="Following the &quot;spirit&quot; of semver is the responsibility of the developer, and developers are greatly encouraged to do so" ID="ID_380712573" CREATED="1516550761324" MODIFIED="1531609497414"/>
+<node TEXT="The versioning scheme use the following pattern" FOLDED="true" ID="ID_85401613" CREATED="1516550825714" MODIFIED="1516550825714">
+<node TEXT="MAJOR.MINOR.PATCH" ID="ID_619813274" CREATED="1516550915882" MODIFIED="1516550915882"/>
+<node TEXT="So version 1.2.3 would be a major version of &apos;1&apos;, minor version of &apos;2&apos; and a patch version of &apos;3&apos;" ID="ID_1238972954" CREATED="1516550940085" MODIFIED="1516550940085"/>
+</node>
+</node>
+<node TEXT="Best Practices" FOLDED="true" ID="ID_1263089657" CREATED="1516550996166" MODIFIED="1516550996166">
+<node TEXT="Projects to be shared publicly should be initially released with a major version of 1" ID="ID_1789175636" CREATED="1516551018372" MODIFIED="1516551018372"/>
+<node TEXT="Bug fixes and other minor changes should be released as patch version increments" ID="ID_1936210848" CREATED="1516551063722" MODIFIED="1516551063722"/>
+<node TEXT="New features which do not break existing features should be released as minor version increment" ID="ID_152965392" CREATED="1516551143324" MODIFIED="1516551143324"/>
+<node TEXT="Changes which are not backward compatible should be released as a major version increment" ID="ID_989303525" CREATED="1516551262295" MODIFIED="1516551262295"/>
+<node TEXT="More: https://docs.npmjs.com/getting-started/semantic-versioning" ID="ID_815320711" CREATED="1516551310149" MODIFIED="1516551310149" LINK="https://docs.npmjs.com/getting-started/semantic-versioning"/>
+</node>
+<node TEXT="Package Dependency Version Number" FOLDED="true" ID="ID_1021566204" CREATED="1516551354095" MODIFIED="1516551354095">
+<node TEXT="When installing and saving package dependencies, the version of the package is saved in the package.json file" ID="ID_786872170" CREATED="1516551671711" MODIFIED="1516551671711"/>
+<node TEXT="Semver provides various patterns to determine what version of a package will satisfy the dependency requirement" ID="ID_1672580605" CREATED="1516551716323" MODIFIED="1516551716323"/>
+<node TEXT="In the Package json the default version number scheme indicates that all versions up to, but not including, the next major version can be installed to meet the package dependency requirement" ID="ID_1540150174" CREATED="1516551775595" MODIFIED="1516551818499"/>
+<node TEXT="Patch, Minor &amp; Major Increments" FOLDED="true" ID="ID_1283442643" CREATED="1516551850746" MODIFIED="1516551850746">
+<node TEXT="Patch increments up to but not including the next minor version:" FOLDED="true" ID="ID_582844392" CREATED="1516551922701" MODIFIED="1516551922701">
+<node TEXT="1.2 &#x2013; any 1.2 version up to but not including 1.3" ID="ID_23466693" CREATED="1516551937821" MODIFIED="1516551937821"/>
+<node TEXT="1.2.x - any 1.2 version up to but not including 1.3" ID="ID_1423334026" CREATED="1516551959870" MODIFIED="1516551959870"/>
+<node TEXT="1.2.x - any 1.2 version up to but not including 1.3" ID="ID_1641466342" CREATED="1516551971876" MODIFIED="1516551971876"/>
+</node>
+<node TEXT="Minor increments up to but not including the next major version:" FOLDED="true" ID="ID_1765696075" CREATED="1516551991873" MODIFIED="1516551991873">
+<node TEXT="1 &#x2013; any version of 1 up to but not including 2" ID="ID_408883564" CREATED="1516552027014" MODIFIED="1516552027014"/>
+<node TEXT="1.x &#x2013; any version of 1 up to but not including 2" ID="ID_1594265588" CREATED="1516552039891" MODIFIED="1516552039891"/>
+<node TEXT="^1.2.3 - any version equal to or greater than 1.2.3 up to but not including 2" ID="ID_1244815827" CREATED="1516552051226" MODIFIED="1516552051226"/>
+</node>
+<node TEXT="Major increment &quot;*&quot; or &quot;x&quot; &#x2013; up to latest version" ID="ID_426924348" CREATED="1516552066954" MODIFIED="1516552066954"/>
+<node TEXT="Exact version: 1.1.1" ID="ID_1906138814" CREATED="1516552093925" MODIFIED="1516552093925"/>
+</node>
+</node>
+</node>
+<node TEXT="Updating and Configuring NPM" FOLDED="true" ID="ID_866096859" CREATED="1516555216739" MODIFIED="1516555216739">
+<node ID="ID_571923815" CREATED="1516555241436" MODIFIED="1516555279444"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      NPM can update itself using the following command <b>npm update -g npm</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="NPM supports a number of configuration options" ID="ID_1872450433" CREATED="1516555366210" MODIFIED="1516555381410"/>
+<node TEXT="The most important options are for configuring proxy servers for downloading packages through a corporate firewall" FOLDED="true" ID="ID_789057408" CREATED="1516555352232" MODIFIED="1516555352232">
+<node TEXT="npm config set proxy &lt;some_url&gt;" ID="ID_417901227" CREATED="1516555398490" MODIFIED="1516555398490"/>
+<node TEXT="npm config set https-proxy &lt;some_url&gt;" ID="ID_1815970285" CREATED="1516555406902" MODIFIED="1516555406902"/>
+</node>
+<node TEXT="NPM Configuration File" FOLDED="true" ID="ID_1964174419" CREATED="1516555434621" MODIFIED="1516555434621">
+<node TEXT="Setting configuration options will create a .npmrc file in the user&apos;s root folder" ID="ID_691576590" CREATED="1516555458199" MODIFIED="1516555458199"/>
+<node ID="ID_1134547637" CREATED="1516555489171" MODIFIED="1516555507354"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Project level configuration options can be set through an <b>.npmrc</b>&#160; file in the projects root folder
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node TEXT="Global configuration options can be set in the $PREFIX/etc/npmrc file" FOLDED="true" ID="ID_637603968" CREATED="1516555536568" MODIFIED="1516555536568">
+<node TEXT="$PREFIX can be determined by this command: npm config get prefix" ID="ID_1754570213" CREATED="1516555572527" MODIFIED="1516555572527"/>
+</node>
+<node TEXT="NPM Configuration Commands" FOLDED="true" ID="ID_880416383" CREATED="1516555594015" MODIFIED="1516555594015">
+<node ID="ID_253760776" CREATED="1516555620817" MODIFIED="1516555630138"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>npm config set &lt;key&gt; &lt;value&gt; - </b>sets a configuration value for the configuration key
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_78584255" CREATED="1516555650230" MODIFIED="1516555664810"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>npm config get &lt;key&gt;</b>&#160;- gets a configuration value for the configuration key
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_1121152403" CREATED="1516555731762" MODIFIED="1516555746481"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>npm config delete &lt;key&gt;</b>&#160;- delete the configuration key and value
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node ID="ID_832383439" CREATED="1516555761012" MODIFIED="1516555779225"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>npm config list</b>- list the configuration keys and values
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="yarn" ID="ID_780946369" CREATED="1531609802229" MODIFIED="1531609806713">
+<node TEXT="Introduction" ID="ID_244265374" CREATED="1531610103923" MODIFIED="1531610110190">
+<node TEXT="Yarn was developed by Facebook in attempt to resolve some of npm&#x2019;s shortcomings." ID="ID_408436550" CREATED="1531611085221" MODIFIED="1531611104920"/>
+<node TEXT="Yarn isn&#x2019;t technically a replacement for npm since it relies on modules from the npm registry." ID="ID_1963909049" CREATED="1531611109367" MODIFIED="1531611125951"/>
+<node TEXT="Think of Yarn as a new installer that still relies upon the same npm structure." ID="ID_1922361513" CREATED="1531611131009" MODIFIED="1531611149175"/>
+<node TEXT="The registry itself hasn&#x2019;t changed, but the installation method is different." ID="ID_651160636" CREATED="1531611152152" MODIFIED="1531611167047"/>
+<node ID="ID_1808105571" CREATED="1531611171920" MODIFIED="1531611171920"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Since Yarn gives you access to the same packages as npm, moving from npm to Yarn doesn&#8217;t require you to make any changes to your workflow.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="commands" ID="ID_1135980205" CREATED="1531610113955" MODIFIED="1531610119487">
+<node TEXT="initialize Project" ID="ID_1775764601" CREATED="1531610123307" MODIFIED="1531610137670">
+<node TEXT="yarn init" ID="ID_1106499045" CREATED="1531610180794" MODIFIED="1531610188478"/>
+</node>
+<node TEXT="Adding a dependency" ID="ID_1374571313" CREATED="1531610383721" MODIFIED="1531610386700">
+<node TEXT="yarn add [package]" ID="ID_132314568" CREATED="1531610499760" MODIFIED="1531610499760"/>
+<node TEXT="yarn add [package]@[version]" ID="ID_1783661327" CREATED="1531610508673" MODIFIED="1531610508673"/>
+<node TEXT="yarn add [package]@[tag]" ID="ID_1876906795" CREATED="1531610515912" MODIFIED="1531610515912"/>
+</node>
+<node TEXT="Adding a dependency to different categories of dependencies" ID="ID_1895786125" CREATED="1531610408473" MODIFIED="1531610413596">
+<node TEXT="yarn add [package] --dev" ID="ID_1088552448" CREATED="1531610524708" MODIFIED="1531610524708"/>
+<node TEXT="yarn add [package] --peer" ID="ID_188970716" CREATED="1531610535384" MODIFIED="1531610535384"/>
+<node TEXT="yarn add [package] --optional" ID="ID_1624081927" CREATED="1531610543083" MODIFIED="1531610543083"/>
+</node>
+<node TEXT="Upgrading a dependency" ID="ID_916077135" CREATED="1531610435058" MODIFIED="1531610435058">
+<node TEXT="yarn upgrade [package]" ID="ID_717003427" CREATED="1531610553965" MODIFIED="1531610553965"/>
+<node TEXT="yarn upgrade [package]@[version]" ID="ID_1069827161" CREATED="1531610563481" MODIFIED="1531610563481"/>
+<node TEXT="yarn upgrade [package]@[tag]" ID="ID_226967279" CREATED="1531610570261" MODIFIED="1531610570261"/>
+</node>
+<node TEXT="Removing a dependency" ID="ID_1030074281" CREATED="1531610456624" MODIFIED="1531610460612">
+<node TEXT="yarn remove [package]" ID="ID_823289744" CREATED="1531610578529" MODIFIED="1531610578529"/>
+</node>
+<node TEXT="Installing all the dependencies of project" ID="ID_1775705957" CREATED="1531610469897" MODIFIED="1531610469897">
+<node TEXT="yarn" ID="ID_423692558" CREATED="1531610586052" MODIFIED="1531610586052"/>
+<node TEXT="yarn install" ID="ID_1214801777" CREATED="1531610593673" MODIFIED="1531610593673"/>
+</node>
+</node>
+</node>
+<node TEXT="Bower" ID="ID_1289442243" CREATED="1531610846205" MODIFIED="1531610852129"/>
 </node>
 <node TEXT="Build tools" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
 <node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
@@ -6303,7 +6347,7 @@
 <node TEXT="Written by hand" ID="ID_1598016922" CREATED="1525724245372" MODIFIED="1525724253673"/>
 </node>
 </node>
-<node TEXT="A Chat with Redux" FOLDED="true" ID="ID_157797263" CREATED="1525725218376" MODIFIED="1525725232218">
+<node TEXT="A Chat with Redux" ID="ID_157797263" CREATED="1525725218376" MODIFIED="1525725232218">
 <node TEXT="REACT: Hey CourseAction, someone clicked this &quot;Save Course&quot; button" ID="ID_1194131840" CREATED="1525725239773" MODIFIED="1525725271906"/>
 <node TEXT="ACTION: Thanks React! I will dispatch an action so reducers that care can update state" ID="ID_941621879" CREATED="1525725273688" MODIFIED="1525725323554"/>
 <node TEXT="REDUCER: Ah, thanks action. I see you passed me the current state and the action to perform. I&apos;ll make a new copy of the state and return it." ID="ID_1638836202" CREATED="1525725326484" MODIFIED="1525725406017"/>
@@ -6501,7 +6545,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Redux Basic building blogs" ID="ID_399270527" CREATED="1530394479111" MODIFIED="1530394498554">
+<node TEXT="Redux Basic building blogs" FOLDED="true" ID="ID_399270527" CREATED="1530394479111" MODIFIED="1530394498554">
 <node TEXT="import { createStore } from &apos;redux&apos;;&#xa;&#xa;// Initial Value Store&#xa;var defaultState = {&#xa;   originAmount: &apos;0.00&apos;&#xa;}&#xa;&#xa;// Reducer&#xa;function amount(state = defaultState, action) {&#xa;  &#xa;   if(action.type === &apos;CHANGE_ORIGIN_AMOUNT&apos;){&#xa;&#xa;       //Redux rule: Don&apos;t mutate Store, so use object spread&#xa;       // for immutebility&#xa;&#xa;       return {&#xa;          ...state,&#xa;          originAmount: action.data&#xa;      }&#xa;     &#xa;      //alternativ use Object.assign({}, state, {originAmount: action.data})&#xa;   }&#xa;  &#xa;    return state;   &#xa;}&#xa;&#xa;var store = createStore( amount );&#xa;&#xa;//Subscribe to the store to be informed about updates&#xa;store.subscribe(function() {&#xa;   console.log(&apos;state&apos;, store.getState());&#xa;})&#xa;&#xa;// Action&#xa;store.dispatch({type: &apos;CHANGE_ORIGIN_AMOUNT&apos;, data:&apos;300.65&apos;});&#xa;store.dispatch({type: &apos;&apos;});&#xa;store.dispatch({type: &apos;&apos;});" ID="ID_411863525" CREATED="1530394513038" MODIFIED="1530396292186"/>
 </node>
 <node TEXT="data flow" FOLDED="true" ID="ID_771678683" CREATED="1522621091693" MODIFIED="1522621101490">
@@ -6938,6 +6982,11 @@
 <node TEXT="4. Bigger experiment (introduce to Mainapi or parts of it)" ID="ID_1347668873" CREATED="1530392323516" MODIFIED="1530392421734"/>
 <node TEXT="5. Evaluate (do everybody like it?)" ID="ID_588460513" CREATED="1530392345964" MODIFIED="1530392441895"/>
 <node TEXT="6. Decide" ID="ID_485784200" CREATED="1530392352996" MODIFIED="1530392370063"/>
+</node>
+<node TEXT="Rest" ID="ID_354168407" CREATED="1531610007316" MODIFIED="1531610016328"/>
+<node TEXT="Static Site generators" ID="ID_869348301" CREATED="1529146169195" MODIFIED="1529146193550">
+<node TEXT="Gatsby" ID="ID_808987085" CREATED="1529146232931" MODIFIED="1529146239454"/>
+<node TEXT="Phenomic" ID="ID_236290860" CREATED="1529146242779" MODIFIED="1529146254038"/>
 </node>
 </node>
 </node>
