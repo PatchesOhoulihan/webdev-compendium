@@ -1,7 +1,7 @@
 <map version="freeplane 1.6.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="web development" FOLDED="false" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1519810492712"><hook NAME="MapStyle">
-    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#808080ff,#808080ff,#808080ff,#808080ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -4839,8 +4839,8 @@
 <node TEXT="npm uninstall -s &lt;package&gt;" ID="ID_1687309143" CREATED="1516095378489" MODIFIED="1516550135799"/>
 <node TEXT="npm uninstall -d &lt;package&gt;" ID="ID_906230857" CREATED="1516095436603" MODIFIED="1516550143182"/>
 </node>
-<node TEXT="list used Packages" FOLDED="true" ID="ID_510142718" CREATED="1516096585075" MODIFIED="1531609754353">
-<node TEXT="list global packages" FOLDED="true" ID="ID_1287473160" CREATED="1516096592765" MODIFIED="1516096607067">
+<node TEXT="list used Packages" ID="ID_510142718" CREATED="1516096585075" MODIFIED="1531609754353">
+<node TEXT="list global packages" ID="ID_1287473160" CREATED="1516096592765" MODIFIED="1516096607067">
 <node TEXT="npm list -g --depth=0" ID="ID_1366468749" CREATED="1516096678164" MODIFIED="1516096678164"/>
 </node>
 </node>
@@ -5006,7 +5006,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Updating and Configuring NPM" FOLDED="true" ID="ID_866096859" CREATED="1516555216739" MODIFIED="1516555216739">
+<node TEXT="Updating and Configuring NPM" ID="ID_866096859" CREATED="1516555216739" MODIFIED="1516555216739">
 <node ID="ID_571923815" CREATED="1516555241436" MODIFIED="1516555279444"><richcontent TYPE="NODE">
 
 <html>
@@ -5124,7 +5124,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -5155,10 +5154,15 @@
 <node TEXT="yarn install" ID="ID_1214801777" CREATED="1531610593673" MODIFIED="1531610593673"/>
 </node>
 </node>
+<node TEXT="Scripting" ID="ID_1482437780" CREATED="1531617500956" MODIFIED="1531617509623">
+<node TEXT="executing scripts" ID="ID_971877600" CREATED="1531617511404" MODIFIED="1531617524711">
+<node TEXT="yarn scriptname" ID="ID_1450541483" CREATED="1531617530364" MODIFIED="1531617540719"/>
+</node>
+</node>
 </node>
 <node TEXT="Bower" ID="ID_1289442243" CREATED="1531610846205" MODIFIED="1531610852129"/>
 </node>
-<node TEXT="Build tools" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
+<node TEXT="Build tools" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
 <node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
 <node TEXT="NPM Scripts" ID="ID_1468674140" CREATED="1522616474887" MODIFIED="1522616485445"/>
 <node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
@@ -5232,8 +5236,8 @@
 </node>
 </node>
 </node>
-<node TEXT="ESLint" FOLDED="true" ID="ID_810386740" CREATED="1522616398536" MODIFIED="1522616405333">
-<node TEXT="intro" FOLDED="true" ID="ID_740180055" CREATED="1524949552401" MODIFIED="1524949559844">
+<node TEXT="ESLint" ID="ID_810386740" CREATED="1522616398536" MODIFIED="1522616405333">
+<node TEXT="intro" ID="ID_740180055" CREATED="1524949552401" MODIFIED="1524949559844">
 <node TEXT="ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs." ID="ID_199668136" CREATED="1524949874423" MODIFIED="1524949892238"/>
 <node TEXT="In many ways, it is similar to JSLint and JSHint with a few exceptions:" FOLDED="true" ID="ID_631335254" CREATED="1524949893444" MODIFIED="1524949899358">
 <node TEXT="ESLint uses Espree for JavaScript parsing." ID="ID_1062848189" CREATED="1524949906032" MODIFIED="1524949911006"/>
@@ -5241,8 +5245,8 @@
 <node TEXT="ESLint is completely pluggable, every single rule is a plugin and you can add more at runtime." ID="ID_2496491" CREATED="1524949934213" MODIFIED="1524949936965"/>
 </node>
 </node>
-<node TEXT="Installation and Usage" FOLDED="true" ID="ID_707889736" CREATED="1524949954837" MODIFIED="1524949958581">
-<node TEXT="Local Installation and Usage" FOLDED="true" ID="ID_288967180" CREATED="1524949967221" MODIFIED="1524949970941">
+<node TEXT="Installation and Usage" ID="ID_707889736" CREATED="1524949954837" MODIFIED="1524949958581">
+<node TEXT="Local Installation and Usage" ID="ID_288967180" CREATED="1524949967221" MODIFIED="1524949970941">
 <node TEXT="If you want to include ESLint as part of your project&#x2019;s build system, we recommend installing it locally" ID="ID_472600452" CREATED="1524950002715" MODIFIED="1524950014157"/>
 <node TEXT="npm install eslint --save-dev" ID="ID_736743714" CREATED="1524950034415" MODIFIED="1524950060037">
 <font ITALIC="true"/>
@@ -5251,6 +5255,9 @@
 <node TEXT="./node_modules/.bin/eslint --init" ID="ID_1120626817" CREATED="1524950095222" MODIFIED="1524950100715">
 <font ITALIC="true"/>
 </node>
+<node TEXT="OR" ID="ID_1589519448" CREATED="1531613302179" MODIFIED="1531613306895"/>
+<node TEXT="eslint --init" ID="ID_1232155545" CREATED="1531613310315" MODIFIED="1531613322926"/>
+<node TEXT="And the CLI asks you some questions." ID="ID_940162917" CREATED="1531613012717" MODIFIED="1531613046937"/>
 <node TEXT="After that, you can run ESLint in your project&#x2019;s root directory like this:" ID="ID_1722447382" CREATED="1524950228346" MODIFIED="1524950234027"/>
 <node TEXT="./node_modules/.bin/eslint yourfile.js" ID="ID_207340211" CREATED="1524950242459" MODIFIED="1524950251082">
 <font ITALIC="true"/>
@@ -5287,7 +5294,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Testing" FOLDED="true" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
+<node TEXT="Testing" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
 <node TEXT="Karma" FOLDED="true" ID="ID_1308980703" CREATED="1516004806956" MODIFIED="1516004819297">
 <node TEXT="deprecated" FOLDED="true" ID="ID_603925992" CREATED="1523878739354" MODIFIED="1523878749273">
 <node TEXT="How It Works" ID="ID_689036405" CREATED="1516004868654" MODIFIED="1516004868654">
@@ -5437,7 +5444,28 @@
 <node TEXT="chai" FOLDED="true" ID="ID_1915860979" CREATED="1516353819634" MODIFIED="1516353839657">
 <node TEXT="Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework." ID="ID_845159910" CREATED="1516353959680" MODIFIED="1516353959680"/>
 </node>
-<node TEXT="Jest" ID="ID_487526245" CREATED="1522617542951" MODIFIED="1522617578148"/>
+<node TEXT="Jest" ID="ID_487526245" CREATED="1522617542951" MODIFIED="1522617578148">
+<node TEXT="Introduction" ID="ID_206731019" CREATED="1531673805302" MODIFIED="1531673812602">
+<node TEXT="Jest was first released in 2014, and although it initially garnered a lot of interest, the project was dormant for a while and not so actively worked on." ID="ID_1024623617" CREATED="1531673852803" MODIFIED="1531673857678"/>
+<node TEXT="However, Facebook has invested the last year into improving Jest, and recently published a few releases with impressive changes that make it worth reconsidering." ID="ID_242623864" CREATED="1531673835172" MODIFIED="1531673871206"/>
+<node ID="ID_951808469" CREATED="1531673874049" MODIFIED="1531673874049"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The only resemblance of Jest compared to the initial open-source release is the name and the logo. Everything else has been changed and rewritten.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Jest expects to find our tests in a __tests__ folder, which has become a popular convention in the JavaScript community, and it&#x2019;s one we&#x2019;re going to stick to here. If you&#x2019;re not a fan of the __tests__ setup, out of the box Jest also supports finding any .test.js and .spec.js files too." ID="ID_964882443" CREATED="1531673947769" MODIFIED="1531673960454"/>
+</node>
 <node TEXT="Protractor" ID="ID_23662273" CREATED="1522617579439" MODIFIED="1522617597828"/>
 <node TEXT="Enzyme" ID="ID_1474860364" CREATED="1522617598919" MODIFIED="1522617605468"/>
 </node>
