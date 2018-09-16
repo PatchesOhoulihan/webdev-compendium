@@ -54,7 +54,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="36" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="43" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Html" FOLDED="true" POSITION="right" ID="ID_1525016501" CREATED="1517302920643" MODIFIED="1517302942794" HGAP_QUANTITY="22.249999754130847 pt" VSHIFT_QUANTITY="-40.49999879300598 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Introduction" FOLDED="true" ID="ID_667219144" CREATED="1520200774244" MODIFIED="1520200783932">
@@ -1009,7 +1009,7 @@
 </node>
 </node>
 </node>
-<node TEXT="CSS" FOLDED="true" POSITION="right" ID="ID_1074147252" CREATED="1517302830445" MODIFIED="1517302949019" HGAP_QUANTITY="26.7499996200204 pt" VSHIFT_QUANTITY="-48.749998547136826 pt">
+<node TEXT="CSS" POSITION="right" ID="ID_1074147252" CREATED="1517302830445" MODIFIED="1517302949019" HGAP_QUANTITY="26.7499996200204 pt" VSHIFT_QUANTITY="-48.749998547136826 pt">
 <edge COLOR="#808080"/>
 <node TEXT="core" ID="ID_619879499" CREATED="1519589670756" MODIFIED="1519589677978">
 <node TEXT="apply CSS" FOLDED="true" ID="ID_1539358621" CREATED="1519589684764" MODIFIED="1519590979983">
@@ -1036,7 +1036,7 @@
 <node TEXT="1. Inline style (inside an HTML element)&#xa;2. External and internal style sheets (in the head section)&#xa;3. Browser default" ID="ID_812367423" CREATED="1519591619160" MODIFIED="1519591882873"/>
 </node>
 </node>
-<node TEXT="Selectors" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
+<node TEXT="Selectors" FOLDED="true" ID="ID_22726140" CREATED="1519515948862" MODIFIED="1519515960450">
 <node TEXT="Simple selectors" FOLDED="true" ID="ID_1417086143" CREATED="1519515970314" MODIFIED="1519515975733">
 <node TEXT="Type selector" FOLDED="true" ID="ID_835537567" CREATED="1519516109081" MODIFIED="1519516113404">
 <node TEXT="Selects all elements that match the given node name." ID="ID_1746383443" CREATED="1519516234152" MODIFIED="1519516237323"/>
@@ -2312,7 +2312,7 @@
 </node>
 <node TEXT="Grids" ID="ID_1564708291" CREATED="1521328298609" MODIFIED="1521328301911"/>
 </node>
-<node TEXT="Box model" FOLDED="true" ID="ID_185068251" CREATED="1521390976864" MODIFIED="1521390992266">
+<node TEXT="Box model" ID="ID_185068251" CREATED="1521390976864" MODIFIED="1521390992266">
 <node TEXT="CSS Basic Box Model is a module of CSS that defines the rectangular boxes&#x2014;including their padding and margin&#x2014;that are generated for elements and laid out according to the visual formatting model." FOLDED="true" ID="ID_696404274" CREATED="1521709126660" MODIFIED="1521709165486">
 <node TEXT="The CSS visual formatting model is an algorithm that processes a document and displays it on visual media. This model is a basic concept of CSS." ID="ID_1584331980" CREATED="1521709176504" MODIFIED="1521709200586"/>
 </node>
@@ -2583,12 +2583,12 @@
 </node>
 </node>
 </node>
-<node TEXT="Javascript" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
+<node TEXT="Javascript" FOLDED="true" POSITION="right" ID="ID_1916008129" CREATED="1515277317461" MODIFIED="1519600780212" HGAP_QUANTITY="42.49999915063384 pt" VSHIFT_QUANTITY="-0.7499999776482589 pt">
 <edge COLOR="#ff0000"/>
-<node TEXT="Introduction" ID="ID_1370505634" CREATED="1529181284956" MODIFIED="1529181293032">
-<node TEXT="TC39 Stages" ID="ID_1503146558" CREATED="1529181296540" MODIFIED="1529181308544">
+<node TEXT="Introduction" FOLDED="true" ID="ID_1370505634" CREATED="1529181284956" MODIFIED="1529181293032">
+<node TEXT="TC39 Stages" FOLDED="true" ID="ID_1503146558" CREATED="1529181296540" MODIFIED="1529181308544">
 <node TEXT="The TC39 is the standards committee for JavaScript, so the TC39 committee decides what new features are added to JavaScript." ID="ID_779281811" CREATED="1529181352938" MODIFIED="1529181352938"/>
-<node TEXT="They categorize proposals for features into four stages." ID="ID_92877477" CREATED="1529181371906" MODIFIED="1529181371906">
+<node TEXT="They categorize proposals for features into four stages." FOLDED="true" ID="ID_92877477" CREATED="1529181371906" MODIFIED="1529181371906">
 <node TEXT="0 is just an idea," ID="ID_1322861998" CREATED="1529181383937" MODIFIED="1529181561574"/>
 <node TEXT="1 is a proposal," ID="ID_1625938632" CREATED="1529181406403" MODIFIED="1529181557029"/>
 <node TEXT="2 is a draft, which contains an initial speck," ID="ID_424133701" CREATED="1529181427869" MODIFIED="1529181546318"/>
@@ -3396,7 +3396,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Frontend" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
+<node TEXT="Frontend" FOLDED="true" ID="ID_1667790984" CREATED="1515277330605" MODIFIED="1515591301447">
 <node TEXT="Web APIs" FOLDED="true" ID="ID_1338289551" CREATED="1515591316434" MODIFIED="1517822727400">
 <node TEXT="Web Application Programming Interfaces (Web APIs) are used to perform a variety of tasks, such as manipulating the DOM, playing audio or video, or generating 3D graphics." ID="ID_1839416238" CREATED="1517822841024" MODIFIED="1517822864936"/>
 <node TEXT="Browser Object Model (BOM)" FOLDED="true" ID="ID_1893654671" CREATED="1522708994126" MODIFIED="1522709012930">
@@ -3788,11 +3788,11 @@
 <hook URI="webdevelopment2_files/png_5868046861603241277.png" SIZE="0.80862534" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="extensions" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
-<node TEXT="frameworks" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
-<node TEXT="Single Page Application Frameworks" ID="ID_594677038" CREATED="1529146207371" MODIFIED="1530387083768">
-<node TEXT="React" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
-<node TEXT="core" ID="ID_1471975184" CREATED="1526846655943" MODIFIED="1526846661475">
+<node TEXT="extensions" FOLDED="true" ID="ID_1825658209" CREATED="1520844543454" MODIFIED="1520844600176">
+<node TEXT="frameworks" FOLDED="true" ID="ID_388527251" CREATED="1520844632927" MODIFIED="1520844640049">
+<node TEXT="Single Page Application Frameworks" FOLDED="true" ID="ID_594677038" CREATED="1529146207371" MODIFIED="1530387083768">
+<node TEXT="React" FOLDED="true" ID="ID_21261577" CREATED="1515277387469" MODIFIED="1521314635405">
+<node TEXT="core" FOLDED="true" ID="ID_1471975184" CREATED="1526846655943" MODIFIED="1526846661475">
 <node TEXT="What is React?" FOLDED="true" ID="ID_8602486" CREATED="1515278490837" MODIFIED="1515329960900">
 <node TEXT="What is ReactJS?" FOLDED="true" ID="ID_1791430197" CREATED="1515278524808" MODIFIED="1515323933705">
 <node TEXT="ReactJS is a library that generates the view layer of an application based on its state." ID="ID_1409151973" CREATED="1515278541958" MODIFIED="1515278541958"/>
@@ -4084,7 +4084,7 @@
 <node TEXT="Both types of React Components can be used by writing their name within an HTML tag:" ID="ID_1541763525" CREATED="1523213121785" MODIFIED="1523213126123"/>
 <node TEXT="var element = &lt;Welcome/&gt;" ID="ID_255656453" CREATED="1523213141929" MODIFIED="1523213144819"/>
 </node>
-<node TEXT="Rendering Elements/React Nodes" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
+<node TEXT="Rendering Elements/React Nodes" FOLDED="true" ID="ID_379016788" CREATED="1515279503033" MODIFIED="1515425879647">
 <node TEXT="introduction" FOLDED="true" ID="ID_1038299905" CREATED="1515279516927" MODIFIED="1523207408442">
 <node TEXT="React elements are the building blocks of react JS applications." ID="ID_1181057969" CREATED="1523207441351" MODIFIED="1523207447491"/>
 <node TEXT="React Elements are objects that represent a DOM node." ID="ID_1029148896" CREATED="1523207485103" MODIFIED="1523207489586"/>
@@ -4134,7 +4134,7 @@
 <node TEXT="until another ReactDOM.render method is called." ID="ID_301245827" CREATED="1515281936792" MODIFIED="1515281936792"/>
 </node>
 </node>
-<node TEXT="JSX" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
+<node TEXT="JSX" FOLDED="true" ID="ID_65531738" CREATED="1515282261275" MODIFIED="1515324114867">
 <node TEXT="What is JSX?" FOLDED="true" ID="ID_561960569" CREATED="1515282290585" MODIFIED="1515329962957">
 <node TEXT="JSX is a syntax extension to JavaScript that allows React Elements to be written inside JavaScript using HTML tags." ID="ID_1071991068" CREATED="1515282302327" MODIFIED="1515282302327"/>
 <node TEXT="Using JSX, we can create React Elements easily with HTML Tags:" ID="ID_630607591" CREATED="1515282323768" MODIFIED="1515282323768"/>
@@ -4240,35 +4240,35 @@
 <node TEXT="With the &amp;&amp; operator, true and expression will always evaluate to expression. On the other hand, false and expression will always evaluate to false which won&apos;t render." ID="ID_1534112129" CREATED="1515332339757" MODIFIED="1515332339757"/>
 </node>
 </node>
-<node TEXT="Component design pattern" ID="ID_1692491919" CREATED="1530373612656" MODIFIED="1530373625756">
+<node TEXT="Component design pattern" FOLDED="true" ID="ID_1692491919" CREATED="1530373612656" MODIFIED="1530373625756">
 <node TEXT="Pure Functions" FOLDED="true" ID="ID_382616966" CREATED="1523133219531" MODIFIED="1523133231116">
 <node TEXT="Pure functions are an idea that come from functional programming." ID="ID_254904309" CREATED="1530372549791" MODIFIED="1530372555139"/>
 <node TEXT="Pure functions are a really big thing in the React ecosystem. There&apos;s a focus on having pure React components wherever possible." ID="ID_993399510" CREATED="1530373320698" MODIFIED="1530373324582"/>
 <node TEXT="The real power with pure functions is that this gives you some guarantees and will make the code more predictable and more reliable, which is really important when you&apos;re trying to avoid bugs." ID="ID_589118372" CREATED="1530372951268" MODIFIED="1530372953872"/>
-<node TEXT="Pure functions have three primary characteristics." ID="ID_273141623" CREATED="1530372654526" MODIFIED="1530372672193">
+<node TEXT="Pure functions have three primary characteristics." FOLDED="true" ID="ID_273141623" CREATED="1530372654526" MODIFIED="1530372672193">
 <node TEXT="They don&apos;t access any variables that are outside of the scope of the function" ID="ID_822429147" CREATED="1530372686155" MODIFIED="1530372696282"/>
-<node TEXT="They have no side effects." ID="ID_638057500" CREATED="1530372726303" MODIFIED="1530372754385">
+<node TEXT="They have no side effects." FOLDED="true" ID="ID_638057500" CREATED="1530372726303" MODIFIED="1530372754385">
 <node TEXT="What that really means is that pure functions do not reach outside of themselves and mutate or change any variables that are not inside of the function." ID="ID_1429158606" CREATED="1530372789999" MODIFIED="1530372789999"/>
 </node>
 <node TEXT="Call with the same parameter always return the same value (Idempotenz)" ID="ID_184085460" CREATED="1523133234267" MODIFIED="1523133684808"/>
 <node TEXT="OR Generates only from the given props its new state." ID="ID_955974165" CREATED="1530373022164" MODIFIED="1530373027856"/>
 </node>
 <node TEXT="Impure Functions does not apply all the all of the above mentioned properties" ID="ID_1402638177" CREATED="1523133374554" MODIFIED="1523133475091"/>
-<node TEXT="examples" ID="ID_1882693201" CREATED="1523133544273" MODIFIED="1523133552570">
-<node TEXT="pure" ID="ID_757132856" CREATED="1523133556601" MODIFIED="1523133559172">
+<node TEXT="examples" FOLDED="true" ID="ID_1882693201" CREATED="1523133544273" MODIFIED="1523133552570">
+<node TEXT="pure" FOLDED="true" ID="ID_757132856" CREATED="1523133556601" MODIFIED="1523133559172">
 <node TEXT="var conversionRate = 1.5;&#xa;&#xa;function convertAmount(amount, rate) {&#xa;   return amount * rate;&#xa;}&#xa;&#xa;convertAmount(30, conversionRate);" ID="ID_911012678" CREATED="1523133570608" MODIFIED="1530355298552"/>
 </node>
-<node TEXT="impure" ID="ID_1044527417" CREATED="1523133560225" MODIFIED="1523133630985">
+<node TEXT="impure" FOLDED="true" ID="ID_1044527417" CREATED="1523133560225" MODIFIED="1523133630985">
 <node TEXT="var conversionRate = 1.5;&#xa;&#xa;function convertAmount(amount) {&#xa;   return amount * rate;&#xa;}&#xa;&#xa;convertAmount(30, conversionRate);" ID="ID_779972198" CREATED="1523133629544" MODIFIED="1530355361351"/>
 </node>
 </node>
 <node TEXT="You should always aim for pure functions in your project" ID="ID_886201790" CREATED="1523134110789" MODIFIED="1523134140606"/>
 </node>
-<node TEXT="Immutability" ID="ID_1594150513" CREATED="1530373675008" MODIFIED="1530375717535">
+<node TEXT="Immutability" FOLDED="true" ID="ID_1594150513" CREATED="1530373675008" MODIFIED="1530375717535">
 <node TEXT="Immutability is another idea that comes from functional programming" ID="ID_209762714" CREATED="1530373821756" MODIFIED="1530373821756"/>
 <node TEXT="immutability means that you don&apos;t just mutate your object, but if you want to change it you make a copy first, and then make modifications on that copy and you hold onto the original." ID="ID_277249283" CREATED="1530375514228" MODIFIED="1530375955949"/>
 <node TEXT="Immutability is one of the key components of how Redux works, and how it manages to track changes and stay performant." ID="ID_1634608441" CREATED="1530375957857" MODIFIED="1530375962813"/>
-<node TEXT="Example" ID="ID_1733538475" CREATED="1530374150845" MODIFIED="1530374169728">
+<node TEXT="Example" FOLDED="true" ID="ID_1733538475" CREATED="1530374150845" MODIFIED="1530374169728">
 <node TEXT="Let&apos;s say we have a simple game where the state consists of a single JavaScript object." ID="ID_711538781" CREATED="1530374190703" MODIFIED="1530374190703"/>
 <node TEXT="let state = {color: &apos;red&apos;, name: &apos;Adam&apos;, points: 5}" ID="ID_1705883018" CREATED="1530374199813" MODIFIED="1530374787549">
 <font ITALIC="true"/>
@@ -4291,17 +4291,17 @@
 <node TEXT="Managing mutation and state changes is one of the major pain points in making a single-page application." ID="ID_602048784" CREATED="1530375134369" MODIFIED="1530375134369"/>
 <node TEXT="Having immutable data and keeping track of this history makes it much easier to manage your state and to track what has changed and when it has changed." ID="ID_1667903835" CREATED="1530375156585" MODIFIED="1530375156585"/>
 </node>
-<node TEXT="Advantages" ID="ID_341801320" CREATED="1530375733291" MODIFIED="1530375741206">
-<node TEXT="State snapshots" ID="ID_1682629329" CREATED="1530375771923" MODIFIED="1530375781214">
+<node TEXT="Advantages" FOLDED="true" ID="ID_341801320" CREATED="1530375733291" MODIFIED="1530375741206">
+<node TEXT="State snapshots" FOLDED="true" ID="ID_1682629329" CREATED="1530375771923" MODIFIED="1530375781214">
 <node TEXT="When you&apos;re forced to create a new copy before you modify it, you&apos;re creating another snapshot in time, so you can now compare the old state versus the new state." ID="ID_1299526515" CREATED="1530375177642" MODIFIED="1530375177642"/>
 </node>
-<node TEXT="Undo" ID="ID_425582376" CREATED="1530375782491" MODIFIED="1530375787062">
+<node TEXT="Undo" FOLDED="true" ID="ID_425582376" CREATED="1530375782491" MODIFIED="1530375787062">
 <node TEXT="Some really neat things that holding on to the history allows is we can now take snapshots of our state. We can do things like undo, where if the application goes wrong you just push an undo button and it goes back to the previous state." ID="ID_1820714777" CREATED="1530375270310" MODIFIED="1530375273161"/>
 </node>
-<node TEXT="Reload from URL" ID="ID_458577742" CREATED="1530375789802" MODIFIED="1530375799582">
+<node TEXT="Reload from URL" FOLDED="true" ID="ID_458577742" CREATED="1530375789802" MODIFIED="1530375799582">
 <node TEXT="We can recreate state from URL, which allows much easier refreshing, which is a major pain point in many single-page applications, because you refresh, and everything is gone, which can be extremely frustrating." ID="ID_1035377416" CREATED="1530375347527" MODIFIED="1530375347527"/>
 </node>
-<node TEXT="Time travel" ID="ID_1416747724" CREATED="1530375801675" MODIFIED="1530375813152">
+<node TEXT="Time travel" FOLDED="true" ID="ID_1416747724" CREATED="1530375801675" MODIFIED="1530375813152">
 <node TEXT="Another neat possibility is time travel, which allows you to go back, say, 5 steps or 10 steps in your app without having to do a lot of complicated service head work." ID="ID_1931090992" CREATED="1530375457931" MODIFIED="1530375457931"/>
 </node>
 </node>
@@ -4380,7 +4380,7 @@
 </node>
 </node>
 <node TEXT="React DOM Server" FOLDED="true" ID="ID_683480484" CREATED="1529788711947" MODIFIED="1529788715026">
-<node TEXT="Introduction" ID="ID_1998664652" CREATED="1529788753162" MODIFIED="1529788870258">
+<node TEXT="Introduction" FOLDED="true" ID="ID_1998664652" CREATED="1529788753162" MODIFIED="1529788870258">
 <node TEXT="React DOM server is a seemingly magical part of our stack that basically allows us to do the following." ID="ID_34428570" CREATED="1529788780498" MODIFIED="1529788784339"/>
 <node TEXT="We take our initial state and we load the top-level component into Express or whatever is serving our application and it outputs static HTML." ID="ID_1962228031" CREATED="1529788807738" MODIFIED="1529788870257"/>
 <node TEXT=" It doesn&apos;t need the actual DOM to do it, that&apos;s why it&apos;s the server version of React DOM" ID="ID_1249881284" CREATED="1529788832346" MODIFIED="1529788836641"/>
@@ -4388,13 +4388,13 @@
 <node TEXT="So, given a state and a parent component, it generates static markup." ID="ID_1921101423" CREATED="1529788890177" MODIFIED="1529788893641"/>
 <node TEXT=" It does this easily because React already has a virtual DOM it uses for optimizations, but this can also be used to render an application&apos;s final HTML with no actual DOM or browser running." ID="ID_824788027" CREATED="1529788916617" MODIFIED="1529788920224"/>
 <node TEXT="It doesn&apos;t have any dependencies on the window or other features that only exist in the browser, so we can happily use it in our Express file." ID="ID_1424849723" CREATED="1529788952129" MODIFIED="1529788956313"/>
-<node TEXT="React DOM server has two different methods for taking a state and a top-level component and making HTML out of it:" ID="ID_1161286368" CREATED="1529788992679" MODIFIED="1529788992679">
-<node TEXT="renderToString()" ID="ID_997670181" CREATED="1529789010920" MODIFIED="1529789889131">
+<node TEXT="React DOM server has two different methods for taking a state and a top-level component and making HTML out of it:" FOLDED="true" ID="ID_1161286368" CREATED="1529788992679" MODIFIED="1529788992679">
+<node TEXT="renderToString()" FOLDED="true" ID="ID_997670181" CREATED="1529789010920" MODIFIED="1529789889131">
 <node TEXT="generates HTML with special tags that React can read" ID="ID_1867019119" CREATED="1529789071532" MODIFIED="1529789071532"/>
 <node TEXT="the client application, once React is running on that side, recognizes these special tags and binds itself to the HTML, but doesn&apos;t render it all over again because it realizes that it&apos;s already been rendered by React." ID="ID_877846919" CREATED="1529789159960" MODIFIED="1529790078457"/>
 <node TEXT="So for a rich application, that&apos;s going to have a lot of interactivity and to which React is going to bind once it&apos;s loaded, you want to use renderToString." ID="ID_1326964571" CREATED="1529790089617" MODIFIED="1529790205407"/>
 </node>
-<node TEXT="renderToStaticMarkup()" ID="ID_161606568" CREATED="1529789024742" MODIFIED="1529789897378">
+<node TEXT="renderToStaticMarkup()" FOLDED="true" ID="ID_161606568" CREATED="1529789024742" MODIFIED="1529789897378">
 <node TEXT="just makes HTML." ID="ID_1882354740" CREATED="1529789085904" MODIFIED="1529789085904"/>
 <node TEXT="This results in a slightly smaller package." ID="ID_1031649105" CREATED="1529790058281" MODIFIED="1529790062609"/>
 <node TEXT="Client application does not recognize HTML as something that can be hydrated" ID="ID_770234366" CREATED="1529790121401" MODIFIED="1529790156576"/>
@@ -4407,20 +4407,20 @@
 </node>
 <node TEXT="extentions" FOLDED="true" ID="ID_582425876" CREATED="1526846664247" MODIFIED="1526846672602">
 <node TEXT="React-Router" FOLDED="true" ID="ID_616574208" CREATED="1526846697967" MODIFIED="1526846712586">
-<node TEXT="Introduction" ID="ID_697295009" CREATED="1529790340575" MODIFIED="1529790346959">
+<node TEXT="Introduction" FOLDED="true" ID="ID_697295009" CREATED="1529790340575" MODIFIED="1529790346959">
 <node TEXT="What does React Router do?" ID="ID_1896514983" CREATED="1529790524570" MODIFIED="1529790532532"/>
-<node TEXT="Renders components based on path" ID="ID_400603771" CREATED="1529790553454" MODIFIED="1529790569077">
+<node TEXT="Renders components based on path" FOLDED="true" ID="ID_400603771" CREATED="1529790553454" MODIFIED="1529790569077">
 <node TEXT="It renders components or doesn&apos;t render them, but the criteria it uses to determine this is what the path is or what page your client is trying to load." ID="ID_1099443527" CREATED="1529790950957" MODIFIED="1529790950957"/>
 </node>
-<node TEXT="Integrates with Redux using ConnectedRouter" ID="ID_164759315" CREATED="1529790570166" MODIFIED="1529790591797">
+<node TEXT="Integrates with Redux using ConnectedRouter" FOLDED="true" ID="ID_164759315" CREATED="1529790570166" MODIFIED="1529790591797">
 <node TEXT="React Router has lots of different kinds of routers, but just remember if you&apos;re using Redux you probably want the connected one." ID="ID_826624062" CREATED="1529790927662" MODIFIED="1529790927662"/>
 </node>
-<node TEXT="Uses history module to inject custom path" ID="ID_605179300" CREATED="1529790592830" MODIFIED="1529790613061">
+<node TEXT="Uses history module to inject custom path" FOLDED="true" ID="ID_605179300" CREATED="1529790592830" MODIFIED="1529790613061">
 <node TEXT="React Router figures out what the path is by using the history module, but we can manipulate the history module to show whatever path we want, the path that&apos;s loaded or the path that we know is going to come up, while we&apos;re doing it on the server." ID="ID_1719957006" CREATED="1529790996037" MODIFIED="1529790996037"/>
 </node>
 <node TEXT="Works in client AND on the server" ID="ID_1260632385" CREATED="1529790615166" MODIFIED="1529790630077"/>
 </node>
-<node TEXT="React Router Server Rendering" ID="ID_506955582" CREATED="1529790841772" MODIFIED="1529791164153">
+<node TEXT="React Router Server Rendering" FOLDED="true" ID="ID_506955582" CREATED="1529790841772" MODIFIED="1529791164153">
 <node TEXT="1. Server receives request and notes path e.g. /users/123" ID="ID_642508190" CREATED="1529791041883" MODIFIED="1529791069074"/>
 <node TEXT="2. Server creates history component and injects path" ID="ID_1984394747" CREATED="1529791044331" MODIFIED="1529791091450"/>
 <node TEXT="3. Application is wrapped in history component and rendered on server" ID="ID_1264153829" CREATED="1529791046891" MODIFIED="1529791122178"/>
@@ -4511,7 +4511,7 @@
 <node TEXT="Knockout.js" ID="ID_1982896671" CREATED="1530387150012" MODIFIED="1530387156055"/>
 </node>
 </node>
-<node TEXT="libraries" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313">
+<node TEXT="libraries" FOLDED="true" ID="ID_1060446659" CREATED="1520844642271" MODIFIED="1520844657313">
 <node TEXT="jQuery" ID="ID_1118040403" CREATED="1530391822799" MODIFIED="1530391828923"/>
 </node>
 </node>
@@ -4547,7 +4547,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Backend" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1519600829138">
+<node TEXT="Backend" FOLDED="true" ID="ID_1555436814" CREATED="1515277338125" MODIFIED="1536367457970">
 <node TEXT="Node" FOLDED="true" ID="ID_1498818952" CREATED="1516178559275" MODIFIED="1519600829138">
 <node TEXT="Overview of JavaScript Modules" FOLDED="true" ID="ID_943227875" CREATED="1516482047814" MODIFIED="1516482057126">
 <node TEXT="basics" FOLDED="true" ID="ID_1115643175" CREATED="1516484931146" MODIFIED="1516484977466">
@@ -4739,7 +4739,7 @@
 <node TEXT="Supports multiline commands, customize command promptand preconfigured context" ID="ID_788880333" CREATED="1516480781927" MODIFIED="1516480781927"/>
 </node>
 </node>
-<node TEXT="extensions" ID="ID_1271338723" CREATED="1520844725160" MODIFIED="1520844738025">
+<node TEXT="extensions" FOLDED="true" ID="ID_1271338723" CREATED="1520844725160" MODIFIED="1536367457969">
 <node TEXT="framework" ID="ID_1751494889" CREATED="1520844747560" MODIFIED="1520844753585">
 <node TEXT="express" ID="ID_1675752072" CREATED="1522617941876" MODIFIED="1522617947954"/>
 </node>
@@ -4756,8 +4756,8 @@
 </node>
 <node TEXT="Babel" ID="ID_1157656807" CREATED="1530391707792" MODIFIED="1530391713243"/>
 </node>
-<node TEXT="Package Manager" ID="ID_1603393958" CREATED="1531609774909" MODIFIED="1531609789873">
-<node TEXT="npm" ID="ID_1825265409" CREATED="1531609792421" MODIFIED="1531609801065">
+<node TEXT="Package Manager" FOLDED="true" ID="ID_1603393958" CREATED="1531609774909" MODIFIED="1531609789873">
+<node TEXT="npm" FOLDED="true" ID="ID_1825265409" CREATED="1531609792421" MODIFIED="1531609801065">
 <node TEXT="Introduction" FOLDED="true" ID="ID_1875273331" CREATED="1516555844183" MODIFIED="1531609836681">
 <node TEXT="NPM is an acronym for Node.js Package Manager" ID="ID_1420772470" CREATED="1516480940094" MODIFIED="1516480949054"/>
 <node TEXT="NPM is the package manager for Node.js" ID="ID_194845935" CREATED="1516555875523" MODIFIED="1516555875523"/>
@@ -5106,7 +5106,7 @@
 </node>
 </node>
 </node>
-<node TEXT="yarn" ID="ID_780946369" CREATED="1531609802229" MODIFIED="1531609806713">
+<node TEXT="yarn" FOLDED="true" ID="ID_780946369" CREATED="1531609802229" MODIFIED="1531609806713">
 <node TEXT="Introduction" ID="ID_244265374" CREATED="1531610103923" MODIFIED="1531610110190">
 <node TEXT="Yarn was developed by Facebook in attempt to resolve some of npm&#x2019;s shortcomings." ID="ID_408436550" CREATED="1531611085221" MODIFIED="1531611104920"/>
 <node TEXT="Yarn isn&#x2019;t technically a replacement for npm since it relies on modules from the npm registry." ID="ID_1963909049" CREATED="1531611109367" MODIFIED="1531611125951"/>
@@ -5162,13 +5162,13 @@
 </node>
 <node TEXT="Bower" ID="ID_1289442243" CREATED="1531610846205" MODIFIED="1531610852129"/>
 </node>
-<node TEXT="Build tools" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
-<node TEXT="taskrunner" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
+<node TEXT="Build tools" FOLDED="true" ID="ID_1128360375" CREATED="1519056069167" MODIFIED="1522616569708">
+<node TEXT="taskrunner" FOLDED="true" ID="ID_925888123" CREATED="1517911003425" MODIFIED="1517914494724">
 <node TEXT="NPM Scripts" ID="ID_1468674140" CREATED="1522616474887" MODIFIED="1522616485445"/>
 <node TEXT="gulp" ID="ID_143223796" CREATED="1517914498428" MODIFIED="1517914503954"/>
 <node TEXT="grunt" ID="ID_1183811378" CREATED="1522616448127" MODIFIED="1522616453605"/>
 </node>
-<node TEXT="Building/Bundling" ID="ID_1833698167" CREATED="1522616261001" MODIFIED="1526835518055">
+<node TEXT="Building/Bundling" FOLDED="true" ID="ID_1833698167" CREATED="1522616261001" MODIFIED="1526835518055">
 <node TEXT="webpack" FOLDED="true" ID="ID_70220663" CREATED="1517911048375" MODIFIED="1517911054014">
 <node TEXT="At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles." ID="ID_344391448" CREATED="1517911090209" MODIFIED="1517911090209"/>
 <node TEXT="Concepts" FOLDED="true" ID="ID_1611266094" CREATED="1517911265557" MODIFIED="1517911320073">
@@ -5224,7 +5224,7 @@
 <node TEXT="Rollup" ID="ID_889638306" CREATED="1522616331224" MODIFIED="1522616338862"/>
 <node TEXT="Parcel" ID="ID_1940225577" CREATED="1522616341048" MODIFIED="1522616346718"/>
 </node>
-<node TEXT="linter" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
+<node TEXT="linter" FOLDED="true" ID="ID_1046923835" CREATED="1519056109643" MODIFIED="1519056117207">
 <node TEXT="introduction" FOLDED="true" ID="ID_331603887" CREATED="1523118526688" MODIFIED="1523118537626">
 <node TEXT="Linters have two categories of rules:" ID="ID_761766782" CREATED="1523118557916" MODIFIED="1523118557916">
 <node TEXT="Formatting rules" FOLDED="true" ID="ID_964712752" CREATED="1523118572927" MODIFIED="1523118576450">
@@ -5236,7 +5236,7 @@
 </node>
 </node>
 </node>
-<node TEXT="ESLint" ID="ID_810386740" CREATED="1522616398536" MODIFIED="1522616405333">
+<node TEXT="ESLint" FOLDED="true" ID="ID_810386740" CREATED="1522616398536" MODIFIED="1522616405333">
 <node TEXT="intro" ID="ID_740180055" CREATED="1524949552401" MODIFIED="1524949559844">
 <node TEXT="ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs." ID="ID_199668136" CREATED="1524949874423" MODIFIED="1524949892238"/>
 <node TEXT="In many ways, it is similar to JSLint and JSHint with a few exceptions:" FOLDED="true" ID="ID_631335254" CREATED="1524949893444" MODIFIED="1524949899358">
@@ -5294,7 +5294,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Testing" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
+<node TEXT="Testing" FOLDED="true" ID="ID_1541924543" CREATED="1516353773618" MODIFIED="1516353782730">
 <node TEXT="Karma" FOLDED="true" ID="ID_1308980703" CREATED="1516004806956" MODIFIED="1516004819297">
 <node TEXT="deprecated" FOLDED="true" ID="ID_603925992" CREATED="1523878739354" MODIFIED="1523878749273">
 <node TEXT="How It Works" ID="ID_689036405" CREATED="1516004868654" MODIFIED="1516004868654">
@@ -5444,7 +5444,7 @@
 <node TEXT="chai" FOLDED="true" ID="ID_1915860979" CREATED="1516353819634" MODIFIED="1516353839657">
 <node TEXT="Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework." ID="ID_845159910" CREATED="1516353959680" MODIFIED="1516353959680"/>
 </node>
-<node TEXT="Jest" ID="ID_487526245" CREATED="1522617542951" MODIFIED="1522617578148">
+<node TEXT="Jest" FOLDED="true" ID="ID_487526245" CREATED="1522617542951" MODIFIED="1522617578148">
 <node TEXT="Introduction" ID="ID_206731019" CREATED="1531673805302" MODIFIED="1531673812602">
 <node TEXT="Jest was first released in 2014, and although it initially garnered a lot of interest, the project was dormant for a while and not so actively worked on." ID="ID_1024623617" CREATED="1531673852803" MODIFIED="1531673857678"/>
 <node TEXT="However, Facebook has invested the last year into improving Jest, and recently published a few releases with impressive changes that make it worth reconsidering." ID="ID_242623864" CREATED="1531673835172" MODIFIED="1531673871206"/>
@@ -5460,7 +5460,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -5623,8 +5622,8 @@
 <node TEXT="Tooling" FOLDED="true" POSITION="right" ID="ID_1214849496" CREATED="1517302346022" MODIFIED="1519810482190" HGAP_QUANTITY="43.99999910593036 pt" VSHIFT_QUANTITY="11.249999664723884 pt">
 <edge COLOR="#808080"/>
 <node TEXT="Browser tools" FOLDED="true" ID="ID_154534367" CREATED="1517909139560" MODIFIED="1517909154969">
-<node TEXT="Chrome" ID="ID_1143598703" CREATED="1520848695721" MODIFIED="1520848704139">
-<node TEXT="Chrome dev tools" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
+<node TEXT="Chrome" FOLDED="true" ID="ID_1143598703" CREATED="1520848695721" MODIFIED="1520848704139">
+<node TEXT="Chrome dev tools" FOLDED="true" ID="ID_395427149" CREATED="1515600554268" MODIFIED="1517301472308">
 <node TEXT="delete all cookies" FOLDED="true" ID="ID_1406357828" CREATED="1515600581931" MODIFIED="1515600590818">
 <node TEXT="Open tools -&gt; Application -&gt; Clear storage" ID="ID_764055672" CREATED="1515600606187" MODIFIED="1515600649499"/>
 </node>
@@ -5739,11 +5738,11 @@
 </node>
 </node>
 </node>
-<node TEXT="extentions" ID="ID_1018937192" CREATED="1520848755609" MODIFIED="1520848768849">
+<node TEXT="extentions" FOLDED="true" ID="ID_1018937192" CREATED="1520848755609" MODIFIED="1520848768849">
 <node TEXT="https://sizzy.co/" ID="ID_1377826931" CREATED="1523118850531" MODIFIED="1523118850531" LINK="https://sizzy.co/"/>
 </node>
 </node>
-<node TEXT="Firefox" ID="ID_1181512892" CREATED="1520848705937" MODIFIED="1520848711546">
+<node TEXT="Firefox" FOLDED="true" ID="ID_1181512892" CREATED="1520848705937" MODIFIED="1520848711546">
 <node TEXT="Firefox dev Tools" ID="ID_341753613" CREATED="1517909170190" MODIFIED="1517909180297"/>
 <node TEXT="extentions" ID="ID_61863371" CREATED="1520848772370" MODIFIED="1520848786683"/>
 </node>
@@ -5882,9 +5881,9 @@
 </node>
 </node>
 </node>
-<node TEXT="SEO" FOLDED="true" POSITION="right" ID="ID_638400976" CREATED="1519810448980" MODIFIED="1519810484486" HGAP_QUANTITY="14.749999977648258 pt" VSHIFT_QUANTITY="22.499999329447768 pt">
+<node TEXT="SEO" POSITION="right" ID="ID_638400976" CREATED="1519810448980" MODIFIED="1536367497958" HGAP_QUANTITY="14.749999977648258 pt" VSHIFT_QUANTITY="22.499999329447768 pt">
 <edge COLOR="#808080"/>
-<node TEXT="Web Robots" FOLDED="true" ID="ID_83558834" CREATED="1519810636949" MODIFIED="1519810640735">
+<node TEXT="Web Robots" FOLDED="true" ID="ID_83558834" CREATED="1519810636949" MODIFIED="1536367497958">
 <node TEXT="Web Robots (also known as Web Wanderers, Crawlers, or Spiders), are programs that traverse the Web automatically. Search engines such as Google use them to index the web content, spammers use them to scan for email addresses, and they have many other uses." ID="ID_592013503" CREATED="1519810663517" MODIFIED="1519810666264"/>
 <node TEXT="robots.txt" FOLDED="true" ID="ID_850791400" CREATED="1519810684550" MODIFIED="1519810687736">
 <node TEXT="Web site owners use the /robots.txt file to give instructions about their site to web robots; this is called The Robots Exclusion Protocol." ID="ID_490544813" CREATED="1519810726278" MODIFIED="1519810729159"/>
@@ -5976,6 +5975,7 @@
 <node TEXT="The robots meta tag is only effective after the page has loaded," ID="ID_1616031907" CREATED="1519812103378" MODIFIED="1519812135331"/>
 <node TEXT="The robots.txt is effective before the page is requested. Thus if a page is excluded by a robots.txt file, any robots meta tags or X-Robots-Tag headers are effectively ignored because the robot will not see them in the first place." ID="ID_8210027" CREATED="1519812219354" MODIFIED="1519812242476"/>
 </node>
+<node TEXT="Schema.org" ID="ID_1623093126" CREATED="1536367782268" MODIFIED="1536367792581"/>
 </node>
 <node TEXT="resources" POSITION="left" ID="ID_1581341897" CREATED="1520782397246" MODIFIED="1520783402955">
 <edge COLOR="#808080"/>
@@ -6115,7 +6115,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Protocols" POSITION="right" ID="ID_155934142" CREATED="1520803096799" MODIFIED="1520803121593">
+<node TEXT="Protocols" FOLDED="true" POSITION="right" ID="ID_155934142" CREATED="1520803096799" MODIFIED="1520803121593">
 <edge COLOR="#808080"/>
 <node TEXT="http" ID="ID_1251503067" CREATED="1520803131687" MODIFIED="1520803136161"/>
 <node TEXT="https" ID="ID_1210591709" CREATED="1522618188274" MODIFIED="1522618193256"/>
@@ -6128,10 +6128,10 @@
 <node TEXT="5xx Server errors" ID="ID_1062592407" CREATED="1523462075454" MODIFIED="1523462080592"/>
 </node>
 </node>
-<node TEXT="Architecture" POSITION="right" ID="ID_1929613929" CREATED="1528542897593" MODIFIED="1528542929412">
+<node TEXT="Architecture" FOLDED="true" POSITION="right" ID="ID_1929613929" CREATED="1528542897593" MODIFIED="1528542929412">
 <edge COLOR="#808080"/>
 <node TEXT="MVC" ID="ID_1661441676" CREATED="1515427476927" MODIFIED="1522617059504"/>
-<node TEXT="single page application" ID="ID_1754289522" CREATED="1523128034273" MODIFIED="1523128051635">
+<node TEXT="single page application" FOLDED="true" ID="ID_1754289522" CREATED="1523128034273" MODIFIED="1523128051635">
 <node TEXT="Introduction" FOLDED="true" ID="ID_1598924604" CREATED="1530387321395" MODIFIED="1530387338248">
 <node TEXT="A single-page application (SPA) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server." ID="ID_1161427925" CREATED="1530387346211" MODIFIED="1530387350470"/>
 <node TEXT="This approach avoids interruption of the user experience between successive pages, making the application behave more like a desktop application." ID="ID_740990680" CREATED="1530387369419" MODIFIED="1530387374902"/>
@@ -6335,11 +6335,11 @@
 </node>
 </node>
 </node>
-<node TEXT="state management" ID="ID_1423779023" CREATED="1530386467640" MODIFIED="1530386482612">
+<node TEXT="state management" FOLDED="true" ID="ID_1423779023" CREATED="1530386467640" MODIFIED="1530386482612">
 <node TEXT="The Problem with state" ID="ID_1385498926" CREATED="1530386540584" MODIFIED="1530386555315"/>
 <node TEXT="Redux" ID="ID_1469102495" CREATED="1522617101067" MODIFIED="1522617107432">
-<node TEXT="introduction" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
-<node TEXT="Why redux?" ID="ID_1744700165" CREATED="1530354924244" MODIFIED="1530354938037">
+<node TEXT="introduction" FOLDED="true" ID="ID_1862481132" CREATED="1522618968925" MODIFIED="1522618975802">
+<node TEXT="Why redux?" FOLDED="true" ID="ID_1744700165" CREATED="1530354924244" MODIFIED="1530354938037">
 <node TEXT="Without Redux" ID="ID_1343260396" CREATED="1530392116701" MODIFIED="1530392126800">
 <node TEXT="Lots of state communication" ID="ID_1515198504" CREATED="1530392134762" MODIFIED="1530392134762"/>
 <node TEXT="Complex error states and scenarios" ID="ID_1210245012" CREATED="1530392144336" MODIFIED="1530392144336"/>
@@ -6375,7 +6375,7 @@
 <node TEXT="Written by hand" ID="ID_1598016922" CREATED="1525724245372" MODIFIED="1525724253673"/>
 </node>
 </node>
-<node TEXT="A Chat with Redux" ID="ID_157797263" CREATED="1525725218376" MODIFIED="1525725232218">
+<node TEXT="A Chat with Redux" FOLDED="true" ID="ID_157797263" CREATED="1525725218376" MODIFIED="1525725232218">
 <node TEXT="REACT: Hey CourseAction, someone clicked this &quot;Save Course&quot; button" ID="ID_1194131840" CREATED="1525725239773" MODIFIED="1525725271906"/>
 <node TEXT="ACTION: Thanks React! I will dispatch an action so reducers that care can update state" ID="ID_941621879" CREATED="1525725273688" MODIFIED="1525725323554"/>
 <node TEXT="REDUCER: Ah, thanks action. I see you passed me the current state and the action to perform. I&apos;ll make a new copy of the state and return it." ID="ID_1638836202" CREATED="1525725326484" MODIFIED="1525725406017"/>
@@ -6589,7 +6589,7 @@
 <node TEXT="Redux VS Mobx" ID="ID_61277757" CREATED="1530386570104" MODIFIED="1530386581571"/>
 </node>
 </node>
-<node TEXT="Atomic Design" ID="ID_756021244" CREATED="1528542693539" MODIFIED="1528542709669">
+<node TEXT="Atomic Design" FOLDED="true" ID="ID_756021244" CREATED="1528542693539" MODIFIED="1528542709669">
 <node TEXT="Atomic design is an approach to component design that was popularized by Brad Frost. Describes components with scientific terms." ID="ID_1175621170" CREATED="1529149373733" MODIFIED="1529150637255"/>
 <node TEXT="introduction" FOLDED="true" ID="ID_1481591635" CREATED="1529147550306" MODIFIED="1529147560373">
 <node TEXT="What is Atomic Design?" FOLDED="true" ID="ID_1254152651" CREATED="1529147821960" MODIFIED="1529147851651">
@@ -7003,7 +7003,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Evaluating New Technology" ID="ID_1595743388" CREATED="1530391918006" MODIFIED="1530392299073">
+<node TEXT="Evaluating New Technology" FOLDED="true" ID="ID_1595743388" CREATED="1530391918006" MODIFIED="1530392299073">
 <node TEXT="1. Problem" ID="ID_415287551" CREATED="1530392276421" MODIFIED="1530392288816"/>
 <node TEXT="2. Possible Solutions (Framework or individual solution)" ID="ID_1570522653" CREATED="1530392298036" MODIFIED="1530392466423"/>
 <node TEXT="3. Small experiment (test in Site Project)" ID="ID_1848345154" CREATED="1530392305532" MODIFIED="1530392393799"/>
@@ -7012,9 +7012,71 @@
 <node TEXT="6. Decide" ID="ID_485784200" CREATED="1530392352996" MODIFIED="1530392370063"/>
 </node>
 <node TEXT="Rest" ID="ID_354168407" CREATED="1531610007316" MODIFIED="1531610016328"/>
-<node TEXT="Static Site generators" ID="ID_869348301" CREATED="1529146169195" MODIFIED="1529146193550">
+<node TEXT="Static Site generators" FOLDED="true" ID="ID_869348301" CREATED="1529146169195" MODIFIED="1529146193550">
 <node TEXT="Gatsby" ID="ID_808987085" CREATED="1529146232931" MODIFIED="1529146239454"/>
 <node TEXT="Phenomic" ID="ID_236290860" CREATED="1529146242779" MODIFIED="1529146254038"/>
+</node>
+</node>
+<node TEXT="" POSITION="left" ID="ID_160802971" CREATED="1536367697177" MODIFIED="1536367697184">
+<edge COLOR="#808080"/>
+</node>
+<node TEXT="" POSITION="left" ID="ID_352004268" CREATED="1536367701036" MODIFIED="1536367701037">
+<edge COLOR="#808080"/>
+</node>
+<node TEXT="" POSITION="left" ID="ID_1595078839" CREATED="1536367703408" MODIFIED="1536367703409">
+<edge COLOR="#808080"/>
+</node>
+<node TEXT="" POSITION="left" ID="ID_1481429034" CREATED="1536367706095" MODIFIED="1536367706097">
+<edge COLOR="#808080"/>
+</node>
+<node TEXT="" POSITION="left" ID="ID_1271033200" CREATED="1536367708506" MODIFIED="1536367708507">
+<edge COLOR="#808080"/>
+</node>
+<node TEXT="" POSITION="left" ID="ID_1768923580" CREATED="1536367710752" MODIFIED="1536367710753">
+<edge COLOR="#808080"/>
+</node>
+<node TEXT="Performance Optimations" POSITION="right" ID="ID_1721204881" CREATED="1536367713139" MODIFIED="1536367740025">
+<edge COLOR="#808080"/>
+<node TEXT="Introduction" ID="ID_1904621080" CREATED="1536368173285" MODIFIED="1536368180339">
+<node TEXT="The Internet gets heavier and heavier every year. If we check the state of the web (https://httparchive.org/reports/state-of-the-web) we can see that a median page on mobile weights at about 1.5MB, with the majority of that being JavaScript and images." ID="ID_926418002" CREATED="1536368216611" MODIFIED="1536368271594"/>
+<node TEXT="The growing size of the websites, together with other factors, like network latency, CPU limitations, render blocking patterns or superfluous third-party code, contributes to the complicated performance puzzle." ID="ID_1654475827" CREATED="1536368325997" MODIFIED="1536368333185"/>
+<node TEXT="Most users rate speed as being at the very top of the UX hierarchy of their needs. This isn&apos;t too surprising, because you can&apos;t really do a whole lot until a page is finished loading. You can&apos;t derive value from the page, you can&apos;t admire its aesthetics." ID="ID_1808550321" CREATED="1536368379806" MODIFIED="1536368385872"/>
+<node TEXT="ux_hierarchy.png" ID="ID_386227445" CREATED="1536368419493" MODIFIED="1536368419493">
+<hook URI="webdevelopment2_files/ux_hierarchy.png" SIZE="0.75" NAME="ExternalObject"/>
+</node>
+<node TEXT="By making sites faster, you improve the user experience by speeding up the delivery of content. Moreover, when your site is faster, users are more likely to care about what&#x2019;s on it. Not one user cares about the content of a site that doesn&#x2019;t load quickly." ID="ID_89789739" CREATED="1537127702258" MODIFIED="1537127707599"/>
+<node TEXT="Slow websites also have a measurable effect on user engagement. On e-commerce sites in particular, nearly half of users expect a website to load within 2 seconds." ID="ID_366641346" CREATED="1537127753643" MODIFIED="1537127758290"/>
+<node TEXT="And 40% of users will exit if it takes more than 3 seconds to load." ID="ID_852421266" CREATED="1537127772959" MODIFIED="1537127775858"/>
+<node TEXT="A 1-second delay in page response can mean a 7% reduction in users taking action (https://blog.kissmetrics.com/loading-time). This means not only a loss of traffic, but a loss of revenue." ID="ID_1391064862" CREATED="1537127785123" MODIFIED="1537127787633"/>
+<node TEXT="In addition, the performance of your website impacts not only your users, but also your website&#x2019;s position in Google search results. As early as 2010, Google indicated that page speed is a factor in ranking websites in its search results. Though the relevance of your site&#x2019;s content is still the most important factor in your site&#x2019;s search ranking, page speed does play a role." ID="ID_1490764585" CREATED="1537127825601" MODIFIED="1537127828625"/>
+</node>
+<node TEXT="How web browsers talk to web servers" ID="ID_1513362784" CREATED="1537127970932" MODIFIED="1537127975264">
+<node TEXT="To know why web optimization is necessary, you need to know where the problem lies, and that&#x2019;s in the basic nature of the way web browsers and web servers communicate." ID="ID_1364869110" CREATED="1537128074137" MODIFIED="1537128107199"/>
+<node TEXT="When a browser fetches a web page, it talks to a server in a language called Hypertext Transfer Protocol, commonly known as HTTP. The browser makes an HTTP request, and the web server replies with an HTTP response, which consists of a status code and the requested content." ID="ID_768750325" CREATED="1537128180742" MODIFIED="1537128184287"/>
+<node TEXT="httpRequestAnatomy.png" ID="ID_300493260" CREATED="1537128963956" MODIFIED="1537128963956">
+<hook URI="webdevelopment2_files/httpRequestAnatomy.png" SIZE="0.9677419" NAME="ExternalObject"/>
+</node>
+<node TEXT="One of the primary aims of improving performance is to reduce latency, the amount of time it takes for a response to arrive in full. When latency occurs across a single request as in the example of example.com, it&#x2019;s trivial. But loading practically any website involves more than a single request for content. As these requests increase in volume, the user experience becomes increasingly vulnerable to slower load times." ID="ID_1463622746" CREATED="1537129155113" MODIFIED="1537129158888">
+<node TEXT="" ID="ID_696449492" CREATED="1537129213840" MODIFIED="1537129213840"/>
+</node>
+<node TEXT="In communication between HTTP/1 servers and browsers, a phenomenon known as head-of-line blocking can occur. This occurs because the browser limits the number of requests it will make at a single time (typically, six). When one or more of these requests are processing and others have finished, new requests for content are blocked until the remaining request has been fulfilled. This behavior increases page-load time." ID="ID_730276603" CREATED="1537129218778" MODIFIED="1537129222560"/>
+</node>
+<node TEXT="Quick wins" ID="ID_1726938340" CREATED="1537129728908" MODIFIED="1537129742747">
+<node TEXT="Minifying assets" ID="ID_1460533756" CREATED="1537130655056" MODIFIED="1537130666648">
+<node TEXT="Minification is a process by which all whitespace and unnecessary characters are stripped from a text-based asset without affecting the way that asset functions. Figure 1.9 illustrates the basic idea of minification as it applies to CSS." ID="ID_837505705" CREATED="1537130670943" MODIFIED="1537130676397"/>
+</node>
+<node TEXT=" Using server compression" ID="ID_723440448" CREATED="1537130783603" MODIFIED="1537130787268">
+<node TEXT="Surely you&#x2019;ve been emailed compressed files. These files are often used in online communications as a handy way to package multiple files into a single one. Aside from the convenience of consolidation, compressing files can also reduce their size. Server compression works on a similar principle with respect to reduction of file sizes, and web browsers are able to accept and decompress compressed content on behalf of the user" ID="ID_997431467" CREATED="1537131039240" MODIFIED="1537131049355"/>
+<node TEXT="Server compression works as follows: A user requests a web page from a server. The user&#x2019;s request is accompanied by an Accept-Encoding header that tells the server the compression formats the browser is capable of using. If the server is capable of encoding the content as indicated in the Accept-Encoding header, it will reply with a Content-Encoding header that describes the compression method used along with the compressed content." ID="ID_2149806" CREATED="1537131141262" MODIFIED="1537131145722"/>
+<node TEXT="This is useful because much of the content that&#x2019;s downloaded from websites tends to be text, which compresses well. A compression method called gzip has nearly universal browser support, and is very effective in reducing the size of text assets." ID="ID_979646730" CREATED="1537131190338" MODIFIED="1537131195426"/>
+<node TEXT="Have you ever tried to zip a JPEG or an MP3 file? Not only does this provide no additional savings, but the final zip file may end up being larger. This is because those types of files are already compressed when they&#x2019;re encoded. Compressing content on the web is no different. Avoid compressing file types that already use compression when they&#x2019;re encoded, such as JPEG, PNG, and GIF images and WOFF and WOFF2 font files." ID="ID_1547013146" CREATED="1537131277119" MODIFIED="1537131281576"/>
+</node>
+<node TEXT="Optimizing images" ID="ID_1537507417" CREATED="1537130820913" MODIFIED="1537130829052">
+<node TEXT="Image compression has come a long way since the days of Photoshop&#x2019;s Save for Web dialog box. Today&#x2019;s algorithms are so efficient at reducing the file size of full-color images that the end result is usually indistinguishable from the source image. The savings in file size, however, can be significant." ID="ID_1678362673" CREATED="1537130865292" MODIFIED="1537130869564"/>
+<node TEXT="That&#x2019;s not to say that this type of optimization can&#x2019;t lead to undesirable results. Any optimization can go too far, leading to a noticeable loss in quality." ID="ID_1130797928" CREATED="1537130901798" MODIFIED="1537130905067"/>
+<node TEXT="The rule of thumb is to compare the result of any optimization to the original source, and make sure that you&#x2019;re satisfied with the results." ID="ID_630054504" CREATED="1537130915425" MODIFIED="1537130920003"/>
+<node TEXT="TinyPNG (http://tinypng.com)" ID="ID_1798179306" CREATED="1537130966642" MODIFIED="1537130971027"/>
+</node>
 </node>
 </node>
 </node>
